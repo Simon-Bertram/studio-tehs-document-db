@@ -1,6 +1,6 @@
 import {defineField, defineType} from 'sanity'
 
-export default defineType({
+export const category = defineType({
   name: 'category',
   title: 'Subject Category',
   type: 'document',
