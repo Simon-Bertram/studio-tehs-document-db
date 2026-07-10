@@ -1,4 +1,5 @@
 import {defineField, defineType} from 'sanity'
+import {isUniqueStringField} from './lib/isUniqueStringField'
 
 export const township = defineType({
   name: 'township',
@@ -16,6 +17,10 @@ export const township = defineType({
       title: 'Legacy Keyword',
       type: 'string',
       description: 'e.g., Cclip, used for mapping old MySQL records.',
+      validation: (Rule) =>
+        Rule.custom(
+          isUniqueStringField('township', 'legacyKeyword', 'Legacy keyword must be unique'),
+        ),
     }),
   ],
 })

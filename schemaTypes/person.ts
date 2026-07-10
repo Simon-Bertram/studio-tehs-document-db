@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import {defineArrayMember, defineField, defineType} from 'sanity'
 
 export const person = defineType({
   name: 'person',
@@ -33,7 +33,7 @@ export const person = defineType({
       name: 'alternateSpellings',
       title: 'Alternate Spellings / Aliases',
       type: 'array',
-      of: [{type: 'string'}],
+      of: [defineArrayMember({type: 'string'})],
       description: 'Add historical spelling variants found in records (e.g., Christman, Chrisman).',
     }),
     defineField({
@@ -41,18 +41,37 @@ export const person = defineType({
       title: 'Census / Occupation Records',
       type: 'array',
       of: [
-        {
+        defineArrayMember({
           type: 'object',
           name: 'censusRecord',
           fields: [
-            {name: 'year', title: 'Census Year', type: 'number'},
-            {name: 'occupation', title: 'Recorded Occupation', type: 'string'},
+            defineField({
+              name: 'year',
+              title: 'Census Year',
+              type: 'number',
+            }),
+            defineField({
+              name: 'occupation',
+              title: 'Recorded Occupation',
+              type: 'string',
+            }),
           ],
-        },
+          preview: {
+            select: {
+              title: 'occupation',
+              subtitle: 'year',
+            },
+            prepare({title, subtitle}) {
+              return {
+                title: title || 'Occupation unknown',
+                subtitle: subtitle ? String(subtitle) : undefined,
+              }
+            },
+          },
+        }),
       ],
     }),
   ],
-  // This block customizes how the person looks inside the Sanity Studio sidebar lists
   preview: {
     select: {
       prefix: 'prefix',

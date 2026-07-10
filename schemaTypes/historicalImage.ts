@@ -1,4 +1,5 @@
-import {defineField, defineType} from 'sanity'
+import {defineArrayMember, defineField, defineType} from 'sanity'
+import {isUniqueStringField} from './lib/isUniqueStringField'
 
 export const historicalImage = defineType({
   name: 'historicalImage',
@@ -9,6 +10,8 @@ export const historicalImage = defineType({
       name: 'identifier',
       title: 'Identifier (e.g., MF37)',
       type: 'string',
+      validation: (Rule) =>
+        Rule.custom(isUniqueStringField('historicalImage', 'identifier', 'Identifier must be unique')),
     }),
     defineField({
       name: 'serialNumber',
@@ -38,28 +41,42 @@ export const historicalImage = defineType({
       options: {hotspot: true},
     }),
     defineField({
-      name: 'township',
-      title: 'Township',
-      type: 'reference',
-      to: [{type: 'township'}],
-    }),
-    defineField({
       name: 'specificLocation',
       title: 'Specific Location',
       type: 'reference',
       to: [{type: 'location'}],
+      description:
+        'When set, township is taken from this location. Use the Township field only when there is no more specific place.',
+    }),
+    defineField({
+      name: 'township',
+      title: 'Township',
+      type: 'reference',
+      to: [{type: 'township'}],
+      description: 'Only needed when no specific location is set.',
+      hidden: ({document}) => Boolean(document?.specificLocation),
     }),
     defineField({
       name: 'subjects',
       title: 'Subjects',
       type: 'array',
-      of: [{type: 'reference', to: [{type: 'category'}]}],
+      of: [
+        defineArrayMember({
+          type: 'reference',
+          to: [{type: 'category'}],
+        }),
+      ],
     }),
     defineField({
       name: 'citations',
       title: 'Research References',
       type: 'array',
-      of: [{type: 'reference', to: [{type: 'quarterlyArticle'}]}],
+      of: [
+        defineArrayMember({
+          type: 'reference',
+          to: [{type: 'quarterlyArticle'}],
+        }),
+      ],
     }),
     defineField({
       name: 'source',

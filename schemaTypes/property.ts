@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import {defineArrayMember, defineField, defineType} from 'sanity'
 
 export const property = defineType({
   name: 'property',
@@ -39,13 +39,18 @@ export const property = defineType({
       title: 'Structural Evolution & Origins',
       type: 'text',
       description:
-        'Log what this building was adapted from (e.g., "Formally a chicken coop", "Constructed from an old blacksmith shop").',
+        'Log what this building was adapted from (e.g., "Formerly a chicken coop", "Constructed from an old blacksmith shop").',
     }),
     defineField({
       name: 'notableResidents',
       title: 'Notable Residents / Owners',
       type: 'array',
-      of: [{type: 'reference', to: [{type: 'person'}]}],
+      of: [
+        defineArrayMember({
+          type: 'reference',
+          to: [{type: 'person'}],
+        }),
+      ],
       description:
         'Link to profile cards for John R.K. Scott, Harold B. Stassen, Norm Van Brocklin, etc.',
     }),
@@ -63,11 +68,10 @@ export const property = defineType({
       name: 'deedCitations',
       title: 'Chester County Deed Book References',
       type: 'array',
-      of: [{type: 'string'}],
+      of: [defineArrayMember({type: 'string'})],
       description: 'e.g., "U15 P466", "P15 P25"',
     }),
   ],
-  // Adjust the studio sidebar list to cleanly distinguish tenant houses from massive estates
   preview: {
     select: {
       title: 'historicalName',

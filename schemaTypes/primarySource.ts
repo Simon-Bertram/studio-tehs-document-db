@@ -1,4 +1,5 @@
-import {defineField, defineType} from 'sanity'
+import {defineArrayMember, defineField, defineType} from 'sanity'
+import {isUniqueStringField} from './lib/isUniqueStringField'
 
 export const primarySource = defineType({
   name: 'primarySource',
@@ -11,6 +12,8 @@ export const primarySource = defineType({
       name: 'docId',
       title: 'Legacy Document ID (e.g., Doc505)',
       type: 'string',
+      validation: (Rule) =>
+        Rule.custom(isUniqueStringField('primarySource', 'docId', 'Document ID must be unique')),
     }),
     defineField({
       name: 'title',
@@ -19,9 +22,16 @@ export const primarySource = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'dateText',
+      title: 'Publication Date (Textual)',
+      type: 'string',
+      description: 'Use for uncertain or non-exact dates (e.g., "circa 1890", "Spring 1912").',
+    }),
+    defineField({
       name: 'date',
-      title: 'Publication Date',
+      title: 'Exact Publication Date',
       type: 'date',
+      description: 'Optional. Use when the exact calendar date is known (helps sorting and filtering).',
     }),
     defineField({
       name: 'newspaper',
@@ -33,18 +43,28 @@ export const primarySource = defineType({
       title: 'Township',
       type: 'reference',
       to: [{type: 'township'}],
+      description:
+        'Standalone township when no associated property is linked. Prefer linking a property when the place is known.',
+      hidden: ({document}) => Boolean(document?.associatedProperty),
     }),
     defineField({
       name: 'associatedProperty',
       title: 'Associated Property',
       type: 'reference',
       to: [{type: 'property'}],
+      description:
+        'When set, prefer this over a standalone township. Add township/location on the property for geography.',
     }),
     defineField({
       name: 'peopleMentioned',
       title: 'People Mentioned',
       type: 'array',
-      of: [{type: 'reference', to: [{type: 'person'}]}],
+      of: [
+        defineArrayMember({
+          type: 'reference',
+          to: [{type: 'person'}],
+        }),
+      ],
     }),
     defineField({
       name: 'isSheriffSale',
@@ -71,16 +91,26 @@ export const primarySource = defineType({
       type: 'image',
     }),
     defineField({
-      name: 'categories',
-      title: 'Associated Subjects',
+      name: 'subjects',
+      title: 'Subjects',
       type: 'array',
-      of: [{type: 'reference', to: [{type: 'category'}]}],
+      of: [
+        defineArrayMember({
+          type: 'reference',
+          to: [{type: 'category'}],
+        }),
+      ],
     }),
     defineField({
       name: 'citations',
       title: 'Research References',
       type: 'array',
-      of: [{type: 'reference', to: [{type: 'quarterlyArticle'}]}],
+      of: [
+        defineArrayMember({
+          type: 'reference',
+          to: [{type: 'quarterlyArticle'}],
+        }),
+      ],
     }),
   ],
   preview: {
