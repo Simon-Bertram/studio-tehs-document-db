@@ -1,9 +1,11 @@
+import {HomeIcon} from '@sanity/icons/Home'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
 export const property = defineType({
   name: 'property',
   title: 'Property / Building',
   type: 'document',
+  icon: HomeIcon,
   fields: [
     defineField({
       name: 'historicalName',
@@ -33,6 +35,22 @@ export const property = defineType({
       description:
         'If this is a house inside a larger farm, link to the main estate here (e.g., Link "By-The-Creek" to "Glenhardie Farm").',
       hidden: ({document}) => document?.propertyType === 'estate',
+    }),
+    defineField({
+      name: 'location',
+      title: 'Specific Location',
+      type: 'reference',
+      to: [{type: 'location'}],
+      description:
+        'When set, township is taken from this location. Use Township only when there is no more specific place.',
+    }),
+    defineField({
+      name: 'township',
+      title: 'Township',
+      type: 'reference',
+      to: [{type: 'township'}],
+      description: 'Only needed when no specific location is set.',
+      hidden: ({document}) => Boolean(document?.location),
     }),
     defineField({
       name: 'evolutionNotes',
@@ -72,20 +90,40 @@ export const property = defineType({
       description: 'e.g., "U15 P466", "P15 P25"',
     }),
   ],
+  orderings: [
+    {
+      title: 'Name, A–Z',
+      name: 'nameAsc',
+      by: [{field: 'historicalName', direction: 'asc'}],
+    },
+    {
+      title: 'Property type',
+      name: 'typeAsc',
+      by: [
+        {field: 'propertyType', direction: 'asc'},
+        {field: 'historicalName', direction: 'asc'},
+      ],
+    },
+  ],
   preview: {
     select: {
       title: 'historicalName',
       type: 'propertyType',
       parent: 'parentEstate.historicalName',
+      location: 'location.name',
+      township: 'township.name',
     },
     prepare(selection) {
-      const {title, type, parent} = selection
-      let subtitle = type ? type.toUpperCase() : ''
-      if (parent) subtitle += ` (Part of ${parent})`
+      const {title, type, parent, location, township} = selection
+      const parts = [
+        type ? type.toUpperCase() : undefined,
+        location || township,
+        parent ? `Part of ${parent}` : undefined,
+      ].filter(Boolean)
 
       return {
         title: title || 'Unnamed Property',
-        subtitle,
+        subtitle: parts.join(' · '),
       }
     },
   },

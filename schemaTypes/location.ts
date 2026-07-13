@@ -1,9 +1,11 @@
+import {MarkerIcon} from '@sanity/icons/Marker'
 import {defineField, defineType} from 'sanity'
 
 export const location = defineType({
   name: 'location',
   title: 'Specific Location / Village',
   type: 'document',
+  icon: MarkerIcon,
   fields: [
     defineField({
       name: 'name',
@@ -20,4 +22,17 @@ export const location = defineType({
       validation: (Rule) => Rule.required(),
     }),
   ],
+  orderings: [
+    {
+      title: 'Name, A–Z',
+      name: 'nameAsc',
+      by: [{field: 'name', direction: 'asc'}],
+    },
+  ],
+  preview: {
+    select: {
+      title: 'name',
+      subtitle: 'township.name',
+    },
+  },
 })

@@ -1,9 +1,11 @@
+import {CaseIcon} from '@sanity/icons/Case'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
 export const business = defineType({
   name: 'business',
   title: 'Historical Business',
   type: 'document',
+  icon: CaseIcon,
   fields: [
     defineField({
       name: 'name',
@@ -35,4 +37,16 @@ export const business = defineType({
       ],
     }),
   ],
+  orderings: [
+    {
+      title: 'Name, A–Z',
+      name: 'nameAsc',
+      by: [{field: 'name', direction: 'asc'}],
+    },
+  ],
+  preview: {
+    select: {
+      title: 'name',
+    },
+  },
 })

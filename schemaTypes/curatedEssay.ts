@@ -1,9 +1,11 @@
+import {BookIcon} from '@sanity/icons/Book'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
 export const curatedEssay = defineType({
   name: 'curatedEssay',
   title: 'Curated Essay',
   type: 'document',
+  icon: BookIcon,
   description:
     'Use this to publish long-form modern research, overviews, or interactive pages with maps and tables.',
   fields: [
@@ -78,6 +80,13 @@ export const curatedEssay = defineType({
         }),
       ],
     }),
+  ],
+  orderings: [
+    {
+      title: 'Title, A–Z',
+      name: 'titleAsc',
+      by: [{field: 'title', direction: 'asc'}],
+    },
   ],
   preview: {
     select: {

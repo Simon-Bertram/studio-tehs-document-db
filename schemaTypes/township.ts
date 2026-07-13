@@ -1,3 +1,4 @@
+import {PinIcon} from '@sanity/icons/Pin'
 import {defineField, defineType} from 'sanity'
 import {isUniqueStringField} from './lib/isUniqueStringField'
 
@@ -5,6 +6,7 @@ export const township = defineType({
   name: 'township',
   title: 'Township',
   type: 'document',
+  icon: PinIcon,
   fields: [
     defineField({
       name: 'name',
@@ -23,4 +25,17 @@ export const township = defineType({
         ),
     }),
   ],
+  orderings: [
+    {
+      title: 'Name, A–Z',
+      name: 'nameAsc',
+      by: [{field: 'name', direction: 'asc'}],
+    },
+  ],
+  preview: {
+    select: {
+      title: 'name',
+      subtitle: 'legacyKeyword',
+    },
+  },
 })

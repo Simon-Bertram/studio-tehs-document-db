@@ -1,9 +1,11 @@
+import {UserIcon} from '@sanity/icons/User'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
 export const person = defineType({
   name: 'person',
   title: 'Historical Person',
   type: 'document',
+  icon: UserIcon,
   fields: [
     defineField({
       name: 'prefix',
@@ -71,6 +73,24 @@ export const person = defineType({
         }),
       ],
     }),
+  ],
+  orderings: [
+    {
+      title: 'Last name, A–Z',
+      name: 'lastNameAsc',
+      by: [
+        {field: 'lastName', direction: 'asc'},
+        {field: 'firstName', direction: 'asc'},
+      ],
+    },
+    {
+      title: 'First name, A–Z',
+      name: 'firstNameAsc',
+      by: [
+        {field: 'firstName', direction: 'asc'},
+        {field: 'lastName', direction: 'asc'},
+      ],
+    },
   ],
   preview: {
     select: {
