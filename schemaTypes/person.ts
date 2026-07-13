@@ -32,6 +32,26 @@ export const person = defineType({
       description: 'e.g., Jr., Sr., III, Deceased',
     }),
     defineField({
+      name: 'born',
+      title: 'Born',
+      type: 'date',
+      description: 'Optional. Use when the birth date is known.',
+    }),
+    defineField({
+      name: 'died',
+      title: 'Died',
+      type: 'date',
+      description: 'Optional. Use when the death date is known.',
+      validation: (Rule) =>
+        Rule.custom((died, context) => {
+          const born = context.document?.born
+          if (born && died && new Date(died) < new Date(born as string)) {
+            return 'Died date must be on or after born date'
+          }
+          return true
+        }),
+    }),
+    defineField({
       name: 'alternateSpellings',
       title: 'Alternate Spellings / Aliases',
       type: 'array',
