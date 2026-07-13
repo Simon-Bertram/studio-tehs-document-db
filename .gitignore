@@ -27,3 +27,8 @@
 
 # Dotenv and similar local-only files
 *.local
+
+# Docusaurus
+/documentation/node_modules
+/documentation/build
+/documentation/.docusaurus

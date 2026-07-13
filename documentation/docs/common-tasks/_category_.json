@@ -1,0 +1,8 @@
+{
+  "label": "Common tasks",
+  "position": 3,
+  "link": {
+    "type": "doc",
+    "id": "common-tasks/index"
+  }
+}

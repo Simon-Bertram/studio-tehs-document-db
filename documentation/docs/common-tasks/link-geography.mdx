@@ -1,0 +1,46 @@
+---
+sidebar_position: 5
+---
+
+# Link geography
+
+## Goal
+
+Place archive and entity records using the most specific geography available.
+
+## Prefer this order
+
+1. **Property** — when a known building or land tract is involved (primary sources can link **Associated Property**).
+2. **Location** — village or named place (Paoli, Berwyn), which always has a parent township.
+3. **Township** — only when nothing more specific is known.
+
+## Steps by document type
+
+### Primary source
+
+1. If the notice concerns a known property, set **Associated Property**.
+2. Otherwise set **Township**. The township field is hidden when a property is linked.
+
+### Historical image or property
+
+1. Set **Specific Location** when you know the village/place.
+2. Otherwise set **Township**. Township hides once a location is set.
+
+### Curated essay
+
+1. Add one or more **Townships** for the essay’s geographic scope.
+
+### Location entity
+
+1. Create under **Taxonomies & Entities → Locations**.
+2. Set name and required parent township.
+
+## Field notes
+
+- Geography cascades: location → township; property can carry location or township.
+- Create townships and locations under Taxonomies before linking them from archive documents.
+
+## Related
+
+- [Model a property or estate](./model-a-property.mdx)
+- [Taxonomies & Entities](../content-model/taxonomies-and-entities.mdx)

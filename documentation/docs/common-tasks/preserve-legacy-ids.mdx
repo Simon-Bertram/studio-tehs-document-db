@@ -1,0 +1,34 @@
+---
+sidebar_position: 13
+---
+
+# Preserve legacy IDs
+
+## Goal
+
+Keep unique identifiers that map Studio documents to older MySQL / catalog systems.
+
+## Where legacy IDs live
+
+| Field | Document type | Example | Rule |
+| --- | --- | --- | --- |
+| **Legacy Document ID** (`docId`) | Primary Source | `Doc505` | Must be unique |
+| **Identifier** | Historical Image | `MF37` | Must be unique |
+| **Legacy Keyword** | Township | `Cclip` | Must be unique |
+
+## Steps
+
+1. When migrating or matching an old record, open the Studio document.
+2. Enter the legacy value in the field above—do not invent a new ID if one already exists in the old system.
+3. Save; Studio validates uniqueness. Fix conflicts before publishing.
+
+## Field notes
+
+- Uniqueness is enforced with a custom validator so two documents cannot share the same legacy string.
+- Leave the field empty only when there is no corresponding legacy record.
+
+## Related
+
+- [Add a primary source](./add-primary-source.mdx)
+- [Catalog a historical image](./catalog-historical-image.mdx)
+- [Taxonomies & Entities](../content-model/taxonomies-and-entities.mdx)
