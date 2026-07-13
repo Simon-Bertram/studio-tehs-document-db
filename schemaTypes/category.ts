@@ -6,6 +6,8 @@ export const category = defineType({
   title: 'Subject Category',
   type: 'document',
   icon: TagIcon,
+  description:
+    'Use for the broad topics and themes from your original subject lists and advanced-search dropdowns (e.g., Schools, Railroads, Farms). Tag historical images and primary sources with these so related material can be filtered and discovered.',
   fields: [
     defineField({
       name: 'title',
