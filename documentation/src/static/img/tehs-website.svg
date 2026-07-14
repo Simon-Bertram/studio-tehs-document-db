@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="websiteTitle websiteDesc">
+  <title id="websiteTitle">The Website</title>
+  <desc id="websiteDesc">Desktop computer with a globe showing online essays</desc>
+  <rect width="200" height="200" fill="#f4f7f5"/>
+  <!-- Soft ground shadow -->
+  <ellipse cx="100" cy="172" rx="68" ry="8" fill="#3d4a42" opacity="0.08"/>
+  <!-- Monitor stand base -->
+  <rect x="78" y="148" width="44" height="8" rx="2" fill="#205d3b"/>
+  <!-- Monitor stand neck -->
+  <rect x="94" y="132" width="12" height="18" fill="#2e8555"/>
+  <!-- Monitor bezel -->
+  <rect x="36" y="48" width="128" height="88" rx="6" fill="#2e8555"/>
+  <!-- Screen -->
+  <rect x="44" y="56" width="112" height="64" rx="3" fill="#e8efe9"/>
+  <!-- Browser chrome bar -->
+  <rect x="44" y="56" width="112" height="12" rx="3" fill="#205d3b"/>
+  <rect x="44" y="62" width="112" height="6" fill="#205d3b"/>
+  <!-- Window dots -->
+  <circle cx="52" cy="62" r="2" fill="#c9a227"/>
+  <circle cx="60" cy="62" r="2" fill="#fbf8f1" opacity="0.7"/>
+  <circle cx="68" cy="62" r="2" fill="#fbf8f1" opacity="0.45"/>
+  <!-- Essay text lines on screen -->
+  <line x1="52" y1="80" x2="96" y2="80" stroke="#3d4a42" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <line x1="52" y1="90" x2="90" y2="90" stroke="#3d4a42" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <line x1="52" y1="100" x2="94" y2="100" stroke="#3d4a42" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <line x1="52" y1="110" x2="84" y2="110" stroke="#3d4a42" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+  <!-- Globe (overlapping screen, right side) -->
+  <circle cx="132" cy="98" r="28" fill="#2e8555"/>
+  <circle cx="132" cy="98" r="28" fill="none" stroke="#205d3b" stroke-width="2"/>
+  <!-- Globe meridians -->
+  <ellipse cx="132" cy="98" rx="12" ry="28" fill="none" stroke="#fbf8f1" stroke-width="1.5" opacity="0.7"/>
+  <ellipse cx="132" cy="98" rx="28" ry="10" fill="none" stroke="#fbf8f1" stroke-width="1.5" opacity="0.7"/>
+  <line x1="132" y1="70" x2="132" y2="126" stroke="#fbf8f1" stroke-width="1.5" opacity="0.7"/>
+  <!-- Continent shapes -->
+  <path d="M118 88 C122 82, 128 84, 132 80 C136 86, 142 88, 146 84 L146 96 C140 100, 134 98, 128 102 C122 98, 118 96, 118 88 Z" fill="#c9a227" opacity="0.9"/>
+  <path d="M120 108 C124 104, 130 106, 134 104 C138 108, 142 110, 144 108 L144 116 C138 120, 130 118, 124 116 C120 114, 118 112, 120 108 Z" fill="#fbf8f1" opacity="0.55"/>
+</svg>

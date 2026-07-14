@@ -14,7 +14,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'The Archive',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/src/static/img/tehs-archive.svg').default,
     to: '/docs/content-model/the-archive',
     description: (
       <>
@@ -25,7 +25,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'The Website',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/src/static/img/tehs-website.svg').default,
     to: '/docs/content-model/the-website',
     description: (
       <>
@@ -36,7 +36,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Taxonomies and Entities',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/src/static/img/tehs-taxonomies.svg').default,
     to: '/docs/content-model/taxonomies-and-entities',
     description: (
       <>
@@ -49,7 +49,7 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({title, Svg, description, to}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--4 padding-horiz--md')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>

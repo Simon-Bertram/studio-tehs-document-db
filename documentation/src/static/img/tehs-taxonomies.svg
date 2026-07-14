@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="taxonomiesTitle taxonomiesDesc">
+  <title id="taxonomiesTitle">Taxonomies and Entities</title>
+  <desc id="taxonomiesDesc">Connected place, person, and category nodes</desc>
+  <rect width="200" height="200" fill="#f4f7f5"/>
+  <!-- Connection lines -->
+  <line x1="100" y1="56" x2="58" y2="118" stroke="#2e8555" stroke-width="2" opacity="0.55"/>
+  <line x1="100" y1="56" x2="142" y2="118" stroke="#2e8555" stroke-width="2" opacity="0.55"/>
+  <line x1="58" y1="118" x2="142" y2="118" stroke="#2e8555" stroke-width="2" opacity="0.55"/>
+  <line x1="100" y1="56" x2="100" y2="154" stroke="#2e8555" stroke-width="2" opacity="0.35"/>
+  <line x1="58" y1="118" x2="100" y2="154" stroke="#2e8555" stroke-width="2" opacity="0.35"/>
+  <line x1="142" y1="118" x2="100" y2="154" stroke="#2e8555" stroke-width="2" opacity="0.35"/>
+  <!-- Place / pin node (top) -->
+  <circle cx="100" cy="52" r="22" fill="#2e8555"/>
+  <path d="M100 40 C94 40 90 45 90 50 C90 58 100 66 100 66 C100 66 110 58 110 50 C110 45 106 40 100 40 Z" fill="#fbf8f1"/>
+  <circle cx="100" cy="50" r="3.5" fill="#2e8555"/>
+  <!-- Person node (left) -->
+  <circle cx="58" cy="118" r="22" fill="#205d3b"/>
+  <circle cx="58" cy="110" r="7" fill="#fbf8f1"/>
+  <path d="M44 132 C44 122 50 118 58 118 C66 118 72 122 72 132 Z" fill="#fbf8f1"/>
+  <!-- Category / tag node (right) -->
+  <circle cx="142" cy="118" r="22" fill="#29784c"/>
+  <path d="M132 110 H146 L154 118 L146 126 H132 Z" fill="#fbf8f1"/>
+  <circle cx="136" cy="118" r="2.5" fill="#29784c"/>
+  <!-- Property / building node (bottom) -->
+  <circle cx="100" cy="154" r="18" fill="#c9a227"/>
+  <rect x="92" y="148" width="16" height="14" rx="1" fill="#fbf8f1"/>
+  <path d="M90 148 L100 140 L110 148 Z" fill="#fbf8f1"/>
+</svg>

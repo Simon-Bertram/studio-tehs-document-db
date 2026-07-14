@@ -20,6 +20,14 @@ export const category = defineType({
       title: 'Historical Context / Description',
       type: 'text',
     }),
+    defineField({
+      name: 'legacyIdentifier',
+      title: 'Legacy Database Keyword',
+      type: 'string',
+      // Only shows up if the logged-in user has the 'administrator' role
+      hidden: ({currentUser}) =>
+        !currentUser?.roles?.find(({name}: {name: string}) => name === 'administrator'),
+    }),
   ],
   orderings: [
     {
