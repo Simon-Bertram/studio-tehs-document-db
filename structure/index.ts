@@ -57,6 +57,9 @@ export const structure: StructureResolver = (S) =>
               S.documentTypeListItem('township').title('Townships').icon(PinIcon),
               S.documentTypeListItem('location').title('Locations').icon(MarkerIcon),
               S.documentTypeListItem('person').title('Historical Persons').icon(UserIcon),
+              S.documentTypeListItem('familyLine')
+                .title('Families / Lineages')
+                .icon(UserIcon),
               S.documentTypeListItem('property')
                 .title('Properties & Buildings')
                 .icon(HomeIcon),
