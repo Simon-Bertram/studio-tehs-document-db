@@ -8,6 +8,7 @@ import {location} from './location'
 import {historicalImage} from './historicalImage'
 import {primarySource} from './primarySource'
 import {curatedEssay} from './curatedEssay'
+import {familyLine} from './familyLine'
 
 export const schemaTypes = [
   category,
@@ -20,4 +21,5 @@ export const schemaTypes = [
   historicalImage,
   primarySource,
   curatedEssay,
+  familyLine,
 ]

@@ -93,6 +93,68 @@ export const person = defineType({
         }),
       ],
     }),
+    defineField({
+      name: 'familyLines',
+      title: 'Family Lineages',
+      type: 'array',
+      of: [
+        defineArrayMember({
+          type: 'reference',
+          to: [{type: 'familyLine'}],
+        }),
+      ],
+      description:
+        'Tag this person to broader family groups (e.g., The Bean Family).',
+    }),
+    defineField({
+      name: 'immediateRelatives',
+      title: 'Known Immediate Relatives',
+      type: 'array',
+      description:
+        'Log specific known relationships (Spouse, Parent, Child, Sibling).',
+      of: [
+        defineArrayMember({
+          type: 'object',
+          name: 'immediateRelative',
+          fields: [
+            defineField({
+              name: 'relative',
+              title: 'Relative Profile',
+              type: 'reference',
+              to: [{type: 'person'}],
+            }),
+            defineField({
+              name: 'relationshipType',
+              title: 'Relationship to this person',
+              type: 'string',
+              options: {
+                list: [
+                  'Spouse',
+                  'Parent',
+                  'Child',
+                  'Sibling',
+                  'Cousin',
+                  'Other',
+                ],
+              },
+            }),
+          ],
+          preview: {
+            select: {
+              title: 'relative.firstName',
+              lastName: 'relative.lastName',
+              subtitle: 'relationshipType',
+            },
+            prepare({title, lastName, subtitle}) {
+              return {
+                title: [title, lastName].filter(Boolean).join(' ') || 'Unknown',
+                subtitle,
+              }
+            },
+          },
+        }),
+      ],
+    }),
   ],
   orderings: [
     {

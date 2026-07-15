@@ -25,8 +25,10 @@ export const category = defineType({
       title: 'Legacy Database Keyword',
       type: 'string',
       // Only shows up if the logged-in user has the 'administrator' role
-      hidden: ({currentUser}) =>
-        !currentUser?.roles?.find(({name}: {name: string}) => name === 'administrator'),
+      hidden: ({currentUser}: {currentUser: {roles?: {name: string}[]} | null}) =>
+        !currentUser?.roles?.some((role) => role.name === 'administrator'),
+      description:
+        'Don\'t use the hidden property at all right now. Instead, create a Field Group called "Migration Settings" and put the field there. It keeps the UI clean but accessible. Once your migration is 100% finished and the old database is offline, you simply go back into category.js and add hidden: true or readOnly: true to lock it away forever.',
     }),
   ],
   orderings: [

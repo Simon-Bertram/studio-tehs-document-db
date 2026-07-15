@@ -7,11 +7,12 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "Preserve",
+    "moduleResolution": "bundler",
     "moduleDetection": "force",
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true
   },
   "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "documentation"]
 }
