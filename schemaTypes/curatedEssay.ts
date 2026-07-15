@@ -41,7 +41,35 @@ export const curatedEssay = defineType({
         defineArrayMember({type: 'block'}),
         defineArrayMember({
           type: 'image',
+          title: 'Uploaded Image',
           options: {hotspot: true},
+          fields: [
+            defineField({
+              name: 'caption',
+              title: 'Caption',
+              type: 'string',
+            }),
+            defineField({
+              name: 'alt',
+              title: 'Alt Text',
+              type: 'string',
+              description: 'Important for accessibility.',
+            }),
+            defineField({
+              name: 'displayMode',
+              title: 'Image Layout / Placement',
+              type: 'string',
+              options: {
+                list: [
+                  {title: 'Full Width (Breaks text)', value: 'full'},
+                  {title: 'Float Left (Text wraps right)', value: 'left'},
+                  {title: 'Float Right (Text wraps left)', value: 'right'},
+                ],
+                layout: 'radio',
+              },
+              initialValue: 'full',
+            }),
+          ],
         }),
         defineArrayMember({
           type: 'object',
