@@ -8,11 +8,13 @@
     "build": "bun run docs:build && sanity build && bun run docs:dist",
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
+    "deploy:worker": "bun run build && wrangler deploy",
     "dev": "sanity dev",
     "docs:build": "bun run --cwd documentation build",
-    "docs:dist": "rm -rf dist/documentation && cp -R documentation/build dist/documentation && cp _redirects dist/_redirects",
+    "docs:dist": "rm -rf dist/documentation dist/_redirects && cp -R documentation/build dist/documentation",
     "docs:dev": "bun run --cwd documentation start",
     "docs:serve": "bun run --cwd documentation serve",
+    "preview:worker": "wrangler dev",
     "start": "sanity start"
   },
   "keywords": [
@@ -32,7 +34,8 @@
     "@types/react": "^19.2.14",
     "eslint": "^9.28",
     "prettier": "^3.5",
-    "typescript": "^5.8"
+    "typescript": "^5.8",
+    "wrangler": "^4.111.0"
   },
   "prettier": {
     "bracketSpacing": false,
