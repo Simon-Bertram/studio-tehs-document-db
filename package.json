@@ -5,11 +5,12 @@
   "main": "package.json",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "sanity build",
+    "build": "bun run docs:build && sanity build && bun run docs:dist",
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
     "dev": "sanity dev",
     "docs:build": "bun run --cwd documentation build",
+    "docs:dist": "rm -rf dist/documentation && cp -R documentation/build dist/documentation && cp _redirects dist/_redirects",
     "docs:dev": "bun run --cwd documentation start",
     "docs:serve": "bun run --cwd documentation serve",
     "start": "sanity start"
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^6.0.0",
+    "@types/node": "^26.1.1",
     "@types/react": "^19.2.14",
     "eslint": "^9.28",
     "prettier": "^3.5",
