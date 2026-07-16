@@ -43,7 +43,8 @@ export const primarySource = defineType({
       title: 'Exact Publication Date',
       type: 'date',
       group: 'identity',
-      description: 'Optional. Use when the exact calendar date is known (helps sorting and filtering).',
+      description:
+        'Optional. Use when the exact calendar date is known (helps sorting and filtering).',
     }),
     defineField({
       name: 'newspaper',
@@ -61,7 +62,7 @@ export const primarySource = defineType({
     defineField({
       name: 'transcription',
       title: 'Full Transcription Text',
-      type: 'text',
+      type: 'portableText',
       group: 'content',
     }),
     defineField({

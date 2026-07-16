@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # The Website
 
-The Website section covers public-facing research pages and bibliographic records for TEHS Quarterly articles.
+The Website section covers public-facing research pages and the TEHS Quarterly digital archive.
 
 ## Curated Essays & Overviews
 
@@ -23,8 +23,30 @@ Related: [Publish a curated essay](../common-tasks/publish-curated-essay.mdx)
 
 ## TEHS Quarterly Articles
 
-A **TEHS Quarterly Article** is citation metadata only (title, author, volume, issue, published date)—not the full article body.
+A **TEHS Quarterly Article** stores the full digitized text of a Quarterly piece, plus publication metadata and entity links.
 
-Archive documents (primary sources and historical images) reference these under **Research References**.
+Key fields:
+
+- **Publication Details** — title, author name, volume, issue, publication date (text), and start page for table-of-contents ordering
+- **Article Content** — Portable Text body with:
+  - Standard text blocks (paragraphs, headings)
+  - Inline images (caption and alt text)
+  - **Original Print Page Break** blocks to preserve academic pagination (e.g., "Page 3") without disrupting reading flow
+- **Tagged Entities** — references to properties and people mentioned in the article
+
+Archive documents (primary sources and historical images) can still reference these under **Research References**.
+
+### Dynamic table of contents
+
+Because articles are structured data rather than static HTML, the website can generate volume indexes on the fly. For example, to recreate the Volume 15 table of contents:
+
+```groq
+*[_type == "quarterlyArticle" && volume == 15] | order(startPage asc) {
+  title,
+  authorText,
+  startPage,
+  publishedDate
+}
+```
 
 Related: [Cite a TEHS Quarterly article](../common-tasks/cite-quarterly-article.mdx)

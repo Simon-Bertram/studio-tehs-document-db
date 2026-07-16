@@ -2,7 +2,6 @@ import {ArchiveIcon} from '@sanity/icons/Archive'
 import {BookIcon} from '@sanity/icons/Book'
 import {CaseIcon} from '@sanity/icons/Case'
 import {CogIcon} from '@sanity/icons/Cog'
-import {DocumentIcon} from '@sanity/icons/Document'
 import {DocumentTextIcon} from '@sanity/icons/DocumentText'
 import {EarthGlobeIcon} from '@sanity/icons/EarthGlobe'
 import {HomeIcon} from '@sanity/icons/Home'
@@ -44,7 +43,7 @@ export const structure: StructureResolver = (S) =>
                 .icon(BookIcon),
               S.documentTypeListItem('quarterlyArticle')
                 .title('TEHS Quarterly Articles')
-                .icon(DocumentIcon),
+                .icon(BookIcon),
             ]),
         ),
       S.listItem()
