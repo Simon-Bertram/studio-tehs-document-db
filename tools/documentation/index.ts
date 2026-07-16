@@ -1,5 +1,4 @@
 import {BookIcon} from '@sanity/icons/Book'
-import {DocumentationNavbar} from './DocumentationNavbar'
 import {DocumentationTool} from './DocumentationTool'
 
 export {DocumentationNavbar} from './DocumentationNavbar'

@@ -62,8 +62,9 @@ export const primarySource = defineType({
     defineField({
       name: 'transcription',
       title: 'Full Transcription Text',
-      type: 'portableText',
+      type: 'array',
       group: 'content',
+      of: [defineArrayMember({type: 'block'})],
     }),
     defineField({
       name: 'isSheriffSale',
