@@ -3,7 +3,7 @@ import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
 import {structure} from './structure'
-import {documentationTool} from './tools/documentation'
+import {documentationTool, DocumentationNavbar} from './tools/documentation'
 
 export default defineConfig({
   name: 'default',
@@ -15,6 +15,12 @@ export default defineConfig({
   plugins: [structureTool({structure}), visionTool()],
 
   tools: [documentationTool()],
+
+  studio: {
+    components: {
+      navbar: DocumentationNavbar,
+    },
+  },
 
   schema: {
     types: schemaTypes,
