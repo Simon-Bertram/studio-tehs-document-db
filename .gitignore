@@ -35,3 +35,6 @@
 /documentation/node_modules
 /documentation/build
 /documentation/.docusaurus
+
+# Environment variables
+.env
