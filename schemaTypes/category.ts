@@ -1,5 +1,6 @@
 import {TagIcon} from '@sanity/icons/Tag'
 import {defineField, defineType} from 'sanity'
+import {isUniqueStringField} from './lib/isUniqueStringField'
 
 export const category = defineType({
   name: 'category',
@@ -21,14 +22,15 @@ export const category = defineType({
       type: 'text',
     }),
     defineField({
-      name: 'legacyIdentifier',
-      title: 'Legacy Database Keyword',
+      name: 'migrationKey',
+      title: 'Migration Mapping Key',
       type: 'string',
-      // Only shows up if the logged-in user has the 'administrator' role
-      hidden: ({currentUser}: {currentUser: {roles?: {name: string}[]} | null}) =>
-        !currentUser?.roles?.some((role) => role.name === 'administrator'),
-      description:
-        'Don\'t use the hidden property at all right now. Instead, create a Field Group called "Migration Settings" and put the field there. It keeps the UI clean but accessible. Once your migration is 100% finished and the old database is offline, you simply go back into category.js and add hidden: true or readOnly: true to lock it away forever.',
+      description: 'Used by the CSV script to map old keyword tags to this category.',
+      hidden: true,
+      validation: (Rule) =>
+        Rule.custom(
+          isUniqueStringField('category', 'migrationKey', 'Migration mapping key must be unique'),
+        ),
     }),
   ],
   orderings: [

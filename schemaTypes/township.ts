@@ -15,13 +15,14 @@ export const township = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
-      name: 'legacyKeyword',
-      title: 'Legacy Keyword',
+      name: 'migrationKey',
+      title: 'Migration Mapping Key',
       type: 'string',
-      description: 'e.g., Cclip, used for mapping old MySQL records.',
+      description: 'Used by the CSV script to map old MySQL records to this township.',
+      hidden: true,
       validation: (Rule) =>
         Rule.custom(
-          isUniqueStringField('township', 'legacyKeyword', 'Legacy keyword must be unique'),
+          isUniqueStringField('township', 'migrationKey', 'Migration mapping key must be unique'),
         ),
     }),
   ],
@@ -35,7 +36,6 @@ export const township = defineType({
   preview: {
     select: {
       title: 'name',
-      subtitle: 'legacyKeyword',
     },
   },
 })

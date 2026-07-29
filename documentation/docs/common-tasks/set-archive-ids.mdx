@@ -1,0 +1,35 @@
+---
+sidebar_position: 14
+---
+
+# Set Archive IDs
+
+## Goal
+
+Record the official internal catalog number for each imported or cataloged item so archivists can find and match records consistently.
+
+## Where Archive IDs live
+
+| Field | Document type | Example | Rule |
+| --- | --- | --- | --- |
+| **Archive ID** (`archiveId`) | Primary Source | `Doc505` | Must be unique |
+| **Archive ID** (`archiveId`) | Historical Image | `MF37` | Must be unique |
+| **Archive ID** (`archiveId`) | Curated Essay | `942` | Must be unique |
+
+## Steps
+
+1. Open the Studio document for the primary source, historical image, or curated essay.
+2. Enter the **Archive ID**—use the existing catalog number when one already exists; do not invent a new one.
+3. Save; Studio validates uniqueness. Fix conflicts before publishing.
+
+## Field notes
+
+- Uniqueness is enforced so two documents cannot share the same Archive ID within the same document type.
+- Leave the field empty only when there is no corresponding catalog number yet.
+
+## Related
+
+- [Add a primary source](./add-primary-source.mdx)
+- [Catalog a historical image](./catalog-historical-image.mdx)
+- [Publish a curated essay](./publish-curated-essay.mdx)
+- [Taxonomies & Entities](../content-model/taxonomies-and-entities.mdx)

@@ -28,6 +28,9 @@
 # Dotenv and similar local-only files
 *.local
 
+# Migration reports (generated output)
+/migrations/csv-import/reports
+
 # Docusaurus
 /documentation/node_modules
 /documentation/build

@@ -1,5 +1,6 @@
 import {BookIcon} from '@sanity/icons/Book'
 import {defineArrayMember, defineField, defineType} from 'sanity'
+import {isUniqueStringField} from './lib/isUniqueStringField'
 
 export const curatedEssay = defineType({
   name: 'curatedEssay',
@@ -9,6 +10,15 @@ export const curatedEssay = defineType({
   description:
     'Use this to publish long-form modern research, overviews, or interactive pages with maps and tables.',
   fields: [
+    defineField({
+      name: 'archiveId',
+      title: 'Archive ID',
+      type: 'string',
+      description:
+        'Official internal reference number for this item (e.g., matching a CSV clipID from Book imports).',
+      validation: (Rule) =>
+        Rule.custom(isUniqueStringField('curatedEssay', 'archiveId', 'Archive ID must be unique')),
+    }),
     defineField({
       name: 'title',
       title: 'Page Title',
@@ -111,6 +121,11 @@ export const curatedEssay = defineType({
   ],
   orderings: [
     {
+      title: 'Archive ID',
+      name: 'archiveIdAsc',
+      by: [{field: 'archiveId', direction: 'asc'}],
+    },
+    {
       title: 'Title, A–Z',
       name: 'titleAsc',
       by: [{field: 'title', direction: 'asc'}],
@@ -119,7 +134,15 @@ export const curatedEssay = defineType({
   preview: {
     select: {
       title: 'title',
-      subtitle: 'slug.current',
+      archiveId: 'archiveId',
+      slug: 'slug.current',
+    },
+    prepare({title, archiveId, slug}) {
+      const subtitle = [archiveId, slug].filter(Boolean).join(' · ')
+      return {
+        title: title || 'Untitled essay',
+        subtitle,
+      }
     },
   },
 })

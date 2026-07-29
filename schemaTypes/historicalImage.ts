@@ -16,12 +16,13 @@ export const historicalImage = defineType({
   ],
   fields: [
     defineField({
-      name: 'identifier',
-      title: 'Identifier (e.g., MF37)',
+      name: 'archiveId',
+      title: 'Archive ID',
       type: 'string',
       group: 'identity',
+      description: 'Official internal reference number for this item (e.g., MF37).',
       validation: (Rule) =>
-        Rule.custom(isUniqueStringField('historicalImage', 'identifier', 'Identifier must be unique')),
+        Rule.custom(isUniqueStringField('historicalImage', 'archiveId', 'Archive ID must be unique')),
     }),
     defineField({
       name: 'serialNumber',
@@ -137,9 +138,9 @@ export const historicalImage = defineType({
   ],
   orderings: [
     {
-      title: 'Identifier',
-      name: 'identifierAsc',
-      by: [{field: 'identifier', direction: 'asc'}],
+      title: 'Archive ID',
+      name: 'archiveIdAsc',
+      by: [{field: 'archiveId', direction: 'asc'}],
     },
     {
       title: 'Caption, A–Z',
@@ -155,7 +156,7 @@ export const historicalImage = defineType({
   preview: {
     select: {
       title: 'title',
-      subtitle: 'identifier',
+      subtitle: 'archiveId',
       media: 'imageFile',
     },
   },

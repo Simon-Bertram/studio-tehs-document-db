@@ -17,12 +17,13 @@ export const primarySource = defineType({
   ],
   fields: [
     defineField({
-      name: 'docId',
-      title: 'Legacy Document ID (e.g., Doc505)',
+      name: 'archiveId',
+      title: 'Archive ID',
       type: 'string',
       group: 'identity',
+      description: 'Official internal reference number for this item (e.g., Doc505).',
       validation: (Rule) =>
-        Rule.custom(isUniqueStringField('primarySource', 'docId', 'Document ID must be unique')),
+        Rule.custom(isUniqueStringField('primarySource', 'archiveId', 'Archive ID must be unique')),
     }),
     defineField({
       name: 'title',
@@ -149,9 +150,9 @@ export const primarySource = defineType({
       by: [{field: 'date', direction: 'desc'}],
     },
     {
-      title: 'Document ID',
-      name: 'docIdAsc',
-      by: [{field: 'docId', direction: 'asc'}],
+      title: 'Archive ID',
+      name: 'archiveIdAsc',
+      by: [{field: 'archiveId', direction: 'asc'}],
     },
     {
       title: 'Title, A–Z',
