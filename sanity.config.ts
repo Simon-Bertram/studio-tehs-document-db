@@ -17,7 +17,7 @@ export default defineConfig({
     structureTool({structure}),
     visionTool(),
     googleMapsInput({
-      apiKey: process.env.GOOGLE_MAPS_API_KEY ?? '',
+      apiKey: process.env.SANITY_STUDIO_GOOGLE_MAPS_API_KEY ?? '',
       defaultZoom: 8,
       defaultRadiusZoom: 15, // zoom level for radius editing
       defaultLocation: {lat: 40.066344, lng: -75.455012},
