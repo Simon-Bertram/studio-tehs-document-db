@@ -2,27 +2,39 @@
 sidebar_position: 9
 ---
 
-# Record a business
+# Record a business or organisation
 
 ## Goal
 
-Capture a historical business with owners and places of business.
+Capture a historical business or organisation (company, civic group, institution) with type, owners, years active, and the property sites it occupied.
+
+## Property vs business
+
+- Create a [property](./model-a-property.mdx) for the physical site first when the building or tract is known.
+- The business document is the *organisation or company*, not the building.
+- Do **not** invent a property type for “organisation”—classify the site on the property (e.g. Institutional for a library or fire hall), then link both ways if useful.
 
 ## Steps
 
 1. Open **Taxonomies & Entities → Businesses** and create a new document.
 2. Set **Business Name** (required).
-3. Link **Owners / Operators** to Historical Person documents.
-4. Under **Place of Business**, reference one or more **Locations** and/or **Properties**.
-5. Publish when ready.
+3. Optionally set **Business Type**:
+   - **Civic / Community** — fire company, library, conservancy, horse show
+   - **Commercial / Industrial** — mill operators, water companies, silica/ore firms
+   - **Institutional** — Lincoln Institution, military units as operators
+4. Optionally add **Description** and **Years Active** (freeform, e.g. `1870–1920`).
+5. Link **Owners / Operators** to Historical Person documents.
+6. Under **Associated Properties / Sites**, reference one or more **Properties** (not villages—put geography on the property).
+7. On the property document, you may also set **Related Businesses / Organisations** so the link is visible from the site.
+8. Publish when ready.
 
 ## Field notes
 
-- Create person and place entities first if they do not already exist.
-- Places can mix villages (locations) and specific buildings (properties).
+- Create person and property entities first if they do not already exist.
+- Places of business are property references only.
 
 ## Related
 
+- [Model a property or estate](./model-a-property.mdx)
 - [Create and link people](./create-and-link-people.mdx)
 - [Link geography](./link-geography.mdx)
-- [Model a property or estate](./model-a-property.mdx)

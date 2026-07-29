@@ -4,6 +4,7 @@ import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
 import {structure} from './structure'
 import {documentationTool, DocumentationNavbar} from './tools/documentation'
+import {googleMapsInput} from '@sanity/google-maps-input'
 
 export default defineConfig({
   name: 'default',
@@ -12,7 +13,17 @@ export default defineConfig({
   projectId: 'z8o776vu',
   dataset: 'production',
 
-  plugins: [structureTool({structure}), visionTool()],
+  plugins: [
+    structureTool({structure}),
+    visionTool(),
+    googleMapsInput({
+      apiKey: process.env.GOOGLE_MAPS_API_KEY ?? '',
+      defaultZoom: 8,
+      defaultRadiusZoom: 15, // zoom level for radius editing
+      defaultLocation: {lat: 40.066344, lng: -75.455012},
+      defaultRadius: 1000, // for geopointRadius fields
+    }),
+  ],
 
   tools: [documentationTool()],
 

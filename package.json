@@ -23,6 +23,7 @@
   ],
   "dependencies": {
     "@sanity/client": "^7.25.0",
+    "@sanity/google-maps-input": "^6.1.9",
     "@sanity/icons": "^5.0.0",
     "@sanity/vision": "6.7.0",
     "csv-parser": "^3.2.1",

@@ -15,6 +15,41 @@ export const business = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'businessType',
+      title: 'Business Type',
+      type: 'string',
+      options: {
+        list: [
+          {
+            title: 'Civic / Community',
+            value: 'civic',
+          },
+          {
+            title: 'Commercial / Industrial',
+            value: 'commercial',
+          },
+          {
+            title: 'Institutional',
+            value: 'institutional',
+          },
+        ],
+      },
+      description:
+        'Civic: fire company, library, conservancy, horse show. Commercial: mill operators, water companies, silica/ore firms. Institutional: Lincoln Institution, military units as operators.',
+    }),
+    defineField({
+      name: 'description',
+      title: 'Description',
+      type: 'text',
+      description: 'Historical context for this business or organisation.',
+    }),
+    defineField({
+      name: 'yearsActive',
+      title: 'Years Active',
+      type: 'string',
+      description: 'Freeform date range, e.g. 1870–1920.',
+    }),
+    defineField({
       name: 'owners',
       title: 'Owners / Operators',
       type: 'array',
@@ -27,14 +62,16 @@ export const business = defineType({
     }),
     defineField({
       name: 'locations',
-      title: 'Place of Business',
+      title: 'Associated Properties / Sites',
       type: 'array',
       of: [
         defineArrayMember({
           type: 'reference',
-          to: [{type: 'location'}, {type: 'property'}],
+          to: [{type: 'property'}],
         }),
       ],
+      description:
+        'Link the physical property or site this business or organisation occupied or operated from.',
     }),
   ],
   orderings: [
@@ -47,6 +84,21 @@ export const business = defineType({
   preview: {
     select: {
       title: 'name',
+      businessType: 'businessType',
+    },
+    prepare(selection) {
+      const {title, businessType} = selection
+      const typeLabels: Record<string, string> = {
+        civic: 'Civic / Community',
+        commercial: 'Commercial / Industrial',
+        institutional: 'Institutional',
+      }
+      return {
+        title: title || 'Unnamed Business',
+        subtitle: businessType
+          ? typeLabels[businessType] || businessType
+          : undefined,
+      }
     },
   },
 })

@@ -6,24 +6,46 @@ sidebar_position: 8
 
 ## Goal
 
-Describe a building or land tract, including parent estates, residents, and deed references.
+Describe a building or land tract, including parent estates, residents, related organisations, and deed references.
+
+## Property vs business
+
+- **Property** = the physical site or building (house, church, mill, school building).
+- **Business / organisation** = who operated or occupied it (fire company, library, water company). Create a [business document](./record-a-business.mdx) and link it under **Related Businesses / Organisations**.
+- Do **not** invent a property type for “organisation.” Classify the *site* (usually Institutional), then link the org.
+- **Valley Forge** association = set **Specific Location** to Valley Forge. Encampment vs Industry themes come later; they are not property types.
+
+## Property types
+
+| Title | Value | Covers |
+| --- | --- | --- |
+| Dwelling / House | `dwelling` | House/building; VF buildings that are residences; former tenant houses; outbuildings on a parent estate |
+| Estate / Farm | `estate` | Large farms/estates (parent for houses and outbuildings); bare land tracts / former subdivision lots |
+| Church | `church` | Churches |
+| Inn / Tavern | `inn` | Inns |
+| Industrial | `industrial` | Mills; quarries & mines; utilities / water companies; VF industry sites |
+| Institutional | `institutional` | Schools; fire companies, libraries, conservancies, military/civic sites |
+| Railroad / Station | `railroad` | Railroads / stations |
 
 ## Steps
 
 1. Open **Taxonomies & Entities → Properties & Buildings** and create a new document.
-2. Set **Historical Name** (required) and **Property Type** (estate, dwelling, outbuilding, or subdivision lot).
-3. If this is a house or outbuilding on a larger farm, set **Parent Estate / Land Tract** (hidden when type is Estate).
-4. Set **Specific Location** or **Township** ([geography rules](./link-geography.mdx)).
-5. Add structural evolution notes, notable residents, modern address, year built, and Chester County deed citations (e.g. `U15 P466`).
-6. Link the property from primary sources via **Associated Property** when cataloging related notices.
+2. Set **Historical Name** (required) and **Property Type** (required; see table above).
+3. If this structure sits on a larger farm, set **Parent Estate / Land Tract** (hidden when type is Estate / Farm).
+4. Set **Specific Location** or **Township** ([geography rules](./link-geography.mdx)). Use a Valley Forge location when the site belongs there.
+5. Optionally link **Related Businesses / Organisations** for operators that occupy the site.
+6. Add structural evolution notes, notable residents, modern address, year built, and Chester County deed citations (e.g. `U15 P466`).
+7. Link the property from primary sources via **Associated Property** when cataloging related notices.
 
 ## Field notes
 
 - Example parent link: “By-The-Creek” → parent “Glenhardie Farm”.
+- Former outbuildings and lots use **Dwelling / House** or **Estate / Farm** plus `parentEstate` and evolution notes—there is no separate outbuilding or subdivision-lot type.
 - Deed citations are free-text strings matching familiar Chester County book/page forms.
 
 ## Related
 
+- [Record a business](./record-a-business.mdx)
 - [Link geography](./link-geography.mdx)
 - [Create and link people](./create-and-link-people.mdx)
 - [Enter a sheriff’s sale source](./enter-sheriff-sale.mdx)

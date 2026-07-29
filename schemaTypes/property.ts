@@ -20,12 +20,22 @@ export const property = defineType({
       type: 'string',
       options: {
         list: [
-          {title: 'Estate / Large Farm', value: 'estate'},
-          {title: 'Dwelling House / Tenant House', value: 'dwelling'},
-          {title: 'Outbuilding / Barn / Shop', value: 'outbuilding'},
-          {title: 'Subdivision Lot', value: 'subdivisionLot'},
+          {title: 'Dwelling / House', value: 'dwelling'},
+          {title: 'Estate / Farm', value: 'estate'},
+          {title: 'Church', value: 'church'},
+          {title: 'Inn / Tavern', value: 'inn'},
+          {title: 'Industrial', value: 'industrial'},
+          {title: 'Institutional', value: 'institutional'},
+          {title: 'Railroad / Station', value: 'railroad'},
         ],
       },
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'coordinates',
+      title: 'Coordinates',
+      type: 'geopoint',
+      description: 'Pinpoint the exact location. (Powered by @sanity/google-maps-input)',
     }),
     defineField({
       name: 'parentEstate',
@@ -42,7 +52,7 @@ export const property = defineType({
       type: 'reference',
       to: [{type: 'location'}],
       description:
-        'When set, township is taken from this location. Use Township only when there is no more specific place.',
+        'When set, township is taken from this location. Use Township only when there is no more specific place. For Valley Forge sites, set Location to Valley Forge.',
     }),
     defineField({
       name: 'township',
@@ -71,6 +81,19 @@ export const property = defineType({
       ],
       description:
         'Link to profile cards for John R.K. Scott, Harold B. Stassen, Norm Van Brocklin, etc.',
+    }),
+    defineField({
+      name: 'relatedBusinesses',
+      title: 'Related Businesses / Organisations',
+      type: 'array',
+      of: [
+        defineArrayMember({
+          type: 'reference',
+          to: [{type: 'business'}],
+        }),
+      ],
+      description:
+        'Link the organisation or company that operated or occupied this site (e.g. Paoli Library, a fire company). Create the business document first if needed.',
     }),
     defineField({
       name: 'modernAddress',
