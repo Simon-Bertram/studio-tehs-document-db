@@ -3,6 +3,7 @@ import path from 'node:path'
 import {fileURLToPath} from 'node:url'
 import {defineCliConfig} from 'sanity/cli'
 import type {Plugin} from 'vite'
+import {SANITY_DATASET, SANITY_PROJECT_ID} from './lib/sanityEnv'
 
 const rootDir = path.dirname(fileURLToPath(import.meta.url))
 const docsBuildDir = path.resolve(rootDir, 'documentation/build')
@@ -84,8 +85,8 @@ function serveDocumentationPlugin(): Plugin {
 
 export default defineCliConfig({
   api: {
-    projectId: 'z8o776vu',
-    dataset: 'production',
+    projectId: SANITY_PROJECT_ID,
+    dataset: SANITY_DATASET,
   },
   deployment: {
     /**

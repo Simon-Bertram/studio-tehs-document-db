@@ -3,8 +3,13 @@ import path from 'node:path'
 import {createClient} from '@sanity/client'
 import csvParser from 'csv-parser'
 import pLimit from 'p-limit'
+import {
+	SANITY_API_VERSION,
+	SANITY_DATASET,
+	SANITY_PROJECT_ID,
+} from '../../lib/sanityEnv'
 import {Audit} from './lib/audit'
-import type {CsvRow} from './lib/map-row'
+import type {CsvRow, ImportDoc} from './lib/map-row'
 import {mapRow} from './lib/map-row'
 import {buildTaxonomyLookups} from './lib/taxonomy'
 
@@ -26,8 +31,6 @@ const CSV_PATH = path.resolve(
 	args.find((a) => a.endsWith('.csv')) ?? 'migrations/data/documents.csv',
 )
 const REPORTS_DIR = path.resolve('migrations/csv-import/reports')
-const PROJECT_ID = 'z8o776vu'
-const DATASET = process.env.SANITY_DATASET ?? 'production'
 
 const token = process.env.SANITY_AUTH_TOKEN
 if (!DRY_RUN && !token) {
@@ -36,15 +39,36 @@ if (!DRY_RUN && !token) {
 }
 
 const sanityClient = createClient({
-	projectId: PROJECT_ID,
-	dataset: DATASET,
-	apiVersion: '2025-01-01',
+	projectId: SANITY_PROJECT_ID,
+	dataset: SANITY_DATASET,
+	apiVersion: SANITY_API_VERSION,
 	token,
 	useCdn: false,
 })
 
-// Concurrency: max 5 parallel writes to stay within rate limits
 const limit = pLimit(5)
+
+/**
+ * Upsert by archiveId: patch existing published doc, or create with a
+ * Sanity-generated _id. Never uses deterministic import IDs.
+ */
+async function upsertByArchiveId(doc: ImportDoc) {
+	const existingId = await sanityClient.fetch<string | null>(
+		`*[_type == $type && archiveId == $archiveId && !(_id in path("drafts.**"))][0]._id`,
+		{type: doc._type, archiveId: doc.archiveId},
+	)
+
+	if (existingId) {
+		const {_type, ...fields} = doc
+		await sanityClient.patch(existingId).set(fields).commit()
+		return {action: 'patched' as const, id: existingId}
+	}
+
+	const created = await sanityClient.create(
+		doc as unknown as {[key: string]: unknown; _type: string},
+	)
+	return {action: 'created' as const, id: created._id}
+}
 
 // ---------------------------------------------------------------------------
 // Main
@@ -53,6 +77,7 @@ async function run() {
 	const mode = DRY_RUN ? 'DRY RUN' : 'LIVE'
 	console.log(`--- CSV Import (${mode}) ---`)
 	console.log(`Source: ${CSV_PATH}`)
+	console.log(`Project: ${SANITY_PROJECT_ID} / ${SANITY_DATASET}`)
 	if (ROW_LIMIT < Infinity) console.log(`Row limit: ${ROW_LIMIT}`)
 	console.log()
 
@@ -61,9 +86,10 @@ async function run() {
 		process.exit(1)
 	}
 
-	const lookups = DRY_RUN && !token
-		? {categories: {}, townships: {}}
-		: await buildTaxonomyLookups(sanityClient)
+	const lookups =
+		DRY_RUN && !token
+			? {categories: {}, townships: {}}
+			: await buildTaxonomyLookups(sanityClient)
 
 	const audit = new Audit()
 	const rows: CsvRow[] = []
@@ -81,7 +107,7 @@ async function run() {
 	audit.totalRows = rows.length
 	console.log(`Parsed ${rows.length} rows from CSV.\n`)
 
-	const docs: Record<string, unknown>[] = []
+	const docs: ImportDoc[] = []
 
 	const tasks = rows.map((row) =>
 		limit(async () => {
@@ -93,10 +119,10 @@ async function run() {
 				console.log(`[DRY RUN] ${doc._type} → Archive ID: ${doc.archiveId}`)
 			} else {
 				try {
-					// createOrReplace: idempotent during testing.
-					// Switch to createIfNotExists after archivists begin editing.
-					await sanityClient.createOrReplace(doc as Parameters<typeof sanityClient.createOrReplace>[0])
-					console.log(`[OK] ${doc._type} → Archive ID: ${doc.archiveId}`)
+					const result = await upsertByArchiveId(doc)
+					console.log(
+						`[OK] ${result.action} ${doc._type} → Archive ID: ${doc.archiveId} (${result.id})`,
+					)
 				} catch (err) {
 					const msg = err instanceof Error ? err.message : String(err)
 					audit.fail(`clipID ${doc.archiveId}: API error — ${msg}`)
@@ -107,7 +133,6 @@ async function run() {
 
 	await Promise.all(tasks)
 
-	// Write preview file in dry-run mode
 	if (DRY_RUN && docs.length > 0) {
 		fs.mkdirSync(REPORTS_DIR, {recursive: true})
 		const previewPath = path.join(REPORTS_DIR, 'preview.ndjson')

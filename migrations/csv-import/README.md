@@ -31,28 +31,31 @@ bun run csv-import -- /path/to/full-export.csv --limit 10
 
 Dry-run is the default. Pass `--live` to actually write to Sanity.
 
+Optional env overrides: `SANITY_PROJECT_ID`, `SANITY_DATASET`.
+
 ## What the script does
 
 1. Parses the CSV (handles multiline fields, `nan`/`NULL` cleanup).
 2. Maps each row's `type` column to a Sanity schema type.
 3. Looks up `key1`–`key7` and `keywords` against category and township
    `migrationKey` dictionaries fetched from Sanity.
-4. Builds a Sanity document with a deterministic `_id` (`imported-doc-{clipID}`).
+4. Builds a Sanity document **without** a fixed `_id` (natural key is
+   `archiveId` from `clipID`).
 5. In dry-run mode, writes `migrations/csv-import/reports/preview.ndjson`.
-6. In live mode, writes via `createOrReplace` with p-limit(5) concurrency.
+6. In live mode, upserts by `archiveId`: patches an existing published
+   document or creates one with a Sanity-generated `_id` (p-limit 5).
 7. Prints an audit report with counts, missing taxonomies, and errors.
 
-## Switching to createIfNotExists
+## Columns not imported
 
-Once archivists begin editing documents in Studio, change the mutation
-in `import-documents.ts` from `createOrReplace` to `createIfNotExists`
-so re-runs only create missing records without overwriting manual edits.
+- **`public`** — legacy MySQL visibility flag. Intentionally ignored;
+  there is no matching schema field. Visibility is not modeled in Studio yet.
 
 ## Post-migration Vision checks
 
 ```groq
-// Total imported count
-count(*[_type in ["historicalImage","primarySource","curatedEssay"] && _id match "imported-doc-*"])
+// Count by archiveId presence
+count(*[_type in ["historicalImage","primarySource","curatedEssay"] && defined(archiveId)])
 
 // Documents missing subject tags
 *[_type == "primarySource" && !defined(subjects)]

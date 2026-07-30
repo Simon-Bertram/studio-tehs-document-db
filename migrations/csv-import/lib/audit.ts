@@ -78,7 +78,7 @@ export class Audit {
 
 		console.log('\nSuggested Vision checks:')
 		console.log(
-			'  count(*[_type in ["historicalImage","primarySource","curatedEssay"] && _id match "imported-doc-*"])',
+			'  count(*[_type in ["historicalImage","primarySource","curatedEssay"] && defined(archiveId)])',
 		)
 		console.log('  *[_type == "primarySource" && !defined(subjects)]')
 		console.log('=========================================\n')

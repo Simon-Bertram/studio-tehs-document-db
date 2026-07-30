@@ -5,35 +5,36 @@ import {schemaTypes} from './schemaTypes'
 import {structure} from './structure'
 import {documentationTool, DocumentationNavbar} from './tools/documentation'
 import {googleMapsInput} from '@sanity/google-maps-input'
+import {SANITY_DATASET, SANITY_PROJECT_ID} from './lib/sanityEnv'
 
 export default defineConfig({
-  name: 'default',
-  title: 'tehs-document-db',
+	name: 'default',
+	title: 'tehs-document-db',
 
-  projectId: 'z8o776vu',
-  dataset: 'production',
+	projectId: SANITY_PROJECT_ID,
+	dataset: SANITY_DATASET,
 
-  plugins: [
-    structureTool({structure}),
-    visionTool(),
-    googleMapsInput({
-      apiKey: process.env.SANITY_STUDIO_GOOGLE_MAPS_API_KEY ?? '',
-      defaultZoom: 8,
-      defaultRadiusZoom: 15, // zoom level for radius editing
-      defaultLocation: {lat: 40.066344, lng: -75.455012},
-      defaultRadius: 1000, // for geopointRadius fields
-    }),
-  ],
+	plugins: [
+		structureTool({structure}),
+		visionTool(),
+		googleMapsInput({
+			apiKey: process.env.SANITY_STUDIO_GOOGLE_MAPS_API_KEY ?? '',
+			defaultZoom: 8,
+			defaultRadiusZoom: 15,
+			defaultLocation: {lat: 40.066344, lng: -75.455012},
+			defaultRadius: 1000,
+		}),
+	],
 
-  tools: [documentationTool()],
+	tools: [documentationTool()],
 
-  studio: {
-    components: {
-      navbar: DocumentationNavbar,
-    },
-  },
+	studio: {
+		components: {
+			navbar: DocumentationNavbar,
+		},
+	},
 
-  schema: {
-    types: schemaTypes,
-  },
+	schema: {
+		types: schemaTypes,
+	},
 })

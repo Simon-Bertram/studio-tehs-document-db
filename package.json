@@ -27,6 +27,7 @@
     "@sanity/icons": "^5.0.0",
     "@sanity/vision": "6.7.0",
     "csv-parser": "^3.2.1",
+    "nanoid": "^5.1.5",
     "p-limit": "^7.3.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
@@ -46,6 +47,7 @@
     "bracketSpacing": false,
     "printWidth": 100,
     "semi": false,
-    "singleQuote": true
+    "singleQuote": true,
+    "useTabs": true
   }
 }
