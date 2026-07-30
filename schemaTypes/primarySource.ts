@@ -123,6 +123,8 @@ export const primarySource = defineType({
       title: 'Subjects',
       type: 'array',
       group: 'research',
+      description:
+        'Archive search themes (e.g. Schools, Railroads, Farms). Not Property Type or Business Type—those classify building and organisation entities under Taxonomies.',
       of: [
         defineArrayMember({
           type: 'reference',

@@ -18,6 +18,8 @@ export const property = defineType({
       name: 'propertyType',
       title: 'Property Type',
       type: 'string',
+      description:
+        'Building classification for this site (one type). Not a Subject Category—those are themes for tagging archive clippings and photos (e.g. Churches, Railroads), not for classifying properties.',
       options: {
         list: [
           {title: 'Dwelling / House', value: 'dwelling'},

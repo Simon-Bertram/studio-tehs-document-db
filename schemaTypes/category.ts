@@ -8,7 +8,7 @@ export const category = defineType({
   type: 'document',
   icon: TagIcon,
   description:
-    'Use for the broad topics and themes from your original subject lists and advanced-search dropdowns (e.g., Schools, Railroads, Farms). Tag historical images and primary sources with these so related material can be filtered and discovered.',
+    'Themes for archive search and discovery (e.g. Schools, Railroads, Farms, Genealogy). Tag primary sources and historical images so related material can be filtered. Not the same as Property Type or Business Type—those classify a building or organisation entity.',
   fields: [
     defineField({
       name: 'title',
