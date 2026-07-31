@@ -7,20 +7,21 @@ import {
 
 export const business = defineType({
 	name: 'business',
-	title: 'Historical Business',
+	title: 'Historical Organisation',
 	type: 'document',
 	icon: CaseIcon,
 	fields: [
 		defineField({
 			name: 'name',
-			title: 'Business Name',
+			title: 'Organisation Name',
 			type: 'string',
-			description: 'e.g., H. & B.F. Bean’s Business, Valley Forge Silica, Sand and Ore Company',
+			description:
+				'e.g., Great Valley Presbyterian Church, H. & B.F. Bean’s Lumber Yard, Valley Forge Silica, Sand and Ore Company',
 			validation: (Rule) => Rule.required(),
 		}),
 		defineField({
 			name: 'businessType',
-			title: 'Business Type',
+			title: 'Organisation Type',
 			type: 'string',
 			options: {
 				list: [...BUSINESS_TYPES],
@@ -32,7 +33,7 @@ export const business = defineType({
 			name: 'description',
 			title: 'Description',
 			type: 'text',
-			description: 'Historical context for this business or organisation.',
+			description: 'Historical context for this organisation.',
 		}),
 		defineField({
 			name: 'yearsActive',
@@ -62,7 +63,7 @@ export const business = defineType({
 				}),
 			],
 			description:
-				'Canonical link from this organisation to the properties it occupied. Related businesses are found from a property via this field (not stored on the property).',
+				'Canonical link from this organisation to the properties it occupied. Related organisations are found from a property via this field (not stored on the property).',
 		}),
 	],
 	orderings: [
@@ -86,7 +87,7 @@ export const business = defineType({
 						]
 					: businessType
 			return {
-				title: title || 'Unnamed Business',
+				title: title || 'Unnamed Organisation',
 				subtitle: label || undefined,
 			}
 		},
