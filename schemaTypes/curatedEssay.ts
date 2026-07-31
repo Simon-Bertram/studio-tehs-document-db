@@ -1,5 +1,6 @@
 import {BookIcon} from '@sanity/icons/Book'
 import {defineArrayMember, defineField, defineType} from 'sanity'
+import {DocumentWithDescription} from './components/DocumentWithDescription'
 import {archiveIdField} from './shared/archiveIdField'
 import {organisationsField} from './shared/organisationsField'
 
@@ -10,6 +11,9 @@ export const curatedEssay = defineType({
 	icon: BookIcon,
 	description:
 		'Use this to publish long-form modern research, overviews, or interactive pages with maps and tables.',
+	components: {
+		input: DocumentWithDescription,
+	},
 	fields: [
 		archiveIdField(
 			'curatedEssay',
