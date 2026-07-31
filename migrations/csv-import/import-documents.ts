@@ -88,7 +88,7 @@ async function run() {
 
 	const lookups =
 		DRY_RUN && !token
-			? {categories: {}, townships: {}}
+			? {categories: {}, townships: {}, organisations: {}}
 			: await buildTaxonomyLookups(sanityClient)
 
 	const audit = new Audit()

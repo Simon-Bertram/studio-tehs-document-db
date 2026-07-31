@@ -31,16 +31,18 @@ Capture a historical organisation—including commercial businesses, civic group
 3. Create a new document from that list. Creating from Commercial, Civic, or Institutional **presets Organisation type** for you.
 4. Set **Organisation Name** (required).
 5. Confirm or change **Organisation type** if needed. Changing type moves the document between the filtered lists.
-6. Optionally add **Description** and **Years Active** (freeform, e.g. `1870–1920`).
-7. Link **Owners / Operators** to Historical Person documents.
-8. Under **Associated Properties / Sites**, reference one or more **Properties** (not villages—put geography on the property). This is the single source of truth for organisation↔site links.
-9. Publish when ready.
+6. Optionally set **Migration Mapping Key** to the legacy CSV keyword (e.g. `Lincoln` for the Lincoln Institution). This field is visible during migration so you can fill keys; hide it after cutover.
+7. Optionally add **Description** and **Years Active** (freeform, e.g. `1870–1920`).
+8. Link **Owners / Operators** to Historical Person documents.
+9. Under **Associated Properties / Sites**, reference one or more **Properties** (not villages—put geography on the property). This is the single source of truth for organisation↔site links.
+10. Publish when ready.
 
 ## Field notes
 
 - Create person and property entities first if they do not already exist.
 - Places of business or worship are property references only.
 - Documents without an Organisation type appear only under **All organisations**, not in the typed lists.
+- **Migration Mapping Key** maps CSV keywords onto this organisation during import. Entity keywords like `Lincoln` belong here, not on a Subject Category.
 
 ## Related
 

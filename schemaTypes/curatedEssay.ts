@@ -1,6 +1,7 @@
 import {BookIcon} from '@sanity/icons/Book'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 import {archiveIdField} from './shared/archiveIdField'
+import {organisationsField} from './shared/organisationsField'
 
 export const curatedEssay = defineType({
 	name: 'curatedEssay',
@@ -38,6 +39,7 @@ export const curatedEssay = defineType({
 				}),
 			],
 		}),
+		organisationsField(),
 		defineField({
 			name: 'body',
 			title: 'Page Content & Layout Canvas',

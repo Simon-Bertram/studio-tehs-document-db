@@ -2,6 +2,7 @@ import {DocumentTextIcon} from '@sanity/icons/DocumentText'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 import {archiveIdField} from './shared/archiveIdField'
 import {citationsField} from './shared/citationsField'
+import {organisationsField} from './shared/organisationsField'
 import {subjectsField} from './shared/subjectsField'
 import {townshipWhenNoPlaceField} from './shared/townshipWhenNoPlaceField'
 
@@ -109,6 +110,7 @@ export const primarySource = defineType({
 				}),
 			],
 		}),
+		organisationsField('research'),
 		subjectsField('research'),
 		citationsField('research'),
 	],

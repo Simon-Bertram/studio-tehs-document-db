@@ -2,6 +2,7 @@ import {ImageIcon} from '@sanity/icons/Image'
 import {defineField, defineType} from 'sanity'
 import {archiveIdField} from './shared/archiveIdField'
 import {citationsField} from './shared/citationsField'
+import {organisationsField} from './shared/organisationsField'
 import {subjectsField} from './shared/subjectsField'
 import {townshipWhenNoPlaceField} from './shared/townshipWhenNoPlaceField'
 
@@ -66,6 +67,7 @@ export const historicalImage = defineType({
 			group: 'place',
 			description: 'Only needed when no specific location is set.',
 		}),
+		organisationsField('research'),
 		subjectsField('research'),
 		citationsField('research'),
 		defineField({

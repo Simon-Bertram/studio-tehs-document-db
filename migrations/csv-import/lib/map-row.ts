@@ -52,6 +52,7 @@ export interface ImportDocBase {
 	archiveId: string
 	title: string
 	subjects?: SanityRef[]
+	organisations?: SanityRef[]
 	township?: {_type: 'reference'; _ref: string}
 	townships?: SanityRef[]
 }
@@ -174,6 +175,7 @@ function applyTaxonomy(
 	]
 
 	const subjects: SanityRef[] = []
+	const organisations: SanityRef[] = []
 	const townships: SanityRef[] = []
 	const seenIds = new Set<string>()
 
@@ -189,16 +191,24 @@ function applyTaxonomy(
 			continue
 		}
 
+		const organisationId = lookups.organisations[normalised]
+		if (organisationId && !seenIds.has(organisationId)) {
+			seenIds.add(organisationId)
+			organisations.push(ref(organisationId))
+			continue
+		}
+
 		const categoryId = lookups.categories[normalised]
 		if (categoryId && !seenIds.has(categoryId)) {
 			seenIds.add(categoryId)
 			subjects.push(ref(categoryId))
-		} else if (!townshipId && !categoryId) {
+		} else if (!townshipId && !organisationId && !categoryId) {
 			audit.missingTaxonomy(keyword)
 		}
 	}
 
 	if (subjects.length > 0) doc.subjects = subjects
+	if (organisations.length > 0) doc.organisations = organisations
 
 	if (townships.length > 0) {
 		if (doc._type === 'curatedEssay') {

@@ -1,5 +1,6 @@
 import {CaseIcon} from '@sanity/icons/Case'
 import {defineArrayMember, defineField, defineType} from 'sanity'
+import {isUniqueStringField} from './lib/isUniqueStringField'
 import {
 	BUSINESS_TYPE_LABELS,
 	BUSINESS_TYPES,
@@ -28,6 +29,21 @@ export const business = defineType({
 			},
 			description:
 				'Organisation classification for this entity (one type)—not a Subject Category. Categories like Businesses or Organizations are archive search themes for clippings/photos. Civic: fire company, library, conservancy, horse show. Commercial: mill operators, water companies, silica/ore firms. Institutional: Lincoln Institution, military units as operators.',
+		}),
+		defineField({
+			name: 'migrationKey',
+			title: 'Migration Mapping Key',
+			type: 'string',
+			description:
+				'Used by the CSV script to map legacy keywords (e.g. Lincoln) to this organisation. Visible during migration; hide after cutover.',
+			validation: (Rule) =>
+				Rule.custom(
+					isUniqueStringField(
+						'business',
+						'migrationKey',
+						'Migration mapping key must be unique',
+					),
+				),
 		}),
 		defineField({
 			name: 'description',

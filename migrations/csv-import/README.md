@@ -5,8 +5,9 @@ Imports historical documents from a MySQL-exported CSV into Sanity as
 
 ## Prerequisites
 
-1. Categories and townships exist in Sanity with `migrationKey` values
-   matching the CSV keyword columns.
+1. Categories, townships, and organisations exist in Sanity with
+   `migrationKey` values matching the CSV keyword columns (e.g. put
+   `Lincoln` on the Lincoln Institution organisation document).
 2. A `SANITY_AUTH_TOKEN` environment variable with write access (only
    required for live writes).
 
@@ -37,8 +38,10 @@ Optional env overrides: `SANITY_PROJECT_ID`, `SANITY_DATASET`.
 
 1. Parses the CSV (handles multiline fields, `nan`/`NULL` cleanup).
 2. Maps each row's `type` column to a Sanity schema type.
-3. Looks up `key1`–`key7` and `keywords` against category and township
-   `migrationKey` dictionaries fetched from Sanity.
+3. Looks up `key1`–`key7` and `keywords` against migrationKey
+   dictionaries (priority: township → organisation/`business` →
+   category). Entity keywords like `Lincoln` belong on a Historical
+   Organisation, not a Subject Category.
 4. Builds a Sanity document **without** a fixed `_id` (natural key is
    `archiveId` from `clipID`).
 5. In dry-run mode, writes `migrations/csv-import/reports/preview.ndjson`.

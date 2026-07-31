@@ -19,7 +19,6 @@ export const township = defineType({
       title: 'Migration Mapping Key',
       type: 'string',
       description: 'Used by the CSV script to map old MySQL records to this township.',
-      hidden: true,
       validation: (Rule) =>
         Rule.custom(
           isUniqueStringField('township', 'migrationKey', 'Migration mapping key must be unique'),

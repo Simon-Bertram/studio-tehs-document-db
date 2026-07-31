@@ -25,8 +25,8 @@ export const category = defineType({
       name: 'migrationKey',
       title: 'Migration Mapping Key',
       type: 'string',
-      description: 'Used by the CSV script to map old keyword tags to this category.',
-      hidden: true,
+      description:
+        'Used by the CSV script to map old keyword tags to this category. Visible during migration; hide after cutover.',
       validation: (Rule) =>
         Rule.custom(
           isUniqueStringField('category', 'migrationKey', 'Migration mapping key must be unique'),
