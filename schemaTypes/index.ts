@@ -9,6 +9,8 @@ import {historicalImage} from './historicalImage'
 import {primarySource} from './primarySource'
 import {curatedEssay} from './curatedEssay'
 import {familyLine} from './familyLine'
+import {donation} from './donation'
+import {donationCategory} from './donationCategory'
 import {mapEmbed} from './objects/mapEmbed'
 import {internalSubLinks} from './objects/internalSubLinks'
 import {censusRecord} from './objects/censusRecord'
@@ -27,6 +29,8 @@ export const schemaTypes = [
 	primarySource,
 	curatedEssay,
 	familyLine,
+	donation,
+	donationCategory,
 	mapEmbed,
 	internalSubLinks,
 	censusRecord,

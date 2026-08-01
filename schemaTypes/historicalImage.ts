@@ -84,9 +84,12 @@ export const historicalImage = defineType({
 		}),
 		defineField({
 			name: 'donation',
-			title: 'Donation Metadata',
-			type: 'string',
+			title: 'Donation',
+			type: 'reference',
 			group: 'provenance',
+			to: [{type: 'donation'}],
+			description:
+				'Link this image to its accession / gift record. If this photograph is part of a new donation, create the Donation first (The Archive → Donations, or Create new here): name, donor, acquisition date, and donation categories—then link it. Reuse an existing Donation when the image belongs to a gift already recorded.',
 		}),
 		defineField({
 			name: 'photographer',

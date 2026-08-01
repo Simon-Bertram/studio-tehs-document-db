@@ -1,7 +1,13 @@
 import {BookIcon} from '@sanity/icons/Book'
+import {ImageIcon} from '@sanity/icons/Image'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 import {DocumentWithDescription} from './components/DocumentWithDescription'
 import {archiveIdField} from './shared/archiveIdField'
+import {
+	IMAGE_ROLES,
+	IMAGE_ROLE_VALUES,
+	type ImageRoleValue,
+} from './shared/imageRoles'
 import {organisationsField} from './shared/organisationsField'
 
 export const curatedEssay = defineType({
@@ -53,6 +59,7 @@ export const curatedEssay = defineType({
 				defineArrayMember({
 					type: 'image',
 					title: 'Uploaded Image',
+					icon: ImageIcon,
 					options: {hotspot: true},
 					fields: [
 						defineField({
@@ -65,22 +72,31 @@ export const curatedEssay = defineType({
 							title: 'Alt Text',
 							type: 'string',
 							description: 'Important for accessibility.',
+							validation: (Rule) =>
+								Rule.required().warning(
+									'Alt text helps accessibility and SEO',
+								),
 						}),
 						defineField({
 							name: 'imageRole',
 							title: 'Image Role',
 							type: 'string',
 							description:
-								'Semantic role for the image in the essay (not CSS layout). Frontends map these to presentation.',
+								'Primary = main illustration; Supporting = secondary. The website decides layout.',
 							options: {
-								list: [
-									{title: 'Figure (primary illustration)', value: 'figure'},
-									{title: 'Aside (supporting, start side)', value: 'asideStart'},
-									{title: 'Aside (supporting, end side)', value: 'asideEnd'},
-								],
+								list: [...IMAGE_ROLES],
 								layout: 'radio',
+								direction: 'vertical',
 							},
 							initialValue: 'figure',
+							validation: (Rule) =>
+								Rule.required().custom((value) =>
+									IMAGE_ROLE_VALUES.includes(
+										value as ImageRoleValue,
+									)
+										? true
+										: 'Choose a valid image role',
+								),
 						}),
 					],
 				}),

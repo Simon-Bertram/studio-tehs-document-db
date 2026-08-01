@@ -1,4 +1,5 @@
 import {ArchiveIcon} from '@sanity/icons/Archive'
+import {BasketIcon} from '@sanity/icons/Basket'
 import {BookIcon} from '@sanity/icons/Book'
 import {CaseIcon} from '@sanity/icons/Case'
 import {CogIcon} from '@sanity/icons/Cog'
@@ -9,6 +10,7 @@ import {ImageIcon} from '@sanity/icons/Image'
 import {MarkerIcon} from '@sanity/icons/Marker'
 import {PinIcon} from '@sanity/icons/Pin'
 import {TagIcon} from '@sanity/icons/Tag'
+import {TagsIcon} from '@sanity/icons/Tags'
 import {UserIcon} from '@sanity/icons/User'
 import type {StructureResolver} from 'sanity/structure'
 
@@ -29,6 +31,9 @@ export const structure: StructureResolver = (S) =>
 							S.documentTypeListItem('historicalImage')
 								.title('Historical Images')
 								.icon(ImageIcon),
+							S.documentTypeListItem('donation')
+								.title('Donations')
+								.icon(BasketIcon),
 						]),
 				),
 			S.listItem()
@@ -133,6 +138,9 @@ export const structure: StructureResolver = (S) =>
 							S.documentTypeListItem('category')
 								.title('Subject Categories')
 								.icon(TagIcon),
+							S.documentTypeListItem('donationCategory')
+								.title('Donation Categories')
+								.icon(TagsIcon),
 						]),
 				),
 		])

@@ -17,13 +17,13 @@
     "docs:serve": "bun run --cwd documentation serve",
     "preview:worker": "wrangler dev",
     "csv-import": "bun run migrations/csv-import/import-documents.ts",
+    "migrations:run": "sanity migrations run",
     "start": "sanity start"
   },
   "keywords": [
     "sanity"
   ],
   "dependencies": {
-    "@sanity/cli": "^7.15.1",
     "@sanity/client": "^7.26.0",
     "@sanity/google-maps-input": "^6.1.9",
     "@sanity/icons": "^5.2.1",
