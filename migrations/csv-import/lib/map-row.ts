@@ -84,6 +84,19 @@ export type ImportDoc =
 	| PrimarySourceImportDoc
 	| CuratedEssayImportDoc
 
+export interface TaxonomyMapResult {
+	mappedKeywords: string[]
+	unmappedKeywords: string[]
+}
+
+export interface MapRowResult {
+	doc: ImportDoc
+	csvType: string
+	title: string
+	mappedKeywords: string[]
+	unmappedKeywords: string[]
+}
+
 function toPortableText(text: string): PortableTextBlock[] {
 	return [
 		{
@@ -162,7 +175,7 @@ function applyTaxonomy(
 	row: CsvRow,
 	lookups: TaxonomyLookups,
 	audit: Audit,
-): void {
+): TaxonomyMapResult {
 	const rawKeys = [
 		row.key1,
 		row.key2,
@@ -178,6 +191,9 @@ function applyTaxonomy(
 	const organisations: SanityRef[] = []
 	const townships: SanityRef[] = []
 	const seenIds = new Set<string>()
+	const mappedKeywords: string[] = []
+	const unmappedKeywords: string[] = []
+	const seenUnmapped = new Set<string>()
 
 	for (const raw of rawKeys) {
 		const keyword = cleanString(raw)
@@ -185,25 +201,39 @@ function applyTaxonomy(
 		const normalised = keyword.toLowerCase()
 
 		const townshipId = lookups.townships[normalised]
-		if (townshipId && !seenIds.has(townshipId)) {
-			seenIds.add(townshipId)
-			townships.push(ref(townshipId))
+		if (townshipId) {
+			if (!seenIds.has(townshipId)) {
+				seenIds.add(townshipId)
+				townships.push(ref(townshipId))
+				mappedKeywords.push(keyword)
+			}
 			continue
 		}
 
 		const organisationId = lookups.organisations[normalised]
-		if (organisationId && !seenIds.has(organisationId)) {
-			seenIds.add(organisationId)
-			organisations.push(ref(organisationId))
+		if (organisationId) {
+			if (!seenIds.has(organisationId)) {
+				seenIds.add(organisationId)
+				organisations.push(ref(organisationId))
+				mappedKeywords.push(keyword)
+			}
 			continue
 		}
 
 		const categoryId = lookups.categories[normalised]
-		if (categoryId && !seenIds.has(categoryId)) {
-			seenIds.add(categoryId)
-			subjects.push(ref(categoryId))
-		} else if (!townshipId && !organisationId && !categoryId) {
-			audit.missingTaxonomy(keyword)
+		if (categoryId) {
+			if (!seenIds.has(categoryId)) {
+				seenIds.add(categoryId)
+				subjects.push(ref(categoryId))
+				mappedKeywords.push(keyword)
+			}
+			continue
+		}
+
+		if (!seenUnmapped.has(normalised)) {
+			seenUnmapped.add(normalised)
+			unmappedKeywords.push(keyword)
+			audit.missingTaxonomy(keyword, doc.archiveId)
 		}
 	}
 
@@ -222,29 +252,45 @@ function applyTaxonomy(
 			}
 		}
 	}
+
+	return {mappedKeywords, unmappedKeywords}
 }
 
 /**
  * Transform a single CSV row into a Sanity document (or null on fatal row error).
  * Does not set `_id` — callers upsert by `archiveId`.
+ * Does not record import success — callers record after dry-run / live write.
  * The CSV `public` column is intentionally ignored (no matching schema field).
  */
 export function mapRow(
 	row: CsvRow,
 	lookups: TaxonomyLookups,
 	audit: Audit,
-): ImportDoc | null {
+): MapRowResult | null {
 	const clipId = normalizeClipId(row.clipID)
 	const title = cleanString(row.title)
+	const csvType = cleanString(row.type) ?? String(row.type ?? '')
 
 	if (!clipId) {
-		audit.fail(`Row missing clipID. Title: "${title ?? 'Unknown'}". Skipped.`)
+		audit.skip({
+			clipId: undefined,
+			title: title ?? undefined,
+			csvType: csvType || undefined,
+			reason: 'missing_clip_id',
+			detail: `Row missing clipID. Title: "${title ?? 'Unknown'}".`,
+		})
 		return null
 	}
 
 	const schemaType = resolveSchemaType(row.type)
 	if (!schemaType) {
-		audit.fail(`clipID ${clipId}: unknown type "${row.type}". Skipped.`)
+		audit.skip({
+			clipId,
+			title: title ?? undefined,
+			csvType: csvType || undefined,
+			reason: 'unknown_type',
+			detail: `Unknown type "${row.type}". Decide schema manually or fix CSV.`,
+		})
 		return null
 	}
 
@@ -263,7 +309,18 @@ export function mapRow(
 			break
 	}
 
-	applyTaxonomy(doc, row, lookups, audit)
-	audit.succeed(schemaType)
-	return doc
+	const {mappedKeywords, unmappedKeywords} = applyTaxonomy(
+		doc,
+		row,
+		lookups,
+		audit,
+	)
+
+	return {
+		doc,
+		csvType: csvType || String(row.type ?? ''),
+		title: resolvedTitle,
+		mappedKeywords,
+		unmappedKeywords,
+	}
 }

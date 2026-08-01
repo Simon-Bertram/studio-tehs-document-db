@@ -1,21 +1,63 @@
+import type {ImportSchemaType} from './map-row'
+
+export type SkipReason = 'missing_clip_id' | 'unknown_type' | 'api_error'
+export type ImportAction = 'dry_run' | 'created' | 'patched'
+
+export interface ImportedRecord {
+	clipId: string
+	title: string
+	csvType: string
+	schemaType: ImportSchemaType
+	action: ImportAction
+	sanityId?: string
+	mappedKeywords: string[]
+	unmappedKeywords: string[]
+}
+
+export interface SkippedRecord {
+	clipId?: string
+	title?: string
+	csvType?: string
+	reason: SkipReason
+	detail: string
+}
+
 export class Audit {
 	totalRows = 0
-	successful = 0
-	failed = 0
-	typeCounts: Record<string, number> = {}
-	missingTaxonomies = new Set<string>()
+	imported: ImportedRecord[] = []
+	skipped: SkippedRecord[] = []
 	warnings: string[] = []
-	errors: string[] = []
+	/** keyword → clipIds that referenced it without a migrationKey match */
+	missingTaxonomyByKeyword = new Map<string, Set<string>>()
 
-	succeed(schemaType: string) {
-		this.successful++
-		this.typeCounts[schemaType] = (this.typeCounts[schemaType] ?? 0) + 1
+	get successful() {
+		return this.imported.length
 	}
 
-	fail(message: string) {
-		this.failed++
-		this.errors.push(message)
-		console.error(`[ERROR] ${message}`)
+	get failed() {
+		return this.skipped.length
+	}
+
+	get typeCounts(): Record<string, number> {
+		const counts: Record<string, number> = {}
+		for (const row of this.imported) {
+			counts[row.schemaType] = (counts[row.schemaType] ?? 0) + 1
+		}
+		return counts
+	}
+
+	get needsManualLinks(): ImportedRecord[] {
+		return this.imported.filter((r) => r.unmappedKeywords.length > 0)
+	}
+
+	recordImported(record: ImportedRecord) {
+		this.imported.push(record)
+	}
+
+	skip(record: SkippedRecord) {
+		this.skipped.push(record)
+		const label = record.clipId ? `clipID ${record.clipId}` : 'row'
+		console.error(`[SKIP] ${label}: ${record.reason} — ${record.detail}`)
 	}
 
 	warn(message: string) {
@@ -23,17 +65,23 @@ export class Audit {
 		console.warn(`[WARN] ${message}`)
 	}
 
-	missingTaxonomy(keyword: string) {
-		this.missingTaxonomies.add(keyword)
+	missingTaxonomy(keyword: string, clipId?: string) {
+		let set = this.missingTaxonomyByKeyword.get(keyword)
+		if (!set) {
+			set = new Set()
+			this.missingTaxonomyByKeyword.set(keyword, set)
+		}
+		if (clipId) set.add(clipId)
 	}
 
-	print() {
+	print(reportsDir?: string) {
 		console.log('\n=========================================')
 		console.log('        POST-MIGRATION AUDIT REPORT      ')
 		console.log('=========================================')
 		console.log(`Total Rows Processed: ${this.totalRows}`)
-		console.log(`Successful Imports:   ${this.successful}`)
-		console.log(`Failed Imports:       ${this.failed}`)
+		console.log(`Imported:             ${this.successful}`)
+		console.log(`Skipped / Failed:     ${this.failed}`)
+		console.log(`Needs Manual Links:   ${this.needsManualLinks.length}`)
 
 		if (Object.keys(this.typeCounts).length > 0) {
 			console.log('\nType Breakdown:')
@@ -42,17 +90,14 @@ export class Audit {
 			}
 		}
 
-		if (this.missingTaxonomies.size > 0) {
+		if (this.missingTaxonomyByKeyword.size > 0) {
 			console.log('\nMISSING TAXONOMIES:')
 			console.log(
-				'The following CSV keywords have no matching migrationKey in Sanity.',
+				'CSV keywords with no matching migrationKey in Sanity:',
 			)
-			console.log(
-				'Create these categories/townships, then re-run the script:',
-			)
-			const sorted = Array.from(this.missingTaxonomies).sort()
-			for (const key of sorted) {
-				console.log(`  - ${key}`)
+			for (const keyword of Array.from(this.missingTaxonomyByKeyword.keys()).sort()) {
+				const clips = Array.from(this.missingTaxonomyByKeyword.get(keyword)!)
+				console.log(`  - ${keyword} (clipIDs: ${clips.join(', ')})`)
 			}
 		}
 
@@ -66,21 +111,34 @@ export class Audit {
 			}
 		}
 
-		if (this.errors.length > 0) {
-			console.log(`\nERRORS: ${this.errors.length}`)
-			for (const e of this.errors.slice(0, 20)) {
-				console.log(`  ${e}`)
+		if (this.skipped.length > 0) {
+			console.log(`\nSKIPPED: ${this.skipped.length}`)
+			for (const s of this.skipped.slice(0, 20)) {
+				console.log(
+					`  ${s.clipId ?? '?'} [${s.reason}] ${s.detail}`,
+				)
 			}
-			if (this.errors.length > 20) {
-				console.log(`  ...and ${this.errors.length - 20} more.`)
+			if (this.skipped.length > 20) {
+				console.log(`  ...and ${this.skipped.length - 20} more.`)
 			}
+		}
+
+		if (reportsDir) {
+			console.log('\nEditor report files:')
+			console.log(`  ${reportsDir}/imported.csv`)
+			console.log(`  ${reportsDir}/skipped.csv`)
+			console.log(`  ${reportsDir}/needs-manual-links.csv`)
+			console.log(`  ${reportsDir}/missing-taxonomies.csv`)
+			console.log(`  ${reportsDir}/summary.txt`)
 		}
 
 		console.log('\nSuggested Vision checks:')
 		console.log(
 			'  count(*[_type in ["historicalImage","primarySource","curatedEssay"] && defined(archiveId)])',
 		)
-		console.log('  *[_type == "primarySource" && !defined(subjects)]')
+		console.log(
+			'  *[_type == $type && archiveId == $id][0]  // find one imported doc',
+		)
 		console.log('=========================================\n')
 	}
 }

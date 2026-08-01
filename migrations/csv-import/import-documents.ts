@@ -12,6 +12,7 @@ import {Audit} from './lib/audit'
 import type {CsvRow, ImportDoc} from './lib/map-row'
 import {mapRow} from './lib/map-row'
 import {buildTaxonomyLookups} from './lib/taxonomy'
+import {writeReports} from './lib/write-reports'
 
 // ---------------------------------------------------------------------------
 // CLI flags
@@ -111,21 +112,48 @@ async function run() {
 
 	const tasks = rows.map((row) =>
 		limit(async () => {
-			const doc = mapRow(row, lookups, audit)
-			if (!doc) return
+			const mapped = mapRow(row, lookups, audit)
+			if (!mapped) return
+
+			const {doc, csvType, title, mappedKeywords, unmappedKeywords} = mapped
 
 			if (DRY_RUN) {
 				docs.push(doc)
+				audit.recordImported({
+					clipId: doc.archiveId,
+					title,
+					csvType,
+					schemaType: doc._type,
+					action: 'dry_run',
+					mappedKeywords,
+					unmappedKeywords,
+				})
 				console.log(`[DRY RUN] ${doc._type} → Archive ID: ${doc.archiveId}`)
 			} else {
 				try {
 					const result = await upsertByArchiveId(doc)
+					audit.recordImported({
+						clipId: doc.archiveId,
+						title,
+						csvType,
+						schemaType: doc._type,
+						action: result.action,
+						sanityId: result.id,
+						mappedKeywords,
+						unmappedKeywords,
+					})
 					console.log(
 						`[OK] ${result.action} ${doc._type} → Archive ID: ${doc.archiveId} (${result.id})`,
 					)
 				} catch (err) {
 					const msg = err instanceof Error ? err.message : String(err)
-					audit.fail(`clipID ${doc.archiveId}: API error — ${msg}`)
+					audit.skip({
+						clipId: doc.archiveId,
+						title,
+						csvType,
+						reason: 'api_error',
+						detail: msg,
+					})
 				}
 			}
 		}),
@@ -133,14 +161,17 @@ async function run() {
 
 	await Promise.all(tasks)
 
+	fs.mkdirSync(REPORTS_DIR, {recursive: true})
+
 	if (DRY_RUN && docs.length > 0) {
-		fs.mkdirSync(REPORTS_DIR, {recursive: true})
 		const previewPath = path.join(REPORTS_DIR, 'preview.ndjson')
 		fs.writeFileSync(previewPath, docs.map((d) => JSON.stringify(d)).join('\n'))
 		console.log(`\nPreview written to ${previewPath}`)
 	}
 
-	audit.print()
+	writeReports(audit, REPORTS_DIR)
+	console.log(`\nReports written to ${REPORTS_DIR}`)
+	audit.print(REPORTS_DIR)
 }
 
 run().catch((err) => {
