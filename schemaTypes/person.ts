@@ -35,13 +35,15 @@ export const person = defineType({
 			name: 'born',
 			title: 'Born',
 			type: 'date',
-			description: 'Optional. Use when the birth date is known.',
+			description:
+				'Optional. Use when the birth date is known. Format: year-month-day (e.g. 1850-08-25).',
 		}),
 		defineField({
 			name: 'died',
 			title: 'Died',
 			type: 'date',
-			description: 'Optional. Use when the death date is known.',
+			description:
+				'Optional. Use when the death date is known. Format: year-month-day (e.g. 1920-08-25).',
 			validation: (Rule) =>
 				Rule.custom((died, context) => {
 					const born = context.document?.born
