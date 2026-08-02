@@ -17,6 +17,8 @@
     "docs:serve": "bun run --cwd documentation serve",
     "preview:worker": "wrangler dev",
     "csv-import": "bun run migrations/csv-import/import-documents.ts",
+    "csv-import:donations": "bun run migrations/csv-import/import-donations.ts",
+    "csv-import:images": "bun run migrations/csv-import/import-images.ts",
     "migrations:run": "sanity migrations run",
     "start": "sanity start"
   },

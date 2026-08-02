@@ -4,23 +4,24 @@
  */
 import fs from 'node:fs'
 import csvParser from 'csv-parser'
-import type {CsvRow} from './map-row'
 
-export async function readCsvRows(
+export async function readCsvRows<T extends Record<string, string> = Record<string, string>>(
 	csvPath: string,
 	rowLimit: number,
-): Promise<CsvRow[]> {
+	options?: {encoding?: BufferEncoding},
+): Promise<T[]> {
 	if (!fs.existsSync(csvPath)) {
 		console.error(`CSV file not found: ${csvPath}`)
 		process.exit(1)
 	}
 
-	const rows: CsvRow[] = []
+	const rows: T[] = []
+	const encoding = options?.encoding
 
 	await new Promise<void>((resolve, reject) => {
-		fs.createReadStream(csvPath)
+		fs.createReadStream(csvPath, encoding ? {encoding} : undefined)
 			.pipe(csvParser())
-			.on('data', (row: CsvRow) => {
+			.on('data', (row: T) => {
 				if (rows.length < rowLimit) rows.push(row)
 			})
 			.on('end', resolve)

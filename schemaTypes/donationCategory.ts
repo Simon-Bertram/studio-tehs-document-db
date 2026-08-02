@@ -1,5 +1,6 @@
 import {TagsIcon} from '@sanity/icons/Tags'
 import {defineField, defineType} from 'sanity'
+import {isUniqueStringField} from './lib/isUniqueStringField'
 
 export const donationCategory = defineType({
 	name: 'donationCategory',
@@ -19,6 +20,21 @@ export const donationCategory = defineType({
 			name: 'description',
 			title: 'Description',
 			type: 'text',
+		}),
+		defineField({
+			name: 'migrationKey',
+			title: 'Migration Mapping Key',
+			type: 'string',
+			description:
+				'Used by the CSV script to map legacy dtype values to this category. Visible during migration; hide after cutover.',
+			validation: (Rule) =>
+				Rule.custom(
+					isUniqueStringField(
+						'donationCategory',
+						'migrationKey',
+						'Migration mapping key must be unique',
+					),
+				),
 		}),
 	],
 	orderings: [

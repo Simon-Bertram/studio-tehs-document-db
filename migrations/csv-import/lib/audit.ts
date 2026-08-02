@@ -7,7 +7,8 @@ export interface ImportedRecord {
 	clipId: string
 	title: string
 	csvType: string
-	schemaType: ImportSchemaType
+	/** Sanity document type, e.g. primarySource, donation, historicalImage */
+	schemaType: ImportSchemaType | 'donation' | string
 	action: ImportAction
 	sanityId?: string
 	mappedKeywords: string[]

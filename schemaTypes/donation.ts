@@ -1,5 +1,6 @@
 import {BasketIcon} from '@sanity/icons/Basket'
 import {defineArrayMember, defineField, defineType} from 'sanity'
+import {isUniqueNumberField} from './lib/isUniqueNumberField'
 
 export const donation = defineType({
 	name: 'donation',
@@ -16,6 +17,14 @@ export const donation = defineType({
 			name: 'donationId',
 			title: 'Donation ID',
 			type: 'number',
+			validation: (Rule) =>
+				Rule.custom(
+					isUniqueNumberField(
+						'donation',
+						'donationId',
+						'Donation ID must be unique',
+					),
+				),
 		}),
 		defineField({
 			name: 'acquisitionDate',

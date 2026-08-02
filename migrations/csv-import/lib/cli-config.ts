@@ -11,10 +11,20 @@ export interface ImportConfig {
 	reportsDir: string
 }
 
-const DEFAULT_CSV = 'migrations/data/documents.csv'
-const DEFAULT_REPORTS = 'migrations/csv-import/reports'
+export interface CliDefaults {
+	csvPath: string
+	reportsDir: string
+}
 
-export function parseCliConfig(argv: string[]): ImportConfig {
+const DEFAULT_DOCUMENTS: CliDefaults = {
+	csvPath: 'migrations/data/documents.csv',
+	reportsDir: 'migrations/csv-import/reports',
+}
+
+export function parseCliConfig(
+	argv: string[],
+	defaults: CliDefaults = DEFAULT_DOCUMENTS,
+): ImportConfig {
 	const limitIdx = argv.indexOf('--limit')
 	const rowLimit =
 		limitIdx !== -1 && argv[limitIdx + 1]
@@ -26,8 +36,8 @@ export function parseCliConfig(argv: string[]): ImportConfig {
 		dryRun: !argv.includes('--live'),
 		rowLimit,
 		csvPath: path.resolve(
-			argv.find((a) => a.endsWith('.csv')) ?? DEFAULT_CSV,
+			argv.find((a) => a.endsWith('.csv')) ?? defaults.csvPath,
 		),
-		reportsDir: path.resolve(DEFAULT_REPORTS),
+		reportsDir: path.resolve(defaults.reportsDir),
 	}
 }
