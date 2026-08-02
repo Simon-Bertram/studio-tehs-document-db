@@ -3,7 +3,10 @@
  */
 import {parseCliConfig} from './lib/cli-config'
 import {runDonationsImport} from './lib/run-donations-import'
-import {createImportClient} from './lib/sanity-client'
+import {
+	assertContentWriteAccess,
+	createImportClient,
+} from './lib/sanity-client'
 
 const config = parseCliConfig(process.argv.slice(2), {
 	csvPath: 'migrations/data/donations.csv',
@@ -11,7 +14,12 @@ const config = parseCliConfig(process.argv.slice(2), {
 })
 const client = createImportClient({dryRun: config.dryRun})
 
-runDonationsImport(config, client).catch((err) => {
+async function main() {
+	if (!config.dryRun) await assertContentWriteAccess(client)
+	await runDonationsImport(config, client)
+}
+
+main().catch((err) => {
 	console.error('Donations migration failed:', err)
 	process.exit(1)
 })

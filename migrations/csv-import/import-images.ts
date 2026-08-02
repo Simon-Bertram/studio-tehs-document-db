@@ -3,7 +3,10 @@
  */
 import {parseCliConfig} from './lib/cli-config'
 import {runImagesImport} from './lib/run-images-import'
-import {createImportClient} from './lib/sanity-client'
+import {
+	assertContentWriteAccess,
+	createImportClient,
+} from './lib/sanity-client'
 
 const config = parseCliConfig(process.argv.slice(2), {
 	csvPath: 'migrations/data/sample-images.csv',
@@ -11,7 +14,12 @@ const config = parseCliConfig(process.argv.slice(2), {
 })
 const client = createImportClient({dryRun: config.dryRun})
 
-runImagesImport(config, client).catch((err) => {
+async function main() {
+	if (!config.dryRun) await assertContentWriteAccess(client)
+	await runImagesImport(config, client)
+}
+
+main().catch((err) => {
 	console.error('Images migration failed:', err)
 	process.exit(1)
 })

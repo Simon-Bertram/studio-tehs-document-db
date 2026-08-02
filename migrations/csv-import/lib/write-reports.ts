@@ -1,6 +1,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import type {Audit} from './audit'
+import type {Audit, ImportedRecord} from './audit'
 
 function escapeCsv(value: string): string {
 	if (/[",\n\r]/.test(value)) {
@@ -24,8 +24,21 @@ function joinList(items: string[]): string {
 /**
  * Write editor-facing CSV reports and summary.txt into reportsDir.
  */
-export function writeReports(audit: Audit, reportsDir: string): void {
+export function writeReports(
+	audit: Audit,
+	reportsDir: string,
+	options?: {
+		naturalKeyLabel?: string
+		studioAction?: (record: ImportedRecord) => string
+	},
+): void {
 	fs.mkdirSync(reportsDir, {recursive: true})
+
+	const naturalKeyLabel = options?.naturalKeyLabel ?? 'Archive ID'
+	const studioAction =
+		options?.studioAction ??
+		((r: ImportedRecord) =>
+			`In Studio, find ${r.schemaType} with ${naturalKeyLabel} ${r.clipId}. Set Organisations / Subjects / Township for: ${joinList(r.unmappedKeywords)}. Entity names (e.g. Lincoln) belong on Organisations; themes on Subjects; places on Township.`)
 
 	const importedPath = path.join(reportsDir, 'imported.csv')
 	const skippedPath = path.join(reportsDir, 'skipped.csv')
@@ -92,7 +105,7 @@ export function writeReports(audit: Audit, reportsDir: string): void {
 				r.action,
 				r.sanityId ?? '',
 				joinList(r.unmappedKeywords),
-				`In Studio, find ${r.schemaType} with Archive ID ${r.clipId}. Set Organisations / Subjects / Township for: ${joinList(r.unmappedKeywords)}. Entity names (e.g. Lincoln) belong on Organisations; themes on Subjects; places on Township.`,
+				studioAction(r),
 			]),
 		),
 	)
@@ -131,10 +144,10 @@ export function writeReports(audit: Audit, reportsDir: string): void {
 		`  ${missingPath}`,
 		'',
 		'How to identify records:',
-		'  imported            → Archive ID = clipId; schemaType is the Studio document type',
+		`  imported            → ${naturalKeyLabel} = clipId; schemaType is the Studio document type`,
 		'  skipped             → no Studio doc; use clipId + reason in skipped.csv',
-		'  needs_manual_links  → doc exists; open by Archive ID and add links from unmappedKeywords',
-		'  missing-taxonomies  → create migrationKey on org/category/township, then re-run import',
+		`  needs_manual_links  → doc exists; open by ${naturalKeyLabel} and fix links from unmappedKeywords`,
+		'  missing-taxonomies  → create migrationKey on the right entity type, then re-run import',
 		'',
 	].join('\n')
 

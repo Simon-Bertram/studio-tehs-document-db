@@ -109,7 +109,11 @@ export async function runDonationsImport(
 		console.log(`\nPreview written to ${previewPath}`)
 	}
 
-	writeReports(audit, reportsDir)
+	writeReports(audit, reportsDir, {
+		naturalKeyLabel: 'Donation ID',
+		studioAction: (r) =>
+			`Open The Archive → Donations, find Donation ID ${r.clipId} (${r.title}). Under Donation Categories, assign materials for issue: ${r.unmappedKeywords.join('; ')}. Options: Photographic prints, Digital photographs, Newspaper clipping, Postcards, Slides, Drawings, Posters. See needs-manual-links.md for per-row guidance.`,
+	})
 	console.log(`\nReports written to ${reportsDir}`)
 	audit.print(reportsDir)
 }
