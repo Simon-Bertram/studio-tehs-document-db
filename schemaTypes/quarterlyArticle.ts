@@ -1,5 +1,6 @@
 import {BookIcon} from '@sanity/icons/Book'
 import {defineArrayMember, defineField, defineType} from 'sanity'
+import {isUniqueStringField} from './lib/isUniqueStringField'
 
 export const quarterlyArticle = defineType({
 	name: 'quarterlyArticle',
@@ -50,6 +51,29 @@ export const quarterlyArticle = defineType({
 			title: 'Start Page',
 			type: 'number',
 			group: 'publication',
+		}),
+		defineField({
+			name: 'sourceKey',
+			title: 'Source Key',
+			type: 'string',
+			group: 'publication',
+			description:
+				'Stable key from the digital archive path stem (e.g. v22n1p003). Used by the Quarterly import for idempotent upserts.',
+			validation: (Rule) =>
+				Rule.custom(
+					isUniqueStringField(
+						'quarterlyArticle',
+						'sourceKey',
+						'Source key must be unique',
+					),
+				),
+		}),
+		defineField({
+			name: 'sourceUrl',
+			title: 'Source URL',
+			type: 'url',
+			group: 'publication',
+			description: 'Canonical tehistory.org article URL for QA and redirects.',
 		}),
 		defineField({
 			name: 'body',

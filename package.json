@@ -19,6 +19,7 @@
     "csv-import": "bun run migrations/csv-import/import-documents.ts",
     "csv-import:donations": "bun run migrations/csv-import/import-donations.ts",
     "csv-import:images": "bun run migrations/csv-import/import-images.ts",
+    "csv-import:quarterly": "bun run migrations/quarterly-import/import-quarterly.ts",
     "migrations:run": "sanity migrations run",
     "start": "sanity start"
   },
@@ -31,6 +32,7 @@
     "@sanity/icons": "^5.2.1",
     "@sanity/vision": "6.8.0",
     "csv-parser": "^3.2.1",
+    "linkedom": "^0.18.13",
     "nanoid": "^5.1.16",
     "p-limit": "^7.3.1",
     "react": "^19.2.8",

@@ -2,6 +2,11 @@ import {nanoid} from 'nanoid'
 import type {Audit} from './audit'
 import {cleanString, normalizeClipId, resolveSchemaType, slugify} from './clean'
 import type {TaxonomyLookups} from './taxonomy'
+import {
+	DIVERTED_QUARTERLY_DETAIL,
+	DIVERTED_QUARTERLY_REASON,
+	hasTehsKeyword,
+} from './tehs-keyword'
 
 export interface CsvRow {
 	clipID: string
@@ -278,6 +283,28 @@ export function mapRow(
 			csvType: csvType || undefined,
 			reason: 'missing_clip_id',
 			detail: `Row missing clipID. Title: "${title ?? 'Unknown'}".`,
+		})
+		return null
+	}
+
+	if (
+		hasTehsKeyword([
+			row.key1,
+			row.key2,
+			row.key3,
+			row.key4,
+			row.key5,
+			row.key6,
+			row.key7,
+			row.keywords,
+		])
+	) {
+		audit.skip({
+			clipId,
+			title: title ?? undefined,
+			csvType: csvType || undefined,
+			reason: DIVERTED_QUARTERLY_REASON,
+			detail: DIVERTED_QUARTERLY_DETAIL,
 		})
 		return null
 	}

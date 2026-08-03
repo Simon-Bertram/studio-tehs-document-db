@@ -1,6 +1,10 @@
 import type {ImportSchemaType} from './map-row'
 
-export type SkipReason = 'missing_clip_id' | 'unknown_type' | 'api_error'
+export type SkipReason =
+	| 'missing_clip_id'
+	| 'unknown_type'
+	| 'api_error'
+	| 'diverted_quarterly'
 export type ImportAction = 'dry_run' | 'created' | 'patched'
 
 export interface ImportedRecord {
@@ -128,6 +132,7 @@ export class Audit {
 			console.log('\nEditor report files:')
 			console.log(`  ${reportsDir}/imported.csv`)
 			console.log(`  ${reportsDir}/skipped.csv`)
+			console.log(`  ${reportsDir}/diverted-quarterly.csv`)
 			console.log(`  ${reportsDir}/needs-manual-links.csv`)
 			console.log(`  ${reportsDir}/missing-taxonomies.csv`)
 			console.log(`  ${reportsDir}/summary.txt`)

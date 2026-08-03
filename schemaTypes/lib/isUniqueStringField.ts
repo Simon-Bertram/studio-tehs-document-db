@@ -4,6 +4,7 @@ import {SANITY_API_VERSION} from '../../lib/sanityEnv'
 const ALLOWED_FIELD_NAMES = new Set([
 	'archiveId',
 	'migrationKey',
+	'sourceKey',
 ])
 
 /**

@@ -86,6 +86,22 @@ export function writeReports(
 		),
 	)
 
+	const diverted = audit.skipped.filter((r) => r.reason === 'diverted_quarterly')
+	const divertedPath = path.join(reportsDir, 'diverted-quarterly.csv')
+	fs.writeFileSync(
+		divertedPath,
+		toCsv(
+			['clipId', 'title', 'csvType', 'reason', 'studioAction'],
+			diverted.map((r) => [
+				r.clipId ?? '',
+				r.title ?? '',
+				r.csvType ?? '',
+				r.reason,
+				'Import via bun run csv-import:quarterly (HTML archive) or create a TEHS Quarterly Article in Studio. Do not re-import this row as primarySource / historicalImage.',
+			]),
+		),
+	)
+
 	fs.writeFileSync(
 		manualPath,
 		toCsv(
@@ -140,12 +156,14 @@ export function writeReports(
 		'Report files:',
 		`  ${importedPath}`,
 		`  ${skippedPath}`,
+		`  ${divertedPath}`,
 		`  ${manualPath}`,
 		`  ${missingPath}`,
 		'',
 		'How to identify records:',
 		`  imported            → ${naturalKeyLabel} = clipId; schemaType is the Studio document type`,
 		'  skipped             → no Studio doc; use clipId + reason in skipped.csv',
+		'  diverted-quarterly  → keyword TEHS; import as quarterlyArticle, not archive types',
 		`  needs_manual_links  → doc exists; open by ${naturalKeyLabel} and fix links from unmappedKeywords`,
 		'  missing-taxonomies  → create migrationKey on the right entity type, then re-run import',
 		'',

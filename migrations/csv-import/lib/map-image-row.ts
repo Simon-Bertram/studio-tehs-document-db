@@ -1,6 +1,11 @@
 import {nanoid} from 'nanoid'
 import type {Audit} from './audit'
 import {cleanString} from './clean'
+import {
+	DIVERTED_QUARTERLY_DETAIL,
+	DIVERTED_QUARTERLY_REASON,
+	hasTehsKeyword,
+} from './tehs-keyword'
 
 export interface ImageCsvRow {
 	identifier: string
@@ -92,6 +97,17 @@ export function mapImageRow(
 			csvType: csvType || undefined,
 			reason: 'missing_clip_id',
 			detail: 'Row missing identifier.',
+		})
+		return null
+	}
+
+	if (hasTehsKeyword([row.subject])) {
+		audit.skip({
+			clipId: archiveId,
+			title: title ?? undefined,
+			csvType: csvType || undefined,
+			reason: DIVERTED_QUARTERLY_REASON,
+			detail: DIVERTED_QUARTERLY_DETAIL,
 		})
 		return null
 	}
