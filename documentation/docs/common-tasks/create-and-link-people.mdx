@@ -24,9 +24,18 @@ Maintain historical person records and reference them from sources, properties, 
 - Sources use **People Mentioned**; properties use **Notable Residents / Owners**; organisations use **Owners / Operators**.
 - Family grouping and kin links live on the person: **Family Lineages** (broader groups) and **Known Immediate Relatives** (specific relationships).
 
+## Spelling variants
+
+Use **Alternate Spellings / Aliases** for historical variants of the *same* person (e.g. Susanna / Susannah, Ezekial / Ezekiel). Do not create a second person document for a spelling variant.
+
+Do **not** auto-merge different surnames that were historically interchangeable in the region (e.g. Buckwalter / Buchwalder, David / Davies / Davis, John / Jones) unless research shows they are the same individual—those often mark different people or naming patterns across generations.
+
+For a bulk starter list from the Charlestown landowner index (unique names + suggested aliases, no Sanity writes), see the repo folder `migrations/charlestown-people/` (run `bun run migrations/charlestown-people/extract-names.ts`; see that folder’s README for the spelling strategy).
+
 ## Related
 
 - [Add a family lineage](./add-family-lineage.mdx)
 - [Add a primary source](./add-primary-source.mdx)
 - [Model a property or estate](./model-a-property.mdx)
+- [Enter a deed or land instrument](./enter-deed.mdx)
 - [Record an organisation](./record-a-business.mdx)
