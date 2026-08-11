@@ -1,5 +1,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
+
 import type {Audit, ImportedRecord} from './audit'
 
 function escapeCsv(value: string): string {
@@ -105,15 +106,7 @@ export function writeReports(
 	fs.writeFileSync(
 		manualPath,
 		toCsv(
-			[
-				'clipId',
-				'title',
-				'schemaType',
-				'action',
-				'sanityId',
-				'unmappedKeywords',
-				'studioAction',
-			],
+			['clipId', 'title', 'schemaType', 'action', 'sanityId', 'unmappedKeywords', 'studioAction'],
 			audit.needsManualLinks.map((r) => [
 				r.clipId,
 				r.title,
@@ -128,16 +121,9 @@ export function writeReports(
 
 	const missingRows = Array.from(audit.missingTaxonomyByKeyword.entries())
 		.sort(([a], [b]) => a.localeCompare(b))
-		.map(([keyword, clipIds]) => [
-			keyword,
-			Array.from(clipIds).sort().join(';'),
-			'unknown',
-		])
+		.map(([keyword, clipIds]) => [keyword, Array.from(clipIds).sort().join(';'), 'unknown'])
 
-	fs.writeFileSync(
-		missingPath,
-		toCsv(['keyword', 'clipIds', 'suggestedEntity'], missingRows),
-	)
+	fs.writeFileSync(missingPath, toCsv(['keyword', 'clipIds', 'suggestedEntity'], missingRows))
 
 	const summary = [
 		'CSV Import Summary',

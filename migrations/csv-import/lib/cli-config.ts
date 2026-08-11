@@ -26,18 +26,13 @@ export function parseCliConfig(
 	defaults: CliDefaults = DEFAULT_DOCUMENTS,
 ): ImportConfig {
 	const limitIdx = argv.indexOf('--limit')
-	const rowLimit =
-		limitIdx !== -1 && argv[limitIdx + 1]
-			? Number(argv[limitIdx + 1])
-			: Infinity
+	const rowLimit = limitIdx !== -1 && argv[limitIdx + 1] ? Number(argv[limitIdx + 1]) : Infinity
 
 	return {
 		// Default is dry-run; pass --live to write to Sanity.
 		dryRun: !argv.includes('--live'),
 		rowLimit,
-		csvPath: path.resolve(
-			argv.find((a) => a.endsWith('.csv')) ?? defaults.csvPath,
-		),
+		csvPath: path.resolve(argv.find((a) => a.endsWith('.csv')) ?? defaults.csvPath),
 		reportsDir: path.resolve(defaults.reportsDir),
 	}
 }

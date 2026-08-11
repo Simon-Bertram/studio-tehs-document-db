@@ -29,12 +29,8 @@ export const structure: StructureResolver = (S) =>
 							S.documentTypeListItem('primarySource')
 								.title('Primary Sources / Transcriptions')
 								.icon(DocumentTextIcon),
-							S.documentTypeListItem('historicalImage')
-								.title('Historical Images')
-								.icon(ImageIcon),
-							S.documentTypeListItem('donation')
-								.title('Donations')
-								.icon(BasketIcon),
+							S.documentTypeListItem('historicalImage').title('Historical Images').icon(ImageIcon),
+							S.documentTypeListItem('donation').title('Donations').icon(BasketIcon),
 						]),
 				),
 			S.listItem()
@@ -59,24 +55,12 @@ export const structure: StructureResolver = (S) =>
 					S.list()
 						.title('Taxonomies & Entities')
 						.items([
-							S.documentTypeListItem('township')
-								.title('Townships')
-								.icon(PinIcon),
-							S.documentTypeListItem('location')
-								.title('Locations')
-								.icon(MarkerIcon),
-							S.documentTypeListItem('person')
-								.title('Historical Persons')
-								.icon(UserIcon),
-							S.documentTypeListItem('familyLine')
-								.title('Families / Lineages')
-								.icon(UserIcon),
-							S.documentTypeListItem('property')
-								.title('Properties & Buildings')
-								.icon(HomeIcon),
-							S.documentTypeListItem('deed')
-								.title('Deeds & Land Instruments')
-								.icon(DocumentsIcon),
+							S.documentTypeListItem('township').title('Townships').icon(PinIcon),
+							S.documentTypeListItem('location').title('Locations').icon(MarkerIcon),
+							S.documentTypeListItem('person').title('Historical Persons').icon(UserIcon),
+							S.documentTypeListItem('familyLine').title('Families / Lineages').icon(UserIcon),
+							S.documentTypeListItem('property').title('Properties & Buildings').icon(HomeIcon),
+							S.documentTypeListItem('deed').title('Deeds & Land Instruments').icon(DocumentsIcon),
 							S.listItem()
 								.title('Organisations')
 								.icon(CaseIcon)
@@ -90,13 +74,9 @@ export const structure: StructureResolver = (S) =>
 													S.documentList()
 														.title('Commercial / Industrial')
 														.schemaType('business')
-														.filter(
-															'_type == "business" && businessType == "commercial"',
-														)
+														.filter('_type == "business" && businessType == "commercial"')
 														.initialValueTemplates([
-															S.initialValueTemplateItem(
-																'business-commercial',
-															),
+															S.initialValueTemplateItem('business-commercial'),
 														]),
 												),
 											S.listItem()
@@ -105,14 +85,8 @@ export const structure: StructureResolver = (S) =>
 													S.documentList()
 														.title('Civic / Community')
 														.schemaType('business')
-														.filter(
-															'_type == "business" && businessType == "civic"',
-														)
-														.initialValueTemplates([
-															S.initialValueTemplateItem(
-																'business-civic',
-															),
-														]),
+														.filter('_type == "business" && businessType == "civic"')
+														.initialValueTemplates([S.initialValueTemplateItem('business-civic')]),
 												),
 											S.listItem()
 												.title('Institutional')
@@ -120,28 +94,18 @@ export const structure: StructureResolver = (S) =>
 													S.documentList()
 														.title('Institutional')
 														.schemaType('business')
-														.filter(
-															'_type == "business" && businessType == "institutional"',
-														)
+														.filter('_type == "business" && businessType == "institutional"')
 														.initialValueTemplates([
-															S.initialValueTemplateItem(
-																'business-institutional',
-															),
+															S.initialValueTemplateItem('business-institutional'),
 														]),
 												),
 											S.divider(),
 											S.listItem()
 												.title('All organisations')
-												.child(
-													S.documentTypeList('business').title(
-														'All organisations',
-													),
-												),
+												.child(S.documentTypeList('business').title('All organisations')),
 										]),
 								),
-							S.documentTypeListItem('category')
-								.title('Subject Categories')
-								.icon(TagIcon),
+							S.documentTypeListItem('category').title('Subject Categories').icon(TagIcon),
 							S.documentTypeListItem('donationCategory')
 								.title('Donation Categories')
 								.icon(TagsIcon),

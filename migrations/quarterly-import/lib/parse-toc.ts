@@ -32,9 +32,7 @@ function parseIssueHeading(
 	text: string,
 ): {volume: number; issue: number; publishedDate?: string} | null {
 	// Volume 22 Number 1 — January 1984  (em dash or hyphen)
-	const match = text.match(
-		/Volume\s+(\d+)\s+Number\s+(\d+)\s*[—–\-]+\s*(.+)/i,
-	)
+	const match = text.match(/Volume\s+(\d+)\s+Number\s+(\d+)\s*[—–\-]+\s*(.+)/i)
 	if (!match) return null
 	return {
 		volume: Number(match[1]),

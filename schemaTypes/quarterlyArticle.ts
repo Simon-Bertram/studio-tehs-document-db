@@ -1,5 +1,10 @@
+import {BlockElementIcon} from '@sanity/icons/BlockElement'
 import {BookIcon} from '@sanity/icons/Book'
+import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
+import {TagIcon} from '@sanity/icons/Tag'
 import {defineArrayMember, defineField, defineType} from 'sanity'
+
+import {formatHistoricalDate, type HistoricalDateValue} from './lib/formatHistoricalDate'
 import {isUniqueStringField} from './lib/isUniqueStringField'
 
 export const quarterlyArticle = defineType({
@@ -8,9 +13,9 @@ export const quarterlyArticle = defineType({
 	type: 'document',
 	icon: BookIcon,
 	groups: [
-		{name: 'publication', title: 'Publication Details', default: true},
-		{name: 'content', title: 'Article Content'},
-		{name: 'entities', title: 'Tagged Entities'},
+		{name: 'publication', title: 'Publication Details', icon: InfoOutlineIcon, default: true},
+		{name: 'content', title: 'Article Content', icon: BlockElementIcon},
+		{name: 'entities', title: 'Tagged Entities', icon: TagIcon},
 	],
 	fields: [
 		defineField({
@@ -41,10 +46,22 @@ export const quarterlyArticle = defineType({
 		}),
 		defineField({
 			name: 'publishedDate',
-			title: 'Publication Date (Text)',
+			title: 'Publication Date',
+			type: 'historicalDate',
+			group: 'publication',
+			description: 'Usually month and year (e.g. April 1968).',
+		}),
+		defineField({
+			name: 'publishedDateText',
+			title: 'Publication Date (Legacy Text)',
 			type: 'string',
 			group: 'publication',
-			description: 'e.g., April 1968',
+			deprecated: {
+				reason: 'Use Publication Date (structured historical date) instead.',
+			},
+			readOnly: true,
+			hidden: ({value}) => value === undefined,
+			initialValue: undefined,
 		}),
 		defineField({
 			name: 'startPage',
@@ -61,11 +78,7 @@ export const quarterlyArticle = defineType({
 				'Stable key from the digital archive path stem (e.g. v22n1p003). Used by the Quarterly import for idempotent upserts.',
 			validation: (Rule) =>
 				Rule.custom(
-					isUniqueStringField(
-						'quarterlyArticle',
-						'sourceKey',
-						'Source key must be unique',
-					),
+					isUniqueStringField('quarterlyArticle', 'sourceKey', 'Source key must be unique'),
 				),
 		}),
 		defineField({
@@ -114,8 +127,7 @@ export const quarterlyArticle = defineType({
 					to: [{type: 'property'}],
 				}),
 			],
-			description:
-				'Link historic sites mentioned in the article for cross-site discovery.',
+			description: 'Link historic sites mentioned in the article for cross-site discovery.',
 		}),
 		defineField({
 			name: 'peopleMentioned',
@@ -155,16 +167,26 @@ export const quarterlyArticle = defineType({
 			title: 'title',
 			volume: 'volume',
 			issue: 'issue',
-			date: 'publishedDate',
+			legacyDate: 'publishedDateText',
+			precision: 'publishedDate.precision',
+			qualifier: 'publishedDate.qualifier',
+			year: 'publishedDate.year',
+			month: 'publishedDate.month',
+			date: 'publishedDate.date',
 		},
-		prepare({title, volume, issue, date}) {
-			const volIssue = [
-				volume != null && `Vol ${volume}`,
-				issue != null && `No. ${issue}`,
-			]
+		prepare({title, volume, issue, legacyDate, precision, qualifier, year, month, date}) {
+			const volIssue = [volume != null && `Vol ${volume}`, issue != null && `No. ${issue}`]
 				.filter(Boolean)
 				.join(', ')
-			const subtitle = [volIssue, date].filter(Boolean).join(' · ')
+			const when =
+				formatHistoricalDate({
+					precision,
+					qualifier,
+					year,
+					month,
+					date,
+				} as HistoricalDateValue) || legacyDate
+			const subtitle = [volIssue, when].filter(Boolean).join(' · ')
 			return {
 				title: title || 'Untitled Article',
 				subtitle,

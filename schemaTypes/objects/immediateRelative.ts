@@ -1,13 +1,13 @@
+import {UsersIcon} from '@sanity/icons/Users'
 import {defineField, defineType} from 'sanity'
-import {
-	RELATIONSHIP_TYPE_LABELS,
-	RELATIONSHIP_TYPES,
-} from '../shared/relationshipTypes'
+
+import {RELATIONSHIP_TYPE_LABELS, RELATIONSHIP_TYPES} from '../shared/relationshipTypes'
 
 export const immediateRelative = defineType({
 	name: 'immediateRelative',
 	title: 'Immediate Relative',
 	type: 'object',
+	icon: UsersIcon,
 	fields: [
 		defineField({
 			name: 'relative',
@@ -33,9 +33,7 @@ export const immediateRelative = defineType({
 		prepare({title, lastName, relationshipType}) {
 			const subtitle =
 				relationshipType && relationshipType in RELATIONSHIP_TYPE_LABELS
-					? RELATIONSHIP_TYPE_LABELS[
-							relationshipType as keyof typeof RELATIONSHIP_TYPE_LABELS
-						]
+					? RELATIONSHIP_TYPE_LABELS[relationshipType as keyof typeof RELATIONSHIP_TYPE_LABELS]
 					: relationshipType
 
 			return {

@@ -5,6 +5,4 @@ export const IMAGE_ROLES = [
 
 export type ImageRoleValue = (typeof IMAGE_ROLES)[number]['value']
 
-export const IMAGE_ROLE_VALUES: readonly ImageRoleValue[] = IMAGE_ROLES.map(
-	(role) => role.value,
-)
+export const IMAGE_ROLE_VALUES: readonly ImageRoleValue[] = IMAGE_ROLES.map((role) => role.value)

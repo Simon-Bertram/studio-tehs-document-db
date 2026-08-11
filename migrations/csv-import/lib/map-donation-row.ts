@@ -1,10 +1,9 @@
 import {nanoid} from 'nanoid'
+
+import {type HistoricalDateValue, parseHistoricalDate} from '../../lib/parse-historical-date'
 import type {Audit} from './audit'
 import {cleanString} from './clean'
-import {
-	DTYPE_MAP,
-	DTYPE_NO_CATEGORIES,
-} from './donation-dtype-map'
+import {DTYPE_MAP, DTYPE_NO_CATEGORIES} from './donation-dtype-map'
 
 export interface DonationCsvRow {
 	donationID: string
@@ -19,7 +18,7 @@ export interface DonationImportDoc {
 	_type: 'donation'
 	donationId: number
 	name?: string
-	acquisitionDate?: string
+	acquisitionDate?: HistoricalDateValue
 	description?: string
 	donor?: string
 	donationCategories?: {_type: 'reference'; _key: string; _ref: string}[]
@@ -66,7 +65,10 @@ export function mapDonationRow(
 	}
 	if (name) doc.name = name
 	const acquisitionDate = cleanString(row.acquisitionDate)
-	if (acquisitionDate) doc.acquisitionDate = acquisitionDate
+	if (acquisitionDate) {
+		const parsed = parseHistoricalDate(acquisitionDate)
+		if (parsed) doc.acquisitionDate = parsed
+	}
 	const description = cleanString(row.dDescription)
 	if (description) doc.description = description
 	const donor = cleanString(row.donor)

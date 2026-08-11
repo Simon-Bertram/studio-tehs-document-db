@@ -4,17 +4,15 @@
  */
 import fs from 'node:fs'
 import path from 'node:path'
+
 import type {SanityClient} from '@sanity/client'
 import pLimit from 'p-limit'
+
 import {SANITY_DATASET, SANITY_PROJECT_ID} from '../../../lib/sanityEnv'
 import type {ImportConfig} from '../../csv-import/lib/cli-config'
 import {readCsvRows} from '../../csv-import/lib/read-csv'
 import {hasAuthToken} from '../../csv-import/lib/sanity-client'
-import {
-	findSuspectPairs,
-	peopleRowKey,
-	type PeopleCsvRow,
-} from './suspects'
+import {findSuspectPairs, type PeopleCsvRow, peopleRowKey} from './suspects'
 
 const CONCURRENCY = 5
 
@@ -103,11 +101,7 @@ function csvEscape(value: string): string {
 	return value
 }
 
-function writeCsv(
-	filePath: string,
-	headers: string[],
-	rows: string[][],
-): void {
+function writeCsv(filePath: string, headers: string[], rows: string[][]): void {
 	const lines = [headers.join(',')]
 	for (const row of rows) {
 		lines.push(row.map(csvEscape).join(','))
@@ -116,9 +110,7 @@ function writeCsv(
 }
 
 function displayName(row: PeopleCsvRow): string {
-	return [row.prefix, row.firstName, row.lastName, row.suffix]
-		.filter(Boolean)
-		.join(' ')
+	return [row.prefix, row.firstName, row.lastName, row.suffix].filter(Boolean).join(' ')
 }
 
 async function loadExistingPeople(
@@ -127,9 +119,7 @@ async function loadExistingPeople(
 ): Promise<Map<string, ExistingPerson>> {
 	const map = new Map<string, ExistingPerson>()
 	if (dryRun && !hasAuthToken()) {
-		console.log(
-			'No SANITY_AUTH_TOKEN in dry-run — skipping existing-person lookup.\n',
-		)
+		console.log('No SANITY_AUTH_TOKEN in dry-run — skipping existing-person lookup.\n')
 		return map
 	}
 
@@ -162,10 +152,7 @@ async function loadExistingPeople(
 	return map
 }
 
-export async function runPeopleImport(
-	config: ImportConfig,
-	client: SanityClient,
-): Promise<void> {
+export async function runPeopleImport(config: ImportConfig, client: SanityClient): Promise<void> {
 	const {dryRun, rowLimit, csvPath, reportsDir} = config
 	const mode = dryRun ? 'DRY RUN' : 'LIVE'
 
@@ -291,55 +278,20 @@ export async function runPeopleImport(
 
 	if (dryRun && previewDocs.length > 0) {
 		const previewPath = path.join(reportsDir, 'preview.ndjson')
-		fs.writeFileSync(
-			previewPath,
-			previewDocs.map((d) => JSON.stringify(d)).join('\n') + '\n',
-		)
+		fs.writeFileSync(previewPath, previewDocs.map((d) => JSON.stringify(d)).join('\n') + '\n')
 		console.log(`\nPreview written to ${previewPath}`)
 	}
 
 	writeCsv(
 		path.join(reportsDir, 'imported.csv'),
-		[
-			'key',
-			'firstName',
-			'lastName',
-			'prefix',
-			'suffix',
-			'action',
-			'sanityId',
-		],
-		imported.map((r) => [
-			r.key,
-			r.firstName,
-			r.lastName,
-			r.prefix,
-			r.suffix,
-			r.action,
-			r.sanityId,
-		]),
+		['key', 'firstName', 'lastName', 'prefix', 'suffix', 'action', 'sanityId'],
+		imported.map((r) => [r.key, r.firstName, r.lastName, r.prefix, r.suffix, r.action, r.sanityId]),
 	)
 
 	writeCsv(
 		path.join(reportsDir, 'skipped.csv'),
-		[
-			'key',
-			'firstName',
-			'lastName',
-			'prefix',
-			'suffix',
-			'reason',
-			'detail',
-		],
-		skipped.map((r) => [
-			r.key,
-			r.firstName,
-			r.lastName,
-			r.prefix,
-			r.suffix,
-			r.reason,
-			r.detail,
-		]),
+		['key', 'firstName', 'lastName', 'prefix', 'suffix', 'reason', 'detail'],
+		skipped.map((r) => [r.key, r.firstName, r.lastName, r.prefix, r.suffix, r.reason, r.detail]),
 	)
 
 	writeCsv(

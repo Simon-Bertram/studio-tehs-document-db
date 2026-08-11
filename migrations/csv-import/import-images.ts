@@ -3,10 +3,7 @@
  */
 import {parseCliConfig} from './lib/cli-config'
 import {runImagesImport} from './lib/run-images-import'
-import {
-	assertContentWriteAccess,
-	createImportClient,
-} from './lib/sanity-client'
+import {assertContentWriteAccess, createImportClient} from './lib/sanity-client'
 
 const config = parseCliConfig(process.argv.slice(2), {
 	csvPath: 'migrations/data/sample-images.csv',

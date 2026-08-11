@@ -6,7 +6,6 @@ export const BUSINESS_TYPES = [
 
 export type BusinessTypeValue = (typeof BUSINESS_TYPES)[number]['value']
 
-export const BUSINESS_TYPE_LABELS: Record<BusinessTypeValue, string> =
-	Object.fromEntries(
-		BUSINESS_TYPES.map(({title, value}) => [value, title]),
-	) as Record<BusinessTypeValue, string>
+export const BUSINESS_TYPE_LABELS: Record<BusinessTypeValue, string> = Object.fromEntries(
+	BUSINESS_TYPES.map(({title, value}) => [value, title]),
+) as Record<BusinessTypeValue, string>

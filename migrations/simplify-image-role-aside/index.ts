@@ -26,9 +26,7 @@ export default defineMigration({
 				if (role && ASIDE_SIDES.has(role)) {
 					patches.push(at(['body', i, 'imageRole'], set('aside')))
 				} else if (!role) {
-					patches.push(
-						at(['body', i, 'imageRole'], setIfMissing('figure')),
-					)
+					patches.push(at(['body', i, 'imageRole'], setIfMissing('figure')))
 				}
 			}
 			return patches

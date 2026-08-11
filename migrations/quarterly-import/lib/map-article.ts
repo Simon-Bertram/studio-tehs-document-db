@@ -2,10 +2,12 @@
  * Map a snapped article into a quarterlyArticle document shape.
  */
 import type {SanityClient} from '@sanity/client'
+
+import {type HistoricalDateValue, parseHistoricalDate} from '../../lib/parse-historical-date'
 import {
+	type BodyBlock,
 	extractArticleContent,
 	htmlFragmentToBody,
-	type BodyBlock,
 	type ImagePlaceholderBlock,
 } from './html-to-portable-text'
 import type {SnapshotArticle} from './load-snapshot'
@@ -16,7 +18,7 @@ export interface QuarterlyImportDoc {
 	authorText?: string
 	volume: number
 	issue: number
-	publishedDate?: string
+	publishedDate?: HistoricalDateValue
 	startPage: number
 	sourceKey: string
 	sourceUrl: string
@@ -74,7 +76,10 @@ export function mapSnapshotToDoc(article: SnapshotArticle): QuarterlyImportDoc {
 		sourceUrl: article.sourceUrl,
 	}
 	if (article.authorText) doc.authorText = article.authorText
-	if (article.publishedDate) doc.publishedDate = article.publishedDate
+	if (article.publishedDate) {
+		const parsed = parseHistoricalDate(article.publishedDate)
+		if (parsed) doc.publishedDate = parsed
+	}
 	if (body.length > 0) doc.body = body
 	return doc
 }
@@ -89,9 +94,7 @@ export async function finalizeDocForLive(
 }
 
 /** Strip internal pending fields before NDJSON preview / create. */
-export function sanitizeDocForWrite(
-	doc: QuarterlyImportDoc,
-): Record<string, unknown> {
+export function sanitizeDocForWrite(doc: QuarterlyImportDoc): Record<string, unknown> {
 	if (!doc.body) return {...doc}
 	const body = doc.body.map((block) => {
 		if (block._type === 'image' && '_pendingSrc' in block) {

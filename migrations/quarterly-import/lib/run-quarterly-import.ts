@@ -3,8 +3,10 @@
  */
 import fs from 'node:fs'
 import path from 'node:path'
+
 import type {SanityClient} from '@sanity/client'
 import pLimit from 'p-limit'
+
 import {SANITY_DATASET, SANITY_PROJECT_ID} from '../../../lib/sanityEnv'
 import {Audit} from '../../csv-import/lib/audit'
 import {upsertByQuery} from '../../csv-import/lib/upsert-by-query'
@@ -14,8 +16,8 @@ import {loadVolumeSnapshot} from './load-snapshot'
 import {
 	finalizeDocForLive,
 	mapSnapshotToDoc,
-	sanitizeDocForWrite,
 	type QuarterlyImportDoc,
+	sanitizeDocForWrite,
 } from './map-article'
 
 const CONCURRENCY = 3
@@ -54,9 +56,7 @@ export async function runQuarterlyImport(
 			const title = mapped.title
 
 			if (!mapped.body?.length) {
-				audit.warn(
-					`${mapped.sourceKey}: no body blocks extracted; importing metadata only.`,
-				)
+				audit.warn(`${mapped.sourceKey}: no body blocks extracted; importing metadata only.`)
 			}
 
 			if (dryRun) {
@@ -70,9 +70,7 @@ export async function runQuarterlyImport(
 					mappedKeywords: [],
 					unmappedKeywords: [],
 				})
-				console.log(
-					`[DRY RUN] quarterlyArticle → ${mapped.sourceKey} (${title})`,
-				)
+				console.log(`[DRY RUN] quarterlyArticle → ${mapped.sourceKey} (${title})`)
 				return
 			}
 
@@ -95,9 +93,7 @@ export async function runQuarterlyImport(
 					mappedKeywords: [],
 					unmappedKeywords: [],
 				})
-				console.log(
-					`[OK] ${result.action} quarterlyArticle → ${mapped.sourceKey} (${result.id})`,
-				)
+				console.log(`[OK] ${result.action} quarterlyArticle → ${mapped.sourceKey} (${result.id})`)
 			} catch (err) {
 				const msg = err instanceof Error ? err.message : String(err)
 				audit.skip({
@@ -133,9 +129,7 @@ export async function runQuarterlyImport(
 	audit.print(reportsDir)
 
 	console.log('Suggested Vision checks:')
-	console.log(
-		`  count(*[_type == "quarterlyArticle" && volume == ${volume}])`,
-	)
+	console.log(`  count(*[_type == "quarterlyArticle" && volume == ${volume}])`)
 	console.log(
 		`  *[_type == "quarterlyArticle" && volume == ${volume}] | order(issue asc, startPage asc) { title, sourceKey, startPage }`,
 	)

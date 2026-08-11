@@ -3,11 +3,9 @@
  */
 import fs from 'node:fs'
 import path from 'node:path'
-import {
-	parseTocHtml,
-	type TocArticle,
-} from './parse-toc'
+
 import {tocPathForVolume} from './cli-config'
+import {parseTocHtml, type TocArticle} from './parse-toc'
 
 export interface SnapshotArticle extends TocArticle {
 	htmlPath: string

@@ -27,10 +27,7 @@ export default defineMigration({
 				const current = rel?.relationshipType
 				if (!current || !(current in LABEL_TO_VALUE)) continue
 				patches.push(
-					at(
-						['immediateRelatives', i, 'relationshipType'],
-						set(LABEL_TO_VALUE[current]),
-					),
+					at(['immediateRelatives', i, 'relationshipType'], set(LABEL_TO_VALUE[current])),
 				)
 			}
 			return patches

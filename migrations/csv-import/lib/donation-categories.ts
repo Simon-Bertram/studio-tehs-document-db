@@ -2,6 +2,7 @@
  * Seed canonical donation categories and build migrationKey → _id lookup.
  */
 import type {SanityClient} from '@sanity/client'
+
 import {CANONICAL_DONATION_CATEGORIES} from './donation-dtype-map'
 
 function cleanId(id: string): string {
@@ -20,9 +21,7 @@ export async function ensureDonationCategories(
 	const lookup: Record<string, string> = {}
 
 	if (!options?.skipFetch) {
-		const existing = await client.fetch<
-			{_id: string; migrationKey: string; title: string}[]
-		>(
+		const existing = await client.fetch<{_id: string; migrationKey: string; title: string}[]>(
 			`*[_type == "donationCategory" && defined(migrationKey)]{ _id, migrationKey, title }`,
 		)
 		for (const doc of existing) {

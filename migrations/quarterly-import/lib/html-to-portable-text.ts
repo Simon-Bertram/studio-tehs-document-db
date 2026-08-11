@@ -1,8 +1,8 @@
 /**
  * Convert cleaned article HTML fragments into Portable Text + pageBreaks.
  */
-import {nanoid} from 'nanoid'
 import {parseHTML} from 'linkedom'
+import {nanoid} from 'nanoid'
 
 export type PortableTextSpan = {
 	_type: 'span'
@@ -35,15 +35,9 @@ export type ImagePlaceholderBlock = {
 	asset?: {_type: 'reference'; _ref: string}
 }
 
-export type BodyBlock =
-	| PortableTextBlock
-	| PageBreakBlock
-	| ImagePlaceholderBlock
+export type BodyBlock = PortableTextBlock | PageBreakBlock | ImagePlaceholderBlock
 
-function textBlock(
-	text: string,
-	style: string = 'normal',
-): PortableTextBlock | null {
+function textBlock(text: string, style: string = 'normal'): PortableTextBlock | null {
 	const cleaned = text.replace(/\s+/g, ' ').trim()
 	if (!cleaned) return null
 	return {
@@ -73,10 +67,7 @@ function pageBreak(pageNumber: string): PageBreakBlock {
  * Walk article content nodes into Portable Text-ish blocks.
  * Images become placeholders with `_pendingSrc` for live upload.
  */
-export function htmlFragmentToBody(
-	htmlFragment: string,
-	baseUrl: string,
-): BodyBlock[] {
+export function htmlFragmentToBody(htmlFragment: string, baseUrl: string): BodyBlock[] {
 	const wrapped = `<div id="root">${htmlFragment}</div>`
 	const {document} = parseHTML(wrapped)
 	const root = document.querySelector('#root')
@@ -167,20 +158,12 @@ export function extractArticleContent(html: string): {
 
 	// Prefer the digital archives content region when present
 	const contentRoot =
-		document.querySelector('#commonText1') ??
-		document.querySelector('td.hqdaText') ??
-		document.body
+		document.querySelector('#commonText1') ?? document.querySelector('td.hqdaText') ?? document.body
 
 	if (!contentRoot) return {contentHtml: ''}
 
 	// Remove nav / menus / headers
-	for (const sel of [
-		'#menu',
-		'table.topmenu',
-		'.tocNavHintBox',
-		'script',
-		'style',
-	]) {
+	for (const sel of ['#menu', 'table.topmenu', '.tocNavHintBox', 'script', 'style']) {
 		contentRoot.querySelectorAll(sel).forEach((el) => el.remove())
 	}
 

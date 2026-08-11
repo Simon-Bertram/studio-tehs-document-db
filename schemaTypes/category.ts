@@ -1,6 +1,8 @@
 import {TagIcon} from '@sanity/icons/Tag'
 import {defineField, defineType} from 'sanity'
+
 import {isUniqueStringField} from './lib/isUniqueStringField'
+import {truncatePreviewText} from './lib/truncatePreviewText'
 
 export const category = defineType({
 	name: 'category',
@@ -43,7 +45,13 @@ export const category = defineType({
 	preview: {
 		select: {
 			title: 'title',
-			subtitle: 'description',
+			description: 'description',
+		},
+		prepare({title, description}) {
+			return {
+				title: title || 'Untitled category',
+				subtitle: truncatePreviewText(description),
+			}
 		},
 	},
 })

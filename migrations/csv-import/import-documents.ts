@@ -5,10 +5,7 @@
  */
 import {parseCliConfig} from './lib/cli-config'
 import {runImport} from './lib/run-import'
-import {
-	assertContentWriteAccess,
-	createImportClient,
-} from './lib/sanity-client'
+import {assertContentWriteAccess, createImportClient} from './lib/sanity-client'
 
 const config = parseCliConfig(process.argv.slice(2))
 const client = createImportClient({dryRun: config.dryRun})

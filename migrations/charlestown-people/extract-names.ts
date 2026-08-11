@@ -9,6 +9,7 @@
 import {readFileSync, writeFileSync} from 'node:fs'
 import {dirname, join, resolve} from 'node:path'
 import {fileURLToPath} from 'node:url'
+
 import {parseHTML} from 'linkedom'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -39,8 +40,7 @@ const FULL_NAME_MERGES: Record<string, string> = {
 	'annue bean': 'Annie Bean',
 }
 
-const NON_PERSON_RE =
-	/\b(company|district|school)\b|&|\band\b|,/i
+const NON_PERSON_RE = /\b(company|district|school)\b|&|\band\b|,/i
 
 type RawEntry = {
 	displayName: string
@@ -98,9 +98,7 @@ function isNonPerson(displayName: string): boolean {
 
 function extractRole(raw: string): string | null {
 	const text = normalizeWhitespace(decodeEntities(raw)).replace(/^-\s*/, '')
-	const m = text.match(
-		/^(deed|patent|neighbor|atlas|taxes|quit rent)(?:\s+\d+)?(?:\s*\([^)]*\))?/i,
-	)
+	const m = text.match(/^(deed|patent|neighbor|atlas|taxes|quit rent)(?:\s+\d+)?(?:\s*\([^)]*\))?/i)
 	if (!m) return null
 	return m[1].toLowerCase()
 }
@@ -112,15 +110,11 @@ function extractIndexEntries(html: string): RawEntry[] {
 	for (const li of Array.from(document.querySelectorAll('li'))) {
 		const anchor = li.querySelector('a')
 		if (!anchor) continue
-		const displayName = normalizeWhitespace(
-			decodeEntities(anchor.textContent || ''),
-		)
+		const displayName = normalizeWhitespace(decodeEntities(anchor.textContent || ''))
 		if (!displayName || /^see\b/i.test(displayName)) continue
 
 		const liText = normalizeWhitespace(decodeEntities(li.textContent || ''))
-		const after = normalizeWhitespace(
-			liText.replace(displayName, '').replace(/^-\s*/, ''),
-		)
+		const after = normalizeWhitespace(liText.replace(displayName, '').replace(/^-\s*/, ''))
 		const role = extractRole(after)
 		if (!role) continue
 
@@ -136,9 +130,7 @@ function extractSurnameAliases(html: string): {from: string; to: string; note: s
 
 	// Intro examples: Buchwalder/Buckwalter, …
 	const intro = document.body?.textContent || ''
-	const introMatch = intro.match(
-		/variable,\s*e\.g\.\s*([^.]+)\./i,
-	)
+	const introMatch = intro.match(/variable,\s*e\.g\.\s*([^.]+)\./i)
 	if (introMatch) {
 		for (const group of introMatch[1].split(',')) {
 			const forms = group
@@ -163,9 +155,7 @@ function extractSurnameAliases(html: string): {from: string; to: string; note: s
 		const text = normalizeWhitespace(decodeEntities(li.textContent || ''))
 		if (!/see/i.test(text)) continue
 
-		const m = text.match(
-			/^(.+?)\s*[-–]?\s*(?:also\s+)?see(?:\s+also)?\s+(.+)$/i,
-		)
+		const m = text.match(/^(.+?)\s*[-–]?\s*(?:also\s+)?see(?:\s+also)?\s+(.+)$/i)
 		if (!m) continue
 		const from = normalizeWhitespace(m[1].replace(/\s+or\s+/gi, ' / '))
 		const to = normalizeWhitespace(m[2])
@@ -227,10 +217,7 @@ function splitName(displayName: string): {
 	let prefix = ''
 	let suffix = ''
 
-	if (
-		tokens.length > 1 &&
-		PREFIXES.some((p) => casefold(p) === casefold(tokens[0]))
-	) {
+	if (tokens.length > 1 && PREFIXES.some((p) => casefold(p) === casefold(tokens[0]))) {
 		prefix = tokens[0]
 		tokens = tokens.slice(1)
 	}
@@ -340,10 +327,7 @@ function buildPeople(entries: RawEntry[]): PersonRow[] {
 		const suffix = split.suffix
 
 		const alternateSpellings = new Set<string>()
-		if (
-			firstCanon.original &&
-			casefold(firstCanon.original) !== casefold(firstName)
-		) {
+		if (firstCanon.original && casefold(firstCanon.original) !== casefold(firstName)) {
 			alternateSpellings.add(`${firstCanon.original} ${lastName}`.trim())
 		}
 		if (displayMerge.original) {
@@ -354,12 +338,9 @@ function buildPeople(entries: RawEntry[]): PersonRow[] {
 			alternateSpellings.add(split.aliasNote)
 		}
 
-		const key = [
-			casefold(prefix),
-			casefold(firstName),
-			casefold(lastName),
-			casefold(suffix),
-		].join('|')
+		const key = [casefold(prefix), casefold(firstName), casefold(lastName), casefold(suffix)].join(
+			'|',
+		)
 
 		let acc = byKey.get(key)
 		if (!acc) {
@@ -388,9 +369,7 @@ function buildPeople(entries: RawEntry[]): PersonRow[] {
 		firstName: acc.firstName,
 		lastName: acc.lastName,
 		suffix: acc.suffix,
-		alternateSpellings: [...acc.alternateSpellings].sort((a, b) =>
-			a.localeCompare(b),
-		),
+		alternateSpellings: [...acc.alternateSpellings].sort((a, b) => a.localeCompare(b)),
 		sourceNames: [...acc.sourceNames].sort((a, b) => a.localeCompare(b)),
 		roles: [...acc.roles].sort((a, b) => a.localeCompare(b)),
 	}))
@@ -413,15 +392,7 @@ function main() {
 	const aliases = extractSurnameAliases(html)
 
 	const peopleCsv = toCsv(
-		[
-			'firstName',
-			'lastName',
-			'prefix',
-			'suffix',
-			'alternateSpellings',
-			'sourceNames',
-			'roles',
-		],
+		['firstName', 'lastName', 'prefix', 'suffix', 'alternateSpellings', 'sourceNames', 'roles'],
 		people.map((p) => [
 			p.firstName,
 			p.lastName,

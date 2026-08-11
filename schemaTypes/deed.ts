@@ -1,5 +1,12 @@
+import {BillIcon} from '@sanity/icons/Bill'
 import {DocumentsIcon} from '@sanity/icons/Documents'
+import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
+import {PinIcon} from '@sanity/icons/Pin'
+import {SearchIcon} from '@sanity/icons/Search'
+import {UsersIcon} from '@sanity/icons/Users'
 import {defineArrayMember, defineField, defineType} from 'sanity'
+
+import {formatHistoricalDate, type HistoricalDateValue} from './lib/formatHistoricalDate'
 import {archiveIdField} from './shared/archiveIdField'
 
 export const deed = defineType({
@@ -10,11 +17,11 @@ export const deed = defineType({
 	description:
 		'One conveyance or land instrument in a chain of title (deed, patent, will, tax return, etc.). Not for transcribing a single clipping—use Primary Source for that.',
 	groups: [
-		{name: 'identity', title: 'Identity', default: true},
-		{name: 'parties', title: 'Parties'},
-		{name: 'terms', title: 'Terms'},
-		{name: 'place', title: 'Place'},
-		{name: 'research', title: 'Research'},
+		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
+		{name: 'parties', title: 'Parties', icon: UsersIcon},
+		{name: 'terms', title: 'Terms', icon: BillIcon},
+		{name: 'place', title: 'Place', icon: PinIcon},
+		{name: 'research', title: 'Research', icon: SearchIcon},
 	],
 	fields: [
 		archiveIdField('deed', 'G2-182', 'identity'),
@@ -56,11 +63,11 @@ export const deed = defineType({
 		}),
 		defineField({
 			name: 'date',
-			title: 'Exact Date',
-			type: 'date',
+			title: 'Structured Date',
+			type: 'historicalDate',
 			group: 'identity',
 			description:
-				'Optional. Use only when the exact calendar day is known (helps sorting and filtering). Do not invent a day for year-only rows.',
+				'Optional structured date for sorting and filtering. Prefer year-only when the day is unknown. Keep Date (Textual) for as-recorded wording.',
 		}),
 		defineField({
 			name: 'grantors',
@@ -101,8 +108,7 @@ export const deed = defineType({
 			title: 'Grantees (Text)',
 			type: 'string',
 			group: 'parties',
-			description:
-				'As-recorded To parties when not yet in Historical Persons.',
+			description: 'As-recorded To parties when not yet in Historical Persons.',
 		}),
 		defineField({
 			name: 'areaText',
@@ -116,8 +122,7 @@ export const deed = defineType({
 			title: 'Cost (Textual)',
 			type: 'string',
 			group: 'terms',
-			description:
-				'As-recorded cost for display (e.g. £300, £244 10s, $11,700, £6 per annum).',
+			description: 'As-recorded cost for display (e.g. £300, £244 10s, $11,700, £6 per annum).',
 		}),
 		defineField({
 			name: 'costKind',
@@ -131,8 +136,7 @@ export const deed = defineType({
 					{title: 'Other', value: 'other'},
 				],
 			},
-			description:
-				'Optional. Mark ground rents so they can be excluded from sale-price sorts.',
+			description: 'Optional. Mark ground rents so they can be excluded from sale-price sorts.',
 		}),
 		defineField({
 			name: 'costCurrency',
@@ -198,20 +202,29 @@ export const deed = defineType({
 			type: 'reference',
 			group: 'research',
 			to: [{type: 'primarySource'}],
-			description:
-				'Optional. Link when the full instrument is transcribed in The Archive.',
+			description: 'Optional. Link when the full instrument is transcribed in The Archive.',
 		}),
 	],
 	orderings: [
 		{
 			title: 'Exact date, newest',
 			name: 'dateDesc',
-			by: [{field: 'date', direction: 'desc'}],
+			by: [{field: 'date.date', direction: 'desc'}],
 		},
 		{
 			title: 'Exact date, oldest',
 			name: 'dateAsc',
-			by: [{field: 'date', direction: 'asc'}],
+			by: [{field: 'date.date', direction: 'asc'}],
+		},
+		{
+			title: 'Year, newest',
+			name: 'yearDesc',
+			by: [{field: 'date.year', direction: 'desc'}],
+		},
+		{
+			title: 'Year, oldest',
+			name: 'yearAsc',
+			by: [{field: 'date.year', direction: 'asc'}],
 		},
 		{
 			title: 'Cost amount, high–low',
@@ -235,7 +248,11 @@ export const deed = defineType({
 			grantorsText: 'grantorsText',
 			granteesText: 'granteesText',
 			dateText: 'dateText',
-			date: 'date',
+			precision: 'date.precision',
+			qualifier: 'date.qualifier',
+			year: 'date.year',
+			month: 'date.month',
+			date: 'date.date',
 			instrumentType: 'instrumentType',
 			media: 'scanImage',
 		},
@@ -244,6 +261,10 @@ export const deed = defineType({
 			grantorsText,
 			granteesText,
 			dateText,
+			precision,
+			qualifier,
+			year,
+			month,
 			date,
 			instrumentType,
 			media,
@@ -253,7 +274,15 @@ export const deed = defineType({
 					? [grantorsText, granteesText].filter(Boolean).join(' → ')
 					: undefined
 			const title = reference || parties || 'Untitled instrument'
-			const when = dateText || date
+			const when =
+				dateText ||
+				formatHistoricalDate({
+					precision,
+					qualifier,
+					year,
+					month,
+					date,
+				} as HistoricalDateValue)
 			const subtitle = [instrumentType, when].filter(Boolean).join(' · ')
 			return {
 				title,

@@ -1,11 +1,12 @@
+import {googleMapsInput} from '@sanity/google-maps-input'
+import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
-import {visionTool} from '@sanity/vision'
+
+import {SANITY_DATASET, SANITY_PROJECT_ID} from './lib/sanityEnv'
 import {schemaTypes} from './schemaTypes'
 import {structure} from './structure'
-import {documentationTool, DocumentationNavbar} from './tools/documentation'
-import {googleMapsInput} from '@sanity/google-maps-input'
-import {SANITY_DATASET, SANITY_PROJECT_ID} from './lib/sanityEnv'
+import {DocumentationNavbar, documentationTool} from './tools/documentation'
 
 export default defineConfig({
 	name: 'default',

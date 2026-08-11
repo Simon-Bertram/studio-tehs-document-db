@@ -3,6 +3,7 @@
  * Caps at rowLimit so --limit can sample without loading the full export.
  */
 import fs from 'node:fs'
+
 import csvParser from 'csv-parser'
 
 export async function readCsvRows<T extends Record<string, string> = Record<string, string>>(

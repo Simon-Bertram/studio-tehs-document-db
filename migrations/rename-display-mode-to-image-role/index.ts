@@ -29,12 +29,7 @@ export default defineMigration({
 
 				const mode = block.displayMode
 				if (mode && mode in DISPLAY_MODE_TO_ROLE && !block.imageRole) {
-					patches.push(
-						at(
-							['body', i, 'imageRole'],
-							setIfMissing(DISPLAY_MODE_TO_ROLE[mode]),
-						),
-					)
+					patches.push(at(['body', i, 'imageRole'], setIfMissing(DISPLAY_MODE_TO_ROLE[mode])))
 					patches.push(at(['body', i, 'displayMode'], unset()))
 				} else if (mode && !block.imageRole) {
 					patches.push(at(['body', i, 'imageRole'], setIfMissing('figure')))

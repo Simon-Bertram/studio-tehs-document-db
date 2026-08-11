@@ -1,10 +1,7 @@
 /**
  * TEHS Quarterly HTML import entrypoint (default volume 22 pilot).
  */
-import {
-	assertContentWriteAccess,
-	createImportClient,
-} from '../csv-import/lib/sanity-client'
+import {assertContentWriteAccess, createImportClient} from '../csv-import/lib/sanity-client'
 import {parseQuarterlyCliConfig} from './lib/cli-config'
 import {runQuarterlyImport} from './lib/run-quarterly-import'
 

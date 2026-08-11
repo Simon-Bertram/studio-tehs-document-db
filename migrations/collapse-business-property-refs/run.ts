@@ -8,11 +8,8 @@
  */
 import {createClient} from '@sanity/client'
 import {nanoid} from 'nanoid'
-import {
-	SANITY_API_VERSION,
-	SANITY_DATASET,
-	SANITY_PROJECT_ID,
-} from '../../lib/sanityEnv'
+
+import {SANITY_API_VERSION, SANITY_DATASET, SANITY_PROJECT_ID} from '../../lib/sanityEnv'
 
 const DRY_RUN = !process.argv.includes('--live')
 
@@ -67,9 +64,7 @@ async function run() {
 		: []
 
 	const locationsByBusiness = new Map<string, Set<string>>()
-	const knownBusinessIds = new Set(
-		businesses.map((biz) => biz._id.replace(/^drafts\./, '')),
-	)
+	const knownBusinessIds = new Set(businesses.map((biz) => biz._id.replace(/^drafts\./, '')))
 	for (const biz of businesses) {
 		const id = biz._id.replace(/^drafts\./, '')
 		locationsByBusiness.set(

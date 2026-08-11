@@ -12,8 +12,7 @@ export const CANONICAL_DONATION_CATEGORIES = [
 	'Posters',
 ] as const
 
-export type CanonicalDonationCategory =
-	(typeof CANONICAL_DONATION_CATEGORIES)[number]
+export type CanonicalDonationCategory = (typeof CANONICAL_DONATION_CATEGORIES)[number]
 
 /** Raw dtype (lowercased) → canonical category title(s). */
 export const DTYPE_MAP: Record<string, CanonicalDonationCategory[]> = {
@@ -33,10 +32,7 @@ export const DTYPE_MAP: Record<string, CanonicalDonationCategory[]> = {
 	'newspaper articles and poster': ['Newspaper clipping', 'Posters'],
 	'photographic prints and postcards': ['Photographic prints', 'Postcards'],
 	'photographic images and postcards': ['Photographic prints', 'Postcards'],
-	'photographic prints and digital images': [
-		'Photographic prints',
-		'Digital photographs',
-	],
+	'photographic prints and digital images': ['Photographic prints', 'Digital photographs'],
 }
 
 /** dtype values that intentionally map to no categories (editor follow-up). */

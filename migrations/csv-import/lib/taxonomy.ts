@@ -13,9 +13,7 @@ function cleanId(id: string): string {
 	return id.replace(/^drafts\./, '')
 }
 
-function buildLookup(
-	docs: {_id: string; migrationKey: string}[],
-): Record<string, string> {
+function buildLookup(docs: {_id: string; migrationKey: string}[]): Record<string, string> {
 	const lookup: Record<string, string> = {}
 	for (const doc of docs) {
 		lookup[doc.migrationKey.trim().toLowerCase()] = cleanId(doc._id)

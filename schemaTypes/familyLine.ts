@@ -1,11 +1,13 @@
-import {UserIcon} from '@sanity/icons/User'
+import {UsersIcon} from '@sanity/icons/Users'
 import {defineField, defineType} from 'sanity'
+
+import {truncatePreviewText} from './lib/truncatePreviewText'
 
 export const familyLine = defineType({
 	name: 'familyLine',
 	title: 'Family / Lineage',
 	type: 'document',
-	icon: UserIcon,
+	icon: UsersIcon,
 	fields: [
 		defineField({
 			name: 'title',
@@ -31,7 +33,13 @@ export const familyLine = defineType({
 	preview: {
 		select: {
 			title: 'title',
-			subtitle: 'description',
+			description: 'description',
+		},
+		prepare({title, description}) {
+			return {
+				title: title || 'Untitled family',
+				subtitle: truncatePreviewText(description),
+			}
 		},
 	},
 })

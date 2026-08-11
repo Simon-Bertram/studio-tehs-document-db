@@ -1,5 +1,12 @@
+import {BlockElementIcon} from '@sanity/icons/BlockElement'
+import {ClipboardIcon} from '@sanity/icons/Clipboard'
 import {ImageIcon} from '@sanity/icons/Image'
+import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
+import {PinIcon} from '@sanity/icons/Pin'
+import {SearchIcon} from '@sanity/icons/Search'
 import {defineField, defineType} from 'sanity'
+
+import {formatHistoricalDate, type HistoricalDateValue} from './lib/formatHistoricalDate'
 import {archiveIdField} from './shared/archiveIdField'
 import {citationsField} from './shared/citationsField'
 import {organisationsField} from './shared/organisationsField'
@@ -12,11 +19,11 @@ export const historicalImage = defineType({
 	type: 'document',
 	icon: ImageIcon,
 	groups: [
-		{name: 'identity', title: 'Identity', default: true},
-		{name: 'content', title: 'Content'},
-		{name: 'place', title: 'Place'},
-		{name: 'provenance', title: 'Provenance / Rights'},
-		{name: 'research', title: 'Research'},
+		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
+		{name: 'content', title: 'Content', icon: BlockElementIcon},
+		{name: 'place', title: 'Place', icon: PinIcon},
+		{name: 'provenance', title: 'Provenance / Rights', icon: ClipboardIcon},
+		{name: 'research', title: 'Research', icon: SearchIcon},
 	],
 	fields: [
 		archiveIdField('historicalImage', 'MF37', 'identity'),
@@ -35,9 +42,23 @@ export const historicalImage = defineType({
 		}),
 		defineField({
 			name: 'dateTaken',
-			title: 'Date Taken (Textual or Exact)',
+			title: 'Date Taken',
+			type: 'historicalDate',
+			group: 'identity',
+			description:
+				'Prefer year-only when the exact day is unknown. Use Exact day only when the full calendar date is known.',
+		}),
+		defineField({
+			name: 'dateTakenText',
+			title: 'Date Taken (Legacy Text)',
 			type: 'string',
 			group: 'identity',
+			deprecated: {
+				reason: 'Use Date Taken (structured historical date) instead.',
+			},
+			readOnly: true,
+			hidden: ({value}) => value === undefined,
+			initialValue: undefined,
 		}),
 		defineField({
 			name: 'imageFile',
@@ -122,16 +143,43 @@ export const historicalImage = defineType({
 			by: [{field: 'title', direction: 'asc'}],
 		},
 		{
-			title: 'Date taken',
+			title: 'Date taken (exact day)',
 			name: 'dateTakenAsc',
-			by: [{field: 'dateTaken', direction: 'asc'}],
+			by: [{field: 'dateTaken.date', direction: 'asc'}],
+		},
+		{
+			title: 'Date taken (year)',
+			name: 'dateTakenYearAsc',
+			by: [{field: 'dateTaken.year', direction: 'asc'}],
 		},
 	],
 	preview: {
 		select: {
 			title: 'title',
-			subtitle: 'archiveId',
+			archiveId: 'archiveId',
 			media: 'imageFile',
+			precision: 'dateTaken.precision',
+			qualifier: 'dateTaken.qualifier',
+			year: 'dateTaken.year',
+			month: 'dateTaken.month',
+			date: 'dateTaken.date',
+			legacyDate: 'dateTakenText',
+		},
+		prepare({title, archiveId, media, precision, qualifier, year, month, date, legacyDate}) {
+			const when =
+				formatHistoricalDate({
+					precision,
+					qualifier,
+					year,
+					month,
+					date,
+				} as HistoricalDateValue) || legacyDate
+			const subtitle = [archiveId, when].filter(Boolean).join(' · ')
+			return {
+				title: title || 'Untitled image',
+				subtitle,
+				media,
+			}
 		},
 	},
 })

@@ -1,22 +1,23 @@
-import {category} from './category'
-import {township} from './township'
-import {person} from './person'
-import {property} from './property'
-import {deed} from './deed'
 import {business} from './business'
-import {quarterlyArticle} from './quarterlyArticle'
-import {location} from './location'
-import {historicalImage} from './historicalImage'
-import {primarySource} from './primarySource'
-import {researchArticle} from './researchArticle'
-import {familyLine} from './familyLine'
+import {category} from './category'
+import {deed} from './deed'
 import {donation} from './donation'
 import {donationCategory} from './donationCategory'
-import {mapEmbed} from './objects/mapEmbed'
-import {internalSubLinks} from './objects/internalSubLinks'
+import {familyLine} from './familyLine'
+import {historicalImage} from './historicalImage'
+import {location} from './location'
 import {censusRecord} from './objects/censusRecord'
+import {historicalDate} from './objects/historicalDate'
 import {immediateRelative} from './objects/immediateRelative'
+import {internalSubLinks} from './objects/internalSubLinks'
+import {mapEmbed} from './objects/mapEmbed'
 import {pageBreak} from './objects/pageBreak'
+import {person} from './person'
+import {primarySource} from './primarySource'
+import {property} from './property'
+import {quarterlyArticle} from './quarterlyArticle'
+import {researchArticle} from './researchArticle'
+import {township} from './township'
 
 export const schemaTypes = [
 	category,
@@ -36,6 +37,7 @@ export const schemaTypes = [
 	mapEmbed,
 	internalSubLinks,
 	censusRecord,
+	historicalDate,
 	immediateRelative,
 	pageBreak,
 ]

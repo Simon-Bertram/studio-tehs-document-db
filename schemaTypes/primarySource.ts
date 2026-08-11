@@ -1,5 +1,11 @@
+import {BlockElementIcon} from '@sanity/icons/BlockElement'
 import {DocumentTextIcon} from '@sanity/icons/DocumentText'
+import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
+import {PinIcon} from '@sanity/icons/Pin'
+import {SearchIcon} from '@sanity/icons/Search'
 import {defineArrayMember, defineField, defineType} from 'sanity'
+
+import {formatHistoricalDate, type HistoricalDateValue} from './lib/formatHistoricalDate'
 import {archiveIdField} from './shared/archiveIdField'
 import {citationsField} from './shared/citationsField'
 import {organisationsField} from './shared/organisationsField'
@@ -14,10 +20,10 @@ export const primarySource = defineType({
 	description:
 		'STOP: Use this ONLY for transcribing a single, historical piece of media (like a newspaper ad or old letter). If you want to publish an essay or piece of modern research, use the Research Article type instead.',
 	groups: [
-		{name: 'identity', title: 'Identity', default: true},
-		{name: 'content', title: 'Content'},
-		{name: 'place', title: 'Place'},
-		{name: 'research', title: 'Research'},
+		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
+		{name: 'content', title: 'Content', icon: BlockElementIcon},
+		{name: 'place', title: 'Place', icon: PinIcon},
+		{name: 'research', title: 'Research', icon: SearchIcon},
 	],
 	fields: [
 		archiveIdField('primarySource', 'Doc505', 'identity'),
@@ -29,19 +35,24 @@ export const primarySource = defineType({
 			validation: (Rule) => Rule.required(),
 		}),
 		defineField({
-			name: 'dateText',
-			title: 'Publication Date (Textual)',
-			type: 'string',
-			group: 'identity',
-			description: 'Use for uncertain or non-exact dates (e.g., "circa 1890", "Spring 1912").',
-		}),
-		defineField({
 			name: 'date',
-			title: 'Exact Publication Date',
-			type: 'date',
+			title: 'Publication Date',
+			type: 'historicalDate',
 			group: 'identity',
 			description:
-				'Optional. Use when the exact calendar date is known (helps sorting and filtering).',
+				'Prefer year-only or month+year when the exact day is unknown. Use Exact day only when the full calendar date is known.',
+		}),
+		defineField({
+			name: 'dateText',
+			title: 'Publication Date (Legacy Text)',
+			type: 'string',
+			group: 'identity',
+			deprecated: {
+				reason: 'Use Publication Date (structured historical date) instead.',
+			},
+			readOnly: true,
+			hidden: ({value}) => value === undefined,
+			initialValue: undefined,
 		}),
 		defineField({
 			name: 'newspaper',
@@ -118,7 +129,12 @@ export const primarySource = defineType({
 		{
 			title: 'Exact date, newest',
 			name: 'dateDesc',
-			by: [{field: 'date', direction: 'desc'}],
+			by: [{field: 'date.date', direction: 'desc'}],
+		},
+		{
+			title: 'Year, newest',
+			name: 'yearDesc',
+			by: [{field: 'date.year', direction: 'desc'}],
 		},
 		{
 			title: 'Archive ID',
@@ -136,11 +152,22 @@ export const primarySource = defineType({
 			title: 'title',
 			newspaper: 'newspaper',
 			dateText: 'dateText',
-			date: 'date',
+			precision: 'date.precision',
+			qualifier: 'date.qualifier',
+			year: 'date.year',
+			month: 'date.month',
+			date: 'date.date',
 			media: 'articleImage',
 		},
-		prepare({title, newspaper, dateText, date, media}) {
-			const when = dateText || date
+		prepare({title, newspaper, dateText, precision, qualifier, year, month, date, media}) {
+			const when =
+				formatHistoricalDate({
+					precision,
+					qualifier,
+					year,
+					month,
+					date,
+				} as HistoricalDateValue) || dateText
 			const subtitle = [newspaper, when].filter(Boolean).join(' · ')
 			return {
 				title: title || 'Untitled source',

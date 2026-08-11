@@ -1,11 +1,9 @@
 import {nanoid} from 'nanoid'
+
+import {type HistoricalDateValue, parseHistoricalDate} from '../../lib/parse-historical-date'
 import type {Audit} from './audit'
 import {cleanString} from './clean'
-import {
-	DIVERTED_QUARTERLY_DETAIL,
-	DIVERTED_QUARTERLY_REASON,
-	hasTehsKeyword,
-} from './tehs-keyword'
+import {DIVERTED_QUARTERLY_DETAIL, DIVERTED_QUARTERLY_REASON, hasTehsKeyword} from './tehs-keyword'
 
 export interface ImageCsvRow {
 	identifier: string
@@ -39,7 +37,7 @@ export interface HistoricalImageImportDoc {
 	archiveId: string
 	title: string
 	serialNumber?: string
-	dateTaken?: string
+	dateTaken?: HistoricalDateValue
 	description?: string
 	photographer?: string
 	contributor?: string
@@ -122,7 +120,10 @@ export function mapImageRow(
 	const serialNumber = cleanString(row.serialNumber)
 	if (serialNumber) doc.serialNumber = serialNumber
 	const dateTaken = cleanString(row.dateTaken)
-	if (dateTaken) doc.dateTaken = dateTaken
+	if (dateTaken) {
+		const parsed = parseHistoricalDate(dateTaken)
+		if (parsed) doc.dateTaken = parsed
+	}
 	const description = buildDescription(row)
 	if (description) doc.description = description
 	const photographer = cleanString(row.photographer)

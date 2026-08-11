@@ -5,12 +5,11 @@
  */
 import fs from 'node:fs'
 import path from 'node:path'
+
 import type {SanityClient} from '@sanity/client'
 import pLimit from 'p-limit'
-import {
-	SANITY_DATASET,
-	SANITY_PROJECT_ID,
-} from '../../../lib/sanityEnv'
+
+import {SANITY_DATASET, SANITY_PROJECT_ID} from '../../../lib/sanityEnv'
 import {Audit} from './audit'
 import type {ImportConfig} from './cli-config'
 import type {ImportDoc} from './map-row'
@@ -23,10 +22,7 @@ import {writeReports} from './write-reports'
 
 const CONCURRENCY = 5
 
-export async function runImport(
-	config: ImportConfig,
-	client: SanityClient,
-): Promise<void> {
+export async function runImport(config: ImportConfig, client: SanityClient): Promise<void> {
 	const {dryRun, rowLimit, csvPath, reportsDir} = config
 	const mode = dryRun ? 'DRY RUN' : 'LIVE'
 

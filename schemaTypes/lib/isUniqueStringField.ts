@@ -1,11 +1,8 @@
 import type {CustomValidator, ValidationContext} from 'sanity'
+
 import {SANITY_API_VERSION} from '../../lib/sanityEnv'
 
-const ALLOWED_FIELD_NAMES = new Set([
-	'archiveId',
-	'migrationKey',
-	'sourceKey',
-])
+const ALLOWED_FIELD_NAMES = new Set(['archiveId', 'migrationKey', 'sourceKey'])
 
 /**
  * Async uniqueness check for a string field on a document type.
@@ -17,9 +14,7 @@ export function isUniqueStringField(
 	message = 'Value must be unique',
 ): CustomValidator<string | undefined> {
 	if (!ALLOWED_FIELD_NAMES.has(fieldName)) {
-		throw new Error(
-			`isUniqueStringField: fieldName "${fieldName}" is not in the allowlist`,
-		)
+		throw new Error(`isUniqueStringField: fieldName "${fieldName}" is not in the allowlist`)
 	}
 
 	return async (value, context: ValidationContext) => {

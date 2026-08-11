@@ -3,8 +3,10 @@
  */
 import fs from 'node:fs'
 import path from 'node:path'
+
 import type {SanityClient} from '@sanity/client'
 import pLimit from 'p-limit'
+
 import {SANITY_DATASET, SANITY_PROJECT_ID} from '../../../lib/sanityEnv'
 import {Audit} from './audit'
 import type {ImportConfig} from './cli-config'
@@ -84,9 +86,7 @@ export async function runDonationsImport(
 					mappedKeywords,
 					unmappedKeywords,
 				})
-				console.log(
-					`[OK] ${result.action} donation → donationId: ${doc.donationId} (${result.id})`,
-				)
+				console.log(`[OK] ${result.action} donation → donationId: ${doc.donationId} (${result.id})`)
 			} catch (err) {
 				const msg = err instanceof Error ? err.message : String(err)
 				audit.skip({

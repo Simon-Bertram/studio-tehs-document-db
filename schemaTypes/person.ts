@@ -1,53 +1,75 @@
+import {CalendarIcon} from '@sanity/icons/Calendar'
+import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {UserIcon} from '@sanity/icons/User'
+import {UsersIcon} from '@sanity/icons/Users'
 import {defineArrayMember, defineField, defineType} from 'sanity'
+
+import {
+	compareHistoricalDates,
+	formatHistoricalDate,
+	type HistoricalDateValue,
+} from './lib/formatHistoricalDate'
 
 export const person = defineType({
 	name: 'person',
 	title: 'Historical Person',
 	type: 'document',
 	icon: UserIcon,
+	groups: [
+		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
+		{name: 'genealogy', title: 'Genealogy', icon: UsersIcon},
+		{name: 'records', title: 'Records', icon: CalendarIcon},
+	],
 	fields: [
 		defineField({
 			name: 'prefix',
 			title: 'Title / Prefix',
 			type: 'string',
+			group: 'identity',
 			description: 'e.g., Capt., Rev., Dr., Justice',
 		}),
 		defineField({
 			name: 'firstName',
 			title: 'First Name',
 			type: 'string',
+			group: 'identity',
 			validation: (Rule) => Rule.required(),
 		}),
 		defineField({
 			name: 'lastName',
 			title: 'Last Name',
 			type: 'string',
+			group: 'identity',
 			validation: (Rule) => Rule.required(),
 		}),
 		defineField({
 			name: 'suffix',
 			title: 'Suffix',
 			type: 'string',
+			group: 'identity',
 			description: 'e.g., Jr., Sr., III, Deceased',
 		}),
 		defineField({
 			name: 'born',
 			title: 'Born',
-			type: 'date',
+			type: 'historicalDate',
+			group: 'identity',
 			description:
-				'Optional. Use when the birth date is known. Format: year-month-day (e.g. 1850-08-25).',
+				'Optional. Prefer year-only when the exact day is unknown. Use Exact day only when the full calendar date is known—do not invent a day or month.',
 		}),
 		defineField({
 			name: 'died',
 			title: 'Died',
-			type: 'date',
+			type: 'historicalDate',
+			group: 'identity',
 			description:
-				'Optional. Use when the death date is known. Format: year-month-day (e.g. 1920-08-25).',
+				'Optional. Prefer year-only when the exact day is unknown. Use Exact day only when the full calendar date is known—do not invent a day or month.',
 			validation: (Rule) =>
 				Rule.custom((died, context) => {
-					const born = context.document?.born
-					if (born && died && new Date(died) < new Date(born as string)) {
+					const born = context.document?.born as HistoricalDateValue | undefined
+					const diedValue = died as HistoricalDateValue | undefined
+					if (!born?.precision || !diedValue?.precision) return true
+					if (compareHistoricalDates(diedValue, born) < 0) {
 						return 'Died date must be on or after born date'
 					}
 					return true
@@ -57,6 +79,7 @@ export const person = defineType({
 			name: 'alternateSpellings',
 			title: 'Alternate Spellings / Aliases',
 			type: 'array',
+			group: 'genealogy',
 			of: [defineArrayMember({type: 'string'})],
 			description: 'Add historical spelling variants found in records (e.g., Christman, Chrisman).',
 		}),
@@ -64,27 +87,28 @@ export const person = defineType({
 			name: 'censusAppearances',
 			title: 'Census / Occupation Records',
 			type: 'array',
+			group: 'records',
 			of: [defineArrayMember({type: 'censusRecord'})],
 		}),
 		defineField({
 			name: 'familyLines',
 			title: 'Family Lineages',
 			type: 'array',
+			group: 'genealogy',
 			of: [
 				defineArrayMember({
 					type: 'reference',
 					to: [{type: 'familyLine'}],
 				}),
 			],
-			description:
-				'Tag this person to broader family groups (e.g., The Bean Family).',
+			description: 'Tag this person to broader family groups (e.g., The Bean Family).',
 		}),
 		defineField({
 			name: 'immediateRelatives',
 			title: 'Known Immediate Relatives',
 			type: 'array',
-			description:
-				'Log specific known relationships (spouse, parent, child, sibling).',
+			group: 'genealogy',
+			description: 'Log specific known relationships (spouse, parent, child, sibling).',
 			of: [defineArrayMember({type: 'immediateRelative'})],
 		}),
 	],
@@ -112,12 +136,57 @@ export const person = defineType({
 			first: 'firstName',
 			last: 'lastName',
 			suffix: 'suffix',
+			bornPrecision: 'born.precision',
+			bornQualifier: 'born.qualifier',
+			bornYear: 'born.year',
+			bornMonth: 'born.month',
+			bornDate: 'born.date',
+			diedPrecision: 'died.precision',
+			diedQualifier: 'died.qualifier',
+			diedYear: 'died.year',
+			diedMonth: 'died.month',
+			diedDate: 'died.date',
 		},
 		prepare(selection) {
-			const {prefix, first, last, suffix} = selection
+			const {
+				prefix,
+				first,
+				last,
+				suffix,
+				bornPrecision,
+				bornQualifier,
+				bornYear,
+				bornMonth,
+				bornDate,
+				diedPrecision,
+				diedQualifier,
+				diedYear,
+				diedMonth,
+				diedDate,
+			} = selection
 			const title = [prefix, first, last, suffix].filter(Boolean).join(' ')
+			const bornLabel = formatHistoricalDate({
+				precision: bornPrecision,
+				qualifier: bornQualifier,
+				year: bornYear,
+				month: bornMonth,
+				date: bornDate,
+			})
+			const diedLabel = formatHistoricalDate({
+				precision: diedPrecision,
+				qualifier: diedQualifier,
+				year: diedYear,
+				month: diedMonth,
+				date: diedDate,
+			})
+			let subtitle: string | undefined
+			if (bornLabel && diedLabel) subtitle = `${bornLabel}–${diedLabel}`
+			else if (bornLabel) subtitle = `b. ${bornLabel}`
+			else if (diedLabel) subtitle = `d. ${diedLabel}`
+
 			return {
 				title: title || 'Unnamed Person',
+				subtitle,
 			}
 		},
 	},

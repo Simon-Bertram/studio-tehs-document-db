@@ -1,5 +1,9 @@
 import {CaseIcon} from '@sanity/icons/Case'
+import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
+import {LinkIcon} from '@sanity/icons/Link'
 import {defineArrayMember, defineField, defineType} from 'sanity'
+
+import {formatHistoricalDateRange, type HistoricalDateValue} from './lib/formatHistoricalDate'
 import {isUniqueStringField} from './lib/isUniqueStringField'
 import {BUSINESS_TYPE_LABELS, BUSINESS_TYPES} from './shared/businessTypes'
 
@@ -8,11 +12,16 @@ export const business = defineType({
 	title: 'Historical Organization',
 	type: 'document',
 	icon: CaseIcon,
+	groups: [
+		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
+		{name: 'relations', title: 'Relations', icon: LinkIcon},
+	],
 	fields: [
 		defineField({
 			name: 'name',
 			title: 'Organization Name',
 			type: 'string',
+			group: 'identity',
 			description:
 				'e.g., Great Valley Presbyterian Church, H. & B.F. Bean’s Lumber Yard, Valley Forge Silica, Sand and Ore Company',
 			validation: (Rule) => Rule.required(),
@@ -21,6 +30,7 @@ export const business = defineType({
 			name: 'businessType',
 			title: 'Organization Type',
 			type: 'string',
+			group: 'identity',
 			options: {
 				list: [...BUSINESS_TYPES],
 			},
@@ -31,6 +41,7 @@ export const business = defineType({
 			name: 'migrationKey',
 			title: 'Migration Mapping Key',
 			type: 'string',
+			group: 'identity',
 			description:
 				'Used by the CSV script to map legacy keywords (e.g. Lincoln) to this organization. Visible during migration; hide after cutover.',
 			validation: (Rule) =>
@@ -42,18 +53,41 @@ export const business = defineType({
 			name: 'description',
 			title: 'Description',
 			type: 'text',
+			group: 'identity',
 			description: 'Historical context for this organization.',
 		}),
 		defineField({
+			name: 'activeFrom',
+			title: 'Active From',
+			type: 'historicalDate',
+			group: 'identity',
+			description: 'Optional start of known activity (often year-only).',
+		}),
+		defineField({
+			name: 'activeTo',
+			title: 'Active To',
+			type: 'historicalDate',
+			group: 'identity',
+			description: 'Optional end of known activity (often year-only).',
+		}),
+		defineField({
 			name: 'yearsActive',
-			title: 'Years Active',
+			title: 'Years Active (Legacy)',
 			type: 'string',
+			group: 'identity',
 			description: 'Freeform date range, e.g. 1870–1920.',
+			deprecated: {
+				reason: 'Use Active From / Active To instead.',
+			},
+			readOnly: true,
+			hidden: ({value}) => value === undefined,
+			initialValue: undefined,
 		}),
 		defineField({
 			name: 'owners',
 			title: 'Owners / Operators',
 			type: 'array',
+			group: 'relations',
 			of: [
 				defineArrayMember({
 					type: 'reference',
@@ -65,6 +99,7 @@ export const business = defineType({
 			name: 'locations',
 			title: 'Associated Properties / Sites',
 			type: 'array',
+			group: 'relations',
 			of: [
 				defineArrayMember({
 					type: 'reference',
@@ -86,16 +121,59 @@ export const business = defineType({
 		select: {
 			title: 'name',
 			businessType: 'businessType',
+			yearsActive: 'yearsActive',
+			fromPrecision: 'activeFrom.precision',
+			fromQualifier: 'activeFrom.qualifier',
+			fromYear: 'activeFrom.year',
+			fromMonth: 'activeFrom.month',
+			fromDate: 'activeFrom.date',
+			toPrecision: 'activeTo.precision',
+			toQualifier: 'activeTo.qualifier',
+			toYear: 'activeTo.year',
+			toMonth: 'activeTo.month',
+			toDate: 'activeTo.date',
 		},
 		prepare(selection) {
-			const {title, businessType} = selection
+			const {
+				title,
+				businessType,
+				yearsActive,
+				fromPrecision,
+				fromQualifier,
+				fromYear,
+				fromMonth,
+				fromDate,
+				toPrecision,
+				toQualifier,
+				toYear,
+				toMonth,
+				toDate,
+			} = selection
 			const label =
 				businessType && businessType in BUSINESS_TYPE_LABELS
 					? BUSINESS_TYPE_LABELS[businessType as keyof typeof BUSINESS_TYPE_LABELS]
 					: businessType
+			const range =
+				formatHistoricalDateRange(
+					{
+						precision: fromPrecision,
+						qualifier: fromQualifier,
+						year: fromYear,
+						month: fromMonth,
+						date: fromDate,
+					} as HistoricalDateValue,
+					{
+						precision: toPrecision,
+						qualifier: toQualifier,
+						year: toYear,
+						month: toMonth,
+						date: toDate,
+					} as HistoricalDateValue,
+				) || yearsActive
+			const subtitle = [label, range].filter(Boolean).join(' · ')
 			return {
 				title: title || 'Unnamed Organization',
-				subtitle: label || undefined,
+				subtitle: subtitle || undefined,
 			}
 		},
 	},

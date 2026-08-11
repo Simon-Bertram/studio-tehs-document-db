@@ -3,8 +3,10 @@
  */
 import fs from 'node:fs'
 import path from 'node:path'
+
 import type {SanityClient} from '@sanity/client'
 import pLimit from 'p-limit'
+
 import {SANITY_DATASET, SANITY_PROJECT_ID} from '../../../lib/sanityEnv'
 import {Audit} from './audit'
 import type {ImportConfig} from './cli-config'
@@ -50,10 +52,7 @@ async function uploadJpegIfNeeded(
 	}
 }
 
-export async function runImagesImport(
-	config: ImportConfig,
-	client: SanityClient,
-): Promise<void> {
+export async function runImagesImport(config: ImportConfig, client: SanityClient): Promise<void> {
 	const {dryRun, rowLimit, csvPath, reportsDir} = config
 	const mode = dryRun ? 'DRY RUN' : 'LIVE'
 
@@ -85,8 +84,7 @@ export async function runImagesImport(
 			const mapped = mapImageRow(row, lookups, audit)
 			if (!mapped) return
 
-			const {doc, csvType, title, mappedKeywords, unmappedKeywords, psImagesRaw} =
-				mapped
+			const {doc, csvType, title, mappedKeywords, unmappedKeywords, psImagesRaw} = mapped
 
 			if (dryRun) {
 				docs.push(doc)
@@ -102,9 +100,7 @@ export async function runImagesImport(
 				const assetNote = psImagesRaw
 					? `JPEG ${Buffer.byteLength(psImagesRaw, 'latin1')} bytes`
 					: 'no JPEG'
-				console.log(
-					`[DRY RUN] historicalImage → ${doc.archiveId} (${assetNote})`,
-				)
+				console.log(`[DRY RUN] historicalImage → ${doc.archiveId} (${assetNote})`)
 				return
 			}
 
@@ -143,9 +139,7 @@ export async function runImagesImport(
 					mappedKeywords,
 					unmappedKeywords,
 				})
-				console.log(
-					`[OK] ${result.action} historicalImage → ${doc.archiveId} (${result.id})`,
-				)
+				console.log(`[OK] ${result.action} historicalImage → ${doc.archiveId} (${result.id})`)
 			} catch (err) {
 				const msg = err instanceof Error ? err.message : String(err)
 				audit.skip({

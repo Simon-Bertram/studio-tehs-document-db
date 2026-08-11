@@ -2,15 +2,14 @@
  * Lookups for historical image import: townships, subject categories, donations.
  */
 import type {SanityClient} from '@sanity/client'
+
 import type {ImageLookups} from './map-image-row'
 
 function cleanId(id: string): string {
 	return id.replace(/^drafts\./, '')
 }
 
-export async function buildImageLookups(
-	client: SanityClient,
-): Promise<ImageLookups> {
+export async function buildImageLookups(client: SanityClient): Promise<ImageLookups> {
 	const [townships, categories, donations] = await Promise.all([
 		client.fetch<{_id: string; migrationKey: string}[]>(
 			`*[_type == "township" && defined(migrationKey)]{ _id, migrationKey }`,

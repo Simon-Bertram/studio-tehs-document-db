@@ -4,10 +4,7 @@
  * Dry-run is the default; pass --live to create documents.
  */
 import {parseCliConfig} from '../csv-import/lib/cli-config'
-import {
-	assertContentWriteAccess,
-	createImportClient,
-} from '../csv-import/lib/sanity-client'
+import {assertContentWriteAccess, createImportClient} from '../csv-import/lib/sanity-client'
 import {runPeopleImport} from './lib/run-people-import'
 
 const config = parseCliConfig(process.argv.slice(2), {

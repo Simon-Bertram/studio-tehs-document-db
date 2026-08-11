@@ -1,12 +1,10 @@
 import {nanoid} from 'nanoid'
+
+import {type HistoricalDateValue, parseHistoricalDate} from '../../lib/parse-historical-date'
 import type {Audit} from './audit'
 import {cleanString, normalizeClipId, resolveSchemaType, slugify} from './clean'
 import type {TaxonomyLookups} from './taxonomy'
-import {
-	DIVERTED_QUARTERLY_DETAIL,
-	DIVERTED_QUARTERLY_REASON,
-	hasTehsKeyword,
-} from './tehs-keyword'
+import {DIVERTED_QUARTERLY_DETAIL, DIVERTED_QUARTERLY_REASON, hasTehsKeyword} from './tehs-keyword'
 
 export interface CsvRow {
 	clipID: string
@@ -29,10 +27,7 @@ export interface CsvRow {
 	facilitators: string
 }
 
-export type ImportSchemaType =
-	| 'historicalImage'
-	| 'primarySource'
-	| 'researchArticle'
+export type ImportSchemaType = 'historicalImage' | 'primarySource' | 'researchArticle'
 
 export interface PortableTextSpan {
 	_type: 'span'
@@ -64,7 +59,7 @@ export interface ImportDocBase {
 
 export interface HistoricalImageImportDoc extends ImportDocBase {
 	_type: 'historicalImage'
-	dateTaken?: string
+	dateTaken?: HistoricalDateValue
 	description?: string
 	contributor?: string
 	source?: string
@@ -73,7 +68,7 @@ export interface HistoricalImageImportDoc extends ImportDocBase {
 
 export interface PrimarySourceImportDoc extends ImportDocBase {
 	_type: 'primarySource'
-	dateText?: string
+	date?: HistoricalDateValue
 	newspaper?: string
 	transcription?: PortableTextBlock[]
 }
@@ -84,10 +79,7 @@ export interface ResearchArticleImportDoc extends ImportDocBase {
 	body?: PortableTextBlock[]
 }
 
-export type ImportDoc =
-	| HistoricalImageImportDoc
-	| PrimarySourceImportDoc
-	| ResearchArticleImportDoc
+export type ImportDoc = HistoricalImageImportDoc | PrimarySourceImportDoc | ResearchArticleImportDoc
 
 export interface TaxonomyMapResult {
 	mappedKeywords: string[]
@@ -131,7 +123,10 @@ function buildHistoricalImage(
 	const facilitators = cleanString(row.facilitators)
 	const source = cleanString(row.source)
 	const notes = cleanString(row.Privatenotes)
-	if (date) doc.dateTaken = date
+	if (date) {
+		const parsed = parseHistoricalDate(date)
+		if (parsed) doc.dateTaken = parsed
+	}
 	if (content) doc.description = content
 	if (facilitators) doc.contributor = facilitators
 	if (source) doc.source = source
@@ -139,11 +134,7 @@ function buildHistoricalImage(
 	return doc
 }
 
-function buildPrimarySource(
-	clipId: string,
-	title: string,
-	row: CsvRow,
-): PrimarySourceImportDoc {
+function buildPrimarySource(clipId: string, title: string, row: CsvRow): PrimarySourceImportDoc {
 	const doc: PrimarySourceImportDoc = {
 		_type: 'primarySource',
 		archiveId: clipId,
@@ -152,7 +143,10 @@ function buildPrimarySource(
 	const date = cleanString(row.date)
 	const source = cleanString(row.source)
 	const content = cleanString(row.content)
-	if (date) doc.dateText = date
+	if (date) {
+		const parsed = parseHistoricalDate(date)
+		if (parsed) doc.date = parsed
+	}
 	if (source) doc.newspaper = source
 	if (content) doc.transcription = toPortableText(content)
 	return doc
@@ -267,11 +261,7 @@ function applyTaxonomy(
  * Does not record import success — callers record after dry-run / live write.
  * The CSV `public` column is intentionally ignored (no matching schema field).
  */
-export function mapRow(
-	row: CsvRow,
-	lookups: TaxonomyLookups,
-	audit: Audit,
-): MapRowResult | null {
+export function mapRow(row: CsvRow, lookups: TaxonomyLookups, audit: Audit): MapRowResult | null {
 	const clipId = normalizeClipId(row.clipID)
 	const title = cleanString(row.title)
 	const csvType = cleanString(row.type) ?? String(row.type ?? '')
@@ -336,12 +326,7 @@ export function mapRow(
 			break
 	}
 
-	const {mappedKeywords, unmappedKeywords} = applyTaxonomy(
-		doc,
-		row,
-		lookups,
-		audit,
-	)
+	const {mappedKeywords, unmappedKeywords} = applyTaxonomy(doc, row, lookups, audit)
 
 	return {
 		doc,

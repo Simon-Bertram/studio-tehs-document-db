@@ -1,10 +1,6 @@
 import type {ImportSchemaType} from './map-row'
 
-export type SkipReason =
-	| 'missing_clip_id'
-	| 'unknown_type'
-	| 'api_error'
-	| 'diverted_quarterly'
+export type SkipReason = 'missing_clip_id' | 'unknown_type' | 'api_error' | 'diverted_quarterly'
 export type ImportAction = 'dry_run' | 'created' | 'patched'
 
 export interface ImportedRecord {
@@ -97,9 +93,7 @@ export class Audit {
 
 		if (this.missingTaxonomyByKeyword.size > 0) {
 			console.log('\nMISSING TAXONOMIES:')
-			console.log(
-				'CSV keywords with no matching migrationKey in Sanity:',
-			)
+			console.log('CSV keywords with no matching migrationKey in Sanity:')
 			for (const keyword of Array.from(this.missingTaxonomyByKeyword.keys()).sort()) {
 				const clips = Array.from(this.missingTaxonomyByKeyword.get(keyword)!)
 				console.log(`  - ${keyword} (clipIDs: ${clips.join(', ')})`)
@@ -119,9 +113,7 @@ export class Audit {
 		if (this.skipped.length > 0) {
 			console.log(`\nSKIPPED: ${this.skipped.length}`)
 			for (const s of this.skipped.slice(0, 20)) {
-				console.log(
-					`  ${s.clipId ?? '?'} [${s.reason}] ${s.detail}`,
-				)
+				console.log(`  ${s.clipId ?? '?'} [${s.reason}] ${s.detail}`)
 			}
 			if (this.skipped.length > 20) {
 				console.log(`  ...and ${this.skipped.length - 20} more.`)
@@ -142,9 +134,7 @@ export class Audit {
 		console.log(
 			'  count(*[_type in ["historicalImage","primarySource","researchArticle"] && defined(archiveId)])',
 		)
-		console.log(
-			'  *[_type == $type && archiveId == $id][0]  // find one imported doc',
-		)
+		console.log('  *[_type == $type && archiveId == $id][0]  // find one imported doc')
 		console.log('=========================================\n')
 	}
 }

@@ -22,7 +22,8 @@
     "csv-import:quarterly": "bun run migrations/quarterly-import/import-quarterly.ts",
     "csv-import:people": "bun run migrations/charlestown-people/import-people.ts",
     "migrations:run": "sanity migrations run",
-    "start": "sanity start"
+    "start": "sanity start",
+    "lint": "eslint . --fix"
   },
   "keywords": [
     "sanity"
@@ -46,6 +47,9 @@
     "@types/node": "^26.2.0",
     "@types/react": "^19.2.18",
     "eslint": "^9.39.5",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.6",
+    "eslint-plugin-simple-import-sort": "^14.0.0",
     "prettier": "^3.9.6",
     "typescript": "6.0.3",
     "wrangler": "^4.120.0"

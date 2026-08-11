@@ -3,6 +3,7 @@
  * or create. Natural key is archiveId — never uses deterministic Sanity _ids.
  */
 import type {SanityClient} from '@sanity/client'
+
 import type {ImportDoc} from './map-row'
 
 export type UpsertAction = 'patched' | 'created'
@@ -22,8 +23,6 @@ export async function upsertByArchiveId(
 		return {action: 'patched', id: existingId}
 	}
 
-	const created = await client.create(
-		doc as unknown as {[key: string]: unknown; _type: string},
-	)
+	const created = await client.create(doc as unknown as {[key: string]: unknown; _type: string})
 	return {action: 'created', id: created._id}
 }

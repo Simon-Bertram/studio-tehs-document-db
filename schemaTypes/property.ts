@@ -1,5 +1,9 @@
 import {HomeIcon} from '@sanity/icons/Home'
+import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
+import {PinIcon} from '@sanity/icons/Pin'
+import {SearchIcon} from '@sanity/icons/Search'
 import {defineArrayMember, defineField, defineType} from 'sanity'
+
 import {townshipWhenNoPlaceField} from './shared/townshipWhenNoPlaceField'
 
 export const property = defineType({
@@ -7,11 +11,17 @@ export const property = defineType({
 	title: 'Property / Building',
 	type: 'document',
 	icon: HomeIcon,
+	groups: [
+		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
+		{name: 'place', title: 'Place', icon: PinIcon},
+		{name: 'research', title: 'Research', icon: SearchIcon},
+	],
 	fields: [
 		defineField({
 			name: 'historicalName',
 			title: 'Historical Name',
 			type: 'string',
+			group: 'identity',
 			description: 'e.g., Glenhardie Farm, Apple Tree House, Weedon Hall',
 			validation: (Rule) => Rule.required(),
 		}),
@@ -19,6 +29,7 @@ export const property = defineType({
 			name: 'propertyType',
 			title: 'Property Type',
 			type: 'string',
+			group: 'identity',
 			description:
 				'Building classification for this site (one type). Not a Subject Category—those are themes for tagging archive clippings and photos (e.g. Churches, Railroads), not for classifying properties.',
 			options: {
@@ -38,12 +49,14 @@ export const property = defineType({
 			name: 'coordinates',
 			title: 'Coordinates',
 			type: 'geopoint',
+			group: 'place',
 			description: 'Pinpoint the exact location. (Powered by @sanity/google-maps-input)',
 		}),
 		defineField({
 			name: 'parentEstate',
 			title: 'Parent Estate / Land Tract',
 			type: 'reference',
+			group: 'place',
 			to: [{type: 'property'}],
 			description:
 				'If this is a house inside a larger farm, link to the main estate here (e.g., Link "By-The-Creek" to "Glenhardie Farm").',
@@ -53,18 +66,21 @@ export const property = defineType({
 			name: 'location',
 			title: 'Specific Location',
 			type: 'reference',
+			group: 'place',
 			to: [{type: 'location'}],
 			description:
 				'When set, township is taken from this location. Use Township only when there is no more specific place. For Valley Forge sites, set Location to Valley Forge.',
 		}),
 		townshipWhenNoPlaceField({
 			hideWhenField: 'location',
+			group: 'place',
 			description: 'Only needed when no specific location is set.',
 		}),
 		defineField({
 			name: 'evolutionNotes',
 			title: 'Structural Evolution & Origins',
 			type: 'text',
+			group: 'research',
 			description:
 				'Log what this building was adapted from (e.g., "Formerly a chicken coop", "Constructed from an old blacksmith shop").',
 		}),
@@ -72,6 +88,7 @@ export const property = defineType({
 			name: 'notableResidents',
 			title: 'Notable Residents / Owners',
 			type: 'array',
+			group: 'research',
 			of: [
 				defineArrayMember({
 					type: 'reference',
@@ -85,16 +102,33 @@ export const property = defineType({
 			name: 'modernAddress',
 			title: 'Modern Address',
 			type: 'string',
+			group: 'place',
 		}),
 		defineField({
 			name: 'yearBuilt',
 			title: 'Estimated Year Built / Converted',
+			type: 'historicalDate',
+			group: 'identity',
+			description:
+				'Usually year-only; use Circa when the year is approximate. Do not invent a day.',
+		}),
+		defineField({
+			name: 'yearBuiltText',
+			title: 'Year Built (Legacy Text)',
 			type: 'string',
+			group: 'identity',
+			deprecated: {
+				reason: 'Use Estimated Year Built / Converted (structured historical date) instead.',
+			},
+			readOnly: true,
+			hidden: ({value}) => value === undefined,
+			initialValue: undefined,
 		}),
 		defineField({
 			name: 'titleChain',
 			title: 'Title Chain',
 			type: 'array',
+			group: 'research',
 			of: [
 				defineArrayMember({
 					type: 'reference',
@@ -108,6 +142,7 @@ export const property = defineType({
 			name: 'deedCitations',
 			title: 'Chester County Deed Book References',
 			type: 'array',
+			group: 'research',
 			of: [defineArrayMember({type: 'string'})],
 			description:
 				'Legacy free-text citations (e.g. "U15 P466"). Prefer creating Deed documents and linking them under Title Chain; keep these only while migrating older strings.',

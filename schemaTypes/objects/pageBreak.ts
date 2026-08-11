@@ -1,9 +1,11 @@
+import {SplitHorizontalIcon} from '@sanity/icons/SplitHorizontal'
 import {defineField, defineType} from 'sanity'
 
 export const pageBreak = defineType({
 	name: 'pageBreak',
 	title: 'Original Print Page Break',
 	type: 'object',
+	icon: SplitHorizontalIcon,
 	fields: [
 		defineField({
 			name: 'pageNumber',
@@ -15,7 +17,7 @@ export const pageBreak = defineType({
 	preview: {
 		select: {page: 'pageNumber'},
 		prepare({page}) {
-			return {title: `--- Page ${page} ---`}
+			return {title: `--- Page ${page || '?'} ---`}
 		},
 	},
 })

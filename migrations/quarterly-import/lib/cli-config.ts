@@ -18,16 +18,10 @@ const BASE_URL = 'https://www.tehistory.org/hqda'
 
 export function parseQuarterlyCliConfig(argv: string[]): QuarterlyImportConfig {
 	const limitIdx = argv.indexOf('--limit')
-	const rowLimit =
-		limitIdx !== -1 && argv[limitIdx + 1]
-			? Number(argv[limitIdx + 1])
-			: Infinity
+	const rowLimit = limitIdx !== -1 && argv[limitIdx + 1] ? Number(argv[limitIdx + 1]) : Infinity
 
 	const volumeIdx = argv.indexOf('--volume')
-	const volume =
-		volumeIdx !== -1 && argv[volumeIdx + 1]
-			? Number(argv[volumeIdx + 1])
-			: 22
+	const volume = volumeIdx !== -1 && argv[volumeIdx + 1] ? Number(argv[volumeIdx + 1]) : 22
 
 	if (!Number.isFinite(volume) || volume < 1) {
 		console.error('Invalid --volume; expected a positive integer (default 22).')
