@@ -8,7 +8,7 @@ import {defineArrayMember, defineField, defineType} from 'sanity'
 import {formatHistoricalDate, type HistoricalDateValue} from './lib/formatHistoricalDate'
 import {archiveIdField} from './shared/archiveIdField'
 import {citationsField} from './shared/citationsField'
-import {organisationsField} from './shared/organisationsField'
+import {organizationsField} from './shared/organizationsField'
 import {subjectsField} from './shared/subjectsField'
 import {townshipWhenNoPlaceField} from './shared/townshipWhenNoPlaceField'
 
@@ -121,7 +121,7 @@ export const primarySource = defineType({
 				}),
 			],
 		}),
-		organisationsField('research'),
+		organizationsField('research'),
 		subjectsField('research'),
 		citationsField('research'),
 	],

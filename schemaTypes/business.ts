@@ -1,6 +1,7 @@
 import {CaseIcon} from '@sanity/icons/Case'
 import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {LinkIcon} from '@sanity/icons/Link'
+import {PinIcon} from '@sanity/icons/Pin'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
 import {formatHistoricalDateRange, type HistoricalDateValue} from './lib/formatHistoricalDate'
@@ -14,6 +15,7 @@ export const business = defineType({
 	icon: CaseIcon,
 	groups: [
 		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
+		{name: 'place', title: 'Place', icon: PinIcon},
 		{name: 'relations', title: 'Relations', icon: LinkIcon},
 	],
 	fields: [
@@ -82,6 +84,13 @@ export const business = defineType({
 			readOnly: true,
 			hidden: ({value}) => value === undefined,
 			initialValue: undefined,
+		}),
+		defineField({
+			name: 'coordinates',
+			title: 'Coordinates',
+			type: 'geopoint',
+			group: 'place',
+			description: 'Pinpoint the exact location. (Powered by @sanity/google-maps-input)',
 		}),
 		defineField({
 			name: 'owners',

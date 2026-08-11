@@ -36,7 +36,7 @@ export async function runImport(config: ImportConfig, client: SanityClient): Pro
 	// Skip the API fetch in dry-run when no token — keywords stay unmapped.
 	const lookups =
 		dryRun && !hasAuthToken()
-			? {categories: {}, townships: {}, organisations: {}}
+			? {categories: {}, townships: {}, organizations: {}}
 			: await buildTaxonomyLookups(client)
 
 	// --- Phase 2: parse CSV ---

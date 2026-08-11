@@ -62,11 +62,11 @@ export const structure: StructureResolver = (S) =>
 							S.documentTypeListItem('property').title('Properties & Buildings').icon(HomeIcon),
 							S.documentTypeListItem('deed').title('Deeds & Land Instruments').icon(DocumentsIcon),
 							S.listItem()
-								.title('Organisations')
+								.title('Organizations')
 								.icon(CaseIcon)
 								.child(
 									S.list()
-										.title('Organisations')
+										.title('Organizations')
 										.items([
 											S.listItem()
 												.title('Commercial / Industrial')
@@ -101,8 +101,8 @@ export const structure: StructureResolver = (S) =>
 												),
 											S.divider(),
 											S.listItem()
-												.title('All organisations')
-												.child(S.documentTypeList('business').title('All organisations')),
+												.title('All organizations')
+												.child(S.documentTypeList('business').title('All organizations')),
 										]),
 								),
 							S.documentTypeListItem('category').title('Subject Categories').icon(TagIcon),

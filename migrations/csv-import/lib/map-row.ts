@@ -52,7 +52,7 @@ export interface ImportDocBase {
 	archiveId: string
 	title: string
 	subjects?: SanityRef[]
-	organisations?: SanityRef[]
+	organizations?: SanityRef[]
 	township?: {_type: 'reference'; _ref: string}
 	townships?: SanityRef[]
 }
@@ -187,7 +187,7 @@ function applyTaxonomy(
 	]
 
 	const subjects: SanityRef[] = []
-	const organisations: SanityRef[] = []
+	const organizations: SanityRef[] = []
 	const townships: SanityRef[] = []
 	const seenIds = new Set<string>()
 	const mappedKeywords: string[] = []
@@ -209,11 +209,11 @@ function applyTaxonomy(
 			continue
 		}
 
-		const organisationId = lookups.organisations[normalised]
-		if (organisationId) {
-			if (!seenIds.has(organisationId)) {
-				seenIds.add(organisationId)
-				organisations.push(ref(organisationId))
+		const organizationId = lookups.organizations[normalised]
+		if (organizationId) {
+			if (!seenIds.has(organizationId)) {
+				seenIds.add(organizationId)
+				organizations.push(ref(organizationId))
 				mappedKeywords.push(keyword)
 			}
 			continue
@@ -237,7 +237,7 @@ function applyTaxonomy(
 	}
 
 	if (subjects.length > 0) doc.subjects = subjects
-	if (organisations.length > 0) doc.organisations = organisations
+	if (organizations.length > 0) doc.organizations = organizations
 
 	if (townships.length > 0) {
 		if (doc._type === 'researchArticle') {

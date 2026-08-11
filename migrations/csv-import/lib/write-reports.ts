@@ -39,7 +39,7 @@ export function writeReports(
 	const studioAction =
 		options?.studioAction ??
 		((r: ImportedRecord) =>
-			`In Studio, find ${r.schemaType} with ${naturalKeyLabel} ${r.clipId}. Set Organisations / Subjects / Township for: ${joinList(r.unmappedKeywords)}. Entity names (e.g. Lincoln) belong on Organisations; themes on Subjects; places on Township.`)
+			`In Studio, find ${r.schemaType} with ${naturalKeyLabel} ${r.clipId}. Set Organizations / Subjects / Township for: ${joinList(r.unmappedKeywords)}. Entity names (e.g. Lincoln) belong on Organizations; themes on Subjects; places on Township.`)
 
 	const importedPath = path.join(reportsDir, 'imported.csv')
 	const skippedPath = path.join(reportsDir, 'skipped.csv')

@@ -8,7 +8,7 @@ import {defineArrayMember, defineField, defineType} from 'sanity'
 import {DocumentWithDescription} from './components/DocumentWithDescription'
 import {archiveIdField} from './shared/archiveIdField'
 import {IMAGE_ROLE_VALUES, IMAGE_ROLES, type ImageRoleValue} from './shared/imageRoles'
-import {organisationsField} from './shared/organisationsField'
+import {organizationsField} from './shared/organizationsField'
 
 export const researchArticle = defineType({
 	name: 'researchArticle',
@@ -54,7 +54,7 @@ export const researchArticle = defineType({
 				}),
 			],
 		}),
-		organisationsField('context'),
+		organizationsField('context'),
 		defineField({
 			name: 'body',
 			title: 'Page Content & Layout Canvas',

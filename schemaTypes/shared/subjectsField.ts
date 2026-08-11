@@ -1,7 +1,7 @@
 import {defineArrayMember, defineField} from 'sanity'
 
 const SUBJECTS_DESCRIPTION =
-	'Archive search themes (e.g. Schools, Railroads, Farms). Not Property Type or Organisation type—those classify building and organisation entities under Taxonomies.'
+	'Archive search themes (e.g. Schools, Railroads, Farms). Not Property Type or Organization type—those classify building and organization entities under Taxonomies.'
 
 /**
  * Shared subjects reference array for archive documents.

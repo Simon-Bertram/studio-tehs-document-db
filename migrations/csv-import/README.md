@@ -20,7 +20,7 @@ Optional env: `SANITY_PROJECT_ID`, `SANITY_DATASET`.
 
 Maps CSV `type` → Sanity: `document` → `primarySource`, `photo` → `historicalImage`,
 `book` → `researchArticle`. Natural key is `archiveId` from `clipID`. Keyword
-priority: township → organisation → category.
+priority: township → organization → category.
 
 ```bash
 bun run csv-import -- --limit 20    # dry-run (default)

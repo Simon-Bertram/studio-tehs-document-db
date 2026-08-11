@@ -32,14 +32,14 @@
     "@sanity/client": "^7.26.2",
     "@sanity/google-maps-input": "^6.1.10",
     "@sanity/icons": "^5.2.1",
-    "@sanity/vision": "6.9.1",
+    "@sanity/vision": "6.9.2",
     "csv-parser": "^3.2.1",
     "linkedom": "^0.18.13",
     "nanoid": "^5.1.16",
     "p-limit": "^7.3.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "sanity": "6.9.1",
+    "sanity": "6.9.2",
     "styled-components": "^6.5.1"
   },
   "devDependencies": {

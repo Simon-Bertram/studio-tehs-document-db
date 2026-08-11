@@ -9,7 +9,7 @@ import {defineField, defineType} from 'sanity'
 import {formatHistoricalDate, type HistoricalDateValue} from './lib/formatHistoricalDate'
 import {archiveIdField} from './shared/archiveIdField'
 import {citationsField} from './shared/citationsField'
-import {organisationsField} from './shared/organisationsField'
+import {organizationsField} from './shared/organizationsField'
 import {subjectsField} from './shared/subjectsField'
 import {townshipWhenNoPlaceField} from './shared/townshipWhenNoPlaceField'
 
@@ -88,7 +88,15 @@ export const historicalImage = defineType({
 			group: 'place',
 			description: 'Only needed when no specific location is set.',
 		}),
-		organisationsField('research'),
+		defineField({
+			name: 'coordinates',
+			title: 'Coordinates',
+			type: 'geopoint',
+			group: 'place',
+			description:
+				'Pinpoint the exact place shown in the image. (Powered by @sanity/google-maps-input)',
+		}),
+		organizationsField('research'),
 		subjectsField('research'),
 		citationsField('research'),
 		defineField({

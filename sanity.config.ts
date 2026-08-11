@@ -41,19 +41,19 @@ export default defineConfig({
 			...prev,
 			{
 				id: 'business-commercial',
-				title: 'Commercial organisation',
+				title: 'Commercial organization',
 				schemaType: 'business',
 				value: {businessType: 'commercial'},
 			},
 			{
 				id: 'business-civic',
-				title: 'Civic organisation',
+				title: 'Civic organization',
 				schemaType: 'business',
 				value: {businessType: 'civic'},
 			},
 			{
 				id: 'business-institutional',
-				title: 'Institutional organisation',
+				title: 'Institutional organization',
 				schemaType: 'business',
 				value: {businessType: 'institutional'},
 			},

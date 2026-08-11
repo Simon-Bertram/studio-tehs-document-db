@@ -6,7 +6,7 @@ export interface TaxonomyLookups {
 	/** migrationKey (lowercased) → clean Sanity _id */
 	townships: Record<string, string>
 	/** migrationKey (lowercased) → clean Sanity _id */
-	organisations: Record<string, string>
+	organizations: Record<string, string>
 }
 
 function cleanId(id: string): string {
@@ -22,11 +22,11 @@ function buildLookup(docs: {_id: string; migrationKey: string}[]): Record<string
 }
 
 /**
- * Fetch all categories, townships, and organisations that carry a migrationKey,
+ * Fetch all categories, townships, and organizations that carry a migrationKey,
  * returning case-insensitive lookup dictionaries keyed by trimmed migrationKey.
  */
 export async function buildTaxonomyLookups(client: SanityClient): Promise<TaxonomyLookups> {
-	const [categories, townships, organisations] = await Promise.all([
+	const [categories, townships, organizations] = await Promise.all([
 		client.fetch<{_id: string; migrationKey: string}[]>(
 			`*[_type == "category" && defined(migrationKey)]{ _id, migrationKey }`,
 		),
@@ -41,13 +41,13 @@ export async function buildTaxonomyLookups(client: SanityClient): Promise<Taxono
 	const lookups = {
 		categories: buildLookup(categories),
 		townships: buildLookup(townships),
-		organisations: buildLookup(organisations),
+		organizations: buildLookup(organizations),
 	}
 
 	console.log(
 		`Loaded ${Object.keys(lookups.categories).length} categories, ` +
 			`${Object.keys(lookups.townships).length} townships, and ` +
-			`${Object.keys(lookups.organisations).length} organisations into memory.`,
+			`${Object.keys(lookups.organizations).length} organizations into memory.`,
 	)
 
 	return lookups
