@@ -95,19 +95,24 @@ export const primarySource = defineType({
 			hidden: ({document}) => !document?.isSheriffSale,
 		}),
 		defineField({
-			name: 'associatedProperty',
-			title: 'Associated Property',
-			type: 'reference',
+			name: 'associatedProperties',
+			title: 'Associated Properties',
+			type: 'array',
 			group: 'place',
-			to: [{type: 'property'}],
+			of: [
+				defineArrayMember({
+					type: 'reference',
+					to: [{type: 'property'}],
+				}),
+			],
 			description:
-				'When set, prefer this over a standalone township. Add township/location on the property for geography.',
+				'When set, prefer these over a standalone township. Add township/location on the property for geography.',
 		}),
 		townshipWhenNoPlaceField({
-			hideWhenField: 'associatedProperty',
+			hideWhenField: 'associatedProperties',
 			group: 'place',
 			description:
-				'Standalone township when no associated property is linked. Prefer linking a property when the place is known.',
+				'Standalone township when no associated properties are linked. Prefer linking a property when the place is known.',
 		}),
 		defineField({
 			name: 'peopleMentioned',

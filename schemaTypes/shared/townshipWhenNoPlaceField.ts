@@ -17,6 +17,10 @@ export function townshipWhenNoPlaceField(options: {
 		...(group ? {group} : {}),
 		to: [{type: 'township'}],
 		description,
-		hidden: ({document}) => Boolean(document?.[hideWhenField]),
+		hidden: ({document}) => {
+			const value = document?.[hideWhenField]
+			if (Array.isArray(value)) return value.length > 0
+			return Boolean(value)
+		},
 	})
 }
