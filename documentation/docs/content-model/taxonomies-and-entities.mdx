@@ -24,9 +24,13 @@ Broader family groups (e.g. The Bean Family, The Havard Family): family name and
 
 ## Properties & Buildings
 
-Physical sites classified by **Property Type** (dwelling, estate/farm, church, inn/tavern, industrial, institutional, railroad/station): historical name, optional parent estate, location/township, residents, modern address, year built, Chester County deed citations. Link occupying organisations from the **organisation** document (`locations`), not from the property. Valley Forge association is via location, not a property type.
+Physical sites classified by **Property Type** (dwelling, estate/farm, church, inn/tavern, industrial, institutional, railroad/station): historical name, optional parent estate, location/township, residents, modern address, year built, and an ordered **Title Chain** of Deed / Land Instrument documents. Legacy free-text Chester County deed citations remain only for migration. Link occupying organisations from the **organisation** document (`locations`), not from the property. Valley Forge association is via location, not a property type.
 
 **Property Type** is building classification for the entity (one required type). It is not a Subject Category—categories like Churches or Railroads are archive search themes for clippings and photos.
+
+## Deeds & Land Instruments
+
+One conveyance or land instrument in a chain of title (patent, deed, will, probate, warrant, survey, tax return, atlas, or other): parties (person refs and/or free text), textual and optional exact dates, area, cost text plus optional normalized amount/currency/kind, book/page reference, associated properties, branch label, notes, and optional scan or Primary Source transcription link. Create these under **Taxonomies & Entities → Deeds & Land Instruments**, then order them on a property’s **Title Chain**. Do not model chain-of-title rows as Primary Sources.
 
 ## Organisations
 
@@ -48,4 +52,4 @@ Broad **themes for archive search** (e.g. Schools, Railroads, Farms, Genealogy).
 
 Donation Categories are not Subject Categories: they classify what kind of material was donated, not archive search themes like Schools or Railroads. Create them under **Taxonomies & Entities → Donation Categories**, or use **Create new** when linking from a Donation form.
 
-Related tasks: [Link geography](../common-tasks/link-geography.mdx), [Create and link people](../common-tasks/create-and-link-people.mdx), [Add a family lineage](../common-tasks/add-family-lineage.mdx), [Model a property](../common-tasks/model-a-property.mdx), [Record an organisation](../common-tasks/record-a-business.mdx), [Tag with categories](../common-tasks/tag-with-categories.mdx), [Record a donation](../common-tasks/record-a-donation.mdx), [Set Archive IDs](../common-tasks/set-archive-ids.mdx)
+Related tasks: [Link geography](../common-tasks/link-geography.mdx), [Create and link people](../common-tasks/create-and-link-people.mdx), [Add a family lineage](../common-tasks/add-family-lineage.mdx), [Model a property](../common-tasks/model-a-property.mdx), [Enter a deed](../common-tasks/enter-deed.mdx), [Record an organisation](../common-tasks/record-a-business.mdx), [Tag with categories](../common-tasks/tag-with-categories.mdx), [Record a donation](../common-tasks/record-a-donation.mdx), [Set Archive IDs](../common-tasks/set-archive-ids.mdx)

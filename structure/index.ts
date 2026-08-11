@@ -3,6 +3,7 @@ import {BasketIcon} from '@sanity/icons/Basket'
 import {BookIcon} from '@sanity/icons/Book'
 import {CaseIcon} from '@sanity/icons/Case'
 import {CogIcon} from '@sanity/icons/Cog'
+import {DocumentsIcon} from '@sanity/icons/Documents'
 import {DocumentTextIcon} from '@sanity/icons/DocumentText'
 import {EarthGlobeIcon} from '@sanity/icons/EarthGlobe'
 import {HomeIcon} from '@sanity/icons/Home'
@@ -73,6 +74,9 @@ export const structure: StructureResolver = (S) =>
 							S.documentTypeListItem('property')
 								.title('Properties & Buildings')
 								.icon(HomeIcon),
+							S.documentTypeListItem('deed')
+								.title('Deeds & Land Instruments')
+								.icon(DocumentsIcon),
 							S.listItem()
 								.title('Organisations')
 								.icon(CaseIcon)

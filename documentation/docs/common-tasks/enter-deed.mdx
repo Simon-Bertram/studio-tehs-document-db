@@ -1,0 +1,42 @@
+---
+sidebar_position: 8.5
+---
+
+# Enter a deed or land instrument
+
+## Goal
+
+Record one conveyance in a chain of title (deed, patent, will, survey, tax return, and so on), link it to properties and people, and attach it to a property’s **Title Chain**.
+
+## When to use Deed vs Primary Source
+
+| You have… | Create |
+| --- | --- |
+| One row in a deed history / chain of title (From, To, Date, Area, Cost, Reference) | **Deed / Land Instrument** |
+| A full clipping or letter to scan and transcribe | **Primary Source** (optionally link it from the deed’s **Full Transcription** field) |
+
+## Steps
+
+1. Open **Taxonomies & Entities → Deeds & Land Instruments** and create a new document.
+2. Set **Instrument Type** (required): patent, deed, will, probate, warrant, survey, tax return, atlas, or other.
+3. Enter **Reference** as recorded (e.g. `G2-182`, `Patent A2-583; Warrant 3/3/1701`).
+4. Set **Date (Textual)** to the as-recorded wording (`1799`, `3/21/1775 (probate)`). Fill **Exact Date** only when a real calendar day is known—do not invent `01-01` for year-only rows.
+5. Under **Parties**, link **Grantors** / **Grantees** to Historical Persons when profiles exist; otherwise use **Grantors (Text)** / **Grantees (Text)** for executors and multi-name groups.
+6. Under **Terms**, enter **Area** and **Cost (Textual)** as recorded. Optionally set **Cost Kind**, **Cost Currency**, and **Cost Amount** (normalized major units) when you want currency-aware sorting—never mix £ and $ in one sort.
+7. Under **Place**, link **Associated Properties** and set **Branch Label** when the row belongs to a subdivision branch (e.g. Branch A).
+8. Optional: add notes, a scan image, or a **Full Transcription** Primary Source.
+9. On the related **Property**, add this deed to **Title Chain** in chronological (or research) order.
+
+## Field notes
+
+- **Cost Amount** examples: `$762 50c` → currency `usd`, amount `762.5`; `£244 10s` → currency `gbp`, amount `244.5` (20s = £1).
+- Mark ground rents with Cost Kind **Ground rent** so sale-price filters can exclude them.
+- Legacy free-text **Chester County Deed Book References** on Property are deprecated—prefer Deed documents + Title Chain.
+
+## Related
+
+- [Model a property or estate](./model-a-property.mdx)
+- [Create and link people](./create-and-link-people.mdx)
+- [Choose the right document type](./choose-document-type.mdx)
+- [Add a primary source](./add-primary-source.mdx)
+- [Taxonomies & Entities](../content-model/taxonomies-and-entities.mdx)

@@ -92,11 +92,29 @@ export const property = defineType({
 			type: 'string',
 		}),
 		defineField({
+			name: 'titleChain',
+			title: 'Title Chain',
+			type: 'array',
+			of: [
+				defineArrayMember({
+					type: 'reference',
+					to: [{type: 'deed'}],
+				}),
+			],
+			description:
+				'Ordered chain of title for this tract—link Deed / Land Instrument documents in chronological (or research) order.',
+		}),
+		defineField({
 			name: 'deedCitations',
 			title: 'Chester County Deed Book References',
 			type: 'array',
 			of: [defineArrayMember({type: 'string'})],
-			description: 'e.g., "U15 P466", "P15 P25"',
+			description:
+				'Legacy free-text citations (e.g. "U15 P466"). Prefer creating Deed documents and linking them under Title Chain; keep these only while migrating older strings.',
+			deprecated: {
+				reason:
+					'Use Deed / Land Instrument documents and Title Chain instead of free-text citations.',
+			},
 		}),
 	],
 	orderings: [
