@@ -12,7 +12,7 @@ export const internalSubLinks = defineType({
 			of: [
 				defineArrayMember({
 					type: 'reference',
-					to: [{type: 'curatedEssay'}],
+					to: [{type: 'researchArticle'}],
 				}),
 			],
 		}),

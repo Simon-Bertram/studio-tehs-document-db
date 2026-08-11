@@ -32,7 +32,7 @@ export interface CsvRow {
 export type ImportSchemaType =
 	| 'historicalImage'
 	| 'primarySource'
-	| 'curatedEssay'
+	| 'researchArticle'
 
 export interface PortableTextSpan {
 	_type: 'span'
@@ -78,8 +78,8 @@ export interface PrimarySourceImportDoc extends ImportDocBase {
 	transcription?: PortableTextBlock[]
 }
 
-export interface CuratedEssayImportDoc extends ImportDocBase {
-	_type: 'curatedEssay'
+export interface ResearchArticleImportDoc extends ImportDocBase {
+	_type: 'researchArticle'
 	slug: {_type: 'slug'; current: string}
 	body?: PortableTextBlock[]
 }
@@ -87,7 +87,7 @@ export interface CuratedEssayImportDoc extends ImportDocBase {
 export type ImportDoc =
 	| HistoricalImageImportDoc
 	| PrimarySourceImportDoc
-	| CuratedEssayImportDoc
+	| ResearchArticleImportDoc
 
 export interface TaxonomyMapResult {
 	mappedKeywords: string[]
@@ -158,14 +158,14 @@ function buildPrimarySource(
 	return doc
 }
 
-function buildCuratedEssay(
+function buildResearchArticle(
 	clipId: string,
 	title: string,
 	row: CsvRow,
-): CuratedEssayImportDoc {
+): ResearchArticleImportDoc {
 	const slugSource = title || `untitled-${clipId}`
-	const doc: CuratedEssayImportDoc = {
-		_type: 'curatedEssay',
+	const doc: ResearchArticleImportDoc = {
+		_type: 'researchArticle',
 		archiveId: clipId,
 		title,
 		slug: {_type: 'slug', current: slugify(slugSource)},
@@ -246,7 +246,7 @@ function applyTaxonomy(
 	if (organisations.length > 0) doc.organisations = organisations
 
 	if (townships.length > 0) {
-		if (doc._type === 'curatedEssay') {
+		if (doc._type === 'researchArticle') {
 			doc.townships = townships
 		} else {
 			doc.township = {_type: 'reference', _ref: townships[0]._ref}
@@ -331,8 +331,8 @@ export function mapRow(
 		case 'primarySource':
 			doc = buildPrimarySource(clipId, resolvedTitle, row)
 			break
-		case 'curatedEssay':
-			doc = buildCuratedEssay(clipId, resolvedTitle, row)
+		case 'researchArticle':
+			doc = buildResearchArticle(clipId, resolvedTitle, row)
 			break
 	}
 

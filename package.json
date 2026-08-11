@@ -27,27 +27,27 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/client": "^7.26.0",
-    "@sanity/google-maps-input": "^6.1.9",
+    "@sanity/client": "^7.26.2",
+    "@sanity/google-maps-input": "^6.1.10",
     "@sanity/icons": "^5.2.1",
-    "@sanity/vision": "6.8.0",
+    "@sanity/vision": "6.9.1",
     "csv-parser": "^3.2.1",
     "linkedom": "^0.18.13",
     "nanoid": "^5.1.16",
     "p-limit": "^7.3.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "sanity": "6.8.0",
-    "styled-components": "^6.4.4"
+    "sanity": "6.9.1",
+    "styled-components": "^6.5.1"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^6.0.0",
-    "@types/node": "^26.1.2",
+    "@types/node": "^26.2.0",
     "@types/react": "^19.2.18",
     "eslint": "^9.39.5",
     "prettier": "^3.9.6",
     "typescript": "6.0.3",
-    "wrangler": "^4.118.0"
+    "wrangler": "^4.120.0"
   },
   "prettier": {
     "bracketSpacing": false,

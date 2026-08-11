@@ -43,8 +43,8 @@ export const structure: StructureResolver = (S) =>
 					S.list()
 						.title('The Website')
 						.items([
-							S.documentTypeListItem('curatedEssay')
-								.title('Curated Essays & Overviews')
+							S.documentTypeListItem('researchArticle')
+								.title('Research Articles & Overviews')
 								.icon(BookIcon),
 							S.documentTypeListItem('quarterlyArticle')
 								.title('TEHS Quarterly Articles')

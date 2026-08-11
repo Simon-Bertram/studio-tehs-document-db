@@ -12,7 +12,7 @@ const DISPLAY_MODE_TO_ROLE: Record<string, string> = {
  */
 export default defineMigration({
 	title: 'Rename displayMode to semantic imageRole',
-	documentTypes: ['curatedEssay'],
+	documentTypes: ['researchArticle'],
 	migrate: {
 		document(doc) {
 			const body = doc.body

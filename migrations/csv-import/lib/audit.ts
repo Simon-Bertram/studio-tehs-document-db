@@ -140,7 +140,7 @@ export class Audit {
 
 		console.log('\nSuggested Vision checks:')
 		console.log(
-			'  count(*[_type in ["historicalImage","primarySource","curatedEssay"] && defined(archiveId)])',
+			'  count(*[_type in ["historicalImage","primarySource","researchArticle"] && defined(archiveId)])',
 		)
 		console.log(
 			'  *[_type == $type && archiveId == $id][0]  // find one imported doc',

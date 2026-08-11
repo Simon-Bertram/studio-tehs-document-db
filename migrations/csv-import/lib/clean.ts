@@ -23,12 +23,12 @@ export function normalizeClipId(raw: unknown): string | null {
 	return str
 }
 
-type SanityType = 'historicalImage' | 'primarySource' | 'curatedEssay'
+type SanityType = 'historicalImage' | 'primarySource' | 'researchArticle'
 
 const TYPE_MAP: Record<string, SanityType> = {
 	photo: 'historicalImage',
 	document: 'primarySource',
-	book: 'curatedEssay',
+	book: 'researchArticle',
 }
 
 /**

@@ -10,19 +10,19 @@ import {
 } from './shared/imageRoles'
 import {organisationsField} from './shared/organisationsField'
 
-export const curatedEssay = defineType({
-	name: 'curatedEssay',
-	title: 'Curated Essay',
+export const researchArticle = defineType({
+	name: 'researchArticle',
+	title: 'Research Article',
 	type: 'document',
 	icon: BookIcon,
 	description:
-		'Use this to publish long-form modern research, overviews, or interactive pages with maps and tables.',
+		'Use this to publish long-form modern research articles, overviews, or interactive pages with maps and tables.',
 	components: {
 		input: DocumentWithDescription,
 	},
 	fields: [
 		archiveIdField(
-			'curatedEssay',
+			'researchArticle',
 			'matching a CSV clipID from Book imports',
 		),
 		defineField({
@@ -126,7 +126,7 @@ export const curatedEssay = defineType({
 		prepare({title, archiveId, slug}) {
 			const subtitle = [archiveId, slug].filter(Boolean).join(' · ')
 			return {
-				title: title || 'Untitled essay',
+				title: title || 'Untitled research article',
 				subtitle,
 			}
 		},

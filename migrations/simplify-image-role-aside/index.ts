@@ -8,7 +8,7 @@ const ASIDE_SIDES = new Set(['asideStart', 'asideEnd'])
  */
 export default defineMigration({
 	title: 'Simplify imageRole to figure / aside',
-	documentTypes: ['curatedEssay'],
+	documentTypes: ['researchArticle'],
 	migrate: {
 		document(doc) {
 			const body = doc.body

@@ -29,7 +29,7 @@ const FeatureList: FeatureItem[] = [
     to: '/docs/content-model/the-website',
     description: (
       <>
-        The Website section contains contemporary curated essays and articles about the history of
+        The Website section contains contemporary research articles and publications about the history of
         the Tredyffrin Easttown Township.
       </>
     ),

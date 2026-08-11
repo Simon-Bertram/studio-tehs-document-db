@@ -11,7 +11,7 @@ Optional env: `SANITY_PROJECT_ID`, `SANITY_DATASET`.
 
 | Command | Source | Target types | Reports |
 | --- | --- | --- | --- |
-| `bun run csv-import` | `migrations/data/documents.csv` | primarySource, historicalImage, curatedEssay | `reports/` |
+| `bun run csv-import` | `migrations/data/documents.csv` | primarySource, historicalImage, researchArticle | `reports/` |
 | `bun run csv-import:donations` | `migrations/data/donations.csv` | donation (+ seeds donationCategory) | `reports/donations/` |
 | `bun run csv-import:images` | `migrations/data/sample-images.csv` | historicalImage | `reports/images/` |
 | `bun run csv-import:quarterly` | tehistory.org HTML (TOC + articles) | quarterlyArticle | `reports/quarterly/` |
@@ -19,7 +19,7 @@ Optional env: `SANITY_PROJECT_ID`, `SANITY_DATASET`.
 ## Documents / primary sources
 
 Maps CSV `type` → Sanity: `document` → `primarySource`, `photo` → `historicalImage`,
-`book` → `curatedEssay`. Natural key is `archiveId` from `clipID`. Keyword
+`book` → `researchArticle`. Natural key is `archiveId` from `clipID`. Keyword
 priority: township → organisation → category.
 
 ```bash

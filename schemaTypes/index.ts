@@ -7,7 +7,7 @@ import {quarterlyArticle} from './quarterlyArticle'
 import {location} from './location'
 import {historicalImage} from './historicalImage'
 import {primarySource} from './primarySource'
-import {curatedEssay} from './curatedEssay'
+import {researchArticle} from './researchArticle'
 import {familyLine} from './familyLine'
 import {donation} from './donation'
 import {donationCategory} from './donationCategory'
@@ -27,7 +27,7 @@ export const schemaTypes = [
 	location,
 	historicalImage,
 	primarySource,
-	curatedEssay,
+	researchArticle,
 	familyLine,
 	donation,
 	donationCategory,

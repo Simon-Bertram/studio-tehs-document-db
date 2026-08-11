@@ -12,7 +12,7 @@ export const primarySource = defineType({
 	type: 'document',
 	icon: DocumentTextIcon,
 	description:
-		'STOP: Use this ONLY for transcribing a single, historical piece of media (like a newspaper ad or old letter). If you want to publish an essay or piece of modern research, use the Curated Essay type instead.',
+		'STOP: Use this ONLY for transcribing a single, historical piece of media (like a newspaper ad or old letter). If you want to publish an essay or piece of modern research, use the Research Article type instead.',
 	groups: [
 		{name: 'identity', title: 'Identity', default: true},
 		{name: 'content', title: 'Content'},
