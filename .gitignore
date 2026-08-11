@@ -33,6 +33,7 @@ yarn.lock
 
 # Migration reports (generated output)
 /migrations/csv-import/reports
+/migrations/charlestown-people/reports
 /migrations/data/quarterly
 
 # Docusaurus

@@ -1,10 +1,8 @@
-# Charlestown people name extract
+# Charlestown people name extract + import
 
-Extract unique landowner names from the Charlestown deed-history name index into an import-ready CSV for the Sanity `person` schema.
+Extract unique landowner names from the Charlestown deed-history name index into an import-ready CSV for the Sanity `person` schema, then optionally create person stubs in Sanity.
 
 Source: [Charlestown.html](https://www.the2nomads.site/Charlestown/Charlestown.html) (Searching / land owners index).
-
-This folder does **not** write to Sanity. Review `unique-people.csv`, then import in a separate pass.
 
 ## Spelling strategy
 
@@ -28,6 +26,10 @@ Map into Studio via **Alternate Spellings / Aliases** on Historical Person (see 
 | `extract-names.ts` | Parser + merge logic |
 | `unique-people.csv` | Import-ready unique people |
 | `surname-aliases.csv` | Variable-surname / see-also map (not for person import) |
+| `import-people.ts` | Sanity import entrypoint (dry-run default) |
+| `lib/suspects.ts` | Near-duplicate pair detection |
+| `lib/run-people-import.ts` | Import pipeline + reports |
+| `reports/` | Generated import reports (gitignored) |
 
 ### CSV columns (`unique-people.csv`)
 
@@ -41,7 +43,7 @@ Map into Studio via **Alternate Spellings / Aliases** on Historical Person (see 
 | `sourceNames` | Index display forms that collapsed into this row |
 | `roles` | Index roles seen (`deed`, `patent`, `neighbor`, …) |
 
-## Run
+## Extract
 
 ```bash
 # Refresh source HTML (optional)
@@ -56,3 +58,40 @@ bun run migrations/charlestown-people/extract-names.ts -- \
 ```
 
 Conservative first-name merges and full-name typo merges live at the top of `extract-names.ts` (`FIRST_NAME_CANONICAL`, `FULL_NAME_MERGES`). Extend those maps when you find more clear duplicates; do **not** auto-merge Buckwalter↔Buchwalder people.
+
+## Import into Sanity
+
+Dry-run is the default (no writes). Pass `--live` to create documents. Requires `SANITY_AUTH_TOKEN` with Editor (or Administrator) for live writes.
+
+| Row type | Action |
+| --- | --- |
+| Clean unique name | Create `person` stub (or dry-run preview) |
+| Already merged via `alternateSpellings` | Create one doc with aliases |
+| Near-duplicate *pair* in CSV | **Skip both** → `reports/review-suspected-duplicates.csv` |
+| Matches existing Sanity person (same first+last+suffix) | Skip → `reports/skipped.csv` (`already_exists`) |
+
+```bash
+# Dry-run (default) — writes reports only
+bun run csv-import:people
+bun run csv-import:people -- --limit 50
+
+# Live create
+bun run csv-import:people -- --live
+```
+
+### Reports (`migrations/charlestown-people/reports/`)
+
+| File | Contents |
+| --- | --- |
+| `imported.csv` | Rows that would be / were created |
+| `skipped.csv` | `suspected_duplicate`, `already_exists`, `api_error`, … |
+| `review-suspected-duplicates.csv` | Near-duplicate pairs held for manual decision |
+| `preview.ndjson` | Dry-run document payloads |
+
+### Review workflow
+
+1. Run dry-run and open `review-suspected-duplicates.csv`.
+2. For each pair, either:
+   - Add a merge to `FULL_NAME_MERGES` / `FIRST_NAME_CANONICAL` in `extract-names.ts`, re-extract, re-import; or
+   - Create one or both people manually in Studio with aliases.
+3. Run `--live` for the clean majority (~2.5k stubs on a full dry-run).

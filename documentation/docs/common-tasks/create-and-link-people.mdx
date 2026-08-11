@@ -30,7 +30,7 @@ Use **Alternate Spellings / Aliases** for historical variants of the *same* pers
 
 Do **not** auto-merge different surnames that were historically interchangeable in the region (e.g. Buckwalter / Buchwalder, David / Davies / Davis, John / Jones) unless research shows they are the same individual—those often mark different people or naming patterns across generations.
 
-For a bulk starter list from the Charlestown landowner index (unique names + suggested aliases, no Sanity writes), see the repo folder `migrations/charlestown-people/` (run `bun run migrations/charlestown-people/extract-names.ts`; see that folder’s README for the spelling strategy).
+For a bulk starter list from the Charlestown landowner index (unique names + suggested aliases), see the repo folder `migrations/charlestown-people/`. Extract with `bun run migrations/charlestown-people/extract-names.ts`, then import stubs with `bun run csv-import:people` (dry-run default; near-duplicate pairs are held in a review report — see that folder’s README).
 
 ## Related
 
