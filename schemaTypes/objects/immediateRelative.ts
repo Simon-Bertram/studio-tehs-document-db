@@ -14,6 +14,7 @@ export const immediateRelative = defineType({
 			title: 'Relative Profile',
 			type: 'reference',
 			to: [{type: 'person'}],
+			validation: (Rule) => Rule.required(),
 		}),
 		defineField({
 			name: 'relationshipType',
@@ -22,6 +23,7 @@ export const immediateRelative = defineType({
 			options: {
 				list: [...RELATIONSHIP_TYPES],
 			},
+			validation: (Rule) => Rule.required(),
 		}),
 	],
 	preview: {

@@ -38,6 +38,7 @@ export const business = defineType({
 			},
 			description:
 				'Organization classification for this entity (one type)—not a Subject Category. Categories like Businesses or Organizations are archive search themes for clippings/photos. Civic: fire company, library, conservancy, horse show. Commercial: mill operators, water companies, silica/ore firms. Institutional: Lincoln Institution, military units as operators.',
+			validation: (Rule) => Rule.required(),
 		}),
 		defineField({
 			name: 'migrationKey',

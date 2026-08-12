@@ -39,7 +39,11 @@ export const researchArticle = defineType({
 			title: 'URL Slug',
 			type: 'slug',
 			group: 'identity',
-			options: {source: 'title'},
+			options: {
+				source: 'title',
+				// Default Sanity behavior: unique per document type; keep explicit for clarity.
+				isUnique: (slug, context) => context.defaultIsUnique(slug, context),
+			},
 			validation: (Rule) => Rule.required(),
 		}),
 		defineField({

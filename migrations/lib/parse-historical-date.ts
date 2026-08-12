@@ -58,6 +58,9 @@ export function parseHistoricalDate(raw: string | null | undefined): HistoricalD
 	let text = raw.trim()
 	if (!text) return null
 
+	// Trailing uncertainty marker often used in accession notes
+	text = text.replace(/\?+$/, '').trim()
+
 	let qualifier: HistoricalDateQualifier = 'exact'
 	const qualifierMatch = /^(circa|c\.|ca\.|about|approx\.?|approximately|before|after)\s+/i.exec(
 		text,
@@ -98,6 +101,21 @@ export function parseHistoricalDate(raw: string | null | undefined): HistoricalD
 				precision: 'day',
 				qualifier,
 				date: `${year}-${pad2(month)}-${pad2(day)}`,
+				year,
+				month,
+			})
+		}
+	}
+
+	// Month/year numeric: M/YYYY or MM/YYYY
+	const monthYearNumeric = /^(\d{1,2})\/(\d{4})$/.exec(text)
+	if (monthYearNumeric) {
+		const month = Number(monthYearNumeric[1])
+		const year = Number(monthYearNumeric[2])
+		if (year >= 1000 && year <= 2100 && month >= 1 && month <= 12) {
+			return withType({
+				precision: 'month',
+				qualifier,
 				year,
 				month,
 			})

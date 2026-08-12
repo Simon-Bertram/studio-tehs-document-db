@@ -17,7 +17,7 @@ export interface DonationCsvRow {
 export interface DonationImportDoc {
 	_type: 'donation'
 	donationId: number
-	name?: string
+	name: string
 	acquisitionDate?: HistoricalDateValue
 	description?: string
 	donor?: string
@@ -62,8 +62,9 @@ export function mapDonationRow(
 	const doc: DonationImportDoc = {
 		_type: 'donation',
 		donationId,
+		// Always set name so Studio-required identity holds for API upserts.
+		name: name || `Donation ${donationId}`,
 	}
-	if (name) doc.name = name
 	const acquisitionDate = cleanString(row.acquisitionDate)
 	if (acquisitionDate) {
 		const parsed = parseHistoricalDate(acquisitionDate)
@@ -124,7 +125,7 @@ export function mapDonationRow(
 	return {
 		doc,
 		csvType,
-		title: name || `Donation ${donationId}`,
+		title: doc.name,
 		mappedKeywords,
 		unmappedKeywords,
 	}

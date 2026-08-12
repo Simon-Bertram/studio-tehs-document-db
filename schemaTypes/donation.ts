@@ -21,6 +21,7 @@ export const donation = defineType({
 			title: 'Donation Name',
 			type: 'string',
 			group: 'identity',
+			validation: (Rule) => Rule.required(),
 		}),
 		defineField({
 			name: 'donationId',
@@ -28,7 +29,9 @@ export const donation = defineType({
 			type: 'number',
 			group: 'identity',
 			validation: (Rule) =>
-				Rule.custom(isUniqueNumberField('donation', 'donationId', 'Donation ID must be unique')),
+				Rule.required().custom(
+					isUniqueNumberField('donation', 'donationId', 'Donation ID must be unique'),
+				),
 		}),
 		defineField({
 			name: 'acquisitionDate',

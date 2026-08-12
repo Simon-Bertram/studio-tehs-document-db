@@ -21,7 +21,8 @@
     "csv-import:images": "bun run migrations/csv-import/import-images.ts",
     "csv-import:quarterly": "bun run migrations/quarterly-import/import-quarterly.ts",
     "csv-import:people": "bun run migrations/charlestown-people/import-people.ts",
-    "migrations:run": "sanity migrations run",
+		"audit:validation": "bun run migrations/audit-validation/index.ts",
+		"migrations:run": "sanity migrations run",
     "start": "sanity start",
     "lint": "eslint . --fix"
   },
@@ -52,7 +53,7 @@
     "eslint-plugin-simple-import-sort": "^14.0.0",
     "prettier": "^3.9.6",
     "typescript": "6.0.3",
-    "wrangler": "^4.120.0"
+    "wrangler": "^4.121.0"
   },
   "prettier": {
     "bracketSpacing": false,

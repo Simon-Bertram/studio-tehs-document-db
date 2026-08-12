@@ -21,20 +21,34 @@ function migrateStringField(options: {
 	value: unknown
 	objectPath: string
 	legacyPath?: string
+	legacyValue?: unknown
 }): Patch[] {
-	const {value, objectPath, legacyPath} = options
-	if (typeof value !== 'string') return []
+	const {value, objectPath, legacyPath, legacyValue} = options
+
+	// Already structured — nothing to do
+	if (isHistoricalDateObject(value)) return []
+
+	const source =
+		typeof value === 'string'
+			? value
+			: typeof legacyValue === 'string'
+				? legacyValue
+				: null
+	if (!source) return []
 
 	const patches: Patch[] = []
-	if (legacyPath) {
+	if (legacyPath && typeof value === 'string') {
 		patches.push(at(legacyPath, setIfMissing(value)))
 	}
 
-	const parsed = parseHistoricalDate(value)
+	const parsed = parseHistoricalDate(source)
 	if (parsed) {
 		patches.push(at(objectPath, set(parsed)))
-	} else {
+	} else if (typeof value === 'string') {
 		patches.push(at(objectPath, unset()))
+		if (legacyPath) {
+			patches.push(at(legacyPath, setIfMissing(value)))
+		}
 	}
 	return patches
 }
@@ -77,6 +91,7 @@ export default defineMigration({
 						value: doc.dateTaken,
 						objectPath: 'dateTaken',
 						legacyPath: 'dateTakenText',
+						legacyValue: doc.dateTakenText,
 					}),
 				)
 			}
@@ -100,6 +115,7 @@ export default defineMigration({
 						value: doc.yearBuilt,
 						objectPath: 'yearBuilt',
 						legacyPath: 'yearBuiltText',
+						legacyValue: doc.yearBuiltText,
 					}),
 				)
 			}
@@ -124,6 +140,7 @@ export default defineMigration({
 						value: doc.publishedDate,
 						objectPath: 'publishedDate',
 						legacyPath: 'publishedDateText',
+						legacyValue: doc.publishedDateText,
 					}),
 				)
 			}
@@ -134,6 +151,7 @@ export default defineMigration({
 						value: doc.acquisitionDate,
 						objectPath: 'acquisitionDate',
 						legacyPath: 'acquisitionDateText',
+						legacyValue: doc.acquisitionDateText,
 					}),
 				)
 			}
