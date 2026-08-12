@@ -104,18 +104,6 @@ export const property = defineType({
 				'Usually year-only; use Circa when the year is approximate. Do not invent a day.',
 		}),
 		defineField({
-			name: 'yearBuiltText',
-			title: 'Year Built (Legacy Text)',
-			type: 'string',
-			group: 'identity',
-			deprecated: {
-				reason: 'Use Estimated Year Built / Converted (structured historical date) instead.',
-			},
-			readOnly: true,
-			hidden: ({value}) => value === undefined,
-			initialValue: undefined,
-		}),
-		defineField({
 			name: 'titleChain',
 			title: 'Title Chain',
 			type: 'array',
@@ -128,19 +116,6 @@ export const property = defineType({
 			],
 			description:
 				'Ordered chain of title for this tract—link Deed / Land Instrument documents in chronological (or research) order.',
-		}),
-		defineField({
-			name: 'deedCitations',
-			title: 'Chester County Deed Book References',
-			type: 'array',
-			group: 'research',
-			of: [defineArrayMember({type: 'string'})],
-			description:
-				'Legacy free-text citations (e.g. "U15 P466"). Prefer creating Deed documents and linking them under Title Chain; keep these only while migrating older strings.',
-			deprecated: {
-				reason:
-					'Use Deed / Land Instrument documents and Title Chain instead of free-text citations.',
-			},
 		}),
 	],
 	orderings: [

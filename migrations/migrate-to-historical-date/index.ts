@@ -29,11 +29,7 @@ function migrateStringField(options: {
 	if (isHistoricalDateObject(value)) return []
 
 	const source =
-		typeof value === 'string'
-			? value
-			: typeof legacyValue === 'string'
-				? legacyValue
-				: null
+		typeof value === 'string' ? value : typeof legacyValue === 'string' ? legacyValue : null
 	if (!source) return []
 
 	const patches: Patch[] = []

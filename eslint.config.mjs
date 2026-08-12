@@ -24,7 +24,11 @@ export default [
 		},
 	},
 	{
-		files: ['**/sanity.config.ts', '**/sanity.cli.ts'],
+		files: [
+			'**/sanity.config.ts',
+			'**/sanity.cli.ts',
+			'**/migrations/**/index.ts',
+		],
 		rules: {
 			'import/no-default-export': 'off',
 		},
