@@ -1,14 +1,13 @@
 import {BlockElementIcon} from '@sanity/icons/BlockElement'
 import {DocumentTextIcon} from '@sanity/icons/DocumentText'
-import {ImageIcon} from '@sanity/icons/Image'
 import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {PinIcon} from '@sanity/icons/Pin'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
 import {DocumentWithDescription} from './components/DocumentWithDescription'
 import {archiveIdField} from './shared/archiveIdField'
-import {IMAGE_ROLE_VALUES, IMAGE_ROLES, type ImageRoleValue} from './shared/imageRoles'
 import {organizationsField} from './shared/organizationsField'
+import {portableTextImageMember} from './shared/portableTextImageFields'
 
 export const researchArticle = defineType({
 	name: 'researchArticle',
@@ -66,45 +65,7 @@ export const researchArticle = defineType({
 			group: 'content',
 			of: [
 				defineArrayMember({type: 'block'}),
-				defineArrayMember({
-					type: 'image',
-					title: 'Uploaded Image',
-					icon: ImageIcon,
-					options: {hotspot: true},
-					fields: [
-						defineField({
-							name: 'caption',
-							title: 'Caption',
-							type: 'string',
-						}),
-						defineField({
-							name: 'alt',
-							title: 'Alt Text',
-							type: 'string',
-							description: 'Important for accessibility.',
-							validation: (Rule) => Rule.required().warning('Alt text helps accessibility and SEO'),
-						}),
-						defineField({
-							name: 'imageRole',
-							title: 'Image Role',
-							type: 'string',
-							description:
-								'Primary = main illustration; Supporting = secondary. The website decides layout.',
-							options: {
-								list: [...IMAGE_ROLES],
-								layout: 'radio',
-								direction: 'vertical',
-							},
-							initialValue: 'figure',
-							validation: (Rule) =>
-								Rule.required().custom((value) =>
-									IMAGE_ROLE_VALUES.includes(value as ImageRoleValue)
-										? true
-										: 'Choose a valid image role',
-								),
-						}),
-					],
-				}),
+				portableTextImageMember({title: 'Uploaded Image'}),
 				defineArrayMember({type: 'mapEmbed'}),
 				defineArrayMember({type: 'internalSubLinks'}),
 			],

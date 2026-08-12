@@ -6,12 +6,15 @@ import {PinIcon} from '@sanity/icons/Pin'
 import {SearchIcon} from '@sanity/icons/Search'
 import {defineField, defineType} from 'sanity'
 
-import {formatHistoricalDate, type HistoricalDateValue} from './lib/formatHistoricalDate'
+import {
+	formatHistoricalDateFromPreview,
+	historicalDatePreviewSelect,
+} from './lib/historicalDatePreview'
 import {archiveIdField} from './shared/archiveIdField'
 import {citationsField} from './shared/citationsField'
+import {locationReferenceFields} from './shared/locationFields'
 import {organizationsField} from './shared/organizationsField'
 import {subjectsField} from './shared/subjectsField'
-import {townshipWhenNoPlaceField} from './shared/townshipWhenNoPlaceField'
 
 export const historicalImage = defineType({
 	name: 'historicalImage',
@@ -74,20 +77,7 @@ export const historicalImage = defineType({
 			type: 'text',
 			group: 'content',
 		}),
-		defineField({
-			name: 'specificLocation',
-			title: 'Specific Location',
-			type: 'reference',
-			group: 'place',
-			to: [{type: 'location'}],
-			description:
-				'When set, township is taken from this location. Use the Township field only when there is no more specific place.',
-		}),
-		townshipWhenNoPlaceField({
-			hideWhenField: 'specificLocation',
-			group: 'place',
-			description: 'Only needed when no specific location is set.',
-		}),
+		...locationReferenceFields({group: 'place'}),
 		defineField({
 			name: 'coordinates',
 			title: 'Coordinates',
@@ -166,22 +156,12 @@ export const historicalImage = defineType({
 			title: 'title',
 			archiveId: 'archiveId',
 			media: 'imageFile',
-			precision: 'dateTaken.precision',
-			qualifier: 'dateTaken.qualifier',
-			year: 'dateTaken.year',
-			month: 'dateTaken.month',
-			date: 'dateTaken.date',
 			legacyDate: 'dateTakenText',
+			...historicalDatePreviewSelect('dateTaken'),
 		},
-		prepare({title, archiveId, media, precision, qualifier, year, month, date, legacyDate}) {
-			const when =
-				formatHistoricalDate({
-					precision,
-					qualifier,
-					year,
-					month,
-					date,
-				} as HistoricalDateValue) || legacyDate
+		prepare(selection) {
+			const {title, archiveId, media, legacyDate} = selection
+			const when = formatHistoricalDateFromPreview(selection) || legacyDate
 			const subtitle = [archiveId, when].filter(Boolean).join(' · ')
 			return {
 				title: title || 'Untitled image',

@@ -4,8 +4,12 @@ import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {TagIcon} from '@sanity/icons/Tag'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
-import {formatHistoricalDate, type HistoricalDateValue} from './lib/formatHistoricalDate'
+import {
+	formatHistoricalDateFromPreview,
+	historicalDatePreviewSelect,
+} from './lib/historicalDatePreview'
 import {isUniqueStringField} from './lib/isUniqueStringField'
+import {portableTextImageMember} from './shared/portableTextImageFields'
 
 export const quarterlyArticle = defineType({
 	name: 'quarterlyArticle',
@@ -95,24 +99,7 @@ export const quarterlyArticle = defineType({
 			group: 'content',
 			of: [
 				defineArrayMember({type: 'block'}),
-				defineArrayMember({
-					type: 'image',
-					title: 'Inline Image',
-					options: {hotspot: true},
-					fields: [
-						defineField({
-							name: 'caption',
-							title: 'Caption',
-							type: 'string',
-						}),
-						defineField({
-							name: 'alt',
-							title: 'Alt Text',
-							type: 'string',
-							description: 'Important for accessibility.',
-						}),
-					],
-				}),
+				portableTextImageMember({title: 'Inline Image'}),
 				defineArrayMember({type: 'pageBreak'}),
 			],
 		}),
@@ -168,24 +155,14 @@ export const quarterlyArticle = defineType({
 			volume: 'volume',
 			issue: 'issue',
 			legacyDate: 'publishedDateText',
-			precision: 'publishedDate.precision',
-			qualifier: 'publishedDate.qualifier',
-			year: 'publishedDate.year',
-			month: 'publishedDate.month',
-			date: 'publishedDate.date',
+			...historicalDatePreviewSelect('publishedDate'),
 		},
-		prepare({title, volume, issue, legacyDate, precision, qualifier, year, month, date}) {
+		prepare(selection) {
+			const {title, volume, issue, legacyDate} = selection
 			const volIssue = [volume != null && `Vol ${volume}`, issue != null && `No. ${issue}`]
 				.filter(Boolean)
 				.join(', ')
-			const when =
-				formatHistoricalDate({
-					precision,
-					qualifier,
-					year,
-					month,
-					date,
-				} as HistoricalDateValue) || legacyDate
+			const when = formatHistoricalDateFromPreview(selection) || legacyDate
 			const subtitle = [volIssue, when].filter(Boolean).join(' · ')
 			return {
 				title: title || 'Untitled Article',

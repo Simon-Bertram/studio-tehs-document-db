@@ -6,9 +6,12 @@ import {defineArrayMember, defineField, defineType} from 'sanity'
 
 import {
 	compareHistoricalDates,
-	formatHistoricalDate,
 	type HistoricalDateValue,
 } from './lib/formatHistoricalDate'
+import {
+	formatHistoricalDateFromPreview,
+	historicalDatePreviewSelect,
+} from './lib/historicalDatePreview'
 
 export const person = defineType({
 	name: 'person',
@@ -136,49 +139,14 @@ export const person = defineType({
 			first: 'firstName',
 			last: 'lastName',
 			suffix: 'suffix',
-			bornPrecision: 'born.precision',
-			bornQualifier: 'born.qualifier',
-			bornYear: 'born.year',
-			bornMonth: 'born.month',
-			bornDate: 'born.date',
-			diedPrecision: 'died.precision',
-			diedQualifier: 'died.qualifier',
-			diedYear: 'died.year',
-			diedMonth: 'died.month',
-			diedDate: 'died.date',
+			...historicalDatePreviewSelect('born', 'born'),
+			...historicalDatePreviewSelect('died', 'died'),
 		},
 		prepare(selection) {
-			const {
-				prefix,
-				first,
-				last,
-				suffix,
-				bornPrecision,
-				bornQualifier,
-				bornYear,
-				bornMonth,
-				bornDate,
-				diedPrecision,
-				diedQualifier,
-				diedYear,
-				diedMonth,
-				diedDate,
-			} = selection
+			const {prefix, first, last, suffix} = selection
 			const title = [prefix, first, last, suffix].filter(Boolean).join(' ')
-			const bornLabel = formatHistoricalDate({
-				precision: bornPrecision,
-				qualifier: bornQualifier,
-				year: bornYear,
-				month: bornMonth,
-				date: bornDate,
-			})
-			const diedLabel = formatHistoricalDate({
-				precision: diedPrecision,
-				qualifier: diedQualifier,
-				year: diedYear,
-				month: diedMonth,
-				date: diedDate,
-			})
+			const bornLabel = formatHistoricalDateFromPreview(selection, 'born')
+			const diedLabel = formatHistoricalDateFromPreview(selection, 'died')
 			let subtitle: string | undefined
 			if (bornLabel && diedLabel) subtitle = `${bornLabel}–${diedLabel}`
 			else if (bornLabel) subtitle = `b. ${bornLabel}`

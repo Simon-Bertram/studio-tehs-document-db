@@ -4,7 +4,7 @@ import {PinIcon} from '@sanity/icons/Pin'
 import {SearchIcon} from '@sanity/icons/Search'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
-import {townshipWhenNoPlaceField} from './shared/townshipWhenNoPlaceField'
+import {locationReferenceFields} from './shared/locationFields'
 
 export const property = defineType({
 	name: 'property',
@@ -62,19 +62,10 @@ export const property = defineType({
 				'If this is a house inside a larger farm, link to the main estate here (e.g., Link "By-The-Creek" to "Glenhardie Farm").',
 			hidden: ({document}) => document?.propertyType === 'estate',
 		}),
-		defineField({
-			name: 'location',
-			title: 'Specific Location',
-			type: 'reference',
+		...locationReferenceFields({
 			group: 'place',
-			to: [{type: 'location'}],
 			description:
 				'When set, township is taken from this location. Use Township only when there is no more specific place. For Valley Forge sites, set Location to Valley Forge.',
-		}),
-		townshipWhenNoPlaceField({
-			hideWhenField: 'location',
-			group: 'place',
-			description: 'Only needed when no specific location is set.',
 		}),
 		defineField({
 			name: 'evolutionNotes',

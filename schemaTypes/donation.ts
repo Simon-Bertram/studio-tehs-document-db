@@ -3,7 +3,10 @@ import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {TagsIcon} from '@sanity/icons/Tags'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
-import {formatHistoricalDate, type HistoricalDateValue} from './lib/formatHistoricalDate'
+import {
+	formatHistoricalDateFromPreview,
+	historicalDatePreviewSelect,
+} from './lib/historicalDatePreview'
 import {isUniqueNumberField} from './lib/isUniqueNumberField'
 
 export const donation = defineType({
@@ -82,22 +85,12 @@ export const donation = defineType({
 			donationId: 'donationId',
 			donor: 'donor',
 			legacyDate: 'acquisitionDateText',
-			precision: 'acquisitionDate.precision',
-			qualifier: 'acquisitionDate.qualifier',
-			year: 'acquisitionDate.year',
-			month: 'acquisitionDate.month',
-			date: 'acquisitionDate.date',
+			...historicalDatePreviewSelect('acquisitionDate'),
 		},
-		prepare({name, donationId, donor, legacyDate, precision, qualifier, year, month, date}) {
+		prepare(selection) {
+			const {name, donationId, donor, legacyDate} = selection
 			const title = name || (donationId != null ? `Donation #${donationId}` : 'Untitled donation')
-			const when =
-				formatHistoricalDate({
-					precision,
-					qualifier,
-					year,
-					month,
-					date,
-				} as HistoricalDateValue) || legacyDate
+			const when = formatHistoricalDateFromPreview(selection) || legacyDate
 			const subtitle = [donor, when].filter(Boolean).join(' · ')
 			return {
 				title,

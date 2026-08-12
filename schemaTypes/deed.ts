@@ -6,7 +6,10 @@ import {SearchIcon} from '@sanity/icons/Search'
 import {UsersIcon} from '@sanity/icons/Users'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
-import {formatHistoricalDate, type HistoricalDateValue} from './lib/formatHistoricalDate'
+import {
+	formatHistoricalDateFromPreview,
+	historicalDatePreviewSelect,
+} from './lib/historicalDatePreview'
 import {archiveIdField} from './shared/archiveIdField'
 
 export const deed = defineType({
@@ -248,41 +251,18 @@ export const deed = defineType({
 			grantorsText: 'grantorsText',
 			granteesText: 'granteesText',
 			dateText: 'dateText',
-			precision: 'date.precision',
-			qualifier: 'date.qualifier',
-			year: 'date.year',
-			month: 'date.month',
-			date: 'date.date',
 			instrumentType: 'instrumentType',
 			media: 'scanImage',
+			...historicalDatePreviewSelect('date'),
 		},
-		prepare({
-			reference,
-			grantorsText,
-			granteesText,
-			dateText,
-			precision,
-			qualifier,
-			year,
-			month,
-			date,
-			instrumentType,
-			media,
-		}) {
+		prepare(selection) {
+			const {reference, grantorsText, granteesText, dateText, instrumentType, media} = selection
 			const parties =
 				grantorsText || granteesText
 					? [grantorsText, granteesText].filter(Boolean).join(' → ')
 					: undefined
 			const title = reference || parties || 'Untitled instrument'
-			const when =
-				dateText ||
-				formatHistoricalDate({
-					precision,
-					qualifier,
-					year,
-					month,
-					date,
-				} as HistoricalDateValue)
+			const when = dateText || formatHistoricalDateFromPreview(selection)
 			const subtitle = [instrumentType, when].filter(Boolean).join(' · ')
 			return {
 				title,

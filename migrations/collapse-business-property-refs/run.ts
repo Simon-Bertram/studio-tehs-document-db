@@ -1,10 +1,13 @@
 /**
- * Collapse bidirectional business↔property refs onto business.locations
+ * Collapse bidirectional business↔property refs onto business.associatedProperties
  * (canonical), then unset property.relatedBusinesses.
  *
  * Run after dry-run review:
  *   SANITY_AUTH_TOKEN=… bun run migrations/collapse-business-property-refs/run.ts
  *   SANITY_AUTH_TOKEN=… bun run migrations/collapse-business-property-refs/run.ts -- --live
+ *
+ * Prefer running after rename-business-locations-to-associated-properties migration
+ * if legacy `locations` data may still exist.
  */
 import {createClient} from '@sanity/client'
 import {nanoid} from 'nanoid'
@@ -34,6 +37,8 @@ interface PropertyRow {
 
 interface BusinessRow {
 	_id: string
+	associatedProperties?: {_ref: string}[]
+	/** Legacy field before rename-business-locations-to-associated-properties */
 	locations?: {_ref: string}[]
 }
 
@@ -58,19 +63,24 @@ async function run() {
 
 	const businesses = businessIds.size
 		? await client.fetch<BusinessRow[]>(
-				`*[_type == "business" && _id in $ids]{_id, locations[]{_ref}}`,
+				`*[_type == "business" && _id in $ids]{
+					_id,
+					associatedProperties[]{_ref},
+					locations[]{_ref}
+				}`,
 				{ids: Array.from(businessIds)},
 			)
 		: []
 
-	const locationsByBusiness = new Map<string, Set<string>>()
+	const propertiesByBusiness = new Map<string, Set<string>>()
 	const knownBusinessIds = new Set(businesses.map((biz) => biz._id.replace(/^drafts\./, '')))
 	for (const biz of businesses) {
 		const id = biz._id.replace(/^drafts\./, '')
-		locationsByBusiness.set(
-			id,
-			new Set((biz.locations ?? []).map((l) => l._ref.replace(/^drafts\./, ''))),
-		)
+		const existing = [
+			...(biz.associatedProperties ?? []),
+			...(biz.locations ?? []),
+		].map((l) => l._ref.replace(/^drafts\./, ''))
+		propertiesByBusiness.set(id, new Set(existing))
 	}
 
 	let linkAdds = 0
@@ -82,17 +92,17 @@ async function run() {
 				console.warn(`  skip missing business ${businessId} (from property ${propertyId})`)
 				continue
 			}
-			const existing = locationsByBusiness.get(businessId) ?? new Set()
+			const existing = propertiesByBusiness.get(businessId) ?? new Set()
 			if (!existing.has(propertyId)) {
 				existing.add(propertyId)
-				locationsByBusiness.set(businessId, existing)
+				propertiesByBusiness.set(businessId, existing)
 				linkAdds++
 				console.log(`  link business ${businessId} → property ${propertyId}`)
 			}
 		}
 	}
 
-	console.log(`New location links to add: ${linkAdds}`)
+	console.log(`New property links to add: ${linkAdds}`)
 	console.log(`Properties to clear relatedBusinesses: ${properties.length}`)
 
 	if (DRY_RUN) {
@@ -102,13 +112,13 @@ async function run() {
 
 	const tx = client.transaction()
 
-	for (const [businessId, locationIds] of locationsByBusiness) {
-		const locations = Array.from(locationIds).map((_ref) => ({
+	for (const [businessId, propertyIds] of propertiesByBusiness) {
+		const associatedProperties = Array.from(propertyIds).map((_ref) => ({
 			_type: 'reference' as const,
 			_key: nanoid(),
 			_ref,
 		}))
-		tx.patch(businessId, (p) => p.set({locations}))
+		tx.patch(businessId, (p) => p.set({associatedProperties}).unset(['locations']))
 	}
 
 	for (const prop of properties) {

@@ -5,7 +5,10 @@ import {PinIcon} from '@sanity/icons/Pin'
 import {SearchIcon} from '@sanity/icons/Search'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
-import {formatHistoricalDate, type HistoricalDateValue} from './lib/formatHistoricalDate'
+import {
+	formatHistoricalDateFromPreview,
+	historicalDatePreviewSelect,
+} from './lib/historicalDatePreview'
 import {archiveIdField} from './shared/archiveIdField'
 import {citationsField} from './shared/citationsField'
 import {organizationsField} from './shared/organizationsField'
@@ -157,22 +160,12 @@ export const primarySource = defineType({
 			title: 'title',
 			newspaper: 'newspaper',
 			dateText: 'dateText',
-			precision: 'date.precision',
-			qualifier: 'date.qualifier',
-			year: 'date.year',
-			month: 'date.month',
-			date: 'date.date',
 			media: 'articleImage',
+			...historicalDatePreviewSelect('date'),
 		},
-		prepare({title, newspaper, dateText, precision, qualifier, year, month, date, media}) {
-			const when =
-				formatHistoricalDate({
-					precision,
-					qualifier,
-					year,
-					month,
-					date,
-				} as HistoricalDateValue) || dateText
+		prepare(selection) {
+			const {title, newspaper, dateText, media} = selection
+			const when = formatHistoricalDateFromPreview(selection) || dateText
 			const subtitle = [newspaper, when].filter(Boolean).join(' · ')
 			return {
 				title: title || 'Untitled source',

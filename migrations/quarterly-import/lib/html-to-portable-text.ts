@@ -30,6 +30,7 @@ export type ImagePlaceholderBlock = {
 	_key: string
 	alt?: string
 	caption?: string
+	imageRole?: 'figure' | 'aside'
 	/** Absolute URL for later upload on --live */
 	_pendingSrc?: string
 	asset?: {_type: 'reference'; _ref: string}
@@ -110,6 +111,7 @@ export function htmlFragmentToBody(htmlFragment: string, baseUrl: string): BodyB
 						_type: 'image',
 						_key: nanoid(),
 						alt: img.getAttribute('alt') ?? undefined,
+						imageRole: 'figure',
 						_pendingSrc: absolute,
 					})
 				}

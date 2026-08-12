@@ -4,9 +4,14 @@ import {LinkIcon} from '@sanity/icons/Link'
 import {PinIcon} from '@sanity/icons/Pin'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
-import {formatHistoricalDateRange, type HistoricalDateValue} from './lib/formatHistoricalDate'
+import {formatHistoricalDateRange} from './lib/formatHistoricalDate'
+import {
+	historicalDateFromPreview,
+	historicalDatePreviewSelect,
+} from './lib/historicalDatePreview'
 import {isUniqueStringField} from './lib/isUniqueStringField'
 import {BUSINESS_TYPE_LABELS, BUSINESS_TYPES} from './shared/businessTypes'
+import {associatedPropertiesField} from './shared/locationFields'
 
 export const business = defineType({
 	name: 'business',
@@ -105,20 +110,7 @@ export const business = defineType({
 				}),
 			],
 		}),
-		defineField({
-			name: 'locations',
-			title: 'Associated Properties / Sites',
-			type: 'array',
-			group: 'relations',
-			of: [
-				defineArrayMember({
-					type: 'reference',
-					to: [{type: 'property'}],
-				}),
-			],
-			description:
-				'Canonical link from this organization to the properties it occupied. Related organizations are found from a property via this field (not stored on the property).',
-		}),
+		associatedPropertiesField('relations'),
 	],
 	orderings: [
 		{
@@ -132,53 +124,19 @@ export const business = defineType({
 			title: 'name',
 			businessType: 'businessType',
 			yearsActive: 'yearsActive',
-			fromPrecision: 'activeFrom.precision',
-			fromQualifier: 'activeFrom.qualifier',
-			fromYear: 'activeFrom.year',
-			fromMonth: 'activeFrom.month',
-			fromDate: 'activeFrom.date',
-			toPrecision: 'activeTo.precision',
-			toQualifier: 'activeTo.qualifier',
-			toYear: 'activeTo.year',
-			toMonth: 'activeTo.month',
-			toDate: 'activeTo.date',
+			...historicalDatePreviewSelect('activeFrom', 'from'),
+			...historicalDatePreviewSelect('activeTo', 'to'),
 		},
 		prepare(selection) {
-			const {
-				title,
-				businessType,
-				yearsActive,
-				fromPrecision,
-				fromQualifier,
-				fromYear,
-				fromMonth,
-				fromDate,
-				toPrecision,
-				toQualifier,
-				toYear,
-				toMonth,
-				toDate,
-			} = selection
+			const {title, businessType, yearsActive} = selection
 			const label =
 				businessType && businessType in BUSINESS_TYPE_LABELS
 					? BUSINESS_TYPE_LABELS[businessType as keyof typeof BUSINESS_TYPE_LABELS]
 					: businessType
 			const range =
 				formatHistoricalDateRange(
-					{
-						precision: fromPrecision,
-						qualifier: fromQualifier,
-						year: fromYear,
-						month: fromMonth,
-						date: fromDate,
-					} as HistoricalDateValue,
-					{
-						precision: toPrecision,
-						qualifier: toQualifier,
-						year: toYear,
-						month: toMonth,
-						date: toDate,
-					} as HistoricalDateValue,
+					historicalDateFromPreview(selection, 'from'),
+					historicalDateFromPreview(selection, 'to'),
 				) || yearsActive
 			const subtitle = [label, range].filter(Boolean).join(' · ')
 			return {
