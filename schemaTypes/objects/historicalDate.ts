@@ -36,7 +36,15 @@ export const historicalDate = defineType({
 				],
 				layout: 'radio',
 			},
-			validation: (Rule) => Rule.required(),
+			validation: (Rule) =>
+				Rule.custom((precision, context) => {
+					const parent = context.parent as HistoricalDateValue | undefined
+					const hasDateValue =
+						parent?.year != null || parent?.month != null || Boolean(parent?.date)
+					if (!precision && !hasDateValue) return true
+					if (!precision) return 'Precision is required'
+					return true
+				}),
 		}),
 		defineField({
 			name: 'qualifier',

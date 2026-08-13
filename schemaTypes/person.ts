@@ -4,10 +4,7 @@ import {UserIcon} from '@sanity/icons/User'
 import {UsersIcon} from '@sanity/icons/Users'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
-import {
-	compareHistoricalDates,
-	type HistoricalDateValue,
-} from './lib/formatHistoricalDate'
+import {compareHistoricalDates, type HistoricalDateValue} from './lib/formatHistoricalDate'
 import {
 	formatHistoricalDateFromPreview,
 	historicalDatePreviewSelect,
