@@ -9,6 +9,7 @@ import {
 	formatHistoricalDateFromPreview,
 	historicalDatePreviewSelect,
 } from './lib/historicalDatePreview'
+import {warnDuplicatePersonName} from './lib/warnDuplicatePersonName'
 
 export const person = defineType({
 	name: 'person',
@@ -33,14 +34,21 @@ export const person = defineType({
 			title: 'First Name',
 			type: 'string',
 			group: 'identity',
-			validation: (Rule) => Rule.required(),
+			validation: (Rule) => [Rule.required(), Rule.custom(warnDuplicatePersonName()).warning()],
+		}),
+		defineField({
+			name: 'middleName',
+			title: 'Middle Name',
+			type: 'string',
+			group: 'identity',
+			validation: (Rule) => [Rule.custom(warnDuplicatePersonName()).warning()],
 		}),
 		defineField({
 			name: 'lastName',
 			title: 'Last Name',
 			type: 'string',
 			group: 'identity',
-			validation: (Rule) => Rule.required(),
+			validation: (Rule) => [Rule.required(), Rule.custom(warnDuplicatePersonName()).warning()],
 		}),
 		defineField({
 			name: 'suffix',
@@ -134,14 +142,15 @@ export const person = defineType({
 		select: {
 			prefix: 'prefix',
 			first: 'firstName',
+			middle: 'middleName',
 			last: 'lastName',
 			suffix: 'suffix',
 			...historicalDatePreviewSelect('born', 'born'),
 			...historicalDatePreviewSelect('died', 'died'),
 		},
 		prepare(selection) {
-			const {prefix, first, last, suffix} = selection
-			const title = [prefix, first, last, suffix].filter(Boolean).join(' ')
+			const {prefix, first, middle, last, suffix} = selection
+			const title = [prefix, first, middle, last, suffix].filter(Boolean).join(' ')
 			const bornLabel = formatHistoricalDateFromPreview(selection, 'born')
 			const diedLabel = formatHistoricalDateFromPreview(selection, 'died')
 			let subtitle: string | undefined
