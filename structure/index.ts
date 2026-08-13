@@ -15,6 +15,8 @@ import {TagsIcon} from '@sanity/icons/Tags'
 import {UserIcon} from '@sanity/icons/User'
 import type {StructureResolver} from 'sanity/structure'
 
+import {SANITY_API_VERSION} from '../lib/sanityEnv'
+
 export const structure: StructureResolver = (S) =>
 	S.list()
 		.title('Content')
@@ -74,6 +76,7 @@ export const structure: StructureResolver = (S) =>
 													S.documentList()
 														.title('Commercial / Industrial')
 														.schemaType('business')
+														.apiVersion(SANITY_API_VERSION)
 														.filter('_type == "business" && businessType == "commercial"')
 														.initialValueTemplates([
 															S.initialValueTemplateItem('business-commercial'),
@@ -85,6 +88,7 @@ export const structure: StructureResolver = (S) =>
 													S.documentList()
 														.title('Civic / Community')
 														.schemaType('business')
+														.apiVersion(SANITY_API_VERSION)
 														.filter('_type == "business" && businessType == "civic"')
 														.initialValueTemplates([S.initialValueTemplateItem('business-civic')]),
 												),
@@ -94,6 +98,7 @@ export const structure: StructureResolver = (S) =>
 													S.documentList()
 														.title('Institutional')
 														.schemaType('business')
+														.apiVersion(SANITY_API_VERSION)
 														.filter('_type == "business" && businessType == "institutional"')
 														.initialValueTemplates([
 															S.initialValueTemplateItem('business-institutional'),

@@ -60,7 +60,7 @@ export function warnDuplicatePersonName(): CustomValidator<string | undefined> {
 		const id = publishedId(rawId)
 
 		const matches = await client.fetch<PersonNameMatch[]>(
-			`*[_type == "person" && lower(trim(firstName)) == lower($firstName) && lower(trim(lastName)) == lower($lastName) && !(_id in [$id, $draftId])][0...${MATCH_FETCH_LIMIT}]{_id, prefix, firstName, middleName, lastName, suffix}`,
+			`*[_type == "person" && lower(firstName) == lower($firstName) && lower(lastName) == lower($lastName) && !(_id in [$id, $draftId])][0...${MATCH_FETCH_LIMIT}]{_id, prefix, firstName, middleName, lastName, suffix}`,
 			{
 				firstName,
 				lastName,
