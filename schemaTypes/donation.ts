@@ -3,12 +3,14 @@ import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {TagsIcon} from '@sanity/icons/Tags'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
+import {DonationUncategorizedMedia} from './components/DonationUncategorizedMedia'
 import {
 	formatHistoricalDateFromPreview,
 	historicalDatePreviewSelect,
 } from './lib/historicalDatePreview'
 import {incomingReferenceArrayInitialValue} from './lib/incoming-reference-array'
 import {isUniqueNumberField} from './lib/isUniqueNumberField'
+import {warnMissingDonationCategory} from './lib/warnMissingDonationCategory'
 
 export const donation = defineType({
 	name: 'donation',
@@ -78,6 +80,8 @@ export const donation = defineType({
 					to: [{type: 'donationCategory'}],
 				}),
 			],
+			validation: (Rule) =>
+				Rule.custom(warnMissingDonationCategory()).warning(),
 		}),
 	],
 	initialValue: incomingReferenceArrayInitialValue('donationCategories'),
@@ -87,16 +91,27 @@ export const donation = defineType({
 			donationId: 'donationId',
 			donor: 'donor',
 			legacyDate: 'acquisitionDateText',
+			cat0: 'donationCategories.0.title',
+			cat1: 'donationCategories.1.title',
+			cat2: 'donationCategories.2.title',
 			...historicalDatePreviewSelect('acquisitionDate'),
 		},
 		prepare(selection) {
-			const {name, donationId, donor, legacyDate} = selection
+			const {name, donationId, donor, legacyDate, cat0, cat1, cat2} = selection
 			const title = name || (donationId != null ? `Donation #${donationId}` : 'Untitled donation')
 			const when = formatHistoricalDateFromPreview(selection) || legacyDate
-			const subtitle = [donor, when].filter(Boolean).join(' · ')
+			const hasLiveCategory = Boolean(cat0 || cat1 || cat2)
+			const subtitle = [
+				donor,
+				when,
+				hasLiveCategory ? undefined : 'No donation category',
+			]
+				.filter(Boolean)
+				.join(' · ')
 			return {
 				title,
 				subtitle: subtitle || undefined,
+				...(hasLiveCategory ? {} : {media: DonationUncategorizedMedia}),
 			}
 		},
 	},

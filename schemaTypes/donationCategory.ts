@@ -18,7 +18,10 @@ export const donationCategory = defineType({
 			name: 'title',
 			title: 'Category Title',
 			type: 'string',
-			validation: (Rule) => Rule.required(),
+			validation: (Rule) =>
+				Rule.required().custom(
+					isUniqueStringField('donationCategory', 'title', 'Category title must be unique'),
+				),
 		}),
 		defineField({
 			name: 'description',
