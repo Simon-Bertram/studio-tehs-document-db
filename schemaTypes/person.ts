@@ -3,13 +3,17 @@ import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {UserIcon} from '@sanity/icons/User'
 import {UsersIcon} from '@sanity/icons/Users'
 import {defineArrayMember, defineField, defineType} from 'sanity'
+import {defineIncomingReferenceDecoration} from 'sanity/structure'
 
 import {compareHistoricalDates, type HistoricalDateValue} from './lib/formatHistoricalDate'
 import {
 	formatHistoricalDateFromPreview,
 	historicalDatePreviewSelect,
 } from './lib/historicalDatePreview'
-import {incomingReferenceArrayInitialValue} from './lib/incoming-reference-array'
+import {
+	appendIncomingReference,
+	incomingReferenceArrayInitialValue,
+} from './lib/incoming-reference-array'
 import {warnDuplicatePersonName} from './lib/warnDuplicatePersonName'
 
 export const person = defineType({
@@ -122,6 +126,16 @@ export const person = defineType({
 		}),
 	],
 	initialValue: incomingReferenceArrayInitialValue('familyLines'),
+	renderMembers: (members) => [
+		...members,
+		defineIncomingReferenceDecoration({
+			name: 'historicalImages',
+			title: 'Historical Images',
+			description: 'Photographs this person is tagged in.',
+			types: [{type: 'historicalImage'}],
+			onLinkDocument: appendIncomingReference('people'),
+		}),
+	],
 	orderings: [
 		{
 			title: 'Last name, A–Z',

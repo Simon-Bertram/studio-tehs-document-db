@@ -4,12 +4,13 @@ import {ImageIcon} from '@sanity/icons/Image'
 import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {PinIcon} from '@sanity/icons/Pin'
 import {SearchIcon} from '@sanity/icons/Search'
-import {defineField, defineType} from 'sanity'
+import {defineArrayMember, defineField, defineType} from 'sanity'
 
 import {
 	formatHistoricalDateFromPreview,
 	historicalDatePreviewSelect,
 } from './lib/historicalDatePreview'
+import {incomingReferenceArrayInitialValue} from './lib/incoming-reference-array'
 import {archiveIdField} from './shared/archiveIdField'
 import {citationsField} from './shared/citationsField'
 import {locationReferenceFields} from './shared/locationFields'
@@ -77,6 +78,21 @@ export const historicalImage = defineType({
 			type: 'text',
 			group: 'content',
 		}),
+		defineField({
+			name: 'people',
+			title: 'People Depicted',
+			type: 'array',
+			group: 'content',
+			description:
+				'Historical persons shown in this photograph. Create or reuse a person under Taxonomies & Entities.',
+			of: [
+				defineArrayMember({
+					type: 'reference',
+					to: [{type: 'person'}],
+				}),
+			],
+			validation: (Rule) => Rule.unique(),
+		}),
 		...locationReferenceFields({group: 'place'}),
 		defineField({
 			name: 'coordinates',
@@ -129,6 +145,7 @@ export const historicalImage = defineType({
 			group: 'provenance',
 		}),
 	],
+	initialValue: incomingReferenceArrayInitialValue('people'),
 	orderings: [
 		{
 			title: 'Archive ID',
