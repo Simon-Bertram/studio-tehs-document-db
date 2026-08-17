@@ -5,10 +5,7 @@ import {PinIcon} from '@sanity/icons/Pin'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
 import {formatHistoricalDateRange} from './lib/formatHistoricalDate'
-import {
-	historicalDateFromPreview,
-	historicalDatePreviewSelect,
-} from './lib/historicalDatePreview'
+import {historicalDateFromPreview, historicalDatePreviewSelect} from './lib/historicalDatePreview'
 import {isUniqueStringField} from './lib/isUniqueStringField'
 import {BUSINESS_TYPE_LABELS, BUSINESS_TYPES} from './shared/businessTypes'
 import {associatedPropertiesField} from './shared/locationFields'

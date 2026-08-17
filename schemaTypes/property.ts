@@ -104,6 +104,18 @@ export const property = defineType({
 				'Usually year-only; use Circa when the year is approximate. Do not invent a day.',
 		}),
 		defineField({
+			name: 'yearBuiltText',
+			title: 'Year Built (Legacy Text)',
+			type: 'string',
+			group: 'identity',
+			deprecated: {
+				reason: 'Use Estimated Year Built / Converted (structured historical date) instead.',
+			},
+			readOnly: true,
+			hidden: ({value}) => value === undefined,
+			initialValue: undefined,
+		}),
+		defineField({
 			name: 'titleChain',
 			title: 'Title Chain',
 			type: 'array',
