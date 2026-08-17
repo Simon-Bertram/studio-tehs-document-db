@@ -7,6 +7,7 @@ import {
 	formatHistoricalDateFromPreview,
 	historicalDatePreviewSelect,
 } from './lib/historicalDatePreview'
+import {incomingReferenceArrayInitialValue} from './lib/incoming-reference-array'
 import {isUniqueNumberField} from './lib/isUniqueNumberField'
 
 export const donation = defineType({
@@ -79,6 +80,7 @@ export const donation = defineType({
 			],
 		}),
 	],
+	initialValue: incomingReferenceArrayInitialValue('donationCategories'),
 	preview: {
 		select: {
 			name: 'name',

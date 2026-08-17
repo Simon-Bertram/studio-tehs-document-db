@@ -1,6 +1,8 @@
 import {UsersIcon} from '@sanity/icons/Users'
 import {defineField, defineType} from 'sanity'
+import {defineIncomingReferenceDecoration} from 'sanity/structure'
 
+import {appendIncomingReference} from './lib/incoming-reference-array'
 import {truncatePreviewText} from './lib/truncatePreviewText'
 
 export const familyLine = defineType({
@@ -21,6 +23,16 @@ export const familyLine = defineType({
 			title: 'Historical Background',
 			type: 'text',
 			description: 'A brief overview of the family’s origin or impact in the area.',
+		}),
+	],
+	renderMembers: (members) => [
+		...members,
+		defineIncomingReferenceDecoration({
+			name: 'people',
+			title: 'People',
+			description: 'Historical persons tagged with this family lineage.',
+			types: [{type: 'person'}],
+			onLinkDocument: appendIncomingReference('familyLines'),
 		}),
 	],
 	orderings: [

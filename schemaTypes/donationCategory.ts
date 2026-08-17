@@ -1,6 +1,8 @@
 import {TagsIcon} from '@sanity/icons/Tags'
 import {defineField, defineType} from 'sanity'
+import {defineIncomingReferenceDecoration} from 'sanity/structure'
 
+import {appendIncomingReference} from './lib/incoming-reference-array'
 import {isUniqueStringField} from './lib/isUniqueStringField'
 import {truncatePreviewText} from './lib/truncatePreviewText'
 
@@ -37,6 +39,16 @@ export const donationCategory = defineType({
 						'Migration mapping key must be unique',
 					),
 				),
+		}),
+	],
+	renderMembers: (members) => [
+		...members,
+		defineIncomingReferenceDecoration({
+			name: 'donations',
+			title: 'Donations',
+			description: 'Donation records tagged with this category.',
+			types: [{type: 'donation'}],
+			onLinkDocument: appendIncomingReference('donationCategories'),
 		}),
 	],
 	orderings: [

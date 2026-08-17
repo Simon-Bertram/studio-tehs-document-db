@@ -9,6 +9,7 @@ import {
 	formatHistoricalDateFromPreview,
 	historicalDatePreviewSelect,
 } from './lib/historicalDatePreview'
+import {incomingReferenceArrayInitialValue} from './lib/incoming-reference-array'
 import {warnDuplicatePersonName} from './lib/warnDuplicatePersonName'
 
 export const person = defineType({
@@ -120,6 +121,7 @@ export const person = defineType({
 			of: [defineArrayMember({type: 'immediateRelative'})],
 		}),
 	],
+	initialValue: incomingReferenceArrayInitialValue('familyLines'),
 	orderings: [
 		{
 			title: 'Last name, A–Z',
