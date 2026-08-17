@@ -1,5 +1,6 @@
 /**
  * Historical images CSV import pipeline (sample-images.csv).
+ * Uploads assets from public HTTP URLs built from imageLocation.
  */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -10,6 +11,7 @@ import pLimit from 'p-limit'
 import {SANITY_DATASET, SANITY_PROJECT_ID} from '../../../lib/sanityEnv'
 import {Audit} from './audit'
 import type {ImportConfig} from './cli-config'
+import {contentTypeFromImagePath, fetchImageBuffer, filenameFromImagePath} from './image-asset-url'
 import {buildImageLookups} from './image-lookups'
 import type {HistoricalImageImportDoc, ImageCsvRow} from './map-image-row'
 import {mapImageRow} from './map-image-row'
@@ -20,15 +22,16 @@ import {writeReports} from './write-reports'
 
 const CONCURRENCY = 3
 
-async function uploadJpegIfNeeded(
+async function uploadFromUrlIfNeeded(
 	client: SanityClient,
 	archiveId: string,
-	psImagesRaw: string | null,
+	imageLocation: string | null,
+	assetUrl: string | null,
 	existingHasImage: boolean,
 	assetErrors: string[],
 ): Promise<HistoricalImageImportDoc['imageFile'] | undefined> {
-	if (!psImagesRaw) {
-		assetErrors.push(`${archiveId}: no embedded JPEG in psImages`)
+	if (!assetUrl || !imageLocation) {
+		assetErrors.push(`${archiveId}: no imageLocation path`)
 		return undefined
 	}
 	if (existingHasImage) {
@@ -36,10 +39,10 @@ async function uploadJpegIfNeeded(
 	}
 
 	try {
-		const buffer = Buffer.from(psImagesRaw, 'latin1')
+		const {buffer, contentType} = await fetchImageBuffer(assetUrl)
 		const asset = await client.assets.upload('image', buffer, {
-			filename: `${archiveId}.jpg`,
-			contentType: 'image/jpeg',
+			filename: filenameFromImagePath(imageLocation),
+			contentType: contentType || contentTypeFromImagePath(imageLocation),
 		})
 		return {
 			_type: 'image',
@@ -69,10 +72,7 @@ export async function runImagesImport(config: ImportConfig, client: SanityClient
 
 	const audit = new Audit()
 	const assetErrors: string[] = []
-	// latin1 preserves embedded JPEG bytes in psImages
-	const rows = await readCsvRows<ImageCsvRow>(csvPath, rowLimit, {
-		encoding: 'latin1',
-	})
+	const rows = await readCsvRows<ImageCsvRow>(csvPath, rowLimit)
 	audit.totalRows = rows.length
 	console.log(`Parsed ${rows.length} image rows.\n`)
 
@@ -84,7 +84,7 @@ export async function runImagesImport(config: ImportConfig, client: SanityClient
 			const mapped = mapImageRow(row, lookups, audit)
 			if (!mapped) return
 
-			const {doc, csvType, title, mappedKeywords, unmappedKeywords, psImagesRaw} = mapped
+			const {doc, csvType, title, mappedKeywords, unmappedKeywords, assetUrl} = mapped
 
 			if (dryRun) {
 				docs.push(doc)
@@ -97,9 +97,7 @@ export async function runImagesImport(config: ImportConfig, client: SanityClient
 					mappedKeywords,
 					unmappedKeywords,
 				})
-				const assetNote = psImagesRaw
-					? `JPEG ${Buffer.byteLength(psImagesRaw, 'latin1')} bytes`
-					: 'no JPEG'
+				const assetNote = assetUrl ?? 'no imageLocation'
 				console.log(`[DRY RUN] historicalImage → ${doc.archiveId} (${assetNote})`)
 				return
 			}
@@ -113,10 +111,11 @@ export async function runImagesImport(config: ImportConfig, client: SanityClient
 					{archiveId: doc.archiveId},
 				)
 
-				const imageFile = await uploadJpegIfNeeded(
+				const imageFile = await uploadFromUrlIfNeeded(
 					client,
 					doc.archiveId,
-					psImagesRaw,
+					mapped.imageLocation,
+					assetUrl,
 					Boolean(existing?.imageFile),
 					assetErrors,
 				)

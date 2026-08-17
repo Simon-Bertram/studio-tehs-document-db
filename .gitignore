@@ -24,6 +24,7 @@ yarn.lock
 # Misc
 .DS_Store
 *.pem
+.cursor
 
 # Typescript
 *.tsbuildinfo

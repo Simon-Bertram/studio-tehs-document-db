@@ -3,6 +3,7 @@ import {nanoid} from 'nanoid'
 import {type HistoricalDateValue, parseHistoricalDate} from '../../lib/parse-historical-date'
 import type {Audit} from './audit'
 import {cleanString} from './clean'
+import {buildImageAssetUrl, relativeImagePath} from './image-asset-url'
 import {DIVERTED_QUARTERLY_DETAIL, DIVERTED_QUARTERLY_REASON, hasTehsKeyword} from './tehs-keyword'
 
 export interface ImageCsvRow {
@@ -19,9 +20,10 @@ export interface ImageCsvRow {
 	township: string
 	type: string
 	dateTaken: string
-	psImages: string
 	donationID: string
 	Synonyms: string
+	imageLocation: string
+	fileLocation: string
 	[key: string]: string
 }
 
@@ -56,8 +58,10 @@ export interface MapImageResult {
 	title: string
 	mappedKeywords: string[]
 	unmappedKeywords: string[]
-	/** Raw latin-1 string of embedded JPEG, if present */
-	psImagesRaw: string | null
+	/** Relative path from imageLocation (or fileLocation). */
+	imageLocation: string | null
+	/** Public HTTP URL Sanity (or this script) can fetch. */
+	assetUrl: string | null
 }
 
 function ref(id: string) {
@@ -78,7 +82,7 @@ function buildNotes(row: ImageCsvRow): string | null {
 
 /**
  * Map a sample-images.csv row to a historicalImage document (metadata only).
- * Asset upload is handled by the runner from psImagesRaw.
+ * Asset upload is handled by the runner from assetUrl.
  */
 export function mapImageRow(
 	row: ImageCsvRow,
@@ -178,13 +182,8 @@ export function mapImageRow(
 		}
 	}
 
-	const psImagesRaw = (() => {
-		if (!row.psImages) return null
-		const buf = Buffer.from(row.psImages, 'latin1')
-		const soi = buf.indexOf(Buffer.from([0xff, 0xd8, 0xff]))
-		if (soi < 0) return null
-		return row.psImages.slice(soi)
-	})()
+	const imageLocation = relativeImagePath(row)
+	const assetUrl = imageLocation ? buildImageAssetUrl(imageLocation) : null
 
 	return {
 		doc,
@@ -192,6 +191,7 @@ export function mapImageRow(
 		title: resolvedTitle,
 		mappedKeywords,
 		unmappedKeywords,
-		psImagesRaw,
+		imageLocation,
+		assetUrl,
 	}
 }

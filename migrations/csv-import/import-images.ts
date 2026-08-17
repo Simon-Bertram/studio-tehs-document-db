@@ -1,5 +1,6 @@
 /**
  * Historical images CSV import entrypoint (sample-images.csv).
+ * Dry-run is the default; pass --live to write. There is no --dryRun flag.
  */
 import {parseCliConfig} from './lib/cli-config'
 import {runImagesImport} from './lib/run-images-import'
