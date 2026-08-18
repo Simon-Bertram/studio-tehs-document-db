@@ -1,5 +1,5 @@
 import {MarkerIcon} from '@sanity/icons/Marker'
-import {defineField, defineType} from 'sanity'
+import {defineArrayMember, defineField, defineType} from 'sanity'
 
 export const location = defineType({
 	name: 'location',
@@ -15,11 +15,24 @@ export const location = defineType({
 			validation: (Rule) => Rule.required(),
 		}),
 		defineField({
-			name: 'township',
-			title: 'Parent Township',
-			type: 'reference',
-			to: [{type: 'township'}],
-			validation: (Rule) => Rule.required(),
+			name: 'townships',
+			title: 'Townships',
+			type: 'array',
+			description: 'A location can span more than one township.',
+			of: [
+				defineArrayMember({
+					type: 'reference',
+					to: [{type: 'township'}],
+				}),
+			],
+			validation: (Rule) => Rule.required().min(1).unique(),
+		}),
+		defineField({
+			name: 'coordinates',
+			title: 'Coordinates',
+			type: 'geopoint',
+			group: 'place',
+			description: 'Pinpoint the exact location. (Powered by @sanity/google-maps-input)',
 		}),
 	],
 	orderings: [
@@ -32,12 +45,16 @@ export const location = defineType({
 	preview: {
 		select: {
 			title: 'name',
-			township: 'township.name',
+			township0: 'townships.0.name',
+			township1: 'townships.1.name',
+			township2: 'townships.2.name',
 		},
-		prepare({title, township}) {
+		prepare({title, township0, township1, township2}) {
+			const townships = [township0, township1, township2].filter(Boolean)
+
 			return {
 				title: title || 'Untitled location',
-				subtitle: township || undefined,
+				subtitle: townships.length > 0 ? townships.join(', ') : undefined,
 			}
 		},
 	},

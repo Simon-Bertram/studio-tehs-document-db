@@ -3,7 +3,7 @@ import {defineArrayMember, defineField} from 'sanity'
 import {townshipWhenNoPlaceField} from './townshipWhenNoPlaceField'
 
 const DEFAULT_LOCATION_DESCRIPTION =
-	'When set, township is taken from this location. Use the Township field only when there is no more specific place.'
+	'When set, townships are taken from this location. Use the Township field only when there is no more specific place.'
 
 /**
  * Reference to a `location` document, plus optional paired township field

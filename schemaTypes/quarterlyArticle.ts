@@ -118,7 +118,7 @@ export const quarterlyArticle = defineType({
 		}),
 		defineField({
 			name: 'peopleMentioned',
-			title: 'Historical Figures Mentioned',
+			title: 'People Mentioned',
 			type: 'array',
 			group: 'entities',
 			of: [

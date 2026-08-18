@@ -65,7 +65,7 @@ export const property = defineType({
 		...locationReferenceFields({
 			group: 'place',
 			description:
-				'When set, township is taken from this location. Use Township only when there is no more specific place. For Valley Forge sites, set Location to Valley Forge.',
+				'When set, townships are taken from this location. Use Township only when there is no more specific place. For Valley Forge sites, set Location to Valley Forge.',
 		}),
 		defineField({
 			name: 'evolutionNotes',
