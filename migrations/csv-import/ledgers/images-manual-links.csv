@@ -1,7 +1,9 @@
 archiveId,title,missingTownship,missingSubject,missingDonation
+AIF01,Mother and Daisy Aiken,,person,
 AS10,Paoli Store & Toll House,,Businesses,
 AS12,"Routes 30 & 252, Paoli",,Businesses,
 AS4,Dewees and Bracken Coal and Lumber Company,,Transportation,
+BAF01,Marion Edith Baugh,,person,
 BAV01,"Berwyn Avenue looking west from Woodside Avenue, 1911",,View,
 BBU1,Burroughs Facility,,Businesses,
 BBU2,Entrance to Burroughs Research Center,,Businesses,
@@ -62,7 +64,17 @@ BE79,A Water Tower near Berwyn,,View,
 BE8,Berwyn ACME Store,,Businesses,
 BE80,"Valley Forge Rd, Warren Ave. and Lancaster Pike, facing east towards Wynburne Inn, Berwyn",,View,
 BE81,Panoramic view of Berwyn (from Hillcrest),,View,
+BE83,Snowstorm at Williams Crossroads,,View,
+BE84,A view of the intersection of Warren Avenue and Lancaster Turnpike,,View,
+BE85,Williams Corner in winter,,Place,
+BE87,"Route 30, Berwyn",,Road,
+BE88,Berwyn from First Avenue,,View,
+BE89,Berwyn WWII plaque,,Place,
 BE9,Berwyn Volunteer Fire Company,,Services,
+BE90,Berwyn WWII plaque,,Place,
+BE91,"Parade, Lincoln Highway Berwyn",,View,
+BE93,North Berwyn,,View,
+BE94,Berwyn War Memorial,,Place,
 BEA01,4 Generations of the Beadle family,,person,
 BEA02,Beadle family,,person,
 BEA03,Beadle family,,person,
@@ -122,6 +134,20 @@ BEP84,The Blue Jay,,Businesses,
 BEP86,"McAllister's Tire Shop, Berwyn",,Businesses,
 BEP87,Lancaster Avenue,,View,
 BEP9,"David Preston, Shoemaker",,Businesses,
+BET03,Berwyn Theater,,Place,
+BET04,Berwyn Theater,,Place,
+BET05,Berwyn Theater,,Place,
+BET06,Berwyn Theater,,Place,
+BET07,Berwyn Theater,,Place,
+BET08,Berwyn Theater,,Place,
+BET09,Berwyn Theater,,Place,
+BET10,Berwyn Theater,,Place,
+BET11,Berwyn Theater,,Place,
+BET12,Berwyn Theater,,Place,
+BET13,Berwyn Theater,,Place,
+BET14,Berwyn Theater,,Place,
+BET15,Berwyn Theater,,Place,
+BET16,Berwyn Theater,,Place,
 BFB1,Bean Sand Crusher,,Businesses,
 BFC1,Berwyn Fire Company,,Place,
 BFC2,Berwyn Fire Company,,Service,
@@ -148,7 +174,21 @@ BP7,Portrait of 5 women,,person,
 BP8,Father and 2 kids,,person,
 BPS04,Berwyn School Class,,person,
 BPS05,Berwyn School Class,,person,
+BRI02,"Cedar Hollow Bridge over Valley Creek, #171; east side looking west",,Road,
+BRI03,"Cedar Hollow Bridge over Valley Creek, #171; west side looking east",,Road,
+BRI04,"Cedar Hollow Bridge over Valley Creek, #171; plaque",,Road,
+BRI05,"Cedar Hollow Bridge over Valley Creek, #171; looking south over Valley Creek",,Road,
+BRI06,"Cedar Hollow Bridge over Valley Creek, #171; looking north over Valley Creek",,Road,
+BUF01,Mildred Miller Burruss,,person,
+BUF02,Mildred Miller Burruss,,person,
+BUF03,Charles Burruss and unidentified woman,,person,
+BUF05,Mildred Burruss and 2 friends,,person,
+BUF06,Mildred Burruss,,person,
+BUF07,Burruss Family in Berwyn,,person,
+BUF09,Marriage license James Burruss and Mary Ray,,person,
+BUF10,Marriage license of Charles Burruss and Mildred Miller,,person,
 BUS1,"Hall, Hall & Hibbard",,Businesses,
+BUS19,Unknown Quarry,,Quarry,
 BUS2,"Ralph Edwards Garage (also known as Ottey's garage), Lancaster Avenue, Paoli",,Businesses,
 CAA1,"Cassatt Avenue, Berwyn looking north",,View,
 CAA2,"Cassatt Avenue, Berwyn looking north",,View,
@@ -175,6 +215,10 @@ CEH1,Three Good Democrats,,person,
 CH22,Berwyn 75th Anniversary Service,,Cultural,
 CHE1,Alexander Murdock,,person,
 CHE2,Carriages at Chesterbrook Farm,,Transportation,
+CLF01,Mabel Mae Johnston,,person,
+CLF02,George W. Clemmans,,person,
+CLF03,George W. Clemmans,,person,
+CLF04,George C. Clemmans and Lulu F. Kerrigan,,person,
 COS05,Colonial Springs Bottling Plant,,Colonial Springs Bottling Plant,
 CUH1,Chopping mutton for a pie,,Cultural,
 CUH2,Dinner Preparation,Marple,Cultural,
@@ -220,6 +264,18 @@ DCF002,Devon Horse Show and Country Fair - food sampling,,Cultural,
 DCF003,Devon Horse Show and Country Fair - Mrs Croll retires,,Cultural,
 DCF004,Devon Horse Show and Country Fair Poster,,Cultural,
 DCF005,Devon Horse Show and Country Fair Garden Booth,,Cultural,
+DCF006,Miss Thelma Austin and dog,,,donation:0
+DCF007,Country Clothes Shop,,,donation:0
+DCF008,Country Fair,,,donation:0
+DCF009,Country Fair,,,donation:0
+DCF010,Country Fair,,,donation:0
+DCF011,Country Fair,,,donation:0
+DCF012,Country Fair,,,donation:0
+DCF013,Country Fair,,,donation:0
+DCF014,Country Fair,,,donation:0
+DCF015,Country Fair,,,donation:0
+DCF016,Country Fair,,,donation:0
+DCF017,Country Fair,,,donation:0
 DEI03,"Devon Inn, postmark 1910",,inn,
 DEI04,"Devon Inn, postmark 1910",,inn,
 DEI05,"Devon Inn looking south, postmark 1910",,inn,
@@ -240,12 +296,148 @@ DEI19,Design for Devon Inn Stables 1882,,Cultural,donation:0
 DEV1,"Waterloo Road, Devon",,Place,
 DEV10,"The Woodside Observatory, Devon",,View,
 DEV11,View from Devon Inn,,inn,
+DEV12,View of Wayne,,View,
+DEV13,Devon Boulevard,,Place,
+DEV14,Devon Boulevard,,Place,
 DEV2,"Old Lancaster Road, Devon",,Place,
 DEV3,"Berkeley Avenue, Devon",,Place,
 DEV4,"Crow's Nest, Conestoga Road, Devon",,View,
 DEV5,"Parting of the ways, Devon",,View,
 DEV6,Devon Hill,,View,
 DEV7,"Looking east on Lancaster Pike toward Devon. Glassley School on right, June 1888",,Place,
+DHS001,Devon Horse Show,,,donation:0
+DHS002,Devon Horse Show,,,donation:0
+DHS003,Devon Horse Show,,,donation:0
+DHS004,Devon Horse Show,,,donation:0
+DHS005,Devon Horse Show,,,donation:0
+DHS006,Devon Horse Show,,,donation:0
+DHS007,Devon Horse Show,,,donation:0
+DHS008,Devon Horse Show,,,donation:0
+DHS009,Devon Horse Show,,,donation:0
+DHS010,Devon Horse Show,,,donation:0
+DHS011,Devon Horse Show,,,donation:0
+DHS012,Devon Horse Show,,,donation:0
+DHS013,Devon Horse Show,,,donation:0
+DHS014,Devon Horse Show,,,donation:0
+DHS015,Devon Horse Show,,,donation:0
+DHS016,Devon Horse Show,,,donation:0
+DHS017,Devon Horse Show,,,donation:0
+DHS018,Devon Horse Show,,,donation:0
+DHS019,Devon Horse Show,,,donation:0
+DHS020,Devon Horse Show,,,donation:0
+DHS021,Devon Horse Show,,,donation:0
+DHS022,Devon Horse Show,,,donation:0
+DHS023,Devon Horse Show,,,donation:0
+DHS024,Devon Horse Show,,,donation:0
+DHS025,Devon Horse Show,,,donation:0
+DHS026,Devon Horse Show,,,donation:0
+DHS027,Devon Horse Show,,,donation:0
+DHS028,Devon Horse Show,,,donation:0
+DHS029,Devon Horse Show,,,donation:0
+DHS030,Devon Horse Show,,,donation:0
+DHS031,Devon Horse Show,,,donation:0
+DHS032,Devon Horse Show,,,donation:0
+DHS033,Devon Horse Show,,,donation:0
+DHS034,Devon Horse Show,,,donation:0
+DHS035,Devon Horse Show,,,donation:0
+DHS036,Devon Horse Show,,,donation:0
+DHS037,Devon Horse Show,,,donation:0
+DHS038,Devon Horse Show,,,donation:0
+DHS039,Devon Horse Show,,,donation:0
+DHS040,Devon Horse Show,,,donation:0
+DHS041,Devon Horse Show,,,donation:0
+DHS042,Devon Horse Show,,,donation:0
+DHS043,Devon Horse Show,,,donation:0
+DHS044,Devon Horse Show,,,donation:0
+DHS045,Devon Horse Show,,,donation:0
+DHS046,Devon Horse Show,,,donation:0
+DHS047,Devon Horse Show,,,donation:0
+DHS048,Devon Horse Show,,,donation:0
+DHS049,Gypsy Rose Lee at the Devon Horse Show,,,donation:0
+DHS050,Devon Horse Show,,,donation:0
+DHS051,Devon Horse Show,,,donation:0
+DHS052,Devon Horse Show,,,donation:0
+DHS053,Devon Horse Show,,,donation:0
+DHS054,Devon Horse Show,,,donation:0
+DHS055,Devon Horse Show,,,donation:0
+DHS056,Devon Horse Show,,,donation:0
+DHS057,Devon Horse Show,,,donation:0
+DHS058,Devon Horse Show,,,donation:0
+DHS059,Devon Horse Show,,,donation:0
+DHS060,Devon Horse Show,,,donation:0
+DHS061,Devon Horse Show,,,donation:0
+DHS062,Devon Horse Show,,,donation:0
+DHS063,Devon Horse Show,,,donation:0
+DHS064,Devon Horse Show,,,donation:0
+DHS065,Devon Horse Show,,,donation:0
+DHS066,Devon Horse Show,,,donation:0
+DHS067,Devon Horse Show,,,donation:0
+DHS068,Devon Horse Show,,,donation:0
+DHS069,Devon Horse Show,,,donation:0
+DHS070,Devon Horse Show,,,donation:0
+DHS071,Devon Horse Show,,,donation:0
+DHS072,Devon Horse Show,,,donation:0
+DHS073,Devon Horse Show,,,donation:0
+DHS074,Devon Horse Show,,,donation:0
+DHS075,Devon Horse Show,,,donation:0
+DHS076,Devon Horse Show,,,donation:0
+DHS077,Devon Horse Show,,,donation:0
+DHS078,Devon Horse Show,,,donation:0
+DHS079,Devon Horse Show,,,donation:0
+DHS080,Devon Horse Show,,,donation:0
+DHS081,Devon Horse Show,,,donation:0
+DHS082,Devon Horse Show,,,donation:0
+DHS083,Devon Horse Show,,,donation:0
+DHS084,Devon Horse Show,,,donation:0
+DHS085,Devon Horse Show,,,donation:0
+DHS086,Devon Horse Show,,,donation:0
+DHS087,Devon Horse Show,,,donation:0
+DHS088,Devon Horse Show,,,donation:0
+DHS089,Devon Horse Show,,,donation:0
+DHS090,Devon Horse Show,,,donation:0
+DHS091,Devon Horse Show,,,donation:0
+DHS092,Devon Horse Show,,,donation:0
+DHS093,Devon Horse Show,,,donation:0
+DHS094,Devon Horse Show,,,donation:0
+DHS095,Devon Horse Show,,,donation:0
+DHS096,Devon Horse Show,,,donation:0
+DHS097,Devon Horse Show,,,donation:0
+DHS098,Devon Horse Show,,,donation:0
+DHS099,Devon Horse Show,,,donation:0
+DHS100,"Smith Family on Boardwalk, Devon Horse Show",,,donation:0
+DHS101,Devon Horse Show,,,donation:0
+DHS102,Devon Horse Show,,,donation:0
+DHS103,Devon Horse Show,,,donation:0
+DHS104,Devon Horse Show,,,donation:0
+DHS105,Devon Horse Show,,,donation:0
+DHS106,Devon Horse Show,,,donation:0
+DHS107,Devon Horse Show,,,donation:0
+DHS108,Devon Horse Show,,,donation:0
+DHS109,Devon Horse Show,,,donation:0
+DHS110,Devon Horse Show,,,donation:0
+DHS111,Devon Horse Show,,,donation:0
+DHS112,Devon Horse Show,,,donation:0
+DHS113,Devon Horse Show,,,donation:0
+DHS114,Devon Horse Show,,,donation:0
+DHS115,Devon Horse Show,,,donation:0
+DHS116,Devon Horse Show,,,donation:0
+DHS117,Devon Horse Show,,,donation:0
+DHS118,Devon Horse Show,,,donation:0
+DHS119,Devon Horse Show,,,donation:0
+DHS120,Devon Horse Show,,,donation:0
+DHS121,Devon Horse Show,,,donation:0
+DHS122,Devon Horse Show,,,donation:0
+DHS123,Devon Horse Show,,,donation:0
+DHS124,Devon Horse Show,,,donation:0
+DHS125,Devon Horse Show,,,donation:0
+DHS126,Devon Horse Show,,,donation:0
+DHS127,Devon Horse Show,,,donation:0
+DHS128,Devon Horse Show,,,donation:0
+DHS129,Devon Horse Show,,,donation:0
+DHS130,Devon Horse Show,,,donation:0
+DHS131,Devon Horse Show,,,donation:0
+DHS133,Three unknown men at the Devon Horse Show,,Service,
+DHS134,Devon Horse Show,,Service,
 DRE01,Dorothy Reed,,person,
 DSS001,"Barn #1, Devon Horse Show",,Cultural,donation:0
 DSS002,"Barn #1, Devon Horse Show",,Cultural,donation:0
@@ -420,6 +612,7 @@ ETS08,"Students of the Easttown High School, Berwyn, PA",,person,
 EW01,Aerial view Northeast of the Battle of the Clouds park in East Whiteland,,View,
 EW02,Aerial View of Malvern Retreat Center,,Place,
 FM1,Threshing Outfit,,"Manor, Lancaster Co.",
+FW05,"Fort Washington, Easter Sunday, April 1915",,Place,
 FW1,View from Fort Washington,,View,
 GBC1,Ground Breaking Ceremony,,View,
 GBC10,Ground Breaking Ceremony,,View,
@@ -435,6 +628,48 @@ GBC6,Ground Breaking Ceremony,,View,
 GBC7,Ground Breaking Ceremony,,View,
 GBC8,Ground Breaking Ceremony,,View,
 GBC9,Ground Breaking Ceremony,,View,
+GFM01,"George Francis Moran, c. 1957",,person,
+GFM02,Tom Nelson,,person,
+GFM03,Tom Nelson,,person,
+GFM04,Alice McCarnes,,person,
+GFM05,"William Patrick Ruch, Captain, Pennsylvania State Police",,person,
+GFM06,"Lean to, Scout Troop 1, Berwyn",,person,
+GFM07,Kay Hanley,,person,
+GFM08,Maria Moran,,person,
+GFM09,"Dot Neiman, Helen Kugler, Bertha Neiman, Maria Moran, Ocean City NJ",,person,
+GFM10,Walt Hanley,,person,
+GFM12,"Mrs. Wilson, Tredyffrin Easttown High School Teacher",,person,
+GFM13,Kay Hanley,,person,
+GFM14,Bertha May Homan Neiman.  Later was a secretary at TE High School.,,person,
+GFM15,"Chas. J.Moran, South Leopard Road",,person,
+GFM16,"Chas. J. Moran as a student Phila. Textile School, c. 1922",,person,
+GFM17,"Jim Noblit and George Moran, TE High School, c. 1927 - 28",,person,
+GFM18,"Jack Easches, George Moran, and Jim Noblit",,person,
+GFM19,"Ward McClees, George Moran",,person,
+GFM20,Warden McClees in front of my model A Ford (1929 plate) - George Moran,,person,
+GFM21,Otto Tavener,,person,
+GFM22,Otto Tavener,,person,
+GFM23,Otto Tavener,,person,
+GFM24,"""Chick"" Peoples",,person,
+GFM25,"""Chick"" Peoples",,person,
+GFM26,"""Chick"" Peoples",,person,
+GFM27,"""Chick"" Peoples",,person,
+GFM28,Helen Smith.,,person,
+GFM29,Anna Moran (George's sister) and Helen Bracken,,person,
+GFM30,Helen Bracken,,person,
+GFM31,Unknown person,,person,
+GFM32,"TE High School Washington Trip, May 1913",,person,
+GFM33,TE High School Boys,,person,
+GFM34,TE High School Girls,,person,
+GFM35,"Mr. Rull(?), TE High School",,person,
+GFM36,Stay-at-homes,,person,
+GFM37,Some Class!,,person,
+GFM38,"Fruit Hill, 1913",,person,
+GFM39,TE High School class of 28 at Washington D.C.,,person,
+GFM40,"TE High School,Class of 28 at Washington D.C.",,person,
+GFM41,"TE High School Washington Trip, Mt. Vernon",,person,
+GFM42,TE High School class of 28 Washington trip,,person,
+GFM43,Bridal Gowns of the 19th Century,,person,
 GJI2,Espenshade's Wayside Inn,,inn,
 GJI3,General Jackson Inn,,inn,
 GJI4,"Wind Mill Tea Room (General Jackson Inn), looking nothwest, Paoli",,inn,
@@ -442,6 +677,9 @@ GJI5,"The General Jackson Inn near Mile Post 18, Paoli, 1888",,inn,
 GPI02,General Paoli Inn,,inn,
 GPI03,Paoli Inn looking NE - 1888,,inn,
 GPI04,"Paoli (Inn) from the west, 1888",,inn,
+GPI05,Paoli Inn after fire,,inn,
+GPI06,Paoli Inn after fire,,inn,
+GPI07,Paoli Inn after fire,,inn,
 GT1,"Lancaster Avenue, Green Tree (Duffyn Mawr)",,View,
 GVM1,Great Valley Mill,,Mills,
 GVM2,Great Valley Mill,,Mills,
@@ -455,6 +693,13 @@ GWI6,General Warren Tavern,,inn,
 GWI7,General Warren (Admiral Vernon) Tavern,,inn,
 GWI8,General Warren Tavern,,inn,
 GWI9,General Warren Tavern,,inn,
+HMS001,Hope Scott,,,donation:0
+HMS002,Young Hope Montgomery,,,donation:0
+HMS003,Hope Montgomery Scott at Devon Horse Show,,,donation:0
+HMS004,Hope Montgomery Scott at Devon Horse Show,,,donation:0
+HMS005,Hope Montgomery Scott at Devon Horse Show,,,donation:0
+HMS006,Hope Montgomery Scott 80th birthday,,,donation:0
+HMS007,Hope Montgomery Scott,,,donation:0
 HOU40,View from 759 Conestoga Road,,View,
 HOW1,Howellville Road,,View,
 HOW10,"Mule Barn, Howellville",,Place,
@@ -487,6 +732,7 @@ IT12,Black Horse Tavern,,inn,
 IT13,General Greene Tavern,,inn,
 IT14,Green Tree Inn,,inn,
 IT15,General Wayne Tavern,,inn,
+IT16,An Afternoon at the Horse Show,,,donation:0
 IT2,Windmill Tea Rooms,,Businesses,
 IT7,King of Prussia Inn,,inn,
 KCB1,Knox Covered Bridge,,Transportation,
@@ -523,6 +769,17 @@ KPI01,King of Prussia Inn,,inn,
 KPI02,King of Prussia Inn,,inn,
 KPI03,King of Prussia Inn,,inn,
 KPI04,King of Prussia Inn,,inn,
+KRI01,Frank and George(?) Krider,,person,
+KRI02,Frank Krider,,person,
+KRI04,Memorial Card to Frank K. Krider,,person,
+KRI05,Krider / Jones family photograph,,person,
+KRI06,Krider / Jones family photograph,,person,
+KRI07,Krider / Jones family photograph,,person,
+KRI08,Krider / Jones family photograph,,person,
+KRI09,Howard Jones,,person,
+KRI10,Frank K. Krider,,person,
+KRI11,Lizzie Jones,,person,
+KRI12,Charles P. Jones,,person,
 LAB1,"Lancaster Avenue, Berwyn",,View,
 LAB10,"Lancaster Pike toll gate, Berwyn, 1887",,Road,
 LAB11,"Lancaster Pike at the Lower Bridge, Berwyn,",,View,
@@ -531,9 +788,32 @@ LAB13,"Paoli Road, Berwyn",,View,
 LAB14,"Paoli Road, Berwyn",,View,
 LAB15,"Paoli Road, Berwyn",,View,
 LAB16,"Paoli Road, Berwyn",,View,
+LAB18,"Lancaster Avenue, Berwyn",,Road,
 LAB2,Lancaster Pike looking west - Berwyn,,View,
+LAB35,"Lancaster Avenue, Berwyn",,Place,
+LAB36,"Lancaster Avenue, Berwyn",,Place,
+LAB37,"Lancaster Avenue, Berwyn",,Place,
+LAB38,"Lancaster Avenue, Berwyn",,Place,
+LAB39,"Lancaster Avenue, Berwyn",,Place,
 LAB4,"Scene from Upper Bridge, Berwyn, looking NE, 1914",,View,
+LAB40,"Lancaster Avenue, Berwyn",,Place,
+LAB41,"Lancaster Avenue, Berwyn",,Place,
+LAB42,"Lancaster Avenue, Berwyn",,Place,
+LAB43,"Lancaster Avenue, Berwyn",,Place,
+LAB44,"Lancaster Avenue, Berwyn",,Place,
+LAB45,"Lancaster Avenue, Berwyn",,Place,
+LAB46,"Lancaster Avenue, Berwyn",,Place,
+LAB47,"Lancaster Avenue, Berwyn",,Place,
+LAB48,"Lancaster Avenue, Berwyn",,Place,
+LAB49,"Lancaster Avenue, Berwyn",,Place,
 LAB5,Lancaster Pike looking east from Post Office,,View,
+LAB50,"Lancaster Avenue, Berwyn",,Place,
+LAB51,"Lancaster Avenue, Berwyn",,Place,
+LAB52,"Lancaster Avenue, Berwyn",,Place,
+LAB53,"Lancaster Avenue, Berwyn",,Place,
+LAB54,"Lancaster Avenue, Berwyn",,Place,
+LAB55,"Lancaster Avenue, Berwyn",,Place,
+LAB56,"Lancaster Avenue, Berwyn",,Place,
 LAB6,"Lancaster Avenue Business District, Berwyn c. early 1960s",,Place,
 LAB7,"Lancaster Pike and Main Avenue, Berwyn, looking east",,View,
 LAB8,A View on Lancaster Pike above Berwyn Station,,View,
@@ -560,9 +840,14 @@ LCH14,William Clavius Latch,,person,
 LCH15,William Clavius Latch & colt,,person,
 LCH16,William Clavius Latch & horse,,person,
 LCH17,William Clavius Latch,,person,
+LH04,Playing in the snow,,View,
+LH05,Snow scene,,View,
+LH06,Snow scene,,View,
 MAL10,Malvern Inn,,inn,
 MAL11,Malvern Inn,,inn,
 MAL12,"King Street, Malvern",,View,
+MAL15,Malvern underpass,,Road,
+MAL16,"Malvern, route 30",,Road,
 MAL6,Malvern Inn,,inn,
 MAL7,Malvern Inn,,inn,
 MAL8,Malvern Inn,,inn,
@@ -607,6 +892,7 @@ MAN38,William Mansley,,person,
 MAN39,Unidentified Group,,person,
 MAN40,William Mansley,,person,
 MAN41,William Mansley,,person,
+MAR03,"Memorial Arch, Valley Forge NHP",,View,
 MAR1,Memorial Arch,,Place,
 MAR2,Memorial Arch,,Place,
 MAZ1,Mazie Hall - 100 years old,,person,
@@ -615,20 +901,42 @@ MAZ3,Mazie Hall - College,,person,
 MAZ4,Mazie Hall - early days,,person,
 MAZ5,Mazie Hall - later days,,person,
 MAZ6,Mazie Hall - 1924 Year Book,,person,
+MC04,"Memorial Stone, Valley Forge NHP(?)",,View,
+MGI01,Billie Holliday,,person,
+MGI02,Count Bassie advertisement,,person,
+MGI03,The Swing Queens,,person,
 MIL4,Mid-19th Century Chester County Sawmill,,Mills,
 MJR1,Mount Joy from Valley Forge Road (route 252),,View,
 MJR2,Mount Joy from Valley Forge Road (route 252),,View,
 MJT2,"VF Observation Tower, 75’ high",,View,
 MM01,Old Mount Misery Parking Lot,,Cultural,
 MM02,Old Mount Misery Parking Lot,,Cultural,
+MRY01,Morris Ray and automobile,,person,
+MRY02,Family in Yosemite National Park,,person,
 NCE1,Baptist (Valley Forge) Road south of New Centerville,,View,
+NCE10,Baptist Road looking north,,Road,
+NCE11,Baptist Road looking north,,Road,
+NCE12,Devon State Road,,Place,
 NCE2,"Clarence Roberts standing at the location of the Stone Chimney Picket Post, New Centerville.",,View,
 NCE3,"Clarence Roberts standing at the location of the Stone Chimney Picket Post, New Centerville.",,person,
 NCE4,"Clarence Roberts standing at the location of the Stone Chimney Picket Post, New Centerville",,View,
 NCE8,Valley Forge Road,,View,
 NCE9,Old Forge Crossing,,Place,
 ND1,"Valley Forge Road, Devon",,View,
+NEU01,"John Newhaus and wife, Grubb Road, Malvern",,person,
+NEU02,"John Neuhaus in uniform, WWI",,person,
 NGB1,Non-Gran Bronze Factory,,Businesses,
+NVR07,North Valley Road and route 202,,Road,
+NVR08,North Valley Road and route 202,,Road,
+NWH01,Newhall,,person,
+NWH02,Newhall,,person,
+NWH03,Newhall.,,person,
+NWH07,Newhall Hall.,,e,
+NWH51,Newhall.,,person,
+OLA09,"Hanging Rock, Gulph Road",,Road,
+OLA10,Monument at Gulph Mills,,Road,
+OLA20,King of Prussia Road,,Place,
+OLA21,King of Prussia Road,,Place,
 OLA5,Valley Forge General Hospital looking northwest,Charlestown,,
 OPA1,Main Line Airport,,View,
 OPA11,Nick Morris and Charlie Devaney with Ryan ST monoplane,,Transportation,
@@ -641,6 +949,7 @@ OPA6,Gyroplane at Main Line Airport,,Transportation,
 OPA7,HK-1 Helicopter at Main Line Airport,,Transportation,
 OPA8,HK-1 Helicopter at Main Line Airport,,Transportation,
 OPA9,Main Line Airport,,View,
+ORG04,"Movie, Paoli Girl Scouts",,Service,
 ORG3,Strafford Fife & Drum Corps,,Service,
 PA1,"Anna Thomas, Ladies Taylor",,Businesses,
 PA10,Carriage,,Transportation,
@@ -650,6 +959,7 @@ PA14,"Lincoln Highway, Paoli",,View,
 PA15,Supplee Hardware Store,,Businesses,
 PA16,William's Store,,Businesses,
 PA17,George Williams in his drug store,,Businesses,
+PA18,George Clemmans Paoli Hardware Store certificate,,Place,
 PA2,Paoli Hardware Store,,Businesses,
 PA23,Pasquale Paoli Day,,person,
 PA24,"North Valley Road, Paoli",,View,
@@ -659,6 +969,8 @@ PA27,Paoli Fire House,,View,
 PA28,"Paoli (Inn) Blacksmith & Wheelwright shop, west of Inn, 1888",,Place,
 PA29,"Valley Road, Paoli",,Road,
 PA3,Paoli Hardware Store,,Businesses,
+PA30,Aerial Photograph of Paoli,,View,
+PA31,"Route 252, Paoli",,Road,
 PA7,"Lincoln Highway, Paoli",,View,
 PA8,Paoli Buckboard,,person,
 PCK1,Philander Knox,,person,
@@ -701,7 +1013,13 @@ PEO43,Unidentified Group,,person,
 PEO44,Unidentified Group,,person,
 PEO45,Unidentified Group,,person,
 PEO46,Galusha Pennypacker,,person,
+PEO48,Unknown Person,,person,
+PEO49,Davis Family,,person,
 PEO5,Grace Sharp,,person,
+PEO50,Baptist Brotherhood Baseball Team,,Sports,
+PEO51,Warner Quarry workers?,,Quarry,
+PEO52,Unknown woman and baby,,person,
+PEO56,Rev. William T. and Mrs. Vandener,,person,
 PEO6,Six People,,person,
 PEO69,Tredyffrin Township Municipal Authority,,Service,
 PEO7,Six People,,person,
@@ -715,6 +1033,7 @@ PEO9,Emily Patterson & Florence Glissen,,person,
 PHO1,"Soldier's Monument, Phoenixville",,Place,
 PM1,"Quarter Century Club, Warner Quarries",,Businesses,
 PM3,Warner Company Employees,,Businesses,
+POF02,Potter Farm and Leopard Road,,View,
 PP2,Paoli Post Office,,Businesses,
 PP5,"Anne M. Bloomer, Paoli Postmistress",,Businesses,
 PP6,"Henry Schofield, Paoli Postmaster",,Businesses,
@@ -730,6 +1049,10 @@ PTE01,Paul Teamer,,person,
 PVF1,State Park Employees,,person,
 Q03,Warner Quarry,,Quarry,
 Q04,"Serpentine Quarry, Devon",,Quarry,
+RAD07,King of Prussia Road,,Road,
+RAD08,King of Prussia Road,,Road,
+RAD09,Matson Ford Road,,Road,
+RAD10,Radnor view - along King of Prussia Road,,View,
 RAD2,Radnor township view,,View,
 RAD3,"King of Prussia Road, Radnor",,View,
 RAD4,"Matson Ford Road, Radnor",,View,
@@ -747,15 +1070,43 @@ RDS03,"Milestone 27, Lancaster Turnpike",,Road,
 RDS04,"Milestone 28, Lancaster Turnpike",,Road,
 RF20,Janet Brownlie Robertson Gerow,,person,
 RIH01,Richardson Home,,Service,
+RON01,Group at TE High School,,person,
+RON02,Mr. Roney,,person,
+ROR08,Roller Rink,,Place,
+ROR09,Roller Rink,,Place,
 ROR1,Roller Rink,,Businesses,
+ROR10,Roller Rink,,Place,
+ROR11,Roller Rink,,Place,
+ROR12,Roller Rink,,Place,
+ROR13,Roller Rink,,Place,
+ROR14,Roller Rink,,Place,
+ROR15,Roller Rink,,Place,
+ROR16,Roller Rink,,Place,
+ROR17,Roller Rink,,Place,
+ROR18,Roller Rink,,Place,
+ROR19,Roller Rink,,Place,
 ROR2,Roller Rink,,Businesses,
+ROR20,Roller Rink,,Place,
+ROR21,Roller Rink,,Place,
 ROR3,Roller Rink,,Place,
 ROR4,Roller Rink,,Businesses,
 ROR5,Roller Rink,,Businesses,
 ROR6,Roller Rink,,Businesses,
 ROR7,Roller Rink,,Businesses,
 RR01,West Chester pike at Highland Park,,Transportation,
+SAM02,Unknown Pond Location,,View,
+SAM03,Unknown Pond Location,,View,
 SAM1,Boating on Unknown Mill Pond,,Place,
+SBC02,Wanda Stanber(?) lunch party,,People,
+SBC03,Wanda Stanber(?) lunch party,,People,
+SBC04,Jean Dinwoodie at Wanda Stanber(?) lunch party,,People,
+SBC05,Wanda Stanber(?) lunch party,,People,
+SBC07,Wanda Stanber(?) lunch party,,People,
+SBC08,Wanda Stanber(?) lunch party,,People,
+SBC09,Wanda Stanber(?) lunch party,,People,
+SBC10,Wanda Stanber in Chandri at lunch party,,People,
+SBC11,Wanda Stanber in Chandri at lunch party,,People,
+SBC12,Wanda Stanber(?) lunch party,,People,
 SCH13,Unknown School Class,,person,
 SCH14,Unknown School Class,,person,
 SCU3,Site of Sullivan's Bridge,,Place,
@@ -774,9 +1125,17 @@ SHA18,Hawthorne view from house,,View,
 SHA19,"Joseph W. Sharp, Sr.",,person,
 SHA20,Stone Bridge at Hawthorne,,Place,
 SHA21,Twin Oaks at Hawthorne,,Place,
+SLC02,"St Lukes, Devon",,Tredyfrin,
 SOH1,Sorrel Horse Inn,,inn,
 SOH2,Sorrel Horse Inn,,inn,
+STR04,Site of Devon Square Shopping Center,,Place,
+STR05,New Section of Sugartown Road,,Place,
+STR06,Site of Devon Square Shopping Center,,Place,
+STR07,New Section of Sugartown Road,,Place,
+STR09,Site of Devon Square Shopping Center,,Place,
 STR1,"Strafford Road, Strafford",,Place,
+STR10,Devon Square Shopping Center,,Place,
+STR11,Devon Square Shopping Center,,Place,
 STR2,"Devon Square, Strafford  Leasing Plan",,Place,
 STR3,"Spread Eagle Village, Strafford",,Place,
 TCC1,Tredyffrin Country Club,,View,
@@ -802,11 +1161,14 @@ TPS02,Tea Party at Stirling's Quarters in honor of Compilers of 'Great Valley Da
 TPS03,Tea Party at Stirling's Quarters in honor of Compilers of 'Great Valley Days',,person,
 TPS04,Tea Party at Stirling's Quarters in honor of Compilers of 'Great Valley Days',,person,
 TPS05,Tea Party at Stirling's Quarters in honor of Compilers of 'Great Valley Days',,person,
+TRE04,View of the Great Valley,,View,
+TRE05,View of the Great Valley,,View,
 TRE1,Tredyffrin Police Cars,,Services,
 TRE2,"Tredyffrin Township Building, Berwyn",,Service,
 TRE3,Church Road looking south,,View,
 VC01,Valley Creek and Valley Forge Road,,View,
 VC02,View from Knox Covered Bridge,,View,
+VCB07,Valley Creek Bridge,,View,
 VCB6,Bridge over Valley Creek,,Place,
 VFD1,Valley Forge Dam,,Place,
 VFD11,Site of Old Forge,,View,
@@ -825,24 +1187,59 @@ VFP33 (was,Valley Forge National Historical Park Visitor's Center,,Place,
 VFP34,Star Redout,,Place,
 VFP36,St. Gabriel's Hall,,Service,
 VFP4,"1930s Dam, Valley Forge National Historical Park",,Place,
+VFP41,"Cannon, Valley Forge",,View,
+VFP43,"Dogwood, Valley Forge",,View,
+VFP44,Valley Forge Park Road,,Road,
+VFP50,"Dogwoods, Valley Forge",,View,
+VFP51,"Dogwoods, Valley Forge",,View,
+VFP52,"Dogwoods, Valley Forge",,View,
+VFP53,"Dogwoods, Valley Forge",,View,
+VFP54,"Dogwoods, Valley Forge",,View,
+VFP55,"Star Redoubt, Valley Forge",,Place,
 VFP6,Valley Forge PA - Old Barracks (a relict of the revolution),,View; Upper Merion?,
 VFP9,Unknown Ruins at Valley Forge,,Place,
 VFQ1,Valley Forge Quarry,,Quarry,
+VFS02,"New Valley Forge Station, built around 1912",,Place,
+VFV16,"Valley Forge Fife and Drum Band outside the POSofA (Patriotic Order of Sons of America) Hall, Mathews Free Library.",,person,
+VFV17,"Valley Forge, 1878",,View,
+VFV18,"Four Generations of the Rowan family outside the store at Valley Forge on Labor Day, September 2, 1912",,person,
+VFV19,"Valley Forge village, looking west",,Place,
 VFV2,"Town of Valley Forge, PA Washington’s Headquarters",,View,
+WAB04,Waterloo Avenue,,Road,
 WAB1,"Waterloo Avenue, Berwyn",,Place,
 WAB2,"Waterloo Ave., south from Berwyn Ave",,Road,
+WAF01,Lewis Walker monument,,Place,
+WAF02,Lewis Walker monument,,Place,
 WAR2,Warner Quarry workers,,person,
 WAR3,Warner Quarry workers,,person,
 WAR5,Warner Quarry workers,,person,
 WAR8,Cedar Hollow Kilns,,Businesses,
 WCU1,Margaret Currie,,person,
 WHQ13,Washington Inn,,inn,
+WHQ27,Washington's Headquarters,,Place,
+WHQ28,"Chimney repair, Washington’s Headquarters, December 7th, 1934",,Place,
+WHQ29,"Elm Tree at Washington’s Headquarters, March 27, 1934",,Place,
+WHQ31,"Washington's Headquarters, Valley Forge",,Place,
+WHQ32,Washington’s Headquarters,,Place,
+WIF01,Della Williams,,person,
+WIF02,Joseph Williams,,person,
+WIF03,Grandfather Williams and Uncle Joe Williams at Williams farm in the Great Valley,,person,
+WIF04,Grandfather Williams and Uncle Joe Williams at Williams farm,,person,
+WIF05,Della H. Williams,,person,
+WIF06,Della Williams in Atlantic City,,person,
+WIF07,Della Williams,,person,
+WIF08,Della & Joe Williams,,person,
+WIF09,Della & Jennie Williams,,person,
+WIF10,Jennie Williams about 32 years old,,person,
+WIF11,"John Alexander Williams of Berwyn, about 30 years old",,person,
+WRD05,Waterloo Road,,Place,
 WRD1,"Waterloo Road at Arlington Road (now Lancaster Avenue), Devon",,View,
 WRD2,North Waterloo Road looking south towards Devon Station,,View,
 WRD3,"Waterloo Road, Devon",,View,
 WRD4,"Waterloo Road, Devon",,View,
 WYI04,Wynburne Inn,,inn,
 WYI05,Wynburne Inn,,inn,
+WYI07,"Wynburne, Old Lancaster Road",,inn,
 WYI1,"Wynburne Inn, Devon",,inn,
 WYI12,Lincoln Inn,,inn,
 WYI12b,Back of WYI12,,inn,
@@ -876,3 +1273,8 @@ YOF48,Construction of route 202,,View,
 YOF49,Construction of route 202,,View,
 YOF50,Construction of route 202,,View,
 YOF51,Construction of route 202,,View,
+YSP01,"Iron Spring Gazebo, Yellow Springs Village",,Place,
+YSP02,19th Century view of Yellow Springs Village,,Place,
+YSP03,"Crystal Diamond Spring, Yellow Springs Village",,Place,
+YSP04,Inn at Yellow Springs,,inn,
+YSP05,18th Century Medicinal Herb Garden,,Place,

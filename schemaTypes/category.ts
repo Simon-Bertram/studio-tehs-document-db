@@ -1,8 +1,17 @@
 import {TagIcon} from '@sanity/icons/Tag'
-import {defineField, defineType} from 'sanity'
+import {defineArrayMember, defineField, defineType} from 'sanity'
 
-import {isUniqueStringField} from './lib/isUniqueStringField'
+import {
+	isUniqueMigrationMappingValue,
+	migrationKeyMatchesOwnAlias,
+	validateCategoryMigrationKeyAliases,
+} from './lib/isUniqueMigrationMappingValue'
 import {truncatePreviewText} from './lib/truncatePreviewText'
+
+const uniqueMappingKey = isUniqueMigrationMappingValue(
+	'category',
+	'Migration mapping key must be unique',
+)
 
 export const category = defineType({
 	name: 'category',
@@ -30,9 +39,21 @@ export const category = defineType({
 			description:
 				'Used by the CSV script to map old keyword tags to this category. Visible during migration; hide after cutover.',
 			validation: (Rule) =>
-				Rule.custom(
-					isUniqueStringField('category', 'migrationKey', 'Migration mapping key must be unique'),
-				),
+				Rule.custom(async (value, context) => {
+					if (migrationKeyMatchesOwnAlias(value, context.document?.migrationKeyAliases)) {
+						return 'Migration Mapping Key cannot also be listed as an alias'
+					}
+					return uniqueMappingKey(value, context)
+				}),
+		}),
+		defineField({
+			name: 'migrationKeyAliases',
+			title: 'Migration Key Aliases',
+			type: 'array',
+			of: [defineArrayMember({type: 'string'})],
+			description:
+				'Extra CSV spellings that should map to this category (e.g. Inn when the primary key is Inns). Match is case-insensitive, same as the primary key.',
+			validation: (Rule) => Rule.custom(validateCategoryMigrationKeyAliases()),
 		}),
 	],
 	orderings: [

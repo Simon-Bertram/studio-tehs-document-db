@@ -144,7 +144,7 @@ bun run csv-import:images -- --live --offset 1000 --limit 1000
 4. Phased full run (recommended): `--live --offset N --limit 1000`. Duplicate identifiers are resolved on the **whole** CSV before the slice, then disambiguated (`HLC08-2590`) or skipped when the path is identical (`SCU11`).
 5. Vision / Sanity MCP: `*[_type == "historicalImage" && archiveId == "BKH1"][0]`
 
-`--limit` without `--offset` still means “first N rows.” Each batch writes gitignored reports to `reports/images/offset-{offset}-limit-{limit}/`. Live batches merge a lasting punch list into [`ledgers/images-manual-links.md`](ledgers/images-manual-links.md) (not gitignored): outstanding township / subject / donation links, plus `photoLocation` text and Person-subject rows to review in Studio. IDs that linked on a later batch are dropped from the ledger. Set **Migration key** on Township / Subject docs to the CSV name (`Tredyffrin`, `House`) before or between batches — never put Archive IDs on that field.
+`--limit` without `--offset` still means “first N rows.” Each batch writes gitignored reports to `reports/images/offset-{offset}-limit-{limit}/`. Live batches merge a lasting punch list into [`ledgers/images-manual-links.md`](ledgers/images-manual-links.md) (not gitignored): outstanding township / subject / donation links, plus `photoLocation` text and Person-subject rows to review in Studio. IDs that linked on a later batch are dropped from the ledger. Set **Migration key** on Township / Subject docs to the CSV name (`Tredyffrin`, `House`) before or between batches — never put Archive IDs on that field. Subject Categories can also list extra CSV spellings on **Migration Key Aliases** (`Inn` when the key is `Inns`).
 
 ## Run order
 
@@ -187,7 +187,7 @@ Canonical categories (title = `migrationKey`): Photographic prints, Digital phot
 | type | notes (`Legacy type: …`); all rows still become `historicalImage` |
 | fileLocation / archiveLocation | notes only (`Archive folder` / `Archive location`) — never a URL |
 | township | township ref (`migrationKey`) |
-| subject | subjects[] (`migrationKey`; case-insensitive) |
+| subject | subjects[] (`migrationKey` or `migrationKeyAliases`; case-insensitive) |
 | donationID | donation ref (skipped when `1` = “not in any”) |
 | imageLocation | imageFile (HTTP fetch + upload on `--live`) |
 | publicDisplay | `N` rows are skipped; empty / `Y` / `1` import as public |

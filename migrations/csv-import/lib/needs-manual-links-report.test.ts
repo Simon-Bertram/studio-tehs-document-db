@@ -53,6 +53,7 @@ describe('formatNeedsManualLinksMarkdown', () => {
 		expect(md).toContain('## Subjects')
 		expect(md).toContain('### House (1)')
 		expect(md).toContain('### person (1)')
+		expect(md).toContain('Migration Key Aliases')
 		expect(md).not.toContain('Entity names (e.g. Lincoln)')
 	})
 })

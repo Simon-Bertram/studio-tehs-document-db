@@ -3,6 +3,7 @@
  */
 import type {SanityClient} from '@sanity/client'
 
+import {indexMigrationKeys} from './index-migration-keys'
 import type {ImageLookups} from './map-image-row'
 
 function cleanId(id: string): string {
@@ -14,23 +15,19 @@ export async function buildImageLookups(client: SanityClient): Promise<ImageLook
 		client.fetch<{_id: string; migrationKey: string}[]>(
 			`*[_type == "township" && defined(migrationKey)]{ _id, migrationKey }`,
 		),
-		client.fetch<{_id: string; migrationKey: string}[]>(
-			`*[_type == "category" && defined(migrationKey)]{ _id, migrationKey }`,
+		client.fetch<{_id: string; migrationKey?: string; migrationKeyAliases?: string[]}[]>(
+			`*[_type == "category" && (defined(migrationKey) || count(migrationKeyAliases) > 0)]{
+				_id, migrationKey, migrationKeyAliases
+			}`,
 		),
 		client.fetch<{_id: string; donationId: number}[]>(
 			`*[_type == "donation" && defined(donationId)]{ _id, donationId }`,
 		),
 	])
 
-	const townshipLookup: Record<string, string> = {}
-	for (const doc of townships) {
-		townshipLookup[doc.migrationKey.trim().toLowerCase()] = cleanId(doc._id)
-	}
-
-	const categoryLookup: Record<string, string> = {}
-	for (const doc of categories) {
-		categoryLookup[doc.migrationKey.trim().toLowerCase()] = cleanId(doc._id)
-	}
+	const townshipLookup = indexMigrationKeys(townships)
+	const categoryLookup = indexMigrationKeys(categories)
+	const categoryCount = new Set(Object.values(categoryLookup)).size
 
 	const donationLookup: Record<string, string> = {}
 	for (const doc of donations) {
@@ -39,7 +36,7 @@ export async function buildImageLookups(client: SanityClient): Promise<ImageLook
 
 	console.log(
 		`Loaded ${Object.keys(townshipLookup).length} townships, ` +
-			`${Object.keys(categoryLookup).length} categories, ` +
+			`${categoryCount} categories, ` +
 			`${Object.keys(donationLookup).length} donations into memory.`,
 	)
 

@@ -232,7 +232,7 @@ export function formatCumulativeLedgerMarkdown(ledger: ImageManualLedger): strin
 			'',
 			'1. In Studio, open **Taxonomies & Entities**.',
 			'2. Find (or create) the Township or Subject listed below.',
-			'3. Set **Migration key** to the exact CSV value (any casing). Do not put Archive IDs on township.',
+			'3. Set **Migration key** to the exact CSV value (any casing). For extra spellings (Inn vs Inns), add **Migration Key Aliases** on the same Subject Category. Do not put Archive IDs on township.',
 			'4. Re-run the same batch (or later batches) with `--live` so those images link automatically.',
 			'5. For a `donation:N` line, confirm Donation ID `N` exists. `donation:0` is invalid — leave unlinked.',
 		].join('\n'),

@@ -10,4 +10,4 @@ Generated files (safe to commit):
 
 Per-batch `asset-errors.csv` / `url-status.csv` stay under `migrations/csv-import/reports/images/offset-*-limit-*` (gitignored).
 
-Do not put Archive IDs (`STI3`, `FFF1`) on a township **Migration key**. That field is the CSV township name (`Tredyffrin`).
+Do not put Archive IDs (`STI3`, `FFF1`) on a township **Migration key**. That field is the CSV township name (`Tredyffrin`). Subject Categories can add extra CSV spellings on **Migration Key Aliases** (e.g. `Inn` when the primary key is `Inns`).

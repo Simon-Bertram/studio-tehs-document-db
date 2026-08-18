@@ -81,5 +81,6 @@ describe('formatCumulativeLedgerMarkdown', () => {
 		expect(md).toContain('### Paoli (1)')
 		expect(md).toContain('## Review people depicted')
 		expect(md).toContain('| WCU1 | Margaret Currie |')
+		expect(md).toContain('Migration Key Aliases')
 	})
 })

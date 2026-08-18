@@ -1,7 +1,9 @@
 import type {SanityClient} from '@sanity/client'
 
+import {indexMigrationKeys} from './index-migration-keys'
+
 export interface TaxonomyLookups {
-	/** migrationKey (lowercased) → clean Sanity _id */
+	/** migrationKey / alias (lowercased) → clean Sanity _id */
 	categories: Record<string, string>
 	/** migrationKey (lowercased) → clean Sanity _id */
 	townships: Record<string, string>
@@ -9,26 +11,16 @@ export interface TaxonomyLookups {
 	organizations: Record<string, string>
 }
 
-function cleanId(id: string): string {
-	return id.replace(/^drafts\./, '')
-}
-
-function buildLookup(docs: {_id: string; migrationKey: string}[]): Record<string, string> {
-	const lookup: Record<string, string> = {}
-	for (const doc of docs) {
-		lookup[doc.migrationKey.trim().toLowerCase()] = cleanId(doc._id)
-	}
-	return lookup
-}
-
 /**
- * Fetch all categories, townships, and organizations that carry a migrationKey,
- * returning case-insensitive lookup dictionaries keyed by trimmed migrationKey.
+ * Fetch all categories, townships, and organizations that carry a migrationKey
+ * (or category aliases), returning case-insensitive lookup dictionaries.
  */
 export async function buildTaxonomyLookups(client: SanityClient): Promise<TaxonomyLookups> {
 	const [categories, townships, organizations] = await Promise.all([
-		client.fetch<{_id: string; migrationKey: string}[]>(
-			`*[_type == "category" && defined(migrationKey)]{ _id, migrationKey }`,
+		client.fetch<{_id: string; migrationKey?: string; migrationKeyAliases?: string[]}[]>(
+			`*[_type == "category" && (defined(migrationKey) || count(migrationKeyAliases) > 0)]{
+				_id, migrationKey, migrationKeyAliases
+			}`,
 		),
 		client.fetch<{_id: string; migrationKey: string}[]>(
 			`*[_type == "township" && defined(migrationKey)]{ _id, migrationKey }`,
@@ -39,13 +31,14 @@ export async function buildTaxonomyLookups(client: SanityClient): Promise<Taxono
 	])
 
 	const lookups = {
-		categories: buildLookup(categories),
-		townships: buildLookup(townships),
-		organizations: buildLookup(organizations),
+		categories: indexMigrationKeys(categories),
+		townships: indexMigrationKeys(townships),
+		organizations: indexMigrationKeys(organizations),
 	}
+	const categoryCount = new Set(Object.values(lookups.categories)).size
 
 	console.log(
-		`Loaded ${Object.keys(lookups.categories).length} categories, ` +
+		`Loaded ${categoryCount} categories, ` +
 			`${Object.keys(lookups.townships).length} townships, and ` +
 			`${Object.keys(lookups.organizations).length} organizations into memory.`,
 	)
