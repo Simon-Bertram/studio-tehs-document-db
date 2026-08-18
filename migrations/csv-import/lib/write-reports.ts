@@ -2,15 +2,16 @@ import fs from 'node:fs'
 import path from 'node:path'
 
 import type {Audit, ImportedRecord} from './audit'
+import {formatNeedsManualLinksMarkdown, splitUnmappedKeywords} from './needs-manual-links-report'
 
-function escapeCsv(value: string): string {
+export function escapeCsv(value: string): string {
 	if (/[",\n\r]/.test(value)) {
 		return `"${value.replace(/"/g, '""')}"`
 	}
 	return value
 }
 
-function toCsv(headers: string[], rows: string[][]): string {
+export function toCsv(headers: string[], rows: string[][]): string {
 	const lines = [
 		headers.map(escapeCsv).join(','),
 		...rows.map((row) => row.map((cell) => escapeCsv(cell ?? '')).join(',')),
@@ -30,16 +31,14 @@ export function writeReports(
 	reportsDir: string,
 	options?: {
 		naturalKeyLabel?: string
+		howToFix?: string
+		/** Kept so existing callers compile; guidance now lives in needs-manual-links.md */
 		studioAction?: (record: ImportedRecord) => string
 	},
 ): void {
 	fs.mkdirSync(reportsDir, {recursive: true})
 
 	const naturalKeyLabel = options?.naturalKeyLabel ?? 'Archive ID'
-	const studioAction =
-		options?.studioAction ??
-		((r: ImportedRecord) =>
-			`In Studio, find ${r.schemaType} with ${naturalKeyLabel} ${r.clipId}. Set Organizations / Subjects / Township for: ${joinList(r.unmappedKeywords)}. Entity names (e.g. Lincoln) belong on Organizations; themes on Subjects; places on Township.`)
 
 	const importedPath = path.join(reportsDir, 'imported.csv')
 	const skippedPath = path.join(reportsDir, 'skipped.csv')
@@ -106,17 +105,39 @@ export function writeReports(
 	fs.writeFileSync(
 		manualPath,
 		toCsv(
-			['clipId', 'title', 'schemaType', 'action', 'sanityId', 'unmappedKeywords', 'studioAction'],
-			audit.needsManualLinks.map((r) => [
-				r.clipId,
-				r.title,
-				r.schemaType,
-				r.action,
-				r.sanityId ?? '',
-				joinList(r.unmappedKeywords),
-				studioAction(r),
-			]),
+			[
+				'archiveId',
+				'title',
+				'missingTownship',
+				'missingSubject',
+				'missingDonation',
+				'schemaType',
+				'action',
+				'sanityId',
+			],
+			audit.needsManualLinks.map((r) => {
+				const split = splitUnmappedKeywords(r.unmappedKeywords)
+				return [
+					r.clipId,
+					r.title,
+					split.township,
+					split.subject,
+					split.donation,
+					r.schemaType,
+					r.action,
+					r.sanityId ?? '',
+				]
+			}),
 		),
+	)
+
+	const manualMarkdownPath = path.join(reportsDir, 'needs-manual-links.md')
+	fs.writeFileSync(
+		manualMarkdownPath,
+		formatNeedsManualLinksMarkdown(audit.needsManualLinks, {
+			naturalKeyLabel,
+			howToFix: options?.howToFix,
+		}),
 	)
 
 	const missingRows = Array.from(audit.missingTaxonomyByKeyword.entries())
@@ -144,13 +165,14 @@ export function writeReports(
 		`  ${skippedPath}`,
 		`  ${divertedPath}`,
 		`  ${manualPath}`,
+		`  ${manualMarkdownPath}`,
 		`  ${missingPath}`,
 		'',
 		'How to identify records:',
 		`  imported            → ${naturalKeyLabel} = clipId; schemaType is the Studio document type`,
 		'  skipped             → no Studio doc; use clipId + reason in skipped.csv',
 		'  diverted-quarterly  → keyword TEHS; import as quarterlyArticle, not archive types',
-		`  needs_manual_links  → doc exists; open by ${naturalKeyLabel} and fix links from unmappedKeywords`,
+		`  needs_manual_links  → needs-manual-links.md (grouped) or the CSV (one row per image)`,
 		'  missing-taxonomies  → create migrationKey on the right entity type, then re-run import',
 		'',
 	].join('\n')

@@ -14,7 +14,8 @@ const client = createImportClient({dryRun: config.dryRun})
 
 async function main() {
 	if (!config.dryRun) await assertContentWriteAccess(client)
-	await runImagesImport(config, client)
+	const result = await runImagesImport(config, client)
+	if (!result.ok) process.exit(1)
 }
 
 main().catch((err) => {

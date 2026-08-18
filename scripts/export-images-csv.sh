@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# Fallback export that needs the mysql CLI. Prefer:
+#   MYSQL_PASS='…' bun run csv-export:images
+#
 # Export image metadata (never psImages / BLOB columns) through the local
 # SSH tunnel into migrations/data/sample-images.csv.
 #

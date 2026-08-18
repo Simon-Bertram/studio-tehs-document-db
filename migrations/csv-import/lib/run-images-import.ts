@@ -10,33 +10,67 @@ import pLimit from 'p-limit'
 
 import {SANITY_DATASET, SANITY_PROJECT_ID} from '../../../lib/sanityEnv'
 import {Audit} from './audit'
-import type {ImportConfig} from './cli-config'
-import {contentTypeFromImagePath, fetchImageBuffer, filenameFromImagePath} from './image-asset-url'
+import {batchReportsDir, type ImportConfig} from './cli-config'
+import {resolveDuplicateArchiveIds} from './duplicate-archive-ids'
+import {
+	type AssetErrorRow,
+	contentTypeFromImagePath,
+	fetchImageBuffer,
+	filenameFromImagePath,
+	ImageFetchError,
+	probeImageUrl,
+} from './image-asset-url'
 import {buildImageLookups} from './image-lookups'
+import {
+	IMAGE_LEDGER_DIR,
+	type LedgerRow,
+	loadImageManualLedger,
+	locationAndPeopleFromRow,
+	mergeImageManualLedger,
+	writeImageManualLedger,
+} from './image-manual-ledger'
+import {collectPreflightIssues} from './image-preflight'
 import type {HistoricalImageImportDoc, ImageCsvRow} from './map-image-row'
 import {mapImageRow} from './map-image-row'
 import {readCsvRows} from './read-csv'
 import {hasAuthToken} from './sanity-client'
 import {upsertByQuery} from './upsert-by-query'
+import {writeImageExtraReports} from './write-image-reports'
 import {writeReports} from './write-reports'
 
 const CONCURRENCY = 3
 
+export interface ImagesImportResult {
+	ok: boolean
+	assetErrorCount: number
+}
+
+function assetErrorFromUnknown(archiveId: string, url: string, err: unknown): AssetErrorRow {
+	if (err instanceof ImageFetchError) {
+		return {
+			archiveId,
+			url: err.url,
+			httpStatus: err.httpStatus != null ? String(err.httpStatus) : '',
+			detail: err.message,
+		}
+	}
+	return {
+		archiveId,
+		url,
+		httpStatus: '',
+		detail: err instanceof Error ? err.message : String(err),
+	}
+}
+
 async function uploadFromUrlIfNeeded(
 	client: SanityClient,
 	archiveId: string,
-	imageLocation: string | null,
-	assetUrl: string | null,
+	imageLocation: string,
+	assetUrl: string,
 	existingHasImage: boolean,
-	assetErrors: string[],
+	assetErrors: AssetErrorRow[],
 ): Promise<HistoricalImageImportDoc['imageFile'] | undefined> {
-	if (!assetUrl || !imageLocation) {
-		assetErrors.push(`${archiveId}: no imageLocation path`)
-		return undefined
-	}
-	if (existingHasImage) {
-		return undefined
-	}
+	if (existingHasImage) return undefined
 
 	try {
 		const {buffer, contentType} = await fetchImageBuffer(assetUrl)
@@ -49,20 +83,24 @@ async function uploadFromUrlIfNeeded(
 			asset: {_type: 'reference', _ref: asset._id},
 		}
 	} catch (err) {
-		const msg = err instanceof Error ? err.message : String(err)
-		assetErrors.push(`${archiveId}: asset upload failed — ${msg}`)
+		assetErrors.push(assetErrorFromUnknown(archiveId, assetUrl, err))
 		return undefined
 	}
 }
 
-export async function runImagesImport(config: ImportConfig, client: SanityClient): Promise<void> {
-	const {dryRun, rowLimit, csvPath, reportsDir} = config
+export async function runImagesImport(
+	config: ImportConfig,
+	client: SanityClient,
+): Promise<ImagesImportResult> {
+	const {dryRun, rowLimit, rowOffset, csvPath, reportsDir: reportsBase} = config
+	const reportsDir = batchReportsDir(reportsBase, rowOffset, rowLimit)
 	const mode = dryRun ? 'DRY RUN' : 'LIVE'
 
 	console.log(`--- Historical Images CSV Import (${mode}) ---`)
 	console.log(`Source: ${csvPath}`)
 	console.log(`Project: ${SANITY_PROJECT_ID} / ${SANITY_DATASET}`)
-	if (rowLimit < Infinity) console.log(`Row limit: ${rowLimit}`)
+	console.log(`Batch: offset ${rowOffset}, limit ${Number.isFinite(rowLimit) ? rowLimit : 'all'}`)
+	console.log(`Reports: ${reportsDir}`)
 	console.log()
 
 	const lookups =
@@ -71,22 +109,74 @@ export async function runImagesImport(config: ImportConfig, client: SanityClient
 			: await buildImageLookups(client)
 
 	const audit = new Audit()
-	const assetErrors: string[] = []
-	const rows = await readCsvRows<ImageCsvRow>(csvPath, rowLimit)
+	const assetErrors: AssetErrorRow[] = []
+	const urlStatus: AssetErrorRow[] = []
+	const locationRows: (LedgerRow & {photoLocation: string})[] = []
+	const peopleRows: LedgerRow[] = []
+	const allRows = await readCsvRows<ImageCsvRow>(csvPath, Infinity)
+	const resolutionsAll = resolveDuplicateArchiveIds(allRows)
+	const sliceEnd = Number.isFinite(rowLimit) ? rowOffset + rowLimit : allRows.length
+	const rows = allRows.slice(rowOffset, sliceEnd)
+	const resolutions = resolutionsAll.slice(rowOffset, sliceEnd)
 	audit.totalRows = rows.length
-	console.log(`Parsed ${rows.length} image rows.\n`)
+	console.log(
+		`Parsed ${allRows.length} image rows; this batch uses ${rows.length} (indexes ${rowOffset}–${Math.max(rowOffset, sliceEnd - 1)}).\n`,
+	)
 
+	const preflight = collectPreflightIssues(rows)
 	const limit = pLimit(CONCURRENCY)
 	const docs: HistoricalImageImportDoc[] = []
 
-	const tasks = rows.map((row) =>
+	const tasks = rows.map((row, index) =>
 		limit(async () => {
-			const mapped = mapImageRow(row, lookups, audit)
+			const resolution = resolutions[index]
+			if (resolution.skip) {
+				audit.skip({
+					clipId: resolution.archiveId,
+					title: row.title,
+					csvType: row.type,
+					reason: 'duplicate_identifier',
+					detail: resolution.detail ?? 'Duplicate identifier with the same imageLocation.',
+				})
+				return
+			}
+
+			const mapped = mapImageRow(row, lookups, audit, {
+				archiveId: resolution.archiveId || undefined,
+			})
 			if (!mapped) return
 
 			const {doc, csvType, title, mappedKeywords, unmappedKeywords, assetUrl} = mapped
 
+			if (!mapped.imageLocation || !assetUrl) {
+				audit.skip({
+					clipId: doc.archiveId,
+					title,
+					csvType,
+					reason: 'missing_image_location',
+					detail: 'Row has no imageLocation; fileLocation is not used as a URL.',
+				})
+				return
+			}
+
+			if (resolution.detail) audit.warn(resolution.detail)
+
 			if (dryRun) {
+				const probe = await probeImageUrl(assetUrl)
+				urlStatus.push({
+					archiveId: doc.archiveId,
+					url: assetUrl,
+					httpStatus: String(probe.httpStatus),
+					detail: probe.detail ?? '',
+				})
+				if (probe.httpStatus >= 400 || probe.httpStatus === 0) {
+					assetErrors.push({
+						archiveId: doc.archiveId,
+						url: assetUrl,
+						httpStatus: String(probe.httpStatus),
+						detail: probe.detail ?? `HTTP ${probe.httpStatus}`,
+					})
+				}
 				docs.push(doc)
 				audit.recordImported({
 					clipId: doc.archiveId,
@@ -97,8 +187,7 @@ export async function runImagesImport(config: ImportConfig, client: SanityClient
 					mappedKeywords,
 					unmappedKeywords,
 				})
-				const assetNote = assetUrl ?? 'no imageLocation'
-				console.log(`[DRY RUN] historicalImage → ${doc.archiveId} (${assetNote})`)
+				console.log(`[DRY RUN] historicalImage → ${doc.archiveId} (${assetUrl})`)
 				return
 			}
 
@@ -111,15 +200,27 @@ export async function runImagesImport(config: ImportConfig, client: SanityClient
 					{archiveId: doc.archiveId},
 				)
 
+				const existingHasImage = Boolean(existing?.imageFile)
 				const imageFile = await uploadFromUrlIfNeeded(
 					client,
 					doc.archiveId,
 					mapped.imageLocation,
 					assetUrl,
-					Boolean(existing?.imageFile),
+					existingHasImage,
 					assetErrors,
 				)
 				if (imageFile) doc.imageFile = imageFile
+
+				if (!existingHasImage && !doc.imageFile) {
+					audit.skip({
+						clipId: doc.archiveId,
+						title,
+						csvType,
+						reason: 'asset_error',
+						detail: 'HTTP fetch/upload failed; document not upserted (imageFile is required).',
+					})
+					return
+				}
 
 				const result = await upsertByQuery(
 					client,
@@ -138,6 +239,9 @@ export async function runImagesImport(config: ImportConfig, client: SanityClient
 					mappedKeywords,
 					unmappedKeywords,
 				})
+				const extras = locationAndPeopleFromRow(row, doc.archiveId, title)
+				if (extras.location) locationRows.push(extras.location)
+				if (extras.person) peopleRows.push(extras.person)
 				console.log(`[OK] ${result.action} historicalImage → ${doc.archiveId} (${result.id})`)
 			} catch (err) {
 				const msg = err instanceof Error ? err.message : String(err)
@@ -161,21 +265,43 @@ export async function runImagesImport(config: ImportConfig, client: SanityClient
 		console.log(`\nPreview written to ${previewPath}`)
 	}
 
+	writeImageExtraReports(reportsDir, {assetErrors, urlStatus, preflight})
 	if (assetErrors.length > 0) {
-		const assetPath = path.join(reportsDir, 'asset-errors.csv')
-		const lines = [
-			'archiveId,detail',
-			...assetErrors.map((e) => {
-				const [id, ...rest] = e.split(': ')
-				const detail = rest.join(': ').replace(/"/g, '""')
-				return `${id},"${detail}"`
-			}),
-		]
-		fs.writeFileSync(assetPath, `${lines.join('\n')}\n`)
-		console.log(`Asset errors written to ${assetPath} (${assetErrors.length})`)
+		console.log(
+			`Asset errors written to ${path.join(reportsDir, 'asset-errors.csv')} (${assetErrors.length})`,
+		)
+	}
+	if (urlStatus.length > 0) {
+		console.log(
+			`URL status written to ${path.join(reportsDir, 'url-status.csv')} (${urlStatus.length})`,
+		)
+	}
+	if (preflight.length > 0) {
+		console.log(
+			`Preflight written to ${path.join(reportsDir, 'preflight.csv')} (${preflight.length})`,
+		)
 	}
 
 	writeReports(audit, reportsDir)
 	console.log(`\nReports written to ${reportsDir}`)
+
+	if (!dryRun) {
+		const ledgerDir = path.resolve(IMAGE_LEDGER_DIR)
+		const merged = mergeImageManualLedger(loadImageManualLedger(ledgerDir), {
+			imported: audit.imported,
+			locationRows,
+			peopleRows,
+		})
+		writeImageManualLedger(ledgerDir, merged)
+		console.log(`Cumulative ledger written to ${ledgerDir}`)
+	}
+
 	audit.print(reportsDir)
+
+	const ok = dryRun || assetErrors.length === 0
+	if (!ok) {
+		console.error(`Live import had ${assetErrors.length} asset error(s).`)
+	}
+
+	return {ok, assetErrorCount: assetErrors.length}
 }

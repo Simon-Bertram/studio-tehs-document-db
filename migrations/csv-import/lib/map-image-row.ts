@@ -2,9 +2,12 @@ import {nanoid} from 'nanoid'
 
 import {type HistoricalDateValue, parseHistoricalDate} from '../../lib/parse-historical-date'
 import type {Audit} from './audit'
-import {cleanString} from './clean'
+import {cleanDecodedString, cleanString} from './clean'
 import {buildImageAssetUrl, relativeImagePath} from './image-asset-url'
 import {DIVERTED_QUARTERLY_DETAIL, DIVERTED_QUARTERLY_REASON, hasTehsKeyword} from './tehs-keyword'
+
+/** MySQL default donation — “not in any”. Do not link every unmatched image to it. */
+export const CATCHALL_DONATION_ID = '1'
 
 export interface ImageCsvRow {
 	identifier: string
@@ -24,6 +27,10 @@ export interface ImageCsvRow {
 	Synonyms: string
 	imageLocation: string
 	fileLocation: string
+	archiveLocation: string
+	primaryPhoto: string
+	publicDisplay: string
+	photoLocation: string
 	[key: string]: string
 }
 
@@ -58,10 +65,15 @@ export interface MapImageResult {
 	title: string
 	mappedKeywords: string[]
 	unmappedKeywords: string[]
-	/** Relative path from imageLocation (or fileLocation). */
+	/** Relative path from imageLocation only. */
 	imageLocation: string | null
 	/** Public HTTP URL Sanity (or this script) can fetch. */
 	assetUrl: string | null
+}
+
+export interface MapImageOptions {
+	/** Disambiguated archiveId when identifier is not unique. */
+	archiveId?: string
 }
 
 function ref(id: string) {
@@ -69,15 +81,26 @@ function ref(id: string) {
 }
 
 function buildDescription(row: ImageCsvRow): string | null {
-	const description = cleanString(row.description)
-	const comment = cleanString(row.comment)
+	const description = cleanDecodedString(row.description)
+	const comment = cleanDecodedString(row.comment)
 	if (description && comment) return `${description}\n\n${comment}`
 	return description ?? comment
 }
 
-function buildNotes(row: ImageCsvRow): string | null {
-	const synonyms = cleanString(row.Synonyms)
-	return synonyms
+function buildNotes(row: ImageCsvRow, csvType: string): string | null {
+	const parts: string[] = []
+	const synonyms = cleanDecodedString(row.Synonyms)
+	if (synonyms) parts.push(synonyms)
+	if (csvType) parts.push(`Legacy type: ${csvType}`)
+	const fileLocation = cleanString(row.fileLocation)
+	if (fileLocation) parts.push(`Archive folder: ${fileLocation}`)
+	const archiveLocation = cleanString(row.archiveLocation)
+	if (archiveLocation) parts.push(`Archive location: ${archiveLocation}`)
+	return parts.length > 0 ? parts.join('\n\n') : null
+}
+
+function isPrivateDisplay(row: ImageCsvRow): boolean {
+	return cleanString(row.publicDisplay)?.toUpperCase() === 'N'
 }
 
 /**
@@ -88,10 +111,12 @@ export function mapImageRow(
 	row: ImageCsvRow,
 	lookups: ImageLookups,
 	audit: Audit,
+	options?: MapImageOptions,
 ): MapImageResult | null {
-	const archiveId = cleanString(row.identifier)
-	const title = cleanString(row.title)
-	const csvType = cleanString(row.type) ?? String(row.type ?? '')
+	const identifier = cleanString(row.identifier)
+	const archiveId = options?.archiveId || identifier
+	const title = cleanDecodedString(row.title)
+	const csvType = cleanDecodedString(row.type) ?? cleanString(row.type) ?? String(row.type ?? '')
 
 	if (!archiveId) {
 		audit.skip({
@@ -99,6 +124,17 @@ export function mapImageRow(
 			csvType: csvType || undefined,
 			reason: 'missing_clip_id',
 			detail: 'Row missing identifier.',
+		})
+		return null
+	}
+
+	if (isPrivateDisplay(row)) {
+		audit.skip({
+			clipId: archiveId,
+			title: title ?? undefined,
+			csvType: csvType || undefined,
+			reason: 'private_image',
+			detail: 'publicDisplay=N; skipped so private images stay out of Sanity.',
 		})
 		return null
 	}
@@ -130,15 +166,15 @@ export function mapImageRow(
 	}
 	const description = buildDescription(row)
 	if (description) doc.description = description
-	const photographer = cleanString(row.photographer)
+	const photographer = cleanDecodedString(row.photographer)
 	if (photographer) doc.photographer = photographer
-	const contributor = cleanString(row.contributor)
+	const contributor = cleanDecodedString(row.contributor)
 	if (contributor) doc.contributor = contributor
-	const source = cleanString(row.source)
+	const source = cleanDecodedString(row.source)
 	if (source) doc.source = source
-	const rights = cleanString(row.rights)
+	const rights = cleanDecodedString(row.rights)
 	if (rights) doc.rights = rights
-	const notes = buildNotes(row)
+	const notes = buildNotes(row, csvType)
 	if (notes) doc.notes = notes
 
 	const mappedKeywords: string[] = []
@@ -158,7 +194,6 @@ export function mapImageRow(
 
 	const subjectRaw = cleanString(row.subject)
 	if (subjectRaw) {
-		// Normalize casing for lookup (person → Person)
 		const subjectKey = subjectRaw.toLowerCase()
 		const id = lookups.categories[subjectKey]
 		if (id) {
@@ -171,7 +206,7 @@ export function mapImageRow(
 	}
 
 	const donationId = cleanString(row.donationID)
-	if (donationId) {
+	if (donationId && donationId !== CATCHALL_DONATION_ID) {
 		const id = lookups.donations[donationId]
 		if (id) {
 			doc.donation = {_type: 'reference', _ref: id}

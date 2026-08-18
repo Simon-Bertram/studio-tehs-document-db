@@ -1,6 +1,14 @@
 import type {ImportSchemaType} from './map-row'
 
-export type SkipReason = 'missing_clip_id' | 'unknown_type' | 'api_error' | 'diverted_quarterly'
+export type SkipReason =
+	| 'missing_clip_id'
+	| 'unknown_type'
+	| 'api_error'
+	| 'diverted_quarterly'
+	| 'duplicate_identifier'
+	| 'asset_error'
+	| 'missing_image_location'
+	| 'private_image'
 export type ImportAction = 'dry_run' | 'created' | 'patched'
 
 export interface ImportedRecord {

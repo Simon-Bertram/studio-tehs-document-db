@@ -19,14 +19,46 @@ const CONTENT_TYPES: Record<string, string> = {
 	webp: 'image/webp',
 }
 
+const RETRY_STATUSES = new Set([403, 408, 425, 429, 500, 502, 503, 504])
+const MAX_RETRIES = 3
+
+export class ImageFetchError extends Error {
+	readonly url: string
+	readonly httpStatus: number | undefined
+
+	constructor(url: string, httpStatus: number | undefined, message: string) {
+		super(message)
+		this.name = 'ImageFetchError'
+		this.url = url
+		this.httpStatus = httpStatus
+	}
+}
+
+export interface AssetErrorRow {
+	archiveId: string
+	url: string
+	httpStatus: string
+	detail: string
+}
+
+function sleep(ms: number): Promise<void> {
+	return new Promise((resolve) => setTimeout(resolve, ms))
+}
+
+async function cancelBody(res: Response): Promise<void> {
+	try {
+		await res.body?.cancel()
+	} catch {
+		// ignore
+	}
+}
+
 /**
- * Prefer imageLocation, then fileLocation. Both exist on the legacy export.
+ * Public web path only. Never use fileLocation / archiveLocation — those are
+ * archive-folder notes, not URLs.
  */
-export function relativeImagePath(row: {
-	imageLocation?: string
-	fileLocation?: string
-}): string | null {
-	return cleanString(row.imageLocation) ?? cleanString(row.fileLocation)
+export function relativeImagePath(row: {imageLocation?: string}): string | null {
+	return cleanString(row.imageLocation)
 }
 
 /**
@@ -53,18 +85,68 @@ export function contentTypeFromImagePath(relativePath: string): string {
 	return CONTENT_TYPES[ext] ?? 'image/jpeg'
 }
 
+export async function probeImageUrl(assetUrl: string): Promise<{
+	httpStatus: number
+	detail?: string
+}> {
+	try {
+		const head = await fetch(assetUrl, {
+			method: 'HEAD',
+			headers: IMAGE_FETCH_HEADERS,
+		})
+		await cancelBody(head)
+		if (head.ok || head.status === 404) {
+			return {httpStatus: head.status}
+		}
+
+		const get = await fetch(assetUrl, {
+			method: 'GET',
+			headers: IMAGE_FETCH_HEADERS,
+		})
+		const status = get.status
+		await cancelBody(get)
+		return {
+			httpStatus: status,
+			detail: head.status !== status ? `HEAD ${head.status}; GET ${status}` : undefined,
+		}
+	} catch (err) {
+		return {
+			httpStatus: 0,
+			detail: err instanceof Error ? err.message : String(err),
+		}
+	}
+}
+
 export async function fetchImageBuffer(assetUrl: string): Promise<{
 	buffer: Buffer
 	contentType: string
 }> {
-	const res = await fetch(assetUrl, {headers: IMAGE_FETCH_HEADERS})
-	if (!res.ok) {
-		throw new Error(`HTTP ${res.status} fetching ${assetUrl}`)
+	let lastStatus: number | undefined
+	let lastMessage = `Failed fetching ${assetUrl}`
+
+	for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+		if (attempt > 0) await sleep(500 * 2 ** (attempt - 1))
+
+		try {
+			const res = await fetch(assetUrl, {headers: IMAGE_FETCH_HEADERS})
+			lastStatus = res.status
+			if (res.ok) {
+				const buffer = Buffer.from(await res.arrayBuffer())
+				const headerType = res.headers.get('content-type')?.split(';')[0]?.trim()
+				return {
+					buffer,
+					contentType: headerType || 'image/jpeg',
+				}
+			}
+
+			lastMessage = `HTTP ${res.status} fetching ${assetUrl}`
+			await cancelBody(res)
+			if (!RETRY_STATUSES.has(res.status)) break
+		} catch (err) {
+			if (err instanceof ImageFetchError) throw err
+			lastMessage = err instanceof Error ? err.message : String(err)
+		}
 	}
-	const buffer = Buffer.from(await res.arrayBuffer())
-	const headerType = res.headers.get('content-type')?.split(';')[0]?.trim()
-	return {
-		buffer,
-		contentType: headerType || 'image/jpeg',
-	}
+
+	throw new ImageFetchError(assetUrl, lastStatus, lastMessage)
 }

@@ -13,8 +13,8 @@ Optional env: `SANITY_PROJECT_ID`, `SANITY_DATASET`.
 | --- | --- | --- | --- |
 | `bun run csv-import` | `migrations/data/documents.csv` | primarySource, historicalImage, researchArticle | `reports/` |
 | `bun run csv-import:donations` | `migrations/data/donations.csv` | donation (+ seeds donationCategory) | `reports/donations/` |
-| `bun run csv-import:images` | `migrations/data/sample-images.csv` | historicalImage | `reports/images/` |
-| `bun run csv-export:images` | DreamHost MySQL via tunnel | writes `sample-images.csv` (no BLOBs) | — |
+| `bun run csv-import:images` | `migrations/data/sample-images.csv` | historicalImage | `reports/images/offset-*-limit-*` + `ledgers/` |
+| `bun run csv-export:images` | DreamHost MySQL via tunnel (bun/`mysql2`, no `mysql` CLI) | writes `sample-images.csv` (no BLOBs) | — |
 | `bun run mysql-tunnel` | SSH `-L 3307:mysql.the2nomads.site:3306` | — | — |
 | `bun run csv-import:quarterly` | tehistory.org HTML (TOC + articles) | quarterlyArticle | `reports/quarterly/` |
 
@@ -63,7 +63,7 @@ HTML volumes first.
 
 ## DreamHost MySQL MCP (read-only)
 
-Cursor talks to the image database through `@benborla29/mcp-server-mysql` in [`.cursor/mcp.json`](../../.cursor/mcp.json) (gitignored). **Do not put `mysql.the2nomads.site` in `MYSQL_HOST`.** That hostname is the SSH `-L` destination only.
+Cursor talks to the image database through `@benborla29/mcp-server-mysql` in [`.cursor/mcp.json`](../../.cursor/mcp.json) (gitignored). Use **`bunx`** (not `npx`) so the project `preinstall` `only-allow bun` hook cannot trip when Cursor starts the server. **Do not put `mysql.the2nomads.site` in `MYSQL_HOST`.** That hostname is the SSH `-L` destination only.
 
 | mcp.json | Value |
 | --- | --- |
@@ -89,11 +89,7 @@ bun run mysql-tunnel:stop
 Pattern A: `ssh -N -L 3307:mysql.the2nomads.site:3306 USER@the2nomads.site`  
 Pattern B: `ssh -N -L 3307:127.0.0.1:3306 USER@mysql.the2nomads.site`
 
-CLI smoke-test (same host/port as MCP):
-
-```bash
-mysql -h 127.0.0.1 -P 3307 -u images_ro -p -D tehsimages2 -e "SHOW TABLES;"
-```
+CLI smoke-test (same host/port as MCP): `MYSQL_PASS='…' bun run csv-export:images` (optional `IMAGE_EXPORT_LIMIT=5`). The `mysql` binary is not required.
 
 In Cursor, after reloading MCP:
 
@@ -106,13 +102,16 @@ Sanity is already available via the Cursor Sanity plugin (`query_documents`, `ge
 
 ## Export CSV from MySQL
 
-MCP does not feed the importer. After the SELECT is settled, export metadata + paths only:
+MCP does not feed the importer. After the SELECT is settled, export metadata + paths only (bun client to `127.0.0.1:3307`; no `mysql` CLI):
 
 ```bash
 MYSQL_USER=images_ro MYSQL_PASS='…' MYSQL_DB=tehsimages2 bun run csv-export:images
+IMAGE_EXPORT_LIMIT=20 MYSQL_PASS='…' bun run csv-export:images
 ```
 
-Writes [`migrations/data/sample-images.csv`](../data/sample-images.csv). Blob columns (`psImages`) are excluded. The committed file is a 3-row URL-path sample until you run a full export.
+Writes [`migrations/data/sample-images.csv`](../data/sample-images.csv). Blob columns (`psImages`) are excluded. Includes `primaryPhoto`, `publicDisplay`, `archiveLocation`, `photoLocation`, and `refs` for duplicate handling and notes. The committed file is a 3-row URL-path sample until you run a full export.
+
+Fallback if you have the `mysql` binary: `bun run csv-export:images:mysql-cli`.
 
 ## Photo catalog bootstrap
 
@@ -123,7 +122,10 @@ bun run csv-import:donations -- --limit 10          # dry-run
 bun run csv-import:donations -- --live              # seed categories + donations
 bun run csv-import:images -- --limit 3              # dry-run (logs constructed URLs)
 bun run csv-import:images -- --live --limit 3       # write 3 docs + HTTP asset fetch
-bun run csv-import:images -- --live                 # full image import
+# Phased live import (~7141 rows). Set township/subject migrationKey first.
+bun run csv-import:images -- --live --offset 0 --limit 1000
+bun run csv-import:images -- --live --offset 1000 --limit 1000
+# … then offset 2000, 3000, … until a batch returns fewer than 1000 rows
 ```
 
 ### Images dry-run then live
@@ -137,15 +139,17 @@ bun run csv-import:images -- --live                 # full image import
 
    Expect `200` and `content-type: image/jpeg`. DreamHost varies by `User-Agent`; the importer sends a browser UA.
 
-2. Dry-run: `bun run csv-import:images -- --limit 3` — console should print constructed URLs; `reports/images/preview.ndjson` is metadata only (no asset upload).
-3. Live sample: `bun run csv-import:images -- --live --limit 3` (Editor token in `.env`).
-4. Full run: `bun run csv-import:images -- --live`.
+2. Dry-run: `bun run csv-import:images -- --limit 3` — console should print constructed URLs; `reports/images/offset-0-limit-3/url-status.csv` has HEAD/GET status; `preview.ndjson` is metadata only (no asset upload).
+3. Live sample: `bun run csv-import:images -- --live --limit 3` (Editor token in `.env`). Failed fetches skip the row (no invalid `historicalImage` without `imageFile`) and exit non-zero.
+4. Phased full run (recommended): `--live --offset N --limit 1000`. Duplicate identifiers are resolved on the **whole** CSV before the slice, then disambiguated (`HLC08-2590`) or skipped when the path is identical (`SCU11`).
 5. Vision / Sanity MCP: `*[_type == "historicalImage" && archiveId == "BKH1"][0]`
+
+`--limit` without `--offset` still means “first N rows.” Each batch writes gitignored reports to `reports/images/offset-{offset}-limit-{limit}/`. Live batches merge a lasting punch list into [`ledgers/images-manual-links.md`](ledgers/images-manual-links.md) (not gitignored): outstanding township / subject / donation links, plus `photoLocation` text and Person-subject rows to review in Studio. IDs that linked on a later batch are dropped from the ledger. Set **Migration key** on Township / Subject docs to the CSV name (`Tredyffrin`, `House`) before or between batches — never put Archive IDs on that field.
 
 ## Run order
 
 1. **Donations** — seeds seven canonical Donation Categories, upserts by `donationId`.
-2. **Images** — upserts by `archiveId` (`identifier`), links `donation` via `donationID`, fetches JPEG from `https://www.the2nomads.site/TEHSImageDatabase/` + `imageLocation`.
+2. **Images** — upserts by `archiveId` (`identifier`), links `donation` via `donationID` (skips catch-all `1`), fetches JPEG from `https://www.the2nomads.site/TEHSImageDatabase/` + `imageLocation` only.
 3. **Documents** — independent of donations/images; TEHS-keyword rows diverted.
 4. **Quarterly** — independent HTML scrape; can run anytime (Editor token required for `--live`).
 
@@ -180,27 +184,36 @@ Canonical categories (title = `migrationKey`): Photographic prints, Digital phot
 | serialNumber, title, dateTaken, photographer, contributor, source, rights | same-named fields |
 | description + comment | description |
 | Synonyms | notes (when present) |
+| type | notes (`Legacy type: …`); all rows still become `historicalImage` |
+| fileLocation / archiveLocation | notes only (`Archive folder` / `Archive location`) — never a URL |
 | township | township ref (`migrationKey`) |
 | subject | subjects[] (`migrationKey`; case-insensitive) |
-| donationID | donation ref |
-| imageLocation (fallback: fileLocation) | imageFile (HTTP fetch + upload on `--live`) |
+| donationID | donation ref (skipped when `1` = “not in any”) |
+| imageLocation | imageFile (HTTP fetch + upload on `--live`) |
+| publicDisplay | `N` rows are skipped; empty / `Y` / `1` import as public |
+| primaryPhoto | used to disambiguate duplicate `identifier` values |
 
-Ignored: resolution, digitization metadata, publicDisplay, `psImages` (BLOB, not migrated), type (all rows → historicalImage).
+Ignored: resolution, digitization metadata, `psImages` (BLOB, not migrated), `refs` (exported for later mapping). `photoLocation` is listed on the cumulative ledger for a later `location` pass; `people[]` is not auto-linked (Person subject → review section). Titles and notes decode HTML entities (`&rsquo;` → `’`).
 
 CSV is UTF-8. Relative paths such as `ValleyForge/BakeHouse/BKH1-BakeHousesmall.jpg` are joined to `https://www.the2nomads.site/TEHSImageDatabase/`. Original filename is passed to `assets.upload`. Existing `imageFile` is not re-uploaded.
 
 ## Editor reports
 
-Each importer writes under its reports folder:
+Each importer writes under its reports folder. Image batches use `reports/images/offset-{offset}-limit-{limit}/` (gitignored). Live image batches also update [`ledgers/`](ledgers/) (safe to commit).
 
 | File | Use |
 | --- | --- |
 | `imported.csv` | Ledger: schema + natural key (`clipId`) + action + sanityId |
 | `skipped.csv` | Rows that never became docs |
 | `diverted-quarterly.csv` | Keyword TEHS rows skipped by archive importers |
-| `needs-manual-links.csv` | Imported but missing taxonomy / donation links |
+| `needs-manual-links.md` | This batch: images grouped by missing township / subject / donation |
+| `needs-manual-links.csv` | Same data as a spreadsheet |
+| `ledgers/images-manual-links.md` | Cumulative punch list across live batches (taxonomy + location text + people review) |
+| `ledgers/images-manual-links.csv` | Cumulative spreadsheet of outstanding taxonomy links |
 | `missing-taxonomies.csv` | Keywords still needing a `migrationKey` |
-| `asset-errors.csv` | (images only) HTTP fetch / JPEG upload failures |
+| `asset-errors.csv` | (images) HTTP fetch / JPEG upload failures: `archiveId,url,httpStatus,detail` |
+| `url-status.csv` | (images dry-run) HEAD/GET probe: `archiveId,url,httpStatus,detail` |
+| `preflight.csv` | (images) missing `imageLocation`, `publicDisplay=N`, duplicate identifiers, township typos, place-like subjects |
 | `summary.txt` | Counts |
 
 ### Vision checks
