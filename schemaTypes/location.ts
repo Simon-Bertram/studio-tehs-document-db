@@ -31,7 +31,6 @@ export const location = defineType({
 			name: 'coordinates',
 			title: 'Coordinates',
 			type: 'geopoint',
-			group: 'place',
 			description: 'Pinpoint the exact location. (Powered by @sanity/google-maps-input)',
 		}),
 	],
