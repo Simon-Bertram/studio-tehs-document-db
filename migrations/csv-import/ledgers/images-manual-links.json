@@ -1081,8 +1081,16 @@
 					"title": "Pasquale Paoli Day"
 				},
 				{
+					"clipId": "PA63",
+					"title": "Richard Nixon campaign rally at the old Paoli Shopping Center"
+				},
+				{
 					"clipId": "PA8",
 					"title": "Paoli Buckboard"
+				},
+				{
+					"clipId": "PCK02",
+					"title": "Philander Knox and wife disembraking ship in Honolulu"
 				},
 				{
 					"clipId": "PCK1",
@@ -1233,8 +1241,28 @@
 					"title": "Julius Sachse"
 				},
 				{
+					"clipId": "PEO133",
+					"title": "Bob Goshorn"
+				},
+				{
 					"clipId": "PEO14",
 					"title": "Unknown Person"
+				},
+				{
+					"clipId": "PEO141",
+					"title": "Isaac M. Anderson"
+				},
+				{
+					"clipId": "PEO142",
+					"title": "Isaac M. Anderson family"
+				},
+				{
+					"clipId": "PEO143",
+					"title": "Sally Nelson"
+				},
+				{
+					"clipId": "PEO145",
+					"title": "May-Sevcik"
 				},
 				{
 					"clipId": "PEO15",
@@ -1863,6 +1891,22 @@
 				{
 					"clipId": "WIL04",
 					"title": "Winfield Scott Wilson"
+				},
+				{
+					"clipId": "WIL05",
+					"title": "David Wilson, 1860 - 1925"
+				},
+				{
+					"clipId": "WIL06",
+					"title": "William West Wilson, 1884 - 1976"
+				},
+				{
+					"clipId": "WIL07",
+					"title": "William West & Marie Wilson"
+				},
+				{
+					"clipId": "WIL08",
+					"title": "William West Wilson"
 				},
 				{
 					"clipId": "WYF01",
@@ -2681,6 +2725,10 @@
 					"title": "Chesterbroook and North Valley Hills"
 				},
 				{
+					"clipId": "CHS07",
+					"title": "Chesterbrook Shopping Center"
+				},
+				{
 					"clipId": "DCF006",
 					"title": "Miss Thelma Austin and dog"
 				},
@@ -3413,6 +3461,10 @@
 					"title": "Hope Montgomery Scott"
 				},
 				{
+					"clipId": "HOU262",
+					"title": "T. Mellon Rogers house, Devon"
+				},
+				{
 					"clipId": "IT16",
 					"title": "An Afternoon at the Horse Show"
 				},
@@ -3545,6 +3597,18 @@
 				{
 					"clipId": "BE22",
 					"title": "Traveler's Rest Tree, Waterloo Avenue, Berwyn"
+				},
+				{
+					"clipId": "BE220",
+					"title": "Unidentified view in Berwyn"
+				},
+				{
+					"clipId": "BE223",
+					"title": "Lancaster Avenue, Berwyn"
+				},
+				{
+					"clipId": "BE227",
+					"title": "Berwyn View"
 				},
 				{
 					"clipId": "BE23",
@@ -3783,6 +3847,78 @@
 					"title": "North Valley Hills"
 				},
 				{
+					"clipId": "CHE34",
+					"title": "Chesterbrook"
+				},
+				{
+					"clipId": "CHE35",
+					"title": "Chesterbrook"
+				},
+				{
+					"clipId": "CHE36",
+					"title": "Chesterbrook"
+				},
+				{
+					"clipId": "CHE37",
+					"title": "Chesterbrook"
+				},
+				{
+					"clipId": "CHE38",
+					"title": "Chesterbrook"
+				},
+				{
+					"clipId": "CHE39",
+					"title": "Chesterbrook"
+				},
+				{
+					"clipId": "CHE40",
+					"title": "Chesterbrook"
+				},
+				{
+					"clipId": "CHE41",
+					"title": "Duportail Barn, Chesterbrook"
+				},
+				{
+					"clipId": "CHE42",
+					"title": "Duportail Barn, Chesterbrook"
+				},
+				{
+					"clipId": "CHE43",
+					"title": "Chesterbrook"
+				},
+				{
+					"clipId": "CHE44",
+					"title": "Chesterbrook"
+				},
+				{
+					"clipId": "CHE45",
+					"title": "Chesterbrook"
+				},
+				{
+					"clipId": "CHE46",
+					"title": "Chesterbrook"
+				},
+				{
+					"clipId": "CHE47",
+					"title": "Barn, Chesterbrook"
+				},
+				{
+					"clipId": "CHE48",
+					"title": "Barn, Chesterbrook"
+				},
+				{
+					"clipId": "CHE49",
+					"title": "Barn, Chesterbrook"
+				},
+				{
+					"clipId": "CHE50",
+					"title": "Chesterbrook"
+				},
+				{
+					"clipId": "CHE51",
+					"title": "Chesterbrook"
+				},
+				{
 					"clipId": "COR36",
 					"title": "Conestoga Road"
 				},
@@ -3835,8 +3971,60 @@
 					"title": "Carriage Way, Berwyn"
 				},
 				{
+					"clipId": "DAY07",
+					"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+				},
+				{
+					"clipId": "DAY08",
+					"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+				},
+				{
+					"clipId": "DAY09",
+					"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+				},
+				{
 					"clipId": "DAY1",
 					"title": "Glenn Road looking north"
+				},
+				{
+					"clipId": "DAY10",
+					"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+				},
+				{
+					"clipId": "DAY11",
+					"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+				},
+				{
+					"clipId": "DAY12",
+					"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+				},
+				{
+					"clipId": "DAY13",
+					"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+				},
+				{
+					"clipId": "DAY14",
+					"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+				},
+				{
+					"clipId": "DAY15",
+					"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+				},
+				{
+					"clipId": "DAY16",
+					"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+				},
+				{
+					"clipId": "DAY17",
+					"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+				},
+				{
+					"clipId": "DAY18",
+					"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+				},
+				{
+					"clipId": "DAY19",
+					"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
 				},
 				{
 					"clipId": "DAY2",
@@ -3871,6 +4059,10 @@
 					"title": "Aerial view of Devon and Strafford showing building of K-Mart store"
 				},
 				{
+					"clipId": "DEV29",
+					"title": "Greetings from Devon, PA"
+				},
+				{
 					"clipId": "DEV4",
 					"title": "Crow's Nest, Conestoga Road, Devon"
 				},
@@ -3897,6 +4089,14 @@
 				{
 					"clipId": "EW04",
 					"title": "Intersection of routes 202 and 29"
+				},
+				{
+					"clipId": "EW05",
+					"title": "East Whiteland"
+				},
+				{
+					"clipId": "EW06",
+					"title": "East Whiteland"
 				},
 				{
 					"clipId": "FAB01",
@@ -3977,6 +4177,10 @@
 				{
 					"clipId": "GT1",
 					"title": "Lancaster Avenue, Green Tree (Duffyn Mawr)"
+				},
+				{
+					"clipId": "HLC11-6861",
+					"title": "Ice Storm at Heyburn Cabin, Long Lane, Berwyn"
 				},
 				{
 					"clipId": "HOU40",
@@ -4211,6 +4415,10 @@
 					"title": "King Street, Malvern"
 				},
 				{
+					"clipId": "MAL39",
+					"title": "Casey’s Restaurant, Malvern"
+				},
+				{
 					"clipId": "MAL9",
 					"title": "Malvern View"
 				},
@@ -4233,6 +4441,10 @@
 				{
 					"clipId": "MJR2",
 					"title": "Mount Joy from Valley Forge Road (route 252)"
+				},
+				{
+					"clipId": "MJT07",
+					"title": "Mount Joy Observation Tower"
 				},
 				{
 					"clipId": "MJT2",
@@ -4283,6 +4495,22 @@
 					"title": "Rolling Country, Lancaster County"
 				},
 				{
+					"clipId": "OLA227",
+					"title": "Unknown View, labelled as Valley Forge, but no known location"
+				},
+				{
+					"clipId": "OLA228",
+					"title": "Miss Flossie Evans, Wissahickon Drive"
+				},
+				{
+					"clipId": "OLA231",
+					"title": "Trip with Banson and Mr. Riley to Wissahickon"
+				},
+				{
+					"clipId": "OLA232",
+					"title": "Wissahickon in summer / Valley Green"
+				},
+				{
 					"clipId": "OLA33",
 					"title": "Grubb Road, Willistown"
 				},
@@ -4323,8 +4551,56 @@
 					"title": "Main Line Airport"
 				},
 				{
+					"clipId": "PA138",
+					"title": "Lancaster Avenue, Paoli"
+				},
+				{
+					"clipId": "PA139",
+					"title": "Lancaster Avenue, Paoli"
+				},
+				{
 					"clipId": "PA14",
 					"title": "Lincoln Highway, Paoli"
+				},
+				{
+					"clipId": "PA140",
+					"title": "Lancaster Avenue, Paoli"
+				},
+				{
+					"clipId": "PA141",
+					"title": "Lancaster Avenue, Paoli"
+				},
+				{
+					"clipId": "PA142",
+					"title": "Lancaster and S. Valley Road, Paoli"
+				},
+				{
+					"clipId": "PA144",
+					"title": "Lancaster and S. Valley Road, Paoli"
+				},
+				{
+					"clipId": "PA146",
+					"title": "Lancaster and S. Valley Road, Paoli"
+				},
+				{
+					"clipId": "PA173",
+					"title": "Paoli - looking towards 30 and 252 junction"
+				},
+				{
+					"clipId": "PA174",
+					"title": "Lancaster Avenue, Paoli"
+				},
+				{
+					"clipId": "PA181",
+					"title": "Lancaster Avenue, Paoli"
+				},
+				{
+					"clipId": "PA182",
+					"title": "Paoli Building site"
+				},
+				{
+					"clipId": "PA183",
+					"title": "Paoli Building site"
 				},
 				{
 					"clipId": "PA24",
@@ -4407,6 +4683,14 @@
 					"title": "Unknown Pond Location"
 				},
 				{
+					"clipId": "SCU08",
+					"title": "Schuylkill River"
+				},
+				{
+					"clipId": "SCU09",
+					"title": "Stereoscopic View of Schuylkill and Reading railroad at Valley Forge\r\n\r\nStereocard"
+				},
+				{
 					"clipId": "SCU4",
 					"title": "Site of Sullivan’s Bridge, Valley Forge"
 				},
@@ -4453,6 +4737,18 @@
 				{
 					"clipId": "SHA18",
 					"title": "Hawthorne view from house"
+				},
+				{
+					"clipId": "STR92",
+					"title": "Old Eagle and Upper Gulph Roads"
+				},
+				{
+					"clipId": "STR93",
+					"title": "Old Eagle and Upper Gulph Roads"
+				},
+				{
+					"clipId": "STR94",
+					"title": "Old Eagle and Upper Gulph Roads"
 				},
 				{
 					"clipId": "SVR01",
@@ -4627,6 +4923,26 @@
 					"title": "View of Valley Creek"
 				},
 				{
+					"clipId": "VC23",
+					"title": "Valley Creek"
+				},
+				{
+					"clipId": "VC26",
+					"title": "Valley Creek at Knox Covered Bridge"
+				},
+				{
+					"clipId": "VC27",
+					"title": "View up Valley Creek"
+				},
+				{
+					"clipId": "VC34",
+					"title": "Valley Creek"
+				},
+				{
+					"clipId": "VC35",
+					"title": "Valley Creek near Old Forge"
+				},
+				{
 					"clipId": "VCB07",
 					"title": "Valley Creek Bridge"
 				},
@@ -4636,6 +4952,14 @@
 				},
 				{
 					"clipId": "VFD18",
+					"title": "Valley Forge Dam"
+				},
+				{
+					"clipId": "VFD21",
+					"title": "Valley Forge Dam"
+				},
+				{
+					"clipId": "VFD22",
 					"title": "Valley Forge Dam"
 				},
 				{
@@ -4657,6 +4981,34 @@
 				{
 					"clipId": "VFP119",
 					"title": "Dogwoods at Valley Forge"
+				},
+				{
+					"clipId": "VFP147",
+					"title": "View of Washington’s Headquaters Parking Area"
+				},
+				{
+					"clipId": "VFP147b",
+					"title": "Back of VFP147"
+				},
+				{
+					"clipId": "VFP155",
+					"title": "Schuylkill at Valley Forge"
+				},
+				{
+					"clipId": "VFP156",
+					"title": "Schuylkill River"
+				},
+				{
+					"clipId": "VFP157",
+					"title": "View eastwards from Inner Line Drive"
+				},
+				{
+					"clipId": "VFP158",
+					"title": "Valley Forge Hills"
+				},
+				{
+					"clipId": "VFP220",
+					"title": "Continental Hospital Hut"
 				},
 				{
 					"clipId": "VFP41",
@@ -4739,6 +5091,26 @@
 					"title": "Town of Valley Forge, PA Washington’s Headquarters"
 				},
 				{
+					"clipId": "VFV23",
+					"title": "Outside Washingtons Headquarters"
+				},
+				{
+					"clipId": "VFV24",
+					"title": "Imported Forge"
+				},
+				{
+					"clipId": "VFV25",
+					"title": "Imported Forge"
+				},
+				{
+					"clipId": "VFV26",
+					"title": "Interior Imported Forge"
+				},
+				{
+					"clipId": "VFV27",
+					"title": "Valley Forge Village"
+				},
+				{
 					"clipId": "WAB05",
 					"title": "Waterloo Avenue, Berwyn"
 				},
@@ -4767,6 +5139,10 @@
 					"title": "Waterloo Road at Arlington Road (now Lancaster Avenue), Devon"
 				},
 				{
+					"clipId": "WRD11",
+					"title": "Waterloo Road, Devon"
+				},
+				{
 					"clipId": "WRD2",
 					"title": "North Waterloo Road looking south towards Devon Station"
 				},
@@ -4777,6 +5153,18 @@
 				{
 					"clipId": "WRD4",
 					"title": "Waterloo Road, Devon"
+				},
+				{
+					"clipId": "WSP06",
+					"title": "Washington’s Spring"
+				},
+				{
+					"clipId": "WSP07",
+					"title": "Washington’s Spring"
+				},
+				{
+					"clipId": "WSP12",
+					"title": "Washington Spring"
 				},
 				{
 					"clipId": "YOF20",
@@ -6519,6 +6907,10 @@
 					"title": "Corner of Lancaster and Bridge, Berwyn"
 				},
 				{
+					"clipId": "LAB89",
+					"title": "Berwyn - Lancaster and Cassatt Avenues, snow scene looking east"
+				},
+				{
 					"clipId": "MAL25",
 					"title": "Malvern Library"
 				},
@@ -6725,6 +7117,34 @@
 				{
 					"clipId": "PA55",
 					"title": "Lancaster Avenue in Paoli around 1935"
+				},
+				{
+					"clipId": "PA64",
+					"title": "Richard Nixon campaign rally at the old Paoli Shopping Center"
+				},
+				{
+					"clipId": "PA65",
+					"title": "Richard Nixon campaign rally at the old Paoli Shopping Center"
+				},
+				{
+					"clipId": "PA66",
+					"title": "Richard Nixon campaign rally at the old Paoli Shopping Center"
+				},
+				{
+					"clipId": "PA67",
+					"title": "Richard Nixon campaign rally at the old Paoli Shopping Center"
+				},
+				{
+					"clipId": "PA68",
+					"title": "Richard Nixon campaign rally at the old Paoli Shopping Center"
+				},
+				{
+					"clipId": "PA69",
+					"title": "Richard Nixon campaign rally at the old Paoli Shopping Center"
+				},
+				{
+					"clipId": "PA70",
+					"title": "Richard Nixon campaign rally at the old Paoli Shopping Center"
 				},
 				{
 					"clipId": "PEO78",
@@ -6987,6 +7407,10 @@
 					"title": "Back of VFD16"
 				},
 				{
+					"clipId": "VFD20",
+					"title": "Valley Forge Mill Dam"
+				},
+				{
 					"clipId": "VFD8",
 					"title": "Valley Forge c. 1790 dam"
 				},
@@ -7107,6 +7531,14 @@
 					"title": "Back of WSP04"
 				},
 				{
+					"clipId": "WSP09",
+					"title": "Washingtons Spring"
+				},
+				{
+					"clipId": "WSP11",
+					"title": "Washingtons Spring"
+				},
+				{
 					"clipId": "YSP01",
 					"title": "Iron Spring Gazebo, Yellow Springs Village"
 				},
@@ -7187,6 +7619,10 @@
 					"title": "Covered Wagon Ride"
 				},
 				{
+					"clipId": "DHS150",
+					"title": "Devon Horse Show"
+				},
+				{
 					"clipId": "PEO50",
 					"title": "Baptist Brotherhood Baseball Team"
 				},
@@ -7205,6 +7641,26 @@
 				{
 					"clipId": "TEH53",
 					"title": "Girls Basketball Team, 1920 - 21, TE High School"
+				},
+				{
+					"clipId": "TEH78",
+					"title": "Berwyn Baseball Club"
+				},
+				{
+					"clipId": "TEH79",
+					"title": "Berwyn Baseball Club"
+				},
+				{
+					"clipId": "TEH80",
+					"title": "Berwyn Baseball Club"
+				},
+				{
+					"clipId": "TEH81",
+					"title": "Berwyn Baseball Club"
+				},
+				{
+					"clipId": "TEH82",
+					"title": "Berwyn Baseball Club"
 				},
 				{
 					"clipId": "UMY01",
@@ -7561,8 +8017,68 @@
 					"title": "Berwyn Fire Company"
 				},
 				{
+					"clipId": "BFC14",
+					"title": "Berwyn Fire Company"
+				},
+				{
+					"clipId": "BFC15",
+					"title": "Berwyn Fire Company"
+				},
+				{
+					"clipId": "BFC16",
+					"title": "Berwyn Fire Company"
+				},
+				{
+					"clipId": "BFC18",
+					"title": "Berwyn Fire Company Banner"
+				},
+				{
+					"clipId": "BFC19",
+					"title": "Berwyn Fire Company Station and Equipment"
+				},
+				{
 					"clipId": "BFC2",
 					"title": "Berwyn Fire Company"
+				},
+				{
+					"clipId": "BFC20",
+					"title": "Berwyn Fire Company Ambulance"
+				},
+				{
+					"clipId": "BFC21",
+					"title": "Ladies Auxiliary, Berwyn Fire Company"
+				},
+				{
+					"clipId": "BFC22",
+					"title": "Berwyn Fire Company Equipment, 1908"
+				},
+				{
+					"clipId": "BFC23",
+					"title": "Berwyn Fire Company 1955 Ladder Truck"
+				},
+				{
+					"clipId": "BFC24",
+					"title": "Berwyn Fire Company Active Force"
+				},
+				{
+					"clipId": "BFC25",
+					"title": "Berwyn Fire Company Ambulance Crews"
+				},
+				{
+					"clipId": "BFC26",
+					"title": "Berwyn Fire Company Band, 1908"
+				},
+				{
+					"clipId": "BFC27",
+					"title": "Berwyn Fire Company Board of Directors"
+				},
+				{
+					"clipId": "BFC28",
+					"title": "Berwyn Fire Company Breaking Ground, 1929"
+				},
+				{
+					"clipId": "BFC29",
+					"title": "Berwyn Fire Company Chiefs"
 				},
 				{
 					"clipId": "BFC2b",
@@ -7571,6 +8087,34 @@
 				{
 					"clipId": "BFC3",
 					"title": "Berwyn Fire House"
+				},
+				{
+					"clipId": "BFC30",
+					"title": "Upper Main Line Fire Board Dispatchers"
+				},
+				{
+					"clipId": "BFC31",
+					"title": "Berwyn Fire Company Elected Officers"
+				},
+				{
+					"clipId": "BFC32",
+					"title": "Berwyn Fire Company Engineers"
+				},
+				{
+					"clipId": "BFC33",
+					"title": "Berwyn Fire Company Fire Police"
+				},
+				{
+					"clipId": "BFC34",
+					"title": "Fire Station, Berwyn Fire Company"
+				},
+				{
+					"clipId": "BFC35",
+					"title": "LaFrance Pumper, 1917"
+				},
+				{
+					"clipId": "BFC36",
+					"title": "Waterous Pumper, 1906"
 				},
 				{
 					"clipId": "BFC4",
@@ -7583,6 +8127,22 @@
 				{
 					"clipId": "BOC02",
 					"title": "Bocce Club, Lehigh Avenue, Devon"
+				},
+				{
+					"clipId": "CUR62",
+					"title": "Continental 1/6 Dollar note, 1776"
+				},
+				{
+					"clipId": "CUR63",
+					"title": "New Jersey 1 cent coin, 1786"
+				},
+				{
+					"clipId": "CUR64",
+					"title": "Piece of Eight, 19th century"
+				},
+				{
+					"clipId": "CUR65",
+					"title": "Spanish Dollar Coin, 1762"
 				},
 				{
 					"clipId": "DEI34",
@@ -7637,6 +8197,14 @@
 					"title": "Cathcart House"
 				},
 				{
+					"clipId": "ECH05",
+					"title": "Cathcart Home"
+				},
+				{
+					"clipId": "ECH06",
+					"title": "Eliza Cathcart home"
+				},
+				{
 					"clipId": "ELI01",
 					"title": "Reading Room, Lancaster Pike & Waterloo Ave. Berwyn"
 				},
@@ -7689,8 +8257,68 @@
 					"title": "Hilltop Park dedication"
 				},
 				{
+					"clipId": "FFO01",
+					"title": "Freedoms Foundation"
+				},
+				{
+					"clipId": "LAB100",
+					"title": "Clean Up, Lancaster Avenue, Berwyn"
+				},
+				{
+					"clipId": "LAB101",
+					"title": "Clean Up, Lancaster Avenue, Berwyn"
+				},
+				{
+					"clipId": "LAB102",
+					"title": "Clean Up, Lancaster Avenue, Berwyn"
+				},
+				{
+					"clipId": "LAB103",
+					"title": "Clean Up, Lancaster Avenue, Berwyn"
+				},
+				{
+					"clipId": "LAB104",
+					"title": "Clean Up, Lancaster Avenue, Berwyn"
+				},
+				{
 					"clipId": "LAB88",
 					"title": "St Jude’s Thrift Shop"
+				},
+				{
+					"clipId": "LAB91",
+					"title": "Clean Up, Lancaster Avenue, Berwyn"
+				},
+				{
+					"clipId": "LAB92",
+					"title": "Clean Up, Lancaster Avenue, Berwyn"
+				},
+				{
+					"clipId": "LAB93",
+					"title": "Clean Up, Lancaster Avenue, Berwyn"
+				},
+				{
+					"clipId": "LAB94",
+					"title": "Clean Up, Lancaster Avenue, Berwyn"
+				},
+				{
+					"clipId": "LAB95",
+					"title": "Clean Up, Lancaster Avenue, Berwyn"
+				},
+				{
+					"clipId": "LAB96",
+					"title": "Clean Up, Lancaster Avenue, Berwyn"
+				},
+				{
+					"clipId": "LAB97",
+					"title": "Clean Up, Lancaster Avenue, Berwyn"
+				},
+				{
+					"clipId": "LAB98",
+					"title": "Clean Up, Lancaster Avenue, Berwyn"
+				},
+				{
+					"clipId": "LAB99",
+					"title": "Clean Up, Lancaster Avenue, Berwyn"
 				},
 				{
 					"clipId": "MJT04",
@@ -7769,6 +8397,18 @@
 					"title": "Strafford Fife & Drum Corps"
 				},
 				{
+					"clipId": "PA175",
+					"title": "Construction of Paoli Library building"
+				},
+				{
+					"clipId": "PA177",
+					"title": "Construction of Paoli Library building"
+				},
+				{
+					"clipId": "PA179",
+					"title": "Construction of Paoli Library building"
+				},
+				{
 					"clipId": "PA33",
 					"title": "Paoli Fire Company"
 				},
@@ -7807,6 +8447,10 @@
 				{
 					"clipId": "PLI01",
 					"title": "Paoli Library"
+				},
+				{
+					"clipId": "PLI03",
+					"title": "Old library building seen from the back of the bank."
 				},
 				{
 					"clipId": "RCR05",
@@ -8019,6 +8663,14 @@
 					"title": "Church Ave, south from Lancaster Ave, Berwyn,"
 				},
 				{
+					"clipId": "BCA02",
+					"title": "Church Avenue, Berwyn"
+				},
+				{
+					"clipId": "BCA03",
+					"title": "Church Avenue, Berwyn"
+				},
+				{
 					"clipId": "BE182",
 					"title": "Upper Bridge, Berwyn"
 				},
@@ -8033,6 +8685,10 @@
 				{
 					"clipId": "BE186",
 					"title": "Kromer Road, Wayne"
+				},
+				{
+					"clipId": "BE226",
+					"title": "Warren Avenue, Berwyn"
 				},
 				{
 					"clipId": "BE87",
@@ -8059,6 +8715,26 @@
 					"title": "Cedar Hollow Bridge over Valley Creek, #171; looking north over Valley Creek"
 				},
 				{
+					"clipId": "CAA08",
+					"title": "Cassatt Avenue Bridge, Berwyn"
+				},
+				{
+					"clipId": "CAA09",
+					"title": "Cassatt Avenue Bridge, Berwyn"
+				},
+				{
+					"clipId": "CAA10",
+					"title": "Cassatt Avenue Bridge, Berwyn"
+				},
+				{
+					"clipId": "CAA11",
+					"title": "Cassatt Avenue Bridge, Berwyn"
+				},
+				{
+					"clipId": "CAA12",
+					"title": "Cassatt Avenue Bridge, Berwyn"
+				},
+				{
 					"clipId": "CAA3",
 					"title": "Cassatt Avenue, Berwyn"
 				},
@@ -8069,6 +8745,10 @@
 				{
 					"clipId": "DEV25",
 					"title": "Lancaster Avenue, Devon"
+				},
+				{
+					"clipId": "DEV30",
+					"title": "A view on Lancaster Pike towards the Wynburne Inn"
 				},
 				{
 					"clipId": "EW03",
@@ -8155,6 +8835,46 @@
 					"title": "Knox’s Covered Bridge"
 				},
 				{
+					"clipId": "KCB53",
+					"title": "Knox Covered Bridge"
+				},
+				{
+					"clipId": "KCB54",
+					"title": "Knox Covered Bridge"
+				},
+				{
+					"clipId": "KCB55",
+					"title": "Knox Covered Bridge"
+				},
+				{
+					"clipId": "KCB56",
+					"title": "Knox Covered Bridge"
+				},
+				{
+					"clipId": "KCB57",
+					"title": "Knox Covered Bridge"
+				},
+				{
+					"clipId": "KCB58",
+					"title": "Knox Covered Bridge"
+				},
+				{
+					"clipId": "KCB59",
+					"title": "Knox Covered Bridge"
+				},
+				{
+					"clipId": "KCB60",
+					"title": "Knox Covered Bridge"
+				},
+				{
+					"clipId": "KCB61",
+					"title": "Knox Covered Bridge"
+				},
+				{
+					"clipId": "KOP04",
+					"title": "King of Prussia Road, Radnor"
+				},
+				{
 					"clipId": "LAB10",
 					"title": "Lancaster Pike toll gate, Berwyn, 1887"
 				},
@@ -8212,6 +8932,14 @@
 				},
 				{
 					"clipId": "MAB03",
+					"title": "Main Avenue, Berwyn"
+				},
+				{
+					"clipId": "MAB04",
+					"title": "Main Avenue, Berwyn"
+				},
+				{
+					"clipId": "MAB05",
 					"title": "Main Avenue, Berwyn"
 				},
 				{
@@ -8303,12 +9031,64 @@
 					"title": "Witmer’s Bridge"
 				},
 				{
+					"clipId": "OLA229",
+					"title": "Toll Gate between Gardenville and Point Pleasant"
+				},
+				{
 					"clipId": "OLA66",
 					"title": "Covered Bridge"
 				},
 				{
 					"clipId": "OLA67",
 					"title": "Covered Bridge"
+				},
+				{
+					"clipId": "PA127",
+					"title": "Traffic Accident Routes 30 and 252"
+				},
+				{
+					"clipId": "PA128",
+					"title": "Traffic Accident routes 30 and 252"
+				},
+				{
+					"clipId": "PA130",
+					"title": "Traffic Accident routes 30 and 252"
+				},
+				{
+					"clipId": "PA131",
+					"title": "Traffic Accident routes 30 and 252"
+				},
+				{
+					"clipId": "PA132",
+					"title": "Traffic Accident routes 30 and 252"
+				},
+				{
+					"clipId": "PA133",
+					"title": "Traffic Accident routes 30 and 252"
+				},
+				{
+					"clipId": "PA134",
+					"title": "Traffic Accident routes 30 and 252"
+				},
+				{
+					"clipId": "PA135",
+					"title": "Traffic Accident routes 30 and 252"
+				},
+				{
+					"clipId": "PA136",
+					"title": "Traffic Accident routes 30 and 252"
+				},
+				{
+					"clipId": "PA137",
+					"title": "Traffic Accident routes 30 and 252"
+				},
+				{
+					"clipId": "PA184",
+					"title": "South Valley Road, Paoli looking north"
+				},
+				{
+					"clipId": "PA185",
+					"title": "South Valley Road, Paoli looking north"
 				},
 				{
 					"clipId": "PA29",
@@ -8345,6 +9125,10 @@
 				{
 					"clipId": "PTP02b",
 					"title": "Back of PTP02"
+				},
+				{
+					"clipId": "PTP04",
+					"title": "Valley Forge Toll Gate, PA Turnpike"
 				},
 				{
 					"clipId": "RAD07",
@@ -8419,12 +9203,24 @@
 					"title": "Back of VC16"
 				},
 				{
+					"clipId": "VC28",
+					"title": "Phoenixville Road bridge over Valley Creek"
+				},
+				{
+					"clipId": "VC29",
+					"title": "Phoenixville Road bridge over Valley Creek"
+				},
+				{
 					"clipId": "VFP101",
 					"title": "Valley Forge Park Drive (parallel with the entrenchments)"
 				},
 				{
 					"clipId": "VFP140",
 					"title": "On the Inner Line Boulevard"
+				},
+				{
+					"clipId": "VFP148",
+					"title": "Boulevard along entrenchments at Valley Forge"
 				},
 				{
 					"clipId": "VFP44",
@@ -8455,6 +9251,10 @@
 					"title": "Back of VFP89"
 				},
 				{
+					"clipId": "VFV30",
+					"title": "State Road crossing Valley Creek"
+				},
+				{
 					"clipId": "WAB04",
 					"title": "Waterloo Avenue"
 				},
@@ -8481,6 +9281,10 @@
 				{
 					"clipId": "WRD10",
 					"title": "Waterloo Road, Devon"
+				},
+				{
+					"clipId": "WRD12",
+					"title": "Waterloo Road and Railroad Bridge, Devon, PA"
 				},
 				{
 					"clipId": "YSR01",
@@ -8599,6 +9403,10 @@
 			"keyword": "building",
 			"rows": [
 				{
+					"clipId": "RWL01",
+					"title": "Robinson-Welburn Lodge"
+				},
+				{
 					"clipId": "TRE14",
 					"title": "Tredyffrin township building, Old Lancaster Road"
 				}
@@ -8661,6 +9469,434 @@
 				{
 					"clipId": "GT02",
 					"title": "Warner Residence"
+				}
+			]
+		},
+		"subject:organization": {
+			"kind": "subject",
+			"keyword": "Organization",
+			"rows": [
+				{
+					"clipId": "BFC37",
+					"title": "Berwyn Fire Company Centennial"
+				}
+			]
+		},
+		"subject:places": {
+			"kind": "subject",
+			"keyword": "Places",
+			"rows": [
+				{
+					"clipId": "CHE61",
+					"title": "Chesterbrook Farm"
+				},
+				{
+					"clipId": "CHE62",
+					"title": "Chesterbrook Farm"
+				},
+				{
+					"clipId": "CHE63",
+					"title": "Chesterbrook Farm"
+				},
+				{
+					"clipId": "CHE64",
+					"title": "Chesterbrook Farm"
+				}
+			]
+		},
+		"subject:organisation": {
+			"kind": "subject",
+			"keyword": "Organisation",
+			"rows": [
+				{
+					"clipId": "BFC38",
+					"title": "Berwyn Fire Company Centennial"
+				}
+			]
+		},
+		"subject:bridges": {
+			"kind": "subject",
+			"keyword": "Bridges",
+			"rows": [
+				{
+					"clipId": "KCB62",
+					"title": "Knox Covered Bridge damaged by tree"
+				},
+				{
+					"clipId": "KCB63",
+					"title": "Knox Covered Bridge damaged by tree"
+				}
+			]
+		},
+		"subject:berwyn": {
+			"kind": "subject",
+			"keyword": "Berwyn",
+			"rows": [
+				{
+					"clipId": "BE228",
+					"title": "Lancaster Pike, Berwyn"
+				},
+				{
+					"clipId": "BE229",
+					"title": "A view of North Berwyn from Berwyn Station"
+				},
+				{
+					"clipId": "BE230",
+					"title": "Berwyn, PA."
+				},
+				{
+					"clipId": "RBE49",
+					"title": "A view looking east from Berwyn Station Bridge"
+				},
+				{
+					"clipId": "RBE50",
+					"title": "View of the 8-30 train leaving Berwyn"
+				},
+				{
+					"clipId": "RBE51",
+					"title": "MP-54s approaches WB into Berwyn"
+				}
+			]
+		},
+		"subject:devon": {
+			"kind": "subject",
+			"keyword": "Devon",
+			"rows": [
+				{
+					"clipId": "DEV31",
+					"title": "Devon Boulevard Snow Trotters"
+				},
+				{
+					"clipId": "DEV32",
+					"title": "Devon Boulevard Snow Trotters"
+				},
+				{
+					"clipId": "RDE17",
+					"title": "Railroad Crash near Devon Station"
+				}
+			]
+		},
+		"subject:paoli": {
+			"kind": "subject",
+			"keyword": "Paoli",
+			"rows": [
+				{
+					"clipId": "PA187",
+					"title": "Paoli News Agency"
+				},
+				{
+					"clipId": "PA188",
+					"title": "Front of Paoli Hardware Store"
+				},
+				{
+					"clipId": "PA195",
+					"title": "Paoli Plaza"
+				},
+				{
+					"clipId": "PA196",
+					"title": "Paoli Station Parking Area and Lancaster Avenue"
+				},
+				{
+					"clipId": "PA197",
+					"title": "Paoli Plaza"
+				},
+				{
+					"clipId": "PA198",
+					"title": "Paoli Station area"
+				},
+				{
+					"clipId": "PA199",
+					"title": "Paoli Plaza"
+				},
+				{
+					"clipId": "PA200",
+					"title": "Paoli Station Parking Area"
+				},
+				{
+					"clipId": "PA201",
+					"title": "Paoli Plaza"
+				},
+				{
+					"clipId": "PA202",
+					"title": "Photographers, Lancaster Avenue, Paoli"
+				},
+				{
+					"clipId": "PA203",
+					"title": "Cleared site, Photographer"
+				}
+			]
+		},
+		"subject:paoli hardware store": {
+			"kind": "subject",
+			"keyword": "Paoli Hardware Store",
+			"rows": [
+				{
+					"clipId": "PA189",
+					"title": "Paoli Hardware Store - Greg and Steve"
+				},
+				{
+					"clipId": "PA190",
+					"title": "Paoli Hardware Store - everything must go"
+				},
+				{
+					"clipId": "PA191",
+					"title": "Paoli Hardware Store - all sales final"
+				},
+				{
+					"clipId": "PA192",
+					"title": "Paoli Hardware Store - 1946 Painting"
+				},
+				{
+					"clipId": "PA193",
+					"title": "Paoli Hardware Store - Greg"
+				}
+			]
+		},
+		"subject:gravestone": {
+			"kind": "subject",
+			"keyword": "Gravestone",
+			"rows": [
+				{
+					"clipId": "PEO146",
+					"title": "William Keeley Acker Gravestone"
+				}
+			]
+		},
+		"subject:studebaker event": {
+			"kind": "subject",
+			"keyword": "Studebaker event",
+			"rows": [
+				{
+					"clipId": "PEO147",
+					"title": "Studebaker event"
+				},
+				{
+					"clipId": "PEO148",
+					"title": "Studebaker event"
+				},
+				{
+					"clipId": "PEO149",
+					"title": "Studebaker event"
+				},
+				{
+					"clipId": "PEO150",
+					"title": "Studebaker event"
+				},
+				{
+					"clipId": "PEO151",
+					"title": "Studebaker event"
+				}
+			]
+		},
+		"subject:pennokla farm": {
+			"kind": "subject",
+			"keyword": "Pennokla Farm",
+			"rows": [
+				{
+					"clipId": "POK13",
+					"title": "Pennokla Farm"
+				},
+				{
+					"clipId": "POK14",
+					"title": "Pennokla Farm"
+				}
+			]
+		},
+		"subject:quaker trailer company": {
+			"kind": "subject",
+			"keyword": "Quaker Trailer Company",
+			"rows": [
+				{
+					"clipId": "QTC01",
+					"title": "Quaker Trailer Company -Display Room"
+				},
+				{
+					"clipId": "QTC02",
+					"title": "Quaker Trailer Company -Display Room with Driveway"
+				},
+				{
+					"clipId": "QTC03",
+					"title": "Quaker Trailer Company - Office"
+				},
+				{
+					"clipId": "QTC04",
+					"title": "Quaker Trailer, Quaker Trailer Company"
+				},
+				{
+					"clipId": "QTC05",
+					"title": "Quaker Trailer Company Display Room"
+				},
+				{
+					"clipId": "QTC06",
+					"title": "Quaker Trailer Company"
+				},
+				{
+					"clipId": "QTC07",
+					"title": "Quaker Trailer, Quaker Trailer Company"
+				},
+				{
+					"clipId": "QTC08",
+					"title": "Quaker Trailer with Possible Robert M. Rakestraw"
+				}
+			]
+		},
+		"township:schuylkill": {
+			"kind": "township",
+			"keyword": "Schuylkill",
+			"rows": [
+				{
+					"clipId": "SCU10",
+					"title": "Catfish Island, Schuylkill aerial view"
+				},
+				{
+					"clipId": "SCU11",
+					"title": "Schuylkill and Catfish Island"
+				},
+				{
+					"clipId": "SCU12",
+					"title": "Whistle Point Marker, VFNHP"
+				},
+				{
+					"clipId": "SCU13",
+					"title": "Whistle Point Marker, VFNHP"
+				},
+				{
+					"clipId": "SCU14",
+					"title": "Mile Markers, Schuylkill River"
+				},
+				{
+					"clipId": "SCU15",
+					"title": "Abutments, Schuylkill River"
+				},
+				{
+					"clipId": "SCU16",
+					"title": "Abutments, Schuylkill River"
+				},
+				{
+					"clipId": "SCU17",
+					"title": "Abutments, Schuylkill River"
+				},
+				{
+					"clipId": "SCU18",
+					"title": "Abutments, Schuylkill River"
+				},
+				{
+					"clipId": "SCU19",
+					"title": "Creek, Schuylkill River"
+				},
+				{
+					"clipId": "SCU20",
+					"title": "Schuylkill River Embankment"
+				},
+				{
+					"clipId": "SCU21",
+					"title": "Embankment, Schuylkill River, VFNHP"
+				},
+				{
+					"clipId": "SCU22",
+					"title": "Embankment, Schuylkill River"
+				},
+				{
+					"clipId": "SCU23",
+					"title": "Mile Markers, Schuylkill Division, PRR"
+				}
+			]
+		},
+		"subject:valley forge": {
+			"kind": "subject",
+			"keyword": "Valley Forge",
+			"rows": [
+				{
+					"clipId": "VFP228",
+					"title": "Valley Forge Village marker"
+				},
+				{
+					"clipId": "VFP229",
+					"title": "Valley Forge Village marker"
+				}
+			]
+		},
+		"subject:school certificate": {
+			"kind": "subject",
+			"keyword": "School certificate",
+			"rows": [
+				{
+					"clipId": "ETS14",
+					"title": "Easttown School Certificate"
+				}
+			]
+		},
+		"subject:mainline airport": {
+			"kind": "subject",
+			"keyword": "Mainline Airport",
+			"rows": [
+				{
+					"clipId": "OPA28",
+					"title": "Mainline / Paoli Airport - Tom Skilton"
+				},
+				{
+					"clipId": "OPA29",
+					"title": "Mainline Airport, summer of 1940"
+				},
+				{
+					"clipId": "OPA30",
+					"title": "Morris and Devaney with PhtRyanSTA"
+				},
+				{
+					"clipId": "OPA31",
+					"title": "Morris practices pylon turns"
+				},
+				{
+					"clipId": "OPA32",
+					"title": "North American BT9"
+				}
+			]
+		},
+		"subject:ryan sca": {
+			"kind": "subject",
+			"keyword": "Ryan SCA",
+			"rows": [
+				{
+					"clipId": "OPA33",
+					"title": "Ryan SCA, Mainline Airport"
+				}
+			]
+		},
+		"subject:lancaster pike": {
+			"kind": "subject",
+			"keyword": "Lancaster Pike",
+			"rows": [
+				{
+					"clipId": "PA204",
+					"title": "Lancaster Pike in Paoli looking west"
+				}
+			]
+		},
+		"subject:mary mchenry": {
+			"kind": "subject",
+			"keyword": "Mary McHenry",
+			"rows": [
+				{
+					"clipId": "PEO152",
+					"title": "Mary McHenry engraving"
+				},
+				{
+					"clipId": "PEO153",
+					"title": "Mary McHenry"
+				},
+				{
+					"clipId": "PEO153B",
+					"title": "Back of PEO153"
+				}
+			]
+		},
+		"subject:devault": {
+			"kind": "subject",
+			"keyword": "Devault",
+			"rows": [
+				{
+					"clipId": "RML40",
+					"title": "Devault Station, PRR"
 				}
 			]
 		}
@@ -8736,6 +9972,26 @@
 				"title": "Back of BKH21"
 			},
 			{
+				"clipId": "BKH22",
+				"title": "Washington Inn"
+			},
+			{
+				"clipId": "BKH30",
+				"title": "Washington Inn, dining porch"
+			},
+			{
+				"clipId": "BKH31",
+				"title": "Washington Inn"
+			},
+			{
+				"clipId": "BKH32",
+				"title": "Washington Inn"
+			},
+			{
+				"clipId": "BKH33",
+				"title": "Washington Inn"
+			},
+			{
 				"clipId": "COS01",
 				"title": "Colonial Springs Logo"
 			},
@@ -8776,6 +10032,10 @@
 				"title": "Tredyffrin Easttown History Club Members"
 			},
 			{
+				"clipId": "FFO01",
+				"title": "Freedoms Foundation"
+			},
+			{
 				"clipId": "FW1",
 				"title": "View from Fort Washington"
 			},
@@ -8785,6 +10045,22 @@
 			},
 			{
 				"clipId": "FW11",
+				"title": "Fort Washington"
+			},
+			{
+				"clipId": "FW13",
+				"title": "Fort Washington"
+			},
+			{
+				"clipId": "FW13b",
+				"title": "Back of FW13"
+			},
+			{
+				"clipId": "FW14",
+				"title": "Fort Washington"
+			},
+			{
+				"clipId": "FW15",
 				"title": "Fort Washington"
 			},
 			{
@@ -8832,8 +10108,44 @@
 				"title": "Old Covered Bridge"
 			},
 			{
+				"clipId": "KCB53",
+				"title": "Knox Covered Bridge"
+			},
+			{
+				"clipId": "KCB54",
+				"title": "Knox Covered Bridge"
+			},
+			{
+				"clipId": "KCB55",
+				"title": "Knox Covered Bridge"
+			},
+			{
+				"clipId": "KCB56",
+				"title": "Knox Covered Bridge"
+			},
+			{
+				"clipId": "KCB57",
+				"title": "Knox Covered Bridge"
+			},
+			{
+				"clipId": "KCB58",
+				"title": "Knox Covered Bridge"
+			},
+			{
+				"clipId": "KCB59",
+				"title": "Knox Covered Bridge"
+			},
+			{
 				"clipId": "KCB6",
 				"title": "Knox Covered Bridge"
+			},
+			{
+				"clipId": "KCB62",
+				"title": "Knox Covered Bridge damaged by tree"
+			},
+			{
+				"clipId": "KCB63",
+				"title": "Knox Covered Bridge damaged by tree"
 			},
 			{
 				"clipId": "KCB7",
@@ -9036,6 +10348,10 @@
 				"title": "Mt. Joy Observation Tower"
 			},
 			{
+				"clipId": "MJT07",
+				"title": "Mount Joy Observation Tower"
+			},
+			{
 				"clipId": "OGQ1",
 				"title": "Varnum's Quarters"
 			},
@@ -9064,8 +10380,20 @@
 				"title": "Ruth Lareaux & Dorothy Reed"
 			},
 			{
+				"clipId": "POS07",
+				"title": "Patriotic Order, Sons of America Building"
+			},
+			{
 				"clipId": "PVF1",
 				"title": "State Park Employees"
+			},
+			{
+				"clipId": "SCU08",
+				"title": "Schuylkill River"
+			},
+			{
+				"clipId": "SCU09",
+				"title": "Stereoscopic View of Schuylkill and Reading railroad at Valley Forge\r\n\r\nStereocard"
 			},
 			{
 				"clipId": "STI1",
@@ -9196,6 +10524,14 @@
 				"title": "Varnum’s Quarters"
 			},
 			{
+				"clipId": "VAQ15",
+				"title": "Varnum’s Quarters"
+			},
+			{
+				"clipId": "VAQ15b",
+				"title": "Back of VAQ15"
+			},
+			{
 				"clipId": "VAQ3",
 				"title": "Varnum’s Quarters"
 			},
@@ -9214,6 +10550,30 @@
 			{
 				"clipId": "VC22",
 				"title": "View of Valley Creek"
+			},
+			{
+				"clipId": "VC23",
+				"title": "Valley Creek"
+			},
+			{
+				"clipId": "VC26",
+				"title": "Valley Creek at Knox Covered Bridge"
+			},
+			{
+				"clipId": "VC27",
+				"title": "View up Valley Creek"
+			},
+			{
+				"clipId": "VC28",
+				"title": "Phoenixville Road bridge over Valley Creek"
+			},
+			{
+				"clipId": "VC29",
+				"title": "Phoenixville Road bridge over Valley Creek"
+			},
+			{
+				"clipId": "VC35",
+				"title": "Valley Creek near Old Forge"
 			},
 			{
 				"clipId": "VCB6",
@@ -9246,6 +10606,18 @@
 			{
 				"clipId": "VFD19",
 				"title": "Valley Creek Dam, constructed c. 1930"
+			},
+			{
+				"clipId": "VFD20",
+				"title": "Valley Forge Mill Dam"
+			},
+			{
+				"clipId": "VFD21",
+				"title": "Valley Forge Dam"
+			},
+			{
+				"clipId": "VFD22",
+				"title": "Valley Forge Dam"
 			},
 			{
 				"clipId": "VFD8",
@@ -9440,8 +10812,100 @@
 				"title": "Huntingdon’s Redoubt"
 			},
 			{
+				"clipId": "VFP146",
+				"title": "Huntingdon’s Redoubt"
+			},
+			{
+				"clipId": "VFP147",
+				"title": "View of Washington’s Headquaters Parking Area"
+			},
+			{
+				"clipId": "VFP147b",
+				"title": "Back of VFP147"
+			},
+			{
+				"clipId": "VFP148",
+				"title": "Boulevard along entrenchments at Valley Forge"
+			},
+			{
+				"clipId": "VFP150",
+				"title": "Fort Huntingdon"
+			},
+			{
+				"clipId": "VFP151",
+				"title": "Grand Review at Valley Forge"
+			},
+			{
+				"clipId": "VFP152",
+				"title": "The Grand Review at Valley Forge"
+			},
+			{
+				"clipId": "VFP153",
+				"title": "Ruins along Valley Creek"
+			},
+			{
+				"clipId": "VFP154",
+				"title": "Waterman’s Monument"
+			},
+			{
+				"clipId": "VFP155",
+				"title": "Schuylkill at Valley Forge"
+			},
+			{
+				"clipId": "VFP156",
+				"title": "Schuylkill River"
+			},
+			{
+				"clipId": "VFP157",
+				"title": "View eastwards from Inner Line Drive"
+			},
+			{
+				"clipId": "VFP158",
+				"title": "Valley Forge Hills"
+			},
+			{
 				"clipId": "VFP2",
 				"title": "Rifle Pit, Valley Forge National Historical Park"
+			},
+			{
+				"clipId": "VFP220",
+				"title": "Continental Hospital Hut"
+			},
+			{
+				"clipId": "VFP221",
+				"title": "Washington's Marquee"
+			},
+			{
+				"clipId": "VFP222",
+				"title": "Old Camp School House"
+			},
+			{
+				"clipId": "VFP223",
+				"title": "Continental Army Hut"
+			},
+			{
+				"clipId": "VFP224",
+				"title": "Continental Hospital Hut"
+			},
+			{
+				"clipId": "VFP225",
+				"title": "Line of Entrenchments"
+			},
+			{
+				"clipId": "VFP226",
+				"title": "Massachusetts Monument"
+			},
+			{
+				"clipId": "VFP227",
+				"title": "Pennsylvania Columns"
+			},
+			{
+				"clipId": "VFP228",
+				"title": "Valley Forge Village marker"
+			},
+			{
+				"clipId": "VFP229",
+				"title": "Valley Forge Village marker"
 			},
 			{
 				"clipId": "VFP3",
@@ -9512,7 +10976,35 @@
 				"title": "Valley Forge Quarry"
 			},
 			{
+				"clipId": "VFS05",
+				"title": "Valley Forge Station"
+			},
+			{
+				"clipId": "VFS06",
+				"title": "Valley Forge Station"
+			},
+			{
+				"clipId": "VFS08",
+				"title": "Reading Depot at Valley Forge"
+			},
+			{
+				"clipId": "VFS09",
+				"title": "Railroad at Valley Forge"
+			},
+			{
 				"clipId": "VFS1",
+				"title": "Valley Forge Station"
+			},
+			{
+				"clipId": "VFS10",
+				"title": "Valley Forge Station"
+			},
+			{
+				"clipId": "VFS11",
+				"title": "Valley Forge Station"
+			},
+			{
+				"clipId": "VFS12",
 				"title": "Valley Forge Station"
 			},
 			{
@@ -9538,6 +11030,38 @@
 			{
 				"clipId": "VFV22",
 				"title": "Valley Forge Village, looking from the east"
+			},
+			{
+				"clipId": "VFV23",
+				"title": "Outside Washingtons Headquarters"
+			},
+			{
+				"clipId": "VFV24",
+				"title": "Imported Forge"
+			},
+			{
+				"clipId": "VFV25",
+				"title": "Imported Forge"
+			},
+			{
+				"clipId": "VFV26",
+				"title": "Interior Imported Forge"
+			},
+			{
+				"clipId": "VFV27",
+				"title": "Valley Forge Village"
+			},
+			{
+				"clipId": "VFV28",
+				"title": "Valley Forge houses"
+			},
+			{
+				"clipId": "VFV29",
+				"title": "Imported Forge"
+			},
+			{
+				"clipId": "VFV30",
+				"title": "State Road crossing Valley Creek"
 			},
 			{
 				"clipId": "VFV7",
@@ -9696,12 +11220,80 @@
 				"title": "Back of WHQ68"
 			},
 			{
+				"clipId": "WHQ69",
+				"title": "Washington’s Headquarters"
+			},
+			{
+				"clipId": "WHQ70",
+				"title": "Washington’s Headquarters"
+			},
+			{
+				"clipId": "WHQ71",
+				"title": "Washington’s Headquarters"
+			},
+			{
+				"clipId": "WHQ72",
+				"title": "Washington’s Headquarters"
+			},
+			{
+				"clipId": "WHQ73",
+				"title": "Washington’s Headquarters"
+			},
+			{
+				"clipId": "WHQ74",
+				"title": "Washington’s Headquarters"
+			},
+			{
+				"clipId": "WHQ75",
+				"title": "Washington’s Headquarters"
+			},
+			{
+				"clipId": "WHQ76",
+				"title": "Washington’s Headquarters"
+			},
+			{
+				"clipId": "WHQ77",
+				"title": "Washington’s Headquarters"
+			},
+			{
 				"clipId": "WHQ8",
 				"title": "Washington’s Headquarters"
 			},
 			{
+				"clipId": "WHQ80",
+				"title": "Washington's Headquarters"
+			},
+			{
+				"clipId": "WHQ81",
+				"title": "Washington's Headquarters"
+			},
+			{
+				"clipId": "WHQ82",
+				"title": "Washington's Headquarters"
+			},
+			{
 				"clipId": "WSP05",
 				"title": "Washington’s Spring"
+			},
+			{
+				"clipId": "WSP06",
+				"title": "Washington’s Spring"
+			},
+			{
+				"clipId": "WSP07",
+				"title": "Washington’s Spring"
+			},
+			{
+				"clipId": "WSP09",
+				"title": "Washingtons Spring"
+			},
+			{
+				"clipId": "WSP11",
+				"title": "Washingtons Spring"
+			},
+			{
+				"clipId": "WSP12",
+				"title": "Washington Spring"
 			}
 		],
 		"Chesterbrook": [
@@ -9798,16 +11390,140 @@
 				"title": "North Valley Hills"
 			},
 			{
+				"clipId": "CHE34",
+				"title": "Chesterbrook"
+			},
+			{
+				"clipId": "CHE35",
+				"title": "Chesterbrook"
+			},
+			{
+				"clipId": "CHE36",
+				"title": "Chesterbrook"
+			},
+			{
+				"clipId": "CHE37",
+				"title": "Chesterbrook"
+			},
+			{
+				"clipId": "CHE38",
+				"title": "Chesterbrook"
+			},
+			{
+				"clipId": "CHE39",
+				"title": "Chesterbrook"
+			},
+			{
 				"clipId": "CHE4",
 				"title": "Chesterbrook Farm"
+			},
+			{
+				"clipId": "CHE40",
+				"title": "Chesterbrook"
+			},
+			{
+				"clipId": "CHE41",
+				"title": "Duportail Barn, Chesterbrook"
+			},
+			{
+				"clipId": "CHE42",
+				"title": "Duportail Barn, Chesterbrook"
+			},
+			{
+				"clipId": "CHE43",
+				"title": "Chesterbrook"
+			},
+			{
+				"clipId": "CHE44",
+				"title": "Chesterbrook"
+			},
+			{
+				"clipId": "CHE45",
+				"title": "Chesterbrook"
+			},
+			{
+				"clipId": "CHE46",
+				"title": "Chesterbrook"
+			},
+			{
+				"clipId": "CHE47",
+				"title": "Barn, Chesterbrook"
+			},
+			{
+				"clipId": "CHE48",
+				"title": "Barn, Chesterbrook"
+			},
+			{
+				"clipId": "CHE49",
+				"title": "Barn, Chesterbrook"
 			},
 			{
 				"clipId": "CHE5",
 				"title": "Chesterbrook Farm"
 			},
 			{
+				"clipId": "CHE50",
+				"title": "Chesterbrook"
+			},
+			{
+				"clipId": "CHE51",
+				"title": "Chesterbrook"
+			},
+			{
+				"clipId": "CHE52",
+				"title": "Chesterbrook"
+			},
+			{
+				"clipId": "CHE53",
+				"title": "Chesterbrook Cows"
+			},
+			{
+				"clipId": "CHE54",
+				"title": "Old Davis House, Chesterbrook"
+			},
+			{
+				"clipId": "CHE55",
+				"title": "Duck Pond, Chesterbrook"
+			},
+			{
+				"clipId": "CHE56",
+				"title": "Cadet, Chesterbrook Stallion"
+			},
+			{
+				"clipId": "CHE57",
+				"title": "Bard, star racing horse of Chesterbrook"
+			},
+			{
+				"clipId": "CHE58",
+				"title": "Chesterbrook colts"
+			},
+			{
+				"clipId": "CHE59",
+				"title": "Prize Bull, Chesterbrook"
+			},
+			{
 				"clipId": "CHE6",
 				"title": "Elda Barns"
+			},
+			{
+				"clipId": "CHE60",
+				"title": "Flock of Sheep, Chesterbrook"
+			},
+			{
+				"clipId": "CHE61",
+				"title": "Chesterbrook Farm"
+			},
+			{
+				"clipId": "CHE62",
+				"title": "Chesterbrook Farm"
+			},
+			{
+				"clipId": "CHE63",
+				"title": "Chesterbrook Farm"
+			},
+			{
+				"clipId": "CHE64",
+				"title": "Chesterbrook Farm"
 			},
 			{
 				"clipId": "CHE7",
@@ -9820,6 +11536,54 @@
 			{
 				"clipId": "CHE9",
 				"title": "Chesterbrook Farm Barn"
+			},
+			{
+				"clipId": "CHS01",
+				"title": "Chesterbrook Shopping Center"
+			},
+			{
+				"clipId": "CHS02",
+				"title": "Chesterbrook Shopping Center"
+			},
+			{
+				"clipId": "CHS03",
+				"title": "Chesterbrook Shopping Center"
+			},
+			{
+				"clipId": "CHS04",
+				"title": "Chesterbrook Shopping Center"
+			},
+			{
+				"clipId": "CHS05",
+				"title": "Chesterbrook Shopping Center"
+			},
+			{
+				"clipId": "CHS06",
+				"title": "Chesterbrook Shopping Center"
+			},
+			{
+				"clipId": "CHS07",
+				"title": "Chesterbrook Shopping Center"
+			},
+			{
+				"clipId": "CHS08",
+				"title": "Chesterbrook Shopping Center"
+			},
+			{
+				"clipId": "CHS09",
+				"title": "Chesterbrook Shopping Center"
+			},
+			{
+				"clipId": "CHS10",
+				"title": "Chesterbrook Shopping Center"
+			},
+			{
+				"clipId": "CHS11",
+				"title": "Chesterbrook Shopping Center"
+			},
+			{
+				"clipId": "CHS12",
+				"title": "Chesterbrook Shopping Center"
 			},
 			{
 				"clipId": "CVR142",
@@ -9848,6 +11612,70 @@
 			{
 				"clipId": "LBQ02",
 				"title": "Lee-Bradford Headquarters"
+			},
+			{
+				"clipId": "WFC05",
+				"title": "Wilson Farm, Chesterbrook barns"
+			},
+			{
+				"clipId": "WFC06",
+				"title": "Wilson Farm, Chesterbrook barns"
+			},
+			{
+				"clipId": "WFC07",
+				"title": "Wilson Farm, Chesterbrook barn"
+			},
+			{
+				"clipId": "WFC08",
+				"title": "Wilson Farm, Chesterbrook barns"
+			},
+			{
+				"clipId": "WFC09",
+				"title": "Wilson Farm, Chesterbrook dairy barn"
+			},
+			{
+				"clipId": "WFC10",
+				"title": "Wilson Farm, Chesterbrook - sheep in driveway"
+			},
+			{
+				"clipId": "WFC11",
+				"title": "Wilson Farm, Chesterbrook aerial photo"
+			},
+			{
+				"clipId": "WFC14",
+				"title": "Wilson Farm, Chesterbrook - free range chickens"
+			},
+			{
+				"clipId": "WFC15",
+				"title": "Wilson Farm, Chesterbrook Hay Moving"
+			},
+			{
+				"clipId": "WFC16",
+				"title": "Wilson Farm, Chesterbrook horse wagon"
+			},
+			{
+				"clipId": "WFC17",
+				"title": "Wilson Farm, Chesterbrook front of main house"
+			},
+			{
+				"clipId": "WFC18",
+				"title": "Wilson Farm, Chesterbrook main house"
+			},
+			{
+				"clipId": "WFC19",
+				"title": "Wilson Farm, Chesterbrook southeast corner"
+			},
+			{
+				"clipId": "WIL05",
+				"title": "David Wilson, 1860 - 1925"
+			},
+			{
+				"clipId": "WIL07",
+				"title": "William West & Marie Wilson"
+			},
+			{
+				"clipId": "WIL08",
+				"title": "William West Wilson"
 			},
 			{
 				"clipId": "WSH1",
@@ -11826,12 +13654,36 @@
 				"title": "Dr Aiken’s House"
 			},
 			{
+				"clipId": "BBB03",
+				"title": "Strike at Berwyn Bronze Bearing Company"
+			},
+			{
+				"clipId": "BBB04",
+				"title": "Strike at Berwyn Bronze Bearing Company"
+			},
+			{
+				"clipId": "BBB05",
+				"title": "Strike at Berwyn Bronze Bearing Company"
+			},
+			{
+				"clipId": "BBB06",
+				"title": "Strike at Berwyn Bronze Bearing Company"
+			},
+			{
 				"clipId": "BBC01",
 				"title": "Baptist Chapel, Cassatt Avenue, Berwyn, Summer 1887"
 			},
 			{
 				"clipId": "BBC10",
 				"title": "Berwyn Baptist Chapel (now Christian Science church)"
+			},
+			{
+				"clipId": "BCA02",
+				"title": "Church Avenue, Berwyn"
+			},
+			{
+				"clipId": "BCA03",
+				"title": "Church Avenue, Berwyn"
 			},
 			{
 				"clipId": "BE1",
@@ -11950,8 +13802,52 @@
 				"title": "Traveler's Rest Tree, Waterloo Avenue, Berwyn"
 			},
 			{
+				"clipId": "BE220",
+				"title": "Unidentified view in Berwyn"
+			},
+			{
+				"clipId": "BE221",
+				"title": "Bronze Building"
+			},
+			{
+				"clipId": "BE222",
+				"title": "Bronze Building"
+			},
+			{
+				"clipId": "BE223",
+				"title": "Lancaster Avenue, Berwyn"
+			},
+			{
+				"clipId": "BE224",
+				"title": "Lancaster Avenue, Berwyn"
+			},
+			{
+				"clipId": "BE225",
+				"title": "Lancaster Avenue, Berwyn"
+			},
+			{
+				"clipId": "BE226",
+				"title": "Warren Avenue, Berwyn"
+			},
+			{
+				"clipId": "BE227",
+				"title": "Berwyn View"
+			},
+			{
+				"clipId": "BE228",
+				"title": "Lancaster Pike, Berwyn"
+			},
+			{
+				"clipId": "BE229",
+				"title": "A view of North Berwyn from Berwyn Station"
+			},
+			{
 				"clipId": "BE23",
 				"title": "Traveler's Rest Tree, Waterloo Avenue, Berwyn"
+			},
+			{
+				"clipId": "BE230",
+				"title": "Berwyn, PA."
 			},
 			{
 				"clipId": "BE24",
@@ -12278,6 +14174,10 @@
 				"title": "Berwyn Theater"
 			},
 			{
+				"clipId": "BET21",
+				"title": "Berwyn Theater"
+			},
+			{
 				"clipId": "BFC1",
 				"title": "Berwyn Fire Company"
 			},
@@ -12294,12 +14194,108 @@
 				"title": "Berwyn Fire Company"
 			},
 			{
+				"clipId": "BFC14",
+				"title": "Berwyn Fire Company"
+			},
+			{
+				"clipId": "BFC15",
+				"title": "Berwyn Fire Company"
+			},
+			{
+				"clipId": "BFC16",
+				"title": "Berwyn Fire Company"
+			},
+			{
+				"clipId": "BFC18",
+				"title": "Berwyn Fire Company Banner"
+			},
+			{
+				"clipId": "BFC19",
+				"title": "Berwyn Fire Company Station and Equipment"
+			},
+			{
 				"clipId": "BFC2",
 				"title": "Berwyn Fire Company"
 			},
 			{
+				"clipId": "BFC20",
+				"title": "Berwyn Fire Company Ambulance"
+			},
+			{
+				"clipId": "BFC21",
+				"title": "Ladies Auxiliary, Berwyn Fire Company"
+			},
+			{
+				"clipId": "BFC22",
+				"title": "Berwyn Fire Company Equipment, 1908"
+			},
+			{
+				"clipId": "BFC23",
+				"title": "Berwyn Fire Company 1955 Ladder Truck"
+			},
+			{
+				"clipId": "BFC24",
+				"title": "Berwyn Fire Company Active Force"
+			},
+			{
+				"clipId": "BFC25",
+				"title": "Berwyn Fire Company Ambulance Crews"
+			},
+			{
+				"clipId": "BFC26",
+				"title": "Berwyn Fire Company Band, 1908"
+			},
+			{
+				"clipId": "BFC27",
+				"title": "Berwyn Fire Company Board of Directors"
+			},
+			{
+				"clipId": "BFC28",
+				"title": "Berwyn Fire Company Breaking Ground, 1929"
+			},
+			{
+				"clipId": "BFC29",
+				"title": "Berwyn Fire Company Chiefs"
+			},
+			{
 				"clipId": "BFC3",
 				"title": "Berwyn Fire House"
+			},
+			{
+				"clipId": "BFC30",
+				"title": "Upper Main Line Fire Board Dispatchers"
+			},
+			{
+				"clipId": "BFC31",
+				"title": "Berwyn Fire Company Elected Officers"
+			},
+			{
+				"clipId": "BFC32",
+				"title": "Berwyn Fire Company Engineers"
+			},
+			{
+				"clipId": "BFC33",
+				"title": "Berwyn Fire Company Fire Police"
+			},
+			{
+				"clipId": "BFC34",
+				"title": "Fire Station, Berwyn Fire Company"
+			},
+			{
+				"clipId": "BFC35",
+				"title": "LaFrance Pumper, 1917"
+			},
+			{
+				"clipId": "BFC36",
+				"title": "Waterous Pumper, 1906"
+			},
+			{
+				"clipId": "BFC37",
+				"title": "Berwyn Fire Company Centennial"
+			},
+			{
+				"clipId": "BFC38",
+				"title": "Berwyn Fire Company Centennial"
 			},
 			{
 				"clipId": "BFC4",
@@ -12386,6 +14382,22 @@
 				"title": "Easttown Primary School"
 			},
 			{
+				"clipId": "BPS12",
+				"title": "Berwyn Primary School"
+			},
+			{
+				"clipId": "BPS13",
+				"title": "Berwyn Primary School"
+			},
+			{
+				"clipId": "BPS14",
+				"title": "Berwyn Primary School"
+			},
+			{
+				"clipId": "BPS15",
+				"title": "Berwyn Primary School"
+			},
+			{
 				"clipId": "BUS10",
 				"title": "Garber's Store, Berwyn"
 			},
@@ -12410,8 +14422,32 @@
 				"title": "Gallagher's Shoe Store, Berwyn"
 			},
 			{
+				"clipId": "CAA07",
+				"title": "Cassatt Avenue Bridge, Berwyn"
+			},
+			{
+				"clipId": "CAA08",
+				"title": "Cassatt Avenue Bridge, Berwyn"
+			},
+			{
+				"clipId": "CAA09",
+				"title": "Cassatt Avenue Bridge, Berwyn"
+			},
+			{
 				"clipId": "CAA1",
 				"title": "Cassatt Avenue, Berwyn looking north"
+			},
+			{
+				"clipId": "CAA10",
+				"title": "Cassatt Avenue Bridge, Berwyn"
+			},
+			{
+				"clipId": "CAA11",
+				"title": "Cassatt Avenue Bridge, Berwyn"
+			},
+			{
+				"clipId": "CAA12",
+				"title": "Cassatt Avenue Bridge, Berwyn"
 			},
 			{
 				"clipId": "CAA2",
@@ -12618,6 +14654,10 @@
 				"title": "Rev. Wiley"
 			},
 			{
+				"clipId": "FBB15",
+				"title": "First Baptist Church, Berwyn, PA"
+			},
+			{
 				"clipId": "FBB2",
 				"title": "First Baptist Church, Berwyn"
 			},
@@ -12806,8 +14846,48 @@
 				"title": "Henry O. & Mary Patton Garber"
 			},
 			{
+				"clipId": "HHR01",
+				"title": "Fonzo’s Harbor House Restaurant demolition"
+			},
+			{
+				"clipId": "HHR03",
+				"title": "Fonzo”s Harbor House Restaurant demolition"
+			},
+			{
+				"clipId": "HHR04",
+				"title": "Fonzo’s Harbor House Restaurant demolition"
+			},
+			{
+				"clipId": "HHR05",
+				"title": "Fonzo’s Harbor House Restaurant demolition"
+			},
+			{
+				"clipId": "HHR06",
+				"title": "Fonzo’s Harbor House Restaurant demolition"
+			},
+			{
+				"clipId": "HHR07",
+				"title": "Fonzo’s Harbor House Restaurant demolition"
+			},
+			{
+				"clipId": "HHR09",
+				"title": "Fonzo’s Harbor House Restaurant demolition"
+			},
+			{
+				"clipId": "HHR10",
+				"title": "Fonzo’s Harbor House Restaurant demolition"
+			},
+			{
+				"clipId": "HHR11",
+				"title": "Fonzo’s Harbor House Restaurant demolition"
+			},
+			{
 				"clipId": "HIC51",
 				"title": "Hillcrest"
+			},
+			{
+				"clipId": "HLC11-6861",
+				"title": "Ice Storm at Heyburn Cabin, Long Lane, Berwyn"
 			},
 			{
 				"clipId": "HLC3",
@@ -12880,6 +14960,14 @@
 			{
 				"clipId": "HOU253",
 				"title": "Unknown Building"
+			},
+			{
+				"clipId": "HOU272",
+				"title": "Unknown House, Berwyn"
+			},
+			{
+				"clipId": "HOU278",
+				"title": "Harrison S. Hires house, Berwyn"
 			},
 			{
 				"clipId": "HOU30",
@@ -12962,8 +15050,68 @@
 				"title": "Lancaster Pike toll gate, Berwyn, 1887"
 			},
 			{
+				"clipId": "LAB100",
+				"title": "Clean Up, Lancaster Avenue, Berwyn"
+			},
+			{
+				"clipId": "LAB101",
+				"title": "Clean Up, Lancaster Avenue, Berwyn"
+			},
+			{
+				"clipId": "LAB102",
+				"title": "Clean Up, Lancaster Avenue, Berwyn"
+			},
+			{
+				"clipId": "LAB103",
+				"title": "Clean Up, Lancaster Avenue, Berwyn"
+			},
+			{
+				"clipId": "LAB104",
+				"title": "Clean Up, Lancaster Avenue, Berwyn"
+			},
+			{
 				"clipId": "LAB88",
 				"title": "St Jude’s Thrift Shop"
+			},
+			{
+				"clipId": "LAB89",
+				"title": "Berwyn - Lancaster and Cassatt Avenues, snow scene looking east"
+			},
+			{
+				"clipId": "LAB91",
+				"title": "Clean Up, Lancaster Avenue, Berwyn"
+			},
+			{
+				"clipId": "LAB92",
+				"title": "Clean Up, Lancaster Avenue, Berwyn"
+			},
+			{
+				"clipId": "LAB93",
+				"title": "Clean Up, Lancaster Avenue, Berwyn"
+			},
+			{
+				"clipId": "LAB94",
+				"title": "Clean Up, Lancaster Avenue, Berwyn"
+			},
+			{
+				"clipId": "LAB95",
+				"title": "Clean Up, Lancaster Avenue, Berwyn"
+			},
+			{
+				"clipId": "LAB96",
+				"title": "Clean Up, Lancaster Avenue, Berwyn"
+			},
+			{
+				"clipId": "LAB97",
+				"title": "Clean Up, Lancaster Avenue, Berwyn"
+			},
+			{
+				"clipId": "LAB98",
+				"title": "Clean Up, Lancaster Avenue, Berwyn"
+			},
+			{
+				"clipId": "LAB99",
+				"title": "Clean Up, Lancaster Avenue, Berwyn"
 			},
 			{
 				"clipId": "LAS10",
@@ -13062,12 +15210,28 @@
 				"title": "Latch family"
 			},
 			{
+				"clipId": "LFM02",
+				"title": "Lancaster County Farmer’s Market"
+			},
+			{
 				"clipId": "LTP01",
 				"title": "Lancaster Turnpike Milestone 16"
 			},
 			{
 				"clipId": "LTP02",
 				"title": "Milestone 15, Lancaster Turnpike"
+			},
+			{
+				"clipId": "MAB04",
+				"title": "Main Avenue, Berwyn"
+			},
+			{
+				"clipId": "MAB05",
+				"title": "Main Avenue, Berwyn"
+			},
+			{
+				"clipId": "MAB06",
+				"title": "Main Avenue, Berwyn"
 			},
 			{
 				"clipId": "MLA1",
@@ -13318,8 +15482,24 @@
 				"title": "View from railroad bridge, Berwyn"
 			},
 			{
+				"clipId": "RBE47",
+				"title": "Lancaster Turnpike and Switch Tower, Berwyn, PA"
+			},
+			{
+				"clipId": "RBE48",
+				"title": "Penna. Depot, Berwyn, PA"
+			},
+			{
 				"clipId": "RBE5",
 				"title": "View from railroad bridge, Berwyn"
+			},
+			{
+				"clipId": "RBE50",
+				"title": "View of the 8-30 train leaving Berwyn"
+			},
+			{
+				"clipId": "RBE51",
+				"title": "MP-54s approaches WB into Berwyn"
 			},
 			{
 				"clipId": "RBE6",
@@ -13344,6 +15524,10 @@
 			{
 				"clipId": "RCR3",
 				"title": "Paoli Red Cross, Berwyn"
+			},
+			{
+				"clipId": "RHY10",
+				"title": "Rhydlyn"
 			},
 			{
 				"clipId": "RML4",
@@ -13590,16 +15774,84 @@
 				"title": "Pupils, Easttown Public School, Berwyn"
 			},
 			{
+				"clipId": "TEH68",
+				"title": "Pupils, Easttown Public School, Berwyn"
+			},
+			{
 				"clipId": "TEH7",
 				"title": "Tredyffrin-Easttown High School, class of 1927"
+			},
+			{
+				"clipId": "TEH70",
+				"title": "Class photo"
+			},
+			{
+				"clipId": "TEH71",
+				"title": "Pupils, TE High School"
+			},
+			{
+				"clipId": "TEH72",
+				"title": "Pupils, TE High School, 1916"
+			},
+			{
+				"clipId": "TEH73",
+				"title": "Basketball team, TE High School, 1918 - 1919"
+			},
+			{
+				"clipId": "TEH74",
+				"title": "TE High School, football players"
+			},
+			{
+				"clipId": "TEH75",
+				"title": "TE High School, football players"
+			},
+			{
+				"clipId": "TEH76",
+				"title": "Basketball team, TE High School, 1918 - 1919"
+			},
+			{
+				"clipId": "TEH77",
+				"title": "TE High School, football team, 1917"
+			},
+			{
+				"clipId": "TEH78",
+				"title": "Berwyn Baseball Club"
+			},
+			{
+				"clipId": "TEH79",
+				"title": "Berwyn Baseball Club"
 			},
 			{
 				"clipId": "TEH8",
 				"title": "Tredyffrin-Easttown High School"
 			},
 			{
+				"clipId": "TEH80",
+				"title": "Berwyn Baseball Club"
+			},
+			{
+				"clipId": "TEH81",
+				"title": "Berwyn Baseball Club"
+			},
+			{
+				"clipId": "TEH82",
+				"title": "Berwyn Baseball Club"
+			},
+			{
+				"clipId": "TEH83",
+				"title": "Tredyffrin Easttown High School"
+			},
+			{
+				"clipId": "TEH84",
+				"title": "Tredyffrin Easttown High School"
+			},
+			{
 				"clipId": "TEH9",
 				"title": "Tredyffrin-Easttown High School being demolished"
+			},
+			{
+				"clipId": "THE69",
+				"title": "6th grade pupils, Easttown"
 			},
 			{
 				"clipId": "TJH34",
@@ -13675,6 +15927,38 @@
 			}
 		],
 		"Paoli": [
+			{
+				"clipId": "ALL01",
+				"title": "Alleva’s Coal, Feed, and Lumber Store and John Alleva"
+			},
+			{
+				"clipId": "ALL05",
+				"title": "Alleva’s Coal, Feed, and Lumber Store and John Alleva"
+			},
+			{
+				"clipId": "ALL06",
+				"title": "John Alleva at Alleva’s Store"
+			},
+			{
+				"clipId": "ALL07",
+				"title": "John Alleva at Alleva’s Store"
+			},
+			{
+				"clipId": "ALL08",
+				"title": "John Alleva at Alleva’s Store"
+			},
+			{
+				"clipId": "ALL09",
+				"title": "John Alleva at Alleva’s Store"
+			},
+			{
+				"clipId": "ALL10",
+				"title": "John Alleva at Alleva’s Store"
+			},
+			{
+				"clipId": "ALL11",
+				"title": "John Alleva at Alleva’s Store"
+			},
 			{
 				"clipId": "AS10",
 				"title": "Paoli Store & Toll House"
@@ -13792,6 +16076,54 @@
 				"title": "Church of the Good Samaritan, Paoli"
 			},
 			{
+				"clipId": "CGS06",
+				"title": "Good Samaritan Church"
+			},
+			{
+				"clipId": "CGS07",
+				"title": "Good Samaritan Church"
+			},
+			{
+				"clipId": "CGS08",
+				"title": "Good Samaritan Church"
+			},
+			{
+				"clipId": "CGS09",
+				"title": "Good Samaritan Church"
+			},
+			{
+				"clipId": "CGS10",
+				"title": "Good Samaritan Church"
+			},
+			{
+				"clipId": "CGS11",
+				"title": "Good Samaritan Church"
+			},
+			{
+				"clipId": "CGS12",
+				"title": "Good Samaritan Church"
+			},
+			{
+				"clipId": "CGS13",
+				"title": "Good Samaritan Church"
+			},
+			{
+				"clipId": "CGS14",
+				"title": "Good Samaritan Church"
+			},
+			{
+				"clipId": "CGS15",
+				"title": "Good Samaritan Church"
+			},
+			{
+				"clipId": "CGS16",
+				"title": "Good Samaritan Church"
+			},
+			{
+				"clipId": "CGS17",
+				"title": "Good Samaritan Church"
+			},
+			{
 				"clipId": "CH18",
 				"title": "First Presbyterian Church, Paoli"
 			},
@@ -13868,8 +16200,156 @@
 				"title": "First Presbyterian Church, Paoli"
 			},
 			{
+				"clipId": "FPC33",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC34",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC35",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC36",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC37",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC38",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC39",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC40",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC41",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC42",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC43",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC44",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC45",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC46",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC47",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC48",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC49",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC50",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC51",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC52",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC53",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC54",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC55",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC56",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC57",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC58",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC59",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC60",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC61",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC62",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC63",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC64",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC65",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC66",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC67",
+				"title": "Paoli Library Move"
+			},
+			{
+				"clipId": "FPC68",
+				"title": "Paoli Library Move"
+			},
+			{
 				"clipId": "GJI09",
 				"title": "General Jackson Inn"
+			},
+			{
+				"clipId": "GJI10",
+				"title": "Windmill Tea Room"
 			},
 			{
 				"clipId": "GJI2",
@@ -13900,6 +16380,18 @@
 				"title": "Paoli (Inn) from the west, 1888"
 			},
 			{
+				"clipId": "HIG04",
+				"title": "Higgins Bakery"
+			},
+			{
+				"clipId": "HIG08",
+				"title": "Higgins Bakery"
+			},
+			{
+				"clipId": "HIG09",
+				"title": "Higgins Bakery"
+			},
+			{
 				"clipId": "HLC2",
 				"title": "Neilly Log Cabin"
 			},
@@ -13912,6 +16404,14 @@
 				"title": "Residence of George R. Sinnickson"
 			},
 			{
+				"clipId": "HOU257",
+				"title": "F. H. Galloney house, Paoli"
+			},
+			{
+				"clipId": "HOU258",
+				"title": "H. W. Biddle house, Paoli"
+			},
+			{
 				"clipId": "HOU48",
 				"title": "Commercial Building, Lincoln Highway, Paoli"
 			},
@@ -13922,6 +16422,30 @@
 			{
 				"clipId": "IT2",
 				"title": "Windmill Tea Rooms"
+			},
+			{
+				"clipId": "IT30",
+				"title": "Paoli Manor Inn"
+			},
+			{
+				"clipId": "MF59",
+				"title": "Matthews Ford’s Gulf Gas Station"
+			},
+			{
+				"clipId": "MF60",
+				"title": "Matthews Ford employees at Gulf Station"
+			},
+			{
+				"clipId": "MF61",
+				"title": "Matthews Ford Showroom"
+			},
+			{
+				"clipId": "MF62",
+				"title": "Matthews Ford Company Picnic"
+			},
+			{
+				"clipId": "MF62b",
+				"title": "Back of MF62"
 			},
 			{
 				"clipId": "MLP1",
@@ -13952,6 +16476,46 @@
 				"title": "Canal Collector’s Office, Lancaster Pike & Valley Roads, Paoli, 1888"
 			},
 			{
+				"clipId": "MLP80",
+				"title": "Paoli Railyard"
+			},
+			{
+				"clipId": "MLP81",
+				"title": "Paoli Railyard"
+			},
+			{
+				"clipId": "MLP82",
+				"title": "Paoli Railyard"
+			},
+			{
+				"clipId": "MLP83",
+				"title": "Paoli Railyard"
+			},
+			{
+				"clipId": "MLP84",
+				"title": "Paoli Railyard"
+			},
+			{
+				"clipId": "MLP85",
+				"title": "Paoli Railyard"
+			},
+			{
+				"clipId": "MLP86",
+				"title": "Paoli Railyard"
+			},
+			{
+				"clipId": "MLP87",
+				"title": "Paoli Railyard"
+			},
+			{
+				"clipId": "MLP88",
+				"title": "Paoli Railyard"
+			},
+			{
+				"clipId": "MLP89",
+				"title": "Paoli Railyard"
+			},
+			{
 				"clipId": "PA1",
 				"title": "Anna Thomas, Ladies Taylor"
 			},
@@ -13960,32 +16524,396 @@
 				"title": "Carriage"
 			},
 			{
+				"clipId": "PA100",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA101",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA102",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA103",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA104",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA105",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA106",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA107",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA108",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA109",
+				"title": "Paoli Parade"
+			},
+			{
 				"clipId": "PA11",
 				"title": "Paoli Diner"
+			},
+			{
+				"clipId": "PA110",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA111",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA112",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA113",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA114",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA115",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA116",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA117",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA118",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA119",
+				"title": "Paoli Parade"
 			},
 			{
 				"clipId": "PA12",
 				"title": "Paoli Firehouse"
 			},
 			{
+				"clipId": "PA120",
+				"title": "Paoli Parade - Paoli Fire Company"
+			},
+			{
+				"clipId": "PA121",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA122",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA123",
+				"title": "Paoli Parade- Malvern Fire Company"
+			},
+			{
+				"clipId": "PA124",
+				"title": "Paoli Parade - Malvern Fire Company"
+			},
+			{
+				"clipId": "PA125",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA126",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA127",
+				"title": "Traffic Accident Routes 30 and 252"
+			},
+			{
+				"clipId": "PA128",
+				"title": "Traffic Accident routes 30 and 252"
+			},
+			{
+				"clipId": "PA129",
+				"title": "Traffic Accident routes 30 and 252"
+			},
+			{
 				"clipId": "PA13",
 				"title": "Five of the 'Seven Stars' Houses"
+			},
+			{
+				"clipId": "PA130",
+				"title": "Traffic Accident routes 30 and 252"
+			},
+			{
+				"clipId": "PA131",
+				"title": "Traffic Accident routes 30 and 252"
+			},
+			{
+				"clipId": "PA132",
+				"title": "Traffic Accident routes 30 and 252"
+			},
+			{
+				"clipId": "PA133",
+				"title": "Traffic Accident routes 30 and 252"
+			},
+			{
+				"clipId": "PA134",
+				"title": "Traffic Accident routes 30 and 252"
+			},
+			{
+				"clipId": "PA135",
+				"title": "Traffic Accident routes 30 and 252"
+			},
+			{
+				"clipId": "PA136",
+				"title": "Traffic Accident routes 30 and 252"
+			},
+			{
+				"clipId": "PA137",
+				"title": "Traffic Accident routes 30 and 252"
+			},
+			{
+				"clipId": "PA138",
+				"title": "Lancaster Avenue, Paoli"
+			},
+			{
+				"clipId": "PA139",
+				"title": "Lancaster Avenue, Paoli"
 			},
 			{
 				"clipId": "PA14",
 				"title": "Lincoln Highway, Paoli"
 			},
 			{
+				"clipId": "PA140",
+				"title": "Lancaster Avenue, Paoli"
+			},
+			{
+				"clipId": "PA141",
+				"title": "Lancaster Avenue, Paoli"
+			},
+			{
+				"clipId": "PA142",
+				"title": "Lancaster and S. Valley Road, Paoli"
+			},
+			{
+				"clipId": "PA144",
+				"title": "Lancaster and S. Valley Road, Paoli"
+			},
+			{
+				"clipId": "PA146",
+				"title": "Lancaster and S. Valley Road, Paoli"
+			},
+			{
+				"clipId": "PA148",
+				"title": "Builders Yard, Paoli"
+			},
+			{
+				"clipId": "PA149",
+				"title": "Builders Yard, Paoli"
+			},
+			{
 				"clipId": "PA15",
 				"title": "Supplee Hardware Store"
+			},
+			{
+				"clipId": "PA150",
+				"title": "Builders Yard, Paoli"
+			},
+			{
+				"clipId": "PA151",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA153",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA154",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA155",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA156",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA157",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA158",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA159",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA160",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA161",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA162",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA163",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA164",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA166",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA167",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA168",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA169",
+				"title": "House Fire near Paoli"
 			},
 			{
 				"clipId": "PA17",
 				"title": "George Williams in his drug store"
 			},
 			{
+				"clipId": "PA170",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA171",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA172",
+				"title": "House Fire near Paoli"
+			},
+			{
+				"clipId": "PA173",
+				"title": "Paoli - looking towards 30 and 252 junction"
+			},
+			{
+				"clipId": "PA174",
+				"title": "Lancaster Avenue, Paoli"
+			},
+			{
+				"clipId": "PA175",
+				"title": "Construction of Paoli Library building"
+			},
+			{
+				"clipId": "PA177",
+				"title": "Construction of Paoli Library building"
+			},
+			{
+				"clipId": "PA179",
+				"title": "Construction of Paoli Library building"
+			},
+			{
+				"clipId": "PA181",
+				"title": "Lancaster Avenue, Paoli"
+			},
+			{
+				"clipId": "PA182",
+				"title": "Paoli Building site"
+			},
+			{
+				"clipId": "PA184",
+				"title": "South Valley Road, Paoli looking north"
+			},
+			{
+				"clipId": "PA185",
+				"title": "South Valley Road, Paoli looking north"
+			},
+			{
+				"clipId": "PA187",
+				"title": "Paoli News Agency"
+			},
+			{
+				"clipId": "PA188",
+				"title": "Front of Paoli Hardware Store"
+			},
+			{
+				"clipId": "PA189",
+				"title": "Paoli Hardware Store - Greg and Steve"
+			},
+			{
+				"clipId": "PA190",
+				"title": "Paoli Hardware Store - everything must go"
+			},
+			{
+				"clipId": "PA191",
+				"title": "Paoli Hardware Store - all sales final"
+			},
+			{
+				"clipId": "PA192",
+				"title": "Paoli Hardware Store - 1946 Painting"
+			},
+			{
+				"clipId": "PA193",
+				"title": "Paoli Hardware Store - Greg"
+			},
+			{
+				"clipId": "PA195",
+				"title": "Paoli Plaza"
+			},
+			{
+				"clipId": "PA196",
+				"title": "Paoli Station Parking Area and Lancaster Avenue"
+			},
+			{
+				"clipId": "PA197",
+				"title": "Paoli Plaza"
+			},
+			{
+				"clipId": "PA198",
+				"title": "Paoli Station area"
+			},
+			{
+				"clipId": "PA199",
+				"title": "Paoli Plaza"
+			},
+			{
 				"clipId": "PA2",
 				"title": "Paoli Hardware Store"
+			},
+			{
+				"clipId": "PA200",
+				"title": "Paoli Station Parking Area"
+			},
+			{
+				"clipId": "PA201",
+				"title": "Paoli Plaza"
 			},
 			{
 				"clipId": "PA23",
@@ -14056,12 +16984,160 @@
 				"title": "Paoli War Memorial dedication"
 			},
 			{
+				"clipId": "PA63",
+				"title": "Richard Nixon campaign rally at the old Paoli Shopping Center"
+			},
+			{
+				"clipId": "PA64",
+				"title": "Richard Nixon campaign rally at the old Paoli Shopping Center"
+			},
+			{
+				"clipId": "PA65",
+				"title": "Richard Nixon campaign rally at the old Paoli Shopping Center"
+			},
+			{
+				"clipId": "PA66",
+				"title": "Richard Nixon campaign rally at the old Paoli Shopping Center"
+			},
+			{
+				"clipId": "PA67",
+				"title": "Richard Nixon campaign rally at the old Paoli Shopping Center"
+			},
+			{
+				"clipId": "PA68",
+				"title": "Richard Nixon campaign rally at the old Paoli Shopping Center"
+			},
+			{
+				"clipId": "PA69",
+				"title": "Richard Nixon campaign rally at the old Paoli Shopping Center"
+			},
+			{
 				"clipId": "PA7",
 				"title": "Lincoln Highway, Paoli"
 			},
 			{
+				"clipId": "PA70",
+				"title": "Richard Nixon campaign rally at the old Paoli Shopping Center"
+			},
+			{
+				"clipId": "PA71",
+				"title": "Paoli Parade - Radnor Fire Company"
+			},
+			{
+				"clipId": "PA72",
+				"title": "Paoli Parade - Goshen Fire Company"
+			},
+			{
+				"clipId": "PA73",
+				"title": "Paoli Parade - East Whiteland Township Volunteer Fire Association"
+			},
+			{
+				"clipId": "PA74",
+				"title": "Paoli Parade - East Whiteland Township Volunteer Fire Association"
+			},
+			{
+				"clipId": "PA75",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA76",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA77",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA78",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA79",
+				"title": "Paoli Parade"
+			},
+			{
 				"clipId": "PA8",
 				"title": "Paoli Buckboard"
+			},
+			{
+				"clipId": "PA80",
+				"title": "Paoli Parade - King of Prussia Fire Company"
+			},
+			{
+				"clipId": "PA81",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA82",
+				"title": "Paoli Parade - Kook Hill, North Hills, PA"
+			},
+			{
+				"clipId": "PA83",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA84",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA85",
+				"title": "Paoli Parade - Good Will Fire Company #2, West Chester"
+			},
+			{
+				"clipId": "PA86",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA87",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA88",
+				"title": "Paoli Parade- Swedesburg Volunteer Fire Company, Upper Merion Township"
+			},
+			{
+				"clipId": "PA89",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA90",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA91",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA92",
+				"title": "Paoli Parade - Flame Busters"
+			},
+			{
+				"clipId": "PA93",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA94",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA95",
+				"title": "Paoli Parade- Balloon Seller"
+			},
+			{
+				"clipId": "PA96",
+				"title": "Paoli Parade - Balloon Seller"
+			},
+			{
+				"clipId": "PA97",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA98",
+				"title": "Paoli Parade"
+			},
+			{
+				"clipId": "PA99",
+				"title": "Paoli Parade"
 			},
 			{
 				"clipId": "PAC01",
@@ -14136,8 +17212,120 @@
 				"title": "Paoli Grammar School"
 			},
 			{
+				"clipId": "PFC01",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC02",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC03",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC04",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC05",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC06",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC07",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC08",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC09",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC10",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC11",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC12",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC13",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC14",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC15",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC16",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC17",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC18",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC19",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC20",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC21",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC22",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC23",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC24",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC25",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC26",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
+				"clipId": "PFC27",
+				"title": "1949 Paoli Fire Company 40th anniversary parade"
+			},
+			{
 				"clipId": "PLI01",
 				"title": "Paoli Library"
+			},
+			{
+				"clipId": "PLI03",
+				"title": "Old library building seen from the back of the bank."
 			},
 			{
 				"clipId": "PP1",
@@ -14246,8 +17434,64 @@
 				"title": "Berwyn and Radnor Firemen"
 			},
 			{
+				"clipId": "DAY06",
+				"title": "Lancaster Avenue, Daylesford"
+			},
+			{
+				"clipId": "DAY07",
+				"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+			},
+			{
+				"clipId": "DAY08",
+				"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+			},
+			{
+				"clipId": "DAY09",
+				"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+			},
+			{
 				"clipId": "DAY1",
 				"title": "Glenn Road looking north"
+			},
+			{
+				"clipId": "DAY10",
+				"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+			},
+			{
+				"clipId": "DAY11",
+				"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+			},
+			{
+				"clipId": "DAY12",
+				"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+			},
+			{
+				"clipId": "DAY13",
+				"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+			},
+			{
+				"clipId": "DAY14",
+				"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+			},
+			{
+				"clipId": "DAY15",
+				"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+			},
+			{
+				"clipId": "DAY16",
+				"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+			},
+			{
+				"clipId": "DAY17",
+				"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+			},
+			{
+				"clipId": "DAY18",
+				"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
+			},
+			{
+				"clipId": "DAY19",
+				"title": "Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford"
 			},
 			{
 				"clipId": "DAY2",
@@ -14594,12 +17838,124 @@
 				"title": "Red Arrow Lines Ticket Agency Sign"
 			},
 			{
+				"clipId": "BUS72",
+				"title": "The Main Lion"
+			},
+			{
+				"clipId": "BUS73",
+				"title": "The Main Lion"
+			},
+			{
+				"clipId": "BUS74",
+				"title": "The Main Lion"
+			},
+			{
+				"clipId": "BUS75",
+				"title": "The Main Lion"
+			},
+			{
+				"clipId": "BUS76",
+				"title": "The Main Lion"
+			},
+			{
+				"clipId": "BUS77",
+				"title": "The Main Lion"
+			},
+			{
+				"clipId": "BUS78",
+				"title": "The Main Lion"
+			},
+			{
+				"clipId": "BUS79",
+				"title": "The Main Lion"
+			},
+			{
+				"clipId": "BUS80",
+				"title": "The Main Lion"
+			},
+			{
+				"clipId": "BUS81",
+				"title": "The Main Lion"
+			},
+			{
+				"clipId": "BUS82",
+				"title": "The Main Lion"
+			},
+			{
+				"clipId": "BUS83",
+				"title": "The Main Lion"
+			},
+			{
+				"clipId": "BUS84",
+				"title": "Martini’s Restaurant being demolished"
+			},
+			{
+				"clipId": "BUS85",
+				"title": "Martini’s Restaurant being demolished"
+			},
+			{
+				"clipId": "BUS86",
+				"title": "Martini’s Restaurant being demolished"
+			},
+			{
+				"clipId": "BUS87",
+				"title": "Martini’s Restaurant being demolished"
+			},
+			{
+				"clipId": "BUS88",
+				"title": "Martini’s Restaurant being demolished"
+			},
+			{
+				"clipId": "BUS89",
+				"title": "Martini’s Restaurant being demolished"
+			},
+			{
+				"clipId": "BUS90",
+				"title": "Martini’s restaurant being demolished"
+			},
+			{
+				"clipId": "BUS91",
+				"title": "Martini’s restaurant being demolished"
+			},
+			{
+				"clipId": "BUS97",
+				"title": "Fresh Fields Store"
+			},
+			{
+				"clipId": "BUS98",
+				"title": "Fresh Fields Store"
+			},
+			{
+				"clipId": "BUS99",
+				"title": "Fresh Fields Store"
+			},
+			{
 				"clipId": "CH1",
 				"title": "Our Lady of the Assumption Church"
 			},
 			{
 				"clipId": "CVR2",
 				"title": "Strafford Grade Crossing"
+			},
+			{
+				"clipId": "CWI04",
+				"title": "Covered Wagon Inn"
+			},
+			{
+				"clipId": "CWI05",
+				"title": "Covered Wagon Inn"
+			},
+			{
+				"clipId": "CWI06",
+				"title": "Covered Wagon Inn"
+			},
+			{
+				"clipId": "CWI07",
+				"title": "Covered Wagon Inn"
+			},
+			{
+				"clipId": "CWI08",
+				"title": "Covered Wagon Inn"
 			},
 			{
 				"clipId": "CWI1",
@@ -14610,7 +17966,39 @@
 				"title": "Covered Wagon Inn"
 			},
 			{
+				"clipId": "HOU263",
+				"title": "Sugartown Mews"
+			},
+			{
+				"clipId": "HOU275",
+				"title": "B. C. Fenwick house, Strafford"
+			},
+			{
+				"clipId": "HOU277",
+				"title": "Mr. F. D. Dimmick house, Strafford"
+			},
+			{
+				"clipId": "HOU279",
+				"title": "Harry Fried house, Strafford"
+			},
+			{
 				"clipId": "OES1",
+				"title": "Old Eagle School"
+			},
+			{
+				"clipId": "OES11",
+				"title": "Old Eagle School"
+			},
+			{
+				"clipId": "OES12",
+				"title": "Old Eagle School"
+			},
+			{
+				"clipId": "OES13",
+				"title": "Old Eagle School"
+			},
+			{
+				"clipId": "OES15",
 				"title": "Old Eagle School"
 			},
 			{
@@ -14632,6 +18020,18 @@
 			{
 				"clipId": "SCH7",
 				"title": "Carr School, 1832 - 1869"
+			},
+			{
+				"clipId": "SHF09",
+				"title": "Residence of J. Howard Mecke, Strafford jr."
+			},
+			{
+				"clipId": "SHF10",
+				"title": "Stable and paddock at residence of J. Howard Mecke jr."
+			},
+			{
+				"clipId": "SHF11",
+				"title": "J. Howard Mecke jr. house, Strafford"
 			},
 			{
 				"clipId": "SS2",
@@ -14900,6 +18300,42 @@
 			{
 				"clipId": "STR87",
 				"title": "Wynnewood House"
+			},
+			{
+				"clipId": "STR88",
+				"title": "Devon Square Shopping Center"
+			},
+			{
+				"clipId": "STR89",
+				"title": "Devon Square Shopping Center"
+			},
+			{
+				"clipId": "STR90",
+				"title": "Devon Square Shopping Center"
+			},
+			{
+				"clipId": "STR91",
+				"title": "Devon Square Shopping Center"
+			},
+			{
+				"clipId": "STR92",
+				"title": "Old Eagle and Upper Gulph Roads"
+			},
+			{
+				"clipId": "STR93",
+				"title": "Old Eagle and Upper Gulph Roads"
+			},
+			{
+				"clipId": "STR94",
+				"title": "Old Eagle and Upper Gulph Roads"
+			},
+			{
+				"clipId": "STR95",
+				"title": "Strafford demolition"
+			},
+			{
+				"clipId": "STR96",
+				"title": "Strafford demolition"
 			}
 		],
 		"Malvern": [
@@ -14976,6 +18412,14 @@
 				"title": "General Warren Tavern"
 			},
 			{
+				"clipId": "HOU276",
+				"title": "Mr. Carroll H. Edwards house, Malvern"
+			},
+			{
+				"clipId": "HOU282",
+				"title": "William M. Angney house, Malvern"
+			},
+			{
 				"clipId": "IT4",
 				"title": "General Warren Tavern"
 			},
@@ -15050,6 +18494,14 @@
 			{
 				"clipId": "MAL4",
 				"title": "Friend's School, Malvern"
+			},
+			{
+				"clipId": "MAL40",
+				"title": "Casey’s Restaurant, Malvern"
+			},
+			{
+				"clipId": "MAL41",
+				"title": "Casey’s Restaurant, Malvern"
 			},
 			{
 				"clipId": "MAL5",
@@ -15188,8 +18640,40 @@
 				"title": "Devon Honor Roll"
 			},
 			{
+				"clipId": "BUS100",
+				"title": "Auto Dealership"
+			},
+			{
+				"clipId": "BUS101",
+				"title": "Auto Dealership"
+			},
+			{
+				"clipId": "BUS102",
+				"title": "Auto Dealership"
+			},
+			{
+				"clipId": "BUS103",
+				"title": "Devon Design Center"
+			},
+			{
+				"clipId": "BUS104",
+				"title": "Devon Design Center"
+			},
+			{
+				"clipId": "BUS105",
+				"title": "Devon Design Center"
+			},
+			{
+				"clipId": "BUS106",
+				"title": "Devon Design Center"
+			},
+			{
 				"clipId": "CH21",
 				"title": "St. John’s Presbyterian Church, Devon"
+			},
+			{
+				"clipId": "CH31",
+				"title": "Knoll House now MainLine Unitarian Church, So. Valley Rd, Devon"
 			},
 			{
 				"clipId": "DEI29",
@@ -15232,6 +18716,38 @@
 				"title": "Back of DEI34"
 			},
 			{
+				"clipId": "DEI35",
+				"title": "Devon Inn"
+			},
+			{
+				"clipId": "DEI36",
+				"title": "Devon Inn"
+			},
+			{
+				"clipId": "DEI37",
+				"title": "Devon Inn and lawn"
+			},
+			{
+				"clipId": "DEI38",
+				"title": "Devon Inn"
+			},
+			{
+				"clipId": "DEI39",
+				"title": "Devon Inn"
+			},
+			{
+				"clipId": "DEI40",
+				"title": "Entrance to Devon Inn"
+			},
+			{
+				"clipId": "DEI41",
+				"title": "The Floral Cafe, Devon Inn"
+			},
+			{
+				"clipId": "DEI42",
+				"title": "Devon Park Hotel"
+			},
+			{
 				"clipId": "DEP01",
 				"title": "Devon Prep School Chemistry Class"
 			},
@@ -15252,8 +18768,36 @@
 				"title": "Lancaster Avenue, Devon"
 			},
 			{
+				"clipId": "DEV26",
+				"title": "Lancaster and Grove Avenues in Devon"
+			},
+			{
+				"clipId": "DEV27",
+				"title": "Lancaster and Grove Avenues in Devon"
+			},
+			{
+				"clipId": "DEV28",
+				"title": "Lancaster and Grove Avenues in Devon"
+			},
+			{
+				"clipId": "DEV29",
+				"title": "Greetings from Devon, PA"
+			},
+			{
 				"clipId": "DEV3",
 				"title": "Berkeley Avenue, Devon"
+			},
+			{
+				"clipId": "DEV30",
+				"title": "A view on Lancaster Pike towards the Wynburne Inn"
+			},
+			{
+				"clipId": "DEV31",
+				"title": "Devon Boulevard Snow Trotters"
+			},
+			{
+				"clipId": "DEV32",
+				"title": "Devon Boulevard Snow Trotters"
 			},
 			{
 				"clipId": "DEV4",
@@ -15512,6 +19056,14 @@
 				"title": "Covered Wagon Ride"
 			},
 			{
+				"clipId": "DHS149",
+				"title": "Antique Stand, Devon Horse Show"
+			},
+			{
+				"clipId": "DHS150",
+				"title": "Devon Horse Show"
+			},
+			{
 				"clipId": "DLC01",
 				"title": "Devon Log Cabin"
 			},
@@ -15528,6 +19080,14 @@
 				"title": "Cathcart House"
 			},
 			{
+				"clipId": "ECH05",
+				"title": "Cathcart Home"
+			},
+			{
+				"clipId": "ECH06",
+				"title": "Eliza Cathcart home"
+			},
+			{
 				"clipId": "EPA01",
 				"title": "Episcopal Academy"
 			},
@@ -15542,6 +19102,54 @@
 			{
 				"clipId": "HOU237",
 				"title": "Regina Mundi Priory before demolition"
+			},
+			{
+				"clipId": "HOU255",
+				"title": "Charles B. Hart house, Devon"
+			},
+			{
+				"clipId": "HOU256",
+				"title": "E. B. McCarthy house, Devon"
+			},
+			{
+				"clipId": "HOU259",
+				"title": "J. Hampton Barnes house, Devon"
+			},
+			{
+				"clipId": "HOU260",
+				"title": "Malcolm Lloyd house, Devon"
+			},
+			{
+				"clipId": "HOU261",
+				"title": "R. R. Benedict house, Devon"
+			},
+			{
+				"clipId": "HOU262",
+				"title": "T. Mellon Rogers house, Devon"
+			},
+			{
+				"clipId": "HOU270",
+				"title": "231 Berkley Road, Devon"
+			},
+			{
+				"clipId": "HOU271",
+				"title": "319 Chester Road, Devon"
+			},
+			{
+				"clipId": "HOU273",
+				"title": "3 Colonial Dwellings, Devon"
+			},
+			{
+				"clipId": "HOU280",
+				"title": "G. B. Wheeler house, Devon"
+			},
+			{
+				"clipId": "HOU281",
+				"title": "Mr. John S. Bioren house, Devon"
+			},
+			{
+				"clipId": "HOU283",
+				"title": "Mrs. M. A. Aull, Snoqualmie, Devon"
 			},
 			{
 				"clipId": "IT6",
@@ -15576,6 +19184,58 @@
 				"title": "William Clavius Latch"
 			},
 			{
+				"clipId": "LJD01",
+				"title": "La Jonquille"
+			},
+			{
+				"clipId": "LJD02",
+				"title": "La Jonquille"
+			},
+			{
+				"clipId": "LJD03",
+				"title": "La Jonquille"
+			},
+			{
+				"clipId": "LJD04",
+				"title": "La Jonquille"
+			},
+			{
+				"clipId": "LJD05",
+				"title": "La Jonquille"
+			},
+			{
+				"clipId": "LJD06",
+				"title": "La Jonquille"
+			},
+			{
+				"clipId": "LJD07",
+				"title": "La Jonquille"
+			},
+			{
+				"clipId": "LJD08",
+				"title": "La Jonquille"
+			},
+			{
+				"clipId": "LJD09",
+				"title": "La Jonquille"
+			},
+			{
+				"clipId": "LJD10",
+				"title": "La Jonquille"
+			},
+			{
+				"clipId": "LJD11",
+				"title": "La Jonquille"
+			},
+			{
+				"clipId": "LJD12",
+				"title": "La Jonquille"
+			},
+			{
+				"clipId": "LJD13",
+				"title": "La Jonquille"
+			},
+			{
 				"clipId": "ND1",
 				"title": "Valley Forge Road, Devon"
 			},
@@ -15596,12 +19256,48 @@
 				"title": "Serpentine Quarry, Devon"
 			},
 			{
+				"clipId": "QTC01",
+				"title": "Quaker Trailer Company -Display Room"
+			},
+			{
+				"clipId": "QTC02",
+				"title": "Quaker Trailer Company -Display Room with Driveway"
+			},
+			{
+				"clipId": "QTC03",
+				"title": "Quaker Trailer Company - Office"
+			},
+			{
+				"clipId": "QTC04",
+				"title": "Quaker Trailer, Quaker Trailer Company"
+			},
+			{
+				"clipId": "QTC05",
+				"title": "Quaker Trailer Company Display Room"
+			},
+			{
+				"clipId": "QTC06",
+				"title": "Quaker Trailer Company"
+			},
+			{
+				"clipId": "QTC07",
+				"title": "Quaker Trailer, Quaker Trailer Company"
+			},
+			{
+				"clipId": "QTC08",
+				"title": "Quaker Trailer with Possible Robert M. Rakestraw"
+			},
+			{
 				"clipId": "RDE06",
 				"title": "Devon Train Station"
 			},
 			{
 				"clipId": "RDE1",
 				"title": "Devon Station"
+			},
+			{
+				"clipId": "RDE16",
+				"title": "Devon Station, PA"
 			},
 			{
 				"clipId": "RML10",
@@ -15612,8 +19308,20 @@
 				"title": "St. John’s Presbyterian Church in Devon"
 			},
 			{
+				"clipId": "VFMA01",
+				"title": "Valley Forge Military Academy, Cadets on Dress Parade"
+			},
+			{
 				"clipId": "WRD1",
 				"title": "Waterloo Road at Arlington Road (now Lancaster Avenue), Devon"
+			},
+			{
+				"clipId": "WRD11",
+				"title": "Waterloo Road, Devon"
+			},
+			{
+				"clipId": "WRD12",
+				"title": "Waterloo Road and Railroad Bridge, Devon, PA"
 			},
 			{
 				"clipId": "WRD2",
@@ -15630,6 +19338,10 @@
 			{
 				"clipId": "WYI1",
 				"title": "Wynburne Inn, Devon"
+			},
+			{
+				"clipId": "WYI11",
+				"title": "Wynburne Inn"
 			},
 			{
 				"clipId": "WYI2",
@@ -15650,6 +19362,26 @@
 				"title": "Brookmead Farm"
 			},
 			{
+				"clipId": "BUS92",
+				"title": "Best Store"
+			},
+			{
+				"clipId": "BUS93",
+				"title": "Best Store"
+			},
+			{
+				"clipId": "BUS94",
+				"title": "Best Store"
+			},
+			{
+				"clipId": "BUS95",
+				"title": "Best Store"
+			},
+			{
+				"clipId": "BUS96",
+				"title": "Best Store"
+			},
+			{
 				"clipId": "CVR1",
 				"title": "New Centerville Grade Crossing"
 			},
@@ -15660,6 +19392,66 @@
 			{
 				"clipId": "CVR88",
 				"title": "Reading diesel switcher hauls freight west across Valley Forge Road"
+			},
+			{
+				"clipId": "GSC01",
+				"title": "Gateway Shopping Center"
+			},
+			{
+				"clipId": "GSC02",
+				"title": "Gateway Shopping Center"
+			},
+			{
+				"clipId": "GSC03",
+				"title": "Gateway Shopping Center"
+			},
+			{
+				"clipId": "GSC04",
+				"title": "Gateway Shopping Center"
+			},
+			{
+				"clipId": "GSC05",
+				"title": "Gateway Shopping Center"
+			},
+			{
+				"clipId": "GSC06",
+				"title": "Gateway Shopping Center"
+			},
+			{
+				"clipId": "GSC07",
+				"title": "Gateway Shopping Center"
+			},
+			{
+				"clipId": "GSC08",
+				"title": "Gateway Shopping Center"
+			},
+			{
+				"clipId": "GSC09",
+				"title": "Gateway Shopping Center"
+			},
+			{
+				"clipId": "GSC10",
+				"title": "Gateway Shopping Center"
+			},
+			{
+				"clipId": "GSC11",
+				"title": "Gateway Shopping Center"
+			},
+			{
+				"clipId": "GSC12",
+				"title": "Gateway Shopping Center"
+			},
+			{
+				"clipId": "GSC13",
+				"title": "Gateway Shopping Center"
+			},
+			{
+				"clipId": "GSC14",
+				"title": "Gateway Shopping Center"
+			},
+			{
+				"clipId": "GSC15",
+				"title": "Gateway Shopping Center"
 			},
 			{
 				"clipId": "GVB1",
@@ -15690,6 +19482,14 @@
 				"title": "Educational Building, Great Valley Baptist Church"
 			},
 			{
+				"clipId": "GWQ09",
+				"title": "General Wayne’s Quarters"
+			},
+			{
+				"clipId": "GWQ10",
+				"title": "General Wayne’s Quarters"
+			},
+			{
 				"clipId": "MSP1",
 				"title": "Many Springs Farm"
 			},
@@ -15698,8 +19498,32 @@
 				"title": "Baptist (Valley Forge) Road south of New Centerville"
 			},
 			{
+				"clipId": "NCE15",
+				"title": "Swedesford Road, New Centerville"
+			},
+			{
+				"clipId": "NCE16",
+				"title": "Swedesford Road, New Centerville"
+			},
+			{
+				"clipId": "NCE17",
+				"title": "Swedesford Road, New Centerville"
+			},
+			{
+				"clipId": "NCE18",
+				"title": "Swedesford Road, New Centerville"
+			},
+			{
+				"clipId": "NCE19",
+				"title": "Swedesford Road, New Centerville"
+			},
+			{
 				"clipId": "NCE2",
 				"title": "Clarence Roberts standing at the location of the Stone Chimney Picket Post, New Centerville."
+			},
+			{
+				"clipId": "NCE20",
+				"title": "Valley Forge Motel"
 			},
 			{
 				"clipId": "NCE3",
@@ -15718,6 +19542,34 @@
 				"title": "Old Forge Crossing"
 			},
 			{
+				"clipId": "NCH01",
+				"title": "Crossroads Tavern Demolition"
+			},
+			{
+				"clipId": "NCH02",
+				"title": "Crossroads Tavern Demolition"
+			},
+			{
+				"clipId": "NCH03",
+				"title": "Crossroads Tavern Demolition"
+			},
+			{
+				"clipId": "NCH04",
+				"title": "Crossroads Tavern Demolition"
+			},
+			{
+				"clipId": "NCH05",
+				"title": "Crossroads Tavern Demolition"
+			},
+			{
+				"clipId": "NCH06",
+				"title": "Crossroads Tavern Demolition"
+			},
+			{
+				"clipId": "OES14",
+				"title": "Old Eagle School"
+			},
+			{
 				"clipId": "THI01",
 				"title": "Tally Ho Inn"
 			},
@@ -15726,7 +19578,95 @@
 				"title": "Back of THI01"
 			},
 			{
+				"clipId": "VFM03",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM04",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM07",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM08",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM09",
+				"title": "Valley Forge Music Fair"
+			},
+			{
 				"clipId": "VFM1",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM10",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM11",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM12",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM13",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM14",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM16",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM18",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM20",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM22",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM24",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM25",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM27",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM28",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM29",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM31",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM32",
+				"title": "Valley Forge Music Fair"
+			},
+			{
+				"clipId": "VFM33",
 				"title": "Valley Forge Music Fair"
 			},
 			{
@@ -15766,6 +19706,98 @@
 				"title": "Mounting Block & Carriage Sheds, Great Valley Presbyterian Church"
 			},
 			{
+				"clipId": "CVR144",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR145",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR147",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR148",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR149",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR150",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR151",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR152",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR153",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR154",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR155",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR156",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR157",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR158",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR161",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR163",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR164",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR165",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR167",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR168",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR169",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR170",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
+				"clipId": "CVR172",
+				"title": "Truck-Bridge Collision on Swedesford Road"
+			},
+			{
 				"clipId": "EW04",
 				"title": "Intersection of routes 202 and 29"
 			},
@@ -15783,6 +19815,54 @@
 			},
 			{
 				"clipId": "GVP14",
+				"title": "Great Valley Presbyterian Church"
+			},
+			{
+				"clipId": "GVP16",
+				"title": "Great Valley Presbyterian Church"
+			},
+			{
+				"clipId": "GVP18",
+				"title": "Great Valley Presbyterian Church"
+			},
+			{
+				"clipId": "GVP20",
+				"title": "Great Valley Presbyterian Church"
+			},
+			{
+				"clipId": "GVP21",
+				"title": "Great Valley Presbyterian Church"
+			},
+			{
+				"clipId": "GVP22",
+				"title": "Great Valley Presbyterian Church"
+			},
+			{
+				"clipId": "GVP23",
+				"title": "Great Valley Presbyterian Church"
+			},
+			{
+				"clipId": "GVP24",
+				"title": "Great Valley Presbyterian Church"
+			},
+			{
+				"clipId": "GVP25",
+				"title": "Great Valley Presbyterian Church"
+			},
+			{
+				"clipId": "GVP26",
+				"title": "Great Valley Presbyterian Church"
+			},
+			{
+				"clipId": "GVP27",
+				"title": "Great Valley Presbyterian Church"
+			},
+			{
+				"clipId": "GVP28",
+				"title": "Great Valley Presbyterian Church"
+			},
+			{
+				"clipId": "GVP29",
 				"title": "Great Valley Presbyterian Church"
 			},
 			{
@@ -15836,6 +19916,10 @@
 			{
 				"clipId": "OPA2",
 				"title": "Boring Rig at Main Line Airport"
+			},
+			{
+				"clipId": "OPA27",
+				"title": "Mainline Airport Hangar"
 			},
 			{
 				"clipId": "OPA3",
@@ -16178,6 +20262,10 @@
 				"title": "King of Prussia Inn"
 			},
 			{
+				"clipId": "KOP04",
+				"title": "King of Prussia Road, Radnor"
+			},
+			{
 				"clipId": "KPI01",
 				"title": "King of Prussia Inn"
 			},
@@ -16251,6 +20339,10 @@
 			},
 			{
 				"clipId": "WAY3",
+				"title": "Waynesborough"
+			},
+			{
+				"clipId": "WAY30",
 				"title": "Waynesborough"
 			},
 			{
@@ -16740,6 +20832,14 @@
 				"title": "Knox’s Covered Bridge"
 			},
 			{
+				"clipId": "KCB60",
+				"title": "Knox Covered Bridge"
+			},
+			{
+				"clipId": "KCB61",
+				"title": "Knox Covered Bridge"
+			},
+			{
 				"clipId": "KCB9",
 				"title": "Knox Covered Bridge"
 			},
@@ -17056,6 +21156,10 @@
 				"title": "Tea Party at Stirling's Quarters in honor of Compilers of 'Great Valley Days'"
 			},
 			{
+				"clipId": "VC34",
+				"title": "Valley Creek"
+			},
+			{
 				"clipId": "WCH01",
 				"title": "Wilson-Cox House"
 			},
@@ -17185,6 +21289,10 @@
 			}
 		],
 		"Phoenixville": [
+			{
+				"clipId": "HOU254",
+				"title": "C. F. Duran house, 120 Gay Street, Phoenixville"
+			},
 			{
 				"clipId": "PHO04",
 				"title": "Columbia Hotel, Phoenixville"
@@ -18729,6 +22837,42 @@
 				"clipId": "PYL24",
 				"title": "Henry Grove “Zeke” and June Rudderow Pyle"
 			}
+		],
+		"John Thomas barbershop in Berwyn.": [
+			{
+				"clipId": "ETS14",
+				"title": "Easttown School Certificate"
+			}
+		],
+		"Wissahickon": [
+			{
+				"clipId": "OLA228",
+				"title": "Miss Flossie Evans, Wissahickon Drive"
+			},
+			{
+				"clipId": "OLA231",
+				"title": "Trip with Banson and Mr. Riley to Wissahickon"
+			},
+			{
+				"clipId": "OLA232",
+				"title": "Wissahickon in summer / Valley Green"
+			}
+		],
+		"Deepdale Road, Strafford": [
+			{
+				"clipId": "HOU267",
+				"title": "Watch Box from Centennial Exposition in Fairmount Park in 1876"
+			},
+			{
+				"clipId": "HOU268",
+				"title": "Watch Box from Centennial Exposition in Fairmount Park in 1876"
+			}
+		],
+		"706 North Gulph Road, Strafford": [
+			{
+				"clipId": "HOU269",
+				"title": "Possible building from Centennial Exposition in Fairmount Park in 1876"
+			}
 		]
 	},
 	"peopleReview": [
@@ -19809,8 +23953,16 @@
 			"title": "Pasquale Paoli Day"
 		},
 		{
+			"clipId": "PA63",
+			"title": "Richard Nixon campaign rally at the old Paoli Shopping Center"
+		},
+		{
 			"clipId": "PA8",
 			"title": "Paoli Buckboard"
+		},
+		{
+			"clipId": "PCK02",
+			"title": "Philander Knox and wife disembraking ship in Honolulu"
 		},
 		{
 			"clipId": "PCK1",
@@ -19961,8 +24113,28 @@
 			"title": "Julius Sachse"
 		},
 		{
+			"clipId": "PEO133",
+			"title": "Bob Goshorn"
+		},
+		{
 			"clipId": "PEO14",
 			"title": "Unknown Person"
+		},
+		{
+			"clipId": "PEO141",
+			"title": "Isaac M. Anderson"
+		},
+		{
+			"clipId": "PEO142",
+			"title": "Isaac M. Anderson family"
+		},
+		{
+			"clipId": "PEO143",
+			"title": "Sally Nelson"
+		},
+		{
+			"clipId": "PEO145",
+			"title": "May-Sevcik"
 		},
 		{
 			"clipId": "PEO15",
@@ -20633,9 +24805,25 @@
 			"title": "Winfield Scott Wilson"
 		},
 		{
+			"clipId": "WIL05",
+			"title": "David Wilson, 1860 - 1925"
+		},
+		{
+			"clipId": "WIL06",
+			"title": "William West Wilson, 1884 - 1976"
+		},
+		{
+			"clipId": "WIL07",
+			"title": "William West & Marie Wilson"
+		},
+		{
+			"clipId": "WIL08",
+			"title": "William West Wilson"
+		},
+		{
 			"clipId": "WYF01",
 			"title": "General Wayne’s Memorial"
 		}
 	],
-	"updatedAt": "2026-08-18T21:40:05.100Z"
+	"updatedAt": "2026-08-19T13:29:43.905Z"
 }
