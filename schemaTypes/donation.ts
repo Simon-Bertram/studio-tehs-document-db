@@ -46,18 +46,6 @@ export const donation = defineType({
 			group: 'identity',
 		}),
 		defineField({
-			name: 'acquisitionDateText',
-			title: 'Acquisition Date (Legacy Text)',
-			type: 'string',
-			group: 'identity',
-			deprecated: {
-				reason: 'Use Donation Acquisition Date (structured historical date) instead.',
-			},
-			readOnly: true,
-			hidden: ({value}) => value === undefined,
-			initialValue: undefined,
-		}),
-		defineField({
 			name: 'description',
 			title: 'Donation Description',
 			type: 'text',
@@ -80,8 +68,7 @@ export const donation = defineType({
 					to: [{type: 'donationCategory'}],
 				}),
 			],
-			validation: (Rule) =>
-				Rule.custom(warnMissingDonationCategory()).warning(),
+			validation: (Rule) => Rule.custom(warnMissingDonationCategory()).warning(),
 		}),
 	],
 	initialValue: incomingReferenceArrayInitialValue('donationCategories'),
@@ -90,22 +77,17 @@ export const donation = defineType({
 			name: 'name',
 			donationId: 'donationId',
 			donor: 'donor',
-			legacyDate: 'acquisitionDateText',
 			cat0: 'donationCategories.0.title',
 			cat1: 'donationCategories.1.title',
 			cat2: 'donationCategories.2.title',
 			...historicalDatePreviewSelect('acquisitionDate'),
 		},
 		prepare(selection) {
-			const {name, donationId, donor, legacyDate, cat0, cat1, cat2} = selection
+			const {name, donationId, donor, cat0, cat1, cat2} = selection
 			const title = name || (donationId != null ? `Donation #${donationId}` : 'Untitled donation')
-			const when = formatHistoricalDateFromPreview(selection) || legacyDate
+			const when = formatHistoricalDateFromPreview(selection)
 			const hasLiveCategory = Boolean(cat0 || cat1 || cat2)
-			const subtitle = [
-				donor,
-				when,
-				hasLiveCategory ? undefined : 'No donation category',
-			]
+			const subtitle = [donor, when, hasLiveCategory ? undefined : 'No donation category']
 				.filter(Boolean)
 				.join(' · ')
 			return {
