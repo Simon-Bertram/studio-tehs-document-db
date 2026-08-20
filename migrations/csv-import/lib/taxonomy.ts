@@ -12,8 +12,9 @@ export interface TaxonomyLookups {
 }
 
 /**
- * Fetch all categories, townships, and organizations that carry a migrationKey
- * (or category aliases), returning case-insensitive lookup dictionaries.
+ * Fetch all categories, townships, and businesses/organizations that carry a
+ * migrationKey (or category aliases), returning case-insensitive lookup
+ * dictionaries.
  */
 export async function buildTaxonomyLookups(client: SanityClient): Promise<TaxonomyLookups> {
 	const [categories, townships, organizations] = await Promise.all([
@@ -26,7 +27,7 @@ export async function buildTaxonomyLookups(client: SanityClient): Promise<Taxono
 			`*[_type == "township" && defined(migrationKey)]{ _id, migrationKey }`,
 		),
 		client.fetch<{_id: string; migrationKey: string}[]>(
-			`*[_type == "business" && defined(migrationKey)]{ _id, migrationKey }`,
+			`*[_type in ["business", "organization"] && defined(migrationKey)]{ _id, migrationKey }`,
 		),
 	])
 

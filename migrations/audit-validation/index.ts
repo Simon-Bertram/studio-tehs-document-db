@@ -6,12 +6,7 @@
  */
 import {createImportClient} from '../csv-import/lib/sanity-client'
 
-const ARCHIVE_TYPES = [
-	'primarySource',
-	'historicalImage',
-	'deed',
-	'researchArticle',
-] as const
+const ARCHIVE_TYPES = ['primarySource', 'historicalImage', 'deed', 'researchArticle'] as const
 
 const SAMPLE_LIMIT = 20
 
@@ -144,12 +139,6 @@ async function main() {
 		]`,
 	)
 	sections.push({label: 'donation: duplicate donationId', ...duplicateDonationId})
-
-	const missingBusinessType = await sampleIds(
-		client,
-		`*[_type == "business" && (!defined(businessType) || businessType == "")]`,
-	)
-	sections.push({label: 'business: missing/empty businessType', ...missingBusinessType})
 
 	const incompleteRelatives = await sampleIds(
 		client,

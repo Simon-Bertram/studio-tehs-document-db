@@ -12,10 +12,7 @@ export default defineMigration({
 			if (!doc.locations || doc.associatedProperties) {
 				return doc.locations && doc.associatedProperties ? [at('locations', unset())] : []
 			}
-			return [
-				at('associatedProperties', setIfMissing(doc.locations)),
-				at('locations', unset()),
-			]
+			return [at('associatedProperties', setIfMissing(doc.locations)), at('locations', unset())]
 		},
 	},
 })

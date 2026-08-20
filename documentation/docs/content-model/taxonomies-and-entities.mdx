@@ -16,7 +16,7 @@ Villages or named places (e.g. Paoli, Berwyn, Cedar Hollow). Each location **mus
 
 ## Historical Persons
 
-People mentioned in sources, depicted in historical images, or tied to properties and organizations: name parts, born/died, alternate spellings, census/occupation records. Tag people to broader **Family Lineages**, and log known **Immediate Relatives** (spouse, parent, child, sibling, and so on) on the person document. Photograph tags live on the **Historical Image** (`people`); each person shows a reverse **Historical Images** list of photographs they are tagged in.
+People mentioned in sources, depicted in historical images, or tied to properties, businesses, and organizations: name parts, born/died, alternate spellings, census/occupation records. Tag people to broader **Family Lineages**, and log known **Immediate Relatives** (spouse, parent, child, sibling, and so on) on the person document. Photograph tags live on the **Historical Image** (`people`); each person shows a reverse **Historical Images** list of photographs they are tagged in.
 
 ## Families / Lineages
 
@@ -24,7 +24,7 @@ Broader family groups (e.g. The Bean Family, The Havard Family): family name and
 
 ## Properties & Buildings
 
-Physical sites classified by **Property Type** (dwelling, estate/farm, church, inn/tavern, industrial, institutional, railroad/station): historical name, optional parent estate, location/township, residents, modern address, year built, and an ordered **Title Chain** of Deed / Land Instrument documents. Link occupying organizations from the **organization** document (`associatedProperties`), not from the property. Valley Forge association is via location, not a property type.
+Physical sites classified by **Property Type** (dwelling, estate/farm, church, inn/tavern, industrial, institutional, railroad/station): historical name, optional parent estate, location/township, residents, modern address, year built, and an ordered **Title Chain** of Deed / Land Instrument documents. Link occupying businesses or organizations from the **business** or **organization** document (`associatedProperties`), not from the property. Valley Forge association is via location, not a property type.
 
 **Property Type** is building classification for the entity (one required type). It is not a Subject Category—categories like Churches or Railroads are archive search themes for clippings and photos.
 
@@ -32,19 +32,27 @@ Physical sites classified by **Property Type** (dwelling, estate/farm, church, i
 
 One conveyance or land instrument in a chain of title (patent, deed, will, probate, warrant, survey, tax return, atlas, or other): parties (person refs and/or free text), textual and optional exact dates, area, cost text plus optional normalized amount/currency/kind, book/page reference, associated properties, branch label, notes, and optional scan or Primary Source transcription link. Create these under **Taxonomies & Entities → Deeds & Land Instruments**, then order them on a property’s **Title Chain**. Do not model chain-of-title rows as Primary Sources.
 
+## Businesses
+
+Named historical commercial and industrial firms—stores, mills, lumber yards, water companies, silica/ore firms—with description, years active, owners (people), and associated property/site references.
+
+Desk path: **Taxonomies & Entities → Businesses**. There is no commercial subtype field; being a Business document is the classification.
+
+Businesses can carry a **Migration Mapping Key** so the CSV import links archive documents to the correct firm.
+
 ## Organizations
 
-Named historical organizations—commercial businesses, civic groups, and institutions—with optional **Organization type** (civic, commercial, institutional), description, years active, owners (people), and associated property/site references.
+Named historical civic, community, and institutional groups—congregations, fire companies, libraries, horse shows, schools as operators—with description, years active, leaders / associated people, and associated property/site references.
 
-In the Studio desk, **Organizations** is split into filtered lists (Commercial / Industrial, Civic / Community, Institutional) plus **All organizations**. Creating from a typed list presets Organization type. One document type covers all three kinds.
+Desk path: **Taxonomies & Entities → Organizations**. All of these records share one flat list; there is no civic vs institutional subtype.
 
-**Organization type** classifies the entity. Subject Categories such as Businesses or Organizations are separate—they tag archive material for search, not organization documents.
+Subject Categories such as Businesses or Organizations are separate—they tag archive material for search, not Business or Organization documents.
 
-Organizations can carry a **Migration Mapping Key** (e.g. `Lincoln`) so the CSV import links archive documents to the correct organization. Primary sources, historical images, and research articles reference organizations via an **Organizations** field—distinct from **Subjects** (theme categories).
+Organizations can carry a **Migration Mapping Key** (e.g. `Lincoln`) so the CSV import links archive documents to the correct group. Primary sources, historical images, and research articles reference both businesses and organizations via an **Organizations** field—distinct from **Subjects** (theme categories).
 
 ## Subject Categories
 
-Broad **themes for archive search** (e.g. Schools, Railroads, Farms, Genealogy). Tag primary sources and historical images so related material can be filtered. Do not use categories to classify a Property or Organization—use Property Type and Organization type on those documents instead. Categories and townships also have Migration Mapping Keys (visible during migration) for CSV keyword matching.
+Broad **themes for archive search** (e.g. Schools, Railroads, Farms, Genealogy). Tag primary sources and historical images so related material can be filtered. Do not use categories to classify a Property, Business, or Organization—use Property Type on properties, and create a Business or Organization document for named entities. Categories and townships also have Migration Mapping Keys (visible during migration) for CSV keyword matching.
 
 ## Donation Categories
 
@@ -52,4 +60,4 @@ Broad **themes for archive search** (e.g. Schools, Railroads, Farms, Genealogy).
 
 Donation Categories are not Subject Categories: they classify what kind of material was donated, not archive search themes like Schools or Railroads. Create them under **Taxonomies & Entities → Donation Categories**, or use **Create new** when linking from a Donation form.
 
-Related tasks: [Link geography](../common-tasks/link-geography.mdx), [Create and link people](../common-tasks/create-and-link-people.mdx), [Add a family lineage](../common-tasks/add-family-lineage.mdx), [Model a property](../common-tasks/model-a-property.mdx), [Enter a deed](../common-tasks/enter-deed.mdx), [Record an organization](../common-tasks/record-a-business.mdx), [Tag with categories](../common-tasks/tag-with-categories.mdx), [Record a donation](../common-tasks/record-a-donation.mdx), [Set Archive IDs](../common-tasks/set-archive-ids.mdx)
+Related tasks: [Link geography](../common-tasks/link-geography.mdx), [Create and link people](../common-tasks/create-and-link-people.mdx), [Add a family lineage](../common-tasks/add-family-lineage.mdx), [Model a property](../common-tasks/model-a-property.mdx), [Enter a deed](../common-tasks/enter-deed.mdx), [Record a business](../common-tasks/record-a-business.mdx), [Record an organization](../common-tasks/record-an-organization.mdx), [Tag with categories](../common-tasks/tag-with-categories.mdx), [Record a donation](../common-tasks/record-a-donation.mdx), [Set Archive IDs](../common-tasks/set-archive-ids.mdx)

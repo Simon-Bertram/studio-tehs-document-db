@@ -10,12 +10,12 @@ import {HomeIcon} from '@sanity/icons/Home'
 import {ImageIcon} from '@sanity/icons/Image'
 import {MarkerIcon} from '@sanity/icons/Marker'
 import {PinIcon} from '@sanity/icons/Pin'
-import {TagIcon} from '@sanity/icons/Tag'
 import {TagsIcon} from '@sanity/icons/Tags'
 import {UserIcon} from '@sanity/icons/User'
+import {UsersIcon} from '@sanity/icons/Users'
 import type {StructureResolver} from 'sanity/structure'
 
-import {SANITY_API_VERSION} from '../lib/sanityEnv'
+import {subjectCategoriesListItem} from './subject-categories'
 
 export const structure: StructureResolver = (S) =>
 	S.list()
@@ -63,54 +63,9 @@ export const structure: StructureResolver = (S) =>
 							S.documentTypeListItem('familyLine').title('Families / Lineages').icon(UserIcon),
 							S.documentTypeListItem('property').title('Properties & Buildings').icon(HomeIcon),
 							S.documentTypeListItem('deed').title('Deeds & Land Instruments').icon(DocumentsIcon),
-							S.listItem()
-								.title('Organizations')
-								.icon(CaseIcon)
-								.child(
-									S.list()
-										.title('Organizations')
-										.items([
-											S.listItem()
-												.title('Commercial / Industrial')
-												.child(
-													S.documentList()
-														.title('Commercial / Industrial')
-														.schemaType('business')
-														.apiVersion(SANITY_API_VERSION)
-														.filter('_type == "business" && businessType == "commercial"')
-														.initialValueTemplates([
-															S.initialValueTemplateItem('business-commercial'),
-														]),
-												),
-											S.listItem()
-												.title('Civic / Community')
-												.child(
-													S.documentList()
-														.title('Civic / Community')
-														.schemaType('business')
-														.apiVersion(SANITY_API_VERSION)
-														.filter('_type == "business" && businessType == "civic"')
-														.initialValueTemplates([S.initialValueTemplateItem('business-civic')]),
-												),
-											S.listItem()
-												.title('Institutional')
-												.child(
-													S.documentList()
-														.title('Institutional')
-														.schemaType('business')
-														.apiVersion(SANITY_API_VERSION)
-														.filter('_type == "business" && businessType == "institutional"')
-														.initialValueTemplates([
-															S.initialValueTemplateItem('business-institutional'),
-														]),
-												),
-											S.divider(),
-											S.listItem()
-												.title('All organizations')
-												.child(S.documentTypeList('business').title('All organizations')),
-										]),
-								),
-							S.documentTypeListItem('category').title('Subject Categories').icon(TagIcon),
+							S.documentTypeListItem('business').title('Businesses').icon(CaseIcon),
+							S.documentTypeListItem('organization').title('Organizations').icon(UsersIcon),
+							subjectCategoriesListItem(S),
 							S.documentTypeListItem('donationCategory')
 								.title('Donation Categories')
 								.icon(TagsIcon),

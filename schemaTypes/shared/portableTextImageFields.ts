@@ -34,9 +34,7 @@ export function portableTextImageFields() {
 			initialValue: 'figure',
 			validation: (Rule) =>
 				Rule.required().custom((value) =>
-					IMAGE_ROLE_VALUES.includes(value as ImageRoleValue)
-						? true
-						: 'Choose a valid image role',
+					IMAGE_ROLE_VALUES.includes(value as ImageRoleValue) ? true : 'Choose a valid image role',
 				),
 		}),
 	]

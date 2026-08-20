@@ -76,10 +76,9 @@ async function run() {
 	const knownBusinessIds = new Set(businesses.map((biz) => biz._id.replace(/^drafts\./, '')))
 	for (const biz of businesses) {
 		const id = biz._id.replace(/^drafts\./, '')
-		const existing = [
-			...(biz.associatedProperties ?? []),
-			...(biz.locations ?? []),
-		].map((l) => l._ref.replace(/^drafts\./, ''))
+		const existing = [...(biz.associatedProperties ?? []), ...(biz.locations ?? [])].map((l) =>
+			l._ref.replace(/^drafts\./, ''),
+		)
 		propertiesByBusiness.set(id, new Set(existing))
 	}
 

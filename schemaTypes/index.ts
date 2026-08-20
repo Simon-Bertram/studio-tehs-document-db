@@ -12,6 +12,7 @@ import {immediateRelative} from './objects/immediateRelative'
 import {internalSubLinks} from './objects/internalSubLinks'
 import {mapEmbed} from './objects/mapEmbed'
 import {pageBreak} from './objects/pageBreak'
+import {organization} from './organization'
 import {person} from './person'
 import {primarySource} from './primarySource'
 import {property} from './property'
@@ -26,6 +27,7 @@ export const schemaTypes = [
 	property,
 	deed,
 	business,
+	organization,
 	quarterlyArticle,
 	location,
 	historicalImage,

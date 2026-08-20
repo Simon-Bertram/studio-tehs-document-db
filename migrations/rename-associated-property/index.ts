@@ -32,10 +32,7 @@ export default defineMigration({
 				...(doc.associatedProperty._weak ? {_weak: true} : {}),
 			}
 
-			return [
-				at('associatedProperties', setIfMissing([member])),
-				at('associatedProperty', unset()),
-			]
+			return [at('associatedProperties', setIfMissing([member])), at('associatedProperty', unset())]
 		},
 	},
 })

@@ -37,26 +37,5 @@ export default defineConfig({
 
 	schema: {
 		types: schemaTypes,
-		templates: (prev) => [
-			...prev,
-			{
-				id: 'business-commercial',
-				title: 'Commercial organization',
-				schemaType: 'business',
-				value: {businessType: 'commercial'},
-			},
-			{
-				id: 'business-civic',
-				title: 'Civic organization',
-				schemaType: 'business',
-				value: {businessType: 'civic'},
-			},
-			{
-				id: 'business-institutional',
-				title: 'Institutional organization',
-				schemaType: 'business',
-				value: {businessType: 'institutional'},
-			},
-		],
 	},
 })

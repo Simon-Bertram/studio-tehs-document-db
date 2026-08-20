@@ -8,10 +8,7 @@ import {Box} from '@sanity/ui'
  */
 export function DonationUncategorizedMedia() {
 	return (
-		<Box
-			style={{position: 'relative', width: '1em', height: '1em'}}
-			title="No donation category"
-		>
+		<Box style={{position: 'relative', width: '1em', height: '1em'}} title="No donation category">
 			<BasketIcon />
 			<WarningOutlineIcon
 				style={{

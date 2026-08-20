@@ -3,8 +3,8 @@ import {BookIcon} from '@sanity/icons/Book'
 import {DOCUMENTATION_TOOL_NAME} from './constants'
 import {DocumentationTool} from './DocumentationTool'
 
-export {DocumentationNavbar} from './DocumentationNavbar'
 export {DOCUMENTATION_TOOL_NAME} from './constants'
+export {DocumentationNavbar} from './DocumentationNavbar'
 
 export function documentationTool() {
 	return {

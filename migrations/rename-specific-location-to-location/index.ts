@@ -12,10 +12,7 @@ export default defineMigration({
 			if (!doc.specificLocation || doc.location) {
 				return doc.specificLocation && doc.location ? [at('specificLocation', unset())] : []
 			}
-			return [
-				at('location', setIfMissing(doc.specificLocation)),
-				at('specificLocation', unset()),
-			]
+			return [at('location', setIfMissing(doc.specificLocation)), at('specificLocation', unset())]
 		},
 	},
 })

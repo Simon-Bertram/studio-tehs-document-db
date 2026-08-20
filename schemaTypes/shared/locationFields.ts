@@ -44,7 +44,7 @@ export function locationReferenceFields(options: {
 }
 
 /**
- * Organization → property sites (`associatedProperties`).
+ * Business / organization → property sites (`associatedProperties`).
  */
 export function associatedPropertiesField(group?: string) {
 	return defineField({
@@ -59,6 +59,6 @@ export function associatedPropertiesField(group?: string) {
 			}),
 		],
 		description:
-			'Canonical link from this organization to the properties it occupied. Related organizations are found from a property via this field (not stored on the property).',
+			'Canonical link from this record to the properties it occupied. Related businesses and organizations are found from a property via this field (not stored on the property).',
 	})
 }

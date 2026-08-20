@@ -69,6 +69,7 @@ export default defineMigration({
 		'deed',
 		'property',
 		'business',
+		'organization',
 		'quarterlyArticle',
 		'donation',
 	],
@@ -116,7 +117,7 @@ export default defineMigration({
 				)
 			}
 
-			if (doc._type === 'business') {
+			if (doc._type === 'business' || doc._type === 'organization') {
 				if (
 					typeof doc.yearsActive === 'string' &&
 					!isHistoricalDateObject(doc.activeFrom) &&

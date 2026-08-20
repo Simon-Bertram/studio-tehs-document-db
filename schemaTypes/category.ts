@@ -1,6 +1,8 @@
 import {TagIcon} from '@sanity/icons/Tag'
-import {defineArrayMember, defineField, defineType} from 'sanity'
+import {createElement} from 'react'
+import {defineArrayMember, defineField, defineType, type PreviewValue} from 'sanity'
 
+import {CategoryPreview} from './components/CategoryPreview'
 import {
 	isUniqueMigrationMappingValue,
 	migrationKeyMatchesOwnAlias,
@@ -19,7 +21,7 @@ export const category = defineType({
 	type: 'document',
 	icon: TagIcon,
 	description:
-		'Themes for archive search and discovery (e.g. Schools, Railroads, Farms, Genealogy). Tag primary sources and historical images so related material can be filtered. Not the same as Property Type or Organization type—those classify a building or organization entity.',
+		'Themes for archive search and discovery (e.g. Schools, Railroads, Farms, Genealogy). Tag primary sources and historical images so related material can be filtered. Not the same as Property Type (building classification) or a named Business or Organization document.',
 	fields: [
 		defineField({
 			name: 'title',
@@ -67,11 +69,15 @@ export const category = defineType({
 		select: {
 			title: 'title',
 			description: 'description',
+			_id: '_id',
 		},
-		prepare({title, description}) {
+		prepare({title, description, _id}): PreviewValue {
 			return {
 				title: title || 'Untitled category',
-				subtitle: truncatePreviewText(description),
+				subtitle: createElement(CategoryPreview, {
+					documentId: _id,
+					description: truncatePreviewText(description),
+				}) as unknown as string,
 			}
 		},
 	},

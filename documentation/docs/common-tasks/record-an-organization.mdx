@@ -1,0 +1,47 @@
+---
+sidebar_position: 9.5
+---
+
+# Record an organization
+
+## Goal
+
+Capture a historical civic, community, or institutional group—fire companies, libraries, congregations, horse shows, schools as operators, military units—with associated people, years active, and the property sites it occupied.
+
+## Property vs organization
+
+- Create a [property](./model-a-property.mdx) for the physical site first when the building or tract is known.
+- The organization document is the *congregation, civic group, or institution*, not the building.
+- Do **not** invent a property type for “organization”—classify the site on the property (e.g. Institutional for a library or fire hall), then link the property from this organization under **Associated Properties / Sites**.
+- Commercial and industrial firms belong on a [business](./record-a-business.mdx) document, not here.
+
+## Organization vs Subject Categories
+
+- **Organization** = this named civic or institutional entity under Taxonomies & Entities.
+- **Subject Categories** such as Organizations = themes for [tagging archive clippings and photos](./tag-with-categories.mdx). They are not set on organization documents.
+- Use this document for the named group; use categories only when cataloging primary sources or historical images.
+
+## Steps
+
+1. Open **Taxonomies & Entities → Organizations** and create a new document.
+2. Set **Organization Name** (required).
+3. Optionally set **Migration Mapping Key** to the legacy CSV keyword (e.g. `Lincoln` for the Lincoln Institution). This field is visible during migration so you can fill keys; hide it after cutover.
+4. Optionally add **Description** and **Active From / Active To** (often year-only).
+5. Link **Leaders / Associated People** to Historical Person documents.
+6. Under **Associated Properties / Sites**, reference one or more **Properties** (not villages—put geography on the property). This is the single source of truth for organization↔site links.
+7. Publish when ready.
+
+## Field notes
+
+- Create person and property entities first if they do not already exist.
+- Places of worship or civic activity are property references only.
+- There is no civic vs institutional subtype—all of these records live in the single Organizations list.
+- **Migration Mapping Key** maps CSV keywords onto this organization during import. Entity keywords like `Lincoln` belong here, not on a Subject Category.
+
+## Related
+
+- [Record a business](./record-a-business.mdx)
+- [Model a property or estate](./model-a-property.mdx)
+- [Tag with subject categories](./tag-with-categories.mdx)
+- [Create and link people](./create-and-link-people.mdx)
+- [Link geography](./link-geography.mdx)

@@ -2,50 +2,44 @@
 sidebar_position: 9
 ---
 
-# Record an organization
+# Record a business
 
 ## Goal
 
-Capture a historical organization—including commercial businesses, civic groups, and institutions—with type, owners, years active, and the property sites it occupied.
+Capture a historical commercial or industrial business—mill operators, stores, lumber yards, water companies, silica/ore firms—with owners, years active, and the property sites it occupied.
 
-## Property vs organization
+## Property vs business
 
 - Create a [property](./model-a-property.mdx) for the physical site first when the building or tract is known.
-- The organization document is the *company, congregation, or civic group*, not the building.
-- Do **not** invent a property type for “organization”—classify the site on the property (e.g. Institutional for a library or fire hall), then link the property from this organization under **Associated Properties / Sites**.
+- The business document is the *company or firm*, not the building.
+- Do **not** invent a property type for “business”—classify the site on the property (e.g. Industrial for a mill), then link the property from this business under **Associated Properties / Sites**.
+- Civic groups, congregations, and institutions belong on an [organization](./record-an-organization.mdx) document, not here.
 
-## Organization type vs Subject Categories
+## Business vs Subject Categories
 
-- **Organization type** = classification on this document (civic / commercial / institutional).
-- **Subject Categories** such as Businesses or Organizations = themes for [tagging archive clippings and photos](./tag-with-categories.mdx). They are not set on organization documents.
-- Use Organization type here; use categories only when cataloging primary sources or historical images.
+- **Business** = this named commercial entity under Taxonomies & Entities.
+- **Subject Categories** such as Businesses = themes for [tagging archive clippings and photos](./tag-with-categories.mdx). They are not set on business documents.
+- Use this document for the named firm; use categories only when cataloging primary sources or historical images.
 
 ## Steps
 
-1. Open **Taxonomies & Entities → Organizations**.
-2. Choose the list that matches the organization:
-   - **Commercial / Industrial** — mill operators, lumber yards, water companies, silica/ore firms
-   - **Civic / Community** — fire company, library, conservancy, church congregation, horse show
-   - **Institutional** — Lincoln Institution, military units as operators
-   - **All organizations** — every organization regardless of type (use when browsing or when type is unclear)
-3. Create a new document from that list. Creating from Commercial, Civic, or Institutional **presets Organization type** for you.
-4. Set **Organization Name** (required).
-5. Confirm or change **Organization type** if needed. Changing type moves the document between the filtered lists.
-6. Optionally set **Migration Mapping Key** to the legacy CSV keyword (e.g. `Lincoln` for the Lincoln Institution). This field is visible during migration so you can fill keys; hide it after cutover.
-7. Optionally add **Description** and **Years Active** (freeform, e.g. `1870–1920`).
-8. Link **Owners / Operators** to Historical Person documents.
-9. Under **Associated Properties / Sites**, reference one or more **Properties** (not villages—put geography on the property). This is the single source of truth for organization↔site links.
-10. Publish when ready.
+1. Open **Taxonomies & Entities → Businesses** and create a new document.
+2. Set **Business Name** (required).
+3. Optionally set **Migration Mapping Key** to the legacy CSV keyword. This field is visible during migration so you can fill keys; hide it after cutover.
+4. Optionally add **Description** and **Active From / Active To** (often year-only).
+5. Link **Owners / Operators** to Historical Person documents.
+6. Under **Associated Properties / Sites**, reference one or more **Properties** (not villages—put geography on the property). This is the single source of truth for business↔site links.
+7. Publish when ready.
 
 ## Field notes
 
 - Create person and property entities first if they do not already exist.
-- Places of business or worship are property references only.
-- Documents without an Organization type appear only under **All organizations**, not in the typed lists.
-- **Migration Mapping Key** maps CSV keywords onto this organization during import. Entity keywords like `Lincoln` belong here, not on a Subject Category.
+- Places of business are property references only.
+- **Migration Mapping Key** maps CSV keywords onto this business during import. Entity keywords belong here, not on a Subject Category.
 
 ## Related
 
+- [Record an organization](./record-an-organization.mdx)
 - [Model a property or estate](./model-a-property.mdx)
 - [Tag with subject categories](./tag-with-categories.mdx)
 - [Create and link people](./create-and-link-people.mdx)

@@ -1,7 +1,7 @@
-import {CaseIcon} from '@sanity/icons/Case'
 import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {LinkIcon} from '@sanity/icons/Link'
 import {PinIcon} from '@sanity/icons/Pin'
+import {UsersIcon} from '@sanity/icons/Users'
 import {defineType} from 'sanity'
 
 import {
@@ -10,22 +10,22 @@ import {
 	historicalEntityPreviewSelect,
 } from './shared/historicalEntityFields'
 
-export const business = defineType({
-	name: 'business',
-	title: 'Business',
+export const organization = defineType({
+	name: 'organization',
+	title: 'Organization',
 	type: 'document',
-	icon: CaseIcon,
+	icon: UsersIcon,
 	groups: [
 		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
 		{name: 'place', title: 'Place', icon: PinIcon},
 		{name: 'relations', title: 'Relations', icon: LinkIcon},
 	],
 	fields: historicalEntityFields({
-		nameTitle: 'Business Name',
+		nameTitle: 'Organization Name',
 		nameDescription:
-			'e.g., H. & B.F. Bean’s Lumber Yard, Valley Forge Silica, Sand and Ore Company',
-		contextDescription: 'Historical context for this commercial or industrial business.',
-		ownersTitle: 'Owners / Operators',
+			'e.g., Great Valley Presbyterian Church, Lincoln Institution, Devon Horse Show',
+		contextDescription: 'Historical context for this civic, community, or institutional group.',
+		ownersTitle: 'Leaders / Associated People',
 	}),
 	orderings: [
 		{
@@ -37,7 +37,7 @@ export const business = defineType({
 	preview: {
 		select: historicalEntityPreviewSelect,
 		prepare(selection) {
-			return historicalEntityPreviewPrepare(selection, 'Unnamed Business')
+			return historicalEntityPreviewPrepare(selection, 'Unnamed Organization')
 		},
 	},
 })

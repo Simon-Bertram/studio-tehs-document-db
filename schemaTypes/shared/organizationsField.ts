@@ -1,7 +1,7 @@
 import {defineArrayMember, defineField} from 'sanity'
 
 const ORGANIZATIONS_DESCRIPTION =
-	'Historical organizations this item relates to (e.g. Lincoln Institution). Distinct from Subject Categories, which are archive search themes.'
+	'Historical businesses and organizations this item relates to (e.g. Lincoln Institution, a mill company). Distinct from Subject Categories, which are archive search themes.'
 
 /**
  * Shared organizations reference array for archive documents.
@@ -16,7 +16,7 @@ export function organizationsField(group?: string) {
 		of: [
 			defineArrayMember({
 				type: 'reference',
-				to: [{type: 'business'}],
+				to: [{type: 'business'}, {type: 'organization'}],
 			}),
 		],
 	})
