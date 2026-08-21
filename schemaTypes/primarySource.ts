@@ -9,6 +9,7 @@ import {
 	formatHistoricalDateFromPreview,
 	historicalDatePreviewSelect,
 } from './lib/historicalDatePreview'
+import {incomingReferenceArrayInitialValue} from './lib/incoming-reference-array'
 import {archiveIdField} from './shared/archiveIdField'
 import {citationsField} from './shared/citationsField'
 import {organizationsField} from './shared/organizationsField'
@@ -133,6 +134,7 @@ export const primarySource = defineType({
 		subjectsField('research'),
 		citationsField('research'),
 	],
+	initialValue: incomingReferenceArrayInitialValue('subjects'),
 	orderings: [
 		{
 			title: 'Exact date, newest',

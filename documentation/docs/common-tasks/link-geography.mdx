@@ -12,7 +12,7 @@ Place archive and entity records using the most specific geography available.
 
 1. **Property** — when a known building or land tract is involved (primary sources can link **Associated Properties**).
 2. **Location** — village or named place (Paoli, Berwyn), which always has a parent township.
-3. **Township** — only when nothing more specific is known.
+3. **Township** — only when nothing more specific is known. Every township belongs to a county.
 
 ## Steps by document type
 
@@ -30,6 +30,17 @@ Place archive and entity records using the most specific geography available.
 
 1. Add one or more **Townships** for the research article’s geographic scope.
 
+### County entity
+
+1. Create under **Taxonomies & Entities → Counties**.
+2. Set a unique name (e.g. Chester, Delaware).
+
+### Township entity
+
+1. Create under **Taxonomies & Entities → Townships**, or from a County document’s **Townships** list.
+2. Set name and required parent county.
+3. Existing townships without a county are listed under **Taxonomies & Entities → Townships without a county**.
+
 ### Location entity
 
 1. Create under **Taxonomies & Entities → Locations**.
@@ -37,8 +48,8 @@ Place archive and entity records using the most specific geography available.
 
 ## Field notes
 
-- Geography cascades: location → township; property can carry location or township.
-- Create townships and locations under Taxonomies before linking them from archive documents.
+- Geography cascades: location → township → county; property can carry location or township.
+- Create counties, townships, and locations under Taxonomies before linking them from archive documents.
 
 ## Related
 

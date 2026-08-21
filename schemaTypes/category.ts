@@ -1,8 +1,8 @@
 import {TagIcon} from '@sanity/icons/Tag'
-import {createElement} from 'react'
-import {defineArrayMember, defineField, defineType, type PreviewValue} from 'sanity'
+import {defineArrayMember, defineField, defineType} from 'sanity'
 
-import {CategoryPreview} from './components/CategoryPreview'
+import {defineCountedIncomingReferenceDecoration} from './components/CountedIncomingReferences'
+import {appendIncomingReference} from './lib/incoming-reference-array'
 import {
 	isUniqueMigrationMappingValue,
 	migrationKeyMatchesOwnAlias,
@@ -58,6 +58,21 @@ export const category = defineType({
 			validation: (Rule) => Rule.custom(validateCategoryMigrationKeyAliases()),
 		}),
 	],
+	renderMembers: (members) => [
+		...members,
+		defineCountedIncomingReferenceDecoration({
+			name: 'primarySources',
+			title: 'Primary Source',
+			types: [{type: 'primarySource'}],
+			onLinkDocument: appendIncomingReference('subjects'),
+		}),
+		defineCountedIncomingReferenceDecoration({
+			name: 'historicalImages',
+			title: 'Historical Images',
+			types: [{type: 'historicalImage'}],
+			onLinkDocument: appendIncomingReference('subjects'),
+		}),
+	],
 	orderings: [
 		{
 			title: 'Title, A–Z',
@@ -69,15 +84,11 @@ export const category = defineType({
 		select: {
 			title: 'title',
 			description: 'description',
-			_id: '_id',
 		},
-		prepare({title, description, _id}): PreviewValue {
+		prepare({title, description}) {
 			return {
 				title: title || 'Untitled category',
-				subtitle: createElement(CategoryPreview, {
-					documentId: _id,
-					description: truncatePreviewText(description),
-				}) as unknown as string,
+				subtitle: truncatePreviewText(description),
 			}
 		},
 	},

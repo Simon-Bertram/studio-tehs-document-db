@@ -1,5 +1,6 @@
 import {business} from './business'
 import {category} from './category'
+import {county} from './county'
 import {deed} from './deed'
 import {donation} from './donation'
 import {donationCategory} from './donationCategory'
@@ -22,6 +23,7 @@ import {township} from './township'
 
 export const schemaTypes = [
 	category,
+	county,
 	township,
 	person,
 	property,

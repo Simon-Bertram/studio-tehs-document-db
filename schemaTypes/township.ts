@@ -1,6 +1,8 @@
 import {PinIcon} from '@sanity/icons/Pin'
 import {defineField, defineType} from 'sanity'
 
+import {TownshipMissingCountyMedia} from './components/TownshipMissingCountyMedia'
+import {incomingReferenceInitialValue} from './lib/incoming-reference-array'
 import {isUniqueStringField} from './lib/isUniqueStringField'
 
 export const township = defineType({
@@ -16,6 +18,13 @@ export const township = defineType({
 			validation: (Rule) => Rule.required(),
 		}),
 		defineField({
+			name: 'county',
+			title: 'County',
+			type: 'reference',
+			to: [{type: 'county'}],
+			validation: (Rule) => Rule.required(),
+		}),
+		defineField({
 			name: 'migrationKey',
 			title: 'Migration Mapping Key',
 			type: 'string',
@@ -26,6 +35,7 @@ export const township = defineType({
 				),
 		}),
 	],
+	initialValue: incomingReferenceInitialValue('county'),
 	orderings: [
 		{
 			title: 'Name, A–Z',
@@ -36,11 +46,13 @@ export const township = defineType({
 	preview: {
 		select: {
 			title: 'name',
+			county: 'county.name',
 		},
-		prepare({title}) {
+		prepare({title, county}) {
 			return {
 				title: title || 'Untitled township',
-				subtitle: 'Township',
+				subtitle: county || 'No county',
+				...(county ? {} : {media: TownshipMissingCountyMedia}),
 			}
 		},
 	},

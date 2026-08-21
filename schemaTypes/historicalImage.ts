@@ -10,7 +10,7 @@ import {
 	formatHistoricalDateFromPreview,
 	historicalDatePreviewSelect,
 } from './lib/historicalDatePreview'
-import {incomingReferenceArrayInitialValue} from './lib/incoming-reference-array'
+import {incomingReferenceArrayInitialValueBySource} from './lib/incoming-reference-array'
 import {archiveIdField} from './shared/archiveIdField'
 import {citationsField} from './shared/citationsField'
 import {locationReferenceFields} from './shared/locationFields'
@@ -145,7 +145,10 @@ export const historicalImage = defineType({
 			group: 'provenance',
 		}),
 	],
-	initialValue: incomingReferenceArrayInitialValue('people'),
+	initialValue: incomingReferenceArrayInitialValueBySource({
+		person: 'people',
+		category: 'subjects',
+	}),
 	orderings: [
 		{
 			title: 'Archive ID',
