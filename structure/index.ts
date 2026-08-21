@@ -15,7 +15,6 @@ import {TagIcon} from '@sanity/icons/Tag'
 import {TagsIcon} from '@sanity/icons/Tags'
 import {UserIcon} from '@sanity/icons/User'
 import {UsersIcon} from '@sanity/icons/Users'
-import {WarningOutlineIcon} from '@sanity/icons/WarningOutline'
 import type {StructureResolver} from 'sanity/structure'
 
 export const structure: StructureResolver = (S) =>
@@ -59,16 +58,6 @@ export const structure: StructureResolver = (S) =>
 						.title('Taxonomies & Entities')
 						.items([
 							S.documentTypeListItem('county').title('Counties').icon(EarthAmericasIcon),
-							S.listItem()
-								.title('Townships without a county')
-								.icon(WarningOutlineIcon)
-								.child(
-									S.documentList()
-										.title('Townships without a county')
-										.schemaType('township')
-										.filter('_type == "township" && !defined(county._ref)')
-										.defaultOrdering([{field: 'name', direction: 'asc'}]),
-								),
 							S.documentTypeListItem('township').title('Townships').icon(PinIcon),
 							S.documentTypeListItem('location').title('Locations').icon(MarkerIcon),
 							S.documentTypeListItem('person').title('Historical Persons').icon(UserIcon),

@@ -7,8 +7,7 @@ the township link on the one archive image that pointed at the mis-typed
 Sanity will not change `_type` on an existing `_id`, so the township is
 replaced by a new county document rather than retyped.
 
-Does **not** assign counties to remaining townships. After this run they
-appear under **Taxonomies & Entities → Townships without a county**.
+Does **not** assign counties to remaining townships; those were left for editors to assign in Studio.
 
 ```bash
 # Dry-run
