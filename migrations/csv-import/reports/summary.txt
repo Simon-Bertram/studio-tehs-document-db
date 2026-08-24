@@ -1,0 +1,27 @@
+CSV Import Summary
+==================
+Total rows:          20
+Imported:            17
+Skipped / failed:    3
+Needs manual links:  16
+Missing keywords:    3
+
+Type breakdown:
+  historicalImage: 1
+  primarySource: 15
+  researchArticle: 1
+
+Report files:
+  /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/imported.csv
+  /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/skipped.csv
+  /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/diverted-quarterly.csv
+  /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/needs-manual-links.csv
+  /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/needs-manual-links.md
+  /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/missing-taxonomies.csv
+
+How to identify records:
+  imported            → Archive ID = clipId; schemaType is the Studio document type
+  skipped             → no Studio doc; use clipId + reason in skipped.csv
+  diverted-quarterly  → keyword TEHS; import as quarterlyArticle, not archive types
+  needs_manual_links  → needs-manual-links.md (grouped) or the CSV (one row per image)
+  missing-taxonomies  → create migrationKey on the right entity type, then re-run import

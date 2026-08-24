@@ -1,0 +1,25 @@
+lastName,nameA,firstNameA,suffixA,nameB,firstNameB,suffixB,reason,score,sourceNamesA,sourceNamesB,alternateSpellingsA,alternateSpellingsB
+Martin,Matthias Martin,Matthias,,Mattias Martin,Mattias,,similar_first_name (score 0.93),0.933,Matthias Martin,Mattias Martin,,
+Tyson,Mathias Tyson,Mathias,,Matthias Tyson,Matthias,,similar_first_name (score 0.93),0.933,Mathias Tyson,Matthias Tyson,,
+Richards,Roland Richards,Roland,,Rowland Richards,Rowland,,similar_first_name (score 0.92),0.923,Roland Richards,Rowland Richards,,
+Davis,Margaret Davis,Margaret,,Margarette Davis,Margarette,,similar_first_name (score 0.89),0.889,Margaret Davis,Margarette Davis,,
+Davis,Hezekiah Davis,Hezekiah,,Hezekial Davis,Hezekial,,similar_first_name (score 0.88),0.875,Hezekiah Davis,Hezekial Davis,,
+Fitzgerald,Matthais Fitzgerald,Matthais,,Matthias Fitzgerald,Matthias,,similar_first_name (score 0.88),0.875,Matthais Fitzgerald,Matthias Fitzgerald,,
+Wagner,Bastian Wagner,Bastian,,Sebastian Wagner,Sebastian,,similar_first_name (score 0.88),0.875,Bastian Wagner,Sebastian Wagner,,
+Davis,Jonathan Davis,Jonathan,,Nathan Davis,Nathan,,similar_first_name (score 0.86),0.857,Jonathan Davis,Nathan Davis,,
+Jones,Hannah Jones,Hannah,,Johannah Jones,Johannah,,similar_first_name (score 0.86),0.857,Hannah Jones,Johannah Jones,,
+Thomas,Jonathan Thomas,Jonathan,,Nathan Thomas,Nathan,,similar_first_name (score 0.86),0.857,Jonathan Thomas,Nathan Thomas,,
+Young,Ann Young,Ann,,Anna Young,Anna,,similar_first_name (score 0.86),0.857,Ann Young,Anna Young,,
+Acker,Susan Acker,Susan,,Susanna Acker,Susanna,,shared_initial_edit_distance_2,0.833,Susan Acker,Susanna Acker|Susannah Acker,,Susannah Acker
+Evans,Randal Evans,Randal,,Randel Evans,Randel,,shared_initial_edit_distance_1,0.833,Randal Evans,Randel Evans,,
+Harley,Abraham Harley,Abraham,,Abram Harley,Abram,,shared_initial_edit_distance_2,0.833,Abraham Harley,Abram Harley,,
+Ramsey,Susan Ramsey,Susan,,Susanna Ramsey,Susanna,,shared_initial_edit_distance_2,0.833,Susan Ramsey,Susannah Ramsey,,Susannah Ramsey
+Rapp,Barnet Rapp,Barnet,,Barney Rapp,Barney,,shared_initial_edit_distance_1,0.833,Barnet Rapp,Barney Rapp,,
+Roberts,Susan Roberts,Susan,,Susanna Roberts,Susanna,,shared_initial_edit_distance_2,0.833,Susan Roberts,Susanna Roberts,,
+Bean,Mary Ann Bean,Mary Ann,,Mary Jane Bean,Mary Jane,,same_given_edit_distance_2,0.824,Mary Ann Bean,Mary Jane Bean,,
+Wells,Encoh Wells,Encoh,,Enoch Wells,Enoch,,shared_initial_edit_distance_2,0.800,Encoh Wells,Enoch Wells,,
+Williams,David Williams,David,,Davis Williams,Davis,,shared_initial_edit_distance_1,0.800,David Williams,Davis Williams,,
+Bean,Ann Bean,Ann,,Annie Bean,Annie,,shared_initial_edit_distance_2,0.750,Ann Bean,Annie Bean|Annue Bean,,Annue Bean
+Gillespie,Ann Gillespie,Ann,,Annie Gillespie,Annie,,shared_initial_edit_distance_2,0.750,Ann Gillespie,Annie Gillespie,,
+Pennypacker,Ann Pennypacker,Ann,,Annie Pennypacker,Annie,,shared_initial_edit_distance_2,0.750,Ann Pennypacker,Annie Pennypacker,,
+Thomas,Joan Thomas,Joan,,John Thomas,John,,shared_initial_edit_distance_1,0.750,Joan Thomas,John Thomas,,

@@ -1,0 +1,2 @@
+archiveId,issue,detail
+(missing identifier),missing_image_location,No imageLocation; fileLocation must not be used as a URL.

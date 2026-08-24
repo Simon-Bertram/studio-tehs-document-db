@@ -1,6 +1,6 @@
 # Images manual-links ledger
 
-2356 imported documents could not be linked to a Township, Subject, and/or Donation. Grouped by the missing value so you can fix one taxonomy document, then re-run the import.
+2040 imported documents could not be linked to a Township, Subject, and/or Donation. Grouped by the missing value so you can fix one taxonomy document, then re-run the import.
 
 ## How to fix
 
@@ -52,12 +52,6 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | Archive ID | Title |
 | --- | --- |
 | CVR21 | “Iron Horse Ramble” through Bridgeport, April 30, 1960. |
-
-### Charlestown (1)
-
-| Archive ID | Title |
-| --- | --- |
-| OLA5 | Valley Forge General Hospital looking northwest |
 
 ### Frazer (1)
 
@@ -1040,7 +1034,7 @@ Standing middle distance: Skip Eichner (striped shirt), Bill Andrews (dark shirt
 | YSP03 | Crystal Diamond Spring, Yellow Springs Village |
 | YSP05 | 18th Century Medicinal Herb Garden |
 
-### View (448)
+### View (451)
 
 | Archive ID | Title |
 | --- | --- |
@@ -1273,6 +1267,8 @@ Standing middle distance: Skip Eichner (striped shirt), Bill Andrews (dark shirt
 | LH04 | Playing in the snow |
 | LH05 | Snow scene |
 | LH06 | Snow scene |
+| LH08 | Unknown view |
+| LH09 | Unknown view |
 | MAB01 | Looking south on Main Avenue, Berwyn |
 | MAL12 | King Street, Malvern |
 | MAL27 | King Street, Malvern |
@@ -1438,6 +1434,7 @@ Stereocard |
 | VFP6 | Valley Forge PA - Old Barracks (a relict of the revolution) |
 | VFP60 | Valley Forge view |
 | VFP61 | Schuykill River in flood |
+| VFP65 | Valley Forge Park (from present route 252) |
 | VFP68 | Huntingdon Park, Valley Forge |
 | VFP69 | Valley Forge hills |
 | VFP73 | Road to Observatory, Valley Forge |
@@ -1494,196 +1491,6 @@ Stereocard |
 | YOF49 | Construction of route 202 |
 | YOF50 | Construction of route 202 |
 | YOF51 | Construction of route 202 |
-
-### Cultural (185)
-
-| Archive ID | Title |
-| --- | --- |
-| BEP39 | Devon Horse Show |
-| BEP40 | Devon Horse Show |
-| CH22 | Berwyn 75th Anniversary Service |
-| CUH1 | Chopping mutton for a pie |
-| CUH2 | Dinner Preparation |
-| CUH3 | Mending Shift |
-| CUH4 | Bread cooling |
-| CUH5 | Chopped egg sauce |
-| DAI01 | Aero Service Company Aerial Image of Devon Horse Show area |
-| DAI02 | Dallin Aerial Image of Devon Horse Show area |
-| DAI03 | Dallin Aerial Image of Devon Horse Show area |
-| DAI04 | Dallin Aerial Image of Devon Horse Show area |
-| DAI05 | Dallin Aerial Image of Devon Horse Show area |
-| DAI06 | Dallin Aerial Image of Devon Horse Show area |
-| DAI07 | Dallin Aerial Image of Devon Horse Show area |
-| DAI08 | Dallin Aerial Image of Devon Horse Show area |
-| DAI09 | Dallin Aerial Image of Devon Horse Show area |
-| DAI10 | Dallin Aerial Image of Devon Horse Show area |
-| DAI11 | Aerial Image of Devon Horse Show area |
-| DAI12 | Dallin Aerial Image of Devon Horse Show area |
-| DAI13 | Aerial Image of Devon Horse Show area |
-| DAI14 | Dallin Aerial Image of Devon Horse Show area |
-| DAI15 | Aerial Image of Devon Horse Show area |
-| DAI16 | Dallin Aerial Image of Devon Horse Show area |
-| DAI17 | Aerial Image of Devon Horse Show area |
-| DAI18 | Dallin Aerial Image of Devon Horse Show area |
-| DAI19 | Aerial Image of Devon Horse Show area |
-| DAI20 | Dallin Aerial Image of Devon Horse Show area |
-| DAI21 | Aerial Image of Devon Horse Show area |
-| DAI22 | Dallin Aerial Image of Devon Horse Show area |
-| DAI23 | Aerial Image of Devon Horse Show area |
-| DCF001 | Devon Horse Show and Country Fair Cafeteria Committee |
-| DCF002 | Devon Horse Show and Country Fair - food sampling |
-| DCF003 | Devon Horse Show and Country Fair - Mrs Croll retires |
-| DCF004 | Devon Horse Show and Country Fair Poster |
-| DCF005 | Devon Horse Show and Country Fair Garden Booth |
-| DEI11 | Devon Horse Show carriages |
-| DEI12 | Devon Horse Show single riders |
-| DEI13 | Devon Horse Show carriages |
-| DEI14 | Devon Horse Show grounds with Devon Inn in background |
-| DEI15 | Devon Horse Show grounds with Devon Inn in background |
-| DEI16 | Devon Horse Show grounds with Devon Inn in background |
-| DEI17 | Little Boys on Horses at Devon Horse Show 1898 |
-| DEI18 | Little girl astride horse Devon Horse Show |
-| DEI19 | Design for Devon Inn Stables 1882 |
-| DSS001 | Barn #1, Devon Horse Show |
-| DSS002 | Barn #1, Devon Horse Show |
-| DSS003 | Barn #1, Devon Horse Show |
-| DSS004 | Barn #1, Devon Horse Show |
-| DSS005 | Barn #1, Devon Horse Show |
-| DSS006 | Barn #1, Devon Horse Show |
-| DSS007 | Barn #1, Devon Horse Show |
-| DSS008 | Barn #1, Devon Horse Show |
-| DSS009 | Barn #1, Devon Horse Show |
-| DSS010 | Barn #1, Devon Horse Show |
-| DSS011 | Barn #1, Devon Horse Show |
-| DSS012 | Barn #1, Devon Horse Show |
-| DTA001 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA002 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA003 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA004 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA005 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA006 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA007 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA008 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA009 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA010 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA013 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA015 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA017 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA019 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA021 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA022 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA023 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA025 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA026 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA027 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA029 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA030 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA031 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA032 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA033 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA034 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA035 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA036 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA037 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA038 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA039 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA040 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA041 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA042 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA043 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA044 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA045 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA046 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA047 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA048 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA049 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA050 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA051 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA052 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA053 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA054 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA055 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA056 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA057 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA058 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA059 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA060 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA061 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA062 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA063 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA064 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA065 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA066 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA067 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA068 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA069 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA070 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA071 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA072 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA073 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA074 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA075 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA076 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA077 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA078 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA079 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA080 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA081 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA082 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA083 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA084 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA085 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA086 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA087 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA088 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA089 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA090 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA091 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA092 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA093 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA094 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA095 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA096 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA097 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA098 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA099 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA100 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA101 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA102 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA103 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA105 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA106 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA107 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA108 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA109 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA110 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA111 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA112 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA113 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA114 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA115 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA116 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA117 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA118 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA119 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA120 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA121 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA122 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA123 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA124 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA125 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA126 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA127 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA128 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA129 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA130 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA131 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA132 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA133 | Devon Horse Show and Country Fair (DHSCF) |
-| EHE01 | Catharine Earle Schober (nee Mather) and Emlen Hutchinson Shober |
-| EHE02 | Victor Charles Mayer and Catherine Earle Mayer |
-| MM01 | Old Mount Misery Parking Lot |
-| MM02 | Old Mount Misery Parking Lot |
 
 ### Road (161)
 
@@ -1851,7 +1658,7 @@ Stereocard |
 | WRD12 | Waterloo Road and Railroad Bridge, Devon, PA |
 | YSR01 | New Road off Yellow Springs Road |
 
-### Service (147)
+### Service (149)
 
 | Archive ID | Title |
 | --- | --- |
@@ -1864,6 +1671,8 @@ Stereocard |
 | BFC05 | Berwyn Fire Company |
 | BFC06 | Fireman’s Parade on Francis Avenue |
 | BFC07 | Berwyn Fire House |
+| BFC08 | Location of new Berwyn Fire House |
+| BFC09 | Berwyn Fire House |
 | BFC10 | Berwyn Fire Company in action |
 | BFC11 | Berwyn Fire Company |
 | BFC12 | Berwyn Fire Company |
@@ -2003,142 +1812,6 @@ Stereocard |
 | TRE2 | Tredyffrin Township Building, Berwyn |
 | VFP36 | St. Gabriel's Hall |
 
-### Businesses (64)
-
-| Archive ID | Title |
-| --- | --- |
-| AS10 | Paoli Store & Toll House |
-| AS12 | Routes 30 & 252, Paoli |
-| BBU1 | Burroughs Facility |
-| BBU2 | Entrance to Burroughs Research Center |
-| BBU3 | Burroughs Radar Tower |
-| BE3 | Berwyn Post Office & Store |
-| BE5 | Berwyn Pharmacy |
-| BE6 | Berwyn Post Office and Bank |
-| BE7 | Berwyn Post Office |
-| BE8 | Berwyn ACME Store |
-| BEP11 | Sunoco Gas Station |
-| BEP15 | Postman |
-| BEP19 | Lou's Place |
-| BEP22 | Mack Oil Company |
-| BEP31 | Berwyn P.O., Doc's and Cas's |
-| BEP32 | Roop, Gibbs, Emory Inc. (Berwyn National Bank) |
-| BEP36 | Bill Pyott's Berwyn Esso Station |
-| BEP43 | Bob Goebel and staff of the Berwyn Post |
-| BEP44 | Post picnic at Pyle's |
-| BEP55 | American Non-Gran Bronze |
-| BEP56 | Walt Brown's Service Station at Centerville |
-| BEP59 | Berwyn Bronze Bearing Company |
-| BEP6 | Ye Opry House (Berwyn Theater) |
-| BEP63 | Clarke's |
-| BEP70 | American Non-gran Bronze Company Honor Roll |
-| BEP73 | Good's Store |
-| BEP76 | Knitting Mill (Old Easttown/Berwyn Primary School) |
-| BEP83 | New Post Office site |
-| BEP84 | The Blue Jay |
-| BEP86 | McAllister's Tire Shop, Berwyn |
-| BEP9 | David Preston, Shoemaker |
-| BFB1 | Bean Sand Crusher |
-| BG01 | Betner Paper Bag Factory |
-| BG02 | Betzwood Studios |
-| BG03 | Betzwood Studios |
-| BG04 | Betzwood Studios |
-| BG05 | Betzwood Studios |
-| BIP1 | Berwyn Ice Plant after fire |
-| BIP2 | Berwyn Ice Plant after fire |
-| BUS1 | Hall, Hall & Hibbard |
-| BUS2 | Ralph Edwards Garage (also known as Ottey's garage), Lancaster Avenue, Paoli |
-| IT2 | Windmill Tea Rooms |
-| NGB1 | Non-Gran Bronze Factory |
-| PA1 | Anna Thomas, Ladies Taylor |
-| PA11 | Paoli Diner |
-| PA15 | Supplee Hardware Store |
-| PA16 | William's Store |
-| PA17 | George Williams in his drug store |
-| PA2 | Paoli Hardware Store |
-| PA26 | Giantonio Real Estate |
-| PA3 | Paoli Hardware Store |
-| PM1 | Quarter Century Club, Warner Quarries |
-| PM3 | Warner Company Employees |
-| PP2 | Paoli Post Office |
-| PP5 | Anne M. Bloomer, Paoli Postmistress |
-| PP6 | Henry Schofield, Paoli Postmaster |
-| ROR1 | Roller Rink |
-| ROR2 | Roller Rink |
-| ROR4 | Roller Rink |
-| ROR5 | Roller Rink |
-| ROR6 | Roller Rink |
-| ROR7 | Roller Rink |
-| VFM1 | Valley Forge Music Fair |
-| WAR8 | Cedar Hollow Kilns |
-
-### inn (62)
-
-| Archive ID | Title |
-| --- | --- |
-| CWI1 | Covered Wagon Inn |
-| CWI2 | Covered Wagon Inn |
-| DEI03 | Devon Inn, postmark 1910 |
-| DEI04 | Devon Inn, postmark 1910 |
-| DEI05 | Devon Inn looking south, postmark 1910 |
-| DEI06 | Devon Inn looking south, postmark 1910 |
-| DEI07 | Devon Inn |
-| DEI08 | Grand Entrance of the Devon Inn |
-| DEI09 | Porch Cafe, Devon Inn |
-| DEI10 | Front of the Devon Inn |
-| DEV11 | View from Devon Inn |
-| GJI2 | Espenshade's Wayside Inn |
-| GJI3 | General Jackson Inn |
-| GJI4 | Wind Mill Tea Room (General Jackson Inn), looking nothwest, Paoli |
-| GJI5 | The General Jackson Inn near Mile Post 18, Paoli, 1888 |
-| GPI02 | General Paoli Inn |
-| GPI03 | Paoli Inn looking NE - 1888 |
-| GPI04 | Paoli (Inn) from the west, 1888 |
-| GPI05 | Paoli Inn after fire |
-| GPI06 | Paoli Inn after fire |
-| GPI07 | Paoli Inn after fire |
-| GWI1 | General Warren Tavern |
-| GWI10 | General Warren Tavern |
-| GWI2 | General Warren Tavern |
-| GWI3 | General Warren Tavern |
-| GWI4 | General Warren Tavern |
-| GWI5 | General Warren Tavern |
-| GWI6 | General Warren Tavern |
-| GWI7 | General Warren (Admiral Vernon) Tavern |
-| GWI8 | General Warren Tavern |
-| GWI9 | General Warren Tavern |
-| IT10 | The Eagle |
-| IT11 | General Wayne Tavern |
-| IT12 | Black Horse Tavern |
-| IT13 | General Greene Tavern |
-| IT14 | Green Tree Inn |
-| IT15 | General Wayne Tavern |
-| IT7 | King of Prussia Inn |
-| KPI01 | King of Prussia Inn |
-| KPI02 | King of Prussia Inn |
-| KPI03 | King of Prussia Inn |
-| KPI04 | King of Prussia Inn |
-| LAT1 | The Lamb Tavern (Roughwood) |
-| LAT3 | The Barn at Roughwood (Lamb Tavern) |
-| LAT5 | Lamb Tavern (Roughwood) |
-| MAL10 | Malvern Inn |
-| MAL11 | Malvern Inn |
-| MAL6 | Malvern Inn |
-| MAL7 | Malvern Inn |
-| MAL8 | Malvern Inn |
-| SOH1 | Sorrel Horse Inn |
-| SOH2 | Sorrel Horse Inn |
-| WHQ13 | Washington Inn |
-| WYI04 | Wynburne Inn |
-| WYI05 | Wynburne Inn |
-| WYI07 | Wynburne, Old Lancaster Road |
-| WYI1 | Wynburne Inn, Devon |
-| WYI12 | Lincoln Inn |
-| WYI12b | Back of WYI12 |
-| WYI3 | Wynburne Inn |
-| WYI6 | Wynburne Inn |
-| YSP04 | Inn at Yellow Springs |
-
 ### Sports (22)
 
 | Archive ID | Title |
@@ -2166,33 +1839,6 @@ Stereocard |
 | UMY02 | Tennis Courts, Upper Mainline YMCA |
 | UMY03 | Outdoor Pool, Upper Mainline YMCA |
 
-### Transportation (22)
-
-| Archive ID | Title |
-| --- | --- |
-| AS4 | Dewees and Bracken Coal and Lumber Company |
-| BEP20 | Eastown Township Road Crew |
-| BP1 | Liberty Bell on its way to California |
-| CHE2 | Carriages at Chesterbrook Farm |
-| KCB1 | Knox Covered Bridge |
-| KCB2 | Knox Covered Bridge & Boathouse |
-| KCB3 | Knox Covered Bridge & Valley Creek |
-| OPA11 | Nick Morris and Charlie Devaney with Ryan ST monoplane |
-| OPA12 | BT-9 trainer at the Main Line Airport |
-| OPA13 | Gyroplane over the Great Valley |
-| OPA2 | Boring Rig at Main Line Airport |
-| OPA3 | Charlie Devaney & Waco bi-plane |
-| OPA5 | Grumman F8F Bearcat fighter |
-| OPA6 | Gyroplane at Main Line Airport |
-| OPA7 | HK-1 Helicopter at Main Line Airport |
-| OPA8 | HK-1 Helicopter at Main Line Airport |
-| PA10 | Carriage |
-| PPO2 | Lincoln Highway. Paoli |
-| PPO3 | Lincoln Highway, Paoli |
-| PPO4 | Lincoln Highway, Paoli |
-| RDS02 | Chevy |
-| RR01 | West Chester pike at Highland Park |
-
 ### Paoli (11)
 
 | Archive ID | Title |
@@ -2208,22 +1854,6 @@ Stereocard |
 | PA201 | Paoli Plaza |
 | PA202 | Photographers, Lancaster Avenue, Paoli |
 | PA203 | Cleared site, Photographer |
-
-### Quarry (11)
-
-| Archive ID | Title |
-| --- | --- |
-| BUS19 | Unknown Quarry |
-| CVR53 | Former Bethlehem Steel Co. King Manor quarry, Upper Merion Township,  October 1968 |
-| HQ2 | Howellville Quarry |
-| HQ3 | Buildings at Howellville Quarry |
-| HQ4 | Howellville Quarry being drained |
-| HQ5 | Dyer Quarry, Howellville |
-| HQ6 | Dyer Quarry, Howellville |
-| PEO51 | Warner Quarry workers? |
-| Q03 | Warner Quarry |
-| Q04 | Serpentine Quarry, Devon |
-| VFQ1 | Valley Forge Quarry |
 
 ### People (10)
 
@@ -2287,7 +1917,7 @@ Stereocard |
 | WRB04 | Wilson Road Bridge over unnamed tributary of Valley Creek |
 | WRB05 | Wilson Road Bridge over unnamed tributary of Valley Creek |
 
-### Mainline Airport (5)
+### Mainline airport (5)
 
 | Archive ID | Title |
 | --- | --- |
@@ -2296,16 +1926,6 @@ Stereocard |
 | OPA30 | Morris and Devaney with PhtRyanSTA |
 | OPA31 | Morris practices pylon turns |
 | OPA32 | North American BT9 |
-
-### Mills (5)
-
-| Archive ID | Title |
-| --- | --- |
-| BG06 | Chesterbrook Mill |
-| GVM1 | Great Valley Mill |
-| GVM2 | Great Valley Mill |
-| MIL4 | Mid-19th Century Chester County Sawmill |
-| PPO13 | Great Valley Mill |
 
 ### Paoli Hardware Store (5)
 
@@ -2335,6 +1955,14 @@ Stereocard |
 | CHE62 | Chesterbrook Farm |
 | CHE63 | Chesterbrook Farm |
 | CHE64 | Chesterbrook Farm |
+
+### Cultural (3)
+
+| Archive ID | Title |
+| --- | --- |
+| DTA121 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA122 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA123 | Devon Horse Show and Country Fair (DHSCF) |
 
 ### Devon (3)
 
@@ -2685,7 +2313,7 @@ Stereocard |
 
 `photoLocation` is stored on the CSV only. Match these to a Specific Location in Studio later; the importer does not set `historicalImage.location`.
 
-### Berwyn (569)
+### Berwyn (571)
 
 | Archive ID | Title |
 | --- | --- |
@@ -2821,6 +2449,8 @@ Stereocard |
 | BET2 | Berwyn Theater |
 | BET20 | Berwyn Theater |
 | BET21 | Berwyn Theater |
+| BFC08 | Location of new Berwyn Fire House |
+| BFC09 | Berwyn Fire House |
 | BFC1 | Berwyn Fire Company |
 | BFC11 | Berwyn Fire Company |
 | BFC12 | Berwyn Fire Company |
@@ -3663,7 +3293,7 @@ Stereocard |
 | VFR03 | Churches, Valley Friends Meeting |
 | WAB03 | Waterloo Avenue, Berwyn; photo labelled Waterloo "Road," |
 
-### Paoli (375)
+### Paoli (377)
 
 | Archive ID | Title |
 | --- | --- |
@@ -3703,6 +3333,8 @@ Stereocard |
 | BUS3 | Cilley Shop |
 | BUS4 | Toll Gate House |
 | CGS01 | Church of the Good Samaritan on Lancaster Pike, Paoli, 1888 |
+| CGS03 | Church of the Good Samaritan |
+| CGS04 | Church of the Good Samaritan |
 | CGS05 | Church of the Good Samaritan, Paoli |
 | CGS06 | Good Samaritan Church |
 | CGS07 | Good Samaritan Church |
@@ -4043,7 +3675,7 @@ Stereocard |
 | RML8 | Paoli Railyard |
 | TCC1 | Tredyffrin Country Club |
 
-### Valley Forge (348)
+### Valley Forge (349)
 
 | Archive ID | Title |
 | --- | --- |
@@ -4310,6 +3942,7 @@ Stereocard |
 | VFP6 | Valley Forge PA - Old Barracks (a relict of the revolution) |
 | VFP60 | Valley Forge view |
 | VFP64 | Wayne’s Statue |
+| VFP65 | Valley Forge Park (from present route 252) |
 | VFP9 | Unknown Ruins at Valley Forge |
 | VFP97 | Map of Valley Forge Campground |
 | VFP98 | Huntingdon’s Redoubt |
@@ -4398,7 +4031,7 @@ Stereocard |
 | WSP11 | Washingtons Spring |
 | WSP12 | Washington Spring |
 
-### Yellow Springs Road (234)
+### Yellow Springs Road (237)
 
 | Archive ID | Title |
 | --- | --- |
@@ -4542,6 +4175,9 @@ Stereocard |
 | MEN08 | Diamond Rock Mennonite Cemetery |
 | MEN09 | Diamond Rock Mennonite Cemetery |
 | MEN10 | Diamond Rock Mennonite Cemetery |
+| RHP01 | Robert Holmes Page Tenant House |
+| RHP02 | Robert Holmes Page Tenant House |
+| RHP03 | Robert Holmes Page Tenant House |
 | RHP04 | Robert Holmes Page Tenant House |
 | RHP05 | Robert Holmes Page Tenant House |
 | RHP06 | Robert Holmes Page Tenant House |
@@ -5529,7 +5165,7 @@ Stereocard |
 | WAC01 | West Acres, Sugartown Road |
 | WYI07 | Wynburne, Old Lancaster Road |
 
-### Daylesford (47)
+### Daylesford (48)
 
 | Archive ID | Title |
 | --- | --- |
@@ -5579,6 +5215,7 @@ Stereocard |
 | SBB11 | Blue Ball Inn sign |
 | SBB2 | Blue Ball Inn |
 | SBB3 | Second Blue Ball Inn |
+| SBB4 | Second Blue Ball Inn |
 | VLC08 | Van Leer Cabin |
 
 ### Malvern (46)

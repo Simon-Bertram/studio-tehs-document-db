@@ -189,11 +189,12 @@ Canonical categories (title = `migrationKey`): Photographic prints, Digital phot
 | township | township ref (`migrationKey`) |
 | subject | subjects[] (`migrationKey` or `migrationKeyAliases`; case-insensitive) |
 | donationID | donation ref (skipped when `1` = “not in any”) |
+| refs | references (Portable Text; HTML `<a>` → URL marks; relative hrefs resolved against `https://www.tehistory.org/hqda/html/`) |
 | imageLocation | imageFile (HTTP fetch + upload on `--live`) |
 | publicDisplay | `N` rows are skipped; empty / `Y` / `1` import as public |
 | primaryPhoto | used to disambiguate duplicate `identifier` values |
 
-Ignored: resolution, digitization metadata, `psImages` (BLOB, not migrated), `refs` (exported for later mapping). `photoLocation` is listed on the cumulative ledger for a later `location` pass; `people[]` is not auto-linked (Person subject → review section). Titles and notes decode HTML entities (`&rsquo;` → `’`).
+Ignored: resolution, digitization metadata, `psImages` (BLOB, not migrated). `photoLocation` is listed on the cumulative ledger for a later `location` pass; `people[]` is not auto-linked (Person subject → review section). `citations` (Research References / Quarterly article documents) is not auto-filled; editors link those in Studio. Titles and notes decode HTML entities (`&rsquo;` → `’`).
 
 CSV is UTF-8. Relative paths such as `ValleyForge/BakeHouse/BKH1-BakeHousesmall.jpg` are joined to `https://www.the2nomads.site/TEHSImageDatabase/`. Original filename is passed to `assets.upload`. Existing `imageFile` is not re-uploaded.
 

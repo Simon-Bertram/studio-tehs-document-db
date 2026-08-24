@@ -26,6 +26,7 @@ function row(partial: Partial<ImageCsvRow> & Pick<ImageCsvRow, 'identifier'>): I
 		primaryPhoto: partial.primaryPhoto ?? '',
 		publicDisplay: '',
 		photoLocation: '',
+		refs: '',
 	}
 }
 

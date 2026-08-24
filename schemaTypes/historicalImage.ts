@@ -2,6 +2,7 @@ import {BlockElementIcon} from '@sanity/icons/BlockElement'
 import {ClipboardIcon} from '@sanity/icons/Clipboard'
 import {ImageIcon} from '@sanity/icons/Image'
 import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
+import {LinkIcon} from '@sanity/icons/Link'
 import {PinIcon} from '@sanity/icons/Pin'
 import {SearchIcon} from '@sanity/icons/Search'
 import {defineArrayMember, defineField, defineType} from 'sanity'
@@ -12,7 +13,7 @@ import {
 } from './lib/historicalDatePreview'
 import {incomingReferenceArrayInitialValueBySource} from './lib/incoming-reference-array'
 import {archiveIdField} from './shared/archiveIdField'
-import {citationsField} from './shared/citationsField'
+import {citationsField, HISTORICAL_IMAGE_CITATIONS_DESCRIPTION} from './shared/citationsField'
 import {locationReferenceFields} from './shared/locationFields'
 import {organizationsField} from './shared/organizationsField'
 import {subjectsField} from './shared/subjectsField'
@@ -104,7 +105,44 @@ export const historicalImage = defineType({
 		}),
 		organizationsField('research'),
 		subjectsField('research'),
-		citationsField('research'),
+		citationsField('research', HISTORICAL_IMAGE_CITATIONS_DESCRIPTION),
+		defineField({
+			name: 'references',
+			title: 'References',
+			type: 'array',
+			group: 'research',
+			description:
+				'Bibliographic notes and web links that are not TEHS Quarterly articles in this Studio. Type the citation, select the title, and paste a URL to attach a link. Example: Sachse, The Wayside Inns on the Lancaster Roadside (1915, 2nd ed.); Julius Sachse biographical PDF. Digitized Quarterly pieces belong on Research References.',
+			of: [
+				defineArrayMember({
+					type: 'block',
+					styles: [{title: 'Normal', value: 'normal'}],
+					lists: [{title: 'Bulleted list', value: 'bullet'}],
+					marks: {
+						decorators: [
+							{title: 'Strong', value: 'strong'},
+							{title: 'Italic', value: 'em'},
+						],
+						annotations: [
+							{
+								name: 'link',
+								type: 'object',
+								title: 'URL',
+								icon: LinkIcon,
+								fields: [
+									defineField({
+										name: 'href',
+										title: 'URL',
+										type: 'url',
+										validation: (Rule) => Rule.uri({scheme: ['http', 'https']}),
+									}),
+								],
+							},
+						],
+					},
+				}),
+			],
+		}),
 		defineField({
 			name: 'source',
 			title: 'Source',
@@ -124,7 +162,7 @@ export const historicalImage = defineType({
 			group: 'provenance',
 			to: [{type: 'donation'}],
 			description:
-				'Link this image to its accession / gift record. If this photograph is part of a new donation, create the Donation first (The Archive → Donations, or Create new here): name, donor, acquisition date, and donation categories—then link it. Reuse an existing Donation when the image belongs to a gift already recorded.',
+				'Link this image to its accession / gift record. If this photograph is part of a new donation, create the Donation first (The Archive → Donations) add the new donation to an existing category and link it here. Reuse an existing Donation when the image belongs to a gift already recorded.',
 		}),
 		defineField({
 			name: 'photographer',

@@ -1,0 +1,52 @@
+key,firstName,lastName,prefix,suffix,reason,detail
+|susan|acker|,Susan,Acker,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|susanna|acker|,Susanna,Acker,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|ann|bean|,Ann,Bean,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|annie|bean|,Annie,Bean,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|henry|bean|,Henry,Bean,,,already_exists,f57114da-7eaa-4bf0-88be-54f142414448
+|mary|bean|,Mary,Bean,,,already_exists,c10ab8ac-83ce-4453-ac93-16705c99028e
+|mary ann|bean|,Mary Ann,Bean,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|mary jane|bean|,Mary Jane,Bean,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|nicholas|bean|,Nicholas,Bean,,,already_exists,03019b8f-f4ad-4e2d-a7c0-45b5a573ad65
+|hezekiah|davis|,Hezekiah,Davis,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|hezekial|davis|,Hezekial,Davis,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|jonathan|davis|,Jonathan,Davis,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|margaret|davis|,Margaret,Davis,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|margarette|davis|,Margarette,Davis,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|nathan|davis|,Nathan,Davis,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|randal|evans|,Randal,Evans,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|randel|evans|,Randel,Evans,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|matthais|fitzgerald|,Matthais,Fitzgerald,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|matthias|fitzgerald|,Matthias,Fitzgerald,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|ann|gillespie|,Ann,Gillespie,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|annie|gillespie|,Annie,Gillespie,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|abraham|harley|,Abraham,Harley,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|abram|harley|,Abram,Harley,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|hannah|jones|,Hannah,Jones,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|johannah|jones|,Johannah,Jones,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|matthias|martin|,Matthias,Martin,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|mattias|martin|,Mattias,Martin,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|ann|pennypacker|,Ann,Pennypacker,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|annie|pennypacker|,Annie,Pennypacker,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|susan|ramsey|,Susan,Ramsey,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|susanna|ramsey|,Susanna,Ramsey,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|barnet|rapp|,Barnet,Rapp,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|barney|rapp|,Barney,Rapp,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|roland|richards|,Roland,Richards,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|rowland|richards|,Rowland,Richards,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|susan|roberts|,Susan,Roberts,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|susanna|roberts|,Susanna,Roberts,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|joan|thomas|,Joan,Thomas,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|john|thomas|,John,Thomas,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|jonathan|thomas|,Jonathan,Thomas,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|nathan|thomas|,Nathan,Thomas,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|mathias|tyson|,Mathias,Tyson,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|matthias|tyson|,Matthias,Tyson,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|bastian|wagner|,Bastian,Wagner,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|sebastian|wagner|,Sebastian,Wagner,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|encoh|wells|,Encoh,Wells,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|enoch|wells|,Enoch,Wells,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|david|williams|,David,Williams,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|davis|williams|,Davis,Williams,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|ann|young|,Ann,Young,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv
+|anna|young|,Anna,Young,,,suspected_duplicate,Held for review — see review-suspected-duplicates.csv

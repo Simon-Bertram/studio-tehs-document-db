@@ -26,6 +26,7 @@ function row(partial: Partial<ImageCsvRow> & Pick<ImageCsvRow, 'identifier'>): I
 		primaryPhoto: '',
 		publicDisplay: partial.publicDisplay ?? '',
 		photoLocation: '',
+		refs: partial.refs ?? '',
 	}
 }
 
@@ -81,5 +82,25 @@ describe('mapImageRow', () => {
 			archiveId: 'HLC08-2590',
 		})
 		expect(mapped?.doc.archiveId).toBe('HLC08-2590')
+	})
+
+	test('maps refs HTML onto references Portable Text', () => {
+		const mapped = mapImageRow(
+			row({
+				identifier: 'IT1',
+				refs: 'See <a href="http://www.tehistory.org/hqda/html/v44/v44n1+2p015.html">Arnold</a>',
+			}),
+			lookups,
+			new Audit(),
+		)
+		expect(mapped?.doc.references).toHaveLength(1)
+		expect(mapped?.doc.references?.[0].markDefs[0]?.href).toBe(
+			'http://www.tehistory.org/hqda/html/v44/v44n1+2p015.html',
+		)
+	})
+
+	test('omits references when refs is empty', () => {
+		const mapped = mapImageRow(row({identifier: 'BKH1'}), lookups, new Audit())
+		expect(mapped?.doc.references).toBeUndefined()
 	})
 })

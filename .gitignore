@@ -32,11 +32,6 @@ yarn.lock
 # Dotenv and similar local-only files
 *.local
 
-# Migration reports (generated output)
-/migrations/csv-import/reports
-/migrations/charlestown-people/reports
-/migrations/data/quarterly
-
 # Docusaurus
 /documentation/node_modules
 /documentation/build

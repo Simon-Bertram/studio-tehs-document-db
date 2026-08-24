@@ -1,0 +1,85 @@
+clipId,title,csvType,reason,detail
+VFP38,Star Redoubt,Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+LH01,"“A Ramble in the Chester Valley”, c. 1908",postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+DTA123,Devon Horse Show and Country Fair (DHSCF),photo,api_error,Socket timed out on request to https://z8o776vu.api.sanity.io/v2025-02-19/data/mutate/production?returnIds=true&returnDocuments=true&visibility=sync
+DTA121,Devon Horse Show and Country Fair (DHSCF),photo,api_error,Socket timed out on request to https://z8o776vu.api.sanity.io/v2025-02-19/data/mutate/production?returnIds=true&returnDocuments=true&visibility=sync
+DTA122,Devon Horse Show and Country Fair (DHSCF),photo,api_error,Socket timed out on request to https://z8o776vu.api.sanity.io/v2025-02-19/data/mutate/production?returnIds=true&returnDocuments=true&visibility=sync
+PFC001,"Devon Horse Show, 1899 with the Devon Inn in the background",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+PFC002,"Devon Horse Show, 1899",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+PFC003,"Devon Horse Show, 1899",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+PFC006,"Devon Horse Show, 1899, with the Devon Inn in the background",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+PFC007,"Devon Horse Show, 1899",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+PFC004,"Devon Horse Show, 1899, with the Devon Inn in the background",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+PFC005,"Devon Horse Show, 1899",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+KCB24,"Knox Covered Bridge, looking south",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+GBF02,Green Bank Farmhouse,photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF03,"Hall & Stairs, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF04,"Kitchen, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF05,"Kitchen, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF06,"Living Area, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF07,"Living Area, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF08,"Living Area, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF09,"Dining Area, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF10,"Study, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF11,"Bathroom, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF12,"Bedroom, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF13,"Bedroom, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF14,"Bedroom, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF15,"Bedroom, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF16,"Bedroom, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF17,"Bathroom, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF18,"Family Room, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF19,"Summer Room, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF20,"Tennis Court, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF21,"Barn, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF22,"Entrance, Green Bank Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF23,Rear View of Green Bank Farmhouse,photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF24,"Front View, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF25,"View of Gardens, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GBF26,"View of Swimming Pool and Barn, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF01,"Bedroom, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF02,"Kitchen, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF03,"Barn, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF04,"Bathroom, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF05,"Entrance Hallway, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF06,"Living Area, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF07,"Swimming Pool, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF08,"Bedroom, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF09,"Bedroom, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF10,"Swimming Pool, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF11,"Bedroom, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF12,"Living Area, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF13,"Living Area, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF14,"Living Area, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF15,"Yard, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF16,"Living Area, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF17,"Dining Room, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF18,"Bathroom, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF19,"Weather Vane, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF20,"Front Aspect, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF21,"Kitchen, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF22,"Yard, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF23,"Family Room in Barn, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF24,"Living Area, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+APF25,"Bedroom, Ann Pugh Farm",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT01,Route 30 curve at railroad underpass,photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT02,Route 30 curve railroad underpass looking south,photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT03,Route 30 curve railroad underpass looking north,photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT04,Route 30 curve approach to railroad underpass,photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT05,New location of Pennsylvania Railroad underpass,photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT06,Malvern - Paoli underpass on the Lincoln Highway,photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT07,Malvern - Paoli underpass of the Lincoln Highway,photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT08,Malvern Road,photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT09,Malvern Road,photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT10,"Lancaster Avenue, Easttown looking west",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT11,Malvern Underpass,photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT12,"Route 30, Willistown",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT13,"Route 30, east of Exton, looking east",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT14,"Route 30, east of Exton, looking west",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT15,"Route 202 underpass at route 30, Paoli",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT16,"Route 30, west of Exton",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT17,"Route 30, Exton crossroads",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT19,"Route 202 underpass at route 30, Paoli.  Looking south",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT20,"Route 202 underpass at route 30, Paoli.  Looking north",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT21,"Completed Route 202 underpass at route 30, Paoli.  Looking north",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+DOT18,"Route 30, looking east from Exton crossroads",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.

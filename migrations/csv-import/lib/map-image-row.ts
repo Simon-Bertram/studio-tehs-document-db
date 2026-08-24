@@ -4,6 +4,7 @@ import {type HistoricalDateValue, parseHistoricalDate} from '../../lib/parse-his
 import type {Audit} from './audit'
 import {cleanDecodedString, cleanString} from './clean'
 import {buildImageAssetUrl, relativeImagePath} from './image-asset-url'
+import {type ReferenceBlock, refsToPortableText} from './refs-to-portable-text'
 import {DIVERTED_QUARTERLY_DETAIL, DIVERTED_QUARTERLY_REASON, hasTehsKeyword} from './tehs-keyword'
 
 /** MySQL default donation — “not in any”. Do not link every unmatched image to it. */
@@ -31,6 +32,7 @@ export interface ImageCsvRow {
 	primaryPhoto: string
 	publicDisplay: string
 	photoLocation: string
+	refs: string
 	[key: string]: string
 }
 
@@ -56,6 +58,7 @@ export interface HistoricalImageImportDoc {
 	township?: {_type: 'reference'; _ref: string}
 	subjects?: {_type: 'reference'; _key: string; _ref: string}[]
 	donation?: {_type: 'reference'; _ref: string}
+	references?: ReferenceBlock[]
 	imageFile?: {_type: 'image'; asset: {_type: 'reference'; _ref: string}}
 }
 
@@ -176,6 +179,8 @@ export function mapImageRow(
 	if (rights) doc.rights = rights
 	const notes = buildNotes(row, csvType)
 	if (notes) doc.notes = notes
+	const references = refsToPortableText(row.refs)
+	if (references) doc.references = references
 
 	const mappedKeywords: string[] = []
 	const unmappedKeywords: string[] = []

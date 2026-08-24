@@ -1,0 +1,84 @@
+clipId,title,csvType,reason,detail
+BE98,Conestoga and Cassatt Roads,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE102,View of ACME site,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE103,View of ACME site,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE104,View of ACME site,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE107,View of ACME site,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE105,View of ACME site,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE106,View of ACME site,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE108,View of ACME site from Ale House on Lincoln highway,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE109,View of ACME site from Ale House on Lincoln highway,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE110,View of ACME site from township grounds,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE111,View of ACME site,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE112,View of ACME site,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE113,View of ACME site,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE116,Waterloo Road,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+COR27,Conestoga Road outside Bair estate,photo,api_error,The operation timed out (traceId: b143deb1ad88eced81715cf9055e13c3)
+COR30,"Pavement preparation, Conestoga Road",photo,api_error,The operation timed out (traceId: 0ed6cfd162a45c6e49da9fee738bb90b)
+COR31,"Pavement work, Conestoga Road",photo,api_error,The operation timed out (traceId: 29fa2048791eb6e1471f03b0f813b526)
+COR32,"Pavemnet work, Conestoga Road",photo,api_error,The operation timed out (traceId: 41560df4ee5c8f88195a69df838bd8fb)
+,,,missing_clip_id,Row missing identifier.
+DRH11,Dorothy Reed house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+DRH12,Dorothy Reed house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+DRH13,Dorothy Reed house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+DRH14,Dorothy Reed house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+DRH15,Dorothy Reed house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+DRH16,Dorothy Reed house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+HOU93,site of George Washington Lewis house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+HOU94,Site of George Washington Lewis house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+HOU100,"Yerkes House, Berwyn and Main Streets.",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+HOU107,Rear view of Yerkes house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+HOU124,Unknown House Ruins,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MAX20,Maxwells Quarters,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MAL24,Malvern Library,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+OLA28,Wye Oak at Maryland State Park,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+RBE17,"Main Line, Berwyn",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+TCO05,"Trenton Cut Off Pumping Station, Prissy’s Hollow",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+TPC12,"Site of new educational building, Trinity Church",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+WCF03,William Coates farm,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+HOU162,Plan of Sunset Hills,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BET17,Berwyn Theater,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BUS46,Berwyn Furniture Store,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+CAR29,Looking north on Cassatt Road,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+HOU127,Barn at 61 Cassatt Avenue,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+HOW43,Swedesford Road,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+HOW42,Old Swedesford Road,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+HOW44,Swedesford Road,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+LAB25,"Shops, Lancaster Avenue, Berwyn",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+LAB29,"Businesses, Lancaster Avenue, Berwyn",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA09,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA10,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA11,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA12,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA13,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA14,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA17,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA16,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA15,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA18,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA19,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA20,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA21,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA23,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA22,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA24,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA25,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA26,Mainline Apartments under construction,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA27,Site of Mainline Apartments,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA28,Site of Mainline Apartments,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA29,Site of Mainline Apartments,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLA30,Site of Mainline Apartments,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+NBS11,North Berwyn School,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+THH05,Tory Hollow Farm with new addition,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+FMH02,Willistown Friends Meeting,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+FMH01,Willistown Friends Meeting,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+SWE05,"Northwinds, Swedesford Road",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+SWE06,Swedesford Road house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+SWE07,Swedesford Road house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+SWE08,Swedesford Road house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+POK11,"Tenant House, Pennokla Farm",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+SWE10,Swedesford Road Farm,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+SWE11,Swedesford Road house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+SWE12,Swedesford Road house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+SWE13,Swedesford Road house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+SWE15,Junction of Swedesford Road (202) and Old Eagle School Road,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).

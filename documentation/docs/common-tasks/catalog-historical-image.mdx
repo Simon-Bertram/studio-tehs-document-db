@@ -15,7 +15,7 @@ Add a photograph with caption, Archive ID, people depicted, place, and provenanc
 3. In **Content**, upload the photograph (required) and write a full description. Under **People Depicted**, link each person shown (create or reuse a Historical Person).
 4. In **Place**, prefer **Specific Location**; use **Township** only when no more specific place exists.
 5. In **Provenance / Rights**, record source, contributor, photographer, rights, and archivist notes. Link **Donation** if the photograph belongs to a gift: reuse an existing Donation, or if this is a new donation create the Donation first (Create new on the field, or **The Archive → Donations**) with donor, date, and material categories, then link it.
-6. In **Research**, attach subjects and Quarterly citations.
+6. In **Research**, attach subjects. Use **Research References** for TEHS Quarterly articles and **References** for other bibliographic notes and URLs.
 7. Publish when ready.
 
 ## Field notes
@@ -25,8 +25,19 @@ Add a photograph with caption, Archive ID, people depicted, place, and provenanc
 - Donation is a reference to a Donation document, not free text. One donation can cover many images from the same gift.
 - People depicted live on the image (`people`). The same photographs appear as a reverse **Historical Images** list on each person document; linking or creating an image from there writes back onto **People Depicted**.
 
+## Research References vs References
+
+These two Research fields are not interchangeable.
+
+**Research References** (`citations`) is an array of links to **TEHS Quarterly Article** documents. Create or reuse the article under **The Website → TEHS Quarterly Articles**, then add it here. The article stays the single source of truth (title, volume, issue, `sourceUrl`, body). Many photographs can point at the same article, and the website can query which images cite it. Example: Arnold, Inns & Taverns, TEQ 44-1/2.
+
+**References** (`references`) is rich text for bibliographic notes and web links that are **not** Quarterly articles in this Studio—books, PDFs, and external URLs. Type the citation, select the title, and paste a URL to attach a link. Example: Sachse, *The Wayside Inns on the Lancaster Roadside* (1915, 2nd ed.); Julius Sachse biographical PDF.
+
+If a Quarterly piece is already digitized, put it on Research References. Leave books and PDFs on References. Imported MySQL `refs` HTML lands on References; you can later promote a TEQ link into Research References once that article exists.
+
 ## Related
 
+- [Cite a TEHS Quarterly article](./cite-quarterly-article.mdx)
 - [Create and link people](./create-and-link-people.mdx)
 - [Record a donation](./record-a-donation.mdx)
 - [Link geography](./link-geography.mdx)

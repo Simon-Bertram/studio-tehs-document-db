@@ -1,0 +1,33 @@
+clipId,title,csvType,reason,detail
+MLP36,Westbound Freight Train at Paoli,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+RML32,Potential Site of Eagle Station,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+RML33,Potential Site of Eagle Station,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLP38,Former Paoli Railyards,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+PEO79,Ximena Wells Burns,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+PEO80,Burns Family,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+RML37,Daylesford Station,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+RML36,Passenger train near Paoli,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE199,View south towards Berwyn from the Conestoga Road,photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+GVB29,Great Valley Baptist Church,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+LOH03,Montebello (Lobb house),photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+STT02,The Stage Tavern,photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
+OLA168,"City Hall, Lancaster",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+STR37,English Manor House,Drawing,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+ETS13,"Grammar School, Berwyn",postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MAL37,"Friends Meeting House, Malvern",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLP41,Paoli Station,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+OLA175,"Toll House, Glen Loch",postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+MLP40,Paoli Station,postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+OLA177,Kimberton tavern,postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+OLA179,Kimberton tavern,postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+OLA186b,Back of OLA186,postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+OLA187b,Back of OLA187,postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+OLA189,Birchrunville,postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+OLA194,Rosedale Diner,postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+OLA195b,Back of OLA195,postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+OLA197,"Log House, Downingtown",postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+OLA203b,Back of OLA203,postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+OLA208b,Back of OLA208,postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+OLA209b,Back of OLA209,postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+OLA211b,Back of OLA211,postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+OLA212,Old Country Store Museum,postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).

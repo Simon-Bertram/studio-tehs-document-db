@@ -1,0 +1,22 @@
+CSV Import Summary
+==================
+Total rows:          119
+Imported:            119
+Skipped / failed:    0
+Needs manual links:  8
+Missing keywords:    3
+
+Type breakdown:
+  donation: 119
+
+Report files:
+  /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/donations/imported.csv
+  /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/donations/skipped.csv
+  /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/donations/needs-manual-links.csv
+  /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/donations/missing-taxonomies.csv
+
+How to identify records:
+  imported            → Donation ID = clipId; schemaType is the Studio document type
+  skipped             → no Studio doc; use clipId + reason in skipped.csv
+  needs_manual_links  → doc exists; open by Donation ID and fix links from unmappedKeywords
+  missing-taxonomies  → create migrationKey on the right entity type, then re-run import
