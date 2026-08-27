@@ -39,3 +39,6 @@ yarn.lock
 
 # Environment variables
 .env
+
+# Local Sanity dataset exports (too large for GitHub)
+*.tar.gz
