@@ -10,6 +10,7 @@ import {archiveIdField} from './shared/archiveIdField'
 import {internalCommentsField} from './shared/internalCommentsField'
 import {notesAndReferencesField} from './shared/notesAndReferencesField'
 import {organizationsField} from './shared/organizationsField'
+import {peopleMentionedField} from './shared/peopleMentionedField'
 import {portableTextImageMember} from './shared/portableTextImageFields'
 
 export const researchArticle = defineType({
@@ -61,6 +62,7 @@ export const researchArticle = defineType({
 				}),
 			],
 		}),
+		peopleMentionedField('context'),
 		organizationsField('context'),
 		defineField({
 			name: 'body',

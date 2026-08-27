@@ -15,6 +15,8 @@ Key fields:
 - **Archive ID** (`archiveId`) — unique catalog number when matching an imported Book or legacy record
 - **Page title** and required **URL slug** (generated from the title)
 - **Townships** — geographic scope of the research article
+- **People Mentioned** (`peopleMentioned`) — historical persons discussed in the article
+- **Organizations** (`organizations`) — historical businesses and organizations discussed in the article (one field; pick either document type)
 - **Page content & layout canvas** — Portable Text with:
   - Text blocks and **Uploaded Images** (caption, alt, and semantic `imageRole`: figure / aside)
   - **Interactive map modules** (`mapYear`, embedded `mapUrl`)
@@ -36,7 +38,7 @@ Key fields:
   - Inline images (caption and alt text)
   - **Original Print Page Break** blocks to preserve academic pagination (e.g., "Page 3") without disrupting reading flow
   - **Notes & References** (`notesAndReferences`) — published bibliographic notes, endnotes, and web links (rich text with URL marks). Appears with the article on the public site.
-- **Tagged Entities** — references to properties and people mentioned in the article
+- **Tagged Entities** — references to properties, people, and organizations (including businesses) mentioned in the article
 - **Internal Comments** (`internalComments`) — Studio-only working notes. **Will not appear on the public site.**
 
 Archive documents (primary sources and historical images) link these under **Research References** (`citations`). That field is a document reference, not a pasted URL: many archive items can share one article. Historical images also have a separate **References** rich-text field for books, PDFs, and other links that are not Quarterly articles in this Studio.

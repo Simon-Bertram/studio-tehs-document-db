@@ -13,6 +13,7 @@ import {incomingReferenceArrayInitialValue} from './lib/incoming-reference-array
 import {archiveIdField} from './shared/archiveIdField'
 import {citationsField} from './shared/citationsField'
 import {organizationsField} from './shared/organizationsField'
+import {peopleMentionedField} from './shared/peopleMentionedField'
 import {subjectsField} from './shared/subjectsField'
 import {townshipWhenNoPlaceField} from './shared/townshipWhenNoPlaceField'
 
@@ -118,18 +119,7 @@ export const primarySource = defineType({
 			description:
 				'Standalone township when no associated properties are linked. Prefer linking a property when the place is known.',
 		}),
-		defineField({
-			name: 'peopleMentioned',
-			title: 'People Mentioned',
-			type: 'array',
-			group: 'place',
-			of: [
-				defineArrayMember({
-					type: 'reference',
-					to: [{type: 'person'}],
-				}),
-			],
-		}),
+		peopleMentionedField('place'),
 		organizationsField('research'),
 		subjectsField('research'),
 		citationsField('research'),

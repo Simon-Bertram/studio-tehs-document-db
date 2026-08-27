@@ -12,6 +12,8 @@ import {
 import {isUniqueStringField} from './lib/isUniqueStringField'
 import {internalCommentsField} from './shared/internalCommentsField'
 import {notesAndReferencesField} from './shared/notesAndReferencesField'
+import {organizationsField} from './shared/organizationsField'
+import {peopleMentionedField} from './shared/peopleMentionedField'
 import {portableTextImageMember} from './shared/portableTextImageFields'
 
 export const quarterlyArticle = defineType({
@@ -122,18 +124,8 @@ export const quarterlyArticle = defineType({
 			],
 			description: 'Link historic sites mentioned in the article for cross-site discovery.',
 		}),
-		defineField({
-			name: 'peopleMentioned',
-			title: 'Peopleyout Mentioned',
-			type: 'array',
-			group: 'entities',
-			of: [
-				defineArrayMember({
-					type: 'reference',
-					to: [{type: 'person'}],
-				}),
-			],
-		}),
+		peopleMentionedField('entities'),
+		organizationsField('entities'),
 	],
 	orderings: [
 		{
