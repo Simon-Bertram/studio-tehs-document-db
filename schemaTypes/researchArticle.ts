@@ -1,4 +1,5 @@
 import {BlockElementIcon} from '@sanity/icons/BlockElement'
+import {CommentIcon} from '@sanity/icons/Comment'
 import {DocumentTextIcon} from '@sanity/icons/DocumentText'
 import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {PinIcon} from '@sanity/icons/Pin'
@@ -6,6 +7,8 @@ import {defineArrayMember, defineField, defineType} from 'sanity'
 
 import {DocumentWithDescription} from './components/DocumentWithDescription'
 import {archiveIdField} from './shared/archiveIdField'
+import {internalCommentsField} from './shared/internalCommentsField'
+import {notesAndReferencesField} from './shared/notesAndReferencesField'
 import {organizationsField} from './shared/organizationsField'
 import {portableTextImageMember} from './shared/portableTextImageFields'
 
@@ -23,6 +26,7 @@ export const researchArticle = defineType({
 		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
 		{name: 'content', title: 'Content', icon: BlockElementIcon},
 		{name: 'context', title: 'Context', icon: PinIcon},
+		{name: 'internal', title: 'Internal', icon: CommentIcon},
 	],
 	fields: [
 		archiveIdField('researchArticle', 'matching a CSV clipID from Book imports', 'identity'),
@@ -70,6 +74,8 @@ export const researchArticle = defineType({
 				defineArrayMember({type: 'internalSubLinks'}),
 			],
 		}),
+		notesAndReferencesField('content'),
+		internalCommentsField('internal'),
 	],
 	orderings: [
 		{

@@ -1,5 +1,6 @@
 import {BlockElementIcon} from '@sanity/icons/BlockElement'
 import {BookIcon} from '@sanity/icons/Book'
+import {CommentIcon} from '@sanity/icons/Comment'
 import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {TagIcon} from '@sanity/icons/Tag'
 import {defineArrayMember, defineField, defineType} from 'sanity'
@@ -9,6 +10,8 @@ import {
 	historicalDatePreviewSelect,
 } from './lib/historicalDatePreview'
 import {isUniqueStringField} from './lib/isUniqueStringField'
+import {internalCommentsField} from './shared/internalCommentsField'
+import {notesAndReferencesField} from './shared/notesAndReferencesField'
 import {portableTextImageMember} from './shared/portableTextImageFields'
 
 export const quarterlyArticle = defineType({
@@ -20,6 +23,7 @@ export const quarterlyArticle = defineType({
 		{name: 'publication', title: 'Publication Details', icon: InfoOutlineIcon, default: true},
 		{name: 'content', title: 'Article Content', icon: BlockElementIcon},
 		{name: 'entities', title: 'Tagged Entities', icon: TagIcon},
+		{name: 'internal', title: 'Internal', icon: CommentIcon},
 	],
 	fields: [
 		defineField({
@@ -103,6 +107,8 @@ export const quarterlyArticle = defineType({
 				defineArrayMember({type: 'pageBreak'}),
 			],
 		}),
+		notesAndReferencesField('content'),
+		internalCommentsField('internal'),
 		defineField({
 			name: 'propertiesMentioned',
 			title: 'Properties / Historic Sites Mentioned',
@@ -118,7 +124,7 @@ export const quarterlyArticle = defineType({
 		}),
 		defineField({
 			name: 'peopleMentioned',
-			title: 'People Mentioned',
+			title: 'Peopleyout Mentioned',
 			type: 'array',
 			group: 'entities',
 			of: [

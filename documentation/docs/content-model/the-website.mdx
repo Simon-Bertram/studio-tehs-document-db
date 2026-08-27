@@ -19,6 +19,8 @@ Key fields:
   - Text blocks and **Uploaded Images** (caption, alt, and semantic `imageRole`: figure / aside)
   - **Interactive map modules** (`mapYear`, embedded `mapUrl`)
   - **Nested navigation portals** linking to other research articles
+- **Notes & References** (`notesAndReferences`) — published bibliographic notes, endnotes, and web links (rich text with URL marks). Appears with the article on the public site.
+- **Internal Comments** (`internalComments`) — Studio-only working notes. **Will not appear on the public site.**
 
 Related: [Publish a research article](../common-tasks/publish-research-article.mdx), [Set Archive IDs](../common-tasks/set-archive-ids.mdx)
 
@@ -33,9 +35,13 @@ Key fields:
   - Standard text blocks (paragraphs, headings)
   - Inline images (caption and alt text)
   - **Original Print Page Break** blocks to preserve academic pagination (e.g., "Page 3") without disrupting reading flow
+  - **Notes & References** (`notesAndReferences`) — published bibliographic notes, endnotes, and web links (rich text with URL marks). Appears with the article on the public site.
 - **Tagged Entities** — references to properties and people mentioned in the article
+- **Internal Comments** (`internalComments`) — Studio-only working notes. **Will not appear on the public site.**
 
-Archive documents (primary sources and historical images) link these under **Research References** (`citations`). That field is a document reference, not a pasted URL: many archive items can share one article. Historical images also have a separate **References** rich-text field for books, PDFs, and other links that are not Quarterly articles.
+Archive documents (primary sources and historical images) link these under **Research References** (`citations`). That field is a document reference, not a pasted URL: many archive items can share one article. Historical images also have a separate **References** rich-text field for books, PDFs, and other links that are not Quarterly articles in this Studio.
+
+**Notes & References** on a Research Article or Quarterly Article is bibliography *on the article itself*. It is not the same as archive **Research References** (document links *to* a Quarterly article) or image **References** (books, PDFs, and other URLs on a Historical Image).
 
 ### Dynamic table of contents
 
