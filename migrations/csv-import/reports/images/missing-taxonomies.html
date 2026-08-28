@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en" data-report="missing-taxonomies">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Missing taxonomies</title>
+	<style>
+:root {
+	--text: #1a1a1a;
+	--muted: #5c5c58;
+	--bg: #ffffff;
+	--zebra: #f6f6f4;
+	--hover: #ecece8;
+	--border: #e4e4e0;
+	--badge: #eeeae4;
+	--warn: #f3eee6;
+}
+* { box-sizing: border-box; }
+html { color-scheme: light; }
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.45;
+	color: var(--text);
+	background: var(--bg);
+}
+.toolbar {
+	position: sticky;
+	top: 0;
+	z-index: 5;
+	background: var(--bg);
+	border-bottom: 1px solid var(--border);
+	padding: 12px 20px 14px;
+}
+.toolbar-top {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+h1 { font-size: 1.35rem; font-weight: 650; margin: 0; }
+h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+h3 { font-size: 1rem; margin: 0; }
+.kind-heading { margin: 24px 0 8px; font-size: 1.05rem; color: var(--muted); font-weight: 650; }
+.progress { margin: 0; color: var(--muted); font-variant-numeric: tabular-nums; }
+.summary { margin: 8px 0 0; max-width: 72rem; }
+.how-to { margin: 8px 0 0; }
+.how-to summary { cursor: pointer; color: var(--muted); }
+.how-to ol, .notes { margin: 8px 0 0; padding-left: 1.25rem; }
+.notes { color: var(--muted); }
+.controls {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px 14px;
+	align-items: center;
+	margin-top: 12px;
+}
+.status-filters, .chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.legend { color: var(--muted); font-size: 13px; margin-right: 4px; }
+button, .import {
+	font: inherit;
+	font-size: 13px;
+	border: 1px solid var(--border);
+	background: var(--bg);
+	color: var(--text);
+	padding: 4px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+button.is-active { background: var(--badge); border-color: #d4d0c8; }
+button:hover, .import:hover { background: var(--hover); }
+input[type="search"] {
+	font: inherit;
+	font-size: 13px;
+	padding: 4px 10px;
+	border: 1px solid var(--border);
+	border-radius: 4px;
+	min-width: 16rem;
+}
+.import { display: inline-flex; align-items: center; gap: 6px; }
+.import input { display: none; }
+.view-nav { display: flex; gap: 12px; margin-top: 10px; }
+.view-nav a { color: var(--text); }
+main { padding: 8px 20px 48px; }
+.section { margin: 12px 0 28px; }
+.section-head {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 12px;
+	margin-bottom: 6px;
+}
+.section-blurb { margin: 0 0 8px; color: var(--muted); max-width: 72rem; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td {
+	text-align: left;
+	vertical-align: top;
+	padding: 7px 10px;
+	border-bottom: 1px solid var(--border);
+}
+thead th {
+	position: sticky;
+	top: 0;
+	background: var(--bg);
+	font-weight: 650;
+	font-size: 13px;
+	color: var(--muted);
+	z-index: 1;
+}
+tbody tr:nth-child(even) { background: var(--zebra); }
+tbody tr.row-odd { background: var(--bg); }
+tbody tr.row-even { background: var(--zebra); }
+tbody tr:hover { background: var(--hover); }
+tr.is-hidden { display: none; }
+tr.is-resolved { color: #6a6a66; }
+tr.is-resolved .id-cell { text-decoration: line-through; }
+.resolve-cell { white-space: nowrap; width: 7.5rem; }
+.resolve-cell label { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+.badge {
+	display: inline-block;
+	padding: 1px 7px;
+	border-radius: 999px;
+	background: var(--badge);
+	font-size: 12px;
+	font-weight: 600;
+}
+.badge-warn { background: var(--warn); }
+.badge-quiet { background: transparent; border: 1px solid var(--border); color: var(--muted); }
+code.keyword, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+.clip-list { margin: 8px 0 0; padding-left: 1.1rem; columns: 3; font-size: 13px; }
+.clip-list li { break-inside: avoid; margin: 0 0 2px; }
+.empty, .empty-row td { color: var(--muted); }
+a { color: #1d4f7a; }
+@media print {
+	.toolbar .controls, .view-nav, .mark-visible, .how-to { display: none; }
+	.toolbar { position: static; border: 0; }
+	thead th { position: static; }
+	tr.is-resolved { color: #555; }
+	a { color: inherit; }
+}
+	</style>
+</head>
+<body>
+	<header class="toolbar">
+		<div class="toolbar-top">
+			<h1>Missing taxonomies</h1>
+			<p class="progress" id="progress">Resolved 0 of 46</p>
+		</div>
+		<p class="summary">46 CSV keywords still need a Migration key (or alias) so images can link automatically. One row per keyword — create or alias that Studio document, then re-run the import.</p>
+		<details class="how-to">
+			<summary>How to fix</summary>
+			<ol>
+		<li>In Studio, open Taxonomies &amp; Entities.</li>
+		<li>Find or create the Township or Subject Category listed as the CSV keyword.</li>
+		<li>Set Migration key to the exact CSV value (any casing). For extra spellings (Inn vs Inns), add Migration Key Aliases on the same Subject Category. Never put Archive IDs on a township Migration key.</li>
+		<li>Re-run the image import so those images link automatically.</li>
+		<li>donation:0 is invalid — leave those images unlinked. donation:N must match an existing Donation ID.</li>
+			</ol>
+			<ul class="notes">
+	<li>Schuylkill in the township list is usually the river (a subject), not the township. Those images already have a township.</li>
+	<li>Checkmarks are review progress in this browser only. They are not written back to Sanity.</li>
+</ul>
+		</details>
+		<div class="controls">
+			<div class="status-filters" role="group" aria-label="Resolution status">
+				<span class="legend">Status</span>
+				<button type="button" class="is-active" data-status="all" aria-pressed="true">All</button>
+				<button type="button" data-status="open" aria-pressed="false">Open</button>
+				<button type="button" data-status="resolved" aria-pressed="false">Resolved</button>
+			</div>
+			<div class="chips" role="group" aria-label="Kind">
+	<span class="legend">Kind</span>
+	<button type="button" class="chip is-active" data-chip="" aria-pressed="true">All (46)</button>
+	<button type="button" class="chip" data-chip="township" aria-pressed="false">Townships (7)</button>
+	<button type="button" class="chip" data-chip="subject" aria-pressed="false">Subjects (38)</button>
+	<button type="button" class="chip" data-chip="donation" aria-pressed="false">Donations (1)</button>
+</div>
+			<label>
+				<span class="legend">Search</span>
+				<input id="search" type="search" placeholder="Archive ID or title" />
+			</label>
+			<button type="button" data-export>Export JSON</button>
+			<label class="import">Import JSON<input type="file" accept="application/json" data-import /></label>
+		</div>
+		
+	</header>
+	<main>
+<section class="view" id="by-keyword" data-view="by-keyword">
+	<h2>By keyword</h2>
+	<section class="section" data-section="missing-township" id="missing-township">
+		<div class="section-head">
+			<h3>Townships (7)</h3>
+			<button type="button" class="mark-visible">Mark visible resolved</button>
+		</div>
+
+		<div class="table-wrap">
+		<table>
+			<thead>
+				<tr>
+				<th scope="col">Resolved</th>
+				<th scope="col">CSV keyword</th>
+				<th scope="col">Kind</th>
+				<th scope="col">Suggested action</th>
+				<th scope="col">Images</th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr data-id="township:schuylkill" data-filter="township" data-search="schuylkill township scu10 scu11 scu12 scu13 scu14 scu15 scu16 scu17 scu18 scu19 scu20 scu21 scu22 scu23">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="township:schuylkill" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Schuylkill</code></td>
+				<td><span class="badge badge-neutral">Townships</span></td>
+				<td>CSV subject is the river, not the township. Do not put Archive IDs on a township Migration key.</td>
+				<td><details><summary>14 images</summary><ul class="clip-list"><li><span class="mono">SCU10</span> Catfish Island, Schuylkill aerial view</li><li><span class="mono">SCU11</span> Schuylkill and Catfish Island</li><li><span class="mono">SCU12</span> Whistle Point Marker, VFNHP</li><li><span class="mono">SCU13</span> Whistle Point Marker, VFNHP</li><li><span class="mono">SCU14</span> Mile Markers, Schuylkill River</li><li><span class="mono">SCU15</span> Abutments, Schuylkill River</li><li><span class="mono">SCU16</span> Abutments, Schuylkill River</li><li><span class="mono">SCU17</span> Abutments, Schuylkill River</li><li><span class="mono">SCU18</span> Abutments, Schuylkill River</li><li><span class="mono">SCU19</span> Creek, Schuylkill River</li><li><span class="mono">SCU20</span> Schuylkill River Embankment</li><li><span class="mono">SCU21</span> Embankment, Schuylkill River, VFNHP</li><li><span class="mono">SCU22</span> Embankment, Schuylkill River</li><li><span class="mono">SCU23</span> Mile Markers, Schuylkill Division, PRR</li></ul></details></td>
+			</tr>
+			<tr data-id="township:marple" data-filter="township" data-search="marple township cuh2 cuh3 cuh5">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="township:marple" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Marple</code></td>
+				<td><span class="badge badge-neutral">Townships</span></td>
+				<td>Township — set Migration key to this exact spelling (any casing).</td>
+				<td><details><summary>3 images</summary><ul class="clip-list"><li><span class="mono">CUH2</span> Dinner Preparation</li><li><span class="mono">CUH3</span> Mending Shift</li><li><span class="mono">CUH5</span> Chopped egg sauce</li></ul></details></td>
+			</tr>
+			<tr data-id="township:audubon" data-filter="township" data-search="audubon township ola64">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="township:audubon" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Audubon</code></td>
+				<td><span class="badge badge-neutral">Townships</span></td>
+				<td>Township — set Migration key to this exact spelling (any casing).</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">OLA64</span> Mill Grove, Audubon House</li></ul></details></td>
+			</tr>
+			<tr data-id="township:bridgeport" data-filter="township" data-search="bridgeport township cvr21">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="township:bridgeport" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Bridgeport</code></td>
+				<td><span class="badge badge-neutral">Townships</span></td>
+				<td>Township — set Migration key to this exact spelling (any casing).</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">CVR21</span> “Iron Horse Ramble” through Bridgeport, April 30, 1960.</li></ul></details></td>
+			</tr>
+			<tr data-id="township:frazer" data-filter="township" data-search="frazer township teh26">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="township:frazer" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Frazer</code></td>
+				<td><span class="badge badge-neutral">Townships</span></td>
+				<td>Township — set Migration key to this exact spelling (any casing).</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">TEH26</span> T-E High School Class of 1941, 50th reunion</li></ul></details></td>
+			</tr>
+			<tr data-id="township:malvern borough" data-filter="township" data-search="malvern borough township gt02">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="township:malvern borough" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Malvern Borough</code></td>
+				<td><span class="badge badge-neutral">Townships</span></td>
+				<td>Township — set Migration key to this exact spelling (any casing).</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">GT02</span> Warner Residence</li></ul></details></td>
+			</tr>
+			<tr data-id="township:west chester" data-filter="township" data-search="west chester township teh29">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="township:west chester" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">West Chester</code></td>
+				<td><span class="badge badge-neutral">Townships</span></td>
+				<td>Township — set Migration key to this exact spelling (any casing).</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">TEH29</span> T-E High School Class of 1941, 15th reunion</li></ul></details></td>
+			</tr>
+			</tbody>
+		</table>
+		</div>
+	</section>
+	<section class="section" data-section="missing-subject" id="missing-subject">
+		<div class="section-head">
+			<h3>Subjects (38)</h3>
+			<button type="button" class="mark-visible">Mark visible resolved</button>
+		</div>
+
+		<div class="table-wrap">
+		<table>
+			<thead>
+				<tr>
+				<th scope="col">Resolved</th>
+				<th scope="col">CSV keyword</th>
+				<th scope="col">Kind</th>
+				<th scope="col">Suggested action</th>
+				<th scope="col">Images</th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr data-id="subject:person" data-filter="subject" data-search="person subject aif01 baf01 baf02 be166 bea01 bea02 bea03 bep25 bep27 bep49 bep57 bep64 bep67 bep78 bep79 bep80 bep81 bp2 bp3 bp4 bp5 bp6 bp7 bp8 bps04 bps05 bto01 bto02 bto03 bto04 bto05 buf01 buf02 buf03 buf05 buf06 buf07 buf09 buf10 bur01 bur02 bur03 bur04 bur05 bur06 bur07 bur08 bur09 bur10 bur11 bur12 bur13 bur14 bur15 bur16 bur17 bur18 bur19 bur20 bur21 bur22 bur23 bur25 bur26 bur27 bur28 bur29 bur30 bur31 bur32 bur33 bur34 bur35 bur36 bur37 bur38 bur39 bur40 bur41 bur42 bur43 bur45 bur48 ceh1 che1 clf01 clf02 clf03 clf04 cmr05 cmr06 dre01 dup02 ehc1 ehc10 ehc11 ehc12 ehc13 ehc14 ehc15 ehc16 ehc17 ehc18 ehc19 ehc2 ehc26 ehc27 ehc28 ehc29 ehc3 ehc30 ehc31 ehc32 ehc33 ehc34 ehc4 ehc6 ehc7 ehc8 ehc9 ets08 gfm01 gfm02 gfm03 gfm04 gfm05 gfm06 gfm07 gfm08 gfm09 gfm10 gfm12 gfm13 gfm14 gfm15 gfm16 gfm17 gfm18 gfm19 gfm20 gfm21 gfm22 gfm23 gfm24 gfm25 gfm26 gfm27 gfm28 gfm29 gfm30 gfm31 gfm32 gfm33 gfm34 gfm35 gfm36 gfm37 gfm38 gfm39 gfm40 gfm41 gfm42 gfm43 grb05 grb06 grb09 grb11 grb12 grb13 grb14 grb15 grb16 grb17 grb18 grb19 grb20 grb21 grb22 grb23 grb24 grb25 grb26 grb27 kri01 kri02 kri04 kri05 kri06 kri07 kri08 kri09 kri10 kri11 kri12 las1 las2 lch01 lch02 lch03 lch05 lch06 lch07 lch08 lch09 lch10 lch11 lch12 lch13 lch14 lch15 lch16 lch17 man01 man03 man04 man05 man06 man09 man11 man12 man13 man14 man15 man16 man17 man18 man19 man20 man21 man22 man23 man24 man25 man26 man27 man28 man29 man30 man31 man32 man33 man34 man36 man37 man38 man39 man40 man41 maz1 maz2 maz3 maz4 maz5 maz6 mgi01 mgi02 mgi03 mry01 mry02 nce3 neu01 neu02 nwh01 nwh02 nwh03 nwh51 ola132 ola170 pa23 pa63 pa8 pck02 pck1 peo1 peo10 peo100 peo101 peo102 peo103 peo104 peo105 peo106 peo107 peo108 peo109 peo11 peo110 peo111 peo112 peo113 peo115 peo116 peo117 peo118 peo119 peo12 peo120 peo121 peo122 peo123 peo124 peo125 peo126 peo127 peo128 peo129 peo13 peo130 peo132 peo133 peo14 peo141 peo142 peo143 peo145 peo15 peo16 peo17 peo18 peo19 peo2 peo21 peo22 peo23 peo24 peo25 peo26 peo27 peo28 peo29 peo3 peo30 peo31 peo32 peo33 peo34 peo35 peo36 peo37 peo38 peo39 peo40 peo41 peo42 peo43 peo44 peo45 peo46 peo48 peo49 peo5 peo52 peo56 peo57 peo58 peo59 peo6 peo60 peo61 peo62 peo63 peo64 peo65 peo66 peo67 peo68 peo7 peo8 peo9 peo97 peo98 peo99 peo99b phe01 phe03 phe04 pp7 pp8 pte01 pvf1 pyl01 pyl02 pyl03 pyl04 pyl05 pyl06 pyl07 pyl08 pyl09 pyl10 pyl11 pyl12 pyl13 pyl14 pyl15 pyl16 pyl17 pyl18 pyl19 pyl20 pyl21 pyl22 pyl23 pyl24 pyl25 rbe9 rf20 ron01 ron02 sch13 sch14 sha19 tec01 tec02 tec03 tec04 tec05 tec06 tec08 tec09 tec10 tec11 tec12 tec13 tec18 tec19 tec21 tec22 tec25 tec27 tec28 tec29 tec30 tec31 tec32 tec33 tec37 tec38 tec39 tec40 tec41 tec42 tec43 teh2 teh25 teh3 tps01 tps02 tps03 tps04 tps05 vfv16 vfv18 war2 war3 war5 wcu1 wif01 wif02 wif03 wif04 wif05 wif06 wif07 wif08 wif09 wif10 wif11 wil01 wil02 wil03 wil04 wil05 wil06 wil07 wil08 wyf01">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:person" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">person</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>477 images</summary><ul class="clip-list"><li><span class="mono">AIF01</span> Mother and Daisy Aiken</li><li><span class="mono">BAF01</span> Marion Edith Baugh</li><li><span class="mono">BAF02</span> Anthony Wayne Baugh</li><li><span class="mono">BE166</span> TE History Club group</li><li><span class="mono">BEA01</span> 4 Generations of the Beadle family</li><li><span class="mono">BEA02</span> Beadle family</li><li><span class="mono">BEA03</span> Beadle family</li><li><span class="mono">BEP25</span> Cake Eating Contest</li><li><span class="mono">BEP27</span> Bobby Graves and Betty Kelly, champion cake eaters</li><li><span class="mono">BEP49</span> Untitled image BEP49</li><li><span class="mono">BEP57</span> Grass Skirts</li><li><span class="mono">BEP64</span> Harry Lewis, police chief</li><li><span class="mono">BEP67</span> Dr. R.C. Hughes</li><li><span class="mono">BEP78</span> Village Chemist</li><li><span class="mono">BEP79</span> Truck with women</li><li><span class="mono">BEP80</span> Baby Coach with Flags</li><li><span class="mono">BEP81</span> Jack Thomas with twins</li><li><span class="mono">BP2</span> Unidentified Woman &amp; son</li><li><span class="mono">BP3</span> Mother &amp; Father</li><li><span class="mono">BP4</span> Camp Life</li><li><span class="mono">BP5</span> MED - JW</li><li><span class="mono">BP6</span> Portrait of 2 girls and a boy</li><li><span class="mono">BP7</span> Portrait of 5 women</li><li><span class="mono">BP8</span> Father and 2 kids</li><li><span class="mono">BPS04</span> Berwyn School Class</li><li><span class="mono">BPS05</span> Berwyn School Class</li><li><span class="mono">BTO01</span> Bella Toner</li><li><span class="mono">BTO02</span> Bella Toner and chickens, Centerville Station, Chester Valley Railroad</li><li><span class="mono">BTO03</span> Bella Toner gardening, New Centerville station, Chester Valley Railroad</li><li><span class="mono">BTO04</span> Bella Toner at telegraph, New Centerville station, Chester Valley Railroad</li><li><span class="mono">BTO05</span> Bella Toner,</li><li><span class="mono">BUF01</span> Mildred Miller Burruss</li><li><span class="mono">BUF02</span> Mildred Miller Burruss</li><li><span class="mono">BUF03</span> Charles Burruss and unidentified woman</li><li><span class="mono">BUF05</span> Mildred Burruss and 2 friends</li><li><span class="mono">BUF06</span> Mildred Burruss</li><li><span class="mono">BUF07</span> Burruss Family in Berwyn</li><li><span class="mono">BUF09</span> Marriage license James Burruss and Mary Ray</li><li><span class="mono">BUF10</span> Marriage license of Charles Burruss and Mildred Miller</li><li><span class="mono">BUR01</span> Edna Garber Burns</li><li><span class="mono">BUR02</span> Raymond D. Burns</li><li><span class="mono">BUR03</span> Penn State Civil Engineering Graduates</li><li><span class="mono">BUR04</span> Mary M. &amp; Edna G. Burns</li><li><span class="mono">BUR05</span> Edna &amp; Raymond Burns</li><li><span class="mono">BUR06</span> Raymond &amp; ? Burns</li><li><span class="mono">BUR07</span> Raymond &amp; ? Burns</li><li><span class="mono">BUR08</span> Edna &amp; Raymond Burns</li><li><span class="mono">BUR09</span> Edna &amp; Raymond Burns</li><li><span class="mono">BUR10</span> Edna &amp; Raymond Burns</li><li><span class="mono">BUR11</span> Edna &amp; Raymond Burns</li><li><span class="mono">BUR12</span> Raymond D. Burns</li><li><span class="mono">BUR13</span> Raymond Burns &amp; C.S. Hager</li><li><span class="mono">BUR14</span> Raymond D. Burns</li><li><span class="mono">BUR15</span> Edna &amp; Raymond Burns</li><li><span class="mono">BUR16</span> Edna &amp; Raymond Burns</li><li><span class="mono">BUR17</span> Edna Garber Burns</li><li><span class="mono">BUR18</span> Penn State Graduates?</li><li><span class="mono">BUR19</span> Raymond D. Burns</li><li><span class="mono">BUR20</span> Raymond D. Burns</li><li><span class="mono">BUR21</span> Raymond D. Burns</li><li><span class="mono">BUR22</span> Raymond D. Burns</li><li><span class="mono">BUR23</span> Raymond D. Burns</li><li><span class="mono">BUR25</span> Raymond D. Burns</li><li><span class="mono">BUR26</span> Raymond D. Burns</li><li><span class="mono">BUR27</span> Raymond D. Burns</li><li><span class="mono">BUR28</span> Raymond D. Burns</li><li><span class="mono">BUR29</span> Raymond D. Burns</li><li><span class="mono">BUR30</span> Raymond D. Burns</li><li><span class="mono">BUR31</span> Raymond D. Burns</li><li><span class="mono">BUR32</span> Raymond D. Burns</li><li><span class="mono">BUR33</span> Raymond D. Burns</li><li><span class="mono">BUR34</span> Raymond D. Burns</li><li><span class="mono">BUR35</span> Raymond D. Burns</li><li><span class="mono">BUR36</span> Raymond D. Burns</li><li><span class="mono">BUR37</span> Raymond D. Burns</li><li><span class="mono">BUR38</span> Raymond D. Burns</li><li><span class="mono">BUR39</span> Raymond D. Burns</li><li><span class="mono">BUR40</span> Raymond D. Burns</li><li><span class="mono">BUR41</span> Raymond D. Burns</li><li><span class="mono">BUR42</span> Raymond D. Burns</li><li><span class="mono">BUR43</span> Raymond D. Burns</li><li><span class="mono">BUR45</span> Raymond D. Burns</li><li><span class="mono">BUR48</span> Raymond D. Burns</li><li><span class="mono">CEH1</span> Three Good Democrats</li><li><span class="mono">CHE1</span> Alexander Murdock</li><li><span class="mono">CLF01</span> Mabel Mae Johnston</li><li><span class="mono">CLF02</span> George W. Clemmans</li><li><span class="mono">CLF03</span> George W. Clemmans</li><li><span class="mono">CLF04</span> George C. Clemmans and Lulu F. Kerrigan</li><li><span class="mono">CMR05</span> W. T. Comer, Tredyffrin Supervior, Retirement Dinner</li><li><span class="mono">CMR06</span> W. T. Comer, Tredyffrin Supervisor, Retirement Dinner</li><li><span class="mono">DRE01</span> Dorothy Reed</li><li><span class="mono">DUP02</span> Duportail</li><li><span class="mono">EHC1</span> Tredyffrin Easttown History Club Members</li><li><span class="mono">EHC10</span> Tredyffrin Easttown History Club Members</li><li><span class="mono">EHC11</span> Tredyffrin Easttown History Club Members</li><li><span class="mono">EHC12</span> Franklin L. Burns &amp; S. Paul Teamer</li><li><span class="mono">EHC13</span> S. Paul Teamer and unknown boy</li><li><span class="mono">EHC14</span> Tredyffrin Easttown History Club Members</li><li><span class="mono">EHC15</span> S. Paul Teamer</li><li><span class="mono">EHC16</span> Unveiling of Plaque, Stone Chimney Picket Post</li><li><span class="mono">EHC17</span> Unveiling of Plaque, Stone Chimney Picket Post</li><li><span class="mono">EHC18</span> Tredyffrin Easttown History Club Members</li><li><span class="mono">EHC19</span> Tredyffrin Easttown History Club Members</li><li><span class="mono">EHC2</span> Tredyffrin Easttown History Club Members</li><li><span class="mono">EHC26</span> Tredyffrin-Easttown History Club Members</li><li><span class="mono">EHC27</span> George W. Hensel</li><li><span class="mono">EHC28</span> George W. Hensel with the Club Quarterly</li><li><span class="mono">EHC29</span> Tredyffrin Easttown History Club Members</li><li><span class="mono">EHC3</span> Tredyffrin Easttown History Club Members</li><li><span class="mono">EHC30</span> S. Paul Teamer and Unknown Person</li><li><span class="mono">EHC31</span> Unknown Couple</li><li><span class="mono">EHC32</span> Four Unknown Ladies</li><li><span class="mono">EHC33</span> Tredyffrin-Easttown History Club Members</li><li><span class="mono">EHC34</span> Tredyffrin-Easttown History Club Members</li><li><span class="mono">EHC4</span> S. Paul Teamer at Sullivan&#39;s Bridge Memorial</li><li><span class="mono">EHC6</span> Tredyffrin Easttown History Club Members</li><li><span class="mono">EHC7</span> Tredyffrin Easttown History Club Members</li><li><span class="mono">EHC8</span> Tredyffrin Easttown History Club Members</li><li><span class="mono">EHC9</span> Tredyffrin Easttown History Club Members</li><li><span class="mono">ETS08</span> Students of the Easttown High School, Berwyn, PA</li><li><span class="mono">GFM01</span> George Francis Moran, c. 1957</li><li><span class="mono">GFM02</span> Tom Nelson</li><li><span class="mono">GFM03</span> Tom Nelson</li><li><span class="mono">GFM04</span> Alice McCarnes</li><li><span class="mono">GFM05</span> William Patrick Ruch, Captain, Pennsylvania State Police</li><li><span class="mono">GFM06</span> Lean to, Scout Troop 1, Berwyn</li><li><span class="mono">GFM07</span> Kay Hanley</li><li><span class="mono">GFM08</span> Maria Moran</li><li><span class="mono">GFM09</span> Dot Neiman, Helen Kugler, Bertha Neiman, Maria Moran, Ocean City NJ</li><li><span class="mono">GFM10</span> Walt Hanley</li><li><span class="mono">GFM12</span> Mrs. Wilson, Tredyffrin Easttown High School Teacher</li><li><span class="mono">GFM13</span> Kay Hanley</li><li><span class="mono">GFM14</span> Bertha May Homan Neiman.  Later was a secretary at TE High School.</li><li><span class="mono">GFM15</span> Chas. J.Moran, South Leopard Road</li><li><span class="mono">GFM16</span> Chas. J. Moran as a student Phila. Textile School, c. 1922</li><li><span class="mono">GFM17</span> Jim Noblit and George Moran, TE High School, c. 1927 - 28</li><li><span class="mono">GFM18</span> Jack Easches, George Moran, and Jim Noblit</li><li><span class="mono">GFM19</span> Ward McClees, George Moran</li><li><span class="mono">GFM20</span> Warden McClees in front of my model A Ford (1929 plate) - George Moran</li><li><span class="mono">GFM21</span> Otto Tavener</li><li><span class="mono">GFM22</span> Otto Tavener</li><li><span class="mono">GFM23</span> Otto Tavener</li><li><span class="mono">GFM24</span> &quot;Chick&quot; Peoples</li><li><span class="mono">GFM25</span> &quot;Chick&quot; Peoples</li><li><span class="mono">GFM26</span> &quot;Chick&quot; Peoples</li><li><span class="mono">GFM27</span> &quot;Chick&quot; Peoples</li><li><span class="mono">GFM28</span> Helen Smith.</li><li><span class="mono">GFM29</span> Anna Moran (George&#39;s sister) and Helen Bracken</li><li><span class="mono">GFM30</span> Helen Bracken</li><li><span class="mono">GFM31</span> Unknown person</li><li><span class="mono">GFM32</span> TE High School Washington Trip, May 1913</li><li><span class="mono">GFM33</span> TE High School Boys</li><li><span class="mono">GFM34</span> TE High School Girls</li><li><span class="mono">GFM35</span> Mr. Rull(?), TE High School</li><li><span class="mono">GFM36</span> Stay-at-homes</li><li><span class="mono">GFM37</span> Some Class!</li><li><span class="mono">GFM38</span> Fruit Hill, 1913</li><li><span class="mono">GFM39</span> TE High School class of 28 at Washington D.C.</li><li><span class="mono">GFM40</span> TE High School,Class of 28 at Washington D.C.</li><li><span class="mono">GFM41</span> TE High School Washington Trip, Mt. Vernon</li><li><span class="mono">GFM42</span> TE High School class of 28 Washington trip</li><li><span class="mono">GFM43</span> Bridal Gowns of the 19th Century</li><li><span class="mono">GRB05</span> Henry O. Garber</li><li><span class="mono">GRB06</span> Henry Garber hunting</li><li><span class="mono">GRB09</span> Henry O. Garber</li><li><span class="mono">GRB11</span> Henry O. Garber group</li><li><span class="mono">GRB12</span> Henry O. Garber</li><li><span class="mono">GRB13</span> Henry O. Garber</li><li><span class="mono">GRB14</span> Henry O. Garber</li><li><span class="mono">GRB15</span> Henry O. Garber</li><li><span class="mono">GRB16</span> Henry O. &amp; Mary Patton Garber</li><li><span class="mono">GRB17</span> Henry O. Garber</li><li><span class="mono">GRB18</span> Hunting group at Camp Lamoka, Monroetown</li><li><span class="mono">GRB19</span> Henry Garber hunting</li><li><span class="mono">GRB20</span> Hunting group at Camp Lamoka, Monroetown</li><li><span class="mono">GRB21</span> Member of Henry Garber hunting party</li><li><span class="mono">GRB22</span> Unknown person</li><li><span class="mono">GRB23</span> Unknown person</li><li><span class="mono">GRB24</span> Hunting group at Camp Lamoka, Monroetown</li><li><span class="mono">GRB25</span> Mary Patton Garber</li><li><span class="mono">GRB26</span> Garber family</li><li><span class="mono">GRB27</span> Sarah Elizabeth Garber</li><li><span class="mono">KRI01</span> Frank and George(?) Krider</li><li><span class="mono">KRI02</span> Frank Krider</li><li><span class="mono">KRI04</span> Memorial Card to Frank K. Krider</li><li><span class="mono">KRI05</span> Krider / Jones family photograph</li><li><span class="mono">KRI06</span> Krider / Jones family photograph</li><li><span class="mono">KRI07</span> Krider / Jones family photograph</li><li><span class="mono">KRI08</span> Krider / Jones family photograph</li><li><span class="mono">KRI09</span> Howard Jones</li><li><span class="mono">KRI10</span> Frank K. Krider</li><li><span class="mono">KRI11</span> Lizzie Jones</li><li><span class="mono">KRI12</span> Charles P. Jones</li><li><span class="mono">LAS1</span> Allen Latshaw</li><li><span class="mono">LAS2</span> Assistants at the Latshaw School</li><li><span class="mono">LCH01</span> Abraham S. Latch</li><li><span class="mono">LCH02</span> Abraham Stearne Latch &amp; ladies</li><li><span class="mono">LCH03</span> Abraham Stearne Latch in rose garden</li><li><span class="mono">LCH05</span> Jeanette Latch</li><li><span class="mono">LCH06</span> Josephine Sellars Latch</li><li><span class="mono">LCH07</span> Josephine Sellars Latch</li><li><span class="mono">LCH08</span> Josephine Sellars Latch</li><li><span class="mono">LCH09</span> Latch family</li><li><span class="mono">LCH10</span> Latch family</li><li><span class="mono">LCH11</span> Unidentified Group</li><li><span class="mono">LCH12</span> Unidentified Person</li><li><span class="mono">LCH13</span> W. C. &amp; A. S. Latch with horses</li><li><span class="mono">LCH14</span> William Clavius Latch</li><li><span class="mono">LCH15</span> William Clavius Latch &amp; colt</li><li><span class="mono">LCH16</span> William Clavius Latch &amp; horse</li><li><span class="mono">LCH17</span> William Clavius Latch</li><li><span class="mono">MAN01</span> Unknown Person</li><li><span class="mono">MAN03</span> Unknown Person</li><li><span class="mono">MAN04</span> Unknown Person</li><li><span class="mono">MAN05</span> Unknown Person</li><li><span class="mono">MAN06</span> Dorothy Reed</li><li><span class="mono">MAN09</span> Unknown Person</li><li><span class="mono">MAN11</span> William Mansley</li><li><span class="mono">MAN12</span> Unknown Person</li><li><span class="mono">MAN13</span> William Mansley</li><li><span class="mono">MAN14</span> William Mansley</li><li><span class="mono">MAN15</span> Unidentified Person</li><li><span class="mono">MAN16</span> Back of MAN15</li><li><span class="mono">MAN17</span> Unknown group</li><li><span class="mono">MAN18</span> William Mansley</li><li><span class="mono">MAN19</span> Unknown Child</li><li><span class="mono">MAN20</span> Unknown group</li><li><span class="mono">MAN21</span> Unidentified Group</li><li><span class="mono">MAN22</span> William Mansley</li><li><span class="mono">MAN23</span> Unidentified Group</li><li><span class="mono">MAN24</span> William Mansley</li><li><span class="mono">MAN25</span> Unidentified Group</li><li><span class="mono">MAN26</span> William Mansley</li><li><span class="mono">MAN27</span> William Mansley</li><li><span class="mono">MAN28</span> William Mansley</li><li><span class="mono">MAN29</span> Back of MAN28</li><li><span class="mono">MAN30</span> William Mansley</li><li><span class="mono">MAN31</span> Back of MAN30</li><li><span class="mono">MAN32</span> William Mansley</li><li><span class="mono">MAN33</span> William Mansley</li><li><span class="mono">MAN34</span> William Mansley</li><li><span class="mono">MAN36</span> William Mansley</li><li><span class="mono">MAN37</span> William Mansley</li><li><span class="mono">MAN38</span> William Mansley</li><li><span class="mono">MAN39</span> Unidentified Group</li><li><span class="mono">MAN40</span> William Mansley</li><li><span class="mono">MAN41</span> William Mansley</li><li><span class="mono">MAZ1</span> Mazie Hall - 100 years old</li><li><span class="mono">MAZ2</span> Mazie Hall - Amazing</li><li><span class="mono">MAZ3</span> Mazie Hall - College</li><li><span class="mono">MAZ4</span> Mazie Hall - early days</li><li><span class="mono">MAZ5</span> Mazie Hall - later days</li><li><span class="mono">MAZ6</span> Mazie Hall - 1924 Year Book</li><li><span class="mono">MGI01</span> Billie Holliday</li><li><span class="mono">MGI02</span> Count Bassie advertisement</li><li><span class="mono">MGI03</span> The Swing Queens</li><li><span class="mono">MRY01</span> Morris Ray and automobile</li><li><span class="mono">MRY02</span> Family in Yosemite National Park</li><li><span class="mono">NCE3</span> Clarence Roberts standing at the location of the Stone Chimney Picket Post, New Centerville.</li><li><span class="mono">NEU01</span> John Newhaus and wife, Grubb Road, Malvern</li><li><span class="mono">NEU02</span> John Neuhaus in uniform, WWI</li><li><span class="mono">NWH01</span> Newhall</li><li><span class="mono">NWH02</span> Newhall</li><li><span class="mono">NWH03</span> Newhall.</li><li><span class="mono">NWH51</span> Newhall.</li><li><span class="mono">OLA132</span> Birthplace marker for Thomas Buchanon Read</li><li><span class="mono">OLA170</span> John Williamson Nevin memorial</li><li><span class="mono">PA23</span> Pasquale Paoli Day</li><li><span class="mono">PA63</span> Richard Nixon campaign rally at the old Paoli Shopping Center</li><li><span class="mono">PA8</span> Paoli Buckboard</li><li><span class="mono">PCK02</span> Philander Knox and wife disembraking ship in Honolulu</li><li><span class="mono">PCK1</span> Philander Knox</li><li><span class="mono">PEO1</span> Edwina &amp; George W. Clemmans</li><li><span class="mono">PEO10</span> Dr. James Aiken and his daughter Daisy</li><li><span class="mono">PEO100</span> Unknown Person</li><li><span class="mono">PEO101</span> Unknown Group Portrait</li><li><span class="mono">PEO102</span> Unknown Group Portrait</li><li><span class="mono">PEO103</span> Unknown Person</li><li><span class="mono">PEO104</span> Unknown Person</li><li><span class="mono">PEO105</span> Brigadier-General Anthony Wayne</li><li><span class="mono">PEO106</span> Brigadier-General Chas Scott</li><li><span class="mono">PEO107</span> Brigadier-General Count Louis Duportail</li><li><span class="mono">PEO108</span> Brigadier-General Daniel Morgan</li><li><span class="mono">PEO109</span> Brigadier-General Enoch Poor</li><li><span class="mono">PEO11</span> Unknown Portrait</li><li><span class="mono">PEO110</span> Brigadier-General George Weedon</li><li><span class="mono">PEO111</span> Brigadier-General Henry Knox</li><li><span class="mono">PEO112</span> Brigadier-General James M. Varnum</li><li><span class="mono">PEO113</span> Brigadier-General Jed Huntingdon</li><li><span class="mono">PEO115</span> Brigadier-General Lachlan McIntosh</li><li><span class="mono">PEO116</span> Brigadier-General Peter Muhlenberg</li><li><span class="mono">PEO117</span> Brigadier-General William Smallwood</li><li><span class="mono">PEO118</span> General George Washington</li><li><span class="mono">PEO119</span> Lieutenant Colonel Alexander Hamilton</li><li><span class="mono">PEO12</span> Unknown Portrait</li><li><span class="mono">PEO120</span> Major General Anthony St. Clair</li><li><span class="mono">PEO121</span> Major General Frederick William von Steuben</li><li><span class="mono">PEO122</span> Major General Frederick William von Steuben</li><li><span class="mono">PEO123</span> Major General Lord Stirling</li><li><span class="mono">PEO124</span> Major General Nathaniel Greene</li><li><span class="mono">PEO125</span> Valley Forge Commissioners</li><li><span class="mono">PEO126</span> Brigadier General John Glover</li><li><span class="mono">PEO127</span> Lieutenant John Trumbull</li><li><span class="mono">PEO128</span> George Washington Statue</li><li><span class="mono">PEO129</span> General Nathaneal Greene</li><li><span class="mono">PEO13</span> Women in Welsh Costume</li><li><span class="mono">PEO130</span> George Washington</li><li><span class="mono">PEO132</span> Julius Sachse</li><li><span class="mono">PEO133</span> Bob Goshorn</li><li><span class="mono">PEO14</span> Unknown Person</li><li><span class="mono">PEO141</span> Isaac M. Anderson</li><li><span class="mono">PEO142</span> Isaac M. Anderson family</li><li><span class="mono">PEO143</span> Sally Nelson</li><li><span class="mono">PEO145</span> May-Sevcik</li><li><span class="mono">PEO15</span> Unidentified Group</li><li><span class="mono">PEO16</span> D. Bernard Stout of Cabbagetown</li><li><span class="mono">PEO17</span> Robert and Lilly Pyle</li><li><span class="mono">PEO18</span> Simon Matko Horstick</li><li><span class="mono">PEO19</span> Mr. &amp; Mrs. Curwen and Helen Weller</li><li><span class="mono">PEO2</span> George W. Clemmans</li><li><span class="mono">PEO21</span> David Kaufman &amp; William M. Coates House</li><li><span class="mono">PEO22</span> Major &amp; Surgeon George G. Groff</li><li><span class="mono">PEO23</span> Hattie Dewees</li><li><span class="mono">PEO24</span> Unidentified Person</li><li><span class="mono">PEO25</span> Unidentified Person</li><li><span class="mono">PEO26</span> Jean Stineman, artist</li><li><span class="mono">PEO27</span> Jean Stineman, artist</li><li><span class="mono">PEO28</span> James J. Nugent, Tredyffrin Township</li><li><span class="mono">PEO29</span> Unknown group</li><li><span class="mono">PEO3</span> Fannie Heyburn &amp; Grandson</li><li><span class="mono">PEO30</span> Ruth Lareaux &amp; Dorothy Reed</li><li><span class="mono">PEO31</span> Scout Troup. leader Franklin Wandless</li><li><span class="mono">PEO32</span> Unidentified family</li><li><span class="mono">PEO33</span> Bob Nye</li><li><span class="mono">PEO34</span> Eilene Cheney</li><li><span class="mono">PEO35</span> Jim Lawson</li><li><span class="mono">PEO36</span> Joe Diamond</li><li><span class="mono">PEO37</span> Russell B. Spencer</li><li><span class="mono">PEO38</span> Ruth Baldwin</li><li><span class="mono">PEO39</span> Stanley Lunde</li><li><span class="mono">PEO40</span> Ted Meyers</li><li><span class="mono">PEO41</span> Vincent F. Hembrook</li><li><span class="mono">PEO42</span> Unknown Person</li><li><span class="mono">PEO43</span> Unidentified Group</li><li><span class="mono">PEO44</span> Unidentified Group</li><li><span class="mono">PEO45</span> Unidentified Group</li><li><span class="mono">PEO46</span> Galusha Pennypacker</li><li><span class="mono">PEO48</span> Unknown Person</li><li><span class="mono">PEO49</span> Davis Family</li><li><span class="mono">PEO5</span> Grace Sharp</li><li><span class="mono">PEO52</span> Unknown woman and baby</li><li><span class="mono">PEO56</span> Rev. William T. and Mrs. Vandener</li><li><span class="mono">PEO57</span> Michead Edeesase (- maybe) as Betsy Ross</li><li><span class="mono">PEO58</span> Baptist Brotherhood Baseball Team</li><li><span class="mono">PEO59</span> Manus McMonagle</li><li><span class="mono">PEO6</span> Six People</li><li><span class="mono">PEO60</span> Simon Matko Horstick</li><li><span class="mono">PEO61</span> Stroh family</li><li><span class="mono">PEO62</span> Mrs. Dudley Kneass and Mrs. John Salvaggio</li><li><span class="mono">PEO63</span> H Hawkings and J H Kain</li><li><span class="mono">PEO64</span> Rod Broadbelt</li><li><span class="mono">PEO65</span> Rod Broadbelt</li><li><span class="mono">PEO66</span> Oliver Bair</li><li><span class="mono">PEO67</span> Mary Bair</li><li><span class="mono">PEO68</span> Franklin Burns</li><li><span class="mono">PEO7</span> Six People</li><li><span class="mono">PEO8</span> Emily Patterson &amp; Florence Glissen</li><li><span class="mono">PEO9</span> Emily Patterson &amp; Florence Glissen</li><li><span class="mono">PEO97</span> Mary Jane Aiken Wells</li><li><span class="mono">PEO98</span> Unknown Person</li><li><span class="mono">PEO99</span> Unknown Person</li><li><span class="mono">PEO99b</span> Back of PEO99</li><li><span class="mono">PHE01</span> Tom &amp; Ann Phelan</li><li><span class="mono">PHE03</span> Merie Patricia Phelan as May Queen</li><li><span class="mono">PHE04</span> Thomas Phelan</li><li><span class="mono">PP7</span> John D. Burns, Paoli Postmaster</li><li><span class="mono">PP8</span> Emily Shinton, Paoli Postmistress</li><li><span class="mono">PTE01</span> Paul Teamer</li><li><span class="mono">PVF1</span> State Park Employees</li><li><span class="mono">PYL01</span> Sarah Elizabeth Garber Pyle</li><li><span class="mono">PYL02</span> Sarah Elizabeth Garber Pyle</li><li><span class="mono">PYL03</span> Sarah Elizabeth Garber Pyle</li><li><span class="mono">PYL04</span> Elizabeth Pyle holding daughter Katherine (born 1936)</li><li><span class="mono">PYL05</span> Henry, Bob and Catherine Pyle</li><li><span class="mono">PYL06</span> Elizabeth Garber Pyle at 34 Bridge Avenue</li><li><span class="mono">PYL07</span> Elizabeth Pyle at 42 Bridge Avenue</li><li><span class="mono">PYL08</span> Elizabeth Pyle at 42 Bridge Avenue</li><li><span class="mono">PYL09</span> Abram Pyle</li><li><span class="mono">PYL10</span> Elizabeth, Abram, and Henry Pyle</li><li><span class="mono">PYL11</span> Abram Pyle</li><li><span class="mono">PYL12</span> Elizabeth &amp; Abram Pyle</li><li><span class="mono">PYL13</span> Abram &amp; Henry Pyle</li><li><span class="mono">PYL14</span> Frederick Grove Pyle</li><li><span class="mono">PYL15</span> Abram holding Henry “Zeke” Pyle</li><li><span class="mono">PYL16</span> Abram Pyle</li><li><span class="mono">PYL17</span> Henry Grove “Zeke” Pyle</li><li><span class="mono">PYL18</span> Henry Grove Zeke and June Rudderow Pyle</li><li><span class="mono">PYL19</span> Henry Grove Zeke and June Rudderow Pyle</li><li><span class="mono">PYL20</span> Henry Grove “Zeke” Pyle</li><li><span class="mono">PYL21</span> Henry Grove “Zeke” Pyle</li><li><span class="mono">PYL22</span> Henry Grove “Zeke” Pyle</li><li><span class="mono">PYL23</span> Henry, Robert, and Sarah Elizabeth Garber Pyle</li><li><span class="mono">PYL24</span> Henry Grove “Zeke” and June Rudderow Pyle</li><li><span class="mono">PYL25</span> Pyle garage, 43 Bridge Avenue</li><li><span class="mono">RBE9</span> Staff at Berwyn Station</li><li><span class="mono">RF20</span> Janet Brownlie Robertson Gerow</li><li><span class="mono">RON01</span> Group at TE High School</li><li><span class="mono">RON02</span> Mr. Roney</li><li><span class="mono">SCH13</span> Unknown School Class</li><li><span class="mono">SCH14</span> Unknown School Class</li><li><span class="mono">SHA19</span> Joseph W. Sharp, Sr.</li><li><span class="mono">TEC01</span> First History Club Banquet at Windmill Tea Room</li><li><span class="mono">TEC02</span> Placecard, First History Club Banquet at Windmill Tea Room</li><li><span class="mono">TEC03</span> History Club Banquet</li><li><span class="mono">TEC04</span> History Club Banquet at Wayside Inn</li><li><span class="mono">TEC05</span> History Club Picnic</li><li><span class="mono">TEC06</span> History Club Picnic</li><li><span class="mono">TEC08</span> History Club Picnic</li><li><span class="mono">TEC09</span> History Club Banquet</li><li><span class="mono">TEC10</span> History Club Banquet</li><li><span class="mono">TEC11</span> History Club Banquet</li><li><span class="mono">TEC12</span> History Club Banquet</li><li><span class="mono">TEC13</span> History Club Banquet</li><li><span class="mono">TEC18</span> Mildred Kirkner, Grace Winthrope</li><li><span class="mono">TEC19</span> Mrs Eleanor Dunwoody and Frances Liggett</li><li><span class="mono">TEC21</span> TE History Club 50th Anniversary at Duportail House</li><li><span class="mono">TEC22</span> TE History Club 50th Anniversary at Duportail House</li><li><span class="mono">TEC25</span> TE History Club 50th Anniversary at Duportail House</li><li><span class="mono">TEC27</span> TE History Club picnic, 1999</li><li><span class="mono">TEC28</span> TE History Club picnic, 1999, Andrews House</li><li><span class="mono">TEC29</span> Seated at table (clockwise): Mary Lamborn, Ed &amp; Helen Hayes, Dorothy Stanley, Mildred Kirkner, Libbie Weaver.
+
+Standing: David Wilson (leaning over), Bill Andrews (hand to face), Skip Eichner (striped shirt)</li><li><span class="mono">TEC30</span> Left to right: Dorothy Stanley, Mildred Kirkner, Libby Weaver, David Wilson</li><li><span class="mono">TEC31</span> Near table (clockwise): Eleanor Chworowsky, Betty Ripka, Barbara Fry, Herb Fry, Joan McCracken, Jim MCCracken</li><li><span class="mono">TEC32</span> Ray and Eva Noll, Mary Lamborn (with back turned)</li><li><span class="mono">TEC33</span> Eichner daughter and grandchild;
+Eva and Ray Noll;
+Standing middle distance: Skip Eichner (striped shirt), Bill Andrews (dark shirt), Howard Housworth (left, standing erect, light shirt), Jim Huston (right)</li><li><span class="mono">TEC37</span> TE History Club Banquet at Trinity Presbyterian Church</li><li><span class="mono">TEC38</span> TE History Club Banquet at Trinity Presbyterian Church</li><li><span class="mono">TEC39</span> TE History Club Banquet at Trinity Presbyterian Church</li><li><span class="mono">TEC40</span> Eleanor Dunwoody and Mary Sues(?)</li><li><span class="mono">TEC41</span> TE History Club 1984 picnic</li><li><span class="mono">TEC42</span> Bob Goshorn</li><li><span class="mono">TEC43</span> TE History Club 1984 picnic</li><li><span class="mono">TEH2</span> Cast of Daddy Long Legs</li><li><span class="mono">TEH25</span> Tredyffrin-Easttown High School</li><li><span class="mono">TEH3</span> T-E High School Basketball Team, 1920</li><li><span class="mono">TPS01</span> Tea Party at Stirling&#39;s Quarters in honor of Compilers of &#39;Great Valley Days&#39;</li><li><span class="mono">TPS02</span> Tea Party at Stirling&#39;s Quarters in honor of Compilers of &#39;Great Valley Days&#39;</li><li><span class="mono">TPS03</span> Tea Party at Stirling&#39;s Quarters in honor of Compilers of &#39;Great Valley Days&#39;</li><li><span class="mono">TPS04</span> Tea Party at Stirling&#39;s Quarters in honor of Compilers of &#39;Great Valley Days&#39;</li><li><span class="mono">TPS05</span> Tea Party at Stirling&#39;s Quarters in honor of Compilers of &#39;Great Valley Days&#39;</li><li><span class="mono">VFV16</span> Valley Forge Fife and Drum Band outside the POSofA (Patriotic Order of Sons of America) Hall, Mathews Free Library.</li><li><span class="mono">VFV18</span> Four Generations of the Rowan family outside the store at Valley Forge on Labor Day, September 2, 1912</li><li><span class="mono">WAR2</span> Warner Quarry workers</li><li><span class="mono">WAR3</span> Warner Quarry workers</li><li><span class="mono">WAR5</span> Warner Quarry workers</li><li><span class="mono">WCU1</span> Margaret Currie</li><li><span class="mono">WIF01</span> Della Williams</li><li><span class="mono">WIF02</span> Joseph Williams</li><li><span class="mono">WIF03</span> Grandfather Williams and Uncle Joe Williams at Williams farm in the Great Valley</li><li><span class="mono">WIF04</span> Grandfather Williams and Uncle Joe Williams at Williams farm</li><li><span class="mono">WIF05</span> Della H. Williams</li><li><span class="mono">WIF06</span> Della Williams in Atlantic City</li><li><span class="mono">WIF07</span> Della Williams</li><li><span class="mono">WIF08</span> Della &amp; Joe Williams</li><li><span class="mono">WIF09</span> Della &amp; Jennie Williams</li><li><span class="mono">WIF10</span> Jennie Williams about 32 years old</li><li><span class="mono">WIF11</span> John Alexander Williams of Berwyn, about 30 years old</li><li><span class="mono">WIL01</span> Eliza Siter Wilson</li><li><span class="mono">WIL02</span> David Wilson</li><li><span class="mono">WIL03</span> Emma Jane Wilson</li><li><span class="mono">WIL04</span> Winfield Scott Wilson</li><li><span class="mono">WIL05</span> David Wilson, 1860 - 1925</li><li><span class="mono">WIL06</span> William West Wilson, 1884 - 1976</li><li><span class="mono">WIL07</span> William West &amp; Marie Wilson</li><li><span class="mono">WIL08</span> William West Wilson</li><li><span class="mono">WYF01</span> General Wayne’s Memorial</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:place" data-filter="subject" data-search="place subject bbr01 bbr02 bbr03 bbr04 bbr05 bbr06 bbr08 bbr09 bbr10 bbr11 be1 be10 be100 be101 be114 be115 be117 be118 be119 be121 be122 be123 be124 be125 be126 be127 be128 be129 be130 be131 be132 be134 be135 be136 be137 be138 be139 be140 be141 be142 be16 be162 be169 be170 be171 be172 be173 be174 be175 be176 be177 be178 be179 be180 be188 be189 be190 be191 be192 be195 be196 be198 be2 be200 be201 be202 be203 be204 be205 be206 be207 be208 be209 be210 be211 be212 be213 be214 be215 be216 be217 be218 be33 be34 be35 be36 be37 be38 be39 be40 be44 be56 be57 be58 be59 be60 be68 be69 be70 be85 be89 be90 be94 be95 be97 bep1 bep69 bep7 bep72 bep74 bet03 bet04 bet05 bet06 bet07 bet08 bet09 bet10 bet11 bet12 bet13 bet14 bet15 bet16 bfc1 bg07 bg08 bg24 car1 car10 car11 car12 car13 car14 car15 car16 car17 car18 car19 car2 car20 car21 car22 car23 car24 car3 car4 car5 car6 car7 car8 car9 cct01 cor01 cor02 cor03 cor04 cor05 cor06 cor07 cor08 cor09 cor10 cor11 cor12 cor13 cor14 cor15 cor16 cor17 cor18 cor19 cor20 cor21 cor22 cor23 cor24 cor25 cor26 cor27 cor28 cor29 cor30 cor31 cor32 cor33 cor34 cor35 cwb04 cwb05 cwb06 cwb07 cwb08 cwb09 cwb1 cwb10 cwb11 cwb12 cwb13 cwb14 cwb15 cwb16 cwb17 cwb18 cwb19 cwb2 cwb20 cwb21 cwb22 cwb23 cwb24 dbc01 dbc02 dbc03 dbc04 dbc05 dbc06 dbc07 dbc09 dev1 dev13 dev14 dev15 dev16 dev17 dev18 dev2 dev3 dev7 ehc36 ehc5 ew02 frl14 fw05 ham02 hou191 how10 how11 how12 how13 how14 how15 how16 how17 how18 how19 how20 how21 how4 how5 how6 how7 how8 how9 kcb10 kcb11 kcb12 kcb13 kcb15 kcb16 kcb17 kcb18 kcb19 kcb20 kcb21 kcb22 kcb23 kcb25 kcb26 kcb27 kcb28 kcb29 kcb30 kcb31 kcb4 kcb5 kcb6 kcb7 kcb8 kcb9 lab19 lab20 lab35 lab36 lab37 lab38 lab39 lab40 lab41 lab42 lab43 lab44 lab45 lab46 lab47 lab48 lab49 lab50 lab51 lab52 lab53 lab54 lab55 lab56 lab6 lab67 lab68 lab69 lab89 mal25 mal26 man07 man08 man10 mar1 mar2 nce12 nce9 ola109 ola109b ola115 ola115b ola119 ola119b ola131 ola146 ola174 ola182 ola182b ola183 ola183b ola184 ola184b ola185 ola185b ola186 ola187 ola188 ola188b ola189b ola190 ola190b ola192 ola192b ola193 ola193b ola20 ola21 ola25 ola26 ola27 ola38 ola39 ola71 ola73 ola74 ola75 pa18 pa28 pa34 pa55 pa64 pa65 pa66 pa67 pa68 pa69 pa70 peo78 pho1 ppo17 rad6 ror08 ror09 ror10 ror11 ror12 ror13 ror14 ror15 ror16 ror17 ror18 ror19 ror20 ror21 ror3 sam1 scp01 scp02 scp03 scp04 scu05 scu05b scu06 scu06b scu3 sha20 sha21 str04 str05 str06 str07 str09 str1 str10 str11 str14 str15 str16 str17 str18 str19 str2 str20 str3 tre11 tre12 tre15 ufg10 vc07 vc08 vc14 vc14b vc17 vc17b vc20 vcb6 vfd1 vfd12 vfd13 vfd16 vfd16b vfd20 vfd8 vfp121 vfp26 vfp28 vfp32 vfp33 (was vfp34 vfp4 vfp55 vfp56 vfp9 vfs02 vfv19 vfv21 vfv22 wab1 waf01 waf02 whq27 whq28 whq29 whq31 whq32 wrd05 wsp01 wsp02 wsp03 wsp03b wsp04 wsp04b wsp09 wsp11 ysp01 ysp02 ysp03 ysp05">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:place" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Place</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>470 images</summary><ul class="clip-list"><li><span class="mono">BBR01</span> Site of Berwyn Baptist Road apartments</li><li><span class="mono">BBR02</span> Site of Berwyn Baptist Road apartments</li><li><span class="mono">BBR03</span> Site of Berwyn Baptist Road apartments</li><li><span class="mono">BBR04</span> Site of Berwyn-baptist Road appartments</li><li><span class="mono">BBR05</span> Site of Berwyn Baptist Road apartments</li><li><span class="mono">BBR06</span> Berwyn Baptist Road (Quigleytown) townhouses</li><li><span class="mono">BBR08</span> Berwyn Baptist Road townhouses</li><li><span class="mono">BBR09</span> Berwyn Baptist Road townhouses</li><li><span class="mono">BBR10</span> Berwyn Baptist Road townhouses</li><li><span class="mono">BBR11</span> Berwyn Baptist Road townhouses</li><li><span class="mono">BE1</span> Bocce Club</li><li><span class="mono">BE10</span> Lincoln Highway, Berwyn</li><li><span class="mono">BE100</span> Conestoga and Cassatt Roads</li><li><span class="mono">BE101</span> View of ACME site</li><li><span class="mono">BE114</span> Fire House and Ambulance Service</li><li><span class="mono">BE115</span> Fire House and Ambulance Service</li><li><span class="mono">BE117</span> View of NE Berwyn from Station</li><li><span class="mono">BE118</span> Cassatt and State Roads</li><li><span class="mono">BE119</span> Cassatt and State Roads</li><li><span class="mono">BE121</span> Warren Avenue, Berwyn</li><li><span class="mono">BE122</span> Warren Avenue, Berwyn</li><li><span class="mono">BE123</span> Warren Avenue, Berwyn</li><li><span class="mono">BE124</span> Warren Avenue, Berwyn</li><li><span class="mono">BE125</span> Warren Avenue, Berwyn after Hurricane Hazel</li><li><span class="mono">BE126</span> Warren Avenue, Berwyn</li><li><span class="mono">BE127</span> Warren Avenue, Berwyn after Hurricane Hazel</li><li><span class="mono">BE128</span> Warren Avenue, Berwyn after Hurricane Hazel</li><li><span class="mono">BE129</span> Kromer Avenue</li><li><span class="mono">BE130</span> Kromer Avenue</li><li><span class="mono">BE131</span> Roberts home, Kromer Avenue, Berwyn</li><li><span class="mono">BE132</span> Trout Run below Laurel Dell</li><li><span class="mono">BE134</span> Armistice Day, Berwyn, 1920</li><li><span class="mono">BE135</span> Armistice Day, Berwyn, 1920</li><li><span class="mono">BE136</span> Armistice Day, Berwyn, 1920</li><li><span class="mono">BE137</span> Armistice Day, Berwyn, 1920</li><li><span class="mono">BE138</span> Berwyn view</li><li><span class="mono">BE139</span> Berwyn view</li><li><span class="mono">BE140</span> Berwyn view</li><li><span class="mono">BE141</span> Berwyn view</li><li><span class="mono">BE142</span> Berwyn view</li><li><span class="mono">BE16</span> Berwyn</li><li><span class="mono">BE162</span> Conestoga and Cassatt Roads</li><li><span class="mono">BE169</span> Berwyn Village Walk</li><li><span class="mono">BE170</span> Berwyn Village Walk</li><li><span class="mono">BE171</span> Berwyn Village Walk</li><li><span class="mono">BE172</span> Berwyn Village Walk</li><li><span class="mono">BE173</span> Berwyn Village Walk</li><li><span class="mono">BE174</span> Berwyn Village Walk</li><li><span class="mono">BE175</span> Berwyn Village Walk</li><li><span class="mono">BE176</span> Berwyn Village Walk</li><li><span class="mono">BE177</span> Berwyn Village Walk</li><li><span class="mono">BE178</span> Berwyn Village Walk</li><li><span class="mono">BE179</span> Berwyn Village Walk</li><li><span class="mono">BE180</span> Berwyn Village Walk</li><li><span class="mono">BE188</span> Bridge Dedication, Berwyn</li><li><span class="mono">BE189</span> Bridge Dedication, Berwyn</li><li><span class="mono">BE190</span> Bridge Dedication, Berwyn</li><li><span class="mono">BE191</span> Bridge Dedication, Berwyn</li><li><span class="mono">BE192</span> Bridge Dedication, Berwyn</li><li><span class="mono">BE195</span> Billboard and Shed</li><li><span class="mono">BE196</span> Unknown View</li><li><span class="mono">BE198</span> 42 Bridge Avenue, Berwyn</li><li><span class="mono">BE2</span> Italian Club</li><li><span class="mono">BE200</span> Berwyn Bridge dedication</li><li><span class="mono">BE201</span> Berwyn Bridge dedication</li><li><span class="mono">BE202</span> Berwyn Bridge dedication</li><li><span class="mono">BE203</span> Berwyn Bridge dedication</li><li><span class="mono">BE204</span> Berwyn Bridge dedication</li><li><span class="mono">BE205</span> Berwyn Bridge dedication</li><li><span class="mono">BE206</span> Berwyn Bridge dedication</li><li><span class="mono">BE207</span> Berwyn Bridge dedication</li><li><span class="mono">BE208</span> Berwyn Village Walk</li><li><span class="mono">BE209</span> Berwyn Village Walk</li><li><span class="mono">BE210</span> Berwyn Village Walk</li><li><span class="mono">BE211</span> Berwyn Village Walk</li><li><span class="mono">BE212</span> Berwyn Village Walk</li><li><span class="mono">BE213</span> Berwyn Village Walk</li><li><span class="mono">BE214</span> Antique Car at Berwyn Station</li><li><span class="mono">BE215</span> Antique Car at Berwyn Station</li><li><span class="mono">BE216</span> Antique Car at Berwyn Station</li><li><span class="mono">BE217</span> Aquilante’s Trolley at Berwyn Station</li><li><span class="mono">BE218</span> Exhibits at Berwyn Station</li><li><span class="mono">BE33</span> Lincoln Highway, Berwyn</li><li><span class="mono">BE34</span> Lincoln Highway, Berwyn</li><li><span class="mono">BE35</span> Lincoln Highway, Berwyn</li><li><span class="mono">BE36</span> Lincoln Highway, Berwyn</li><li><span class="mono">BE37</span> Lincoln Highway, Berwyn</li><li><span class="mono">BE38</span> Lincoln Highway, Berwyn</li><li><span class="mono">BE39</span> Fire Scene, Berwyn</li><li><span class="mono">BE40</span> Fire Scene, Berwyn</li><li><span class="mono">BE44</span> Berwyn Panorama</li><li><span class="mono">BE56</span> Berwyn from Main Line Apartments</li><li><span class="mono">BE57</span> Lincoln Highway, Berwyn</li><li><span class="mono">BE58</span> Lincoln Highway, Berwyn</li><li><span class="mono">BE59</span> Bridge Avenue, Berwyn</li><li><span class="mono">BE60</span> Unknown View</li><li><span class="mono">BE68</span> Church Avenue leading from Berwyn Station P.R.R.</li><li><span class="mono">BE69</span> Site of Bronze Works, Berwyn</li><li><span class="mono">BE70</span> View from rear of Berwyn Station, P.R.R.</li><li><span class="mono">BE85</span> Williams Corner in winter</li><li><span class="mono">BE89</span> Berwyn WWII plaque</li><li><span class="mono">BE90</span> Berwyn WWII plaque</li><li><span class="mono">BE94</span> Berwyn War Memorial</li><li><span class="mono">BE95</span> Berwyn War Memorial</li><li><span class="mono">BE97</span> Conestoga and Cassatt Roads</li><li><span class="mono">BEP1</span> Dedication of Berwyn Roll of Honor</li><li><span class="mono">BEP69</span> Paoli Honor Roll</li><li><span class="mono">BEP7</span> Devon Honor Roll</li><li><span class="mono">BEP72</span> Wrenecin&#39;s old swimming hole</li><li><span class="mono">BEP74</span> Tredyffrin Township Building</li><li><span class="mono">BET03</span> Berwyn Theater</li><li><span class="mono">BET04</span> Berwyn Theater</li><li><span class="mono">BET05</span> Berwyn Theater</li><li><span class="mono">BET06</span> Berwyn Theater</li><li><span class="mono">BET07</span> Berwyn Theater</li><li><span class="mono">BET08</span> Berwyn Theater</li><li><span class="mono">BET09</span> Berwyn Theater</li><li><span class="mono">BET10</span> Berwyn Theater</li><li><span class="mono">BET11</span> Berwyn Theater</li><li><span class="mono">BET12</span> Berwyn Theater</li><li><span class="mono">BET13</span> Berwyn Theater</li><li><span class="mono">BET14</span> Berwyn Theater</li><li><span class="mono">BET15</span> Berwyn Theater</li><li><span class="mono">BET16</span> Berwyn Theater</li><li><span class="mono">BFC1</span> Berwyn Fire Company</li><li><span class="mono">BG07</span> Knox Covered Bridge</li><li><span class="mono">BG08</span> Doyle&#39;s Nursery</li><li><span class="mono">BG24</span> Unknown Building</li><li><span class="mono">CAR1</span> Cassatt Road</li><li><span class="mono">CAR10</span> Cassatt Road</li><li><span class="mono">CAR11</span> Cassatt Road</li><li><span class="mono">CAR12</span> Cassatt Road</li><li><span class="mono">CAR13</span> State &amp; Cassatt Roads</li><li><span class="mono">CAR14</span> Cassatt Road</li><li><span class="mono">CAR15</span> Cassatt Road</li><li><span class="mono">CAR16</span> Cassatt Road</li><li><span class="mono">CAR17</span> Cassatt Road</li><li><span class="mono">CAR18</span> Cassatt Road, Berwyn</li><li><span class="mono">CAR19</span> Cassatt Road</li><li><span class="mono">CAR2</span> Cassatt Road</li><li><span class="mono">CAR20</span> Cassatt Road</li><li><span class="mono">CAR21</span> Cassatt Road</li><li><span class="mono">CAR22</span> Cassatt Road</li><li><span class="mono">CAR23</span> Cassatt Road</li><li><span class="mono">CAR24</span> Cassatt Road</li><li><span class="mono">CAR3</span> Cassatt Road</li><li><span class="mono">CAR4</span> Cassatt Road</li><li><span class="mono">CAR5</span> Cassatt Road</li><li><span class="mono">CAR6</span> Cassatt Road</li><li><span class="mono">CAR7</span> Cassatt Road</li><li><span class="mono">CAR8</span> Cassatt Road</li><li><span class="mono">CAR9</span> Berwyn scene</li><li><span class="mono">CCT01</span> An imagining of Cockletown</li><li><span class="mono">COR01</span> Conestoga Road</li><li><span class="mono">COR02</span> Harry K. Ong house, Conestoga Road</li><li><span class="mono">COR03</span> Ong home, corner of Bair and Conestoga Roads</li><li><span class="mono">COR04</span> Conestoga Road</li><li><span class="mono">COR05</span> Former home of Mrs John Heagy,  Conestoga Road</li><li><span class="mono">COR06</span> Former home of Mrs John Heagy, 755 Conestoga Road</li><li><span class="mono">COR07</span> Former home of Mrs John Heagy, Conestoga Road</li><li><span class="mono">COR08</span> Rear of 765 Conestoga Road</li><li><span class="mono">COR09</span> Conestoga Road</li><li><span class="mono">COR10</span> W. C. Latch home, Conestoga Road</li><li><span class="mono">COR11</span> Mansley house, 759 Conestoga Road</li><li><span class="mono">COR12</span> Mansley home, 759 Conestoga Road</li><li><span class="mono">COR13</span> Norcini&#39;s house being built, Conestoga Road</li><li><span class="mono">COR14</span> Conestoga Road being relaid 1970</li><li><span class="mono">COR15</span> Conestoga Road being relaid 1970</li><li><span class="mono">COR16</span> Conestoga Road being relaid 1970</li><li><span class="mono">COR17</span> 678 Conestoga Road</li><li><span class="mono">COR18</span> 678 Conestoga Road</li><li><span class="mono">COR19</span> 617 Conestoga Road</li><li><span class="mono">COR20</span> 617 Conestoga Road</li><li><span class="mono">COR21</span> 586 Conestoga Road</li><li><span class="mono">COR22</span> 586 Conestoga Road</li><li><span class="mono">COR23</span> 560 Conestoga Road</li><li><span class="mono">COR24</span> 560 Conestoga Road</li><li><span class="mono">COR25</span> Conestoga Road</li><li><span class="mono">COR26</span> Conestoga Road, work outside Hillcrest</li><li><span class="mono">COR27</span> Conestoga Road outside Bair estate</li><li><span class="mono">COR28</span> Conestoga Road at Bairs estate</li><li><span class="mono">COR29</span> Conestoga Road at Bair estate</li><li><span class="mono">COR30</span> Pavement preparation, Conestoga Road</li><li><span class="mono">COR31</span> Pavement work, Conestoga Road</li><li><span class="mono">COR32</span> Pavemnet work, Conestoga Road</li><li><span class="mono">COR33</span> Sewer work, Conestoga Road</li><li><span class="mono">COR34</span> Storm damage, Conestoga Road</li><li><span class="mono">COR35</span> Sewer work, Conestoga Road</li><li><span class="mono">CWB04</span> Carriage Way Houses</li><li><span class="mono">CWB05</span> Carriage Way Houses</li><li><span class="mono">CWB06</span> Carriage Way Houses</li><li><span class="mono">CWB07</span> Carriage Way Houses</li><li><span class="mono">CWB08</span> Carriage Way Houses</li><li><span class="mono">CWB09</span> Carriage Way Houses</li><li><span class="mono">CWB1</span> Carriage Way, Berwyn</li><li><span class="mono">CWB10</span> 4 Carriage Way, Berwyn</li><li><span class="mono">CWB11</span> 4 Carriage Way, Berwyn</li><li><span class="mono">CWB12</span> 4 Carriage Way, Berwyn</li><li><span class="mono">CWB13</span> 4 Carriage Way, Berwyn</li><li><span class="mono">CWB14</span> 4 Carriage Way, Berwyn</li><li><span class="mono">CWB15</span> 4 Carriage Way, Berwyn</li><li><span class="mono">CWB16</span> 4 Carriage Way, Berwyn</li><li><span class="mono">CWB17</span> 4 Carriage Way, Berwyn</li><li><span class="mono">CWB18</span> 4 Carriage Way, Berwyn</li><li><span class="mono">CWB19</span> 4 Carriage Way, Berwyn</li><li><span class="mono">CWB2</span> Carriage Way, Berwyn</li><li><span class="mono">CWB20</span> 4 Carriage Way, Berwyn</li><li><span class="mono">CWB21</span> 4 Carriage Way, Berwyn</li><li><span class="mono">CWB22</span> 4 Carriage Way, Berwyn</li><li><span class="mono">CWB23</span> Carriage Way Houses</li><li><span class="mono">CWB24</span> Carriage Way Houses</li><li><span class="mono">DBC01</span> Darby Creek, Devon</li><li><span class="mono">DBC02</span> Darby Creek, Devon</li><li><span class="mono">DBC03</span> Darby Creek, Devon</li><li><span class="mono">DBC04</span> Darby Creek, Devon</li><li><span class="mono">DBC05</span> Darby Creek, Devon</li><li><span class="mono">DBC06</span> Darby Creek, Devon</li><li><span class="mono">DBC07</span> Darby Creek, Devon</li><li><span class="mono">DBC09</span> Darby Creek, Devon</li><li><span class="mono">DEV1</span> Waterloo Road, Devon</li><li><span class="mono">DEV13</span> Devon Boulevard</li><li><span class="mono">DEV14</span> Devon Boulevard</li><li><span class="mono">DEV15</span> Lakeside Road, Devon</li><li><span class="mono">DEV16</span> Lakeside Road, Devon</li><li><span class="mono">DEV17</span> Lakeside Avenue</li><li><span class="mono">DEV18</span> Lakeside Road</li><li><span class="mono">DEV2</span> Old Lancaster Road, Devon</li><li><span class="mono">DEV3</span> Berkeley Avenue, Devon</li><li><span class="mono">DEV7</span> Looking east on Lancaster Pike toward Devon. Glassley School on right, June 1888</li><li><span class="mono">EHC36</span> History Club visit to Longwood Gardens</li><li><span class="mono">EHC5</span> Tredyffrin Easttown History Club Members</li><li><span class="mono">EW02</span> Aerial View of Malvern Retreat Center</li><li><span class="mono">FRL14</span> Aerial Photograph of Berwyn</li><li><span class="mono">FW05</span> Fort Washington, Easter Sunday, April 1915</li><li><span class="mono">HAM02</span> Hammer Hollow</li><li><span class="mono">HOU191</span> Harrison Estate, Waterloo Mills</li><li><span class="mono">HOW10</span> Mule Barn, Howellville</li><li><span class="mono">HOW11</span> Shack, Howellvile</li><li><span class="mono">HOW12</span> Map of Howellville</li><li><span class="mono">HOW13</span> Swedesford Road</li><li><span class="mono">HOW14</span> Howellville</li><li><span class="mono">HOW15</span> Site of Howellville Tavern</li><li><span class="mono">HOW16</span> new Mill Road at Swedesford Road</li><li><span class="mono">HOW17</span> new Mill Road</li><li><span class="mono">HOW18</span> Howellville</li><li><span class="mono">HOW19</span> Howellville</li><li><span class="mono">HOW20</span> Howellville</li><li><span class="mono">HOW21</span> Howellville</li><li><span class="mono">HOW4</span> Howellville Clean-up</li><li><span class="mono">HOW5</span> Howellville Clean-up</li><li><span class="mono">HOW6</span> Howellville Clean-up</li><li><span class="mono">HOW7</span> Howellville Clean-up</li><li><span class="mono">HOW8</span> House &amp; Mule Barn, Howellville</li><li><span class="mono">HOW9</span> House on Swedesford Road, Howellvile</li><li><span class="mono">KCB10</span> Knox Covered Bridge</li><li><span class="mono">KCB11</span> Knox Covered Bridge</li><li><span class="mono">KCB12</span> Knox Covered Bridge</li><li><span class="mono">KCB13</span> Knox Covered Bridge damage</li><li><span class="mono">KCB15</span> Knox Covered Bridge 2006 damage - siding and clearance sign</li><li><span class="mono">KCB16</span> Knox Covered Bridge 2006 damage - Damaged Beam</li><li><span class="mono">KCB17</span> Knox Covered Bridge 2006 damage - Damaged Bridge</li><li><span class="mono">KCB18</span> Knox Covered Bridge 2006 damage - Temporary repairs</li><li><span class="mono">KCB19</span> Knox Covered Bridge, 1940</li><li><span class="mono">KCB20</span> Knox Covered Bridge, 1940</li><li><span class="mono">KCB21</span> Knox Covered Bridge</li><li><span class="mono">KCB22</span> Knox Covered Bridge</li><li><span class="mono">KCB23</span> Damaged Knox Covered Bridge, 1967</li><li><span class="mono">KCB25</span> Knox Covered Bridge</li><li><span class="mono">KCB26</span> Knox Covered Bridge</li><li><span class="mono">KCB27</span> Knox Covered Bridge</li><li><span class="mono">KCB28</span> Knox Covered Bridge</li><li><span class="mono">KCB29</span> Knox Covered Bridge - view looking north</li><li><span class="mono">KCB30</span> Knox Covered Bridge - view looking north</li><li><span class="mono">KCB31</span> Knox Covered Bridge - view looking north</li><li><span class="mono">KCB4</span> Knox Covered bridge</li><li><span class="mono">KCB5</span> Old Covered Bridge</li><li><span class="mono">KCB6</span> Knox Covered Bridge</li><li><span class="mono">KCB7</span> Knox Covered Bridge</li><li><span class="mono">KCB8</span> Damaged Knox Covered Bridge</li><li><span class="mono">KCB9</span> Knox Covered Bridge</li><li><span class="mono">LAB19</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB20</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB35</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB36</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB37</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB38</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB39</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB40</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB41</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB42</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB43</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB44</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB45</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB46</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB47</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB48</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB49</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB50</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB51</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB52</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB53</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB54</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB55</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB56</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB6</span> Lancaster Avenue Business District, Berwyn c. early 1960s</li><li><span class="mono">LAB67</span> Corner of Lancaster and Bridge, Berwyn</li><li><span class="mono">LAB68</span> Corner of Lancaster and Bridge, Berwyn</li><li><span class="mono">LAB69</span> Corner of Lancaster and Bridge, Berwyn</li><li><span class="mono">LAB89</span> Berwyn - Lancaster and Cassatt Avenues, snow scene looking east</li><li><span class="mono">MAL25</span> Malvern Library</li><li><span class="mono">MAL26</span> Auditorium Malvern Monday Club</li><li><span class="mono">MAN07</span> Unidentified place</li><li><span class="mono">MAN08</span> Back of photo MAN07</li><li><span class="mono">MAN10</span> Unidentified place</li><li><span class="mono">MAR1</span> Memorial Arch</li><li><span class="mono">MAR2</span> Memorial Arch</li><li><span class="mono">NCE12</span> Devon State Road</li><li><span class="mono">NCE9</span> Old Forge Crossing</li><li><span class="mono">OLA109</span> French Creek Falls, St. Peters</li><li><span class="mono">OLA109b</span> Back of OLA109</li><li><span class="mono">OLA115</span> West Chester in 1842</li><li><span class="mono">OLA115b</span> Back of OLA115</li><li><span class="mono">OLA119</span> Schuylkill at Perkiomen Junction</li><li><span class="mono">OLA119b</span> Back of OLA119</li><li><span class="mono">OLA131</span> Falls of the Brandywine, near West Chester</li><li><span class="mono">OLA146</span> Center Square, Lancaster</li><li><span class="mono">OLA174</span> Overhanging Rock. Gulph Mills</li><li><span class="mono">OLA182</span> St. Peters Village</li><li><span class="mono">OLA182b</span> Back of OLA182</li><li><span class="mono">OLA183</span> St. Peters Village</li><li><span class="mono">OLA183b</span> Back of OLA183</li><li><span class="mono">OLA184</span> St. Peters Village</li><li><span class="mono">OLA184b</span> Back of OLA184</li><li><span class="mono">OLA185</span> St. Peters Village</li><li><span class="mono">OLA185b</span> Back of OLA185</li><li><span class="mono">OLA186</span> St. Peters Village</li><li><span class="mono">OLA187</span> St. Peters Village</li><li><span class="mono">OLA188</span> St. Peters Village</li><li><span class="mono">OLA188b</span> Back of OLA188</li><li><span class="mono">OLA189b</span> Back of OLA189</li><li><span class="mono">OLA190</span> Birchrunville</li><li><span class="mono">OLA190b</span> Back of OLA190</li><li><span class="mono">OLA192</span> Birchrunville - Old Mill and Summer Scene</li><li><span class="mono">OLA192b</span> Back of OLA192</li><li><span class="mono">OLA193</span> Creamery, Hall and Store, Birchrunville</li><li><span class="mono">OLA193b</span> Back of OLA193</li><li><span class="mono">OLA20</span> King of Prussia Road</li><li><span class="mono">OLA21</span> King of Prussia Road</li><li><span class="mono">OLA25</span> Roberts Homestead, King of Prussia Road</li><li><span class="mono">OLA26</span> Roberts Homestead, King of Prussia Road</li><li><span class="mono">OLA27</span> Berwyn, Wales</li><li><span class="mono">OLA38</span> King of Prussia Road</li><li><span class="mono">OLA39</span> King of Prussia Road</li><li><span class="mono">OLA71</span> Tyler Arboretum</li><li><span class="mono">OLA73</span> Tyler Arboretum</li><li><span class="mono">OLA74</span> Tyler Arboretum</li><li><span class="mono">OLA75</span> Tyler Arboretum</li><li><span class="mono">PA18</span> George Clemmans Paoli Hardware Store certificate</li><li><span class="mono">PA28</span> Paoli (Inn) Blacksmith &amp; Wheelwright shop, west of Inn, 1888</li><li><span class="mono">PA34</span> Aerial Photograph of Paoli looking east</li><li><span class="mono">PA55</span> Lancaster Avenue in Paoli around 1935</li><li><span class="mono">PA64</span> Richard Nixon campaign rally at the old Paoli Shopping Center</li><li><span class="mono">PA65</span> Richard Nixon campaign rally at the old Paoli Shopping Center</li><li><span class="mono">PA66</span> Richard Nixon campaign rally at the old Paoli Shopping Center</li><li><span class="mono">PA67</span> Richard Nixon campaign rally at the old Paoli Shopping Center</li><li><span class="mono">PA68</span> Richard Nixon campaign rally at the old Paoli Shopping Center</li><li><span class="mono">PA69</span> Richard Nixon campaign rally at the old Paoli Shopping Center</li><li><span class="mono">PA70</span> Richard Nixon campaign rally at the old Paoli Shopping Center</li><li><span class="mono">PEO78</span> Herb Fry and Skip Eichner</li><li><span class="mono">PHO1</span> Soldier&#39;s Monument, Phoenixville</li><li><span class="mono">PPO17</span> Great Valley Creek &amp; Great Valley Mill dam</li><li><span class="mono">RAD6</span> Lancaster Turnpike thru Radnor 1806</li><li><span class="mono">ROR08</span> Roller Rink</li><li><span class="mono">ROR09</span> Roller Rink</li><li><span class="mono">ROR10</span> Roller Rink</li><li><span class="mono">ROR11</span> Roller Rink</li><li><span class="mono">ROR12</span> Roller Rink</li><li><span class="mono">ROR13</span> Roller Rink</li><li><span class="mono">ROR14</span> Roller Rink</li><li><span class="mono">ROR15</span> Roller Rink</li><li><span class="mono">ROR16</span> Roller Rink</li><li><span class="mono">ROR17</span> Roller Rink</li><li><span class="mono">ROR18</span> Roller Rink</li><li><span class="mono">ROR19</span> Roller Rink</li><li><span class="mono">ROR20</span> Roller Rink</li><li><span class="mono">ROR21</span> Roller Rink</li><li><span class="mono">ROR3</span> Roller Rink</li><li><span class="mono">SAM1</span> Boating on Unknown Mill Pond</li><li><span class="mono">SCP01</span> Rededication of Stone Chimney Picket plaque</li><li><span class="mono">SCP02</span> Rededication of Stone Chimney Picket plaque</li><li><span class="mono">SCP03</span> Rededication of Stone Chimney Picket plaque</li><li><span class="mono">SCP04</span> Rededication of Stone Chimney Picket plaque</li><li><span class="mono">SCU05</span> Schuylkill River, Conshohocken</li><li><span class="mono">SCU05b</span> Back of SCU05</li><li><span class="mono">SCU06</span> Schuylkill, Valley Forge</li><li><span class="mono">SCU06b</span> Back of SCU06</li><li><span class="mono">SCU3</span> Site of Sullivan&#39;s Bridge</li><li><span class="mono">SHA20</span> Stone Bridge at Hawthorne</li><li><span class="mono">SHA21</span> Twin Oaks at Hawthorne</li><li><span class="mono">STR04</span> Site of Devon Square Shopping Center</li><li><span class="mono">STR05</span> New Section of Sugartown Road</li><li><span class="mono">STR06</span> Site of Devon Square Shopping Center</li><li><span class="mono">STR07</span> New Section of Sugartown Road</li><li><span class="mono">STR09</span> Site of Devon Square Shopping Center</li><li><span class="mono">STR1</span> Strafford Road, Strafford</li><li><span class="mono">STR10</span> Devon Square Shopping Center</li><li><span class="mono">STR11</span> Devon Square Shopping Center</li><li><span class="mono">STR14</span> Old Eagle School Road</li><li><span class="mono">STR15</span> Old Eagle School Road</li><li><span class="mono">STR16</span> Corner of Lancaster Avenue and Old Eagle Road, Strafford</li><li><span class="mono">STR17</span> Corner of Lancaster Avenue and Old Eagle Road, Strafford</li><li><span class="mono">STR18</span> Corner of Lancaster Avenue and Old Eagle Road, Strafford</li><li><span class="mono">STR19</span> Corner of Lancaster Avenue and Old Eagle Road, Strafford</li><li><span class="mono">STR2</span> Devon Square, Strafford  Leasing Plan</li><li><span class="mono">STR20</span> Corner of Lancaster Avenue and Old Eagle Road, Strafford</li><li><span class="mono">STR3</span> Spread Eagle Village, Strafford</li><li><span class="mono">TRE11</span> Tredyffrin township building</li><li><span class="mono">TRE12</span> Tredyffrin township building</li><li><span class="mono">TRE15</span> Tredyffrin township building, Old Lancaster Road</li><li><span class="mono">UFG10</span> Upper Forge, Valley Forge</li><li><span class="mono">VC07</span> Valley Creek</li><li><span class="mono">VC08</span> Valley Creek</li><li><span class="mono">VC14</span> Valley Creek</li><li><span class="mono">VC14b</span> Back of VC14</li><li><span class="mono">VC17</span> Valley Creek</li><li><span class="mono">VC17b</span> Back of VC17</li><li><span class="mono">VC20</span> Valley Creek</li><li><span class="mono">VCB6</span> Bridge over Valley Creek</li><li><span class="mono">VFD1</span> Valley Forge Dam</li><li><span class="mono">VFD12</span> Valley Forge Dam (c. 1930)</li><li><span class="mono">VFD13</span> Valley Forge c. 1790 dam</li><li><span class="mono">VFD16</span> Valley Creek 1930s Dam</li><li><span class="mono">VFD16b</span> Back of VFD16</li><li><span class="mono">VFD20</span> Valley Forge Mill Dam</li><li><span class="mono">VFD8</span> Valley Forge c. 1790 dam</li><li><span class="mono">VFP121</span> Fatland Ford, Schuylkill</li><li><span class="mono">VFP26</span> Road to Fatlands Ford</li><li><span class="mono">VFP28</span> Waterman&#39;s Monument</li><li><span class="mono">VFP32</span> New Jersey Monument</li><li><span class="mono">VFP33 (was</span> Valley Forge National Historical Park Visitor&#39;s Center</li><li><span class="mono">VFP34</span> Star Redout</li><li><span class="mono">VFP4</span> 1930s Dam, Valley Forge National Historical Park</li><li><span class="mono">VFP55</span> Star Redoubt, Valley Forge</li><li><span class="mono">VFP56</span> Valley Forge redoubt</li><li><span class="mono">VFP9</span> Unknown Ruins at Valley Forge</li><li><span class="mono">VFS02</span> New Valley Forge Station, built around 1912</li><li><span class="mono">VFV19</span> Valley Forge village, looking west</li><li><span class="mono">VFV21</span> Valley Forge</li><li><span class="mono">VFV22</span> Valley Forge Village, looking from the east</li><li><span class="mono">WAB1</span> Waterloo Avenue, Berwyn</li><li><span class="mono">WAF01</span> Lewis Walker monument</li><li><span class="mono">WAF02</span> Lewis Walker monument</li><li><span class="mono">WHQ27</span> Washington&#39;s Headquarters</li><li><span class="mono">WHQ28</span> Chimney repair, Washington’s Headquarters, December 7th, 1934</li><li><span class="mono">WHQ29</span> Elm Tree at Washington’s Headquarters, March 27, 1934</li><li><span class="mono">WHQ31</span> Washington&#39;s Headquarters, Valley Forge</li><li><span class="mono">WHQ32</span> Washington’s Headquarters</li><li><span class="mono">WRD05</span> Waterloo Road</li><li><span class="mono">WSP01</span> Washington’s Spring</li><li><span class="mono">WSP02</span> Washington’s Spring</li><li><span class="mono">WSP03</span> Washington’s Spring</li><li><span class="mono">WSP03b</span> Back of WSP03</li><li><span class="mono">WSP04</span> Washington’s Spring</li><li><span class="mono">WSP04b</span> Back of WSP04</li><li><span class="mono">WSP09</span> Washingtons Spring</li><li><span class="mono">WSP11</span> Washingtons Spring</li><li><span class="mono">YSP01</span> Iron Spring Gazebo, Yellow Springs Village</li><li><span class="mono">YSP02</span> 19th Century view of Yellow Springs Village</li><li><span class="mono">YSP03</span> Crystal Diamond Spring, Yellow Springs Village</li><li><span class="mono">YSP05</span> 18th Century Medicinal Herb Garden</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:view" data-filter="subject" data-search="view subject bav01 bav02 bav03 bav04 be143 be144 be145 be146 be147 be148 be149 be150 be151 be152 be153 be154 be155 be156 be157 be158 be159 be165 be167 be181 be19 be20 be21 be22 be220 be223 be227 be23 be24 be25 be30 be31 be4 be43 be61 be62 be63 be64 be65 be66 be71 be72 be74 be75 be76 be78 be79 be80 be81 be83 be84 be88 be91 be93 bep2 bep21 bep30 bep33 bep45 bep46 bep47 bep5 bep50 bep51 bep87 caa05 caa06 caa1 caa2 car25 car27 car28 ceh02 che04 che05 che17 che18 che25 che26 che27 che28 che29 che30 che31 che32 che33 che34 che35 che36 che37 che38 che39 che40 che41 che42 che43 che44 che45 che46 che47 che48 che49 che50 che51 cor36 cor37 cor38 cor39 cor40 cor41 cor42 cor43 cor44 cor45 cor46 cvr18 cwb3 day07 day08 day09 day1 day10 day11 day12 day13 day14 day15 day16 day17 day18 day19 day2 day5 dev10 dev12 dev19 dev22 dev22b dev24 dev29 dev4 dev5 dev6 eph09 ets06 ew01 ew04 ew05 ew06 fab01 fab02 fw1 gbc1 gbc10 gbc11 gbc12 gbc13 gbc14 gbc2 gbc3 gbc4 gbc5 gbc6 gbc7 gbc8 gbc9 ghf52 ghf53 gt1 hlc11-6861 hou40 how1 how2 how22 how23 how24 how25 how26 how27 how28 how29 how30 how31 how32 how33 how35 how36 how37 how38 how39 how40 how41 hrb01 hrb02 hrb03 hrb04 hrb05 lab1 lab11 lab12 lab13 lab14 lab15 lab16 lab2 lab21 lab22 lab23 lab24 lab32 lab33 lab4 lab5 lab57 lab7 lab8 lab84 lab85 lab86 lab87 lab9 laf09 lh04 lh05 lh06 lh08 lh09 mab01 mal12 mal27 mal39 mal9 man02 mar03 mc04 mjr1 mjr2 mjt07 mjt2 nce1 nce2 nce4 nce8 nd1 nvr09 nvr10 nvr11 ola143 ola164 ola166 ola227 ola228 ola231 ola232 ola33 ola59 ola60 ola61 ola62 ola63 ola64 ola65 opa1 opa9 pa138 pa139 pa14 pa140 pa141 pa142 pa144 pa146 pa173 pa174 pa181 pa182 pa183 pa24 pa25 pa27 pa30 pa32 pa35 pa39 pa53 pa7 pof02 ppo1 rad10 rad2 rad3 rad4 rad5 rbe15 rca1 sam02 sam03 scu08 scu09 scu4 sha02 sha03 sha04 sha05 sha06 sha07 sha08 sha09 sha10 sha11 sha18 str92 str93 str94 svr01 svr02 svr03 svr04 svr05 svr06 svr07 svr08 svr09 svr10 svr11 tcc1 tre04 tre05 tre16 tre17 tre18 tre19 tre20 tre21 tre22 tre3 trs01 trs02 trs03 trs04 trs05 trs06 trs07 trs08 trs09 trs10 ufg12 vc01 vc02 vc09 vc10 vc11 vc12 vc18 vc19 vc21 vc22 vc23 vc26 vc27 vc34 vc35 vcb07 vfd11 vfd18 vfd21 vfd22 vfd9 vfp1 vfp10 vfp11 vfp119 vfp147 vfp147b vfp155 vfp156 vfp157 vfp158 vfp220 vfp41 vfp43 vfp50 vfp51 vfp52 vfp53 vfp54 vfp59 vfp6 vfp60 vfp61 vfp65 vfp68 vfp69 vfp73 vfp82 vfp82b vfp95 vfp95b vfv17 vfv2 vfv23 vfv24 vfv25 vfv26 vfv27 wab05 wab06 wam15 wam15b woa01 woa02 wrd1 wrd11 wrd2 wrd3 wrd4 wsp06 wsp07 wsp12 yof20 yof21 yof22 yof23 yof24 yof25 yof26 yof27 yof32 yof33 yof34 yof35 yof36 yof37 yof38 yof39 yof40 yof41 yof42 yof43 yof44 yof45 yof46 yof47 yof48 yof49 yof50 yof51">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:view" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">View</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>451 images</summary><ul class="clip-list"><li><span class="mono">BAV01</span> Berwyn Avenue looking west from Woodside Avenue, 1911</li><li><span class="mono">BAV02</span> Berwyn Avenue</li><li><span class="mono">BAV03</span> Berwyn Avenue</li><li><span class="mono">BAV04</span> Berwyn Avenue</li><li><span class="mono">BE143</span> Berwyn View</li><li><span class="mono">BE144</span> Berwyn View</li><li><span class="mono">BE145</span> Berwyn View</li><li><span class="mono">BE146</span> Upper Bridge, Berwyn</li><li><span class="mono">BE147</span> Upper Bridge, Berwyn</li><li><span class="mono">BE148</span> Upper Bridge, Berwyn</li><li><span class="mono">BE149</span> Upper Bridge, Berwyn</li><li><span class="mono">BE150</span> Upper Bridge, Berwyn</li><li><span class="mono">BE151</span> Berwyn View</li><li><span class="mono">BE152</span> Main Street, Berwyn</li><li><span class="mono">BE153</span> View from Woodside Avenue tract, Berwyn</li><li><span class="mono">BE154</span> Beaumont and Newtown Roads</li><li><span class="mono">BE155</span> Berwyn View</li><li><span class="mono">BE156</span> Berwyn View</li><li><span class="mono">BE157</span> Berwyn View</li><li><span class="mono">BE158</span> Berwyn View</li><li><span class="mono">BE159</span> Berwyn View</li><li><span class="mono">BE165</span> Lancaster and Main Avenues, Berwyn</li><li><span class="mono">BE167</span> Unknown View</li><li><span class="mono">BE181</span> Rooftops of Berwyn</li><li><span class="mono">BE19</span> Cassatt Avenue, Berwyn</li><li><span class="mono">BE20</span> Traveler&#39;s Rest Tree, Waterloo Avenue, Berwyn</li><li><span class="mono">BE21</span> Traveler&#39;s Rest Tree, Waterloo Avenue, Berwyn</li><li><span class="mono">BE22</span> Traveler&#39;s Rest Tree, Waterloo Avenue, Berwyn</li><li><span class="mono">BE220</span> Unidentified view in Berwyn</li><li><span class="mono">BE223</span> Lancaster Avenue, Berwyn</li><li><span class="mono">BE227</span> Berwyn View</li><li><span class="mono">BE23</span> Traveler&#39;s Rest Tree, Waterloo Avenue, Berwyn</li><li><span class="mono">BE24</span> Berwyn &amp; Main Avenues, Berwyn</li><li><span class="mono">BE25</span> Cassatt Avenue, Berwyn</li><li><span class="mono">BE30</span> Lincoln, Highway, Berwyn</li><li><span class="mono">BE31</span> Lancaster Avenue, Berwyn</li><li><span class="mono">BE4</span> Lincoln Highway, Berwyn</li><li><span class="mono">BE43</span> Lincoln Highway, Berwyn</li><li><span class="mono">BE61</span> Warren Avenue, Berwyn</li><li><span class="mono">BE62</span> Warren Avenue, Berwyn</li><li><span class="mono">BE63</span> Twin Oaks, Berwyn</li><li><span class="mono">BE64</span> Downed tree outside 65 Conestoga Road, Berwyn</li><li><span class="mono">BE65</span> Cassatt Avenue from Lancaster Avenue, Berwyn</li><li><span class="mono">BE66</span> A view of the Village of Berwyn</li><li><span class="mono">BE71</span> Upper Bridge, Berwyn</li><li><span class="mono">BE72</span> Covered Bridge, State Road, Berwyn</li><li><span class="mono">BE74</span> Trout Run below Laurel Dell</li><li><span class="mono">BE75</span> Unknown view</li><li><span class="mono">BE76</span> Sleet Storm, Berwyn</li><li><span class="mono">BE78</span> Stairs facing Lancaster Pike and Main Avenue, 1904</li><li><span class="mono">BE79</span> A Water Tower near Berwyn</li><li><span class="mono">BE80</span> Valley Forge Rd, Warren Ave. and Lancaster Pike, facing east towards Wynburne Inn, Berwyn</li><li><span class="mono">BE81</span> Panoramic view of Berwyn (from Hillcrest)</li><li><span class="mono">BE83</span> Snowstorm at Williams Crossroads</li><li><span class="mono">BE84</span> A view of the intersection of Warren Avenue and Lancaster Turnpike</li><li><span class="mono">BE88</span> Berwyn from First Avenue</li><li><span class="mono">BE91</span> Parade, Lincoln Highway Berwyn</li><li><span class="mono">BE93</span> North Berwyn</li><li><span class="mono">BEP2</span> Lancaster Avenue, Berwyn</li><li><span class="mono">BEP21</span> Lincoln Highway, Berwyn</li><li><span class="mono">BEP30</span> ACME (Lincoln Highway at Main Avenue, Berwyn)</li><li><span class="mono">BEP33</span> Lincoln Highway at Waterloo Avenue</li><li><span class="mono">BEP45</span> Aerial Photograph of Paoli</li><li><span class="mono">BEP46</span> Aerial Photograph of Berwyn</li><li><span class="mono">BEP47</span> Snowstorm</li><li><span class="mono">BEP5</span> The Main Drag, Berwyn</li><li><span class="mono">BEP50</span> Looking east on Berwyn Avenue, from Main Avenue, Berwyn</li><li><span class="mono">BEP51</span> Snowbound cars in station parking lot</li><li><span class="mono">BEP87</span> Lancaster Avenue</li><li><span class="mono">CAA05</span> Cassatt Avenue, Berwyn</li><li><span class="mono">CAA06</span> Cassatt Avenue, Berwyn</li><li><span class="mono">CAA1</span> Cassatt Avenue, Berwyn looking north</li><li><span class="mono">CAA2</span> Cassatt Avenue, Berwyn looking north</li><li><span class="mono">CAR25</span> Looking south on Cassatt and State Roads</li><li><span class="mono">CAR27</span> Cassatt and Conestoga Roads</li><li><span class="mono">CAR28</span> Cassatt Road being widened</li><li><span class="mono">CEH02</span> Cedar Tree at Cedar Hollow</li><li><span class="mono">CHE04</span> Chesterbrook Farm</li><li><span class="mono">CHE05</span> Chesterbrook Farm</li><li><span class="mono">CHE17</span> Chesterbrook Boulevard</li><li><span class="mono">CHE18</span> Chesterbrook Boulevard</li><li><span class="mono">CHE25</span> North Valley Hills</li><li><span class="mono">CHE26</span> North Valley Hills</li><li><span class="mono">CHE27</span> North Valley Hills</li><li><span class="mono">CHE28</span> North Valley Hills</li><li><span class="mono">CHE29</span> Chesterbroook and North Valley Hills</li><li><span class="mono">CHE30</span> Chesterbroook and North Valley Hills</li><li><span class="mono">CHE31</span> North Valley Hills</li><li><span class="mono">CHE32</span> North Valley Hills</li><li><span class="mono">CHE33</span> North Valley Hills</li><li><span class="mono">CHE34</span> Chesterbrook</li><li><span class="mono">CHE35</span> Chesterbrook</li><li><span class="mono">CHE36</span> Chesterbrook</li><li><span class="mono">CHE37</span> Chesterbrook</li><li><span class="mono">CHE38</span> Chesterbrook</li><li><span class="mono">CHE39</span> Chesterbrook</li><li><span class="mono">CHE40</span> Chesterbrook</li><li><span class="mono">CHE41</span> Duportail Barn, Chesterbrook</li><li><span class="mono">CHE42</span> Duportail Barn, Chesterbrook</li><li><span class="mono">CHE43</span> Chesterbrook</li><li><span class="mono">CHE44</span> Chesterbrook</li><li><span class="mono">CHE45</span> Chesterbrook</li><li><span class="mono">CHE46</span> Chesterbrook</li><li><span class="mono">CHE47</span> Barn, Chesterbrook</li><li><span class="mono">CHE48</span> Barn, Chesterbrook</li><li><span class="mono">CHE49</span> Barn, Chesterbrook</li><li><span class="mono">CHE50</span> Chesterbrook</li><li><span class="mono">CHE51</span> Chesterbrook</li><li><span class="mono">COR36</span> Conestoga Road</li><li><span class="mono">COR37</span> Conestoga Road</li><li><span class="mono">COR38</span> Conestoga Road</li><li><span class="mono">COR39</span> Conestoga Road at Bair Avenue</li><li><span class="mono">COR40</span> Conestoga Road</li><li><span class="mono">COR41</span> Conestoga Road</li><li><span class="mono">COR42</span> Conestoga Road</li><li><span class="mono">COR43</span> Conestoga Road</li><li><span class="mono">COR44</span> Conestoga Road</li><li><span class="mono">COR45</span> Conestoga Road</li><li><span class="mono">COR46</span> Conestoga Road</li><li><span class="mono">CVR18</span> View of Bridgeport</li><li><span class="mono">CWB3</span> Carriage Way, Berwyn</li><li><span class="mono">DAY07</span> Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford</li><li><span class="mono">DAY08</span> Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford</li><li><span class="mono">DAY09</span> Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford</li><li><span class="mono">DAY1</span> Glenn Road looking north</li><li><span class="mono">DAY10</span> Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford</li><li><span class="mono">DAY11</span> Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford</li><li><span class="mono">DAY12</span> Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford</li><li><span class="mono">DAY13</span> Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford</li><li><span class="mono">DAY14</span> Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford</li><li><span class="mono">DAY15</span> Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford</li><li><span class="mono">DAY16</span> Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford</li><li><span class="mono">DAY17</span> Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford</li><li><span class="mono">DAY18</span> Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford</li><li><span class="mono">DAY19</span> Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford</li><li><span class="mono">DAY2</span> Glenn Road, Daylesford</li><li><span class="mono">DAY5</span> Prissey&#39;s Hollow</li><li><span class="mono">DEV10</span> The Woodside Observatory, Devon</li><li><span class="mono">DEV12</span> View of Wayne</li><li><span class="mono">DEV19</span> Bridge at Devon Station</li><li><span class="mono">DEV22</span> Devon</li><li><span class="mono">DEV22b</span> Back of DEV22</li><li><span class="mono">DEV24</span> Aerial view of Devon and Strafford showing building of K-Mart store</li><li><span class="mono">DEV29</span> Greetings from Devon, PA</li><li><span class="mono">DEV4</span> Crow&#39;s Nest, Conestoga Road, Devon</li><li><span class="mono">DEV5</span> Parting of the ways, Devon</li><li><span class="mono">DEV6</span> Devon Hill</li><li><span class="mono">EPH09</span> Edith Parker’s house</li><li><span class="mono">ETS06</span> Bridge Avenue showing Easttown High School, Berwyn - 1905</li><li><span class="mono">EW01</span> Aerial view Northeast of the Battle of the Clouds park in East Whiteland</li><li><span class="mono">EW04</span> Intersection of routes 202 and 29</li><li><span class="mono">EW05</span> East Whiteland</li><li><span class="mono">EW06</span> East Whiteland</li><li><span class="mono">FAB01</span> First Avenue, north side</li><li><span class="mono">FAB02</span> First Avenue, north side</li><li><span class="mono">FW1</span> View from Fort Washington</li><li><span class="mono">GBC1</span> Ground Breaking Ceremony</li><li><span class="mono">GBC10</span> Ground Breaking Ceremony</li><li><span class="mono">GBC11</span> Ground Breaking Ceremony</li><li><span class="mono">GBC12</span> Ground Breaking Ceremony</li><li><span class="mono">GBC13</span> Ground Breaking Ceremony</li><li><span class="mono">GBC14</span> Ground Breaking Ceremony</li><li><span class="mono">GBC2</span> Ground Breaking Ceremony</li><li><span class="mono">GBC3</span> Ground Breaking Ceremony</li><li><span class="mono">GBC4</span> Ground Breaking Ceremony</li><li><span class="mono">GBC5</span> Ground Breaking Ceremony</li><li><span class="mono">GBC6</span> Ground Breaking Ceremony</li><li><span class="mono">GBC7</span> Ground Breaking Ceremony</li><li><span class="mono">GBC8</span> Ground Breaking Ceremony</li><li><span class="mono">GBC9</span> Ground Breaking Ceremony</li><li><span class="mono">GHF52</span> Entrance to Glenhardie Farms, next to Turnpike</li><li><span class="mono">GHF53</span> Glenhardie Farms plan</li><li><span class="mono">GT1</span> Lancaster Avenue, Green Tree (Duffyn Mawr)</li><li><span class="mono">HLC11-6861</span> Ice Storm at Heyburn Cabin, Long Lane, Berwyn</li><li><span class="mono">HOU40</span> View from 759 Conestoga Road</li><li><span class="mono">HOW1</span> Howellville Road</li><li><span class="mono">HOW2</span> Howellville</li><li><span class="mono">HOW22</span> Painting of Howellville village</li><li><span class="mono">HOW23</span> Howellville Village</li><li><span class="mono">HOW24</span> Howellville Road in Village</li><li><span class="mono">HOW25</span> Howellville Road in Village; looking east</li><li><span class="mono">HOW26</span> Howellville Road in Village</li><li><span class="mono">HOW27</span> Howellville</li><li><span class="mono">HOW28</span> Old Swedesford Road, Howellville</li><li><span class="mono">HOW29</span> Swedesford Road looking east</li><li><span class="mono">HOW30</span> Swedesford Road l0oking east to Howellville Road</li><li><span class="mono">HOW31</span> Howellville Road and route 202, 1967</li><li><span class="mono">HOW32</span> Howellville Road and route 202, looking north</li><li><span class="mono">HOW33</span> Howellville and Swedesford Roads looking north</li><li><span class="mono">HOW35</span> New Swedesford Road</li><li><span class="mono">HOW36</span> Painting of Howellville</li><li><span class="mono">HOW37</span> Swedesford Road looking north</li><li><span class="mono">HOW38</span> Swedesford Road</li><li><span class="mono">HOW39</span> Old Swedesford Road</li><li><span class="mono">HOW40</span> Old Swedesford Road</li><li><span class="mono">HOW41</span> Swedesford Road and site of Howellville Quarry</li><li><span class="mono">HRB01</span> Howellville and Old Lancaster Roads, Berwyn</li><li><span class="mono">HRB02</span> Howellville Road, Berwyn</li><li><span class="mono">HRB03</span> Howellville Road, Berwyn</li><li><span class="mono">HRB04</span> Howellville Road, Berwyn</li><li><span class="mono">HRB05</span> Howellville Road, Berwyn</li><li><span class="mono">LAB1</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB11</span> Lancaster Pike at the Lower Bridge, Berwyn,</li><li><span class="mono">LAB12</span> Lancaster Pike - Bridge Avenue and Paoli Road, Berwyn</li><li><span class="mono">LAB13</span> Paoli Road, Berwyn</li><li><span class="mono">LAB14</span> Paoli Road, Berwyn</li><li><span class="mono">LAB15</span> Paoli Road, Berwyn</li><li><span class="mono">LAB16</span> Paoli Road, Berwyn</li><li><span class="mono">LAB2</span> Lancaster Pike looking west - Berwyn</li><li><span class="mono">LAB21</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB22</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB23</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB24</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB32</span> Lincoln Highway looking west</li><li><span class="mono">LAB33</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB4</span> Scene from Upper Bridge, Berwyn, looking NE, 1914</li><li><span class="mono">LAB5</span> Lancaster Pike looking east from Post Office</li><li><span class="mono">LAB57</span> Snowy, winter view, looking east on Lancaster Avenue, Berwyn</li><li><span class="mono">LAB7</span> Lancaster Pike and Main Avenue, Berwyn, looking east</li><li><span class="mono">LAB8</span> A View on Lancaster Pike above Berwyn Station</li><li><span class="mono">LAB84</span> Lancaster Avenue, south from Upper Berwyn Bridge</li><li><span class="mono">LAB85</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB86</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB87</span> Closing of Cassatt Road bridge</li><li><span class="mono">LAB9</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAF09</span> Valley Creek near LaFayettes Quarters</li><li><span class="mono">LH04</span> Playing in the snow</li><li><span class="mono">LH05</span> Snow scene</li><li><span class="mono">LH06</span> Snow scene</li><li><span class="mono">LH08</span> Unknown view</li><li><span class="mono">LH09</span> Unknown view</li><li><span class="mono">MAB01</span> Looking south on Main Avenue, Berwyn</li><li><span class="mono">MAL12</span> King Street, Malvern</li><li><span class="mono">MAL27</span> King Street, Malvern</li><li><span class="mono">MAL39</span> Casey’s Restaurant, Malvern</li><li><span class="mono">MAL9</span> Malvern View</li><li><span class="mono">MAN02</span> Unidentified Street Scene</li><li><span class="mono">MAR03</span> Memorial Arch, Valley Forge NHP</li><li><span class="mono">MC04</span> Memorial Stone, Valley Forge NHP(?)</li><li><span class="mono">MJR1</span> Mount Joy from Valley Forge Road (route 252)</li><li><span class="mono">MJR2</span> Mount Joy from Valley Forge Road (route 252)</li><li><span class="mono">MJT07</span> Mount Joy Observation Tower</li><li><span class="mono">MJT2</span> VF Observation Tower, 75’ high</li><li><span class="mono">NCE1</span> Baptist (Valley Forge) Road south of New Centerville</li><li><span class="mono">NCE2</span> Clarence Roberts standing at the location of the Stone Chimney Picket Post, New Centerville.</li><li><span class="mono">NCE4</span> Clarence Roberts standing at the location of the Stone Chimney Picket Post, New Centerville</li><li><span class="mono">NCE8</span> Valley Forge Road</li><li><span class="mono">ND1</span> Valley Forge Road, Devon</li><li><span class="mono">NVR09</span> North Valley Road, Paoli</li><li><span class="mono">NVR10</span> North Valley Road, Paoli</li><li><span class="mono">NVR11</span> North Valley Road, Paoli</li><li><span class="mono">OLA143</span> View down the gorge, Malvern</li><li><span class="mono">OLA164</span> Gap Village</li><li><span class="mono">OLA166</span> Rolling Country, Lancaster County</li><li><span class="mono">OLA227</span> Unknown View, labelled as Valley Forge, but no known location</li><li><span class="mono">OLA228</span> Miss Flossie Evans, Wissahickon Drive</li><li><span class="mono">OLA231</span> Trip with Banson and Mr. Riley to Wissahickon</li><li><span class="mono">OLA232</span> Wissahickon in summer / Valley Green</li><li><span class="mono">OLA33</span> Grubb Road, Willistown</li><li><span class="mono">OLA59</span> Indian Head Rock</li><li><span class="mono">OLA60</span> Perkiomen Creek</li><li><span class="mono">OLA61</span> Perkiomen Bridge</li><li><span class="mono">OLA62</span> Keiser’s Mill</li><li><span class="mono">OLA63</span> Penn R.R. Bridge on the Perkiomen near Oaks, PA</li><li><span class="mono">OLA64</span> Mill Grove, Audubon House</li><li><span class="mono">OLA65</span> Chestnut Tree</li><li><span class="mono">OPA1</span> Main Line Airport</li><li><span class="mono">OPA9</span> Main Line Airport</li><li><span class="mono">PA138</span> Lancaster Avenue, Paoli</li><li><span class="mono">PA139</span> Lancaster Avenue, Paoli</li><li><span class="mono">PA14</span> Lincoln Highway, Paoli</li><li><span class="mono">PA140</span> Lancaster Avenue, Paoli</li><li><span class="mono">PA141</span> Lancaster Avenue, Paoli</li><li><span class="mono">PA142</span> Lancaster and S. Valley Road, Paoli</li><li><span class="mono">PA144</span> Lancaster and S. Valley Road, Paoli</li><li><span class="mono">PA146</span> Lancaster and S. Valley Road, Paoli</li><li><span class="mono">PA173</span> Paoli - looking towards 30 and 252 junction</li><li><span class="mono">PA174</span> Lancaster Avenue, Paoli</li><li><span class="mono">PA181</span> Lancaster Avenue, Paoli</li><li><span class="mono">PA182</span> Paoli Building site</li><li><span class="mono">PA183</span> Paoli Building site</li><li><span class="mono">PA24</span> North Valley Road, Paoli</li><li><span class="mono">PA25</span> View of Paoli</li><li><span class="mono">PA27</span> Paoli Fire House</li><li><span class="mono">PA30</span> Aerial Photograph of Paoli</li><li><span class="mono">PA32</span> Lancaster Avenue and North Valley Road, Paoli</li><li><span class="mono">PA35</span> Lancaster Avenue, Paoli looking east</li><li><span class="mono">PA39</span> Valley Road and route 30 with Wedge Building</li><li><span class="mono">PA53</span> Site of 1972 Derailment, Paoli</li><li><span class="mono">PA7</span> Lincoln Highway, Paoli</li><li><span class="mono">POF02</span> Potter Farm and Leopard Road</li><li><span class="mono">PPO1</span> Route 30 West, Paoli</li><li><span class="mono">RAD10</span> Radnor view - along King of Prussia Road</li><li><span class="mono">RAD2</span> Radnor township view</li><li><span class="mono">RAD3</span> King of Prussia Road, Radnor</li><li><span class="mono">RAD4</span> Matson Ford Road, Radnor</li><li><span class="mono">RAD5</span> King of Prussia Road, Radnor</li><li><span class="mono">RBE15</span> Berwyn</li><li><span class="mono">RCA1</span> Cassatt Avenue</li><li><span class="mono">SAM02</span> Unknown Pond Location</li><li><span class="mono">SAM03</span> Unknown Pond Location</li><li><span class="mono">SCU08</span> Schuylkill River</li><li><span class="mono">SCU09</span> Stereoscopic View of Schuylkill and Reading railroad at Valley Forge
+
+Stereocard</li><li><span class="mono">SCU4</span> Site of Sullivan’s Bridge, Valley Forge</li><li><span class="mono">SHA02</span> Unknown Stone Bridge over river</li><li><span class="mono">SHA03</span> Unknown Body of water and surrounding farm home area</li><li><span class="mono">SHA04</span> Unknown Waterfall over stone</li><li><span class="mono">SHA05</span> Unknown Fountain</li><li><span class="mono">SHA06</span> Unknown Building</li><li><span class="mono">SHA07</span> Unknown Buildings</li><li><span class="mono">SHA08</span> Unknown Body of water and bridge</li><li><span class="mono">SHA09</span> Unknown Body of water and surrounding countryside</li><li><span class="mono">SHA10</span> Hawthorne Buildings</li><li><span class="mono">SHA11</span> Hawthorne Barn</li><li><span class="mono">SHA18</span> Hawthorne view from house</li><li><span class="mono">STR92</span> Old Eagle and Upper Gulph Roads</li><li><span class="mono">STR93</span> Old Eagle and Upper Gulph Roads</li><li><span class="mono">STR94</span> Old Eagle and Upper Gulph Roads</li><li><span class="mono">SVR01</span> South Valley Road, Paoli</li><li><span class="mono">SVR02</span> South Valley Road, Paoli</li><li><span class="mono">SVR03</span> South Valley Road, Paoli</li><li><span class="mono">SVR04</span> South Valley Road, Paoli</li><li><span class="mono">SVR05</span> South Valley Road, Paoli</li><li><span class="mono">SVR06</span> South Valley Road, Paoli</li><li><span class="mono">SVR07</span> South Valley Road, Paoli</li><li><span class="mono">SVR08</span> South Valley Road, Paoli</li><li><span class="mono">SVR09</span> South Valley Road, Paoli</li><li><span class="mono">SVR10</span> South Valley Road, Paoli</li><li><span class="mono">SVR11</span> South Valley Road, Paoli</li><li><span class="mono">TCC1</span> Tredyffrin Country Club</li><li><span class="mono">TRE04</span> View of the Great Valley</li><li><span class="mono">TRE05</span> View of the Great Valley</li><li><span class="mono">TRE16</span> View of Great Valley from Howellville Road</li><li><span class="mono">TRE17</span> View of the Great Valley</li><li><span class="mono">TRE18</span> View of the Great Valley</li><li><span class="mono">TRE19</span> View of the Great Valley</li><li><span class="mono">TRE20</span> View of the Great Valley</li><li><span class="mono">TRE21</span> View of the Great Valley</li><li><span class="mono">TRE22</span> View of the Great Valley</li><li><span class="mono">TRE3</span> Church Road looking south</li><li><span class="mono">TRS01</span> Sycamore tree by Swedesford Road</li><li><span class="mono">TRS02</span> Sycamore tree by Swedesford Road</li><li><span class="mono">TRS03</span> Sycamore tree by Swedesford Road</li><li><span class="mono">TRS04</span> Sycamore tree by Swedesford Road</li><li><span class="mono">TRS05</span> Sycamore tree by Swedesford Road</li><li><span class="mono">TRS06</span> Trees on Colonel Dewees Road</li><li><span class="mono">TRS07</span> Trees on Colonel Dewees Road</li><li><span class="mono">TRS08</span> Trees on Colonel Dewees Road</li><li><span class="mono">TRS09</span> Trees on Crooked Lane, King of Prussia</li><li><span class="mono">TRS10</span> Double Tree</li><li><span class="mono">UFG12</span> Site of Old Forge, Valley Forge, PA</li><li><span class="mono">VC01</span> Valley Creek and Valley Forge Road</li><li><span class="mono">VC02</span> View from Knox Covered Bridge</li><li><span class="mono">VC09</span> Valley Creek from Observation Tower</li><li><span class="mono">VC10</span> Valley Creek at the Covered Bridge</li><li><span class="mono">VC11</span> Valley Creek from Washingtons Headquarters</li><li><span class="mono">VC12</span> Old Stone Bridge over Valley Creek and the Washington Inn</li><li><span class="mono">VC18</span> Scree Slope, Valley Creek</li><li><span class="mono">VC19</span> Valley Creek and Bridge</li><li><span class="mono">VC21</span> View of Valley Creek from Mount Joy</li><li><span class="mono">VC22</span> View of Valley Creek</li><li><span class="mono">VC23</span> Valley Creek</li><li><span class="mono">VC26</span> Valley Creek at Knox Covered Bridge</li><li><span class="mono">VC27</span> View up Valley Creek</li><li><span class="mono">VC34</span> Valley Creek</li><li><span class="mono">VC35</span> Valley Creek near Old Forge</li><li><span class="mono">VCB07</span> Valley Creek Bridge</li><li><span class="mono">VFD11</span> Site of Old Forge</li><li><span class="mono">VFD18</span> Valley Forge Dam</li><li><span class="mono">VFD21</span> Valley Forge Dam</li><li><span class="mono">VFD22</span> Valley Forge Dam</li><li><span class="mono">VFD9</span> The Dam, Valley Creek</li><li><span class="mono">VFP1</span> Valley Forge Park Inner Line Drive</li><li><span class="mono">VFP10</span> Valley Creek near Washington Spring</li><li><span class="mono">VFP11</span> Valley Forge Ruins</li><li><span class="mono">VFP119</span> Dogwoods at Valley Forge</li><li><span class="mono">VFP147</span> View of Washington’s Headquaters Parking Area</li><li><span class="mono">VFP147b</span> Back of VFP147</li><li><span class="mono">VFP155</span> Schuylkill at Valley Forge</li><li><span class="mono">VFP156</span> Schuylkill River</li><li><span class="mono">VFP157</span> View eastwards from Inner Line Drive</li><li><span class="mono">VFP158</span> Valley Forge Hills</li><li><span class="mono">VFP220</span> Continental Hospital Hut</li><li><span class="mono">VFP41</span> Cannon, Valley Forge</li><li><span class="mono">VFP43</span> Dogwood, Valley Forge</li><li><span class="mono">VFP50</span> Dogwoods, Valley Forge</li><li><span class="mono">VFP51</span> Dogwoods, Valley Forge</li><li><span class="mono">VFP52</span> Dogwoods, Valley Forge</li><li><span class="mono">VFP53</span> Dogwoods, Valley Forge</li><li><span class="mono">VFP54</span> Dogwoods, Valley Forge</li><li><span class="mono">VFP59</span> Valley Forge view</li><li><span class="mono">VFP6</span> Valley Forge PA - Old Barracks (a relict of the revolution)</li><li><span class="mono">VFP60</span> Valley Forge view</li><li><span class="mono">VFP61</span> Schuykill River in flood</li><li><span class="mono">VFP65</span> Valley Forge Park (from present route 252)</li><li><span class="mono">VFP68</span> Huntingdon Park, Valley Forge</li><li><span class="mono">VFP69</span> Valley Forge hills</li><li><span class="mono">VFP73</span> Road to Observatory, Valley Forge</li><li><span class="mono">VFP82</span> Washingtons Headquarter’s area</li><li><span class="mono">VFP82b</span> Back of VFP82</li><li><span class="mono">VFP95</span> View of Valley Forge</li><li><span class="mono">VFP95b</span> Back of VFP95</li><li><span class="mono">VFV17</span> Valley Forge, 1878</li><li><span class="mono">VFV2</span> Town of Valley Forge, PA Washington’s Headquarters</li><li><span class="mono">VFV23</span> Outside Washingtons Headquarters</li><li><span class="mono">VFV24</span> Imported Forge</li><li><span class="mono">VFV25</span> Imported Forge</li><li><span class="mono">VFV26</span> Interior Imported Forge</li><li><span class="mono">VFV27</span> Valley Forge Village</li><li><span class="mono">WAB05</span> Waterloo Avenue, Berwyn</li><li><span class="mono">WAB06</span> Waterloo Avenue, Berwyn</li><li><span class="mono">WAM15</span> Darby Creek at Waterloo Mills</li><li><span class="mono">WAM15b</span> Back of WAM15</li><li><span class="mono">WOA01</span> Woodside Avenue, Berwyn</li><li><span class="mono">WOA02</span> Woodside Avenue, Berwyn</li><li><span class="mono">WRD1</span> Waterloo Road at Arlington Road (now Lancaster Avenue), Devon</li><li><span class="mono">WRD11</span> Waterloo Road, Devon</li><li><span class="mono">WRD2</span> North Waterloo Road looking south towards Devon Station</li><li><span class="mono">WRD3</span> Waterloo Road, Devon</li><li><span class="mono">WRD4</span> Waterloo Road, Devon</li><li><span class="mono">WSP06</span> Washington’s Spring</li><li><span class="mono">WSP07</span> Washington’s Spring</li><li><span class="mono">WSP12</span> Washington Spring</li><li><span class="mono">YOF20</span> Route 252, New Centerville</li><li><span class="mono">YOF21</span> Swedesford Road</li><li><span class="mono">YOF22</span> Valley Forge Music Fair</li><li><span class="mono">YOF23</span> Yohn Farm</li><li><span class="mono">YOF24</span> Swedesford Road</li><li><span class="mono">YOF25</span> Yohn Farm</li><li><span class="mono">YOF26</span> Yohn Farm</li><li><span class="mono">YOF27</span> Yohn Farm</li><li><span class="mono">YOF32</span> Construction of route 202</li><li><span class="mono">YOF33</span> Construction of route 202</li><li><span class="mono">YOF34</span> Construction of route 202</li><li><span class="mono">YOF35</span> Construction of route 202</li><li><span class="mono">YOF36</span> Construction of route 202</li><li><span class="mono">YOF37</span> Construction of route 202</li><li><span class="mono">YOF38</span> Construction of route 202</li><li><span class="mono">YOF39</span> Construction of route 202</li><li><span class="mono">YOF40</span> Construction of route 202</li><li><span class="mono">YOF41</span> Construction of route 202</li><li><span class="mono">YOF42</span> Construction of route 202</li><li><span class="mono">YOF43</span> Construction of route 202</li><li><span class="mono">YOF44</span> Construction of route 202</li><li><span class="mono">YOF45</span> Construction of route 202</li><li><span class="mono">YOF46</span> Construction of route 202</li><li><span class="mono">YOF47</span> Construction of route 202</li><li><span class="mono">YOF48</span> Construction of route 202</li><li><span class="mono">YOF49</span> Construction of route 202</li><li><span class="mono">YOF50</span> Construction of route 202</li><li><span class="mono">YOF51</span> Construction of route 202</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:road" data-filter="subject" data-search="road subject bav05 bav06 bav07 bca01 bca02 bca03 be182 be184 be185 be186 be226 be87 bri02 bri03 bri04 bri05 bri06 caa08 caa09 caa10 caa11 caa12 caa3 cmr07 dev25 dev30 ew03 fab03 ghf60 kcb14 kcb32 kcb33 kcb34 kcb35 kcb36 kcb37 kcb38 kcb38b kcb39 kcb39b kcb40 kcb40b kcb41 kcb41b kcb42 kcb42b kcb43 kcb53 kcb54 kcb55 kcb56 kcb57 kcb58 kcb59 kcb60 kcb61 kop04 lab10 lab18 lab70 lab71 lab72 lab73 lab74 lab75 lab76 lab80 lab83 ltp01 ltp02 mab02 mab03 mab04 mab05 mal15 mal16 nce10 nce11 nvr07 nvr08 ola09 ola10 ola100 ola100b ola107 ola107b ola113 ola113b ola118 ola118b ola126 ola128 ola129 ola133 ola147 ola155 ola229 ola66 ola67 pa127 pa128 pa130 pa131 pa132 pa133 pa134 pa135 pa136 pa137 pa184 pa185 pa29 pa31 pa36 pa57 pa58 ptp01 ptp01b ptp02 ptp02b ptp04 rad07 rad08 rad09 rds03 rds04 rds06 rds06b rds07 rds07b swe14 vc03 vc04 vc05 vc06 vc15 vc15b vc16 vc16b vc28 vc29 vfp101 vfp140 vfp148 vfp44 vfp84 vfp84b vfp87 vfp87b vfp89 vfp89b vfv30 wab04 wab08 wab09 wab10 wab2 wrd09 wrd10 wrd12 ysr01">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:road" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Road</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>161 images</summary><ul class="clip-list"><li><span class="mono">BAV05</span> Berwyn Avenue</li><li><span class="mono">BAV06</span> Berwyn Avenue</li><li><span class="mono">BAV07</span> Berwyn Avenue</li><li><span class="mono">BCA01</span> Church Ave, south from Lancaster Ave, Berwyn,</li><li><span class="mono">BCA02</span> Church Avenue, Berwyn</li><li><span class="mono">BCA03</span> Church Avenue, Berwyn</li><li><span class="mono">BE182</span> Upper Bridge, Berwyn</li><li><span class="mono">BE184</span> Kromer Road, Wayne</li><li><span class="mono">BE185</span> Kromer Road, Wayne</li><li><span class="mono">BE186</span> Kromer Road, Wayne</li><li><span class="mono">BE226</span> Warren Avenue, Berwyn</li><li><span class="mono">BE87</span> Route 30, Berwyn</li><li><span class="mono">BRI02</span> Cedar Hollow Bridge over Valley Creek, #171; east side looking west</li><li><span class="mono">BRI03</span> Cedar Hollow Bridge over Valley Creek, #171; west side looking east</li><li><span class="mono">BRI04</span> Cedar Hollow Bridge over Valley Creek, #171; plaque</li><li><span class="mono">BRI05</span> Cedar Hollow Bridge over Valley Creek, #171; looking south over Valley Creek</li><li><span class="mono">BRI06</span> Cedar Hollow Bridge over Valley Creek, #171; looking north over Valley Creek</li><li><span class="mono">CAA08</span> Cassatt Avenue Bridge, Berwyn</li><li><span class="mono">CAA09</span> Cassatt Avenue Bridge, Berwyn</li><li><span class="mono">CAA10</span> Cassatt Avenue Bridge, Berwyn</li><li><span class="mono">CAA11</span> Cassatt Avenue Bridge, Berwyn</li><li><span class="mono">CAA12</span> Cassatt Avenue Bridge, Berwyn</li><li><span class="mono">CAA3</span> Cassatt Avenue, Berwyn</li><li><span class="mono">CMR07</span> Early Traffic Lights in Tredyffrin township</li><li><span class="mono">DEV25</span> Lancaster Avenue, Devon</li><li><span class="mono">DEV30</span> A view on Lancaster Pike towards the Wynburne Inn</li><li><span class="mono">EW03</span> Route 202 north</li><li><span class="mono">FAB03</span> First Avenue, Berwyn</li><li><span class="mono">GHF60</span> Road Alignments, Glenhardie Farms</li><li><span class="mono">KCB14</span> Knox Covered Bridge</li><li><span class="mono">KCB32</span> Knox Covered Bridge</li><li><span class="mono">KCB33</span> Knox Covered Bridge under repair</li><li><span class="mono">KCB34</span> Knox Covered Bridge under repair</li><li><span class="mono">KCB35</span> Knox Covered Bridge under repair</li><li><span class="mono">KCB36</span> Knox Covered Bridge</li><li><span class="mono">KCB37</span> Knox Covered Bridge</li><li><span class="mono">KCB38</span> Knox Covered Bridge</li><li><span class="mono">KCB38b</span> Back of KCB38</li><li><span class="mono">KCB39</span> Knox Covered Bridge</li><li><span class="mono">KCB39b</span> Back of KCB39</li><li><span class="mono">KCB40</span> Knox Covered Bridge</li><li><span class="mono">KCB40b</span> Back of KCB40</li><li><span class="mono">KCB41</span> Knox Covered Bridge</li><li><span class="mono">KCB41b</span> Back of KCB41</li><li><span class="mono">KCB42</span> Knox Covered Bridge</li><li><span class="mono">KCB42b</span> Back of KCB42</li><li><span class="mono">KCB43</span> Knox’s Covered Bridge</li><li><span class="mono">KCB53</span> Knox Covered Bridge</li><li><span class="mono">KCB54</span> Knox Covered Bridge</li><li><span class="mono">KCB55</span> Knox Covered Bridge</li><li><span class="mono">KCB56</span> Knox Covered Bridge</li><li><span class="mono">KCB57</span> Knox Covered Bridge</li><li><span class="mono">KCB58</span> Knox Covered Bridge</li><li><span class="mono">KCB59</span> Knox Covered Bridge</li><li><span class="mono">KCB60</span> Knox Covered Bridge</li><li><span class="mono">KCB61</span> Knox Covered Bridge</li><li><span class="mono">KOP04</span> King of Prussia Road, Radnor</li><li><span class="mono">LAB10</span> Lancaster Pike toll gate, Berwyn, 1887</li><li><span class="mono">LAB18</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB70</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB71</span> Berwyn Shopping Center, Lancaster Avenue</li><li><span class="mono">LAB72</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB73</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB74</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB75</span> Lancaster Avenue and Conestoga Road, Strafford</li><li><span class="mono">LAB76</span> Lancaster Avenue, Strafford</li><li><span class="mono">LAB80</span> Lancaster Avenue, Berwyn</li><li><span class="mono">LAB83</span> Unknown Building, Lancaster Avenue, Berwyn</li><li><span class="mono">LTP01</span> Lancaster Turnpike Milestone 16</li><li><span class="mono">LTP02</span> Milestone 15, Lancaster Turnpike</li><li><span class="mono">MAB02</span> Main Avenue, Berwyn</li><li><span class="mono">MAB03</span> Main Avenue, Berwyn</li><li><span class="mono">MAB04</span> Main Avenue, Berwyn</li><li><span class="mono">MAB05</span> Main Avenue, Berwyn</li><li><span class="mono">MAL15</span> Malvern underpass</li><li><span class="mono">MAL16</span> Malvern, route 30</li><li><span class="mono">NCE10</span> Baptist Road looking north</li><li><span class="mono">NCE11</span> Baptist Road looking north</li><li><span class="mono">NVR07</span> North Valley Road and route 202</li><li><span class="mono">NVR08</span> North Valley Road and route 202</li><li><span class="mono">OLA09</span> Hanging Rock, Gulph Road</li><li><span class="mono">OLA10</span> Monument at Gulph Mills</li><li><span class="mono">OLA100</span> Rosedale Avenue,  West Chester</li><li><span class="mono">OLA100b</span> Back of OLA100</li><li><span class="mono">OLA107</span> West Market Street, West Chester</li><li><span class="mono">OLA107b</span> Back of OLA107</li><li><span class="mono">OLA113</span> West Market Street, West Chester</li><li><span class="mono">OLA113b</span> Back of OLA113</li><li><span class="mono">OLA118</span> Toll Gate, Lancaster Turnpike, near Downingtown</li><li><span class="mono">OLA118b</span> Back of OLA118</li><li><span class="mono">OLA126</span> Route 100 north</li><li><span class="mono">OLA128</span> Toll House, Glen Loch</li><li><span class="mono">OLA129</span> Stone Bridge across East Brandywine Creek</li><li><span class="mono">OLA133</span> Toll House Gate, St Davids</li><li><span class="mono">OLA147</span> Eastern approach to Conestoga Bridge</li><li><span class="mono">OLA155</span> Witmer’s Bridge</li><li><span class="mono">OLA229</span> Toll Gate between Gardenville and Point Pleasant</li><li><span class="mono">OLA66</span> Covered Bridge</li><li><span class="mono">OLA67</span> Covered Bridge</li><li><span class="mono">PA127</span> Traffic Accident Routes 30 and 252</li><li><span class="mono">PA128</span> Traffic Accident routes 30 and 252</li><li><span class="mono">PA130</span> Traffic Accident routes 30 and 252</li><li><span class="mono">PA131</span> Traffic Accident routes 30 and 252</li><li><span class="mono">PA132</span> Traffic Accident routes 30 and 252</li><li><span class="mono">PA133</span> Traffic Accident routes 30 and 252</li><li><span class="mono">PA134</span> Traffic Accident routes 30 and 252</li><li><span class="mono">PA135</span> Traffic Accident routes 30 and 252</li><li><span class="mono">PA136</span> Traffic Accident routes 30 and 252</li><li><span class="mono">PA137</span> Traffic Accident routes 30 and 252</li><li><span class="mono">PA184</span> South Valley Road, Paoli looking north</li><li><span class="mono">PA185</span> South Valley Road, Paoli looking north</li><li><span class="mono">PA29</span> Valley Road, Paoli</li><li><span class="mono">PA31</span> Route 252, Paoli</li><li><span class="mono">PA36</span> Toll Gate House</li><li><span class="mono">PA57</span> Lovers Lane, Paoli</li><li><span class="mono">PA58</span> Prominent fork of Roads</li><li><span class="mono">PTP01</span> Schuylkill Interchange, Pennsylvania Turnpike</li><li><span class="mono">PTP01b</span> Back of PTP01</li><li><span class="mono">PTP02</span> King of Prussia Interchange</li><li><span class="mono">PTP02b</span> Back of PTP02</li><li><span class="mono">PTP04</span> Valley Forge Toll Gate, PA Turnpike</li><li><span class="mono">RAD07</span> King of Prussia Road</li><li><span class="mono">RAD08</span> King of Prussia Road</li><li><span class="mono">RAD09</span> Matson Ford Road</li><li><span class="mono">RDS03</span> Milestone 27, Lancaster Turnpike</li><li><span class="mono">RDS04</span> Milestone 28, Lancaster Turnpike</li><li><span class="mono">RDS06</span> Conestoga Wagon</li><li><span class="mono">RDS06b</span> Back of RDS06</li><li><span class="mono">RDS07</span> Valley Forge interchange, Pennsylvania Turnpike. Same as PTP03</li><li><span class="mono">RDS07b</span> Back of RDS07</li><li><span class="mono">SWE14</span> Junction of Swedesford Road (202) and Old Eagle School Road</li><li><span class="mono">VC03</span> Valley Creek Road</li><li><span class="mono">VC04</span> Valley Creek Road</li><li><span class="mono">VC05</span> View from Valley Creek Road</li><li><span class="mono">VC06</span> Valley Creek Road</li><li><span class="mono">VC15</span> Valley Creek Road</li><li><span class="mono">VC15b</span> Back of VC15</li><li><span class="mono">VC16</span> Valley Creek Road</li><li><span class="mono">VC16b</span> Back of VC16</li><li><span class="mono">VC28</span> Phoenixville Road bridge over Valley Creek</li><li><span class="mono">VC29</span> Phoenixville Road bridge over Valley Creek</li><li><span class="mono">VFP101</span> Valley Forge Park Drive (parallel with the entrenchments)</li><li><span class="mono">VFP140</span> On the Inner Line Boulevard</li><li><span class="mono">VFP148</span> Boulevard along entrenchments at Valley Forge</li><li><span class="mono">VFP44</span> Valley Forge Park Road</li><li><span class="mono">VFP84</span> State Road, Valley Forge</li><li><span class="mono">VFP84b</span> Back of VFP84</li><li><span class="mono">VFP87</span> Washington’s Lane, Valley Forge</li><li><span class="mono">VFP87b</span> Back of VFP87</li><li><span class="mono">VFP89</span> Boulevard, Valley Forge</li><li><span class="mono">VFP89b</span> Back of VFP89</li><li><span class="mono">VFV30</span> State Road crossing Valley Creek</li><li><span class="mono">WAB04</span> Waterloo Avenue</li><li><span class="mono">WAB08</span> Waterloo Avenue, Berwyn</li><li><span class="mono">WAB09</span> Waterloo Avenue, Berwyn</li><li><span class="mono">WAB10</span> Waterloo Avenue</li><li><span class="mono">WAB2</span> Waterloo Ave., south from Berwyn Ave</li><li><span class="mono">WRD09</span> Waterloo Road, Devon</li><li><span class="mono">WRD10</span> Waterloo Road, Devon</li><li><span class="mono">WRD12</span> Waterloo Road and Railroad Bridge, Devon, PA</li><li><span class="mono">YSR01</span> New Road off Yellow Springs Road</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:service" data-filter="subject" data-search="service subject be164 be197 be219 be28 be29 be67 bfc05 bfc06 bfc07 bfc08 bfc09 bfc10 bfc11 bfc12 bfc13 bfc14 bfc15 bfc16 bfc18 bfc19 bfc2 bfc20 bfc21 bfc22 bfc23 bfc24 bfc25 bfc26 bfc27 bfc28 bfc29 bfc2b bfc3 bfc30 bfc31 bfc32 bfc33 bfc34 bfc35 bfc36 bfc4 boc01 boc02 cur62 cur63 cur64 cur65 dei34 dei34b dhs133 dhs134 dhs135 dhs136 dhs137 dhs138 dhs139 dhs140 dhs141 ech03 ech04 ech05 ech06 eli01 eli02 eli03 eli04 eli05 eli06 eli07 eli08 eli23 est01 est02 est03 est04 ffo01 lab100 lab101 lab102 lab103 lab104 lab88 lab91 lab92 lab93 lab94 lab95 lab96 lab97 lab98 lab99 mjt04 mjt04b mjt05 mjt05b mjt06 ola116 ola116b ola117 ola117b ola127 ola148 ola149 ola209 ola210 ola210b ola211 ola212b org04 org3 pa175 pa177 pa179 pa33 pa40 pa41 pa52 pa54 pa56 peo69 peo71 peo72 pli01 pli03 rcr05 rcr06 rcr08 rcr1 rcr2 rcr3 rih01 ssb01 ssb02 ssb03 tec14 tec15 tec16 tec17 teh55 teh56 teh57 teh58 teh59 teh60 teh61 teh62 teh63 tre2 vfp36">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:service" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Service</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>149 images</summary><ul class="clip-list"><li><span class="mono">BE164</span> Old Hall - first Berwyn Town Hall</li><li><span class="mono">BE197</span> Italian Lodge, Berwyn</li><li><span class="mono">BE219</span> Berwyn War Memorial</li><li><span class="mono">BE28</span> Berwyn Fire Company</li><li><span class="mono">BE29</span> Berwyn Fire Company</li><li><span class="mono">BE67</span> Reading Room, Berwyn</li><li><span class="mono">BFC05</span> Berwyn Fire Company</li><li><span class="mono">BFC06</span> Fireman’s Parade on Francis Avenue</li><li><span class="mono">BFC07</span> Berwyn Fire House</li><li><span class="mono">BFC08</span> Location of new Berwyn Fire House</li><li><span class="mono">BFC09</span> Berwyn Fire House</li><li><span class="mono">BFC10</span> Berwyn Fire Company in action</li><li><span class="mono">BFC11</span> Berwyn Fire Company</li><li><span class="mono">BFC12</span> Berwyn Fire Company</li><li><span class="mono">BFC13</span> Berwyn Fire Company</li><li><span class="mono">BFC14</span> Berwyn Fire Company</li><li><span class="mono">BFC15</span> Berwyn Fire Company</li><li><span class="mono">BFC16</span> Berwyn Fire Company</li><li><span class="mono">BFC18</span> Berwyn Fire Company Banner</li><li><span class="mono">BFC19</span> Berwyn Fire Company Station and Equipment</li><li><span class="mono">BFC2</span> Berwyn Fire Company</li><li><span class="mono">BFC20</span> Berwyn Fire Company Ambulance</li><li><span class="mono">BFC21</span> Ladies Auxiliary, Berwyn Fire Company</li><li><span class="mono">BFC22</span> Berwyn Fire Company Equipment, 1908</li><li><span class="mono">BFC23</span> Berwyn Fire Company 1955 Ladder Truck</li><li><span class="mono">BFC24</span> Berwyn Fire Company Active Force</li><li><span class="mono">BFC25</span> Berwyn Fire Company Ambulance Crews</li><li><span class="mono">BFC26</span> Berwyn Fire Company Band, 1908</li><li><span class="mono">BFC27</span> Berwyn Fire Company Board of Directors</li><li><span class="mono">BFC28</span> Berwyn Fire Company Breaking Ground, 1929</li><li><span class="mono">BFC29</span> Berwyn Fire Company Chiefs</li><li><span class="mono">BFC2b</span> Back of BFC2</li><li><span class="mono">BFC3</span> Berwyn Fire House</li><li><span class="mono">BFC30</span> Upper Main Line Fire Board Dispatchers</li><li><span class="mono">BFC31</span> Berwyn Fire Company Elected Officers</li><li><span class="mono">BFC32</span> Berwyn Fire Company Engineers</li><li><span class="mono">BFC33</span> Berwyn Fire Company Fire Police</li><li><span class="mono">BFC34</span> Fire Station, Berwyn Fire Company</li><li><span class="mono">BFC35</span> LaFrance Pumper, 1917</li><li><span class="mono">BFC36</span> Waterous Pumper, 1906</li><li><span class="mono">BFC4</span> Berwyn Fire Company</li><li><span class="mono">BOC01</span> Bocce Club, Lehigh Avenue, Devon</li><li><span class="mono">BOC02</span> Bocce Club, Lehigh Avenue, Devon</li><li><span class="mono">CUR62</span> Continental 1/6 Dollar note, 1776</li><li><span class="mono">CUR63</span> New Jersey 1 cent coin, 1786</li><li><span class="mono">CUR64</span> Piece of Eight, 19th century</li><li><span class="mono">CUR65</span> Spanish Dollar Coin, 1762</li><li><span class="mono">DEI34</span> Devon Manor</li><li><span class="mono">DEI34b</span> Back of DEI34</li><li><span class="mono">DHS133</span> Three unknown men at the Devon Horse Show</li><li><span class="mono">DHS134</span> Devon Horse Show</li><li><span class="mono">DHS135</span> Directors of first Chester County Horse Show at Devon</li><li><span class="mono">DHS136</span> Mrs James K. Robinson presents Mapleton Trophy to David O’Dell</li><li><span class="mono">DHS137</span> President Calvin Coolidge at the Devon Horse Show</li><li><span class="mono">DHS138</span> Devon Horse Show</li><li><span class="mono">DHS139</span> Four ladies at the Devon Horse Show</li><li><span class="mono">DHS140</span> Devon Horse Show Volunteers</li><li><span class="mono">DHS141</span> Mayor Samuel at Devon Horse Show event.</li><li><span class="mono">ECH03</span> Eliza Cathcart House</li><li><span class="mono">ECH04</span> Cathcart House</li><li><span class="mono">ECH05</span> Cathcart Home</li><li><span class="mono">ECH06</span> Eliza Cathcart home</li><li><span class="mono">ELI01</span> Reading Room, Lancaster Pike &amp; Waterloo Ave. Berwyn</li><li><span class="mono">ELI02</span> Easttown Library and Township Building</li><li><span class="mono">ELI03</span> Easttown Library and Township Building</li><li><span class="mono">ELI04</span> Easttown Library and Township Building</li><li><span class="mono">ELI05</span> Easttown Library and Township Building</li><li><span class="mono">ELI06</span> Easttown Library and Township Building</li><li><span class="mono">ELI07</span> Easttown Library</li><li><span class="mono">ELI08</span> Easttown Library</li><li><span class="mono">ELI23</span> Berwyn Hall and Library under demolition</li><li><span class="mono">EST01</span> Hilltop Park dedication</li><li><span class="mono">EST02</span> Hilltop Park dedication</li><li><span class="mono">EST03</span> Hilltop Park dedication</li><li><span class="mono">EST04</span> Hilltop Park dedication</li><li><span class="mono">FFO01</span> Freedoms Foundation</li><li><span class="mono">LAB100</span> Clean Up, Lancaster Avenue, Berwyn</li><li><span class="mono">LAB101</span> Clean Up, Lancaster Avenue, Berwyn</li><li><span class="mono">LAB102</span> Clean Up, Lancaster Avenue, Berwyn</li><li><span class="mono">LAB103</span> Clean Up, Lancaster Avenue, Berwyn</li><li><span class="mono">LAB104</span> Clean Up, Lancaster Avenue, Berwyn</li><li><span class="mono">LAB88</span> St Jude’s Thrift Shop</li><li><span class="mono">LAB91</span> Clean Up, Lancaster Avenue, Berwyn</li><li><span class="mono">LAB92</span> Clean Up, Lancaster Avenue, Berwyn</li><li><span class="mono">LAB93</span> Clean Up, Lancaster Avenue, Berwyn</li><li><span class="mono">LAB94</span> Clean Up, Lancaster Avenue, Berwyn</li><li><span class="mono">LAB95</span> Clean Up, Lancaster Avenue, Berwyn</li><li><span class="mono">LAB96</span> Clean Up, Lancaster Avenue, Berwyn</li><li><span class="mono">LAB97</span> Clean Up, Lancaster Avenue, Berwyn</li><li><span class="mono">LAB98</span> Clean Up, Lancaster Avenue, Berwyn</li><li><span class="mono">LAB99</span> Clean Up, Lancaster Avenue, Berwyn</li><li><span class="mono">MJT04</span> Observation Tower, Valley Forge</li><li><span class="mono">MJT04b</span> Back of MJT04</li><li><span class="mono">MJT05</span> Observation Tower, Valley Forge</li><li><span class="mono">MJT05b</span> Back of MJT05</li><li><span class="mono">MJT06</span> Mt. Joy Observation Tower</li><li><span class="mono">OLA116</span> Chester County Hospital</li><li><span class="mono">OLA116b</span> Back of OLA116</li><li><span class="mono">OLA117</span> Chester County Courthouse, West Chester</li><li><span class="mono">OLA117b</span> Back of OLA117</li><li><span class="mono">OLA127</span> Public Library, Downingtown</li><li><span class="mono">OLA148</span> Courthouse, Lancaster</li><li><span class="mono">OLA149</span> Founders Hall, Haverford College</li><li><span class="mono">OLA209</span> Old Country Store Museum</li><li><span class="mono">OLA210</span> Old Country Store Museum</li><li><span class="mono">OLA210b</span> Back of OLA210</li><li><span class="mono">OLA211</span> Old Toy Display in Country Store Museum</li><li><span class="mono">OLA212b</span> Back of OLA212</li><li><span class="mono">ORG04</span> Movie, Paoli Girl Scouts</li><li><span class="mono">ORG3</span> Strafford Fife &amp; Drum Corps</li><li><span class="mono">PA175</span> Construction of Paoli Library building</li><li><span class="mono">PA177</span> Construction of Paoli Library building</li><li><span class="mono">PA179</span> Construction of Paoli Library building</li><li><span class="mono">PA33</span> Paoli Fire Company</li><li><span class="mono">PA40</span> Distributing water in Paoli after Hurricane Agnus</li><li><span class="mono">PA41</span> Distributing water in Paoli Shopping Center after Hurricane Agnus</li><li><span class="mono">PA52</span> Paoli Fire Company</li><li><span class="mono">PA54</span> Central Penn Bank extension</li><li><span class="mono">PA56</span> Paoli Fire Department</li><li><span class="mono">PEO69</span> Tredyffrin Township Municipal Authority</li><li><span class="mono">PEO71</span> James Kennedy, chairman of Tredyffrin Supervisors</li><li><span class="mono">PEO72</span> Dick Schultz</li><li><span class="mono">PLI01</span> Paoli Library</li><li><span class="mono">PLI03</span> Old library building seen from the back of the bank.</li><li><span class="mono">RCR05</span> Red Cross Building, Berwyn</li><li><span class="mono">RCR06</span> Renovations of the Red Cross Building, Berwyn</li><li><span class="mono">RCR08</span> American Red Cross -  Paoli / Wayne Branch</li><li><span class="mono">RCR1</span> Red Cross</li><li><span class="mono">RCR2</span> Red Cross Building</li><li><span class="mono">RCR3</span> Paoli Red Cross, Berwyn</li><li><span class="mono">RIH01</span> Richardson Home</li><li><span class="mono">SSB01</span> Surrey Services</li><li><span class="mono">SSB02</span> Surrey Services</li><li><span class="mono">SSB03</span> Surrey Services</li><li><span class="mono">TEC14</span> History Club Meeting</li><li><span class="mono">TEC15</span> History Club Meeting</li><li><span class="mono">TEC16</span> History Club Meeting</li><li><span class="mono">TEC17</span> History Club Meeting</li><li><span class="mono">TEH55</span> Independence Day Rally at Berwyn</li><li><span class="mono">TEH56</span> Independence Day Rally at Berwyn</li><li><span class="mono">TEH57</span> Independence Day Rally at Berwyn</li><li><span class="mono">TEH58</span> Independence Day Rally at Berwyn</li><li><span class="mono">TEH59</span> Independence Day Rally at Berwyn</li><li><span class="mono">TEH60</span> Program, Independence Day Rally, 7/4/1917</li><li><span class="mono">TEH61</span> Program, Independence Day Rally, 7/4/1917</li><li><span class="mono">TEH62</span> Program, Independence Day Rally, 7/4/1917</li><li><span class="mono">TEH63</span> Program, Independence Day Rally, 7/4/1917</li><li><span class="mono">TRE2</span> Tredyffrin Township Building, Berwyn</li><li><span class="mono">VFP36</span> St. Gabriel&#39;s Hall</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:sports" data-filter="subject" data-search="sports subject bep26 bep38 dhs143 dhs144 dhs145 dhs146 dhs147 dhs148 dhs150 peo50 peo74 peo75 peo76 teh53 teh78 teh79 teh80 teh81 teh82 umy01 umy02 umy03">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:sports" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Sports</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>22 images</summary><ul class="clip-list"><li><span class="mono">BEP26</span> Berwyn Boy&#39;s Club Baseball team</li><li><span class="mono">BEP38</span> Berwyn&#39;s Old Timers&#39; Ball Team</li><li><span class="mono">DHS143</span> ‘Smiley’ (Mrs James K. Robinson)</li><li><span class="mono">DHS144</span> Carol Hoffman jumping ‘Salem’</li><li><span class="mono">DHS145</span> Crebilly Farm four-in-hand drawn by Hackney Crossbreds, driven by Mrs Robinson</li><li><span class="mono">DHS146</span> Grandstands at Devon Horse Show</li><li><span class="mono">DHS147</span> Unidentified Competitor</li><li><span class="mono">DHS148</span> Covered Wagon Ride</li><li><span class="mono">DHS150</span> Devon Horse Show</li><li><span class="mono">PEO50</span> Baptist Brotherhood Baseball Team</li><li><span class="mono">PEO74</span> Paoli - Berwyn Little League Derby Winners</li><li><span class="mono">PEO75</span> Paoli - Berwyn Little League Derby Winners</li><li><span class="mono">PEO76</span> Paoli - Berwyn Little League Derby Winners</li><li><span class="mono">TEH53</span> Girls Basketball Team, 1920 - 21, TE High School</li><li><span class="mono">TEH78</span> Berwyn Baseball Club</li><li><span class="mono">TEH79</span> Berwyn Baseball Club</li><li><span class="mono">TEH80</span> Berwyn Baseball Club</li><li><span class="mono">TEH81</span> Berwyn Baseball Club</li><li><span class="mono">TEH82</span> Berwyn Baseball Club</li><li><span class="mono">UMY01</span> Outdoor Pool, Upper Mainline YMCA</li><li><span class="mono">UMY02</span> Tennis Courts, Upper Mainline YMCA</li><li><span class="mono">UMY03</span> Outdoor Pool, Upper Mainline YMCA</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:paoli" data-filter="subject" data-search="paoli subject pa187 pa188 pa195 pa196 pa197 pa198 pa199 pa200 pa201 pa202 pa203">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:paoli" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Paoli</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>11 images</summary><ul class="clip-list"><li><span class="mono">PA187</span> Paoli News Agency</li><li><span class="mono">PA188</span> Front of Paoli Hardware Store</li><li><span class="mono">PA195</span> Paoli Plaza</li><li><span class="mono">PA196</span> Paoli Station Parking Area and Lancaster Avenue</li><li><span class="mono">PA197</span> Paoli Plaza</li><li><span class="mono">PA198</span> Paoli Station area</li><li><span class="mono">PA199</span> Paoli Plaza</li><li><span class="mono">PA200</span> Paoli Station Parking Area</li><li><span class="mono">PA201</span> Paoli Plaza</li><li><span class="mono">PA202</span> Photographers, Lancaster Avenue, Paoli</li><li><span class="mono">PA203</span> Cleared site, Photographer</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:people" data-filter="subject" data-search="people subject sbc02 sbc03 sbc04 sbc05 sbc07 sbc08 sbc09 sbc10 sbc11 sbc12">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:people" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">People</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>10 images</summary><ul class="clip-list"><li><span class="mono">SBC02</span> Wanda Stanber(?) lunch party</li><li><span class="mono">SBC03</span> Wanda Stanber(?) lunch party</li><li><span class="mono">SBC04</span> Jean Dinwoodie at Wanda Stanber(?) lunch party</li><li><span class="mono">SBC05</span> Wanda Stanber(?) lunch party</li><li><span class="mono">SBC07</span> Wanda Stanber(?) lunch party</li><li><span class="mono">SBC08</span> Wanda Stanber(?) lunch party</li><li><span class="mono">SBC09</span> Wanda Stanber(?) lunch party</li><li><span class="mono">SBC10</span> Wanda Stanber in Chandri at lunch party</li><li><span class="mono">SBC11</span> Wanda Stanber in Chandri at lunch party</li><li><span class="mono">SBC12</span> Wanda Stanber(?) lunch party</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:quaker trailer company" data-filter="subject" data-search="quaker trailer company subject qtc01 qtc02 qtc03 qtc04 qtc05 qtc06 qtc07 qtc08">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:quaker trailer company" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Quaker Trailer Company</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>8 images</summary><ul class="clip-list"><li><span class="mono">QTC01</span> Quaker Trailer Company -Display Room</li><li><span class="mono">QTC02</span> Quaker Trailer Company -Display Room with Driveway</li><li><span class="mono">QTC03</span> Quaker Trailer Company - Office</li><li><span class="mono">QTC04</span> Quaker Trailer, Quaker Trailer Company</li><li><span class="mono">QTC05</span> Quaker Trailer Company Display Room</li><li><span class="mono">QTC06</span> Quaker Trailer Company</li><li><span class="mono">QTC07</span> Quaker Trailer, Quaker Trailer Company</li><li><span class="mono">QTC08</span> Quaker Trailer with Possible Robert M. Rakestraw</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:services" data-filter="subject" data-search="services subject be9 bep16 bep37 bep60 bep62 pa12 tre1">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:services" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Services</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>7 images</summary><ul class="clip-list"><li><span class="mono">BE9</span> Berwyn Volunteer Fire Company</li><li><span class="mono">BEP16</span> Firemen in Action</li><li><span class="mono">BEP37</span> Berwyn Fire Company &#39;smokeaters&#39; manning their trucks</li><li><span class="mono">BEP60</span> Berwyn and Radnor Firemen</li><li><span class="mono">BEP62</span> Berwyn and Radnor Firemen</li><li><span class="mono">PA12</span> Paoli Firehouse</li><li><span class="mono">TRE1</span> Tredyffrin Police Cars</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:berwyn" data-filter="subject" data-search="berwyn subject be228 be229 be230 rbe49 rbe50 rbe51">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:berwyn" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Berwyn</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>6 images</summary><ul class="clip-list"><li><span class="mono">BE228</span> Lancaster Pike, Berwyn</li><li><span class="mono">BE229</span> A view of North Berwyn from Berwyn Station</li><li><span class="mono">BE230</span> Berwyn, PA.</li><li><span class="mono">RBE49</span> A view looking east from Berwyn Station Bridge</li><li><span class="mono">RBE50</span> View of the 8-30 train leaving Berwyn</li><li><span class="mono">RBE51</span> MP-54s approaches WB into Berwyn</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:bridge" data-filter="subject" data-search="bridge subject ghf34 ghf40 wrb01 wrb03 wrb04 wrb05">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:bridge" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Bridge</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>6 images</summary><ul class="clip-list"><li><span class="mono">GHF34</span> Glenhardie Farms (John R. K. Scott estate)</li><li><span class="mono">GHF40</span> Glenhardie Farms (John R. K. Scott estate)</li><li><span class="mono">WRB01</span> Wilson Road Bridge over unnamed tributary of Valley Creek</li><li><span class="mono">WRB03</span> Wilson Road Bridge over unnamed tributary of Valley Creek</li><li><span class="mono">WRB04</span> Wilson Road Bridge over unnamed tributary of Valley Creek</li><li><span class="mono">WRB05</span> Wilson Road Bridge over unnamed tributary of Valley Creek</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:mainline airport" data-filter="subject" data-search="mainline airport subject opa28 opa29 opa30 opa31 opa32">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:mainline airport" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Mainline airport</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>5 images</summary><ul class="clip-list"><li><span class="mono">OPA28</span> Mainline / Paoli Airport - Tom Skilton</li><li><span class="mono">OPA29</span> Mainline Airport, summer of 1940</li><li><span class="mono">OPA30</span> Morris and Devaney with PhtRyanSTA</li><li><span class="mono">OPA31</span> Morris practices pylon turns</li><li><span class="mono">OPA32</span> North American BT9</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:paoli hardware store" data-filter="subject" data-search="paoli hardware store subject pa189 pa190 pa191 pa192 pa193">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:paoli hardware store" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Paoli Hardware Store</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>5 images</summary><ul class="clip-list"><li><span class="mono">PA189</span> Paoli Hardware Store - Greg and Steve</li><li><span class="mono">PA190</span> Paoli Hardware Store - everything must go</li><li><span class="mono">PA191</span> Paoli Hardware Store - all sales final</li><li><span class="mono">PA192</span> Paoli Hardware Store - 1946 Painting</li><li><span class="mono">PA193</span> Paoli Hardware Store - Greg</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:studebaker event" data-filter="subject" data-search="studebaker event subject peo147 peo148 peo149 peo150 peo151">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:studebaker event" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Studebaker event</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>5 images</summary><ul class="clip-list"><li><span class="mono">PEO147</span> Studebaker event</li><li><span class="mono">PEO148</span> Studebaker event</li><li><span class="mono">PEO149</span> Studebaker event</li><li><span class="mono">PEO150</span> Studebaker event</li><li><span class="mono">PEO151</span> Studebaker event</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:places" data-filter="subject" data-search="places subject che61 che62 che63 che64">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:places" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Places</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>4 images</summary><ul class="clip-list"><li><span class="mono">CHE61</span> Chesterbrook Farm</li><li><span class="mono">CHE62</span> Chesterbrook Farm</li><li><span class="mono">CHE63</span> Chesterbrook Farm</li><li><span class="mono">CHE64</span> Chesterbrook Farm</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:cultural" data-filter="subject" data-search="cultural subject dta121 dta122 dta123">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:cultural" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Cultural</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>3 images</summary><ul class="clip-list"><li><span class="mono">DTA121</span> Devon Horse Show and Country Fair (DHSCF)</li><li><span class="mono">DTA122</span> Devon Horse Show and Country Fair (DHSCF)</li><li><span class="mono">DTA123</span> Devon Horse Show and Country Fair (DHSCF)</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:devon" data-filter="subject" data-search="devon subject dev31 dev32 rde17">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:devon" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Devon</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>3 images</summary><ul class="clip-list"><li><span class="mono">DEV31</span> Devon Boulevard Snow Trotters</li><li><span class="mono">DEV32</span> Devon Boulevard Snow Trotters</li><li><span class="mono">RDE17</span> Railroad Crash near Devon Station</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:mary mchenry" data-filter="subject" data-search="mary mchenry subject peo152 peo153 peo153b">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:mary mchenry" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Mary McHenry</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>3 images</summary><ul class="clip-list"><li><span class="mono">PEO152</span> Mary McHenry engraving</li><li><span class="mono">PEO153</span> Mary McHenry</li><li><span class="mono">PEO153B</span> Back of PEO153</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:bridges" data-filter="subject" data-search="bridges subject kcb62 kcb63">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:bridges" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Bridges</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>2 images</summary><ul class="clip-list"><li><span class="mono">KCB62</span> Knox Covered Bridge damaged by tree</li><li><span class="mono">KCB63</span> Knox Covered Bridge damaged by tree</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:building" data-filter="subject" data-search="building subject rwl01 tre14">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:building" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">building</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>2 images</summary><ul class="clip-list"><li><span class="mono">RWL01</span> Robinson-Welburn Lodge</li><li><span class="mono">TRE14</span> Tredyffrin township building, Old Lancaster Road</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:pennokla farm" data-filter="subject" data-search="pennokla farm subject pok13 pok14">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:pennokla farm" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Pennokla Farm</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>2 images</summary><ul class="clip-list"><li><span class="mono">POK13</span> Pennokla Farm</li><li><span class="mono">POK14</span> Pennokla Farm</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:valley forge" data-filter="subject" data-search="valley forge subject vfp228 vfp229">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:valley forge" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Valley Forge</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>2 images</summary><ul class="clip-list"><li><span class="mono">VFP228</span> Valley Forge Village marker</li><li><span class="mono">VFP229</span> Valley Forge Village marker</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:colonial springs bottling plant" data-filter="subject" data-search="colonial springs bottling plant subject cos05">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:colonial springs bottling plant" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Colonial Springs Bottling Plant</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">COS05</span> Colonial Springs Bottling Plant</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:devault" data-filter="subject" data-search="devault subject rml40">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:devault" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Devault</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">RML40</span> Devault Station, PRR</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:e" data-filter="subject" data-search="e subject nwh07">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:e" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">e</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">NWH07</span> Newhall Hall.</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:gravestone" data-filter="subject" data-search="gravestone subject peo146">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:gravestone" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Gravestone</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">PEO146</span> William Keeley Acker Gravestone</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:lancaster pike" data-filter="subject" data-search="lancaster pike subject pa204">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:lancaster pike" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Lancaster Pike</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">PA204</span> Lancaster Pike in Paoli looking west</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:manor, lancaster co." data-filter="subject" data-search="manor, lancaster co. subject fm1">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:manor, lancaster co." />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Manor, Lancaster Co.</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">FM1</span> Threshing Outfit</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:organisation" data-filter="subject" data-search="organisation subject bfc38">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:organisation" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Organisation</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">BFC38</span> Berwyn Fire Company Centennial</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:organization" data-filter="subject" data-search="organization subject bfc37">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:organization" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Organization</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">BFC37</span> Berwyn Fire Company Centennial</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:quarryville" data-filter="subject" data-search="quarryville subject ehc26">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:quarryville" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Quarryville</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">EHC26</span> Tredyffrin-Easttown History Club Members</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:ryan sca" data-filter="subject" data-search="ryan sca subject opa33">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:ryan sca" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Ryan SCA</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">OPA33</span> Ryan SCA, Mainline Airport</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:school certificate" data-filter="subject" data-search="school certificate subject ets14">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:school certificate" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">School certificate</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">ETS14</span> Easttown School Certificate</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:schuylkill/u. merion" data-filter="subject" data-search="schuylkill/u. merion subject vfd18">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:schuylkill/u. merion" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Schuylkill/U. Merion</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">VFD18</span> Valley Forge Dam</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:tredyfrin" data-filter="subject" data-search="tredyfrin subject slc02">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:tredyfrin" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Tredyfrin</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">SLC02</span> St Lukes, Devon</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:upper merion?" data-filter="subject" data-search="upper merion? subject vfp6">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:upper merion?" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Upper Merion?</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">VFP6</span> Valley Forge PA - Old Barracks (a relict of the revolution)</li></ul></details></td>
+			</tr>
+			<tr data-id="subject:washington d.c." data-filter="subject" data-search="washington d.c. subject ehc18">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="subject:washington d.c." />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">Washington D.C.</code></td>
+				<td><span class="badge badge-neutral">Subjects</span></td>
+				<td>Subject Category — set Migration key to this exact spelling, or add it as a Migration Key Alias on an existing category.</td>
+				<td><details><summary>1 image</summary><ul class="clip-list"><li><span class="mono">EHC18</span> Tredyffrin Easttown History Club Members</li></ul></details></td>
+			</tr>
+			</tbody>
+		</table>
+		</div>
+	</section>
+	<section class="section" data-section="missing-donation" id="missing-donation">
+		<div class="section-head">
+			<h3>Donations (1)</h3>
+			<button type="button" class="mark-visible">Mark visible resolved</button>
+		</div>
+
+		<div class="table-wrap">
+		<table>
+			<thead>
+				<tr>
+				<th scope="col">Resolved</th>
+				<th scope="col">CSV keyword</th>
+				<th scope="col">Kind</th>
+				<th scope="col">Suggested action</th>
+				<th scope="col">Images</th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr data-id="donation:donation:0" data-filter="donation" data-search="donation:0 donation be160 bus71 bus71b cct01 che19 che20 che21 che22 che23 che24 che25 che26 che27 che28 che29 chs07 dcf006 dcf007 dcf008 dcf009 dcf010 dcf011 dcf012 dcf013 dcf014 dcf015 dcf016 dcf017 dei11 dei12 dei13 dei14 dei15 dei16 dei17 dei18 dei19 dei31 dei31b dei32 dei32b dei33 dei33b dei34 dei34b dhs001 dhs002 dhs003 dhs004 dhs005 dhs006 dhs007 dhs008 dhs009 dhs010 dhs011 dhs012 dhs013 dhs014 dhs015 dhs016 dhs017 dhs018 dhs019 dhs020 dhs021 dhs022 dhs023 dhs024 dhs025 dhs026 dhs027 dhs028 dhs029 dhs030 dhs031 dhs032 dhs033 dhs034 dhs035 dhs036 dhs037 dhs038 dhs039 dhs040 dhs041 dhs042 dhs043 dhs044 dhs045 dhs046 dhs047 dhs048 dhs049 dhs050 dhs051 dhs052 dhs053 dhs054 dhs055 dhs056 dhs057 dhs058 dhs059 dhs060 dhs061 dhs062 dhs063 dhs064 dhs065 dhs066 dhs067 dhs068 dhs069 dhs070 dhs071 dhs072 dhs073 dhs074 dhs075 dhs076 dhs077 dhs078 dhs079 dhs080 dhs081 dhs082 dhs083 dhs084 dhs085 dhs086 dhs087 dhs088 dhs089 dhs090 dhs091 dhs092 dhs093 dhs094 dhs095 dhs096 dhs097 dhs098 dhs099 dhs100 dhs101 dhs102 dhs103 dhs104 dhs105 dhs106 dhs107 dhs108 dhs109 dhs110 dhs111 dhs112 dhs113 dhs114 dhs115 dhs116 dhs117 dhs118 dhs119 dhs120 dhs121 dhs122 dhs123 dhs124 dhs125 dhs126 dhs127 dhs128 dhs129 dhs130 dhs131 dss001 dss002 dss003 dss004 dss005 dss006 dss007 dss008 dss009 dss010 dss011 dss012 ech04 ehc ehe01 ehe02 hms001 hms002 hms003 hms004 hms005 hms006 hms007 hou262 it16 ola97b ufg33 vc14b">
+				<td class="resolve-cell">
+					<label>
+						<input type="checkbox" class="resolve-toggle" data-id="donation:donation:0" />
+						<span>Resolved</span>
+					</label>
+				</td>
+				<td class="id-cell"><code class="keyword">donation:0</code></td>
+				<td><span class="badge badge-neutral">Donations</span></td>
+				<td>Do not create — donation:0 is invalid in MySQL. Leave unlinked.</td>
+				<td><details><summary>204 images</summary><ul class="clip-list"><li><span class="mono">BE160</span> Berwyn View</li><li><span class="mono">BUS71</span> Brackbill’s Motel</li><li><span class="mono">BUS71b</span> Back of BUS71</li><li><span class="mono">CCT01</span> An imagining of Cockletown</li><li><span class="mono">CHE19</span> Chesterbrook Village Center</li><li><span class="mono">CHE20</span> Chesterbrook Village Center</li><li><span class="mono">CHE21</span> Chesterbrook Village Center</li><li><span class="mono">CHE22</span> Chesterbrook Village Center</li><li><span class="mono">CHE23</span> Chesterbrook Village Center</li><li><span class="mono">CHE24</span> Chesterbrook Village Center</li><li><span class="mono">CHE25</span> North Valley Hills</li><li><span class="mono">CHE26</span> North Valley Hills</li><li><span class="mono">CHE27</span> North Valley Hills</li><li><span class="mono">CHE28</span> North Valley Hills</li><li><span class="mono">CHE29</span> Chesterbroook and North Valley Hills</li><li><span class="mono">CHS07</span> Chesterbrook Shopping Center</li><li><span class="mono">DCF006</span> Miss Thelma Austin and dog</li><li><span class="mono">DCF007</span> Country Clothes Shop</li><li><span class="mono">DCF008</span> Country Fair</li><li><span class="mono">DCF009</span> Country Fair</li><li><span class="mono">DCF010</span> Country Fair</li><li><span class="mono">DCF011</span> Country Fair</li><li><span class="mono">DCF012</span> Country Fair</li><li><span class="mono">DCF013</span> Country Fair</li><li><span class="mono">DCF014</span> Country Fair</li><li><span class="mono">DCF015</span> Country Fair</li><li><span class="mono">DCF016</span> Country Fair</li><li><span class="mono">DCF017</span> Country Fair</li><li><span class="mono">DEI11</span> Devon Horse Show carriages</li><li><span class="mono">DEI12</span> Devon Horse Show single riders</li><li><span class="mono">DEI13</span> Devon Horse Show carriages</li><li><span class="mono">DEI14</span> Devon Horse Show grounds with Devon Inn in background</li><li><span class="mono">DEI15</span> Devon Horse Show grounds with Devon Inn in background</li><li><span class="mono">DEI16</span> Devon Horse Show grounds with Devon Inn in background</li><li><span class="mono">DEI17</span> Little Boys on Horses at Devon Horse Show 1898</li><li><span class="mono">DEI18</span> Little girl astride horse Devon Horse Show</li><li><span class="mono">DEI19</span> Design for Devon Inn Stables 1882</li><li><span class="mono">DEI31</span> Devon Inn</li><li><span class="mono">DEI31b</span> Back of DEI31</li><li><span class="mono">DEI32</span> Devon Inn</li><li><span class="mono">DEI32b</span> Back of DEI32</li><li><span class="mono">DEI33</span> Devon Inn</li><li><span class="mono">DEI33b</span> Back of DEI33</li><li><span class="mono">DEI34</span> Devon Manor</li><li><span class="mono">DEI34b</span> Back of DEI34</li><li><span class="mono">DHS001</span> Devon Horse Show</li><li><span class="mono">DHS002</span> Devon Horse Show</li><li><span class="mono">DHS003</span> Devon Horse Show</li><li><span class="mono">DHS004</span> Devon Horse Show</li><li><span class="mono">DHS005</span> Devon Horse Show</li><li><span class="mono">DHS006</span> Devon Horse Show</li><li><span class="mono">DHS007</span> Devon Horse Show</li><li><span class="mono">DHS008</span> Devon Horse Show</li><li><span class="mono">DHS009</span> Devon Horse Show</li><li><span class="mono">DHS010</span> Devon Horse Show</li><li><span class="mono">DHS011</span> Devon Horse Show</li><li><span class="mono">DHS012</span> Devon Horse Show</li><li><span class="mono">DHS013</span> Devon Horse Show</li><li><span class="mono">DHS014</span> Devon Horse Show</li><li><span class="mono">DHS015</span> Devon Horse Show</li><li><span class="mono">DHS016</span> Devon Horse Show</li><li><span class="mono">DHS017</span> Devon Horse Show</li><li><span class="mono">DHS018</span> Devon Horse Show</li><li><span class="mono">DHS019</span> Devon Horse Show</li><li><span class="mono">DHS020</span> Devon Horse Show</li><li><span class="mono">DHS021</span> Devon Horse Show</li><li><span class="mono">DHS022</span> Devon Horse Show</li><li><span class="mono">DHS023</span> Devon Horse Show</li><li><span class="mono">DHS024</span> Devon Horse Show</li><li><span class="mono">DHS025</span> Devon Horse Show</li><li><span class="mono">DHS026</span> Devon Horse Show</li><li><span class="mono">DHS027</span> Devon Horse Show</li><li><span class="mono">DHS028</span> Devon Horse Show</li><li><span class="mono">DHS029</span> Devon Horse Show</li><li><span class="mono">DHS030</span> Devon Horse Show</li><li><span class="mono">DHS031</span> Devon Horse Show</li><li><span class="mono">DHS032</span> Devon Horse Show</li><li><span class="mono">DHS033</span> Devon Horse Show</li><li><span class="mono">DHS034</span> Devon Horse Show</li><li><span class="mono">DHS035</span> Devon Horse Show</li><li><span class="mono">DHS036</span> Devon Horse Show</li><li><span class="mono">DHS037</span> Devon Horse Show</li><li><span class="mono">DHS038</span> Devon Horse Show</li><li><span class="mono">DHS039</span> Devon Horse Show</li><li><span class="mono">DHS040</span> Devon Horse Show</li><li><span class="mono">DHS041</span> Devon Horse Show</li><li><span class="mono">DHS042</span> Devon Horse Show</li><li><span class="mono">DHS043</span> Devon Horse Show</li><li><span class="mono">DHS044</span> Devon Horse Show</li><li><span class="mono">DHS045</span> Devon Horse Show</li><li><span class="mono">DHS046</span> Devon Horse Show</li><li><span class="mono">DHS047</span> Devon Horse Show</li><li><span class="mono">DHS048</span> Devon Horse Show</li><li><span class="mono">DHS049</span> Gypsy Rose Lee at the Devon Horse Show</li><li><span class="mono">DHS050</span> Devon Horse Show</li><li><span class="mono">DHS051</span> Devon Horse Show</li><li><span class="mono">DHS052</span> Devon Horse Show</li><li><span class="mono">DHS053</span> Devon Horse Show</li><li><span class="mono">DHS054</span> Devon Horse Show</li><li><span class="mono">DHS055</span> Devon Horse Show</li><li><span class="mono">DHS056</span> Devon Horse Show</li><li><span class="mono">DHS057</span> Devon Horse Show</li><li><span class="mono">DHS058</span> Devon Horse Show</li><li><span class="mono">DHS059</span> Devon Horse Show</li><li><span class="mono">DHS060</span> Devon Horse Show</li><li><span class="mono">DHS061</span> Devon Horse Show</li><li><span class="mono">DHS062</span> Devon Horse Show</li><li><span class="mono">DHS063</span> Devon Horse Show</li><li><span class="mono">DHS064</span> Devon Horse Show</li><li><span class="mono">DHS065</span> Devon Horse Show</li><li><span class="mono">DHS066</span> Devon Horse Show</li><li><span class="mono">DHS067</span> Devon Horse Show</li><li><span class="mono">DHS068</span> Devon Horse Show</li><li><span class="mono">DHS069</span> Devon Horse Show</li><li><span class="mono">DHS070</span> Devon Horse Show</li><li><span class="mono">DHS071</span> Devon Horse Show</li><li><span class="mono">DHS072</span> Devon Horse Show</li><li><span class="mono">DHS073</span> Devon Horse Show</li><li><span class="mono">DHS074</span> Devon Horse Show</li><li><span class="mono">DHS075</span> Devon Horse Show</li><li><span class="mono">DHS076</span> Devon Horse Show</li><li><span class="mono">DHS077</span> Devon Horse Show</li><li><span class="mono">DHS078</span> Devon Horse Show</li><li><span class="mono">DHS079</span> Devon Horse Show</li><li><span class="mono">DHS080</span> Devon Horse Show</li><li><span class="mono">DHS081</span> Devon Horse Show</li><li><span class="mono">DHS082</span> Devon Horse Show</li><li><span class="mono">DHS083</span> Devon Horse Show</li><li><span class="mono">DHS084</span> Devon Horse Show</li><li><span class="mono">DHS085</span> Devon Horse Show</li><li><span class="mono">DHS086</span> Devon Horse Show</li><li><span class="mono">DHS087</span> Devon Horse Show</li><li><span class="mono">DHS088</span> Devon Horse Show</li><li><span class="mono">DHS089</span> Devon Horse Show</li><li><span class="mono">DHS090</span> Devon Horse Show</li><li><span class="mono">DHS091</span> Devon Horse Show</li><li><span class="mono">DHS092</span> Devon Horse Show</li><li><span class="mono">DHS093</span> Devon Horse Show</li><li><span class="mono">DHS094</span> Devon Horse Show</li><li><span class="mono">DHS095</span> Devon Horse Show</li><li><span class="mono">DHS096</span> Devon Horse Show</li><li><span class="mono">DHS097</span> Devon Horse Show</li><li><span class="mono">DHS098</span> Devon Horse Show</li><li><span class="mono">DHS099</span> Devon Horse Show</li><li><span class="mono">DHS100</span> Smith Family on Boardwalk, Devon Horse Show</li><li><span class="mono">DHS101</span> Devon Horse Show</li><li><span class="mono">DHS102</span> Devon Horse Show</li><li><span class="mono">DHS103</span> Devon Horse Show</li><li><span class="mono">DHS104</span> Devon Horse Show</li><li><span class="mono">DHS105</span> Devon Horse Show</li><li><span class="mono">DHS106</span> Devon Horse Show</li><li><span class="mono">DHS107</span> Devon Horse Show</li><li><span class="mono">DHS108</span> Devon Horse Show</li><li><span class="mono">DHS109</span> Devon Horse Show</li><li><span class="mono">DHS110</span> Devon Horse Show</li><li><span class="mono">DHS111</span> Devon Horse Show</li><li><span class="mono">DHS112</span> Devon Horse Show</li><li><span class="mono">DHS113</span> Devon Horse Show</li><li><span class="mono">DHS114</span> Devon Horse Show</li><li><span class="mono">DHS115</span> Devon Horse Show</li><li><span class="mono">DHS116</span> Devon Horse Show</li><li><span class="mono">DHS117</span> Devon Horse Show</li><li><span class="mono">DHS118</span> Devon Horse Show</li><li><span class="mono">DHS119</span> Devon Horse Show</li><li><span class="mono">DHS120</span> Devon Horse Show</li><li><span class="mono">DHS121</span> Devon Horse Show</li><li><span class="mono">DHS122</span> Devon Horse Show</li><li><span class="mono">DHS123</span> Devon Horse Show</li><li><span class="mono">DHS124</span> Devon Horse Show</li><li><span class="mono">DHS125</span> Devon Horse Show</li><li><span class="mono">DHS126</span> Devon Horse Show</li><li><span class="mono">DHS127</span> Devon Horse Show</li><li><span class="mono">DHS128</span> Devon Horse Show</li><li><span class="mono">DHS129</span> Devon Horse Show</li><li><span class="mono">DHS130</span> Devon Horse Show</li><li><span class="mono">DHS131</span> Devon Horse Show</li><li><span class="mono">DSS001</span> Barn #1, Devon Horse Show</li><li><span class="mono">DSS002</span> Barn #1, Devon Horse Show</li><li><span class="mono">DSS003</span> Barn #1, Devon Horse Show</li><li><span class="mono">DSS004</span> Barn #1, Devon Horse Show</li><li><span class="mono">DSS005</span> Barn #1, Devon Horse Show</li><li><span class="mono">DSS006</span> Barn #1, Devon Horse Show</li><li><span class="mono">DSS007</span> Barn #1, Devon Horse Show</li><li><span class="mono">DSS008</span> Barn #1, Devon Horse Show</li><li><span class="mono">DSS009</span> Barn #1, Devon Horse Show</li><li><span class="mono">DSS010</span> Barn #1, Devon Horse Show</li><li><span class="mono">DSS011</span> Barn #1, Devon Horse Show</li><li><span class="mono">DSS012</span> Barn #1, Devon Horse Show</li><li><span class="mono">ECH04</span> Cathcart House</li><li><span class="mono">EHC</span> Unveiling of Plaque, Stone Chimney Picket Post</li><li><span class="mono">EHE01</span> Catharine Earle Schober (nee Mather) and Emlen Hutchinson Shober</li><li><span class="mono">EHE02</span> Victor Charles Mayer and Catherine Earle Mayer</li><li><span class="mono">HMS001</span> Hope Scott</li><li><span class="mono">HMS002</span> Young Hope Montgomery</li><li><span class="mono">HMS003</span> Hope Montgomery Scott at Devon Horse Show</li><li><span class="mono">HMS004</span> Hope Montgomery Scott at Devon Horse Show</li><li><span class="mono">HMS005</span> Hope Montgomery Scott at Devon Horse Show</li><li><span class="mono">HMS006</span> Hope Montgomery Scott 80th birthday</li><li><span class="mono">HMS007</span> Hope Montgomery Scott</li><li><span class="mono">HOU262</span> T. Mellon Rogers house, Devon</li><li><span class="mono">IT16</span> An Afternoon at the Horse Show</li><li><span class="mono">OLA97b</span> Back of OLA97</li><li><span class="mono">UFG33</span> Upper Forge Waterwheel</li><li><span class="mono">VC14b</span> Back of VC14</li></ul></details></td>
+			</tr>
+			</tbody>
+		</table>
+		</div>
+	</section>
+</section>
+	</main>
+	<script>
+(function () {
+	var report = document.documentElement.getAttribute('data-report') || 'report'
+	var key = 'tehs-image-review:' + report
+	var statusFilter = 'all'
+	var chipFilter = ''
+	var query = ''
+
+	function loadState() {
+		try {
+			var raw = localStorage.getItem(key)
+			var parsed = raw ? JSON.parse(raw) : {}
+			return parsed && typeof parsed === 'object' ? parsed : {}
+		} catch (err) {
+			return {}
+		}
+	}
+
+	function saveState(state) {
+		try {
+			localStorage.setItem(key, JSON.stringify(state))
+		} catch (err) {}
+	}
+
+	var state = loadState()
+
+	function uniqueIds() {
+		var ids = {}
+		document.querySelectorAll('tr[data-id]').forEach(function (tr) {
+			ids[tr.getAttribute('data-id')] = true
+		})
+		return Object.keys(ids)
+	}
+
+	function isResolved(id) {
+		return Boolean(state[id])
+	}
+
+	function setResolved(id, resolved, quiet) {
+		if (resolved) state[id] = new Date().toISOString()
+		else delete state[id]
+		saveState(state)
+		document.querySelectorAll('tr[data-id]').forEach(function (tr) {
+			if (tr.getAttribute('data-id') === id) tr.classList.toggle('is-resolved', resolved)
+		})
+		document.querySelectorAll('input.resolve-toggle').forEach(function (input) {
+			if (input.getAttribute('data-id') === id) input.checked = resolved
+		})
+		if (!quiet) applyFilters()
+	}
+
+	function applyResolvedClass() {
+		document.querySelectorAll('tr[data-id]').forEach(function (tr) {
+			var id = tr.getAttribute('data-id')
+			var resolved = isResolved(id)
+			tr.classList.toggle('is-resolved', resolved)
+		})
+		document.querySelectorAll('input.resolve-toggle').forEach(function (input) {
+			input.checked = isResolved(input.getAttribute('data-id'))
+		})
+	}
+
+	function rowVisible(tr) {
+		var id = tr.getAttribute('data-id')
+		var resolved = isResolved(id)
+		if (statusFilter === 'open' && resolved) return false
+		if (statusFilter === 'resolved' && !resolved) return false
+		if (chipFilter) {
+			var filters = (tr.getAttribute('data-filter') || '').split(/\s+/).filter(Boolean)
+			if (filters.indexOf(chipFilter) === -1) return false
+		}
+		if (query) {
+			var hay = tr.getAttribute('data-search') || ''
+			if (hay.indexOf(query) === -1) return false
+		}
+		return true
+	}
+
+	function restripe(tbody) {
+		var visible = Array.prototype.filter.call(tbody.querySelectorAll('tr[data-id]'), function (tr) {
+			return !tr.classList.contains('is-hidden')
+		})
+		visible.forEach(function (tr, index) {
+			tr.classList.toggle('row-even', index % 2 === 1)
+			tr.classList.toggle('row-odd', index % 2 === 0)
+		})
+	}
+
+	function applyFilters() {
+		document.querySelectorAll('tr[data-id]').forEach(function (tr) {
+			tr.classList.toggle('is-hidden', !rowVisible(tr))
+		})
+		document.querySelectorAll('section.section').forEach(function (section) {
+			var shown = section.querySelector('tr[data-id]:not(.is-hidden)')
+			section.hidden = !shown
+		})
+		document.querySelectorAll('h3.kind-heading').forEach(function (heading) {
+			var next = heading.nextElementSibling
+			var any = false
+			while (next && !next.classList.contains('kind-heading') && next.tagName !== 'H2') {
+				if (next.classList.contains('section') && !next.hidden) any = true
+				next = next.nextElementSibling
+			}
+			heading.hidden = !any
+		})
+		document.querySelectorAll('tbody').forEach(restripe)
+		var ids = uniqueIds()
+		var resolvedCount = ids.filter(isResolved).length
+		var progress = document.getElementById('progress')
+		if (progress) progress.textContent = 'Resolved ' + resolvedCount + ' of ' + ids.length
+	}
+
+	document.querySelectorAll('.status-filters button').forEach(function (button) {
+		button.addEventListener('click', function () {
+			statusFilter = button.getAttribute('data-status') || 'all'
+			document.querySelectorAll('.status-filters button').forEach(function (other) {
+				other.classList.toggle('is-active', other === button)
+				other.setAttribute('aria-pressed', other === button ? 'true' : 'false')
+			})
+			applyFilters()
+		})
+	})
+
+	document.querySelectorAll('.chip').forEach(function (button) {
+		button.addEventListener('click', function () {
+			chipFilter = button.getAttribute('data-chip') || ''
+			document.querySelectorAll('.chip').forEach(function (other) {
+				other.classList.toggle('is-active', other === button)
+				other.setAttribute('aria-pressed', other === button ? 'true' : 'false')
+			})
+			applyFilters()
+		})
+	})
+
+	var search = document.getElementById('search')
+	if (search) {
+		search.addEventListener('input', function () {
+			query = (search.value || '').trim().toLowerCase()
+			applyFilters()
+		})
+	}
+
+	document.addEventListener('change', function (event) {
+		var target = event.target
+		if (!target || !target.classList || !target.classList.contains('resolve-toggle')) return
+		setResolved(target.getAttribute('data-id'), target.checked)
+	})
+
+	document.querySelectorAll('.mark-visible').forEach(function (button) {
+		button.addEventListener('click', function () {
+			var section = button.closest('section.section')
+			if (!section) return
+			section.querySelectorAll('tr[data-id]:not(.is-hidden)').forEach(function (tr) {
+				setResolved(tr.getAttribute('data-id'), true, true)
+			})
+			applyFilters()
+		})
+	})
+
+	function parseImport(data) {
+		if (data && typeof data.resolved === 'object' && data.resolved) {
+			return {
+				resolved: data.resolved,
+				unresolved: Array.isArray(data.unresolved) ? data.unresolved : [],
+			}
+		}
+		if (data && typeof data === 'object') {
+			return {resolved: data, unresolved: []}
+		}
+		return {resolved: {}, unresolved: []}
+	}
+
+	var exportBtn = document.querySelector('[data-export]')
+	if (exportBtn) {
+		exportBtn.addEventListener('click', function () {
+			var unresolved = uniqueIds().filter(function (id) { return !isResolved(id) })
+			var payload = {
+				report: report,
+				exportedAt: new Date().toISOString(),
+				resolved: state,
+				unresolved: unresolved,
+			}
+			var blob = new Blob([JSON.stringify(payload, null, '\t')], {type: 'application/json'})
+			var url = URL.createObjectURL(blob)
+			var a = document.createElement('a')
+			a.href = url
+			a.download = 'tehs-' + report + '-resolved.json'
+			a.click()
+			URL.revokeObjectURL(url)
+		})
+	}
+
+	var importInput = document.querySelector('[data-import]')
+	if (importInput) {
+		importInput.addEventListener('change', function () {
+			var file = importInput.files && importInput.files[0]
+			if (!file) return
+			var reader = new FileReader()
+			reader.onload = function () {
+				try {
+					var parsed = parseImport(JSON.parse(String(reader.result || '{}')))
+					Object.keys(parsed.resolved).forEach(function (id) {
+						var value = parsed.resolved[id]
+						if (value) state[id] = String(value)
+					})
+					parsed.unresolved.forEach(function (id) {
+						delete state[id]
+					})
+					saveState(state)
+					applyResolvedClass()
+					applyFilters()
+				} catch (err) {
+					window.alert('Could not read that JSON file.')
+				}
+				importInput.value = ''
+			}
+			reader.readAsText(file)
+		})
+	}
+
+	applyResolvedClass()
+	applyFilters()
+})()
+	</script>
+</body>
+</html>

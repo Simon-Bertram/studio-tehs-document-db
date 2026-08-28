@@ -19,6 +19,7 @@
     "csv-import": "bun run migrations/csv-import/import-documents.ts",
     "csv-import:donations": "bun run migrations/csv-import/import-donations.ts",
     "csv-import:images": "bun run migrations/csv-import/import-images.ts",
+    "csv-import:images-review-reports": "bun run migrations/csv-import/generate-image-review-reports.ts",
     "csv-export:images": "bun run scripts/export-images-csv.ts",
     "csv-export:images:mysql-cli": "bash scripts/export-images-csv.sh",
     "mysql-tunnel": "bash scripts/start-mysql-tunnel.sh",

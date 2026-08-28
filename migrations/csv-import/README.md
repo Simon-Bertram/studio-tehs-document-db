@@ -14,6 +14,7 @@ Optional env: `SANITY_PROJECT_ID`, `SANITY_DATASET`.
 | `bun run csv-import` | `migrations/data/documents.csv` | primarySource, historicalImage, researchArticle | `reports/` |
 | `bun run csv-import:donations` | `migrations/data/donations.csv` | donation (+ seeds donationCategory) | `reports/donations/` |
 | `bun run csv-import:images` | `migrations/data/sample-images.csv` | historicalImage | `reports/images/offset-*-limit-*` + `ledgers/` |
+| `bun run csv-import:images-review-reports` | live batch CSVs + `ledgers/images-manual-links.csv` | — | `reports/images/{skipped,missing-taxonomies,needs-manual-links}.html` |
 | `bun run csv-export:images` | DreamHost MySQL via tunnel (bun/`mysql2`, no `mysql` CLI) | writes `sample-images.csv` (no BLOBs) | — |
 | `bun run mysql-tunnel` | SSH `-L 3307:mysql.the2nomads.site:3306` | — | — |
 | `bun run csv-import:quarterly` | tehistory.org HTML (TOC + articles) | quarterlyArticle | `reports/quarterly/` |
@@ -211,11 +212,16 @@ Each importer writes under its reports folder. Image batches use `reports/images
 | `needs-manual-links.csv` | Same data as a spreadsheet |
 | `ledgers/images-manual-links.md` | Cumulative punch list across live batches (taxonomy + location text + people review) |
 | `ledgers/images-manual-links.csv` | Cumulative spreadsheet of outstanding taxonomy links |
+| `reports/images/skipped.html` | Human review: skipped images, grouped by reason, with Resolved checkboxes |
+| `reports/images/missing-taxonomies.html` | Human review: CSV keywords still needing a Migration key |
+| `reports/images/needs-manual-links.html` | Human review: imported images missing township / subject / donation |
 | `missing-taxonomies.csv` | Keywords still needing a `migrationKey` |
 | `asset-errors.csv` | (images) HTTP fetch / JPEG upload failures: `archiveId,url,httpStatus,detail` |
 | `url-status.csv` | (images dry-run) HEAD/GET probe: `archiveId,url,httpStatus,detail` |
 | `preflight.csv` | (images) missing `imageLocation`, `publicDisplay=N`, duplicate identifiers, township typos, place-like subjects |
 | `summary.txt` | Counts |
+
+Open the three HTML files in a browser after `bun run csv-import:images-review-reports`. Each row has a Resolved checkbox (stored in that browser; Export JSON to share). Regenerating the HTML does not wipe checkmarks.
 
 ### Vision checks
 
