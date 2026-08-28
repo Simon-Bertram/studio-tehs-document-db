@@ -147,6 +147,7 @@ describe('renderReviewHtml', () => {
 		expect(html).toContain('data-import')
 		expect(html).toContain('data-status="open"')
 		expect(html).toContain('Mark visible resolved')
+		expect(html).toContain('Mark visible unresolved')
 		expect(html).toContain('#f6f6f4')
 		expect(html).toContain('White Horse &lt;Tavern&gt;')
 		expect(html).not.toContain('White Horse <Tavern>')

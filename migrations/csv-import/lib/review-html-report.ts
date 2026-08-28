@@ -111,7 +111,10 @@ function renderSection(section: ReviewSection): string {
 		`\t<section class="section" data-section="${attr(section.id)}" id="${attr(section.id)}">`,
 		`\t\t<div class="section-head">`,
 		`\t\t\t<h3>${escapeHtml(section.title)}</h3>`,
-		`\t\t\t<button type="button" class="mark-visible">Mark visible resolved</button>`,
+		`\t\t\t<div class="section-actions">`,
+		`\t\t\t\t<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>`,
+		`\t\t\t\t<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>`,
+		`\t\t\t</div>`,
 		`\t\t</div>`,
 		blurb,
 		`\t\t<div class="table-wrap">`,
@@ -257,6 +260,7 @@ main { padding: 8px 20px 48px; }
 	gap: 12px;
 	margin-bottom: 6px;
 }
+.section-actions { display: flex; flex-wrap: wrap; gap: 6px; }
 .section-blurb { margin: 0 0 8px; color: var(--muted); max-width: 72rem; }
 .table-wrap { overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; }
@@ -300,7 +304,7 @@ code.keyword, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospac
 .empty, .empty-row td { color: var(--muted); }
 a { color: #1d4f7a; }
 @media print {
-	.toolbar .controls, .view-nav, .mark-visible, .how-to { display: none; }
+	.toolbar .controls, .view-nav, .section-actions, .how-to { display: none; }
 	.toolbar { position: static; border: 0; }
 	thead th { position: static; }
 	tr.is-resolved { color: #555; }
@@ -458,10 +462,11 @@ const REVIEW_SCRIPT = `
 
 	document.querySelectorAll('.mark-visible').forEach(function (button) {
 		button.addEventListener('click', function () {
+			var resolved = button.getAttribute('data-resolved') !== 'false'
 			var section = button.closest('section.section')
-			if (!section) return
-			section.querySelectorAll('tr[data-id]:not(.is-hidden)').forEach(function (tr) {
-				setResolved(tr.getAttribute('data-id'), true, true)
+			var scope = section || document
+			scope.querySelectorAll('tr[data-id]:not(.is-hidden)').forEach(function (tr) {
+				setResolved(tr.getAttribute('data-id'), resolved, true)
 			})
 			applyFilters()
 		})
@@ -584,6 +589,7 @@ ${howTo}
 				<span class="legend">Search</span>
 				<input id="search" type="search" placeholder="Archive ID or title" />
 			</label>
+			<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
 			<button type="button" data-export>Export JSON</button>
 			<label class="import">Import JSON<input type="file" accept="application/json" data-import /></label>
 		</div>

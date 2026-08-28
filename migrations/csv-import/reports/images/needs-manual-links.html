@@ -92,6 +92,7 @@ main { padding: 8px 20px 48px; }
 	gap: 12px;
 	margin-bottom: 6px;
 }
+.section-actions { display: flex; flex-wrap: wrap; gap: 6px; }
 .section-blurb { margin: 0 0 8px; color: var(--muted); max-width: 72rem; }
 .table-wrap { overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; }
@@ -135,7 +136,7 @@ code.keyword, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospac
 .empty, .empty-row td { color: var(--muted); }
 a { color: #1d4f7a; }
 @media print {
-	.toolbar .controls, .view-nav, .mark-visible, .how-to { display: none; }
+	.toolbar .controls, .view-nav, .section-actions, .how-to { display: none; }
 	.toolbar { position: static; border: 0; }
 	thead th { position: static; }
 	tr.is-resolved { color: #555; }
@@ -179,6 +180,7 @@ a { color: #1d4f7a; }
 				<span class="legend">Search</span>
 				<input id="search" type="search" placeholder="Archive ID or title" />
 			</label>
+			<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
 			<button type="button" data-export>Export JSON</button>
 			<label class="import">Import JSON<input type="file" accept="application/json" data-import /></label>
 		</div>
@@ -191,7 +193,10 @@ a { color: #1d4f7a; }
 	<section class="section" data-section="manual-township-schuylkill" id="manual-township-schuylkill">
 		<div class="section-head">
 			<h3>Schuylkill (14)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -366,7 +371,10 @@ a { color: #1d4f7a; }
 	<section class="section" data-section="manual-township-marple" id="manual-township-marple">
 		<div class="section-head">
 			<h3>Marple (3)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -420,7 +428,10 @@ a { color: #1d4f7a; }
 	<section class="section" data-section="manual-township-audubon" id="manual-township-audubon">
 		<div class="section-head">
 			<h3>Audubon (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -452,7 +463,10 @@ a { color: #1d4f7a; }
 	<section class="section" data-section="manual-township-bridgeport" id="manual-township-bridgeport">
 		<div class="section-head">
 			<h3>Bridgeport (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -484,7 +498,10 @@ a { color: #1d4f7a; }
 	<section class="section" data-section="manual-township-frazer" id="manual-township-frazer">
 		<div class="section-head">
 			<h3>Frazer (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -516,7 +533,10 @@ a { color: #1d4f7a; }
 	<section class="section" data-section="manual-township-malvern-borough" id="manual-township-malvern-borough">
 		<div class="section-head">
 			<h3>Malvern Borough (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -548,7 +568,10 @@ a { color: #1d4f7a; }
 	<section class="section" data-section="manual-township-west-chester" id="manual-township-west-chester">
 		<div class="section-head">
 			<h3>West Chester (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -581,7 +604,10 @@ a { color: #1d4f7a; }
 	<section class="section" data-section="manual-subject-person" id="manual-subject-person">
 		<div class="section-head">
 			<h3>person (477)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -5857,7 +5883,10 @@ Standing middle distance: Skip Eichner (striped shirt), Bill Andrews (dark shirt
 	<section class="section" data-section="manual-subject-place" id="manual-subject-place">
 		<div class="section-head">
 			<h3>Place (470)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -11048,7 +11077,10 @@ Standing middle distance: Skip Eichner (striped shirt), Bill Andrews (dark shirt
 	<section class="section" data-section="manual-subject-view" id="manual-subject-view">
 		<div class="section-head">
 			<h3>View (451)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -16034,7 +16066,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-road" id="manual-subject-road">
 		<div class="section-head">
 			<h3>Road (161)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -17826,7 +17861,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-service" id="manual-subject-service">
 		<div class="section-head">
 			<h3>Service (149)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -19486,7 +19524,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-sports" id="manual-subject-sports">
 		<div class="section-head">
 			<h3>Sports (22)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -19749,7 +19790,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-paoli" id="manual-subject-paoli">
 		<div class="section-head">
 			<h3>Paoli (11)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -19891,7 +19935,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-people" id="manual-subject-people">
 		<div class="section-head">
 			<h3>People (10)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -20022,7 +20069,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-quaker-trailer-company" id="manual-subject-quaker-trailer-company">
 		<div class="section-head">
 			<h3>Quaker Trailer Company (8)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -20131,7 +20181,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-services" id="manual-subject-services">
 		<div class="section-head">
 			<h3>Services (7)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -20229,7 +20282,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-berwyn" id="manual-subject-berwyn">
 		<div class="section-head">
 			<h3>Berwyn (6)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -20316,7 +20372,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-bridge" id="manual-subject-bridge">
 		<div class="section-head">
 			<h3>Bridge (6)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -20403,7 +20462,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-mainline-airport" id="manual-subject-mainline-airport">
 		<div class="section-head">
 			<h3>Mainline airport (5)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -20479,7 +20541,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-paoli-hardware-store" id="manual-subject-paoli-hardware-store">
 		<div class="section-head">
 			<h3>Paoli Hardware Store (5)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -20555,7 +20620,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-studebaker-event" id="manual-subject-studebaker-event">
 		<div class="section-head">
 			<h3>Studebaker event (5)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -20631,7 +20699,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-places" id="manual-subject-places">
 		<div class="section-head">
 			<h3>Places (4)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -20696,7 +20767,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-cultural" id="manual-subject-cultural">
 		<div class="section-head">
 			<h3>Cultural (3)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -20750,7 +20824,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-devon" id="manual-subject-devon">
 		<div class="section-head">
 			<h3>Devon (3)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -20804,7 +20881,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-mary-mchenry" id="manual-subject-mary-mchenry">
 		<div class="section-head">
 			<h3>Mary McHenry (3)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -20858,7 +20938,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-bridges" id="manual-subject-bridges">
 		<div class="section-head">
 			<h3>Bridges (2)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -20901,7 +20984,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-building" id="manual-subject-building">
 		<div class="section-head">
 			<h3>building (2)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -20944,7 +21030,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-pennokla-farm" id="manual-subject-pennokla-farm">
 		<div class="section-head">
 			<h3>Pennokla Farm (2)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -20987,7 +21076,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-valley-forge" id="manual-subject-valley-forge">
 		<div class="section-head">
 			<h3>Valley Forge (2)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -21030,7 +21122,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-colonial-springs-bottling-plant" id="manual-subject-colonial-springs-bottling-plant">
 		<div class="section-head">
 			<h3>Colonial Springs Bottling Plant (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -21062,7 +21157,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-devault" id="manual-subject-devault">
 		<div class="section-head">
 			<h3>Devault (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -21094,7 +21192,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-e" id="manual-subject-e">
 		<div class="section-head">
 			<h3>e (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -21126,7 +21227,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-gravestone" id="manual-subject-gravestone">
 		<div class="section-head">
 			<h3>Gravestone (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -21158,7 +21262,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-lancaster-pike" id="manual-subject-lancaster-pike">
 		<div class="section-head">
 			<h3>Lancaster Pike (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -21190,7 +21297,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-manor-lancaster-co" id="manual-subject-manor-lancaster-co">
 		<div class="section-head">
 			<h3>Manor, Lancaster Co. (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -21222,7 +21332,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-organisation" id="manual-subject-organisation">
 		<div class="section-head">
 			<h3>Organisation (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -21254,7 +21367,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-organization" id="manual-subject-organization">
 		<div class="section-head">
 			<h3>Organization (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -21286,7 +21402,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-quarryville" id="manual-subject-quarryville">
 		<div class="section-head">
 			<h3>Quarryville (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -21318,7 +21437,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-ryan-sca" id="manual-subject-ryan-sca">
 		<div class="section-head">
 			<h3>Ryan SCA (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -21350,7 +21472,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-school-certificate" id="manual-subject-school-certificate">
 		<div class="section-head">
 			<h3>School certificate (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -21382,7 +21507,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-schuylkill-u-merion" id="manual-subject-schuylkill-u-merion">
 		<div class="section-head">
 			<h3>Schuylkill/U. Merion (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -21414,7 +21542,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-tredyfrin" id="manual-subject-tredyfrin">
 		<div class="section-head">
 			<h3>Tredyfrin (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -21446,7 +21577,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-upper-merion" id="manual-subject-upper-merion">
 		<div class="section-head">
 			<h3>Upper Merion? (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -21478,7 +21612,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-subject-washington-d-c" id="manual-subject-washington-d-c">
 		<div class="section-head">
 			<h3>Washington D.C. (1)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -21511,7 +21648,10 @@ Stereocard</td>
 	<section class="section" data-section="manual-donation-donation-0" id="manual-donation-donation-0">
 		<div class="section-head">
 			<h3>donation:0 (204)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -23779,7 +23919,10 @@ Stereocard</td>
 	<section class="section" data-section="by-image-table" id="by-image-table">
 		<div class="section-head">
 			<h3>All images (2040)</h3>
-			<button type="button" class="mark-visible">Mark visible resolved</button>
+			<div class="section-actions">
+				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
+				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
+			</div>
 		</div>
 
 		<div class="table-wrap">
@@ -52524,10 +52667,11 @@ Standing middle distance: Skip Eichner (striped shirt), Bill Andrews (dark shirt
 
 	document.querySelectorAll('.mark-visible').forEach(function (button) {
 		button.addEventListener('click', function () {
+			var resolved = button.getAttribute('data-resolved') !== 'false'
 			var section = button.closest('section.section')
-			if (!section) return
-			section.querySelectorAll('tr[data-id]:not(.is-hidden)').forEach(function (tr) {
-				setResolved(tr.getAttribute('data-id'), true, true)
+			var scope = section || document
+			scope.querySelectorAll('tr[data-id]:not(.is-hidden)').forEach(function (tr) {
+				setResolved(tr.getAttribute('data-id'), resolved, true)
 			})
 			applyFilters()
 		})
