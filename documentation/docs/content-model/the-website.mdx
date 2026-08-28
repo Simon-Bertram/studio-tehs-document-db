@@ -18,7 +18,8 @@ Key fields:
 - **People Mentioned** (`peopleMentioned`) — historical persons discussed in the article
 - **Organizations** (`organizations`) — historical businesses and organizations discussed in the article (one field; pick either document type)
 - **Page content & layout canvas** — Portable Text with:
-  - Text blocks and **Uploaded Images** (caption, alt, and semantic `imageRole`: figure / aside)
+  - **Historical Images** — links to cataloged photographs in The Archive → Historical Images (optional caption/alt override; semantic `imageRole`: figure / aside). Prefer this when the photograph is already cataloged.
+  - **Uploaded Images** — caption, alt, and semantic `imageRole`. Use only if the photograph is not in Historical Images. If it belongs in the archive, catalog it there first, then insert **Historical Image**.
   - **Interactive map modules** (`mapYear`, embedded `mapUrl`)
   - **Nested navigation portals** linking to other research articles
 - **Notes & References** (`notesAndReferences`) — published bibliographic notes, endnotes, and web links (rich text with URL marks). Appears with the article on the public site.
@@ -35,7 +36,8 @@ Key fields:
 - **Publication Details** — title, author name, volume, issue, publication date (text), and start page for table-of-contents ordering
 - **Article Content** — Portable Text body with:
   - Standard text blocks (paragraphs, headings)
-  - Inline images (caption and alt text)
+  - **Historical Images** — links to cataloged photographs in The Archive → Historical Images (optional caption/alt override; semantic `imageRole`). Prefer this when the photograph is already cataloged.
+  - Inline **Uploaded Images** (caption and alt text). Use only if the photograph is not in Historical Images. If it belongs in the archive, catalog it there first, then insert **Historical Image**.
   - **Original Print Page Break** blocks to preserve academic pagination (e.g., "Page 3") without disrupting reading flow
   - **Notes & References** (`notesAndReferences`) — published bibliographic notes, endnotes, and web links (rich text with URL marks). Appears with the article on the public site.
 - **Tagged Entities** — references to properties, people, and organizations (including businesses) mentioned in the article

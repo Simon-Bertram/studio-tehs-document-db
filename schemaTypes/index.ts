@@ -9,6 +9,7 @@ import {historicalImage} from './historicalImage'
 import {location} from './location'
 import {censusRecord} from './objects/censusRecord'
 import {historicalDate} from './objects/historicalDate'
+import {historicalImageEmbed} from './objects/historicalImageEmbed'
 import {immediateRelative} from './objects/immediateRelative'
 import {internalSubLinks} from './objects/internalSubLinks'
 import {mapEmbed} from './objects/mapEmbed'
@@ -39,6 +40,7 @@ export const schemaTypes = [
 	donation,
 	donationCategory,
 	mapEmbed,
+	historicalImageEmbed,
 	internalSubLinks,
 	censusRecord,
 	historicalDate,

@@ -105,6 +105,7 @@ export const quarterlyArticle = defineType({
 			group: 'content',
 			of: [
 				defineArrayMember({type: 'block'}),
+				defineArrayMember({type: 'historicalImageEmbed'}),
 				portableTextImageMember({title: 'Inline Image'}),
 				defineArrayMember({type: 'pageBreak'}),
 			],

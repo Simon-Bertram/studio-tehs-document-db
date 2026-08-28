@@ -9,7 +9,7 @@ const ORGANIZATIONS_DESCRIPTION =
 export function organizationsField(group?: string) {
 	return defineField({
 		name: 'organizations',
-		title: 'Organizations',
+		title: 'Organizations and Businesses',
 		type: 'array',
 		...(group ? {group} : {}),
 		description: ORGANIZATIONS_DESCRIPTION,

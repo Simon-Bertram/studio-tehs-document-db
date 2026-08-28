@@ -31,7 +31,7 @@ export const historicalImage = defineType({
 		{name: 'research', title: 'Research', icon: SearchIcon},
 	],
 	fields: [
-		archiveIdField('historicalImage', 'MF37', 'identity'),
+		archiveIdField('historicalImage', 'MF37', 'identity', {searchWeight: 10}),
 		defineField({
 			name: 'serialNumber',
 			title: 'Serial Number',
@@ -43,6 +43,9 @@ export const historicalImage = defineType({
 			title: 'Caption / Title',
 			type: 'string',
 			group: 'identity',
+			options: {
+				search: {weight: 10},
+			},
 			validation: (Rule) => Rule.required(),
 		}),
 		defineField({

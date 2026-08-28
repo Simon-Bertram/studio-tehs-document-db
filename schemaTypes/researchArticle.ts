@@ -71,6 +71,7 @@ export const researchArticle = defineType({
 			group: 'content',
 			of: [
 				defineArrayMember({type: 'block'}),
+				defineArrayMember({type: 'historicalImageEmbed'}),
 				portableTextImageMember({title: 'Uploaded Image'}),
 				defineArrayMember({type: 'mapEmbed'}),
 				defineArrayMember({type: 'internalSubLinks'}),

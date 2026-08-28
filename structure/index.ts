@@ -22,11 +22,11 @@ export const structure: StructureResolver = (S) =>
 		.title('Content')
 		.items([
 			S.listItem()
-				.title('The Archive')
+				.title('Information Sources')
 				.icon(ArchiveIcon)
 				.child(
 					S.list()
-						.title('The Archive')
+						.title('Information Sources')
 						.items([
 							S.documentTypeListItem('primarySource')
 								.title('Primary Sources / Transcriptions')
