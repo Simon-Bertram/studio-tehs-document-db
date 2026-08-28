@@ -18,7 +18,7 @@ export function archiveIdField(
 		title: 'Archive ID',
 		type: 'string',
 		...(group ? {group} : {}),
-		description: `Official internal reference number for this item (e.g., ${example}).`,
+		description: `Official internal reference number for this item (e.g., ${example}). This identifier is unique.`,
 		...(searchWeight != null ? {options: {search: {weight: searchWeight}}} : {}),
 		validation: (Rule) =>
 			Rule.required().custom(
