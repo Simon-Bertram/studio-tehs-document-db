@@ -1,4 +1,4 @@
-import {Stack, Text} from '@sanity/ui'
+import {Box, Stack, Text} from '@sanity/ui'
 import type {ObjectInputProps} from 'sanity'
 
 /**
@@ -10,11 +10,13 @@ export function DocumentWithDescription(props: ObjectInputProps) {
 	const description = schemaType.description
 
 	return (
-		<Stack space={4}>
+		<Stack gap={4}>
 			{description ? (
-				<Text size={1} muted as="p">
-					{description}
-				</Text>
+				<Box paddingBottom={3}>
+					<Text size={1} muted as="p">
+						{description}
+					</Text>
+				</Box>
 			) : null}
 			{renderDefault(props)}
 		</Stack>
