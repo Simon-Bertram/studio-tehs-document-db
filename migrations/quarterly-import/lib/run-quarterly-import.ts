@@ -11,6 +11,7 @@ import {SANITY_DATASET, SANITY_PROJECT_ID} from '../../../lib/sanityEnv'
 import {Audit} from '../../csv-import/lib/audit'
 import {upsertByQuery} from '../../csv-import/lib/upsert-by-query'
 import {writeReports} from '../../csv-import/lib/write-reports'
+import {quarterlyIssueSourceKey} from '../../lib/quarterly-issue-source-key'
 import type {QuarterlyImportConfig} from './cli-config'
 import {loadVolumeSnapshot} from './load-snapshot'
 import {
@@ -19,6 +20,7 @@ import {
 	type QuarterlyImportDoc,
 	sanitizeDocForWrite,
 } from './map-article'
+import {uniqueIssuesFromArticles} from './map-issue'
 
 const CONCURRENCY = 3
 
@@ -47,12 +49,46 @@ export async function runQuarterlyImport(
 	audit.totalRows = articles.length
 	console.log(`Indexed ${articles.length} articles from volume ${volume} TOC.\n`)
 
+	const issues = uniqueIssuesFromArticles(articles)
+	const issueIdBySourceKey = new Map<string, string>()
+
+	if (dryRun) {
+		for (const issue of issues) {
+			console.log(`[DRY RUN] quarterlyIssue → ${issue.sourceKey}`)
+		}
+	} else {
+		for (const issue of issues) {
+			try {
+				const result = await upsertByQuery(
+					client,
+					{
+						_type: 'quarterlyIssue',
+						volume: issue.volume,
+						issueNumber: issue.issueNumber,
+						sourceKey: issue.sourceKey,
+						...(issue.publicationDate ? {publicationDate: issue.publicationDate} : {}),
+					},
+					`_type == "quarterlyIssue" && sourceKey == $sourceKey`,
+					{sourceKey: issue.sourceKey},
+				)
+				issueIdBySourceKey.set(issue.sourceKey, result.id)
+				console.log(`[OK] ${result.action} quarterlyIssue → ${issue.sourceKey} (${result.id})`)
+			} catch (err) {
+				const msg = err instanceof Error ? err.message : String(err)
+				console.error(`[ERROR] quarterlyIssue ${issue.sourceKey}: ${msg}`)
+			}
+		}
+		console.log()
+	}
+
 	const limit = pLimit(CONCURRENCY)
 	const docs: QuarterlyImportDoc[] = []
 
 	const tasks = articles.map((article) =>
 		limit(async () => {
-			const mapped = mapSnapshotToDoc(article)
+			const issueKey = quarterlyIssueSourceKey(article.volume, article.issue)
+			const issueId = issueIdBySourceKey.get(issueKey)
+			const mapped = mapSnapshotToDoc(article, issueId)
 			const title = mapped.title
 
 			if (!mapped.body?.length) {
@@ -64,13 +100,24 @@ export async function runQuarterlyImport(
 				audit.recordImported({
 					clipId: mapped.sourceKey,
 					title,
-					csvType: `v${mapped.volume}n${mapped.issue}`,
+					csvType: `v${article.volume}n${article.issue}`,
 					schemaType: 'quarterlyArticle',
 					action: 'dry_run',
 					mappedKeywords: [],
 					unmappedKeywords: [],
 				})
 				console.log(`[DRY RUN] quarterlyArticle → ${mapped.sourceKey} (${title})`)
+				return
+			}
+
+			if (!issueId) {
+				audit.skip({
+					clipId: mapped.sourceKey,
+					title,
+					csvType: `v${article.volume}n${article.issue}`,
+					reason: 'api_error',
+					detail: `No quarterlyIssue for ${issueKey}`,
+				})
 				return
 			}
 
@@ -86,7 +133,7 @@ export async function runQuarterlyImport(
 				audit.recordImported({
 					clipId: mapped.sourceKey,
 					title,
-					csvType: `v${mapped.volume}n${mapped.issue}`,
+					csvType: `v${article.volume}n${article.issue}`,
 					schemaType: 'quarterlyArticle',
 					action: result.action,
 					sanityId: result.id,
@@ -99,7 +146,7 @@ export async function runQuarterlyImport(
 				audit.skip({
 					clipId: mapped.sourceKey,
 					title,
-					csvType: `v${mapped.volume}n${mapped.issue}`,
+					csvType: `v${article.volume}n${article.issue}`,
 					reason: 'api_error',
 					detail: msg,
 				})
@@ -111,12 +158,13 @@ export async function runQuarterlyImport(
 
 	fs.mkdirSync(reportsDir, {recursive: true})
 
-	if (dryRun && docs.length > 0) {
+	if (dryRun && (docs.length > 0 || issues.length > 0)) {
 		const previewPath = path.join(reportsDir, 'preview.ndjson')
-		fs.writeFileSync(
-			previewPath,
-			docs.map((d) => JSON.stringify(sanitizeDocForWrite(d))).join('\n'),
-		)
+		const lines = [
+			...issues.map((issue) => JSON.stringify(issue)),
+			...docs.map((d) => JSON.stringify(sanitizeDocForWrite(d))),
+		]
+		fs.writeFileSync(previewPath, lines.join('\n'))
 		console.log(`\nPreview written to ${previewPath}`)
 	}
 
@@ -129,8 +177,9 @@ export async function runQuarterlyImport(
 	audit.print(reportsDir)
 
 	console.log('Suggested Vision checks:')
-	console.log(`  count(*[_type == "quarterlyArticle" && volume == ${volume}])`)
+	console.log(`  count(*[_type == "quarterlyIssue" && volume == ${volume}])`)
+	console.log(`  count(*[_type == "quarterlyArticle" && issueRef->volume == ${volume}])`)
 	console.log(
-		`  *[_type == "quarterlyArticle" && volume == ${volume}] | order(issue asc, startPage asc) { title, sourceKey, startPage }`,
+		`  *[_type == "quarterlyArticle" && issueRef->volume == ${volume}] | order(issueRef->issueNumber asc, startPage asc) { title, sourceKey, startPage, "issue": issueRef->{volume, issueNumber} }`,
 	)
 }

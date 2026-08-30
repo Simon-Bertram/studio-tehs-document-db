@@ -3,18 +3,17 @@ import {BookIcon} from '@sanity/icons/Book'
 import {CommentIcon} from '@sanity/icons/Comment'
 import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {TagIcon} from '@sanity/icons/Tag'
+import {nanoid} from 'nanoid'
 import {defineArrayMember, defineField, defineType} from 'sanity'
+import {isIncomingReferenceCreation} from 'sanity/structure'
 
-import {
-	formatHistoricalDateFromPreview,
-	historicalDatePreviewSelect,
-} from './lib/historicalDatePreview'
 import {isUniqueStringField} from './lib/isUniqueStringField'
 import {internalCommentsField} from './shared/internalCommentsField'
 import {notesAndReferencesField} from './shared/notesAndReferencesField'
 import {organizationsField} from './shared/organizationsField'
 import {peopleMentionedField} from './shared/peopleMentionedField'
 import {portableTextImageMember} from './shared/portableTextImageFields'
+import {subjectsField} from './shared/subjectsField'
 
 export const quarterlyArticle = defineType({
 	name: 'quarterlyArticle',
@@ -43,41 +42,34 @@ export const quarterlyArticle = defineType({
 			description: 'e.g., Mrs. E. H. TenBroeck',
 		}),
 		defineField({
-			name: 'volume',
-			title: 'Volume',
-			type: 'number',
+			name: 'issueRef',
+			title: 'Issue',
+			type: 'reference',
 			group: 'publication',
-		}),
-		defineField({
-			name: 'issue',
-			title: 'Issue / Number',
-			type: 'number',
-			group: 'publication',
-		}),
-		defineField({
-			name: 'publishedDate',
-			title: 'Publication Date',
-			type: 'historicalDate',
-			group: 'publication',
-			description: 'Usually month and year (e.g. April 1968).',
-		}),
-		defineField({
-			name: 'publishedDateText',
-			title: 'Publication Date (Legacy Text)',
-			type: 'string',
-			group: 'publication',
-			deprecated: {
-				reason: 'Use Publication Date (structured historical date) instead.',
-			},
-			readOnly: true,
-			hidden: ({value}) => value === undefined,
-			initialValue: undefined,
+			to: [{type: 'quarterlyIssue'}],
+			description: 'The printed TEHS Quarterly issue this article appeared in.',
+			validation: (Rule) => Rule.required(),
 		}),
 		defineField({
 			name: 'startPage',
 			title: 'Start Page',
 			type: 'number',
 			group: 'publication',
+		}),
+		defineField({
+			name: 'endPage',
+			title: 'End Page',
+			type: 'number',
+			group: 'publication',
+			description: 'Last printed page when known. Leave empty if only the start page is recorded.',
+			validation: (Rule) =>
+				Rule.custom((endPage, context) => {
+					const startPage = context.document?.startPage
+					if (endPage == null || typeof startPage !== 'number') return true
+					if (typeof endPage !== 'number') return true
+					if (endPage < startPage) return 'End page must be on or after the start page'
+					return true
+				}),
 		}),
 		defineField({
 			name: 'sourceKey',
@@ -99,6 +91,61 @@ export const quarterlyArticle = defineType({
 			description: 'Canonical tehistory.org article URL for QA and redirects.',
 		}),
 		defineField({
+			name: 'volume',
+			title: 'Volume',
+			type: 'number',
+			group: 'publication',
+			deprecated: {
+				reason: 'Use Issue (reference to a TEHS Quarterly Issue) instead.',
+			},
+			readOnly: true,
+			hidden: ({value}) => value === undefined,
+			initialValue: undefined,
+		}),
+		defineField({
+			name: 'issue',
+			title: 'Issue / Number',
+			type: 'number',
+			group: 'publication',
+			deprecated: {
+				reason: 'Use Issue (reference to a TEHS Quarterly Issue) instead.',
+			},
+			readOnly: true,
+			hidden: ({value}) => value === undefined,
+			initialValue: undefined,
+		}),
+		defineField({
+			name: 'publishedDate',
+			title: 'Publication Date',
+			type: 'historicalDate',
+			group: 'publication',
+			deprecated: {
+				reason: 'Publication date lives on the TEHS Quarterly Issue this article references.',
+			},
+			readOnly: true,
+			hidden: ({value}) => value === undefined,
+			initialValue: undefined,
+		}),
+		defineField({
+			name: 'publishedDateText',
+			title: 'Publication Date (Legacy Text)',
+			type: 'string',
+			group: 'publication',
+			deprecated: {
+				reason: 'Publication date lives on the TEHS Quarterly Issue this article references.',
+			},
+			readOnly: true,
+			hidden: ({value}) => value === undefined,
+			initialValue: undefined,
+		}),
+		defineField({
+			name: 'summary',
+			title: 'Summary / Abstract',
+			type: 'text',
+			group: 'content',
+			description: 'Optional short abstract for search and issue indexes.',
+		}),
+		defineField({
 			name: 'body',
 			title: 'Article Text',
 			type: 'array',
@@ -112,6 +159,7 @@ export const quarterlyArticle = defineType({
 		}),
 		notesAndReferencesField('content'),
 		internalCommentsField('internal'),
+		subjectsField('entities'),
 		defineField({
 			name: 'propertiesMentioned',
 			title: 'Properties / Historic Sites Mentioned',
@@ -128,19 +176,23 @@ export const quarterlyArticle = defineType({
 		peopleMentionedField('entities'),
 		organizationsField('entities'),
 	],
+	initialValue: (params) => {
+		if (!isIncomingReferenceCreation(params)) return {}
+		if (params.from.type === 'category') {
+			return {
+				subjects: [{...params.reference, _key: nanoid()}],
+			}
+		}
+		if (params.from.type === 'quarterlyIssue') {
+			return {issueRef: params.reference}
+		}
+		return {}
+	},
 	orderings: [
 		{
 			title: 'Start page',
 			name: 'startPageAsc',
 			by: [{field: 'startPage', direction: 'asc'}],
-		},
-		{
-			title: 'Volume & issue',
-			name: 'volumeIssueAsc',
-			by: [
-				{field: 'volume', direction: 'asc'},
-				{field: 'issue', direction: 'asc'},
-			],
 		},
 		{
 			title: 'Title, A–Z',
@@ -151,18 +203,26 @@ export const quarterlyArticle = defineType({
 	preview: {
 		select: {
 			title: 'title',
-			volume: 'volume',
-			issue: 'issue',
-			legacyDate: 'publishedDateText',
-			...historicalDatePreviewSelect('publishedDate'),
+			volume: 'issueRef.volume',
+			issueNumber: 'issueRef.issueNumber',
+			startPage: 'startPage',
+			endPage: 'endPage',
 		},
-		prepare(selection) {
-			const {title, volume, issue, legacyDate} = selection
-			const volIssue = [volume != null && `Vol ${volume}`, issue != null && `No. ${issue}`]
+		prepare({title, volume, issueNumber, startPage, endPage}) {
+			const volIssue = [
+				volume != null && `Vol. ${volume}`,
+				issueNumber != null && `No. ${issueNumber}`,
+			]
 				.filter(Boolean)
 				.join(', ')
-			const when = formatHistoricalDateFromPreview(selection) || legacyDate
-			const subtitle = [volIssue, when].filter(Boolean).join(' · ')
+			let pages = ''
+			if (startPage != null) {
+				pages =
+					endPage != null && endPage !== startPage
+						? `pp. ${startPage}–${endPage}`
+						: `p. ${startPage}`
+			}
+			const subtitle = [volIssue, pages].filter(Boolean).join(' · ')
 			return {
 				title: title || 'Untitled Article',
 				subtitle,

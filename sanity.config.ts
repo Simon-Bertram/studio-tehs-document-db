@@ -37,5 +37,17 @@ export default defineConfig({
 
 	schema: {
 		types: schemaTypes,
+		templates: (prev) => [
+			...prev,
+			{
+				id: 'quarterlyArticle-from-issue',
+				title: 'TEHS Quarterly Article',
+				schemaType: 'quarterlyArticle',
+				parameters: [{name: 'issueId', type: 'string'}],
+				value: (params: {issueId: string}) => ({
+					issueRef: {_type: 'reference', _ref: params.issueId},
+				}),
+			},
+		],
 	},
 })

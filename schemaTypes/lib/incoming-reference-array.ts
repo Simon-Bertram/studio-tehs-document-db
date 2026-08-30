@@ -4,7 +4,7 @@ import {type IncomingReferencesOptions, isIncomingReferenceCreation} from 'sanit
 
 type IncomingReferenceArrayField = 'familyLines' | 'donationCategories' | 'people' | 'subjects'
 
-type IncomingReferenceField = 'county'
+type IncomingReferenceField = 'county' | 'issueRef'
 
 type IncomingReference = Parameters<NonNullable<IncomingReferencesOptions['onLinkDocument']>>[1]
 

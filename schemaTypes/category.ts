@@ -21,7 +21,7 @@ export const category = defineType({
 	type: 'document',
 	icon: TagIcon,
 	description:
-		'Themes for archive search and discovery (e.g. Schools, Railroads, Farms, Genealogy). Tag primary sources and historical images so related material can be filtered. Not the same as Property Type (building classification) or a named Business or Organization document.',
+		'Themes for archive search and discovery (e.g. Schools, Railroads, Farms, Genealogy). Tag primary sources, historical images, and TEHS Quarterly articles so related material can be filtered. Not the same as Property Type (building classification) or a named Business or Organization document.',
 	fields: [
 		defineField({
 			name: 'title',
@@ -70,6 +70,12 @@ export const category = defineType({
 			name: 'historicalImages',
 			title: 'Historical Images',
 			types: [{type: 'historicalImage'}],
+			onLinkDocument: appendIncomingReference('subjects'),
+		}),
+		defineCountedIncomingReferenceDecoration({
+			name: 'quarterlyArticles',
+			title: 'TEHS Quarterly Article',
+			types: [{type: 'quarterlyArticle'}],
 			onLinkDocument: appendIncomingReference('subjects'),
 		}),
 	],

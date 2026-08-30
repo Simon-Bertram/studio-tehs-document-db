@@ -27,21 +27,38 @@ Key fields:
 
 Related: [Publish a research article](../common-tasks/publish-research-article.mdx), [Set Archive IDs](../common-tasks/set-archive-ids.mdx)
 
-## TEHS Quarterly Articles
+## TEHS Quarterly Issues
 
-A **TEHS Quarterly Article** stores the full digitized text of a Quarterly piece, plus publication metadata and entity links.
+A **TEHS Quarterly Issue** is one printed number of the journal (volume and issue number). Cover image, issue PDF, and publication date live here so they are not copied onto every article.
 
 Key fields:
 
-- **Publication Details** — title, author name, volume, issue, publication date (text), and start page for table-of-contents ordering
+- **Volume** and **Issue / Number** — unique together (e.g. Volume 22, Number 1)
+- **Publication Date** — structured historical date, usually month and year
+- **Source Key** — optional archive stem such as `v22n1` (set by the HTML import)
+- **Cover Image** and **Issue PDF** — optional; HTML-imported volumes often have neither
+- **Table of Contents Notes** — optional editorial blurb. Do not store a duplicate TOC; the website generates the contents list from articles in this issue.
+
+Desk path: **The Website → TEHS Quarterly Issues**. Open an issue to edit it or to list **Articles in this issue** (ordered by start page).
+
+## TEHS Quarterly Articles
+
+A **TEHS Quarterly Article** stores the full digitized text of a Quarterly piece, plus a reference to its issue and entity links.
+
+Key fields:
+
+- **Publication Details** — title, author name, **Issue** (required reference to a TEHS Quarterly Issue), start page, optional end page, and source key/URL
+- **Summary / Abstract** — optional short abstract for search and indexes
 - **Article Content** — Portable Text body with:
   - Standard text blocks (paragraphs, headings)
   - **Historical Images** — links to cataloged photographs in The Archive → Historical Images (optional caption/alt override; semantic `imageRole`). Prefer this when the photograph is already cataloged.
   - Inline **Uploaded Images** (caption and alt text). Use only if the photograph is not in Historical Images. If it belongs in the archive, catalog it there first, then insert **Historical Image**.
   - **Original Print Page Break** blocks to preserve academic pagination (e.g., "Page 3") without disrupting reading flow
   - **Notes & References** (`notesAndReferences`) — published bibliographic notes, endnotes, and web links (rich text with URL marks). Appears with the article on the public site.
-- **Tagged Entities** — references to properties, people, and organizations (including businesses) mentioned in the article
+- **Tagged Entities** — **Subjects** (subject categories such as Railroads or Genealogy), plus references to properties, people, and organizations (including businesses) mentioned in the article
 - **Internal Comments** (`internalComments`) — Studio-only working notes. **Will not appear on the public site.**
+
+Author bylines stay as **Author Name** (`authorText`). Do not use Historical Person documents for Quarterly writers unless that person is also cataloged as a historical figure mentioned in the archive.
 
 Archive documents (primary sources and historical images) link these under **Research References** (`citations`). That field is a document reference, not a pasted URL: many archive items can share one article. Historical images also have a separate **References** rich-text field for books, PDFs, and other links that are not Quarterly articles in this Studio.
 
@@ -49,14 +66,19 @@ Archive documents (primary sources and historical images) link these under **Res
 
 ### Dynamic table of contents
 
-Because articles are structured data rather than static HTML, the website can generate volume indexes on the fly. For example, to recreate the Volume 15 table of contents:
+Because issues and articles are structured data rather than static HTML, the website can generate volume indexes on the fly. For example, to recreate the Volume 15 table of contents:
 
 ```groq
-*[_type == "quarterlyArticle" && volume == 15] | order(startPage asc) {
-  title,
-  authorText,
-  startPage,
-  publishedDate
+*[_type == "quarterlyIssue" && volume == 15] | order(issueNumber asc) {
+  volume,
+  issueNumber,
+  publicationDate,
+  "articles": *[_type == "quarterlyArticle" && issueRef._ref == ^._id] | order(startPage asc) {
+    title,
+    authorText,
+    startPage,
+    endPage
+  }
 }
 ```
 

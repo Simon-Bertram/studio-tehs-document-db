@@ -6,33 +6,39 @@ sidebar_position: 11
 
 ## Goal
 
-Digitize a TEHS Quarterly article, link the historic sites, people, and organizations it mentions, and attach it as a research reference on archive items.
+Digitize a TEHS Quarterly article, link the historic sites, people, organizations, and subject themes it mentions, and attach it as a research reference on archive items.
 
 ## Steps
 
+### Record the issue (if it does not exist yet)
+
+1. Open **The Website → TEHS Quarterly Issues** and create a new document (or find the matching volume and number).
+2. Set volume and issue number (required; the pair must be unique). Add publication date (usually month and year). Optionally add a cover image, issue PDF, or a short table-of-contents note.
+
 ### Digitize the article
 
-1. Open **The Website → TEHS Quarterly Articles** and create a new document (or find an existing one).
-2. In **Publication Details**, set article title (required). Add author name, volume, issue, publication date (text), and start page.
-3. In **Article Content**, transcribe the full article text into the body field.
-4. Insert **Original Print Page Break** blocks where the original print pagination changes (e.g., at "Page 3") so academic citations remain accurate.
-5. In **Notes & References**, add published bibliographic notes, endnotes, and web links that should appear with the article. Type the citation, select the title, and paste a URL to attach a link.
-6. In **Internal → Internal Comments**, add private remarks (QA, source-scan issues, unfinished notes). This field **will not appear on the public site**.
-7. In **Tagged Entities**, link properties, people, and organizations (including businesses) mentioned in the article (e.g., the historic sites listed at the end of a piece).
+3. From that issue, open **Articles in this issue** and create a new article (the Issue reference is filled in). Or open **The Website → TEHS Quarterly Articles** and create a document, then set **Issue**.
+4. In **Publication Details**, set article title (required). Add author name, start page, and optional end page.
+5. In **Article Content**, optionally add a summary/abstract, then transcribe the full article text into the body field.
+6. Insert **Original Print Page Break** blocks where the original print pagination changes (e.g., at "Page 3") so academic citations remain accurate.
+7. In **Notes & References**, add published bibliographic notes, endnotes, and web links that should appear with the article. Type the citation, select the title, and paste a URL to attach a link.
+8. In **Internal → Internal Comments**, add private remarks (QA, source-scan issues, unfinished notes). This field **will not appear on the public site**.
+9. In **Tagged Entities**, add **Subjects** (themes such as Railroads or Genealogy) and link properties, people, and organizations (including businesses) mentioned in the article (e.g., the historic sites listed at the end of a piece).
 
 ### Link from archive items
 
-8. Open the primary source or historical image that cites this article.
-9. In **Research → Research References**, add a reference to the Quarterly article.
-10. Publish both documents as needed.
+10. Open the primary source or historical image that cites this article.
+11. In **Research → Research References**, add a reference to the Quarterly article (not the issue).
+12. Publish both documents as needed.
 
 ## Field notes
 
-- The body field stores the full article text as Portable Text, not just citation metadata.
-- Use page break blocks to preserve original print page numbers for citation without breaking the reading flow.
+- The body field stores the full article text as Portable Text, not just citation metadata. Do not maintain a separate OCR string.
+- Use page break blocks to preserve original print page numbers for citation without breaking the reading flow. Start and end page on the article are for issue indexes; they do not replace page-break blocks.
 - **Notes & References** is published bibliography *on this article*. Do not put private or unfinished notes there—use **Internal Comments** instead. **Internal Comments** is Studio-only and never goes on the public site.
-- Archive **Research References** still link *to* this Quarterly document from a primary source or historical image. That is not the same as this article’s **Notes & References** field.
-- Link properties, people, and organizations in the entity arrays so the website can surface "Further Reading" connections across the archive. **Organizations** accepts both Business and Organization documents.
+- Archive **Research References** still link *to* this Quarterly **article** from a primary source or historical image. That is not the same as this article’s **Notes & References** field, and it is not a link to the parent issue.
+- Link subjects, properties, people, and organizations in the entity arrays so the website can surface "Further Reading" connections across the archive. **Organizations** accepts both Business and Organization documents. **Subjects** reuse the same Subject Category documents as archive items.
+- Author Name is a byline string. Historical Person documents are for people *mentioned* in the article, not for Quarterly writers by default.
 - Multiple archive items can cite the same Quarterly article.
 - On a **Historical Image**, **Research References** is only for these Quarterly article documents. Books, PDFs, and other web links go in **References** (rich text with URL marks). See [Catalog a historical image](./catalog-historical-image.mdx).
 
@@ -40,5 +46,6 @@ Digitize a TEHS Quarterly article, link the historic sites, people, and organiza
 
 - [The Website](../content-model/the-website.mdx)
 - [Create and link people](./create-and-link-people.mdx)
+- [Tag with subject categories](./tag-with-categories.mdx)
 - [Add a primary source](./add-primary-source.mdx)
 - [Catalog a historical image](./catalog-historical-image.mdx)

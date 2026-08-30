@@ -19,6 +19,7 @@ import {person} from './person'
 import {primarySource} from './primarySource'
 import {property} from './property'
 import {quarterlyArticle} from './quarterlyArticle'
+import {quarterlyIssue} from './quarterlyIssue'
 import {researchArticle} from './researchArticle'
 import {township} from './township'
 
@@ -31,6 +32,7 @@ export const schemaTypes = [
 	deed,
 	business,
 	organization,
+	quarterlyIssue,
 	quarterlyArticle,
 	location,
 	historicalImage,

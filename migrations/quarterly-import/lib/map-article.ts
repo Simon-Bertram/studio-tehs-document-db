@@ -3,7 +3,6 @@
  */
 import type {SanityClient} from '@sanity/client'
 
-import {type HistoricalDateValue, parseHistoricalDate} from '../../lib/parse-historical-date'
 import {
 	type BodyBlock,
 	extractArticleContent,
@@ -16,9 +15,7 @@ export interface QuarterlyImportDoc {
 	_type: 'quarterlyArticle'
 	title: string
 	authorText?: string
-	volume: number
-	issue: number
-	publishedDate?: HistoricalDateValue
+	issueRef?: {_type: 'reference'; _ref: string}
 	startPage: number
 	sourceKey: string
 	sourceUrl: string
@@ -62,24 +59,21 @@ async function uploadPendingImages(
 	return out
 }
 
-export function mapSnapshotToDoc(article: SnapshotArticle): QuarterlyImportDoc {
+export function mapSnapshotToDoc(article: SnapshotArticle, issueId?: string): QuarterlyImportDoc {
 	const {contentHtml} = extractArticleContent(article.rawHtml)
 	const body = htmlFragmentToBody(contentHtml, article.sourceUrl)
 
 	const doc: QuarterlyImportDoc = {
 		_type: 'quarterlyArticle',
 		title: article.title,
-		volume: article.volume,
-		issue: article.issue,
 		startPage: article.startPage,
 		sourceKey: article.sourceKey,
 		sourceUrl: article.sourceUrl,
 	}
-	if (article.authorText) doc.authorText = article.authorText
-	if (article.publishedDate) {
-		const parsed = parseHistoricalDate(article.publishedDate)
-		if (parsed) doc.publishedDate = parsed
+	if (issueId) {
+		doc.issueRef = {_type: 'reference', _ref: issueId}
 	}
+	if (article.authorText) doc.authorText = article.authorText
 	if (body.length > 0) doc.body = body
 	return doc
 }

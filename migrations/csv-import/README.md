@@ -17,7 +17,7 @@ Optional env: `SANITY_PROJECT_ID`, `SANITY_DATASET`.
 | `bun run csv-import:images-review-reports` | live batch CSVs + `ledgers/images-manual-links.csv` | — | `reports/images/{skipped,missing-taxonomies,needs-manual-links}.html` |
 | `bun run csv-export:images` | DreamHost MySQL via tunnel (bun/`mysql2`, no `mysql` CLI) | writes `sample-images.csv` (no BLOBs) | — |
 | `bun run mysql-tunnel` | SSH `-L 3307:mysql.the2nomads.site:3306` | — | — |
-| `bun run csv-import:quarterly` | tehistory.org HTML (TOC + articles) | quarterlyArticle | `reports/quarterly/` |
+| `bun run csv-import:quarterly` | tehistory.org HTML (TOC + articles) | quarterlyIssue + quarterlyArticle | `reports/quarterly/` |
 
 ## Documents / primary sources
 
@@ -54,10 +54,18 @@ bun run csv-import:quarterly -- --volume 22 --limit 3  # dry-run first 3 article
 ```
 
 - Snapshots under `migrations/data/quarterly/v{N}/` (HTML + `index.json`; gitignored).
-- Upserts by unique `sourceKey` (URL stem, e.g. `v22n1p003`).
+- Upserts `quarterlyIssue` by `sourceKey` (e.g. `v22n1`), then `quarterlyArticle`
+  by unique article `sourceKey` (URL stem, e.g. `v22n1p003`) with `issueRef`.
 - Body → Portable Text with `pageBreak` for original “Page N” markers; images
   upload on `--live` only.
 - Reports: `migrations/csv-import/reports/quarterly/`.
+
+Existing articles imported before the issue split can be linked with:
+
+```bash
+bun run migrations/split-quarterly-issue-article/run.ts          # dry-run
+bun run migrations/split-quarterly-issue-article/run.ts -- --live
+```
 
 Volume 45+ lean on PDF conversion on the public site — this importer targets
 HTML volumes first.
@@ -228,7 +236,8 @@ Open the three HTML files in a browser after `bun run csv-import:images-review-r
 ```groq
 count(*[_type == "donation" && defined(donationId)])
 count(*[_type == "historicalImage" && defined(archiveId)])
-count(*[_type == "quarterlyArticle" && volume == 22])
+count(*[_type == "quarterlyIssue" && volume == 22])
+count(*[_type == "quarterlyArticle" && issueRef->volume == 22])
 *[_type == "historicalImage" && archiveId == "BKH1"][0]
 *[_type == "quarterlyArticle" && sourceKey == "v22n1p003"][0]
 ```
