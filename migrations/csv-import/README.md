@@ -17,7 +17,7 @@ Optional env: `SANITY_PROJECT_ID`, `SANITY_DATASET`.
 | `bun run csv-import:images-review-reports` | live batch CSVs + `ledgers/images-manual-links.csv` | — | `reports/images/{skipped,missing-taxonomies,needs-manual-links}.html` |
 | `bun run csv-export:images` | DreamHost MySQL via tunnel (bun/`mysql2`, no `mysql` CLI) | writes `sample-images.csv` (no BLOBs) | — |
 | `bun run mysql-tunnel` | SSH `-L 3307:mysql.the2nomads.site:3306` | — | — |
-| `bun run csv-import:quarterly` | tehistory.org HTML (TOC + articles) | quarterlyIssue + quarterlyArticle | `reports/quarterly/` |
+| `bun run csv-import:quarterly` | tehistory.org catalog + HTML | quarterlyIssue + quarterlyArticle | `reports/quarterly/` |
 
 ## Documents / primary sources
 
@@ -41,21 +41,56 @@ Import those articles with `csv-import:quarterly` (or create a TEHS Quarterly
 Article in Studio). The same divert applies to `csv-import:images` when
 `subject` is `TEHS` (any case).
 
-## TEHS Quarterly (HTML)
+## TEHS Quarterly
 
-Source of truth is the [digital archive](https://www.tehistory.org/hqda/qtoc2.html):
+Two phases: **catalog** (issues, then article stubs), then optional **HTML body** import
+for volumes that have per-article HTML. Dry-run is the default; `--live` writes.
+Do not run `--live` until the dry-run reports look right.
+
+### Phase 1–2: issues then stubs
+
+Sources (snapshotted under `migrations/data/quarterly/`, gitignored):
+
+- [qtoc1.html](https://www.tehistory.org/qtoc1.html) — Vol. 41–58 covers, seasonal
+  headings, titles/authors (no page numbers, no article HTML)
+- hqda volume TOCs (`/toc/qv01toc.html` … `qv58toc.html`) — issue headings, start
+  pages, article URLs, covers
+- [`HQ_Index_V1-52.pdf`](../data/HQ_Index_V1-52.pdf) — author/title index for Vol. 1–52
+
+```bash
+bun run csv-import:quarterly -- --extract                 # snapshot sources only
+bun run csv-import:quarterly -- --issues                 # dry-run issue upsert
+bun run csv-import:quarterly -- --issues --limit 5
+bun run csv-import:quarterly -- --article-stubs            # dry-run stubs (upserts issues first)
+bun run csv-import:quarterly -- --issues --live           # write issues
+bun run csv-import:quarterly -- --article-stubs --live     # write stubs
+```
+
+- Upserts `quarterlyIssue` by `sourceKey` (`v22n1`, or `v44n1+2` for a double issue).
+  Season and **Combined / double issue** come from headings. Cover images upload on
+  `--live` only. Re-runs do not overwrite editor-set `pdfAsset`, cover, date, season,
+  or `tocNotes`.
+- Article stubs: title, `authorText`, pages, `issueRef`. `sourceKey` is the HTML stem
+  (`v22n1p003`) when a URL exists, otherwise `v58n1/${slug(title)}`. No `body` in this
+  pass. PDF rows that do not match a stub or issue go to `unmatched-index.csv`.
+- Reports: `migrations/csv-import/reports/quarterly/` (`issues-preview.ndjson`,
+  `stubs-preview.ndjson`, `unmatched-index.csv`).
+
+### HTML article bodies (later pass)
+
+Source of truth for Portable Text is the [digital archive](https://www.tehistory.org/hqda/qtoc2.html):
 volume TOC pages (e.g. [qv22toc.html](https://www.tehistory.org/hqda/toc/qv22toc.html))
 and per-article HTML. Default pilot volume is **22**.
 
 ```bash
-bun run csv-import:quarterly -- --limit 5              # dry-run Vol 22
-bun run csv-import:quarterly -- --volume 22 --live     # write Vol 22
+bun run csv-import:quarterly -- --limit 5              # dry-run Vol 22 bodies
+bun run csv-import:quarterly -- --volume 22 --live     # write Vol 22 bodies
 bun run csv-import:quarterly -- --volume 22 --limit 3  # dry-run first 3 articles
 ```
 
 - Snapshots under `migrations/data/quarterly/v{N}/` (HTML + `index.json`; gitignored).
-- Upserts `quarterlyIssue` by `sourceKey` (e.g. `v22n1`), then `quarterlyArticle`
-  by unique article `sourceKey` (URL stem, e.g. `v22n1p003`) with `issueRef`.
+- Upserts `quarterlyIssue` by `sourceKey`, then `quarterlyArticle` by unique article
+  `sourceKey` (URL stem, e.g. `v22n1p003`) with `issueRef`.
 - Body → Portable Text with `pageBreak` for original “Page N” markers; images
   upload on `--live` only.
 - Reports: `migrations/csv-import/reports/quarterly/`.
@@ -67,8 +102,8 @@ bun run migrations/split-quarterly-issue-article/run.ts          # dry-run
 bun run migrations/split-quarterly-issue-article/run.ts -- --live
 ```
 
-Volume 45+ lean on PDF conversion on the public site — this importer targets
-HTML volumes first.
+Volume 45+ lean on PDF conversion on the public site — the HTML body importer
+targets HTML volumes; catalog stubs still cover later issues from qtoc1.
 
 ## DreamHost MySQL MCP (read-only)
 

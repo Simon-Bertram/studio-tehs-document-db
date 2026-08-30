@@ -1,24 +1,25 @@
 CSV Import Summary
 ==================
-Total rows:          5
-Imported:            5
+Total rows:          226
+Imported:            226
 Skipped / failed:    0
 Needs manual links:  0
 Missing keywords:    0
 
 Type breakdown:
-  quarterlyArticle: 5
+  quarterlyIssue: 226
 
 Report files:
   /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/quarterly/imported.csv
   /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/quarterly/skipped.csv
   /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/quarterly/diverted-quarterly.csv
   /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/quarterly/needs-manual-links.csv
+  /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/quarterly/needs-manual-links.md
   /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/quarterly/missing-taxonomies.csv
 
 How to identify records:
   imported            → sourceKey = clipId; schemaType is the Studio document type
   skipped             → no Studio doc; use clipId + reason in skipped.csv
   diverted-quarterly  → keyword TEHS; import as quarterlyArticle, not archive types
-  needs_manual_links  → doc exists; open by sourceKey and fix links from unmappedKeywords
+  needs_manual_links  → needs-manual-links.md (grouped) or the CSV (one row per image)
   missing-taxonomies  → create migrationKey on the right entity type, then re-run import

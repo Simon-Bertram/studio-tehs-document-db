@@ -4,20 +4,21 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-import {tocPathForVolume} from './cli-config'
-import {parseTocHtml, type TocArticle} from './parse-toc'
+import {tocFileName, tocPathForVolume} from './cli-config'
+import {fetchText as fetchTextResult} from './fetch-text'
+import {parseTocHtml, type TocLinkedArticle} from './parse-toc'
 
-export interface SnapshotArticle extends TocArticle {
+export interface SnapshotArticle extends TocLinkedArticle {
 	htmlPath: string
 	rawHtml: string
 }
 
 async function fetchText(url: string): Promise<string> {
-	const res = await fetch(url)
-	if (!res.ok) {
-		throw new Error(`Failed to fetch ${url}: ${res.status} ${res.statusText}`)
+	const fetched = await fetchTextResult(url)
+	if (!fetched.ok) {
+		throw new Error(`Failed to fetch ${url}: ${fetched.status}`)
 	}
-	return res.text()
+	return fetched.text
 }
 
 /**
@@ -35,7 +36,7 @@ export async function loadVolumeSnapshot(options: {
 
 	const tocRel = tocPathForVolume(options.volume)
 	const tocUrl = `${options.baseUrl}${tocRel}`
-	const tocDiskPath = path.join(volumeDir, `qv${options.volume}toc.html`)
+	const tocDiskPath = path.join(volumeDir, tocFileName(options.volume))
 	const indexPath = path.join(volumeDir, 'index.json')
 
 	let tocHtml: string

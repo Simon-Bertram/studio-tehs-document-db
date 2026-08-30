@@ -28,7 +28,8 @@ export async function runQuarterlyImport(
 	config: QuarterlyImportConfig,
 	client: SanityClient,
 ): Promise<void> {
-	const {dryRun, volume, rowLimit, reportsDir, snapshotDir, baseUrl} = config
+	const {dryRun, rowLimit, reportsDir, snapshotDir, baseUrl} = config
+	const volume = config.volume ?? 22
 	const mode = dryRun ? 'DRY RUN' : 'LIVE'
 
 	console.log(`--- TEHS Quarterly HTML Import (${mode}) ---`)
@@ -65,7 +66,9 @@ export async function runQuarterlyImport(
 						_type: 'quarterlyIssue',
 						volume: issue.volume,
 						issueNumber: issue.issueNumber,
+						combinedIssue: issue.combinedIssue ?? false,
 						sourceKey: issue.sourceKey,
+						...(issue.issueNumberEnd != null ? {issueNumberEnd: issue.issueNumberEnd} : {}),
 						...(issue.publicationDate ? {publicationDate: issue.publicationDate} : {}),
 					},
 					`_type == "quarterlyIssue" && sourceKey == $sourceKey`,
@@ -86,7 +89,11 @@ export async function runQuarterlyImport(
 
 	const tasks = articles.map((article) =>
 		limit(async () => {
-			const issueKey = quarterlyIssueSourceKey(article.volume, article.issue)
+			const issueKey = quarterlyIssueSourceKey(
+				article.volume,
+				article.issue,
+				article.issueNumberEnd,
+			)
 			const issueId = issueIdBySourceKey.get(issueKey)
 			const mapped = mapSnapshotToDoc(article, issueId)
 			const title = mapped.title

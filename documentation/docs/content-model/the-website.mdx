@@ -34,12 +34,23 @@ A **TEHS Quarterly Issue** is one printed number of the journal (volume and issu
 Key fields:
 
 - **Volume** and **Issue / Number** — unique together (e.g. Volume 22, Number 1)
-- **Publication Date** — structured historical date, usually month and year
-- **Source Key** — optional archive stem such as `v22n1` (set by the HTML import)
+- **Combined / double issue** — check only when one physical magazine covers two numbers (e.g. Vol. 44, Numbers 1 and 2). **Also numbered as** appears when the checkbox is on; it is the higher number, not a page range.
+- **Season** — Spring / Summer / Autumn / Winter when the issue is dated by season (Fall is stored as Autumn). Do not invent a month from the season.
+- **Publication Date** — structured historical date: month and year when named (January 1984), year only when dated by season
+- **Source Key** — optional archive stem such as `v22n1` or `v44n1+2` (set by the catalog import)
 - **Cover Image** and **Issue PDF** — optional; HTML-imported volumes often have neither
-- **Table of Contents Notes** — optional editorial blurb. Do not store a duplicate TOC; the website generates the contents list from articles in this issue.
+- **Table of Contents Notes** — optional editorial blurb (errata, supplemental web notes). Do not store a duplicate TOC; the website generates the contents list from articles in this issue.
 
 Desk path: **The Website → TEHS Quarterly Issues**. Open an issue to edit it or to list **Articles in this issue** (ordered by start page).
+
+Catalog import (issues first, then article stubs without bodies):
+
+```bash
+bun run csv-import:quarterly -- --issues
+bun run csv-import:quarterly -- --article-stubs
+```
+
+HTML article bodies are a later pass: `bun run csv-import:quarterly -- --volume 22`.
 
 ## TEHS Quarterly Articles
 

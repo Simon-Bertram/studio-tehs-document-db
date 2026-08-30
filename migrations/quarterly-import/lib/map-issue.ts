@@ -8,6 +8,8 @@ export interface QuarterlyIssueImportDoc {
 	_type: 'quarterlyIssue'
 	volume: number
 	issueNumber: number
+	issueNumberEnd?: number
+	combinedIssue?: boolean
 	sourceKey: string
 	publicationDate?: HistoricalDateValue
 }
@@ -15,13 +17,16 @@ export interface QuarterlyIssueImportDoc {
 export function mapSnapshotToIssue(article: {
 	volume: number
 	issue: number
+	issueNumberEnd?: number
 	publishedDate?: string
 }): QuarterlyIssueImportDoc {
 	const doc: QuarterlyIssueImportDoc = {
 		_type: 'quarterlyIssue',
 		volume: article.volume,
 		issueNumber: article.issue,
-		sourceKey: quarterlyIssueSourceKey(article.volume, article.issue),
+		issueNumberEnd: article.issueNumberEnd,
+		combinedIssue: article.issueNumberEnd != null && article.issueNumberEnd !== article.issue,
+		sourceKey: quarterlyIssueSourceKey(article.volume, article.issue, article.issueNumberEnd),
 	}
 	if (article.publishedDate) {
 		const parsed = parseHistoricalDate(article.publishedDate)
@@ -34,11 +39,16 @@ export function mapSnapshotToIssue(article: {
  * One issue document per unique volume + number, in first-seen order.
  */
 export function uniqueIssuesFromArticles(
-	articles: Array<{volume: number; issue: number; publishedDate?: string}>,
+	articles: Array<{
+		volume: number
+		issue: number
+		issueNumberEnd?: number
+		publishedDate?: string
+	}>,
 ): QuarterlyIssueImportDoc[] {
 	const byKey = new Map<string, QuarterlyIssueImportDoc>()
 	for (const article of articles) {
-		const key = quarterlyIssueSourceKey(article.volume, article.issue)
+		const key = quarterlyIssueSourceKey(article.volume, article.issue, article.issueNumberEnd)
 		const existing = byKey.get(key)
 		if (!existing) {
 			byKey.set(key, mapSnapshotToIssue(article))

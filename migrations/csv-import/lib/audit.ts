@@ -9,6 +9,8 @@ export type SkipReason =
 	| 'asset_error'
 	| 'missing_image_location'
 	| 'private_image'
+	| 'unmatched_issue'
+	| 'boilerplate'
 export type ImportAction = 'dry_run' | 'created' | 'patched'
 
 export interface ImportedRecord {

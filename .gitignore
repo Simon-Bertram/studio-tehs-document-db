@@ -39,6 +39,20 @@ yarn.lock
 
 # Environment variables
 .env
+.env.*
+!.env.example
+
+# Quarterly catalog snapshots (fetched)
+migrations/data/quarterly/qtoc1.html
+migrations/data/quarterly/hq-index.txt
+migrations/data/quarterly/hq-index.json
+migrations/data/quarterly/toc-404s.json
+migrations/data/quarterly/v[0-9]*/
+
+# Quarterly catalog dry-run output
+migrations/csv-import/reports/quarterly/*.ndjson
+migrations/csv-import/reports/quarterly/unmatched-index.csv
+
 
 # Local Sanity dataset exports (too large for GitHub)
 *.tar.gz
