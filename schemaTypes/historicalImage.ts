@@ -189,6 +189,8 @@ export const historicalImage = defineType({
 	initialValue: incomingReferenceArrayInitialValueBySource({
 		person: 'people',
 		category: 'subjects',
+		business: 'organizations',
+		organization: 'organizations',
 	}),
 	orderings: [
 		{

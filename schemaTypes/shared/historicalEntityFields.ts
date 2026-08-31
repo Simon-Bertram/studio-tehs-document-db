@@ -1,7 +1,9 @@
 import {defineArrayMember, defineField} from 'sanity'
+import {defineIncomingReferenceDecoration} from 'sanity/structure'
 
 import {formatHistoricalDateRange} from '../lib/formatHistoricalDate'
 import {historicalDateFromPreview, historicalDatePreviewSelect} from '../lib/historicalDatePreview'
+import {appendIncomingReference} from '../lib/incoming-reference-array'
 import {isUniqueStringField} from '../lib/isUniqueStringField'
 import {associatedPropertiesField} from './locationFields'
 
@@ -90,6 +92,20 @@ export function historicalEntityFields(options: {
 			],
 		}),
 	]
+}
+
+/**
+ * Incoming historical images that tag this business or organization via
+ * `historicalImage.organizations`.
+ */
+export function historicalEntityIncomingImagesDecoration(entityLabel: 'business' | 'organization') {
+	return defineIncomingReferenceDecoration({
+		name: 'historicalImages',
+		title: 'Historical Images',
+		description: `Photographs this ${entityLabel} is tagged in.`,
+		types: [{type: 'historicalImage'}],
+		onLinkDocument: appendIncomingReference('organizations'),
+	})
 }
 
 export const historicalEntityPreviewSelect = {

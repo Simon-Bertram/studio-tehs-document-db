@@ -2,7 +2,8 @@ import {nanoid} from 'nanoid'
 import type {InitialValueResolver, SanityDocument} from 'sanity'
 import {type IncomingReferencesOptions, isIncomingReferenceCreation} from 'sanity/structure'
 
-type IncomingReferenceArrayField = 'familyLines' | 'donationCategories' | 'people' | 'subjects'
+type IncomingReferenceArrayField =
+	'familyLines' | 'donationCategories' | 'people' | 'subjects' | 'organizations'
 
 type IncomingReferenceField = 'county' | 'issueRef'
 
@@ -22,8 +23,8 @@ function asReferenceArray(value: unknown): ArrayReferenceItem[] {
 
 /**
  * Append an incoming reference onto an array field when linking from a
- * family, category, or person document. Skips the item if that `_ref` is
- * already present.
+ * family, category, person, business, or organization document. Skips the
+ * item if that `_ref` is already present.
  */
 export function appendIncomingReference(
 	fieldName: IncomingReferenceArrayField,
