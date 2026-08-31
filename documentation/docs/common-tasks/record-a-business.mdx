@@ -28,13 +28,13 @@ Capture a historical commercial or industrial business—mill operators, stores,
 3. Optionally set **Migration Mapping Key** to the legacy CSV keyword. This field is visible during migration so you can fill keys; hide it after cutover.
 4. Optionally add **Description** and **Active From / Active To** (often year-only).
 5. Link **Owners / Operators** to Historical Person documents.
-6. Under **Associated Properties / Sites**, reference one or more **Properties** (not villages—put geography on the property). This is the single source of truth for business↔site links.
+6. Under **Place**, set **Associated Properties / Sites** to one or more **Properties** (not villages—put geography and the map pin on the property). This is the single source of truth for business↔site links. The business itself has no geopoint.
 7. Publish when ready.
 
 ## Field notes
 
 - Create person and property entities first if they do not already exist.
-- Places of business are property references only.
+- Places of business are property references only. There is no coordinates field on the business.
 - **Migration Mapping Key** maps CSV keywords onto this business during import. Entity keywords belong here, not on a Subject Category.
 
 ## Related

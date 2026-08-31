@@ -70,6 +70,7 @@ export async function runQuarterlyImport(
 						sourceKey: issue.sourceKey,
 						...(issue.issueNumberEnd != null ? {issueNumberEnd: issue.issueNumberEnd} : {}),
 						...(issue.publicationDate ? {publicationDate: issue.publicationDate} : {}),
+						...(issue.yearSearch ? {yearSearch: issue.yearSearch} : {}),
 					},
 					`_type == "quarterlyIssue" && sourceKey == $sourceKey`,
 					{sourceKey: issue.sourceKey},

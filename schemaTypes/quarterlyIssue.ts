@@ -5,7 +5,7 @@ import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {defineField, defineType} from 'sanity'
 
 import {defineCountedIncomingReferenceDecoration} from './components/CountedIncomingReferences'
-import {DocumentWithDescription} from './components/DocumentWithDescription'
+import {QuarterlyIssueInput} from './components/QuarterlyIssueInput'
 import {
 	formatHistoricalDateFromPreview,
 	historicalDatePreviewSelect,
@@ -29,7 +29,7 @@ export const quarterlyIssue = defineType({
 	description:
 		'One printed TEHS Quarterly issue (volume and number). Articles in this issue are separate documents that reference it.',
 	components: {
-		input: DocumentWithDescription,
+		input: QuarterlyIssueInput,
 	},
 	groups: [
 		{name: 'publication', title: 'Publication Details', icon: InfoOutlineIcon, default: true},
@@ -103,6 +103,17 @@ export const quarterlyIssue = defineType({
 			type: 'historicalDate',
 			group: 'publication',
 			description: 'Usually month and year (e.g. January 1984). Year only when dated by season.',
+		}),
+		defineField({
+			name: 'yearSearch',
+			title: 'Year Search',
+			type: 'string',
+			hidden: true,
+			group: 'publication',
+			description: 'Derived tokens for Studio search (full year plus 3-digit prefix).',
+			options: {
+				search: {weight: 10},
+			},
 		}),
 		defineField({
 			name: 'sourceKey',

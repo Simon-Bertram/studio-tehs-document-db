@@ -3,6 +3,8 @@
  */
 import type {SanityClient} from '@sanity/client'
 
+import {yearSearchTokens} from '../../../schemaTypes/lib/yearSearchTokens'
+import type {HistoricalDateValue} from '../../lib/parse-historical-date'
 import {FETCH_HEADERS} from './fetch-text'
 
 interface IssueFields {
@@ -13,6 +15,7 @@ interface IssueFields {
 	issueNumberEnd?: number
 	season?: string
 	publicationDate?: unknown
+	yearSearch?: string
 	sourceKey: string
 	tocNotes?: string
 	coverUrl?: string
@@ -65,6 +68,9 @@ export async function upsertIssueSparse(
 			? await uploadCover(client, doc.coverUrl)
 			: undefined
 
+	const date = (doc.publicationDate ?? existing?.publicationDate) as HistoricalDateValue | undefined
+	const yearSearch = doc.yearSearch ?? yearSearchTokens(date)
+
 	if (!existing) {
 		const created = await client.create({
 			_type: 'quarterlyIssue',
@@ -74,6 +80,7 @@ export async function upsertIssueSparse(
 			...(doc.issueNumberEnd != null ? {issueNumberEnd: doc.issueNumberEnd} : {}),
 			...(doc.season ? {season: doc.season} : {}),
 			...(doc.publicationDate ? {publicationDate: doc.publicationDate} : {}),
+			...(yearSearch ? {yearSearch} : {}),
 			sourceKey: doc.sourceKey,
 			...(doc.tocNotes ? {tocNotes: doc.tocNotes} : {}),
 			...(coverImage ? {coverImage} : {}),
@@ -92,7 +99,13 @@ export async function upsertIssueSparse(
 	if (!existing.publicationDate && doc.publicationDate) patch.publicationDate = doc.publicationDate
 	if (!existing.tocNotes && doc.tocNotes) patch.tocNotes = doc.tocNotes
 	if (coverImage) patch.coverImage = coverImage
+	if (yearSearch) patch.yearSearch = yearSearch
 
-	await client.patch(existing._id).set(patch).commit()
+	const patchBuilder = client.patch(existing._id).set(patch)
+	if (!yearSearch) {
+		await patchBuilder.unset(['yearSearch']).commit()
+	} else {
+		await patchBuilder.commit()
+	}
 	return {action: 'patched', id: existing._id}
 }

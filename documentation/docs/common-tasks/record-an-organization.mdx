@@ -28,13 +28,13 @@ Capture a historical civic, community, or institutional group—fire companies, 
 3. Optionally set **Migration Mapping Key** to the legacy CSV keyword (e.g. `Lincoln` for the Lincoln Institution). This field is visible during migration so you can fill keys; hide it after cutover.
 4. Optionally add **Description** and **Active From / Active To** (often year-only).
 5. Link **Leaders / Associated People** to Historical Person documents.
-6. Under **Associated Properties / Sites**, reference one or more **Properties** (not villages—put geography on the property). This is the single source of truth for organization↔site links.
+6. Under **Place**, set **Associated Properties / Sites** to one or more **Properties** (not villages—put geography and the map pin on the property). This is the single source of truth for organization↔site links. The organization itself has no geopoint.
 7. Publish when ready.
 
 ## Field notes
 
 - Create person and property entities first if they do not already exist.
-- Places of worship or civic activity are property references only.
+- Places of worship or civic activity are property references only. There is no coordinates field on the organization.
 - There is no civic vs institutional subtype—all of these records live in the single Organizations list.
 - **Migration Mapping Key** maps CSV keywords onto this organization during import. Entity keywords like `Lincoln` belong here, not on a Subject Category.
 

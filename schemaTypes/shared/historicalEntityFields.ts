@@ -76,13 +76,7 @@ export function historicalEntityFields(options: {
 			hidden: ({value}) => value === undefined,
 			initialValue: undefined,
 		}),
-		defineField({
-			name: 'coordinates',
-			title: 'Coordinates',
-			type: 'geopoint',
-			group: 'place',
-			description: 'Pinpoint the exact location. (Powered by @sanity/google-maps-input)',
-		}),
+		associatedPropertiesField('place'),
 		defineField({
 			name: 'owners',
 			title: options.ownersTitle,
@@ -95,7 +89,6 @@ export function historicalEntityFields(options: {
 				}),
 			],
 		}),
-		associatedPropertiesField('relations'),
 	]
 }
 

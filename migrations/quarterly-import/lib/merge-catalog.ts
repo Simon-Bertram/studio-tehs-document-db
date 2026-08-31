@@ -1,6 +1,7 @@
 /**
  * Union issue records and merge article stubs from volume TOC, qtoc1, and PDF.
  */
+import {yearSearchTokens} from '../../../schemaTypes/lib/yearSearchTokens'
 import {type HistoricalDateValue} from '../../lib/parse-historical-date'
 import {type QuarterlySeason} from '../../lib/parse-issue-heading'
 import {quarterlyIssueSourceKey} from '../../lib/quarterly-issue-source-key'
@@ -347,10 +348,12 @@ export function catalogIssueDoc(issue: CatalogIssue): {
 	issueNumberEnd?: number
 	season?: QuarterlySeason
 	publicationDate?: HistoricalDateValue
+	yearSearch?: string
 	sourceKey: string
 	tocNotes?: string
 	coverUrl?: string
 } {
+	const yearSearch = yearSearchTokens(issue.publicationDate)
 	return {
 		_type: 'quarterlyIssue',
 		volume: issue.volume,
@@ -359,6 +362,7 @@ export function catalogIssueDoc(issue: CatalogIssue): {
 		issueNumberEnd: issue.issueNumberEnd,
 		season: issue.season,
 		publicationDate: issue.publicationDate,
+		yearSearch,
 		sourceKey: issue.sourceKey,
 		tocNotes: issue.tocNotes,
 		coverUrl: issue.coverUrl,

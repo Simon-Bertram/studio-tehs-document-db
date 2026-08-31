@@ -1,6 +1,7 @@
 /**
  * Map TOC issue metadata into a quarterlyIssue document shape.
  */
+import {yearSearchTokens} from '../../../schemaTypes/lib/yearSearchTokens'
 import {type HistoricalDateValue, parseHistoricalDate} from '../../lib/parse-historical-date'
 import {quarterlyIssueSourceKey} from '../../lib/quarterly-issue-source-key'
 
@@ -12,6 +13,7 @@ export interface QuarterlyIssueImportDoc {
 	combinedIssue?: boolean
 	sourceKey: string
 	publicationDate?: HistoricalDateValue
+	yearSearch?: string
 }
 
 export function mapSnapshotToIssue(article: {
@@ -30,7 +32,11 @@ export function mapSnapshotToIssue(article: {
 	}
 	if (article.publishedDate) {
 		const parsed = parseHistoricalDate(article.publishedDate)
-		if (parsed) doc.publicationDate = parsed
+		if (parsed) {
+			doc.publicationDate = parsed
+			const yearSearch = yearSearchTokens(parsed)
+			if (yearSearch) doc.yearSearch = yearSearch
+		}
 	}
 	return doc
 }

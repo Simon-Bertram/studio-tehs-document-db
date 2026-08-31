@@ -45,6 +45,7 @@ export function locationReferenceFields(options: {
 
 /**
  * Business / organization → property sites (`associatedProperties`).
+ * Occupancy is the place for these actor types; map pins live on the property.
  */
 export function associatedPropertiesField(group?: string) {
 	return defineField({
@@ -59,6 +60,6 @@ export function associatedPropertiesField(group?: string) {
 			}),
 		],
 		description:
-			'Canonical link from this record to the properties it occupied. Related businesses and organizations are found from a property via this field (not stored on the property).',
+			'Canonical link from this record to the properties it occupied. Map pins live on the property, not on this record. Related businesses and organizations are found from a property via this field (not stored on the property).',
 	})
 }
