@@ -4,6 +4,7 @@ import {PinIcon} from '@sanity/icons/Pin'
 import {SearchIcon} from '@sanity/icons/Search'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
+import {articleIncomingDecorations} from './shared/articleIncomingDecorations'
 import {locationReferenceFields} from './shared/locationFields'
 
 export const property = defineType({
@@ -130,6 +131,7 @@ export const property = defineType({
 				'Ordered chain of title for this tract—link Deed / Land Instrument documents in chronological (or research) order.',
 		}),
 	],
+	renderMembers: (members) => [...members, ...articleIncomingDecorations('propertiesMentioned')],
 	orderings: [
 		{
 			title: 'Name, A–Z',

@@ -6,7 +6,7 @@ import {defineType} from 'sanity'
 
 import {
 	historicalEntityFields,
-	historicalEntityIncomingImagesDecoration,
+	historicalEntityIncomingDecorations,
 	historicalEntityPreviewPrepare,
 	historicalEntityPreviewSelect,
 } from './shared/historicalEntityFields'
@@ -28,7 +28,7 @@ export const business = defineType({
 		contextDescription: 'Historical context for this commercial or industrial business.',
 		ownersTitle: 'Owners / Operators',
 	}),
-	renderMembers: (members) => [...members, historicalEntityIncomingImagesDecoration('business')],
+	renderMembers: (members) => [...members, ...historicalEntityIncomingDecorations('business')],
 	orderings: [
 		{
 			title: 'Name, A–Z',

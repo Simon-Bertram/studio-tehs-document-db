@@ -6,12 +6,14 @@ import {PinIcon} from '@sanity/icons/Pin'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
 import {DocumentWithDescription} from './components/DocumentWithDescription'
+import {incomingReferenceArrayInitialValueBySource} from './lib/incoming-reference-array'
 import {archiveIdField} from './shared/archiveIdField'
 import {internalCommentsField} from './shared/internalCommentsField'
 import {notesAndReferencesField} from './shared/notesAndReferencesField'
 import {organizationsField} from './shared/organizationsField'
 import {peopleMentionedField} from './shared/peopleMentionedField'
 import {portableTextImageMember} from './shared/portableTextImageFields'
+import {propertiesMentionedField} from './shared/propertiesMentionedField'
 
 export const researchArticle = defineType({
 	name: 'researchArticle',
@@ -63,6 +65,7 @@ export const researchArticle = defineType({
 			],
 		}),
 		peopleMentionedField('context'),
+		propertiesMentionedField('context'),
 		organizationsField('context'),
 		defineField({
 			name: 'body',
@@ -80,6 +83,12 @@ export const researchArticle = defineType({
 		notesAndReferencesField('content'),
 		internalCommentsField('internal'),
 	],
+	initialValue: incomingReferenceArrayInitialValueBySource({
+		business: 'organizations',
+		organization: 'organizations',
+		person: 'peopleMentioned',
+		property: 'propertiesMentioned',
+	}),
 	orderings: [
 		{
 			title: 'Archive ID',

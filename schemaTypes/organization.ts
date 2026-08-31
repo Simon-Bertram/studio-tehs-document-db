@@ -6,7 +6,7 @@ import {defineType} from 'sanity'
 
 import {
 	historicalEntityFields,
-	historicalEntityIncomingImagesDecoration,
+	historicalEntityIncomingDecorations,
 	historicalEntityPreviewPrepare,
 	historicalEntityPreviewSelect,
 } from './shared/historicalEntityFields'
@@ -28,10 +28,7 @@ export const organization = defineType({
 		contextDescription: 'Historical context for this civic, community, or institutional group.',
 		ownersTitle: 'Leaders / Associated People',
 	}),
-	renderMembers: (members) => [
-		...members,
-		historicalEntityIncomingImagesDecoration('organization'),
-	],
+	renderMembers: (members) => [...members, ...historicalEntityIncomingDecorations('organization')],
 	orderings: [
 		{
 			title: 'Name, A–Z',

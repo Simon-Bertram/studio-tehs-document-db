@@ -3,16 +3,17 @@ import {BookIcon} from '@sanity/icons/Book'
 import {CommentIcon} from '@sanity/icons/Comment'
 import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {TagIcon} from '@sanity/icons/Tag'
-import {nanoid} from 'nanoid'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 import {isIncomingReferenceCreation} from 'sanity/structure'
 
+import {incomingReferenceArrayInitialValueBySource} from './lib/incoming-reference-array'
 import {isUniqueStringField} from './lib/isUniqueStringField'
 import {internalCommentsField} from './shared/internalCommentsField'
 import {notesAndReferencesField} from './shared/notesAndReferencesField'
 import {organizationsField} from './shared/organizationsField'
 import {peopleMentionedField} from './shared/peopleMentionedField'
 import {portableTextImageMember} from './shared/portableTextImageFields'
+import {propertiesMentionedField} from './shared/propertiesMentionedField'
 import {subjectsField} from './shared/subjectsField'
 
 export const quarterlyArticle = defineType({
@@ -160,33 +161,22 @@ export const quarterlyArticle = defineType({
 		notesAndReferencesField('content'),
 		internalCommentsField('internal'),
 		subjectsField('entities'),
-		defineField({
-			name: 'propertiesMentioned',
-			title: 'Properties / Historic Sites Mentioned',
-			type: 'array',
-			group: 'entities',
-			of: [
-				defineArrayMember({
-					type: 'reference',
-					to: [{type: 'property'}],
-				}),
-			],
-			description: 'Link historic sites mentioned in the article for cross-site discovery.',
-		}),
+		propertiesMentionedField('entities'),
 		peopleMentionedField('entities'),
 		organizationsField('entities'),
 	],
-	initialValue: (params) => {
+	initialValue: (params, context) => {
 		if (!isIncomingReferenceCreation(params)) return {}
-		if (params.from.type === 'category') {
-			return {
-				subjects: [{...params.reference, _key: nanoid()}],
-			}
-		}
 		if (params.from.type === 'quarterlyIssue') {
 			return {issueRef: params.reference}
 		}
-		return {}
+		return incomingReferenceArrayInitialValueBySource({
+			category: 'subjects',
+			business: 'organizations',
+			organization: 'organizations',
+			person: 'peopleMentioned',
+			property: 'propertiesMentioned',
+		})(params, context)
 	},
 	orderings: [
 		{

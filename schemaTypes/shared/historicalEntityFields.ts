@@ -5,6 +5,7 @@ import {formatHistoricalDateRange} from '../lib/formatHistoricalDate'
 import {historicalDateFromPreview, historicalDatePreviewSelect} from '../lib/historicalDatePreview'
 import {appendIncomingReference} from '../lib/incoming-reference-array'
 import {isUniqueStringField} from '../lib/isUniqueStringField'
+import {articleIncomingDecorations} from './articleIncomingDecorations'
 import {associatedPropertiesField} from './locationFields'
 
 export const HISTORICAL_ENTITY_TYPES = ['business', 'organization'] as const
@@ -106,6 +107,17 @@ export function historicalEntityIncomingImagesDecoration(entityLabel: 'business'
 		types: [{type: 'historicalImage'}],
 		onLinkDocument: appendIncomingReference('organizations'),
 	})
+}
+
+/**
+ * Incoming historical images plus quarterly and research articles that tag
+ * this business or organization.
+ */
+export function historicalEntityIncomingDecorations(entityLabel: 'business' | 'organization') {
+	return [
+		historicalEntityIncomingImagesDecoration(entityLabel),
+		...articleIncomingDecorations('organizations'),
+	]
 }
 
 export const historicalEntityPreviewSelect = {

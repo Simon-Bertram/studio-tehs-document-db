@@ -15,6 +15,7 @@ import {
 	incomingReferenceArrayInitialValue,
 } from './lib/incoming-reference-array'
 import {warnDuplicatePersonName} from './lib/warnDuplicatePersonName'
+import {articleIncomingDecorations} from './shared/articleIncomingDecorations'
 
 export const person = defineType({
 	name: 'person',
@@ -135,6 +136,7 @@ export const person = defineType({
 			types: [{type: 'historicalImage'}],
 			onLinkDocument: appendIncomingReference('people'),
 		}),
+		...articleIncomingDecorations('peopleMentioned'),
 	],
 	orderings: [
 		{
