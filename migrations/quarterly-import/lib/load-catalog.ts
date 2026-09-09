@@ -11,7 +11,7 @@ import {
 	HQDA_BASE_URL,
 	readHqIndexRows,
 } from './extract-catalog'
-import {parseHqIndexText, type HqIndexRow} from './parse-hq-index'
+import {type HqIndexRow, parseHqIndexText} from './parse-hq-index'
 import {
 	parseQtoc1,
 	QTOC1_BASE_URL,

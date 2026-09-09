@@ -11,8 +11,8 @@ export type ArticleIncomingReferenceField = Extract<
 >
 
 /**
- * Incoming TEHS Quarterly and research articles that tag this entity via the
- * given array-of-references field on the article.
+ * Incoming TEHS Quarterly articles, Then & Now features, and research articles
+ * that tag this entity via the given array-of-references field on the article.
  */
 export function articleIncomingDecorations(fieldName: ArticleIncomingReferenceField) {
 	return [
@@ -21,6 +21,13 @@ export function articleIncomingDecorations(fieldName: ArticleIncomingReferenceFi
 			title: 'TEHS Quarterly Articles',
 			description: 'TEHS Quarterly articles that tag this record.',
 			types: [{type: 'quarterlyArticle'}],
+			onLinkDocument: appendIncomingReference(fieldName),
+		}),
+		defineIncomingReferenceDecoration({
+			name: 'thenAndNow',
+			title: 'Then & Now',
+			description: 'Then & Now features that tag this record.',
+			types: [{type: 'thenAndNow'}],
 			onLinkDocument: appendIncomingReference(fieldName),
 		}),
 		defineIncomingReferenceDecoration({

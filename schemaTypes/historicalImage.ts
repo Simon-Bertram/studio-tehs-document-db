@@ -1,5 +1,6 @@
 import {BlockElementIcon} from '@sanity/icons/BlockElement'
 import {ClipboardIcon} from '@sanity/icons/Clipboard'
+import {EarthGlobeIcon} from '@sanity/icons/EarthGlobe'
 import {ImageIcon} from '@sanity/icons/Image'
 import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {LinkIcon} from '@sanity/icons/Link'
@@ -14,6 +15,7 @@ import {
 import {incomingReferenceArrayInitialValueBySource} from './lib/incoming-reference-array'
 import {archiveIdField} from './shared/archiveIdField'
 import {citationsField, HISTORICAL_IMAGE_CITATIONS_DESCRIPTION} from './shared/citationsField'
+import {featuredOnSiteFields} from './shared/featuredOnSiteFields'
 import {locationReferenceFields} from './shared/locationFields'
 import {organizationsField} from './shared/organizationsField'
 import {subjectsField} from './shared/subjectsField'
@@ -29,6 +31,7 @@ export const historicalImage = defineType({
 		{name: 'place', title: 'Place', icon: PinIcon},
 		{name: 'provenance', title: 'Provenance', icon: ClipboardIcon},
 		{name: 'research', title: 'Research', icon: SearchIcon},
+		{name: 'website', title: 'Website', icon: EarthGlobeIcon},
 	],
 	fields: [
 		archiveIdField('historicalImage', 'MF37', 'identity', {searchWeight: 10}),
@@ -185,6 +188,7 @@ export const historicalImage = defineType({
 			type: 'text',
 			group: 'provenance',
 		}),
+		...featuredOnSiteFields('website', 'historicalImage'),
 	],
 	initialValue: incomingReferenceArrayInitialValueBySource({
 		person: 'people',
@@ -213,6 +217,14 @@ export const historicalImage = defineType({
 			name: 'dateTakenYearAsc',
 			by: [{field: 'dateTaken.year', direction: 'asc'}],
 		},
+		{
+			title: 'Featured order',
+			name: 'featuredRankAsc',
+			by: [
+				{field: 'featuredRank', direction: 'asc'},
+				{field: 'title', direction: 'asc'},
+			],
+		},
 	],
 	preview: {
 		select: {
@@ -220,12 +232,20 @@ export const historicalImage = defineType({
 			archiveId: 'archiveId',
 			media: 'imageFile',
 			legacyDate: 'dateTakenText',
+			featuredOnSite: 'featuredOnSite',
+			featuredRank: 'featuredRank',
 			...historicalDatePreviewSelect('dateTaken'),
 		},
 		prepare(selection) {
-			const {title, archiveId, media, legacyDate} = selection
+			const {title, archiveId, media, legacyDate, featuredOnSite, featuredRank} = selection
 			const when = formatHistoricalDateFromPreview(selection) || legacyDate
-			const subtitle = [archiveId, when].filter(Boolean).join(' · ')
+			const featured =
+				featuredOnSite === true
+					? featuredRank
+						? `Featured · ${featuredRank}`
+						: 'Featured'
+					: undefined
+			const subtitle = [featured, archiveId, when].filter(Boolean).join(' · ')
 			return {
 				title: title || 'Untitled image',
 				subtitle,

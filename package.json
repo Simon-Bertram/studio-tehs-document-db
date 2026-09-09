@@ -26,6 +26,8 @@
     "mysql-tunnel:stop": "bash scripts/stop-mysql-tunnel.sh",
     "csv-import:quarterly": "bun run migrations/quarterly-import/import-quarterly.ts",
     "csv-import:people": "bun run migrations/charlestown-people/import-people.ts",
+    "seed:site-navigation": "bun run migrations/seed-site-navigation.ts",
+    "seed:featured-images": "bun run migrations/seed-featured-images.ts",
     "audit:validation": "bun run migrations/audit-validation/index.ts",
     "migrations:run": "sanity migrations run",
     "start": "sanity start",

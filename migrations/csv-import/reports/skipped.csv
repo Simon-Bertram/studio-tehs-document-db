@@ -1,4 +1,2 @@
 clipId,title,csvType,reason,detail
 944,Tredyffrin Easttown Historical Society Presidents,document,diverted_quarterly,Keyword TEHS identifies a TEHS Quarterly article. Skipped by archive importers; import via csv-import:quarterly (HTML) or enter as quarterlyArticle in Studio.
-946,Introduction,NULL,unknown_type,"Unknown type ""NULL"". Decide schema manually or fix CSV."
-948,Chapter 2: Colonial Period,NULL,unknown_type,"Unknown type ""NULL"". Decide schema manually or fix CSV."

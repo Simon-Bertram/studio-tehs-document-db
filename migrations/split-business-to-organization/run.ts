@@ -173,7 +173,9 @@ async function assertAfterLive(newOrgIds: string[]) {
 		throw new Error('Civic/institutional business documents still remain.')
 	}
 	if (!lincoln?._id || lincolnRefs < 1) {
-		throw new Error(`Lincoln organization missing or lost incoming references (count=${lincolnRefs}).`)
+		throw new Error(
+			`Lincoln organization missing or lost incoming references (count=${lincolnRefs}).`,
+		)
 	}
 }
 
@@ -227,10 +229,7 @@ async function run() {
 		for (const incomingDoc of incoming) {
 			const patch = refRewritePatch(incomingDoc, doc._id, newId)
 			if (Object.keys(patch).length === 0) continue
-			await client
-				.patch(incomingDoc._id)
-				.set(patch)
-				.commit({visibility: 'sync'})
+			await client.patch(incomingDoc._id).set(patch).commit({visibility: 'sync'})
 			console.log(`  rewrote refs on ${incomingDoc._id}: ${doc._id} → ${newId}`)
 		}
 

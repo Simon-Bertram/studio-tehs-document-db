@@ -1,14 +1,14 @@
 CSV Import Summary
 ==================
-Total rows:          20
-Imported:            17
-Skipped / failed:    3
-Needs manual links:  16
-Missing keywords:    3
+Total rows:          5
+Imported:            4
+Skipped / failed:    1
+Needs manual links:  2
+Missing keywords:    2
 
 Type breakdown:
   historicalImage: 1
-  primarySource: 15
+  primarySource: 2
   researchArticle: 1
 
 Report files:

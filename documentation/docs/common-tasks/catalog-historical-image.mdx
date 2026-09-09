@@ -15,8 +15,9 @@ Add a photograph with caption, Archive ID, people depicted, place, and provenanc
 3. In **Content**, upload the photograph (required) and write a full description. Under **People Depicted**, link each person shown (create or reuse a Historical Person).
 4. In **Place**, prefer **Specific Location**; use **Township** only when no more specific place exists.
 5. In **Provenance / Rights**, record source, contributor, photographer, rights, and archivist notes. Link **Donation** if the photograph belongs to a gift: reuse an existing Donation, or if this is a new donation create the Donation first (Create new on the field, or **The Archive → Donations**) with donor, date, and material categories, then link it.
-6. In **Research**, attach subjects. Use **Research References** for TEHS Quarterly articles and **References** for other bibliographic notes and URLs.
-7. Publish when ready.
+6. In **Research**, attach subjects. Use **Research References** for TEHS Quarterly articles or Then & Now features and **References** for other bibliographic notes and URLs.
+7. In **Website**, tick **Show in the public highlight grid** only if you are curating home or the Images landing — not for every cataloged photograph. Optional **Highlight order** (1–24) is sort order, not quality. Prefer a mix of village streetscapes, churches, schools, inns, and a few Valley Forge views; skip untitled scans, Outside Local Area, and fuzzy Person/Place/View-only tags.
+8. Publish when ready.
 
 ## Field notes
 
@@ -24,13 +25,14 @@ Add a photograph with caption, Archive ID, people depicted, place, and provenanc
 - Township field hides when a specific location is set (township comes from that location).
 - Donation is a reference to a Donation document, not free text. One donation can cover many images from the same gift.
 - People depicted live on the image (`people`). The same photographs appear as a reverse **Historical Images** list on each person document; linking or creating an image from there writes back onto **People Depicted**.
-- Cataloged photographs can be reused in **Research Articles** and **TEHS Quarterly Articles**. In the article body, insert **Historical Image** and search by caption or Archive ID. Prefer cataloging the photograph here first, then inserting it from the collection, instead of uploading a copy into the article.
+- Cataloged photographs can be reused in **Research Articles**, **Then & Now**, and **TEHS Quarterly Articles**. Prefer cataloging the photograph here first, then inserting it from the collection, instead of uploading a copy.
+- **Show in the public highlight grid** is for editors assembling the home / Images landing set. Import never sets it. CSV `primaryPhoto` is not a featured flag.
 
 ## Research References vs References
 
 These two Research fields are not interchangeable.
 
-**Research References** (`citations`) is an array of links to **TEHS Quarterly Article** documents. Create or reuse the article under **The Website → TEHS Quarterly Articles**, then add it here. The article stays the single source of truth (title, issue, `sourceUrl`, body). Many photographs can point at the same article, and the website can query which images cite it. Example: Arnold, Inns & Taverns, TEQ 44-1/2.
+**Research References** (`citations`) is an array of links to **TEHS Quarterly Article** or **Then & Now** documents. Create or reuse the piece under **The Website**, then add it here. The article or Then & Now stays the single source of truth. Many photographs can point at the same piece, and the website can query which images cite it. Example: Arnold, Inns & Taverns, TEQ 44-1/2.
 
 **References** (`references`) is rich text for bibliographic notes and web links that are **not** Quarterly articles in this Studio—books, PDFs, and external URLs. Type the citation, select the title, and paste a URL to attach a link. Example: Sachse, *The Wayside Inns on the Lancaster Roadside* (1915, 2nd ed.); Julius Sachse biographical PDF.
 
@@ -39,9 +41,11 @@ If a Quarterly piece is already digitized, put it on Research References. Leave 
 ## Related
 
 - [Cite a TEHS Quarterly article](./cite-quarterly-article.mdx)
+- [Publish a Then & Now](./publish-then-and-now.mdx)
 - [Publish a research article](./publish-research-article.mdx)
 - [Create and link people](./create-and-link-people.mdx)
 - [Record a donation](./record-a-donation.mdx)
 - [Link geography](./link-geography.mdx)
 - [Set Archive IDs](./set-archive-ids.mdx)
 - [Tag with subject categories](./tag-with-categories.mdx)
+- [Edit public site navigation](./edit-site-navigation.mdx)

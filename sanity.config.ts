@@ -4,6 +4,11 @@ import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
 
 import {SANITY_DATASET, SANITY_PROJECT_ID} from './lib/sanityEnv'
+import {
+	filterNewDocumentOptions,
+	filterSchemaTemplates,
+	filterSiteNavigationActions,
+} from './lib/siteNavigationDocumentConfig'
 import {schemaTypes} from './schemaTypes'
 import {structure} from './structure'
 import {DocumentationNavbar, documentationTool} from './tools/documentation'
@@ -35,10 +40,16 @@ export default defineConfig({
 		},
 	},
 
+	document: {
+		newDocumentOptions: (prev, context) => filterNewDocumentOptions(prev, context),
+		actions: (prev, context) =>
+			filterSiteNavigationActions(prev, context.schemaType, context.currentUser),
+	},
+
 	schema: {
 		types: schemaTypes,
 		templates: (prev) => [
-			...prev,
+			...filterSchemaTemplates(prev),
 			{
 				id: 'quarterlyArticle-from-issue',
 				title: 'TEHS Quarterly Article',
@@ -46,6 +57,17 @@ export default defineConfig({
 				parameters: [{name: 'issueId', type: 'string'}],
 				value: (params: {issueId: string}) => ({
 					issueRef: {_type: 'reference', _ref: params.issueId},
+				}),
+			},
+			{
+				id: 'thenAndNow-from-issue',
+				title: 'Then & Now',
+				schemaType: 'thenAndNow',
+				parameters: [{name: 'issueId', type: 'string'}],
+				value: (params: {issueId: string}) => ({
+					issueRef: {_type: 'reference', _ref: params.issueId},
+					then: {source: 'historicalImage'},
+					now: {source: 'upload'},
 				}),
 			},
 		],

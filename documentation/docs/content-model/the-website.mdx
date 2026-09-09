@@ -4,7 +4,20 @@ sidebar_position: 2
 
 # The Website
 
-The Website section covers public-facing research pages and the TEHS Quarterly digital archive.
+The Website section covers public-facing research pages, Then & Now features, the TEHS Quarterly digital archive, and the menus on the public Astro site.
+
+## Public site navigation
+
+One singleton document holds the public **header** and **Explore / footer** menus. Desk path: **The Website → Public site navigation** (visible to Administrator, Editor, and Developer roles only).
+
+| Field | Where it appears |
+| --- | --- |
+| **Header links** (`primaryLinks`) | Top bar (always visible) |
+| **Explore links** (`secondaryLinks`) | Homepage Explore, collection sidebars, footer |
+
+Each item is a **Navigation link**: public **Label**, site **Path** (starts with `/`), **Kind** (`page` or `search`), and optional Studio-only **Purpose**. Search is a kind of menu item so editors can remove or reorder it; the website renders it as the header search field, not a text link. Paths must be unique across both lists.
+
+Do not create a second navigation document. Duplicate and delete are disabled so the ID `siteNavigation` stays stable. Related: [Edit public site navigation](../common-tasks/edit-site-navigation.mdx).
 
 ## Research Articles & Overviews
 
@@ -14,6 +27,7 @@ Key fields:
 
 - **Archive ID** (`archiveId`) — unique catalog number when matching an imported Book or legacy record
 - **Page title** and required **URL slug** (generated from the title)
+- **Show in the public highlight grid** (`featuredOnSite`) and optional **Highlight order** (`featuredRank`, 1–24) — home research teasers. Rank is order, not quality; leave off unless you are curating the public site.
 - **Townships** — geographic scope of the research article
 - **People Mentioned** (`peopleMentioned`) — historical persons discussed in the article
 - **Organizations** (`organizations`) — historical businesses and organizations discussed in the article (one field; pick either document type)
@@ -26,6 +40,30 @@ Key fields:
 - **Internal Comments** (`internalComments`) — Studio-only working notes. **Will not appear on the public site.**
 
 Related: [Publish a research article](../common-tasks/publish-research-article.mdx), [Set Archive IDs](../common-tasks/set-archive-ids.mdx)
+
+## Then & Now
+
+Use **Then & Now** for a Quarterly landmark comparison: a historical photograph and a modern photograph of the same place, each with Portable Text commentary. One document is the source of truth for the issue table of contents and for a standalone public page. Do not use Research Article or TEHS Quarterly Article for this format.
+
+Key fields:
+
+- **Page title** and required **URL slug** (generated from the title)
+- **Show in the public highlight grid** (`featuredOnSite`) and optional **Highlight order** (`featuredRank`, 1–24) — home teasers. Rank is order, not quality; leave off unless you are curating the public site.
+- **Issue** (`issueRef`) — required reference to the printed TEHS Quarterly issue
+- **Author Name** (`authorText`), **Start Page**, and optional **End Page** — publication metadata for the issue index
+- **Introduction** — optional opening Portable Text that is not tied to either photograph
+- **Then** and **Now** (`thenAndNowView`) — each view has:
+  - **Photograph source** (`historicalImage` or `upload`). Prefer a cataloged Historical Image. Upload only if the photograph is not in that collection (typical for a contemporary “now” photo).
+  - Optional caption and alt override (catalog caption is the fallback for Historical Images)
+  - Optional **Year Taken** on uploads (cataloged images use **Date Taken** on the Historical Image)
+  - **Commentary** — Portable Text for that photograph
+- **Townships**, **People Mentioned**, **Properties / Historic Sites Mentioned**, and **Organizations**
+- **Notes & References** (`notesAndReferences`) — published bibliographic notes on the piece
+- **Internal Comments** (`internalComments`) — Studio-only working notes. **Will not appear on the public site.**
+
+Desk path: **The Website → Then & Now**. From an issue, use **Then & Now in this issue**.
+
+Related: [Publish a Then & Now](../common-tasks/publish-then-and-now.mdx)
 
 ## TEHS Quarterly Issues
 
@@ -41,7 +79,7 @@ Key fields:
 - **Cover Image** and **Issue PDF** — optional; HTML-imported volumes often have neither
 - **Table of Contents Notes** — optional editorial blurb (errata, supplemental web notes). Do not store a duplicate TOC; the website generates the contents list from articles in this issue.
 
-Desk path: **The Website → TEHS Quarterly Issues**. Open an issue to edit it or to list **Articles in this issue** (ordered by start page).
+Desk path: **The Website → TEHS Quarterly Issues**. Open an issue to edit it, to list **Articles in this issue** (ordered by start page), or to list **Then & Now in this issue**.
 
 Catalog import (issues first, then article stubs without bodies):
 
@@ -71,20 +109,21 @@ Key fields:
 
 Author bylines stay as **Author Name** (`authorText`). Do not use Historical Person documents for Quarterly writers unless that person is also cataloged as a historical figure mentioned in the archive.
 
-Archive documents (primary sources and historical images) link these under **Research References** (`citations`). That field is a document reference, not a pasted URL: many archive items can share one article. Historical images also have a separate **References** rich-text field for books, PDFs, and other links that are not Quarterly articles in this Studio.
+Archive documents (primary sources and historical images) link these under **Research References** (`citations`). That field is a document reference, not a pasted URL: many archive items can share one article. It also accepts **Then & Now** documents. Historical images also have a separate **References** rich-text field for books, PDFs, and other links that are not Quarterly articles or Then & Now pieces in this Studio.
 
-**Notes & References** on a Research Article or Quarterly Article is bibliography *on the article itself*. It is not the same as archive **Research References** (document links *to* a Quarterly article) or image **References** (books, PDFs, and other URLs on a Historical Image).
+**Notes & References** on a Research Article, Then & Now, or Quarterly Article is bibliography *on the article itself*. It is not the same as archive **Research References** (document links *to* a Quarterly article or Then & Now) or image **References** (books, PDFs, and other URLs on a Historical Image).
 
 ### Dynamic table of contents
 
-Because issues and articles are structured data rather than static HTML, the website can generate volume indexes on the fly. For example, to recreate the Volume 15 table of contents:
+Because issues, articles, and Then & Now pieces are structured data rather than static HTML, the website can generate volume indexes on the fly. For example, to recreate the Volume 15 table of contents:
 
 ```groq
 *[_type == "quarterlyIssue" && volume == 15] | order(issueNumber asc) {
   volume,
   issueNumber,
   publicationDate,
-  "articles": *[_type == "quarterlyArticle" && issueRef._ref == ^._id] | order(startPage asc) {
+  "articles": *[_type in ["quarterlyArticle", "thenAndNow"] && issueRef._ref == ^._id] | order(startPage asc) {
+    _type,
     title,
     authorText,
     startPage,
@@ -93,4 +132,4 @@ Because issues and articles are structured data rather than static HTML, the web
 }
 ```
 
-Related: [Cite a TEHS Quarterly article](../common-tasks/cite-quarterly-article.mdx)
+Related: [Cite a TEHS Quarterly article](../common-tasks/cite-quarterly-article.mdx), [Publish a Then & Now](../common-tasks/publish-then-and-now.mdx)

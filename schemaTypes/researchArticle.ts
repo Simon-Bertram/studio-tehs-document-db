@@ -8,6 +8,7 @@ import {defineArrayMember, defineField, defineType} from 'sanity'
 import {DocumentWithDescription} from './components/DocumentWithDescription'
 import {incomingReferenceArrayInitialValueBySource} from './lib/incoming-reference-array'
 import {archiveIdField} from './shared/archiveIdField'
+import {featuredOnSiteFields} from './shared/featuredOnSiteFields'
 import {internalCommentsField} from './shared/internalCommentsField'
 import {notesAndReferencesField} from './shared/notesAndReferencesField'
 import {organizationsField} from './shared/organizationsField'
@@ -52,6 +53,7 @@ export const researchArticle = defineType({
 			},
 			validation: (Rule) => Rule.required(),
 		}),
+		...featuredOnSiteFields('identity', 'researchArticle'),
 		defineField({
 			name: 'townships',
 			title: 'Townships',
@@ -100,15 +102,31 @@ export const researchArticle = defineType({
 			name: 'titleAsc',
 			by: [{field: 'title', direction: 'asc'}],
 		},
+		{
+			title: 'Featured order',
+			name: 'featuredRankAsc',
+			by: [
+				{field: 'featuredRank', direction: 'asc'},
+				{field: 'title', direction: 'asc'},
+			],
+		},
 	],
 	preview: {
 		select: {
 			title: 'title',
 			archiveId: 'archiveId',
 			slug: 'slug.current',
+			featuredOnSite: 'featuredOnSite',
+			featuredRank: 'featuredRank',
 		},
-		prepare({title, archiveId, slug}) {
-			const subtitle = [archiveId, slug].filter(Boolean).join(' · ')
+		prepare({title, archiveId, slug, featuredOnSite, featuredRank}) {
+			const featured =
+				featuredOnSite === true
+					? featuredRank
+						? `Featured · ${featuredRank}`
+						: 'Featured'
+					: undefined
+			const subtitle = [featured, archiveId, slug].filter(Boolean).join(' · ')
 			return {
 				title: title || 'Untitled research article',
 				subtitle,

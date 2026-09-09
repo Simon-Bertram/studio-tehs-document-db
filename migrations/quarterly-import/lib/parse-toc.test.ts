@@ -1,6 +1,6 @@
 import {describe, expect, test} from 'bun:test'
 
-import {sourceKeyFromHref, parseVolumeCatalog} from './parse-toc'
+import {parseVolumeCatalog, sourceKeyFromHref} from './parse-toc'
 
 const V22_ISSUE = `
 <td class="tocCover"><img src="../covers/v22n1c150.jpg" alt="Cover v22n1"></td>

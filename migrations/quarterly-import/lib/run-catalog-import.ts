@@ -16,11 +16,11 @@ import type {QuarterlyImportConfig} from './cli-config'
 import {extractCatalogSnapshots} from './extract-catalog'
 import {loadCatalogSources} from './load-catalog'
 import {
+	type CatalogIssue,
 	catalogIssueDoc,
+	type CatalogStub,
 	mergeArticleStubs,
 	unionIssues,
-	type CatalogIssue,
-	type CatalogStub,
 } from './merge-catalog'
 import {upsertIssueSparse} from './upsert-issue-sparse'
 

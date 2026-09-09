@@ -70,9 +70,7 @@ describe('parseIssueHeading', () => {
 	})
 
 	test('strips Table of Contents from a month heading', () => {
-		const parsed = parseIssueHeading(
-			'July 2012, Volume 49, Number 1 & 2 — Table of Contents',
-		)
+		const parsed = parseIssueHeading('July 2012, Volume 49, Number 1 & 2 — Table of Contents')
 		expect(parsed).toMatchObject({
 			volume: 49,
 			issueNumber: 1,

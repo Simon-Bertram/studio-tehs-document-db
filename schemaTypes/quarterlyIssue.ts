@@ -163,6 +163,12 @@ export const quarterlyIssue = defineType({
 			types: [{type: 'quarterlyArticle'}],
 			onLinkDocument: setIncomingReference('issueRef'),
 		}),
+		defineCountedIncomingReferenceDecoration({
+			name: 'thenAndNow',
+			title: 'Then & Now',
+			types: [{type: 'thenAndNow'}],
+			onLinkDocument: setIncomingReference('issueRef'),
+		}),
 	],
 	orderings: [
 		{

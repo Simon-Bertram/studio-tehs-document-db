@@ -16,17 +16,20 @@ Create the correct document type so archive transcriptions, website essays, and 
 | A photograph to catalog | **Historical Image** | The Archive |
 | A gift or accession to record (donor, date, materials) | **Donation** | The Archive |
 | Modern long-form research or an interactive overview page | **Research Article** | The Website |
+| A Then & Now landmark comparison from the Quarterly (two photos plus a public page) | **Then & Now** | The Website |
 | A printed TEHS Quarterly issue (volume, number, cover, PDF) | **TEHS Quarterly Issue** | The Website |
 | A digitized TEHS Quarterly article (full text, page breaks, entity tags) | **TEHS Quarterly Article** | The Website |
 | A person, family lineage, place, property, deed / land instrument, business, organization, or subject theme | Matching entity under **Taxonomies & Entities** | Taxonomies & Entities |
 | A donation material type (prints, postcards, slides, …) | **Donation Category** | Taxonomies & Entities |
 | One conveyance in a chain of title (deed, patent, will, survey, tax return, …) | **Deed / Land Instrument** | Taxonomies & Entities |
+| The public header or Explore/footer menu | **Public site navigation** (one singleton; editors only) | The Website |
 
 ## Field notes
 
 - Primary Source schema description: use it **only** for a single historical piece of media. Essays and modern research belong in Research Article.
 - Quarterly Article documents store the **full article text**, a required **Issue** reference, and entity links. Archive items can still reference them under Research References. Publication date, cover, and PDF live on the Issue, not the article.
-- Deed / Land Instrument is for structured chain-of-title rows—not for embedding under Primary Source. Link a Primary Source from a deed only when you have a full transcription of that instrument.
+- Then & Now is a Quarterly feature with two photographs (each with Portable Text commentary), a required Issue reference, and a URL slug for its own public page. Do not use Research Article or Quarterly Article for this format. See [Publish a Then & Now](./publish-then-and-now.mdx).
+- Public site navigation is not a catalog type. Open the existing singleton under **The Website → Public site navigation**. Do not create a second copy. Only Administrator, Editor, and Developer roles can edit it. See [Edit public site navigation](./edit-site-navigation.mdx).
 
 ## Related
 
@@ -34,6 +37,8 @@ Create the correct document type so archive transcriptions, website essays, and 
 - [Enter a deed or land instrument](./enter-deed.mdx)
 - [Record a donation](./record-a-donation.mdx)
 - [Publish a research article](./publish-research-article.mdx)
+- [Publish a Then & Now](./publish-then-and-now.mdx)
+- [Edit public site navigation](./edit-site-navigation.mdx)
 - [Cite a TEHS Quarterly article](./cite-quarterly-article.mdx)
 - [Record a business](./record-a-business.mdx)
 - [Record an organization](./record-an-organization.mdx)
