@@ -12,6 +12,7 @@ import pLimit from 'p-limit'
 import {SANITY_DATASET, SANITY_PROJECT_ID} from '../../../lib/sanityEnv'
 import {Audit} from './audit'
 import type {ImportConfig} from './cli-config'
+import {generateDocumentReviewReports} from './generate-document-review-reports'
 import type {ImportDoc} from './map-row'
 import {mapRow} from './map-row'
 import {readCsvRows} from './read-csv'
@@ -111,6 +112,10 @@ export async function runImport(config: ImportConfig, client: SanityClient): Pro
 	}
 
 	writeReports(audit, reportsDir)
+	const htmlReports = await generateDocumentReviewReports({reportsDir})
 	console.log(`\nReports written to ${reportsDir}`)
+	console.log(`  ${htmlReports.skipped}`)
+	console.log(`  ${htmlReports.missingTaxonomies}`)
+	console.log(`  ${htmlReports.needsManualLinks}`)
 	audit.print(reportsDir)
 }

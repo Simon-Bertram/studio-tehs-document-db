@@ -73,18 +73,62 @@ type SanityType = 'historicalImage' | 'primarySource' | 'researchArticle'
 
 const TYPE_MAP: Record<string, SanityType> = {
 	photo: 'historicalImage',
+	'digitals images and text': 'historicalImage',
 	document: 'primarySource',
 	book: 'researchArticle',
+	'newspaper advertisement': 'primarySource',
+	'newspaper advertisment': 'primarySource',
+	advertisement: 'primarySource',
+	'newspaper article': 'primarySource',
+	'newspaper articles': 'primarySource',
+	'newspaer article': 'primarySource',
+	'newspaper biography': 'primarySource',
+	'newspaper clipping': 'primarySource',
+	'original document': 'primarySource',
+	'document being converted': 'primarySource',
+	letter: 'primarySource',
+	will: 'primarySource',
+	wills: 'primarySource',
+	petition: 'primarySource',
+	'school accounts': 'primarySource',
+	administration: 'primarySource',
+	genealogical: 'primarySource',
+	'family history': 'primarySource',
+	diary: 'primarySource',
+	census: 'primarySource',
+	'deed history': 'primarySource',
+	'chester county deed': 'primarySource',
+	'orphan court documents': 'primarySource',
+	obituary: 'primarySource',
+	interview: 'primarySource',
+	'part transcrption': 'primarySource',
+	'book extract': 'researchArticle',
+	thesis: 'researchArticle',
+	'research document': 'researchArticle',
+	publication: 'researchArticle',
+	report: 'researchArticle',
 }
 
 /**
  * Map a legacy `type` column value to the Sanity schema name.
  * Returns null for unknown/missing types so the caller can log an audit error.
+ * Trailing backslashes from CSV artefacts are stripped (`Newspaper advertisement\`).
  */
 export function resolveSchemaType(legacyType: unknown): SanityType | null {
-	const key = cleanString(legacyType)?.toLowerCase()
+	const key = cleanString(legacyType)?.toLowerCase().replace(/\\+$/g, '').trim()
 	if (!key) return null
 	return TYPE_MAP[key] ?? null
+}
+
+/**
+ * Split a keyword cell that stuffed several codes into one field
+ * (`DEV, DEVRam, DevInn`). A cell without commas is returned as-is.
+ */
+export function splitCommaSeparatedKeywords(value: string): string[] {
+	return value
+		.split(',')
+		.map((part) => part.trim())
+		.filter((part) => part.length > 0)
 }
 
 /**

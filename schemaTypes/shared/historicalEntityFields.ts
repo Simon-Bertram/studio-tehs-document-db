@@ -4,11 +4,22 @@ import {defineIncomingReferenceDecoration} from 'sanity/structure'
 import {formatHistoricalDateRange} from '../lib/formatHistoricalDate'
 import {historicalDateFromPreview, historicalDatePreviewSelect} from '../lib/historicalDatePreview'
 import {appendIncomingReference} from '../lib/incoming-reference-array'
-import {isUniqueStringField} from '../lib/isUniqueStringField'
+import {
+	isUniqueMigrationMappingValue,
+	migrationKeyMatchesOwnAlias,
+	validateMigrationKeyAliases,
+} from '../lib/isUniqueMigrationMappingValue'
 import {articleIncomingDecorations} from './articleIncomingDecorations'
 import {associatedPropertiesField} from './locationFields'
 
 export const HISTORICAL_ENTITY_TYPES = ['business', 'organization'] as const
+
+const uniqueEntityMappingKey = isUniqueMigrationMappingValue(
+	[...HISTORICAL_ENTITY_TYPES],
+	'Migration mapping key must be unique',
+)
+
+const uniqueEntityMappingAliases = validateMigrationKeyAliases([...HISTORICAL_ENTITY_TYPES])
 
 /**
  * Name plus the identity / place / relations fields shared by business and
@@ -37,13 +48,22 @@ export function historicalEntityFields(options: {
 			description:
 				'Used by the CSV script to map legacy keywords (e.g. Lincoln) to this record. Visible during migration; hide after cutover.',
 			validation: (Rule) =>
-				Rule.custom(
-					isUniqueStringField(
-						[...HISTORICAL_ENTITY_TYPES],
-						'migrationKey',
-						'Migration mapping key must be unique',
-					),
-				),
+				Rule.custom(async (value, context) => {
+					if (migrationKeyMatchesOwnAlias(value, context.document?.migrationKeyAliases)) {
+						return 'Migration Mapping Key cannot also be listed as an alias'
+					}
+					return uniqueEntityMappingKey(value, context)
+				}),
+		}),
+		defineField({
+			name: 'migrationKeyAliases',
+			title: 'Migration Key Aliases',
+			type: 'array',
+			group: 'identity',
+			of: [defineArrayMember({type: 'string'})],
+			description:
+				'Extra CSV spellings that should map to this record (e.g. LI when the primary key is Lincoln). Match is case-insensitive, same as the primary key.',
+			validation: (Rule) => Rule.custom(uniqueEntityMappingAliases),
 		}),
 		defineField({
 			name: 'description',

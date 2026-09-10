@@ -140,7 +140,7 @@ describe('renderReviewHtml', () => {
 			]),
 		)
 		expect(html).toContain('data-report="skipped"')
-		expect(html).toContain('tehs-image-review:')
+		expect(html).toContain('data-storage-prefix="tehs-image-review"')
 		expect(html).toContain('class="resolve-toggle"')
 		expect(html).toContain('data-id="IT3"')
 		expect(html).toContain('data-export')

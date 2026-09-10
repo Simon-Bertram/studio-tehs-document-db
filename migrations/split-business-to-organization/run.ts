@@ -11,7 +11,12 @@
  */
 import {createClient} from '@sanity/client'
 
-import {SANITY_API_VERSION, SANITY_DATASET, SANITY_PROJECT_ID} from '../../lib/sanityEnv'
+import {
+	getSanityWriteToken,
+	SANITY_API_VERSION,
+	SANITY_DATASET,
+	SANITY_PROJECT_ID,
+} from '../../lib/sanityEnv'
 
 const DRY_RUN = !process.argv.includes('--live')
 const NON_COMMERCIAL_TYPES = ['civic', 'institutional'] as const
@@ -27,9 +32,9 @@ const SYSTEM_KEYS = new Set([
 	'businessType',
 ])
 
-const token = process.env.SANITY_AUTH_TOKEN
+const token = getSanityWriteToken()
 if (!DRY_RUN && !token) {
-	console.error('SANITY_AUTH_TOKEN is required for live writes. Aborting.')
+	console.error('SANITY_API_WRITE_TOKEN is required for live writes. Aborting.')
 	process.exit(1)
 }
 

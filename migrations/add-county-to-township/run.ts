@@ -10,7 +10,12 @@
  */
 import {createClient} from '@sanity/client'
 
-import {SANITY_API_VERSION, SANITY_DATASET, SANITY_PROJECT_ID} from '../../lib/sanityEnv'
+import {
+	getSanityWriteToken,
+	SANITY_API_VERSION,
+	SANITY_DATASET,
+	SANITY_PROJECT_ID,
+} from '../../lib/sanityEnv'
 
 const DRY_RUN = !process.argv.includes('--live')
 
@@ -20,9 +25,9 @@ const CHESTER_COUNTY_TOWNSHIP_ID = 'db47653e-92bf-4dd3-a851-8ad3e7a287d8'
 const CHESTER_COUNTY_TOWNSHIP_NAME = 'Chester County'
 const PLANTATION_IMAGE_ID = 'db820027-6ab6-4547-b83c-170ca8fe2945'
 
-const token = process.env.SANITY_AUTH_TOKEN
+const token = getSanityWriteToken()
 if (!DRY_RUN && !token) {
-	console.error('SANITY_AUTH_TOKEN is required for live writes. Aborting.')
+	console.error('SANITY_API_WRITE_TOKEN is required for live writes. Aborting.')
 	process.exit(1)
 }
 

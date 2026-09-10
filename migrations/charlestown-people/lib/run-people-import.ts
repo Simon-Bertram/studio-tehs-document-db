@@ -119,7 +119,7 @@ async function loadExistingPeople(
 ): Promise<Map<string, ExistingPerson>> {
 	const map = new Map<string, ExistingPerson>()
 	if (dryRun && !hasAuthToken()) {
-		console.log('No SANITY_AUTH_TOKEN in dry-run — skipping existing-person lookup.\n')
+		console.log('No SANITY_API_WRITE_TOKEN in dry-run — skipping existing-person lookup.\n')
 		return map
 	}
 

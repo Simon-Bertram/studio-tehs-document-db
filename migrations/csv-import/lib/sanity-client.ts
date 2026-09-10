@@ -4,13 +4,18 @@
  */
 import {createClient, type SanityClient} from '@sanity/client'
 
-import {SANITY_API_VERSION, SANITY_DATASET, SANITY_PROJECT_ID} from '../../../lib/sanityEnv'
+import {
+	getSanityWriteToken,
+	SANITY_API_VERSION,
+	SANITY_DATASET,
+	SANITY_PROJECT_ID,
+} from '../../../lib/sanityEnv'
 
 export function createImportClient(options: {dryRun: boolean}): SanityClient {
-	const token = process.env.SANITY_AUTH_TOKEN
+	const token = getSanityWriteToken()
 
 	if (!options.dryRun && !token) {
-		console.error('SANITY_AUTH_TOKEN is required for live writes. Aborting.')
+		console.error('SANITY_API_WRITE_TOKEN is required for live writes. Aborting.')
 		process.exit(1)
 	}
 
@@ -27,7 +32,7 @@ export function createImportClient(options: {dryRun: boolean}): SanityClient {
 const NON_CONTENT_WRITE_ROLES = new Set(['deploy-studio', 'viewer'])
 
 /**
- * Fail fast when SANITY_AUTH_TOKEN cannot create documents.
+ * Fail fast when the write token cannot create documents.
  * Deploy Studio tokens authenticate but return 403 on mutate.
  */
 export async function assertContentWriteAccess(client: SanityClient): Promise<void> {
@@ -41,7 +46,7 @@ export async function assertContentWriteAccess(client: SanityClient): Promise<vo
 	try {
 		me = await client.request({uri: '/users/me', method: 'GET'})
 	} catch (err) {
-		console.error('Could not verify SANITY_AUTH_TOKEN against Sanity /users/me.')
+		console.error('Could not verify SANITY_API_WRITE_TOKEN against Sanity /users/me.')
 		console.error(err instanceof Error ? err.message : err)
 		process.exit(1)
 	}
@@ -53,15 +58,15 @@ export async function assertContentWriteAccess(client: SanityClient): Promise<vo
 
 	const roleList = roles.join(', ')
 	console.error(
-		`SANITY_AUTH_TOKEN is authenticated as "${me.name ?? me.id}" with role(s): ${roleList}.`,
+		`SANITY_API_WRITE_TOKEN is authenticated as "${me.name ?? me.id}" with role(s): ${roleList}.`,
 	)
 	console.error('That role cannot create documents (permission "create" required).')
 	console.error(
-		'Create a new API token with Editor or Administrator permissions in Sanity Manage → API → Tokens, then set SANITY_AUTH_TOKEN in .env.',
+		'Create a new API token with Editor or Administrator permissions in Sanity Manage → API → Tokens, then set SANITY_API_WRITE_TOKEN in .env.',
 	)
 	process.exit(1)
 }
 
 export function hasAuthToken(): boolean {
-	return Boolean(process.env.SANITY_AUTH_TOKEN)
+	return Boolean(getSanityWriteToken())
 }

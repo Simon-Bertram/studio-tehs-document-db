@@ -18,12 +18,14 @@ function asStringList(value: unknown): string[] {
 
 /**
  * Case-insensitive uniqueness across `migrationKey` and `migrationKeyAliases`
- * on other documents of the same type.
+ * on other documents of the given type(s).
  */
 export function isUniqueMigrationMappingValue(
-	documentType: string,
+	documentType: string | string[],
 	message = 'Migration mapping key must be unique',
 ): CustomValidator<string | undefined> {
+	const types = Array.isArray(documentType) ? documentType : [documentType]
+
 	return async (value, context: ValidationContext) => {
 		if (!value?.trim()) return true
 
@@ -33,7 +35,7 @@ export function isUniqueMigrationMappingValue(
 
 		const count = await client.fetch<number>(
 			`count(*[
-				_type == $type &&
+				_type in $types &&
 				!(_id in [$id, $draftId]) &&
 				(
 					lower(migrationKey) == $value ||
@@ -41,7 +43,7 @@ export function isUniqueMigrationMappingValue(
 				)
 			])`,
 			{
-				type: documentType,
+				types,
 				value: normalised,
 				id,
 				draftId,
@@ -53,13 +55,15 @@ export function isUniqueMigrationMappingValue(
 }
 
 /**
- * Array-level checks for category aliases: non-empty, no duplicates, and not
- * the same as this document's primary migration key. Uniqueness versus other
- * documents is validated per alias.
+ * Array-level checks for migration key aliases: non-empty, no duplicates, and
+ * not the same as this document's primary migration key. Uniqueness versus
+ * other documents is validated per alias.
  */
-export function validateCategoryMigrationKeyAliases(): CustomValidator<string[] | undefined> {
-	const uniqueAmongCategories = isUniqueMigrationMappingValue(
-		'category',
+export function validateMigrationKeyAliases(
+	documentType: string | string[],
+): CustomValidator<string[] | undefined> {
+	const uniqueAmongTypes = isUniqueMigrationMappingValue(
+		documentType,
 		'Migration mapping key must be unique',
 	)
 
@@ -77,7 +81,7 @@ export function validateCategoryMigrationKeyAliases(): CustomValidator<string[] 
 			const key = alias.trim().toLowerCase()
 			if (!key) return 'Aliases cannot be empty'
 			if (ownKey && key === ownKey) {
-				return 'Alias cannot match this category’s Migration Mapping Key'
+				return 'Alias cannot match this document’s Migration Mapping Key'
 			}
 			if (seen.has(key)) {
 				return `Duplicate alias "${alias.trim()}"`
@@ -86,12 +90,20 @@ export function validateCategoryMigrationKeyAliases(): CustomValidator<string[] 
 		}
 
 		for (const alias of strings) {
-			const result = await uniqueAmongCategories(alias, context)
+			const result = await uniqueAmongTypes(alias, context)
 			if (result !== true) return result
 		}
 
 		return true
 	}
+}
+
+/**
+ * Array-level checks for category aliases. Prefer `validateMigrationKeyAliases`
+ * for new call sites.
+ */
+export function validateCategoryMigrationKeyAliases(): CustomValidator<string[] | undefined> {
+	return validateMigrationKeyAliases('category')
 }
 
 /**

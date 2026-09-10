@@ -12,6 +12,7 @@ Optional env: `SANITY_PROJECT_ID`, `SANITY_DATASET`.
 | Command | Source | Target types | Reports |
 | --- | --- | --- | --- |
 | `bun run csv-import` | `migrations/data/documents.csv` | primarySource, historicalImage, researchArticle | `reports/` |
+| `bun run csv-import:documents-review-reports` | `reports/skipped.csv` + `needs-manual-links.csv` | — | `reports/{skipped,missing-taxonomies,needs-manual-links}.html` |
 | `bun run csv-import:donations` | `migrations/data/donations.csv` | donation (+ seeds donationCategory) | `reports/donations/` |
 | `bun run csv-import:images` | `migrations/data/sample-images.csv` | historicalImage | `reports/images/offset-*-limit-*` + `ledgers/` |
 | `bun run csv-import:images-review-reports` | live batch CSVs + `ledgers/images-manual-links.csv` | — | `reports/images/{skipped,missing-taxonomies,needs-manual-links}.html` |
@@ -21,16 +22,33 @@ Optional env: `SANITY_PROJECT_ID`, `SANITY_DATASET`.
 
 ## Documents / primary sources
 
-Maps CSV `type` → Sanity: `document` → `primarySource`, `photo` → `historicalImage`,
-`book` → `researchArticle`. Natural key is `archiveId` from `clipID`. Keyword
-priority: township → organization → category.
+Maps CSV `type` → Sanity (case-insensitive). `document` / newspaper ads, articles,
+clippings, letters, wills, genealogical records, and similar → `primarySource`.
+`book` / publication / thesis / report → `researchArticle`. `photo` →
+`historicalImage`. `NULL`, `miscellaneous`, and `article` stay unmapped — set
+those CSV types by row (see `lib/patch-documents-full-types.ts` for the full-file
+overrides). Natural key is `archiveId` from `clipID`. Keyword
+priority: township → organization → category. Comma-separated keyword cells
+(`DEV, DEVRam, DevInn`) are split into individual tokens.
+
+Organization documents also support **Migration Key Aliases** (same as Subject
+Categories). Lincoln Institution uses primary key `Lincoln` and alias `LI`.
+Do not alias Phase1/Phase2 onto Lincoln — those are research-batch tags.
+
+Seed missing document taxonomies (Educational Home, Devon Inn, Death, …):
+
+```bash
+bun run migrations/csv-import/seed-document-taxonomies.ts          # dry-run
+bun run migrations/csv-import/seed-document-taxonomies.ts -- --live
+```
 
 ```bash
 bun run csv-import -- --limit 20    # dry-run (default)
 bun run csv-import -- --live        # write to Sanity
+bun run csv-import -- migrations/data/documents-full.csv   # dry-run the full export
 ```
 
-Reports: `migrations/csv-import/reports/`.
+Reports: `migrations/csv-import/reports/`. The importer also writes three HTML review files (`skipped.html`, `missing-taxonomies.html`, `needs-manual-links.html`) after each run. Regenerating without re-importing: `bun run csv-import:documents-review-reports`. Resolved checkboxes use a separate browser key (`tehs-document-review`) from the image reports.
 
 ### TEHS keyword → divert to Quarterly
 
@@ -258,6 +276,9 @@ Each importer writes under its reports folder. Image batches use `reports/images
 | `reports/images/skipped.html` | Human review: skipped images, grouped by reason, with Resolved checkboxes |
 | `reports/images/missing-taxonomies.html` | Human review: CSV keywords still needing a Migration key |
 | `reports/images/needs-manual-links.html` | Human review: imported images missing township / subject / donation |
+| `reports/skipped.html` | Human review: skipped documents, grouped by reason (unknown CSV types split by `type`) |
+| `reports/missing-taxonomies.html` | Human review: document CSV keywords still needing a Migration key |
+| `reports/needs-manual-links.html` | Human review: imported documents missing township / subject / donation |
 | `missing-taxonomies.csv` | Keywords still needing a `migrationKey` |
 | `asset-errors.csv` | (images) HTTP fetch / JPEG upload failures: `archiveId,url,httpStatus,detail` |
 | `url-status.csv` | (images dry-run) HEAD/GET probe: `archiveId,url,httpStatus,detail` |
@@ -265,6 +286,8 @@ Each importer writes under its reports folder. Image batches use `reports/images
 | `summary.txt` | Counts |
 
 Open the three HTML files in a browser after `bun run csv-import:images-review-reports`. Each row has a Resolved checkbox (stored in that browser; Export JSON to share). Regenerating the HTML does not wipe checkmarks.
+
+Document HTML reports (`reports/skipped.html` and siblings) work the same way after `bun run csv-import` (or `bun run csv-import:documents-review-reports`). Their checkmarks are stored under `tehs-document-review`, not the image key.
 
 ### Vision checks
 

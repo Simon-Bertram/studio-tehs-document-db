@@ -26,8 +26,10 @@ export async function buildTaxonomyLookups(client: SanityClient): Promise<Taxono
 		client.fetch<{_id: string; migrationKey: string}[]>(
 			`*[_type == "township" && defined(migrationKey)]{ _id, migrationKey }`,
 		),
-		client.fetch<{_id: string; migrationKey: string}[]>(
-			`*[_type in ["business", "organization"] && defined(migrationKey)]{ _id, migrationKey }`,
+		client.fetch<{_id: string; migrationKey?: string; migrationKeyAliases?: string[]}[]>(
+			`*[_type in ["business", "organization"] && (defined(migrationKey) || count(migrationKeyAliases) > 0)]{
+				_id, migrationKey, migrationKeyAliases
+			}`,
 		),
 	])
 
@@ -37,11 +39,12 @@ export async function buildTaxonomyLookups(client: SanityClient): Promise<Taxono
 		organizations: indexMigrationKeys(organizations),
 	}
 	const categoryCount = new Set(Object.values(lookups.categories)).size
+	const organizationCount = new Set(Object.values(lookups.organizations)).size
 
 	console.log(
 		`Loaded ${categoryCount} categories, ` +
 			`${Object.keys(lookups.townships).length} townships, and ` +
-			`${Object.keys(lookups.organizations).length} organizations into memory.`,
+			`${organizationCount} organizations into memory.`,
 	)
 
 	return lookups

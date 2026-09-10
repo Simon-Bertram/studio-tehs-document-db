@@ -2,7 +2,13 @@ import {nanoid} from 'nanoid'
 
 import {type HistoricalDateValue, parseHistoricalDate} from '../../lib/parse-historical-date'
 import type {Audit} from './audit'
-import {cleanString, normalizeClipId, resolveSchemaType, slugify} from './clean'
+import {
+	cleanString,
+	normalizeClipId,
+	resolveSchemaType,
+	slugify,
+	splitCommaSeparatedKeywords,
+} from './clean'
 import type {TaxonomyLookups} from './taxonomy'
 import {DIVERTED_QUARTERLY_DETAIL, DIVERTED_QUARTERLY_REASON, hasTehsKeyword} from './tehs-keyword'
 
@@ -195,44 +201,46 @@ function applyTaxonomy(
 	const seenUnmapped = new Set<string>()
 
 	for (const raw of rawKeys) {
-		const keyword = cleanString(raw)
-		if (!keyword) continue
-		const normalised = keyword.toLowerCase()
+		const cell = cleanString(raw)
+		if (!cell) continue
+		for (const keyword of splitCommaSeparatedKeywords(cell)) {
+			const normalised = keyword.toLowerCase()
 
-		const townshipId = lookups.townships[normalised]
-		if (townshipId) {
-			if (!seenIds.has(townshipId)) {
-				seenIds.add(townshipId)
-				townships.push(ref(townshipId))
-				mappedKeywords.push(keyword)
+			const townshipId = lookups.townships[normalised]
+			if (townshipId) {
+				if (!seenIds.has(townshipId)) {
+					seenIds.add(townshipId)
+					townships.push(ref(townshipId))
+					mappedKeywords.push(keyword)
+				}
+				continue
 			}
-			continue
-		}
 
-		const organizationId = lookups.organizations[normalised]
-		if (organizationId) {
-			if (!seenIds.has(organizationId)) {
-				seenIds.add(organizationId)
-				organizations.push(ref(organizationId))
-				mappedKeywords.push(keyword)
+			const organizationId = lookups.organizations[normalised]
+			if (organizationId) {
+				if (!seenIds.has(organizationId)) {
+					seenIds.add(organizationId)
+					organizations.push(ref(organizationId))
+					mappedKeywords.push(keyword)
+				}
+				continue
 			}
-			continue
-		}
 
-		const categoryId = lookups.categories[normalised]
-		if (categoryId) {
-			if (!seenIds.has(categoryId)) {
-				seenIds.add(categoryId)
-				subjects.push(ref(categoryId))
-				mappedKeywords.push(keyword)
+			const categoryId = lookups.categories[normalised]
+			if (categoryId) {
+				if (!seenIds.has(categoryId)) {
+					seenIds.add(categoryId)
+					subjects.push(ref(categoryId))
+					mappedKeywords.push(keyword)
+				}
+				continue
 			}
-			continue
-		}
 
-		if (!seenUnmapped.has(normalised)) {
-			seenUnmapped.add(normalised)
-			unmappedKeywords.push(keyword)
-			audit.missingTaxonomy(keyword, doc.archiveId)
+			if (!seenUnmapped.has(normalised)) {
+				seenUnmapped.add(normalised)
+				unmappedKeywords.push(keyword)
+				audit.missingTaxonomy(keyword, doc.archiveId)
+			}
 		}
 	}
 
