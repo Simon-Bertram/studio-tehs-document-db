@@ -60,18 +60,6 @@ export const historicalImage = defineType({
 				'Prefer year-only when the exact day is unknown. Use Exact day only when the full calendar date is known.',
 		}),
 		defineField({
-			name: 'dateTakenText',
-			title: 'Date Taken (Legacy Text)',
-			type: 'string',
-			group: 'identity',
-			deprecated: {
-				reason: 'Use Date Taken (structured historical date) instead.',
-			},
-			readOnly: true,
-			hidden: ({value}) => value === undefined,
-			initialValue: undefined,
-		}),
-		defineField({
 			name: 'imageFile',
 			title: 'Photograph',
 			type: 'image',
@@ -231,14 +219,13 @@ export const historicalImage = defineType({
 			title: 'title',
 			archiveId: 'archiveId',
 			media: 'imageFile',
-			legacyDate: 'dateTakenText',
 			featuredOnSite: 'featuredOnSite',
 			featuredRank: 'featuredRank',
 			...historicalDatePreviewSelect('dateTaken'),
 		},
 		prepare(selection) {
-			const {title, archiveId, media, legacyDate, featuredOnSite, featuredRank} = selection
-			const when = formatHistoricalDateFromPreview(selection) || legacyDate
+			const {title, archiveId, media, featuredOnSite, featuredRank} = selection
+			const when = formatHistoricalDateFromPreview(selection)
 			const featured =
 				featuredOnSite === true
 					? featuredRank

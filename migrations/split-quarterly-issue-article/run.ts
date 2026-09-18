@@ -2,8 +2,9 @@
  * Create quarterlyIssue documents from existing quarterlyArticle volume/number
  * fields and point each article at its issue.
  *
- * Does not unset the deprecated volume / issue / publishedDate fields on
- * articles. Those stay readable until a later cleanup.
+ * Does not unset volume / issue / publishedDate on articles. After issueRef
+ * is set, run `unset-deprecated-legacy-fields` to drop those keys. This
+ * script still reads volume/issue as a fallback when issueRef is missing.
  *
  *   SANITY_AUTH_TOKEN=… bun run migrations/split-quarterly-issue-article/run.ts
  *   SANITY_AUTH_TOKEN=… bun run migrations/split-quarterly-issue-article/run.ts -- --live

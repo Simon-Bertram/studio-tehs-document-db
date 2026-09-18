@@ -86,19 +86,6 @@ export function historicalEntityFields(options: {
 			group: 'identity',
 			description: 'Optional end of known activity (often year-only).',
 		}),
-		defineField({
-			name: 'yearsActive',
-			title: 'Years Active (Legacy)',
-			type: 'string',
-			group: 'identity',
-			description: 'Freeform date range, e.g. 1870–1920.',
-			deprecated: {
-				reason: 'Use Active From / Active To instead.',
-			},
-			readOnly: true,
-			hidden: ({value}) => value === undefined,
-			initialValue: undefined,
-		}),
 		associatedPropertiesField('place'),
 		defineField({
 			name: 'owners',
@@ -142,7 +129,6 @@ export function historicalEntityIncomingDecorations(entityLabel: 'business' | 'o
 
 export const historicalEntityPreviewSelect = {
 	title: 'name',
-	yearsActive: 'yearsActive',
 	...historicalDatePreviewSelect('activeFrom', 'from'),
 	...historicalDatePreviewSelect('activeTo', 'to'),
 }
@@ -152,12 +138,10 @@ export function historicalEntityPreviewPrepare(
 	unnamedTitle: string,
 ) {
 	const title = typeof selection.title === 'string' ? selection.title : undefined
-	const yearsActive = typeof selection.yearsActive === 'string' ? selection.yearsActive : undefined
-	const range =
-		formatHistoricalDateRange(
-			historicalDateFromPreview(selection, 'from'),
-			historicalDateFromPreview(selection, 'to'),
-		) || yearsActive
+	const range = formatHistoricalDateRange(
+		historicalDateFromPreview(selection, 'from'),
+		historicalDateFromPreview(selection, 'to'),
+	)
 	return {
 		title: title || unnamedTitle,
 		subtitle: range || undefined,

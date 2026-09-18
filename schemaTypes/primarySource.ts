@@ -48,18 +48,6 @@ export const primarySource = defineType({
 				'Prefer year-only or month+year when the exact day is unknown. Use Exact day only when the full calendar date is known.',
 		}),
 		defineField({
-			name: 'dateText',
-			title: 'Publication Date (Legacy Text)',
-			type: 'string',
-			group: 'identity',
-			deprecated: {
-				reason: 'Use Publication Date (structured historical date) instead.',
-			},
-			readOnly: true,
-			hidden: ({value}) => value === undefined,
-			initialValue: undefined,
-		}),
-		defineField({
 			name: 'newspaper',
 			title: 'Source Publication Name',
 			type: 'string',
@@ -151,13 +139,12 @@ export const primarySource = defineType({
 		select: {
 			title: 'title',
 			newspaper: 'newspaper',
-			dateText: 'dateText',
 			media: 'articleImage',
 			...historicalDatePreviewSelect('date'),
 		},
 		prepare(selection) {
-			const {title, newspaper, dateText, media} = selection
-			const when = formatHistoricalDateFromPreview(selection) || dateText
+			const {title, newspaper, media} = selection
+			const when = formatHistoricalDateFromPreview(selection)
 			const subtitle = [newspaper, when].filter(Boolean).join(' · ')
 			return {
 				title: title || 'Untitled source',

@@ -1,4 +1,4 @@
-import {at, defineMigration, set, setIfMissing, unset} from 'sanity/migrate'
+import {at, defineMigration, set, unset} from 'sanity/migrate'
 
 import {
 	historicalDateFromIso,
@@ -20,10 +20,9 @@ function isHistoricalDateObject(value: unknown): value is HistoricalDateValue {
 function migrateStringField(options: {
 	value: unknown
 	objectPath: string
-	legacyPath?: string
 	legacyValue?: unknown
 }): Patch[] {
-	const {value, objectPath, legacyPath, legacyValue} = options
+	const {value, objectPath, legacyValue} = options
 
 	// Already structured — nothing to do
 	if (isHistoricalDateObject(value)) return []
@@ -32,21 +31,14 @@ function migrateStringField(options: {
 		typeof value === 'string' ? value : typeof legacyValue === 'string' ? legacyValue : null
 	if (!source) return []
 
-	const patches: Patch[] = []
-	if (legacyPath && typeof value === 'string') {
-		patches.push(at(legacyPath, setIfMissing(value)))
-	}
-
 	const parsed = parseHistoricalDate(source)
 	if (parsed) {
-		patches.push(at(objectPath, set(parsed)))
-	} else if (typeof value === 'string') {
-		patches.push(at(objectPath, unset()))
-		if (legacyPath) {
-			patches.push(at(legacyPath, setIfMissing(value)))
-		}
+		return [at(objectPath, set(parsed))]
 	}
-	return patches
+	if (typeof value === 'string') {
+		return [at(objectPath, unset())]
+	}
+	return []
 }
 
 function migrateIsoDateField(value: unknown, objectPath: string): Patch[] {
@@ -58,7 +50,7 @@ function migrateIsoDateField(value: unknown, objectPath: string): Patch[] {
 
 /**
  * Convert legacy string / ISO date fields into historicalDate objects.
- * Unparseable strings are preserved on legacy text fields where defined.
+ * Does not write deprecated legacy text fields.
  */
 export default defineMigration({
 	title: 'Migrate dates to historicalDate objects',
@@ -87,7 +79,6 @@ export default defineMigration({
 					...migrateStringField({
 						value: doc.dateTaken,
 						objectPath: 'dateTaken',
-						legacyPath: 'dateTakenText',
 						legacyValue: doc.dateTakenText,
 					}),
 				)
@@ -111,7 +102,6 @@ export default defineMigration({
 					...migrateStringField({
 						value: doc.yearBuilt,
 						objectPath: 'yearBuilt',
-						legacyPath: 'yearBuiltText',
 						legacyValue: doc.yearBuiltText,
 					}),
 				)
@@ -136,7 +126,6 @@ export default defineMigration({
 					...migrateStringField({
 						value: doc.publishedDate,
 						objectPath: 'publishedDate',
-						legacyPath: 'publishedDateText',
 						legacyValue: doc.publishedDateText,
 					}),
 				)
@@ -147,7 +136,6 @@ export default defineMigration({
 					...migrateStringField({
 						value: doc.acquisitionDate,
 						objectPath: 'acquisitionDate',
-						legacyPath: 'acquisitionDateText',
 						legacyValue: doc.acquisitionDateText,
 					}),
 				)

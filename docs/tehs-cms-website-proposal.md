@@ -4,10 +4,11 @@
 
 **Prepared for:** Tredyffrin Easttown Historical Society  
 **Subject:** Completing the Sanity archive and launching a public website for the Document Collection, Image Collection, History Quarterly, and township / research pages  
-**Status:** Scope for board review; fees in a separate schedule  
-**Date:** August 2026
+**Status:** Superseded for public-site scope  
+**Date:** August 2026  
+**Superseded by:** [Website rebuild programme brief](./tehs-website-rebuild-brief.md) (September 2026) and [product requirements](./tehs-website-rebuild-prd.md). This file remains as the August collections-only ancestor (architecture and import assumptions still apply).
 
-This document describes the remaining programme of work. It is not a contract. Fees, day rates, and payment dates will be confirmed in a separate schedule.
+This document described a collections-only public site. The agreed product is now a **full replacement of tehistory.org**. Fees stay in a separate schedule.
 
 ---
 

@@ -5,8 +5,10 @@ fields on existing `quarterlyArticle` documents, then sets `issueRef` on each
 article. Idempotent: existing issues are reused by volume+number or `sourceKey`
 (e.g. `v22n1`).
 
-Does **not** unset the deprecated article fields (`volume`, `issue`,
-`publishedDate`, `publishedDateText`). Those remain readable for QA.
+Does **not** unset article `volume` / `issue` / `publishedDate` /
+`publishedDateText`. After `issueRef` is set, drop those keys with
+`bun run migrations:run unset-deprecated-legacy-fields`. This script still
+reads `volume`/`issue` as a fallback when `issueRef` is missing.
 
 ```bash
 # Dry-run
