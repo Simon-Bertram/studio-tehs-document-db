@@ -16,6 +16,7 @@ import {
 } from './lib/incoming-reference-array'
 import {warnDuplicatePersonName} from './lib/warnDuplicatePersonName'
 import {articleIncomingDecorations} from './shared/articleIncomingDecorations'
+import {notesAndReferencesField} from './shared/notesAndReferencesField'
 
 export const person = defineType({
 	name: 'person',
@@ -104,6 +105,7 @@ export const person = defineType({
 			group: 'records',
 			of: [defineArrayMember({type: 'censusRecord'})],
 		}),
+		notesAndReferencesField('records'),
 		defineField({
 			name: 'familyLines',
 			title: 'Family Lineages',

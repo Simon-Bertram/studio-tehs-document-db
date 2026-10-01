@@ -39,14 +39,14 @@
   ],
   "dependencies": {
     "@sanity/client": "^7.27.0",
-    "@sanity/google-maps-input": "^6.1.13",
-    "@sanity/icons": "^5.2.2",
+    "@sanity/google-maps-input": "^6.1.14",
+    "@sanity/icons": "^5.2.3",
     "@sanity/vision": "6.15.0",
     "csv-parser": "^3.2.1",
     "linkedom": "^0.18.13",
-    "mysql2": "^3.24.4",
+    "mysql2": "^3.24.5",
     "nanoid": "^6.0.1",
-    "p-limit": "^7.3.2",
+    "p-limit": "^7.3.3",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "sanity": "6.15.0",
@@ -55,15 +55,15 @@
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^6.0.0",
-    "@types/node": "^26.6.1",
+    "@types/node": "^26.6.3",
     "@types/react": "^19.3.0",
     "eslint": "^9.39.5",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-prettier": "^5.5.6",
     "eslint-plugin-simple-import-sort": "^14.0.0",
-    "prettier": "^3.9.8",
+    "prettier": "^3.9.9",
     "typescript": "6.0.3",
-    "wrangler": "^4.134.0"
+    "wrangler": "^4.145.0"
   },
   "prettier": {
     "bracketSpacing": false,
