@@ -3,10 +3,10 @@
 # tehs-images-mysql MCP server. MYSQL_HOST in .cursor/mcp.json stays 127.0.0.1.
 #
 # Pattern A (default): SSH to the site host, forward to mysql.the2nomads.site:3306
-#   SSH_USER=your_dreamhost_user ./scripts/start-mysql-tunnel.sh
+#   SSH_USER=dh_v6nxzm bun run mysql-tunnel
 #
 # Pattern B: SSH directly to the MySQL hostname (only if that host has a shell)
-#   TUNNEL_PATTERN=B SSH_USER=your_dreamhost_user ./scripts/start-mysql-tunnel.sh
+#   TUNNEL_PATTERN=B SSH_USER=dh_v6nxzm bun run mysql-tunnel
 set -euo pipefail
 
 LOCAL_PORT="${MYSQL_TUNNEL_PORT:-3307}"
@@ -22,8 +22,8 @@ Start an SSH tunnel so Cursor MCP can reach DreamHost MySQL on 127.0.0.1:3307.
 Do not put mysql.the2nomads.site in mcp.json MYSQL_HOST. That stays 127.0.0.1.
 
 Required:
-  SSH_USER     DreamHost SSH / shell username (panel → Users / SSH).
-               Not the MySQL user (images_ro). Those passwords are different.
+  SSH_USER     DreamHost SSH / shell username (must be spelled SSH_USER, not SH_USER).
+               For this project: dh_v6nxzm. Not the MySQL user (images_ro).
 
 Optional:
   TUNNEL_PATTERN   A (default) or B
@@ -34,15 +34,15 @@ Optional:
   MYSQL_REMOTE_PORT   Forward destination port (Pattern A, default 3306)
 
 Pattern A (typical DreamHost):
-  ssh -N -L 3307:mysql.the2nomads.site:3306 USER@the2nomads.site
+  ssh -N -L 3307:mysql.the2nomads.site:3306 dh_v6nxzm@the2nomads.site
 
 Pattern B (shell on the MySQL hostname):
-  ssh -N -L 3307:127.0.0.1:3306 USER@mysql.the2nomads.site
+  ssh -N -L 3307:127.0.0.1:3306 dh_v6nxzm@mysql.the2nomads.site
 
 Examples:
-  SSH_USER=dh_user ./scripts/start-mysql-tunnel.sh
-  TUNNEL_PATTERN=B SSH_USER=dh_user ./scripts/start-mysql-tunnel.sh
-  ./scripts/stop-mysql-tunnel.sh
+  SSH_USER=dh_v6nxzm bun run mysql-tunnel
+  TUNNEL_PATTERN=B SSH_USER=dh_v6nxzm bun run mysql-tunnel
+  bun run mysql-tunnel:stop
 EOF
 }
 
@@ -69,7 +69,7 @@ done
 if [[ "$LOOKS_LIKE_MYSQL_USER" -eq 1 ]]; then
 	echo "SSH_USER=${SSH_USER} is the MySQL account from mcp.json, not an SSH login." >&2
 	echo "DreamHost MySQL users cannot SSH. Use the shell user from Panel → Users / SSH, e.g.:" >&2
-	echo "  SSH_USER=your_shell_user bun run mysql-tunnel" >&2
+	echo "  SSH_USER=dh_v6nxzm bun run mysql-tunnel" >&2
 	echo "images_ro / MYSQL_PASS are only for the tunnel's MySQL client after SSH succeeds." >&2
 	exit 2
 fi

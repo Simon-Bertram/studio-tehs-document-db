@@ -1,9 +1,7 @@
 clipId,title,csvType,reason,detail
 IT3,White Horse Tavern,Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
 CW1,Levi Lapp March,Photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
-BEP85,"Howard Moore's Electrical Store, Berwyn",Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
 SCH4,"Leopard School, 1854 - 1920",Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-BG18,Valley Forge Station,Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
 GJI1,Image Retired - General Jackson Inn (see  GJI5),Photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
 CHE13,Lee-Bradford Quarters,Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
 MIH1,Mifflin House,Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
@@ -11,15 +9,14 @@ MIH2,Mifflin House,Photo,asset_error,HTTP fetch/upload failed; document not upse
 VFP30,Von Steuben Statue,Postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
 VFP31,Valley Creek near Washington Spring,Postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
 IT9,White Horse Tavern,Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-BE42,Berwyn War Memorial,Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-BE46,"Sewer work on Conestoga Road, Berwyn",Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
 BE45,"Sewer work on Conestoga Road, Berwyn",Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE46,"Sewer work on Conestoga Road, Berwyn",Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
 BE47,"Conestoga Road, Berwyn before sewer work",Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE50,"Sewer work on Conestoga Road, Berwyn",Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
 BE48,"Conestoga Road, Berwyn before sewer work",Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
 BE49,"Sewer work on Conestoga Road, Berwyn",Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-BE50,"Sewer work on Conestoga Road, Berwyn",Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE51,"Sewer work on Conestoga Road, Berwyn",Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
 BE52,"Sewer work on Conestoga Road, Berwyn",Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
 BE53,"Sewer work on Conestoga Road, Berwyn",Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-BE51,"Sewer work on Conestoga Road, Berwyn",Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-BE55,"Conestoga Road, Berwyn before sewer work",Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
 BE54,"Sewer work on Conestoga Road, Berwyn",Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
+BE55,"Conestoga Road, Berwyn before sewer work",Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).

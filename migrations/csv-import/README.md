@@ -17,7 +17,7 @@ Optional env: `SANITY_PROJECT_ID`, `SANITY_DATASET`.
 | `bun run csv-import:images` | `migrations/data/sample-images.csv` | historicalImage | `reports/images/offset-*-limit-*` + `ledgers/` |
 | `bun run csv-import:images-review-reports` | live batch CSVs + `ledgers/images-manual-links.csv` | — | `reports/images/{skipped,missing-taxonomies,needs-manual-links}.html` |
 | `bun run csv-export:images` | DreamHost MySQL via tunnel (bun/`mysql2`, no `mysql` CLI) | writes `sample-images.csv` (no BLOBs) | — |
-| `SSH_USER=<shell user> bun run mysql-tunnel` | SSH tunnel to DreamHost MySQL on `127.0.0.1:3307` | — | — |
+| `SSH_USER=dh_v6nxzm bun run mysql-tunnel` | SSH tunnel to DreamHost MySQL on `127.0.0.1:3307` | — | — |
 | `bun run mysql-tunnel:stop` | Stop the local listener on port 3307 | — | — |
 | `bun run csv-import:quarterly` | tehistory.org catalog + HTML | quarterlyIssue + quarterlyArticle | `reports/quarterly/` |
 
@@ -137,30 +137,29 @@ Cursor talks to the image database through `@benborla29/mcp-server-mysql` in [`.
 | `SSH_ENABLED` | `false` |
 | writes | `ALLOW_INSERT/UPDATE/DELETE_OPERATION` all `false` |
 
-Start the tunnel **before** Cursor loads the MySQL MCP. `SSH_USER` must be set
-as an **environment variable before** `bun run` (zsh/bash). Extra tokens after
-`bun run mysql-tunnel` are ignored. Do **not** paste the raw `ssh -N -L …`
-command as bun arguments — the script builds that itself.
-
-`SSH_USER` is the DreamHost **SSH / shell username** from panel → Users / SSH.
-It is not the MySQL account (`images_ro`). Those passwords are different.
+Start the tunnel **before** Cursor loads the MySQL MCP. Copy-paste this exact
+command (zsh/bash). Spelling must be `SSH_USER` — not `SH_USER`. Do **not**
+append raw `ssh -N -L …` after `bun run`; the script builds that itself.
 
 ```bash
-# Prefix the env var. Replace with your shell user from the DreamHost panel.
-SSH_USER=your_dreamhost_shell_user bun run mysql-tunnel
+SSH_USER=dh_v6nxzm bun run mysql-tunnel
 ```
 
-On first connect, SSH may ask to trust the host key, then for the **shell**
+`dh_v6nxzm` is the DreamHost **SSH / shell username** (panel → Users / SSH).
+It is not the MySQL account (`images_ro`). Use the **shell** password for SSH,
+not `MYSQL_PASS`.
+
+On first connect, SSH may ask to trust the host key, then for the shell
 password (or use an SSH key if you already set one up in the panel). The
 process backgrounds (`ssh -f -N`) and listens on `127.0.0.1:3307`. Success
 looks like: `Tunnel is up. Point MCP at 127.0.0.1:3307`. If the port is
 already listening, the script exits 0 and reports that the tunnel may already
 be running.
 
-If Pattern A (`USER@the2nomads.site`) refuses login:
+If Pattern A (`dh_v6nxzm@the2nomads.site`) refuses login:
 
 ```bash
-TUNNEL_PATTERN=B SSH_USER=your_dreamhost_shell_user bun run mysql-tunnel
+TUNNEL_PATTERN=B SSH_USER=dh_v6nxzm bun run mysql-tunnel
 ```
 
 Stop the tunnel:
@@ -172,8 +171,8 @@ bun run mysql-tunnel:stop
 `images_ro` / `MYSQL_PASS` are for MySQL through the tunnel after SSH succeeds.
 They will not log you into `the2nomads.site`.
 
-Pattern A: `ssh -N -L 3307:mysql.the2nomads.site:3306 USER@the2nomads.site`  
-Pattern B: `ssh -N -L 3307:127.0.0.1:3306 USER@mysql.the2nomads.site`
+Pattern A: `ssh -N -L 3307:mysql.the2nomads.site:3306 dh_v6nxzm@the2nomads.site`  
+Pattern B: `ssh -N -L 3307:127.0.0.1:3306 dh_v6nxzm@mysql.the2nomads.site`
 
 CLI smoke-test (same host/port as MCP): `MYSQL_PASS='…' bun run csv-export:images`
 (optional `IMAGE_EXPORT_LIMIT=5`). The `mysql` binary is not required.
