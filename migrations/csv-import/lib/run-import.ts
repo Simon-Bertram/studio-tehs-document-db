@@ -55,9 +55,7 @@ export async function runImport(config: ImportConfig, client: SanityClient): Pro
 	if (documentImageBaseUrl) {
 		console.log(`Document image base URL: ${documentImageBaseUrl}`)
 	} else if (!dryRun) {
-		console.log(
-			'DOCUMENT_IMAGE_BASE_URL unset — new document images that need upload will fail.',
-		)
+		console.log('DOCUMENT_IMAGE_BASE_URL unset — new document images that need upload will fail.')
 	} else {
 		console.log(
 			'DOCUMENT_IMAGE_BASE_URL unset — dry-run will record filenames without resolved URLs.',
