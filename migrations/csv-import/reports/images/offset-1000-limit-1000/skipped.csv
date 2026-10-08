@@ -1,17 +1,4 @@
 clipId,title,csvType,reason,detail
-VFP38,Star Redoubt,Photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-LH01,"“A Ramble in the Chester Valley”, c. 1908",postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-DTA123,Devon Horse Show and Country Fair (DHSCF),photo,api_error,Socket timed out on request to https://z8o776vu.api.sanity.io/v2025-02-19/data/mutate/production?returnIds=true&returnDocuments=true&visibility=sync
-DTA121,Devon Horse Show and Country Fair (DHSCF),photo,api_error,Socket timed out on request to https://z8o776vu.api.sanity.io/v2025-02-19/data/mutate/production?returnIds=true&returnDocuments=true&visibility=sync
-DTA122,Devon Horse Show and Country Fair (DHSCF),photo,api_error,Socket timed out on request to https://z8o776vu.api.sanity.io/v2025-02-19/data/mutate/production?returnIds=true&returnDocuments=true&visibility=sync
-PFC001,"Devon Horse Show, 1899 with the Devon Inn in the background",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-PFC002,"Devon Horse Show, 1899",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-PFC003,"Devon Horse Show, 1899",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-PFC006,"Devon Horse Show, 1899, with the Devon Inn in the background",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-PFC007,"Devon Horse Show, 1899",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-PFC004,"Devon Horse Show, 1899, with the Devon Inn in the background",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-PFC005,"Devon Horse Show, 1899",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-KCB24,"Knox Covered Bridge, looking south",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
 GBF02,Green Bank Farmhouse,photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
 GBF03,"Hall & Stairs, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
 GBF04,"Kitchen, Green Bank Farmhouse",photo,private_image,publicDisplay=N; skipped so private images stay out of Sanity.

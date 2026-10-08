@@ -1,5 +1,5 @@
 /**
- * Historical images CSV import entrypoint (sample-images.csv).
+ * Historical images CSV import entrypoint (images.csv).
  * Dry-run is the default; pass --live to write. There is no --dryRun flag.
  */
 import {parseCliConfig} from './lib/cli-config'
@@ -7,7 +7,7 @@ import {runImagesImport} from './lib/run-images-import'
 import {assertContentWriteAccess, createImportClient} from './lib/sanity-client'
 
 const config = parseCliConfig(process.argv.slice(2), {
-	csvPath: 'migrations/data/sample-images.csv',
+	csvPath: 'migrations/data/images.csv',
 	reportsDir: 'migrations/csv-import/reports/images',
 })
 const client = createImportClient({dryRun: config.dryRun})

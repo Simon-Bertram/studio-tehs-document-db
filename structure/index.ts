@@ -89,6 +89,17 @@ function historicalImageChild(S: StructureBuilder) {
 							{field: 'title', direction: 'asc'},
 						]),
 				),
+			S.listItem()
+				.title('Missing Archive ID')
+				.id('missing-archive-id')
+				.icon(ImageIcon)
+				.child(
+					S.documentList()
+						.title('Missing Archive ID')
+						.schemaType('historicalImage')
+						.filter('_type == "historicalImage" && !defined(archiveId)')
+						.defaultOrdering([{field: 'title', direction: 'asc'}]),
+				),
 		])
 }
 

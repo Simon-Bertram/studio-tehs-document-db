@@ -65,7 +65,10 @@ export const primarySource = defineType({
 			title: 'Full Transcription Text',
 			type: 'array',
 			group: 'content',
-			of: [defineArrayMember({type: 'block'})],
+			of: [
+				defineArrayMember({type: 'block'}),
+				defineArrayMember({type: 'historicalImageEmbed'}),
+			],
 		}),
 		defineField({
 			name: 'isSheriffSale',

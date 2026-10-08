@@ -8,6 +8,7 @@ import {PinIcon} from '@sanity/icons/Pin'
 import {SearchIcon} from '@sanity/icons/Search'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
+import {MissingArchiveIdInput} from './components/MissingArchiveIdInput'
 import {
 	formatHistoricalDateFromPreview,
 	historicalDatePreviewSelect,
@@ -34,7 +35,10 @@ export const historicalImage = defineType({
 		{name: 'website', title: 'Website', icon: EarthGlobeIcon},
 	],
 	fields: [
-		archiveIdField('historicalImage', 'MF37', 'identity', {searchWeight: 10}),
+		archiveIdField('historicalImage', 'MF37', 'identity', {
+			searchWeight: 10,
+			input: MissingArchiveIdInput,
+		}),
 		defineField({
 			name: 'serialNumber',
 			title: 'Serial Number',
@@ -232,7 +236,11 @@ export const historicalImage = defineType({
 						? `Featured · ${featuredRank}`
 						: 'Featured'
 					: undefined
-			const subtitle = [featured, archiveId, when].filter(Boolean).join(' · ')
+			const archiveLabel =
+				typeof archiveId === 'string' && archiveId.trim()
+					? archiveId
+					: 'Missing Archive ID'
+			const subtitle = [featured, archiveLabel, when].filter(Boolean).join(' · ')
 			return {
 				title: title || 'Untitled image',
 				subtitle,

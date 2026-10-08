@@ -32,6 +32,42 @@ overrides). Natural key is `archiveId` from `clipID`. Keyword
 priority: township → organization → category. Comma-separated keyword cells
 (`DEV, DEVRam, DevInn`) are split into individual tokens.
 
+### Content HTML → Portable Text and images
+
+Document CSV rows have no separate image column. Pictures live inside `content`
+as `<img src="…">`. On import:
+
+1. HTML in `content` becomes Portable Text (`transcription` on primary sources,
+   `body` on research articles). Plain text stays a single block. Double
+   `<br><br>` becomes paragraph breaks.
+2. Each `<img>` becomes a `historicalImageEmbed` block.
+3. Filenames that match the photo catalog (`migrations/data/images.csv`
+   identifier or `imageLocation` basename, using stems from
+   `image-identifiers.csv`) link to the existing `historicalImage` by
+   `archiveId`. If that document is not in Sanity yet, the embed is omitted and
+   listed in `document-images-missing-catalog.csv`.
+4. Other files create a new `historicalImage` **without** an Archive ID, upload
+   the JPEG/PNG from a public URL, and embed it. Re-runs reuse a deterministic
+   Sanity `_id` (`historicalImage.import.{slug}`) so the same scan is not
+   duplicated. That internal id is never copied into `archiveId`.
+
+Set the public base URL for relative paths such as `../images/Doc408small.jpg`:
+
+```bash
+DOCUMENT_IMAGE_BASE_URL='https://www.tehistory.org/hqda/html/' bun run csv-import -- --live
+```
+
+Dry-run records intended URLs without uploading. Live runs that need a new
+upload exit with a clear error when `DOCUMENT_IMAGE_BASE_URL` is unset.
+
+CSV type `photo` still becomes `historicalImage` with HTML stripped from
+`description` (no nested image documents).
+
+Imported images with no Archive ID appear under **Historical Images → Missing
+Archive ID** in Studio. The Archive ID field is highlighted in red until an
+editor enters one. New Historical Images created in Studio still require an
+Archive ID before publish.
+
 Organization documents also support **Migration Key Aliases** (same as Subject
 Categories). Lincoln Institution uses primary key `Lincoln` and alias `LI`.
 Do not alias Phase1/Phase2 onto Lincoln — those are research-batch tags.
@@ -318,8 +354,11 @@ Document HTML reports (`reports/skipped.html` and siblings) work the same way af
 ```groq
 count(*[_type == "donation" && defined(donationId)])
 count(*[_type == "historicalImage" && defined(archiveId)])
+count(*[_type == "historicalImage" && !defined(archiveId)])
 count(*[_type == "quarterlyIssue" && volume == 22])
 count(*[_type == "quarterlyArticle" && issueRef->volume == 22])
 *[_type == "historicalImage" && archiveId == "BKH1"][0]
 *[_type == "quarterlyArticle" && sourceKey == "v22n1p003"][0]
 ```
+
+Studio also lists images without Archive ID under **Historical Images → Missing Archive ID**.

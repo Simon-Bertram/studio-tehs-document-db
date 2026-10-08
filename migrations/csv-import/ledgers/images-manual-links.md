@@ -1,6 +1,6 @@
 # Images manual-links ledger
 
-2533 imported documents could not be linked to a Township, Subject, and/or Donation. Grouped by the missing value so you can fix one taxonomy document, then re-run the import.
+5696 imported documents could not be linked to a Township, Subject, and/or Donation. Grouped by the missing value so you can fix one taxonomy document, then re-run the import.
 
 ## How to fix
 
@@ -14,10 +14,31 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 
 ## Townships
 
-### Tredyffrin (522)
+### Tredyffrin (2980)
 
 | Archive ID | Title |
 | --- | --- |
+| ABH01 | Andrew Black house |
+| ACF01 | Acker Farmhouse |
+| ALL01 | Alleva’s Coal, Feed, and Lumber Store and John Alleva |
+| ALL05 | Alleva’s Coal, Feed, and Lumber Store and John Alleva |
+| ALL06 | John Alleva at Alleva’s Store |
+| ALL07 | John Alleva at Alleva’s Store |
+| ALL08 | John Alleva at Alleva’s Store |
+| ALL09 | John Alleva at Alleva’s Store |
+| ALL10 | John Alleva at Alleva’s Store |
+| ALL11 | John Alleva at Alleva’s Store |
+| ALL12 | Alleva’s Coal, Feed, and Lumber Store |
+| AMH01 | Allen-Meyle House |
+| AMH02 | Allen-Meyle House |
+| AMH03 | Allen-Meyle House |
+| AMH04 | Allen-Meyle House |
+| AMH05 | Allen-Meyle House |
+| AMH06 | Allen-Meyle House |
+| AMH07 | Allen-Meyle House |
+| AMH08 | Allen-Meyle House |
+| AMH09 | Allen-Meyle House |
+| AMH10 | Allen-Meyle House |
 | AS1 | Diamond Rock School |
 | AS10 | Paoli Store & Toll House |
 | AS11 | Dr. Edward Van Dyke Residence |
@@ -34,16 +55,60 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | AS7 | Paoli Red Cross |
 | AS8 | Paoli Signal Box |
 | AS9 | Paoli Station |
+| BAP02 | Springhouse, Great Valley Baptist Parsonage |
+| BAP04 | Springhouse, Great Valley Baptist Parsonage |
+| BAP06 | Baptist Parsonage |
+| BAP07 | Baptist Parsonage |
 | BAP1 | Baptist Parsonage |
+| BBC01 | Baptist Chapel, Cassatt Avenue, Berwyn, Summer 1887 |
+| BBC02 | Chapel of the Baptist Church in the Great Valley, Berwyn PA - 1904 |
+| BBC03 | Berwyn Baptist Chapel |
+| BBC04 | Berwyn Baptist Chapel |
+| BBC05 | Berwyn Baptist Chapel |
+| BBC09 | Baptist Chapel, Berwyn |
+| BBC10 | Berwyn Baptist Chapel (now Christian Science church) |
+| BBR01 | Site of Berwyn Baptist Road apartments |
+| BBR02 | Site of Berwyn Baptist Road apartments |
+| BBR03 | Site of Berwyn Baptist Road apartments |
+| BBR04 | Site of Berwyn-baptist Road appartments |
+| BBR05 | Site of Berwyn Baptist Road apartments |
+| BBR06 | Berwyn Baptist Road (Quigleytown) townhouses |
+| BBR07 | Berwyn Baptist Road townhouses |
+| BBR08 | Berwyn Baptist Road townhouses |
+| BBR09 | Berwyn Baptist Road townhouses |
+| BBR10 | Berwyn Baptist Road townhouses |
+| BBR11 | Berwyn Baptist Road townhouses |
 | BBU1 | Burroughs Facility |
 | BBU2 | Entrance to Burroughs Research Center |
+| BE100 | Conestoga and Cassatt Roads |
+| BE118 | Cassatt and State Roads |
+| BE119 | Cassatt and State Roads |
+| BE132 | Trout Run below Laurel Dell |
 | BE16 | Berwyn |
+| BE162 | Conestoga and Cassatt Roads |
 | BE19 | Cassatt Avenue, Berwyn |
 | BE25 | Cassatt Avenue, Berwyn |
+| BE55 | Conestoga Road, Berwyn before sewer work |
 | BE56 | Berwyn from Main Line Apartments |
 | BE57 | Lincoln Highway, Berwyn |
 | BE58 | Lincoln Highway, Berwyn |
 | BE59 | Bridge Avenue, Berwyn |
+| BE64 | Downed tree outside 65 Conestoga Road, Berwyn |
+| BE72 | Covered Bridge, State Road, Berwyn |
+| BE74 | Trout Run below Laurel Dell |
+| BE75 | Unknown view |
+| BE81 | Panoramic view of Berwyn (from Hillcrest) |
+| BE82 | World War II Memorial, Berwyn |
+| BE83 | Snowstorm at Williams Crossroads |
+| BE84 | A view of the intersection of Warren Avenue and Lancaster Turnpike |
+| BE96 | Conestoga and Cassatt Roads |
+| BE97 | Conestoga and Cassatt Roads |
+| BE98 | Conestoga and Cassatt Roads |
+| BE99 | Conestoga and Cassatt Roads |
+| BEA01 | 4 Generations of the Beadle family |
+| BEA02 | Beadle family |
+| BEA03 | Beadle family |
+| BEA04 | Beadle House |
 | BEP14 | Great Valley Baptist Chapel |
 | BEP17 | Lunch Period at T-E High School |
 | BEP34 | Strafford Honor Roll |
@@ -58,6 +123,9 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | BEP69 | Paoli Honor Roll |
 | BEP74 | Tredyffrin Township Building |
 | BEP75 | Diamond Rock School, 1945 |
+| BET1 | Berwyn Theater |
+| BET2 | Berwyn Theater |
+| BET21 | Berwyn Theater |
 | BG06 | Chesterbrook Mill |
 | BG07 | Knox Covered Bridge |
 | BG08 | Doyle's Nursery |
@@ -67,13 +135,147 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | BG22 | Mount Pleasant School |
 | BG23 | Carr School / Mount Pleasant Chapel |
 | BG25 | Mint Julep |
+| BM07 | St Matthew’s Methodist Church of New Centerville |
+| BNB03 | Berwyn National Bank |
+| BOF01 | Bonticu Farm |
+| BOF02 | Bonticu Farm |
+| BOF03 | Bonticu Farm |
+| BOF04 | Bonticu Farm |
+| BOF05 | Bonticu Farm |
+| BOF06 | Bonticu Farm |
+| BOF07 | Bonticu Farm |
+| BOF08 | Bonticu Farm |
+| BOF09 | Bonticu Farm |
+| BOF10 | Bonticu Farm |
+| BOF11 | Bonticu Farm |
+| BOF12 | Bonticu Farm |
+| BOF13 | Bonticu Farm |
+| BOF14 | Bonticu Farm |
+| BOF15 | Bonticu Farm |
+| BOF16 | Bonticu Farm |
+| BOF17 | Bonticu Farm |
+| BOF18 | Bonticu Farm |
+| BOF19 | Bonticu Farm |
+| BOF20 | Bonticu Farm |
 | BP1 | Liberty Bell on its way to California |
+| BPM01 | Burns Planing Mill north of PRR tracks, Berwyn, |
+| BPM02 | W.H. Burns Builders Planing Mill, Berwyn, |
+| BPM04 | Burns Planing Mill |
+| BRH01 | Bair Road |
+| BRH02 | Bair Road |
+| BRH03 | Bair Road houses |
+| BRH04 | Bair Road houses |
+| BRH05 | Bair Road houses |
+| BRH06 | Bair Road houses |
+| BRH07 | Bair Road houses |
+| BRH08 | Bair Road houses |
+| BRH09 | Bair Road houses |
+| BRH10 | Bair Road houses |
+| BRH11 | Bair Road houses |
+| BRH12 | Bair Road houses |
+| BRH13 | Bair Road houses |
+| BRH14 | 143 Bair Road |
+| BRH15 | 143 Bair Road |
+| BRH16 | 143 Bair Road |
+| BRH17 | 143 Bair Road |
+| BRH18 | 143 Bair Road |
+| BRH19 | 143 Bair Road |
+| BRH20 | 143 Bair Road |
+| BRH21 | 143 Bair Road |
+| BRH22 | 117 Bair Road |
+| BRH23 | 117 Bair Road |
+| BRH24 | 117 Bair Road |
+| BRI02 | Cedar Hollow Bridge over Valley Creek, #171; east side looking west |
+| BRI03 | Cedar Hollow Bridge over Valley Creek, #171; west side looking east |
+| BRI04 | Cedar Hollow Bridge over Valley Creek, #171; plaque |
+| BRI05 | Cedar Hollow Bridge over Valley Creek, #171; looking south over Valley Creek |
+| BRI06 | Cedar Hollow Bridge over Valley Creek, #171; looking north over Valley Creek |
 | BRO1 | Brookmead Farm |
 | BRX1 | Braxton's Animal Works |
 | BRX2 | Braxtons |
+| BSF01 | Blue Stone Farm, Mill Road, Howellville |
+| BSF02 | Blue Stone Farm< Mill Road, Howellville |
+| BSF03 | Blue Stone Farm< Mill Road, Howellville |
+| BTO01 | Bella Toner |
+| BTO02 | Bella Toner and chickens, Centerville Station, Chester Valley Railroad |
+| BTO03 | Bella Toner gardening, New Centerville station, Chester Valley Railroad |
+| BTO04 | Bella Toner at telegraph, New Centerville station, Chester Valley Railroad |
+| BTO05 | Bella Toner, |
+| BUF04 | Charles Burruss driving a cart |
+| BUR49 | Civil Engineering Project (Raymond Burns) |
+| BUR50 | Civil Engineering Project (Raymond Burns) |
+| BUS11 | Burn's Mill, Berwyn |
+| BUS13 | Scofield's Store, Paoli |
+| BUS14 | Scofield's Store, Paoli |
 | BUS2 | Ralph Edwards Garage (also known as Ottey's garage), Lancaster Avenue, Paoli |
 | BUS3 | Cilley Shop |
 | BUS4 | Toll Gate House |
+| BUS48 | Valley Bank, Paoli |
+| BUS49 | New Girard Bank |
+| BUS52 | Office Buildings on site of General Jackson Inn |
+| BUS64 | Destruction of Rubins Carpet formerly Ottey Garage and Post Office, Paoli |
+| BUS72 | The Main Lion |
+| BUS73 | The Main Lion |
+| BUS74 | The Main Lion |
+| BUS75 | The Main Lion |
+| BUS76 | The Main Lion |
+| BUS77 | The Main Lion |
+| BUS78 | The Main Lion |
+| BUS79 | The Main Lion |
+| BUS80 | The Main Lion |
+| BUS81 | The Main Lion |
+| BUS82 | The Main Lion |
+| BUS83 | The Main Lion |
+| BUS84 | Martini’s Restaurant being demolished |
+| BUS85 | Martini’s Restaurant being demolished |
+| BUS86 | Martini’s Restaurant being demolished |
+| BUS87 | Martini’s Restaurant being demolished |
+| BUS88 | Martini’s Restaurant being demolished |
+| BUS89 | Martini’s Restaurant being demolished |
+| BUS90 | Martini’s restaurant being demolished |
+| BUS91 | Martini’s restaurant being demolished |
+| BUS92 | Best Store |
+| BUS93 | Best Store |
+| BUS94 | Best Store |
+| BUS95 | Best Store |
+| BUS96 | Best Store |
+| BUS97 | Fresh Fields Store |
+| BUS98 | Fresh Fields Store |
+| BUS99 | Fresh Fields Store |
+| BVF01 | The Brookvale Farm |
+| BVF02 | Brookvale Farm |
+| BWF01 | Beaver-Wersler Farm |
+| BWF02 | Beaver-Wersler Farm |
+| BWF03 | Beaver-Wersler Farm |
+| BWF04 | Beaver-Wersler Farm |
+| BWF05 | Beaver-Wersler Farm |
+| BWF06 | Beaver-Wersler Farm |
+| BWF07 | Beaver-Wersler Farm |
+| BWF08 | Beaver-Wersler Farm |
+| BWF09 | Beaver-Wersler Farm |
+| BWF10 | Beaver-Wersler Farm |
+| BWF11 | Beaver-Wersler Farm |
+| BWF12 | Beaver-Wersler Farm |
+| BWF13 | Beaver-Wersler Farm |
+| BWF14 | Beaver-Wersler Farm |
+| BWF15 | Beaver-Wersler Farm |
+| BWF16 | Beaver-Wersler Farm |
+| BWF17 | Beaver-Wersler Farm |
+| BWF18 | Beaver-Wersler Farm |
+| BWF19 | Beaver-Wersler Farm |
+| BWF20 | Beaver-Wersler Farm |
+| BWF21 | Beaver-Wersler Farm |
+| BWF22 | Beaver-Wersler Farm |
+| BWF23 | Beaver-Wersler Farm |
+| BWF24 | Beaver-Wersler Farm |
+| BWF25 | Beaver-Wersler Farm |
+| CAA05 | Cassatt Avenue, Berwyn |
+| CAA06 | Cassatt Avenue, Berwyn |
+| CAA07 | Cassatt Avenue Bridge, Berwyn |
+| CAA08 | Cassatt Avenue Bridge, Berwyn |
+| CAA1 | Cassatt Avenue, Berwyn looking north |
+| CAA2 | Cassatt Avenue, Berwyn looking north |
+| CAA3 | Cassatt Avenue, Berwyn |
 | CAR1 | Cassatt Road |
 | CAR10 | Cassatt Road |
 | CAR11 | Cassatt Road |
@@ -83,7 +285,19 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | CAR15 | Cassatt Road |
 | CAR16 | Cassatt Road |
 | CAR17 | Cassatt Road |
+| CAR18 | Cassatt Road, Berwyn |
+| CAR19 | Cassatt Road |
 | CAR2 | Cassatt Road |
+| CAR20 | Cassatt Road |
+| CAR21 | Cassatt Road |
+| CAR22 | Cassatt Road |
+| CAR23 | Cassatt Road |
+| CAR24 | Cassatt Road |
+| CAR25 | Looking south on Cassatt and State Roads |
+| CAR26 | Looking North on Cassatt Road at Conestoga Road |
+| CAR27 | Cassatt and Conestoga Roads |
+| CAR28 | Cassatt Road being widened |
+| CAR29 | Looking north on Cassatt Road |
 | CAR3 | Cassatt Road |
 | CAR4 | Cassatt Road |
 | CAR5 | Cassatt Road |
@@ -91,44 +305,361 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | CAR7 | Cassatt Road |
 | CAR8 | Cassatt Road |
 | CAR9 | Berwyn scene |
+| CCC01 | Fred DiAddezzio at the Continental Can Company |
+| CCC02 | Fred DiAddezzio at the Continental Can Company |
+| CCC03 | Continental Can Company |
+| CCC04 | Continental Can Company |
+| CCC05 | United Papermakers and Paperworkers Conference, Continental Can Company |
+| CCC06 | United Papermakers & Paperworkers Union meeting |
+| CCC07 | Fred DiAddezzio on the right |
+| CCC08 | Continental Can Company Paoli Plant |
+| CCC09 | Union Meeting of Continental Can Company's UPP unions |
+| CCC10 | Continental Can Company |
+| CCC11 | Continental Can Company |
+| CCC12 | Continental Can Company |
+| CCC13 | Continental Can Company |
+| CCC14 | Veterans’ Banquet, Continental Can Company |
+| CCC15 | Veterans Banquet 1965, Continental Can Company |
+| CCC16 | Veterans Banquet 1967, Continental Can Company |
+| CCC17 | Veterans Banquet 1969, Continental Can Company |
+| CCC18 | Veterans Banquet, Continental Can Company |
+| CCC19 | Veterans Banquet, Continental Can Company |
+| CCC20 | Veterans Banquet, Continental Can Company |
+| CCC21 | Veterans Banquet, Continental Can Company |
+| CCC22 | Veterans Banquet 1971, Continental Can Company |
+| CCC23 | Bowling team |
+| CCC24 | Devon Bocce Club, Bowling league |
+| CCC25 | Continental Can Company Bowling Team - Devon Lanes Industrial League |
+| CCT01 | An imagining of Cockletown |
+| CEH02 | Cedar Tree at Cedar Hollow |
+| CEH03 | Cedar Hollow |
 | CEH1 | Three Good Democrats |
+| CFU01 | U.S. Marine Corps Camp Fuller |
+| CFU02 | U.S. Marine Corps Camp Fuller |
+| CFU03 | U.S. Marine Corps Camp Fuller |
+| CFU04 | U.S. Marine Corps Camp Fuller |
+| CFU05 | Camp Fuller |
+| CFU05b | Back of CFU05 |
 | CFU06 | Camp Fuller |
+| CGS01 | Church of the Good Samaritan on Lancaster Pike, Paoli, 1888 |
+| CGS02 | Good Samaritan Church, Paoli |
+| CGS03 | Church of the Good Samaritan |
+| CGS04 | Church of the Good Samaritan |
+| CGS05 | Church of the Good Samaritan, Paoli |
+| CGS06 | Good Samaritan Church |
+| CGS07 | Good Samaritan Church |
+| CGS08 | Good Samaritan Church |
+| CGS09 | Good Samaritan Church |
+| CGS10 | Good Samaritan Church |
+| CGS11 | Good Samaritan Church |
+| CGS12 | Good Samaritan Church |
+| CGS13 | Good Samaritan Church |
+| CGS14 | Good Samaritan Church |
+| CGS15 | Good Samaritan Church |
+| CGS16 | Good Samaritan Church |
+| CGS17 | Good Samaritan Church |
 | CH1 | Our Lady of the Assumption Church |
 | CH16 | Great Valley Baptist Chapel |
+| CH18 | First Presbyterian Church, Paoli |
+| CH19 | First Presbyterian Church, Paoli |
 | CH2 | Carriage Sheds, Great Valley Presbyterian Church |
+| CH22 | Berwyn 75th Anniversary Service |
+| CH23 | Berwyn Baptist Chapel |
+| CH29 | Paoli Baptist Church |
 | CH3 | Mounting Block & Carriage Sheds, Great Valley Presbyterian Church |
+| CH30 | Paoli Baptist Church |
 | CH4 | Mounting Block & Carriage Sheds, Great Valley Presbyterian Church |
 | CH6 | Berwyn Baptist Chapel |
+| CHE04 | Chesterbrook Farm |
+| CHE05 | Chesterbrook Farm |
 | CHE1 | Alexander Murdock |
 | CHE10 | Chesterbrook Farm Barn |
 | CHE11 | Chesterbrook Farm Barn & Silo |
 | CHE12 | Chesterbrook Farm Barn |
+| CHE13 | Lee-Bradford Quarters |
 | CHE14 | Chesterbrook Farm |
 | CHE15 | Generals Lee & Bradford's Quarters |
+| CHE16 | Captain John Davis’ Quarters aka Cassatt Homestead |
+| CHE17 | Chesterbrook Boulevard |
+| CHE18 | Chesterbrook Boulevard |
+| CHE19 | Chesterbrook Village Center |
 | CHE2 | Carriages at Chesterbrook Farm |
+| CHE20 | Chesterbrook Village Center |
+| CHE21 | Chesterbrook Village Center |
+| CHE22 | Chesterbrook Village Center |
+| CHE23 | Chesterbrook Village Center |
+| CHE24 | Chesterbrook Village Center |
+| CHE25 | North Valley Hills |
+| CHE26 | North Valley Hills |
+| CHE27 | North Valley Hills |
+| CHE28 | North Valley Hills |
+| CHE29 | Chesterbroook and North Valley Hills |
 | CHE3 | Chesterbrook Farm |
+| CHE30 | Chesterbroook and North Valley Hills |
+| CHE31 | North Valley Hills |
+| CHE32 | North Valley Hills |
+| CHE33 | North Valley Hills |
+| CHE34 | Chesterbrook |
+| CHE35 | Chesterbrook |
+| CHE36 | Chesterbrook |
+| CHE37 | Chesterbrook |
+| CHE38 | Chesterbrook |
+| CHE39 | Chesterbrook |
 | CHE4 | Chesterbrook Farm |
+| CHE40 | Chesterbrook |
+| CHE41 | Duportail Barn, Chesterbrook |
+| CHE42 | Duportail Barn, Chesterbrook |
+| CHE43 | Chesterbrook |
+| CHE44 | Chesterbrook |
+| CHE45 | Chesterbrook |
+| CHE46 | Chesterbrook |
+| CHE47 | Barn, Chesterbrook |
+| CHE48 | Barn, Chesterbrook |
+| CHE49 | Barn, Chesterbrook |
 | CHE5 | Chesterbrook Farm |
+| CHE50 | Chesterbrook |
+| CHE51 | Chesterbrook |
+| CHE52 | Chesterbrook |
+| CHE53 | Chesterbrook Cows |
+| CHE54 | Old Davis House, Chesterbrook |
+| CHE55 | Duck Pond, Chesterbrook |
+| CHE56 | Cadet, Chesterbrook Stallion |
+| CHE57 | Bard, star racing horse of Chesterbrook |
+| CHE58 | Chesterbrook colts |
+| CHE59 | Prize Bull, Chesterbrook |
 | CHE6 | Elda Barns |
+| CHE60 | Flock of Sheep, Chesterbrook |
+| CHE61 | Chesterbrook Farm |
+| CHE62 | Chesterbrook Farm |
+| CHE63 | Chesterbrook Farm |
+| CHE64 | Chesterbrook Farm |
 | CHE7 | Two Furness Barns |
 | CHE8 | Captain John Davis House |
 | CHE9 | Chesterbrook Farm Barn |
+| CHF01 | Chesterbrook Farm |
+| CHF02 | Chesterbrook Farm |
+| CHF03 | Chesterbrook Farm |
+| CHF06 | Carriages at Chesterbrook Farm |
+| CHF07 | Carriages at Chesterbrook Farm |
+| CHF08 | Carriages at Chesterbrook Farm |
+| CHF09 | Carriages at Chesterbrook Farm |
+| CHF10 | Shell of house on Chesterbrook Farm |
+| CHS01 | Chesterbrook Shopping Center |
+| CHS02 | Chesterbrook Shopping Center |
+| CHS03 | Chesterbrook Shopping Center |
+| CHS04 | Chesterbrook Shopping Center |
+| CHS05 | Chesterbrook Shopping Center |
+| CHS06 | Chesterbrook Shopping Center |
+| CHS07 | Chesterbrook Shopping Center |
+| CHS08 | Chesterbrook Shopping Center |
+| CHS09 | Chesterbrook Shopping Center |
+| CHS10 | Chesterbrook Shopping Center |
+| CHS11 | Chesterbrook Shopping Center |
+| CHS12 | Chesterbrook Shopping Center |
+| CLO01 | Clonmel, Old Eagle School Road |
+| CLO02 | Clonmel, Old Eagle School Road |
+| CLO03 | Clonmel, Old Eagle School Road |
+| CMR01 | W. T. Comer’s Haberdashery Store |
+| CMR02 | W. T. Comer’s Haberdashery Store |
+| CMR03 | W. T. Comer’s Haberdashery Store |
+| CMR04 | Tredyffrin township Police Car |
+| CMR05 | W. T. Comer, Tredyffrin Supervior, Retirement Dinner |
+| CMR06 | W. T. Comer, Tredyffrin Supervisor, Retirement Dinner |
+| CMR07 | Early Traffic Lights in Tredyffrin township |
+| COC01 | Church of Christ, Valley Forge |
+| COR01 | Conestoga Road |
+| COR02 | Harry K. Ong house, Conestoga Road |
+| COR03 | Ong home, corner of Bair and Conestoga Roads |
+| COR04 | Conestoga Road |
+| COR05 | Former home of Mrs John Heagy,  Conestoga Road |
+| COR06 | Former home of Mrs John Heagy, 755 Conestoga Road |
+| COR07 | Former home of Mrs John Heagy, Conestoga Road |
+| COR08 | Rear of 765 Conestoga Road |
+| COR09 | Conestoga Road |
+| COR10 | W. C. Latch home, Conestoga Road |
+| COR11 | Mansley house, 759 Conestoga Road |
+| COR12 | Mansley home, 759 Conestoga Road |
+| COR13 | Norcini's house being built, Conestoga Road |
+| COR14 | Conestoga Road being relaid 1970 |
+| COR15 | Conestoga Road being relaid 1970 |
+| COR16 | Conestoga Road being relaid 1970 |
+| COR17 | 678 Conestoga Road |
+| COR18 | 678 Conestoga Road |
+| COR19 | 617 Conestoga Road |
+| COR20 | 617 Conestoga Road |
+| COR21 | 586 Conestoga Road |
+| COR22 | 586 Conestoga Road |
+| COR23 | 560 Conestoga Road |
+| COR24 | 560 Conestoga Road |
+| COR25 | Conestoga Road |
+| COR26 | Conestoga Road, work outside Hillcrest |
+| COR27 | Conestoga Road outside Bair estate |
+| COR28 | Conestoga Road at Bairs estate |
+| COR29 | Conestoga Road at Bair estate |
+| COR30 | Pavement preparation, Conestoga Road |
+| COR31 | Pavement work, Conestoga Road |
+| COR32 | Pavemnet work, Conestoga Road |
+| COR33 | Sewer work, Conestoga Road |
+| COR34 | Storm damage, Conestoga Road |
+| COR35 | Sewer work, Conestoga Road |
+| COR37 | Conestoga Road |
+| COR39 | Conestoga Road at Bair Avenue |
+| COR40 | Conestoga Road |
+| COR41 | Conestoga Road |
+| COR42 | Conestoga Road |
+| COR43 | Conestoga Road |
+| COR44 | Conestoga Road |
+| COR45 | Conestoga Road |
+| COR46 | Conestoga Road |
+| CRC02 | Church Road Cabin |
+| CRM03 | Aaron and Dennis Coleman at the Church Road Mill |
+| CRS03 | Carr School |
+| CRS04 | Carr School |
 | CRS1 | Carr School, 1832 - 1869 |
+| CUH06 | Bicentennial Parade |
+| CUH07 | Bicentennial Parade |
+| CUH08 | Bicentennial Parade |
 | CVR1 | New Centerville Grade Crossing |
+| CVR100 | Conductor uses telephone box near Cedar Hollow Road |
+| CVR102 | Looking east, locomotive and caboose cross over Swedesford Road in Tredyffrin Township |
+| CVR103 | Looking north, a Reading locomotive and caboose approach the Church Road crossing |
+| CVR104 | Site of Warner spur off Chester Valley Railroad at Church and St. Johns Road, Tredyffrin |
+| CVR106 | Reading hoppers cross Cedar Hollow Road heading west, summer 1967. |
+| CVR107 | Matthews Road Bridge over the Chester Valley Railroad |
+| CVR108 | Westbound Valley freight crosses Cedar Hollow Road, Tredyffrin Township, |
+| CVR109 | Looking east from Cedar Hollow Road along the former Chester Valley Railroad |
+| CVR11 | State Road Grade Crossing, Chester Valley Railroad |
+| CVR110 | Amidst the destruction of the roadbed, a Chester Valley Railroad rail from 1912. |
+| CVR131 | Bridge Abutments on Chester Valley Trail (ex Chester Valley Railroad) |
+| CVR132 | Bridge Abutments on Chester Valley Trail (ex Chester Valley Railroad) |
+| CVR133 | Annotated New Centerville Station plan |
+| CVR134 | Cedar Hollow Station Fire |
+| CVR135 | Cedar Hollow Station Fire |
+| CVR136 | Cedar Hollow Station Fire |
+| CVR137 | Chester Valley Trail |
+| CVR138 | Chester Valley Railroad conductor calls from burned Cedar Hollow station 1967 |
+| CVR139 | Chester Valley Trail, looking east |
+| CVR140 | Cedar Hollow Station |
+| CVR141 | Maple Station |
+| CVR142 | Chesterbrook Station on the Chester Valley Railroad |
+| CVR143 | Cedar Hollow Station |
+| CVR144 | Truck-Bridge Collision on Swedesford Road |
+| CVR145 | Truck-Bridge Collision on Swedesford Road |
+| CVR147 | Truck-Bridge Collision on Swedesford Road |
+| CVR148 | Truck-Bridge Collision on Swedesford Road |
+| CVR149 | Truck-Bridge Collision on Swedesford Road |
+| CVR150 | Truck-Bridge Collision on Swedesford Road |
+| CVR151 | Truck-Bridge Collision on Swedesford Road |
+| CVR152 | Truck-Bridge Collision on Swedesford Road |
+| CVR153 | Truck-Bridge Collision on Swedesford Road |
+| CVR154 | Truck-Bridge Collision on Swedesford Road |
+| CVR155 | Truck-Bridge Collision on Swedesford Road |
+| CVR156 | Truck-Bridge Collision on Swedesford Road |
+| CVR157 | Truck-Bridge Collision on Swedesford Road |
+| CVR158 | Truck-Bridge Collision on Swedesford Road |
+| CVR161 | Truck-Bridge Collision on Swedesford Road |
+| CVR163 | Truck-Bridge Collision on Swedesford Road |
+| CVR164 | Truck-Bridge Collision on Swedesford Road |
+| CVR165 | Truck-Bridge Collision on Swedesford Road |
+| CVR167 | Truck-Bridge Collision on Swedesford Road |
+| CVR168 | Truck-Bridge Collision on Swedesford Road |
+| CVR169 | Truck-Bridge Collision on Swedesford Road |
+| CVR170 | Truck-Bridge Collision on Swedesford Road |
+| CVR172 | Truck-Bridge Collision on Swedesford Road |
 | CVR2 | Strafford Grade Crossing |
 | CVR3 | Diagram of railroad track at (New) Centerville |
+| CVR77 | Eastward along former Chester Valley Railroad roadbed from Old Eagle School Road, Tredyffrin |
+| CVR78 | Chester Valley Railroad right of way east of Old Eagle School Road |
+| CVR79 | Chester Valley Railroad right of way from West Valley Road, Tredyffrin |
+| CVR80 | View west along former Chester Valley Railroad roadbed near New Centerville, April 29, 2002. |
+| CVR81 | Remains of Chester Valley Railroad water tank at New Centerville |
+| CVR82 | Remains of Chester Valley Railroad water tank at New Centerville |
+| CVR83 | Remnants of the iron Chester Valley Railroad water trough in New Centerville, May 2000. |
+| CVR84 | Chester Valley Railroad water trough near the former New Centerville station |
+| CVR88 | Reading diesel switcher hauls freight west across Valley Forge Road |
+| CVR89 | Site of former Chester Valley Railroad overpass across Valley Forge Road, looking north, |
 | CVR9 | Howellville Station |
+| CVR90 | Westbound Valley freight approaches old Rte. 202 bridge, Tredyffrin Township, |
+| CVR91 | Westbound Valley freight past new Rte. 202 bridge, Tredyffrin Township, c. early 1970s. |
+| CVR92 | Eastbound Chester Valley Railroad Alco RS-3 near the present Chesterbrook Blvd., Tredyffrin Township |
+| CVR93 | Going-away shot – same train (see CVR92) heads north toward the old Rt. 202 overpass (later Route 252) near Chesterbrook. |
+| CVR94 | Hauling hoppers west past Johnson's Quarry, Howellville |
+| CVR95 | New (1970) Swedesford Road overpass. |
+| CVR96 | West toward the Cedar Hollow Station, Chester Valley branch, November 23, 1961. |
+| CVR99 | Chester Valley Railroad near Cedar Hollow Road, Tredyffrin Township |
+| CWB04 | Carriage Way Houses |
+| CWB05 | Carriage Way Houses |
+| CWB06 | Carriage Way Houses |
+| CWB07 | Carriage Way Houses |
+| CWB08 | Carriage Way Houses |
+| CWB09 | Carriage Way Houses |
+| CWB1 | Carriage Way, Berwyn |
+| CWB10 | 4 Carriage Way, Berwyn |
+| CWB11 | 4 Carriage Way, Berwyn |
+| CWB12 | 4 Carriage Way, Berwyn |
+| CWB13 | 4 Carriage Way, Berwyn |
+| CWB14 | 4 Carriage Way, Berwyn |
+| CWB15 | 4 Carriage Way, Berwyn |
+| CWB16 | 4 Carriage Way, Berwyn |
+| CWB17 | 4 Carriage Way, Berwyn |
+| CWB18 | 4 Carriage Way, Berwyn |
+| CWB19 | 4 Carriage Way, Berwyn |
+| CWB2 | Carriage Way, Berwyn |
+| CWB20 | 4 Carriage Way, Berwyn |
+| CWB21 | 4 Carriage Way, Berwyn |
+| CWB22 | 4 Carriage Way, Berwyn |
+| CWB23 | Carriage Way Houses |
+| CWB24 | Carriage Way Houses |
+| CWB25 | Carriage Way house |
+| CWB3 | Carriage Way, Berwyn |
+| CWI03 | Old Covered Wagon Inn |
+| CWI04 | Covered Wagon Inn |
+| CWI05 | Covered Wagon Inn |
+| CWI06 | Covered Wagon Inn |
+| CWI07 | Covered Wagon Inn |
+| CWI08 | Covered Wagon Inn |
 | CWI1 | Covered Wagon Inn |
 | CWI2 | Covered Wagon Inn |
+| DAA01 | Norbertine Abbey, Daylesford |
+| DAA02 | Norbertine Abbey, Daylesford |
+| DAY06 | Lancaster Avenue, Daylesford |
+| DAY07 | Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford |
+| DAY08 | Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford |
+| DAY09 | Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford |
 | DAY1 | Glenn Road looking north |
+| DAY10 | Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford |
+| DAY11 | Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford |
+| DAY12 | Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford |
+| DAY13 | Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford |
+| DAY14 | Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford |
+| DAY15 | Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford |
+| DAY16 | Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford |
+| DAY17 | Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford |
+| DAY18 | Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford |
+| DAY19 | Office Construction SW corner of Glenn Road and Lancaster Avenue, Daylesford |
 | DAY2 | Glenn Road, Daylesford |
+| DAY5 | Prissey's Hollow |
+| DBV02 | Devault Beaver, 1825 - 1893, gravestone |
 | DE1 | Dingee Estate Barn |
+| DE10 | Dingee estate sheep pasture, Paoli |
 | DE2 | Dingee Estate Barn |
 | DE3 | Shepherd on Dingee Estate |
 | DE4 | Dingee Farm |
 | DE5 | Dingee Cow Barn |
 | DE6 | Dingee Barn |
 | DE7 | John Dingee House, 'Fennerton' |
+| DE8 | Old Barn, Paoli |
+| DE9 | Barn House, Paoli |
+| DEI33b | Back of DEI33 |
+| DET01 | Detwiler Barn? |
+| DET02 | Andrews Barn Fire |
+| DET03 | Detwiler House aka Andrews Farm |
+| DEV19 | Bridge at Devon Station |
+| DEV24 | Aerial view of Devon and Strafford showing building of K-Mart store |
+| DEV26 | Lancaster and Grove Avenues in Devon |
+| DEV27 | Lancaster and Grove Avenues in Devon |
+| DEV28 | Lancaster and Grove Avenues in Devon |
+| DEV9 | New Devon Garage and Antique Tea Room, Devon 1908 |
 | DFF1 | Devon Fireworks Factory Explosion |
 | DFF10 | Rescue Workers, Devon Fireworks Factory Explosion |
 | DFF11 | Devon Fireworks Factory Explosion |
@@ -179,42 +710,327 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | DFF7 | Devon Fireworks Factory Explosion |
 | DFF8 | Interior Damage from Devon Fireworks Factory Explosion |
 | DFF9 | Devon Fireworks Factory Explosion |
+| DHS133 | Three unknown men at the Devon Horse Show |
+| DHS134 | Devon Horse Show |
+| DLC03 | Devon Log Cabin |
+| DLC05 | Devon Log Cabin |
+| DLC06 | Devon Log Cabin |
+| DOY01 | Doyle & McDonnell Nursery |
+| DRF04 | Carriage Shed, Diamond Rock Farm |
+| DRF05 | Corn Crib, Diamond Rock Farm |
+| DRF06 | Springhouse, Diamond Rock Farm |
+| DRF07 | Springhouse, Diamond Rock Farm |
 | DRH1 | Conestoga Road House |
+| DRH10 | Dorothy Reed house |
+| DRH11 | Dorothy Reed house |
+| DRH12 | Dorothy Reed house |
+| DRH13 | Dorothy Reed house |
+| DRH14 | Dorothy Reed house |
+| DRH15 | Dorothy Reed house |
+| DRH16 | Dorothy Reed house |
 | DRH2 | Conestoga Road House |
 | DRH3 | Conestoga Road House |
 | DRH4 | Conestoga Road House |
 | DRH5 | Conestoga Road House |
+| DRH6 | Conestoga Road House |
+| DRH7 | Conestoga Road House |
+| DRH8 | Conestoga Road House |
 | DRS1 | Diamond Rock School |
 | DRS10 | Diamond Rock School |
+| DRS11 | Diamond Rock School |
+| DRS12 | Diamond Rock School |
+| DRS14 | Diamond Rock School |
+| DRS15 | Diamond Rock School |
+| DRS16 | Diamond Rock School |
+| DRS17 | Diamond Rock School |
+| DRS18 | Diamond Rock School |
+| DRS19 | Diamond Rock School |
 | DRS2 | Diamond Rock School |
+| DRS20 | Diamond Rock School |
+| DRS21 | Diamond Rock School |
+| DRS22 | Diamond Rock School |
+| DRS23 | Diamond Rock School |
+| DRS24 | Diamond Rock School |
+| DRS25 | Diamond Rock Schoolhouse |
+| DRS26 | Diamond Rock Schoolhouse |
+| DRS27 | Diamond Rock Schoolhouse |
+| DRS28 | Diamond Rock Schoolhouse |
+| DRS29 | Diamond Rock Schoolhouse |
+| DRS30 | Accounts Ledger, Diamond Rock School |
+| DRS31 | Diamond Rock School |
+| DRS32 | Diamond Rock School |
+| DRS33 | Diamond Rock School |
+| DRS34 | Diamond Rock School |
+| DRS35 | Diamond Rock School house |
+| DRS36 | Diamond Rock Schoolhouse |
 | DRS4 | Diamond Rock School |
 | DRS5 | Diamond Rock School |
 | DRS6 | Diamond Rock School |
 | DRS7 | Diamond Rock School |
 | DRS8 | Diamond Rock School |
 | DRS9 | Diamond Rock School |
+| DSA01 | Devon - Strafford Apartments, Sugartown Road |
+| DSA02 | Site of Devon – Strafford Apartments |
+| DSA03 | Site of Devon – Strafford Apartments |
+| DSA04 | Site of Devon – Strafford Apartments |
+| DSA05 | Site of Devon – Strafford Apartments |
+| DSA06 | Site of Devon – Strafford Apartments |
+| DSA07 | Devon – Strafford Apartments |
+| DSA08 | Site of Devon – Strafford Apartments |
+| DSA09 | Site of Devon – Strafford Apartments |
+| DSH01 | DeSantis House |
+| DSH02 | DeSantis House |
+| DSH03 | DeSantis House |
 | DUP01 | Duportail House |
 | DUP03 | Duportail's Quarters |
+| DUP04 | Duportail's Quarters |
+| DUP05 | Duportail Barn |
+| DUP06 | Duportail’s Quarters |
+| DUP07 | Duportail’s Quarters |
+| DUP08 | Duportail’s Quarters |
+| DUP09 | Duportail House |
 | DWQ01 | De Kalb & Weedon's Quarters |
 | DWQ02 | De Kalb & Weedon's Quarters |
+| DWQ03 | Generals DeKalb & Weedon's Quarters - Abijah Stephens farmhouse |
+| DWQ04 | Generals DeKalb & Weedon’s Quarters - Abijah Stephens farmhouse |
+| DWQ05 | Abijah Stephens farm (DeKalb & Weedon’s Quarters) |
+| DWQ06 | Abijah Stephens farm (DeKalb & Weedons Quarters) |
+| DWQ07 | Abijah Stephens farm (DeKalb’s Quarters) |
+| ECH01 | Cathcart Mansion |
+| ECH02 | Cathcart Home |
+| ECH03 | Eliza Cathcart House |
+| ECH05 | Cathcart Home |
+| ECH06 | Eliza Cathcart home |
+| EHC | Unveiling of Plaque, Stone Chimney Picket Post |
 | EHC19 | Tredyffrin Easttown History Club Members |
 | EHC3 | Tredyffrin Easttown History Club Members |
+| EHC35 | TE History Club at Crooked Chimney Picket Post |
+| EHC37 | Unveiling of Plaque, Stone Chimney Picket Post |
+| EHC39 | Unveiling of Plaque, Stone Chimney Picket Post |
+| EPH06 | Edith Parker’s house |
+| EPH07 | Edith Parkers house |
+| EPH08 | Edith Parker’s house |
+| EPH1 | Edith Parker's House, Howellville |
+| EPH10 | Site of Edith Parker’s house |
+| EPH11 | Entrance to Edith Parker’s house |
+| EPH12 | Site of Edith Parker’s house |
+| EPH13 | Skating rink on site of Edith Parker’s house |
+| EPH2 | Edith Parker's House, Howellville |
+| EPH3 | Edith Parker's House, Howellville |
+| EPH4 | Edith Parker's House, Howellville |
+| EPH5 | Edith Parker's House, Howellville |
+| FBB13 | Former Berwyn Baptist Chapel |
+| FBI01 | First Blue Ball Inn |
 | FFF1 | Far Fields Farm |
+| FHU01 | Blessing of the Hunt, St. Peters Great Valley |
+| FHU02 | Blessing of the Hunt, St. Peters Great Valley |
+| FHU04 | Blessing of the Hunt, St. Peters Great Valley |
+| FHU05 | Blessing of the Hunt, St. Peters Great Valley |
+| FHU06 | Blessing of the Hunt, St. Peters Great Valley |
+| FHU07 | Blessing of the Hunt, St. Peters Great Valley |
+| FHU08 | Blessing of the Hunt, St. Peters Great Valley |
+| FHU09 | Pickering Hunt |
+| FHU10 | Pickering Hunt |
+| FHU11 | Pickering Hunt |
+| FHU12 | Pickering Hunt |
+| FHU13 | Pickering Hunt |
+| FHU14 | Pickering Hunt |
+| FHU15 | Pickering Hunt |
+| FHU16 | Pickering Hunt |
+| FM4 | Greenwood Farm |
+| FPC01 | First Presbyterian Church, Paoli, 1949 |
+| FPC02 | First Presbyterian Church, Manse, 1949 |
+| FPC03 | Paoli Presbyterian Sunday School, built 1892 |
+| FPC28 | Paoli Presbyterian Church |
+| FPC29 | Paoli Presbyterian Church |
+| FPC30 | Paoli Presbyterian Church |
+| FPC31 | Paoli Presbyterian Church |
+| FPC33 | Paoli Library Move |
+| FPC34 | Paoli Library Move |
+| FPC35 | Paoli Library Move |
+| FPC36 | Paoli Library Move |
+| FPC37 | Paoli Library Move |
+| FPC38 | Paoli Library Move |
+| FPC39 | Paoli Library Move |
+| FPC40 | Paoli Library Move |
+| FPC41 | Paoli Library Move |
+| FPC42 | Paoli Library Move |
+| FPC43 | Paoli Library Move |
+| FPC44 | Paoli Library Move |
+| FPC45 | Paoli Library Move |
+| FPC46 | Paoli Library Move |
+| FPC47 | Paoli Library Move |
+| FPC48 | Paoli Library Move |
+| FPC49 | Paoli Library Move |
+| FPC50 | Paoli Library Move |
+| FPC51 | Paoli Library Move |
+| FPC52 | Paoli Library Move |
+| FPC53 | Paoli Library Move |
+| FPC54 | Paoli Library Move |
+| FPC55 | Paoli Library Move |
+| FPC56 | Paoli Library Move |
+| FPC57 | Paoli Library Move |
+| FPC58 | Paoli Library Move |
+| FPC59 | Paoli Library Move |
+| FPC60 | Paoli Library Move |
+| FPC61 | Paoli Library Move |
+| FPC62 | Paoli Library Move |
+| FPC63 | Paoli Library Move |
+| FPC64 | Paoli Library Move |
+| FPC65 | Paoli Library Move |
+| FPC66 | Paoli Library Move |
+| FPC67 | Paoli Library Move |
+| FPC68 | Paoli Library Move |
 | FW1 | View from Fort Washington |
+| GFM37 | Some Class! |
+| GHF01 | John R. K. Scott house |
+| GHF02 | John R. K. Scott house |
+| GHF03 | John R. K. Scott house |
+| GHF04 | John R. K. Scott house |
+| GHF05 | John R. K. Scott house |
+| GHF06 | John R. K. Scott house |
+| GHF07 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF08 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF09 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF10 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF11 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF12 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF13 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF14 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF15 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF16 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF17 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF18 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF19 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF20 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF21 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF22 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF23 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF24 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF25 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF26 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF27 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF28 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF29 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF30 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF31 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF32 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF33 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF34 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF35 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF36 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF37 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF38 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF39 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF40 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF41 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF42 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF43 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF44 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF45 | Glenhardie Farms (John R. K. Scott estate) |
+| GHF46 | Apple Tree House, Glenhardie Farms |
+| GHF47 | Barn, Glenhardie Farms |
+| GHF48 | By-the-Creek, Glenhardie Farms |
+| GHF49 | Dairy Barn, Glenhardie Farms |
+| GHF50 | Donald House, Glenhardie Farms |
+| GHF51 | East Watch, Glenhardie Farms |
+| GHF52 | Entrance to Glenhardie Farms, next to Turnpike |
+| GHF53 | Glenhardie Farms plan |
+| GHF54 | Garden House, Glenhardie Farms |
+| GHF55 | Dairy Bar & Restuarant, Glenhardie Farms |
+| GHF56 | Hilltop House, Glenhardie Farms |
+| GHF57 | Magnolia House, Glenhardie Farms |
+| GHF58 | Managers House, Glenhardie Farms |
+| GHF59 | Mifflin House, Glenhardie Farms |
+| GHF60 | Road Alignments, Glenhardie Farms |
+| GHF61 | Sullivan’s Quarters, Glenhardie Farms |
+| GHF62 | The Hedges, Glenhardie Farms |
+| GHF63 | The Lindens, Glenhardie Farms |
+| GHF64 | The Meadows, Glenhardie Farms |
+| GHF65 | The Orchards, Glenhardie Farms |
+| GHF66 | Weedon and DeKalb Houses, Glenhardie Farms |
+| GHF67 | Weston Cottage, Glenhardie Farms |
+| GJI06 | Windmill Tea Room |
+| GJI07 | General Jackson Inn |
+| GJI08 | General Jackson Inn |
+| GJI09 | General Jackson Inn |
+| GJI10 | Windmill Tea Room |
 | GJI2 | Espenshade's Wayside Inn |
+| GJI3 | General Jackson Inn |
+| GJI4 | Wind Mill Tea Room (General Jackson Inn), looking nothwest, Paoli |
+| GJI5 | The General Jackson Inn near Mile Post 18, Paoli, 1888 |
+| GLH01 | Golder-Langerhans House |
+| GLH02 | Golder-Langerhans House |
+| GLH03 | Golder-Langerhans House |
+| GLH04 | Golder-Langerhans House |
 | GPI01 | General Paoli Inn |
+| GPI02 | General Paoli Inn |
+| GPI03 | Paoli Inn looking NE - 1888 |
+| GPI04 | Paoli (Inn) from the west, 1888 |
+| GPI08 | Banquet Room at the Paoli Inn |
+| GPI09 | General Paoli Inn |
+| GPI10 | General Paoli Inn |
 | GPQ01 | General Poor's Quarters |
 | GPQ02 | General Poor's Quarters |
 | GPQ03 | General Poor's Quarters |
 | GPQ04 | General Poor's Quarters |
+| GPQ05 | General Poor's Quarters |
+| GRA01 | Gramond, Crestline Road |
+| GRA02 | Gramond, Crestline Road |
+| GRA03 | Gramond, Crestline Road |
+| GSC01 | Gateway Shopping Center |
+| GSC02 | Gateway Shopping Center |
+| GSC03 | Gateway Shopping Center |
+| GSC04 | Gateway Shopping Center |
+| GSC05 | Gateway Shopping Center |
+| GSC06 | Gateway Shopping Center |
+| GSC07 | Gateway Shopping Center |
+| GSC08 | Gateway Shopping Center |
+| GSC09 | Gateway Shopping Center |
+| GSC10 | Gateway Shopping Center |
+| GSC11 | Gateway Shopping Center |
+| GSC12 | Gateway Shopping Center |
+| GSC13 | Gateway Shopping Center |
+| GSC14 | Gateway Shopping Center |
+| GSC15 | Gateway Shopping Center |
 | GVB1 | Great Valley Baptist Church |
+| GVB10 | Graveyard, Great Valley Baptist Church |
+| GVB11 | Great Valley Baptist Church |
 | GVB2 | Great Valley Baptist Church |
+| GVB21 | Great Valley Baptist Church |
+| GVB22 | Great Valley Baptist Church |
+| GVB23 | Great Valley Baptist Church sign |
+| GVB24 | Great Valley Baptist Church |
+| GVB25 | Great Valley Baptist Church Educational Building and Parsonage |
+| GVB26 | Great Valley Baptist Church Educational Building |
+| GVB27 | Rev. David Jones |
+| GVB28 | Great Valley Baptist Church |
+| GVB29 | Great Valley Baptist Church |
 | GVB4 | Great Valley Baptist Church |
 | GVB5 | Great Valley Baptist Church |
 | GVB6 | Great Valley Baptist Church |
+| GVB7 | Great Valley Baptist Church |
+| GVB8 | Educational Building, Great Valley Baptist Church |
+| GVB9 | Graveyard, Great Valley Baptist Church |
+| GVH01 | Great Valley House |
 | GVM1 | Great Valley Mill |
 | GVM10 | Great Valley Mill |
+| GVM11 | Great Valley Mill |
+| GVM12 | Great Valley Mill |
+| GVM13 | Great Valley Mill |
+| GVM14 | Great Valley Mill |
+| GVM15 | Great Valley Mill |
+| GVM16 | Great Valley Mill Brochure, Page 1 |
+| GVM17 | Great Valley Mill Brochure, Page 2 |
+| GVM18 | Great Valley Mill Brochure, Page 3 |
+| GVM19 | Great Valley Mill Brochure, Page 4 |
 | GVM2 | Great Valley Mill |
+| GVM20 | Great Valley Mill Brochure, Page 5 |
+| GVM21 | Great Valley Mill Brochure, Page 6 |
+| GVM22 | Great Valley Mill |
+| GVM23 | Great Valley Mill |
+| GVM24 | Great Valley Mill |
+| GVM25 | Great Valley Mill |
 | GVM3 | Sign at Great Valley Mill |
 | GVM4 | Owned and Consultants at Great Valley Mill |
 | GVM5 | Mrs. Richard Houghton with restoration partners at Great Valley Mill |
@@ -222,30 +1038,207 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | GVM7 | Great Valley Mill |
 | GVM8 | Great Valley Mill |
 | GVM9 | Great Valley Mill |
+| GVP08 | Great Valley Presbyterian Church |
+| GVP09 | Great Valley Presbyterian Church |
 | GVP1 | Great Valley Presbyterian Church |
+| GVP10 | Parsonage, Great Valley Presbyterian Church |
+| GVP11 | Parsonage, Great Valley Presbyterian Church |
+| GVP12 | Great Valley Presbyterian Church |
+| GVP13 | Great Valley Presbyterian Church |
+| GVP14 | Great Valley Presbyterian Church |
+| GVP15 | Great Valley Presbyterian Church |
+| GVP15b | Back of GVP15 |
+| GVP16 | Great Valley Presbyterian Church |
+| GVP18 | Great Valley Presbyterian Church |
+| GVP20 | Great Valley Presbyterian Church |
+| GVP21 | Great Valley Presbyterian Church |
+| GVP22 | Great Valley Presbyterian Church |
+| GVP23 | Great Valley Presbyterian Church |
+| GVP24 | Great Valley Presbyterian Church |
+| GVP25 | Great Valley Presbyterian Church |
+| GVP26 | Great Valley Presbyterian Church |
+| GVP27 | Great Valley Presbyterian Church |
+| GVP28 | Great Valley Presbyterian Church |
+| GVP29 | Great Valley Presbyterian Church |
+| GVP3 | Great Valley Presbyterian Church |
+| GVP4 | Second Great Valley Presbyterian Church |
+| GVP5 | Great Valley Presbyterian Church |
 | GWQ01 | General Wayne’s Quarters |
+| GWQ02 | General Wayne’s Quarters (Joseph Walker house) |
+| GWQ04 | General Wayne’s Quarters (Joseph Walker house) |
+| GWQ05 | General Wayne’s Quarters, Many Springs Farm |
+| GWQ06 | Wayne’s Quarters; Many Springs Farm (Joseph Walker house) |
+| GWQ07 | Wayne’s Quarters |
+| GWQ08 | Wayne’s Quarters (Joseph Walker house) |
+| GWQ09 | General Wayne’s Quarters |
+| GWQ10 | General Wayne’s Quarters |
+| HAM01 | Hammer Hollow Mill |
+| HAM02 | Hammer Hollow |
+| HDW01 | H. Drake Williams House |
+| HDW02 | H. Drake Williams House |
+| HDW03 | H. Drake Williams House |
+| HDW04 | H. Drake Williams House |
+| HIC01 | Hillcrest Estate |
+| HIC02 | Hillcrest |
+| HIC03 | Hillcrest |
+| HIC04 | Hillcrest |
+| HIC05 | Entrance to Hillcrest |
+| HIC06 | Hillcrest |
+| HIC07 | Hillcrest |
+| HIC08 | Bair estate, Hillcrest |
+| HIC09 | Housing development on Hillcrest estate |
+| HIC10 | Hillcrest estate |
+| HIC11 | Hillcrest |
+| HIC12 | Entrance to Hillcrest estate |
+| HIC13 | Pavement work, Hillcrest |
+| HIC14 | Preparatory work for housing, Hillcrest |
+| HIC15 | New road into Hillcrest property |
+| HIC16 | Sewer lines into Hillcrest estate |
+| HIC17 | House foundations, Hillcrest estate |
+| HIC18 | Hillcrest, looking south |
+| HIC19 | Hillcrest |
+| HIC20 | Hillcrest |
+| HIC21 | home of Ellwood Tunnel, Hillcrest |
+| HIC22 | Original South Porch, Hillcrest |
+| HIC23 | North and East sides, Hillcrest |
+| HIC24 | North and West sides, Hillcrest |
+| HIC25 | North side, Hillcrest |
+| HIC26 | Porte Cochere, Hillcrest |
+| HIC27 | South and West sides, Hillcrest |
+| HIC28 | South Front, Hillcrest |
+| HIC29 | Storage Hall, Third Floor, Hillcrest |
+| HIC30 | Storage Hall, Third Floor, Hillcrest |
+| HIC31 | Typical Bevelled Plate Glass Window, Hillcrest |
+| HIC32 | Arched Window, Hillcrest |
+| HIC33 | Bedroom, Second Floor, Hillcrest |
+| HIC34 | Bedroom, Second Floor, Hillcrest |
+| HIC35 | Dining Room, Southwest Corner, Hillcrest |
+| HIC36 | Entrance, Hillcrest |
+| HIC37 | Entrance, Hillcrest |
+| HIC38 | Entrance Hall, Hillcrest |
+| HIC39 | Fireplace, Dining Room, Hillcrest |
+| HIC40 | Front Door, Hillcrest |
+| HIC41 | Front Door, Hillcrest |
+| HIC42 | Hillcrest, south front |
+| HIC43 | Hillcrest, North and East sides |
+| HIC44 | Hillcrest, Third Floor |
+| HIC45 | Hillcrest, Third Floor |
+| HIC46 | Hillcrest, North Side |
+| HIC47 | Hillcrest, West side |
+| HIC48 | Hillcrest, Third Floor |
+| HIC49 | Hillcrest, West side |
+| HIC50 | Hillcrest, North side |
+| HIG02 | Higgins Bakery |
+| HIG04 | Higgins Bakery |
+| HIG08 | Higgins Bakery |
+| HIG09 | Higgins Bakery |
+| HLC07 | Hampton-Atlee-Erdman Cabin |
+| HLC08-2590 | Heyburn Roye Log Cabin, 1989 |
+| HLC08-3596 | Hampton-Atlee-Erdman Cabin |
+| HLC09 | Heyburn Roye Log Cabin, 1990 |
+| HLC10 | Reese Homestead |
+| HLC11-3243 | Reese Homestead |
+| HLC11-6861 | Ice Storm at Heyburn Cabin, Long Lane, Berwyn |
 | HLC2 | Neilly Log Cabin |
 | HLC3 | Atlee-Erdman Log Cabin |
 | HLC4 | Atlee-Erdman Log Cabin |
 | HLC7 | Reese homestead |
+| HMH01 | Highway Mission, Howellville |
+| HMH02 | Highway Mission, Howellville |
+| HMH03 | Highway Mission, Howellville |
+| HOM01 | Howellville Mill |
+| HOS05 | Howellville School |
+| HOS06 | Account Ledger - Howellville School |
 | HOS1 | Howellville School Parade |
 | HOS2 | Reunion at Howellville School |
 | HOS3 | Davis School at Howellville |
+| HOT03 | Howellville Tavern Barn |
+| HOT04 | Howellville Tavern Barn |
+| HOT05 | Howellville Inn |
 | HOT1 | Howellville Tavern |
 | HOT2 | The Second Howellville Inn |
 | HOU1 | Cathcart Home |
+| HOU111 | Bernard House, Russell Road |
+| HOU114 | Hettinger Farm |
+| HOU115 | House, 1085 Old Lancaster Road. |
+| HOU116 | Iddings House |
+| HOU117 | Iddings House |
+| HOU118 | Valley View, Howellville Road |
+| HOU119 | Esther Lewis House, Berwyn Baptist Road |
+| HOU120 | Esther Lewis House, Berwyn Baptist Road |
+| HOU122 | Iddings house interior |
+| HOU123 | John Acker House, Conestoga Road |
+| HOU125 | 61 Cassatt Avenue, Berwyn |
+| HOU126 | 61 Cassatt Avenue, Berwyn |
+| HOU127 | Barn at 61 Cassatt Avenue |
+| HOU128 | Barn at 61 Cassatt Avenue |
+| HOU141 | House on Old Swedesford Road, Howellville |
+| HOU142 | House on Swedesford Road, Howellville |
+| HOU143 | House at corner of Swedesford and Howellville Roads |
+| HOU144 | House at corner of Swedesford and Howellville Roads |
+| HOU154 | Foundations, 112 Homestead Road, Devon - Strafford |
+| HOU155 | Foundations, 112 Homestead Road, Devon - Strafford |
+| HOU156 | 112 Homestead Road being built |
+| HOU157 | 112 Homestead Road being built |
+| HOU158 | 112 Homestead Road completed |
+| HOU161 | Plan of Sunset Hills |
+| HOU162 | Plan of Sunset Hills |
+| HOU165 | Possibly Howard Walker farm |
+| HOU167 | Peter Burns house |
+| HOU169 | Mildred Bradley house |
+| HOU170 | Rumrill House |
+| HOU172 | Mcnamee house |
+| HOU175 | Hillcrest, Conestoga Road |
+| HOU196 | Former Rumrill House |
+| HOU208 | Eithercoe, Pugh Road |
+| HOU210 | Dr. R. B. Okies house |
+| HOU211 | Unknown House |
+| HOU230 | Former site of Eagle Hotel |
+| HOU232 | Rumrill Observatory |
+| HOU238 | Residence of William W. Hoopes |
+| HOU239 | Residence of George R. Sinnickson |
+| HOU245 | Rumrill Observatory |
+| HOU246 | Rumrill Observatory |
+| HOU247 | Rumrill house, Conestoga Road |
 | HOU25 | Williams Farm |
+| HOU257 | F. H. Galloney house, Paoli |
+| HOU258 | H. W. Biddle house, Paoli |
+| HOU263 | Sugartown Mews |
+| HOU266 | LaFayette’s Quarters |
+| HOU267 | Watch Box from Centennial Exposition in Fairmount Park in 1876 |
+| HOU268 | Watch Box from Centennial Exposition in Fairmount Park in 1876 |
+| HOU269 | Possible building from Centennial Exposition in Fairmount Park in 1876 |
+| HOU275 | B. C. Fenwick house, Strafford |
+| HOU277 | Mr. F. D. Dimmick house, Strafford |
+| HOU279 | Harry Fried house, Strafford |
 | HOU28 | General Cornwallis' Quarters |
+| HOU283 | Mrs. M. A. Aull, Snoqualmie, Devon |
 | HOU3 | Eliza Cathcart Home |
 | HOU30 | Bodine House, Berwyn |
 | HOU31 | Iddings house, North Berwyn |
 | HOU33 | Cathcart Home |
 | HOU38 | North Berwyn School |
 | HOU4 | Rumrill Home, front view |
+| HOU40 | View from 759 Conestoga Road |
+| HOU42 | Francis House, Rhydlyn, Berwyn |
+| HOU43 | Francis House, Rhydlyn, Berwyn |
+| HOU48 | Commercial Building, Lincoln Highway, Paoli |
 | HOU5 | Rumrill Home, rear view |
+| HOU51 | Nant yr Ewig |
+| HOU53 | Latch driveway |
+| HOU54 | Springhouse, 741 Contention Lane |
 | HOU6 | Rehobeth |
+| HOU62 | Iddings House |
+| HOU68 | Victorian house, northwest corner of Bair and Conestoga Roads |
+| HOU69 | Victorian house, northwest corner of Bair and Conestoga Roads |
 | HOU7 | Knyphausen's Quarters |
+| HOU70 | Victorian house, northwest corner of Bair and Conestoga Roads |
+| HOU71 | Victorian house, northwest corner of Bair and Conestoga Roads |
 | HOU8 | General Howe's Headquarters |
+| HOU91 | Steen - Rumrill House |
+| HOU92 | Steen -  Rumrill House, Conestoga Road |
+| HOU93 | site of George Washington Lewis house |
+| HOU94 | Site of George Washington Lewis house |
 | HOW1 | Howellville Road |
 | HOW10 | Mule Barn, Howellville |
 | HOW11 | Shack, Howellvile |
@@ -260,37 +1253,262 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | HOW2 | Howellville |
 | HOW20 | Howellville |
 | HOW21 | Howellville |
+| HOW22 | Painting of Howellville village |
+| HOW23 | Howellville Village |
+| HOW24 | Howellville Road in Village |
+| HOW25 | Howellville Road in Village; looking east |
+| HOW26 | Howellville Road in Village |
+| HOW27 | Howellville |
+| HOW28 | Old Swedesford Road, Howellville |
+| HOW29 | Swedesford Road looking east |
 | HOW3 | Bear Hill Road at Howellville |
+| HOW30 | Swedesford Road l0oking east to Howellville Road |
+| HOW31 | Howellville Road and route 202, 1967 |
+| HOW32 | Howellville Road and route 202, looking north |
+| HOW33 | Howellville and Swedesford Roads looking north |
+| HOW34 | Bear Hill Road at Howellville |
+| HOW35 | New Swedesford Road |
+| HOW36 | Painting of Howellville |
+| HOW37 | Swedesford Road looking north |
+| HOW38 | Swedesford Road |
+| HOW39 | Old Swedesford Road |
 | HOW4 | Howellville Clean-up |
+| HOW40 | Old Swedesford Road |
+| HOW41 | Swedesford Road and site of Howellville Quarry |
+| HOW42 | Old Swedesford Road |
+| HOW43 | Swedesford Road |
+| HOW44 | Swedesford Road |
 | HOW5 | Howellville Clean-up |
 | HOW6 | Howellville Clean-up |
 | HOW7 | Howellville Clean-up |
 | HOW8 | House & Mule Barn, Howellville |
 | HOW9 | House on Swedesford Road, Howellvile |
+| HQ07 | Howellville Quarry |
+| HQ08 | Howellville Quarry |
+| HQ09 | Howellville Quarry |
 | HQ1 | Crushers, Howellville Quarry |
+| HQ10 | Johnson Quarry, Howellville |
 | HQ2 | Howellville Quarry |
 | HQ3 | Buildings at Howellville Quarry |
 | HQ4 | Howellville Quarry being drained |
+| HQ5 | Dyer Quarry, Howellville |
+| HQ6 | Dyer Quarry, Howellville |
+| HRB01 | Howellville and Old Lancaster Roads, Berwyn |
+| HRB02 | Howellville Road, Berwyn |
+| HRB03 | Howellville Road, Berwyn |
+| HRB04 | Howellville Road, Berwyn |
+| HRB05 | Howellville Road, Berwyn |
+| HSH01 | D. Haven Scott House |
+| HSH02 | D. Haven Scott House |
+| HSH03 | D. Haven Scott House |
+| HSH04 | D. Haven Scott House |
+| HSH05 | D. Haven Scott House |
+| HSH06 | D. Haven Scott House |
+| HSH07 | D. Haven Scott House |
+| HSQ01 | Generals Howe & Scott's Quarters |
+| HSQ02 | Howe’s Quarters |
+| HSQ03 | General Howe’s Quarters |
+| HSQ04 | Howe’s and Scott’s Quarters |
+| HSQ05 | Jones Barn |
+| HSQ06 | Jones Barn |
+| HSQ07 | Jones Barn |
+| HSQ08 | Jones Barn |
+| HSQ09 | Jones Barn |
+| HSQ12 | Jones Barn |
+| HSS03 | Hillside School |
+| HSS04 | Hillside School |
+| IHF01 | Ivy Hollow Farm Tenant House |
+| IHF02 | Ivy Hollow Farm Tenant House |
+| IHF03 | Ivy Hollow Farm Tenant House |
+| IHF04 | Ivy Hollow Farm Tenant House |
+| IHF05 | Ivy Hollow Farm Tenant House |
+| IHF06 | Ivy Hollow Farm Tenant House |
+| IHF07 | Ivy Hollow Farm Tenant House |
+| IHF08 | Ivy Hollow Farm Tenant House |
 | IT1 | Ruins of Paoli Inn |
 | IT2 | Windmill Tea Rooms |
 | IT5 | Howellville Inns |
+| JBH03 | James Beattie House |
+| JBH04 | James Beattie House |
+| JBH05 | James Beattie House |
+| JBH07 | James Beattie House |
+| JBH08 | James Beattie House |
+| JBH09 | James Beattie House |
+| JBH10 | James Beattie House |
+| JBH11 | James Beattie House |
+| JBH12 | James Beattie House |
+| JBH6 | James Beattie House |
+| JDH01 | Jesse Dice House |
+| JDH02 | Jesse Dice House |
+| JDH03 | Jesse Dice House |
+| JDH04 | Jesse Dice House |
+| JDH05 | Jesse Dice House |
+| JDH06 | Jesse Dice House |
+| JDH07 | Jesse Dice House |
+| JDH08 | Jesse Dice House |
+| JDH09 | Jesse Dice House |
+| JRB01 | Jones - Richards Barn |
+| JRB02 | Jones - Richards Barn |
+| JRB03 | Jones - Richards Barn |
+| JRH01 | John Reese house, 638 Conestoga Road |
+| JRH02 | John Reese house |
+| JRH04 | John Reese (aka Sagebeer) House |
 | KCB1 | Knox Covered Bridge |
+| KCB10 | Knox Covered Bridge |
+| KCB11 | Knox Covered Bridge |
+| KCB12 | Knox Covered Bridge |
+| KCB13 | Knox Covered Bridge damage |
+| KCB14 | Knox Covered Bridge |
+| KCB15 | Knox Covered Bridge 2006 damage - siding and clearance sign |
+| KCB16 | Knox Covered Bridge 2006 damage - Damaged Beam |
+| KCB17 | Knox Covered Bridge 2006 damage - Damaged Bridge |
+| KCB18 | Knox Covered Bridge 2006 damage - Temporary repairs |
+| KCB19 | Knox Covered Bridge, 1940 |
 | KCB2 | Knox Covered Bridge & Boathouse |
+| KCB20 | Knox Covered Bridge, 1940 |
+| KCB21 | Knox Covered Bridge |
+| KCB22 | Knox Covered Bridge |
+| KCB23 | Damaged Knox Covered Bridge, 1967 |
+| KCB24 | Knox Covered Bridge, looking south |
+| KCB25 | Knox Covered Bridge |
+| KCB26 | Knox Covered Bridge |
+| KCB27 | Knox Covered Bridge |
+| KCB28 | Knox Covered Bridge |
+| KCB29 | Knox Covered Bridge - view looking north |
 | KCB3 | Knox Covered Bridge & Valley Creek |
+| KCB30 | Knox Covered Bridge - view looking north |
+| KCB31 | Knox Covered Bridge - view looking north |
+| KCB32 | Knox Covered Bridge |
+| KCB33 | Knox Covered Bridge under repair |
+| KCB34 | Knox Covered Bridge under repair |
+| KCB35 | Knox Covered Bridge under repair |
+| KCB36 | Knox Covered Bridge |
+| KCB37 | Knox Covered Bridge |
+| KCB38 | Knox Covered Bridge |
+| KCB38b | Back of KCB38 |
+| KCB39 | Knox Covered Bridge |
+| KCB39b | Back of KCB39 |
 | KCB4 | Knox Covered bridge |
+| KCB40 | Knox Covered Bridge |
+| KCB40b | Back of KCB40 |
+| KCB41 | Knox Covered Bridge |
+| KCB41b | Back of KCB41 |
+| KCB42 | Knox Covered Bridge |
+| KCB42b | Back of KCB42 |
+| KCB43 | Knox’s Covered Bridge |
+| KCB44 | Knox Covered Bridge |
+| KCB46 | Knox Covered Bridge |
+| KCB47 | Knox Covered Bridge |
+| KCB48 | Knox Covered Bridge |
+| KCB49 | Knox Covered Bridge |
 | KCB5 | Old Covered Bridge |
+| KCB50 | Knox Covered Bridge |
+| KCB52 | Knox Covered Bridge |
+| KCB53 | Knox Covered Bridge |
+| KCB54 | Knox Covered Bridge |
+| KCB55 | Knox Covered Bridge |
+| KCB56 | Knox Covered Bridge |
+| KCB57 | Knox Covered Bridge |
+| KCB58 | Knox Covered Bridge |
+| KCB59 | Knox Covered Bridge |
+| KCB60 | Knox Covered Bridge |
+| KCB61 | Knox Covered Bridge |
+| KCB62 | Knox Covered Bridge damaged by tree |
+| KCB63 | Knox Covered Bridge damaged by tree |
 | KCB7 | Knox Covered Bridge |
 | KCB8 | Damaged Knox Covered Bridge |
+| KCB9 | Knox Covered Bridge |
+| KEE01 | Keen residence, West Valley Road |
 | KNO01 | General Knox’s Quarters - rear view |
-| KNO02 | General Knox's Quarters - front view 1945 |
+| KNO02 | General Knox’s Quarters - front view 1945 |
+| KNO04 | General Knox’s Quarters |
+| KNO05 | General Knox’s Quarters marker |
+| KNO06 | Knox’s Quarters |
+| KNO07 | Knox’s Quarters |
+| KNO08 | Knox’s Quarters |
 | KNQ01 | General Knyphausen's Quarters |
 | KNQ02 | Barn, General Knyphausen's Quarters |
 | KNQ03 | General Knyphausen's Quarters |
 | KNQ04 | General Knyphausen's Quarters |
+| KNQ06 | Knyphausen & Woodford's Quarters |
+| KNQ07 | Knyphausen & Woodford's Quarters |
+| KNQ08 | General Knyphuasen's Quarters |
+| KNQ09 | Woodford’s Quarters |
+| KRH01 | Keller Road houses |
+| KRH02 | Keller Road houses |
+| KRH03 | Keller Road houses |
+| KRH05 | Keller Road houses |
+| KRH06 | Keller Road houses |
+| KRH07 | Keller Road houses |
+| KRH08 | Keller Road houses |
+| KRH09 | Keller Road houses |
+| KRH10 | Keller Road houses |
+| KRH11 | Keller Road houses |
+| KRH12 | Keller Road houses |
+| KRH13 | Keller Road houses |
+| KRL04 | Keller Road houses |
+| LAB13 | Paoli Road, Berwyn |
+| LAB14 | Paoli Road, Berwyn |
+| LAB15 | Paoli Road, Berwyn |
+| LAB16 | Paoli Road, Berwyn |
+| LAB17 | Lancaster Avenue, Berwyn |
+| LAF05 | General Lafayette's Quarters |
+| LAF06 | General Lafayette's Quarters |
+| LAF07 | General LaFayette's Quarters |
+| LAF08 | General LaFayette's Quarters |
+| LAF09 | Valley Creek near LaFayettes Quarters |
 | LAF1 | Lafayette's Quarters |
+| LAF10 | General Lafayette's Quarters |
+| LAF11 | General Lafayette's Quarters |
+| LAF12 | Lafayette’s Quarters |
+| LAF13 | Lafayette’s Quarters |
+| LAF14 | Lafayette’s Quarters |
+| LAF14b | Back of LAF14 |
+| LAF15 | LaFayette’s Quarters |
+| LAQ16 | LaFayette’s Quarters |
+| LAQ17 | LaFayette’s Quarters |
+| LAQ18 | LaFayette’s Quarters |
 | LAT3 | The Barn at Roughwood (Lamb Tavern) |
 | LAT4 | The Barn at Roughwood (Lamb Tavern) |
+| LBQ01 | Lee-Bradford Quarters |
+| LBQ02 | Lee-Bradford Headquarters |
+| LCH01 | Abraham S. Latch |
+| LCH02 | Abraham Stearne Latch & ladies |
+| LCH03 | Abraham Stearne Latch in rose garden |
+| LCH04 | Abraham Stearne Latch house, Howe & Scott's Quarters |
+| LCH05 | Jeanette Latch |
+| LCH09 | Latch family |
+| LCH10 | Latch family |
+| LCH16 | William Clavius Latch & horse |
 | LCP1 | British Encampment in Tredyffrin |
+| LEB01 | Springhouse, Le Boutillier Road |
+| LEB02 | Springhouse, Le Boutillier Road |
+| LJD01 | La Jonquille |
+| LJD02 | La Jonquille |
+| LJD03 | La Jonquille |
+| LJD04 | La Jonquille |
+| LJD05 | La Jonquille |
+| LJD06 | La Jonquille |
+| LJD07 | La Jonquille |
+| LJD08 | La Jonquille |
+| LJD10 | La Jonquille |
+| LJD11 | La Jonquille |
+| LJD12 | La Jonquille |
+| LJD13 | La Jonquille |
+| LPF01 | Listopada Farm |
+| LPF02 | Listopada Farm |
+| LPF03 | Listopada Farm |
+| LPF04 | Listopada Farm |
+| LPF05 | Listopada Farm |
+| LPF06 | Listopada Farm |
+| LPF07 | Listopada Farm |
+| LPF08 | Listopada Farm |
+| LPF09 | Listopada Farm |
+| LPF10 | Listopada Farm |
+| MAL26 | Auditorium Malvern Monday Club |
+| MAR08 | Memorial Arch |
+| MAR09 | Memorial Arch |
+| MAR10 | Memorial Arch |
 | MAX1 | Maxwell's Quarters - Back door |
 | MAX10 | Maxwell's Quarters - Swimming Pool looking north |
 | MAX11 | Maxwell's Quarters - Swimming Pool looking south |
@@ -301,7 +1519,12 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | MAX16 | Philander Knox Estate - Greenhouse & Strawberry-bed |
 | MAX17 | Philander Knox Estate - Private stable for blooded horses |
 | MAX18 | Philander Knox estate- Noteil, the pride of the Knox Stables |
+| MAX19 | General Maxwell's Quarters |
 | MAX2 | Maxwell's Quarters - Back Room |
+| MAX20 | Maxwells Quarters |
+| MAX21 | Foot Bridge over Valley Creek (Philander Knox estate) |
+| MAX22 | Foot Bridge over Valley Creek (Philander Knox estate) |
+| MAX23 | Philander Knox house |
 | MAX3 | Maxwell's Quarters - Dining Room |
 | MAX4 | Maxwell's Quarters - View of Front |
 | MAX5 | Maxwell's Quarters - Library |
@@ -309,13 +1532,237 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | MAX7 | Maxwell's Quarters - Reflecting Pool & Back View |
 | MAX8 | Maxwell's Quarters - Senator Knox & Knox Covered Bridge |
 | MAX9 | Maxwell's Quarters - Stairs |
+| MAZ07 | Mazie Hall house |
+| MAZ08 | Mazie Hall house |
+| MAZ09 | Mazie Hall house |
+| MEB01 | Meadowbrook |
+| MEB02 | Meadowbrook |
+| MEC01 | J. Howard Mecke residence |
+| MEC02 | J. Howard Mecke residence |
+| MEN03 | Diamond Rock Mennonite Cemetery |
+| MEN04 | Diamond Rock Mennonite Cemetery |
+| MEN05 | Diamond Rock Mennonite Cemetery |
+| MEN06 | Diamond Rock Mennonite Cemetery |
+| MEN07 | Diamond Rock Mennonite Cemetery |
+| MEN08 | Diamond Rock Mennonite Cemetery |
+| MEN09 | Diamond Rock Mennonite Cemetery |
+| MEN10 | Diamond Rock Mennonite Cemetery |
+| MEN11 | Rear of Mennonite Church near Diamond Rock |
+| MEP03 | Paoli Methodist Church |
+| MEP04 | Paoli Methodist Church |
+| MF01 | Aerial vertical image of Paoli, date unknown |
+| MF02 | Interior Matthews showroom shot, Jim Matthews in 1903 model A. |
+| MF03 | Looking SW, Matthews showroom w/ Lincoln, Ford and Fordson … |
+| MF05 | Walter Matthews home and gardens at Cedar Hollow & Paoli Pike (Wistar Rd) |
+| MF06 | Original Walter T Matthews Motor Car shop in Paoli |
+| MF07 | Walter T Matthews Motor Car shop in 1918 during WWI |
+| MF08 | Walter T Matthews, and his Ford dealership, in the summer of 1934 |
+| MF09 | Original Walter T Matthews Motor Car shop from the Lincoln Highway |
+| MF10 | Matthews Ford with their Lincoln towtruck |
+| MF11 | Interior of Walter T Matthews Lincoln, Ford, Fordson dealership |
+| MF12 | Looking NW, Matthews Ford as seen across Rte. 122 |
+| MF13 | Matthews Ford lower level showroom in the late ‘20s |
+| MF14 | Looking W down Lincoln Highway Matthews Ford and Lincoln |
+| MF15 | Looking W, Matthews Ford from Point w/ original Matthews motor car bldg., 1920s |
+| MF17 | Truck test ramp across Greenwood Ave on the Lincoln Highway, with Paoli rail yard behind. |
+| MF18 | Walter T Matthews, and his Ford dealership, in the summer of 1934 |
+| MF19 | The “Point” at Lancaster and Paoli pikes that became the Matthews Ford dealership |
+| MF20 | Original Walter T Matthews Motor Car shop in Paoli, undated |
+| MF21 | Looking north across Lincoln Hwy at Ford Tractor Fair, November 1924 |
+| MF23 | Interior of Matthews Ford, with Fordson display, looking Northwest at Lincoln Highway. |
+| MF24 | Eight Fordson tractors in PRR Paoli railyard sometime before 1934 |
+| MF25 | Matthews Fordson Tractor Shop adjacent to PRR mainline, Paoli |
+| MF26 | Paoli Truck & Tractor Exhibit, November 1924, looking north across Lincoln Highway |
+| MF27 | Looking north at Paoli railyard during lumber yard fire, July 29, 1932 |
+| MF28 | Looking north at Paoli railyard during lumber yard conflagration July 29, 1932 |
+| MF29 | Looking north at Paoli railyard during lumber yard conflagration July 29, 1932 |
+| MF30 | Looking north at Paoli railyard during lumber yard conflagration July 29, 1932 |
+| MF31 | Looking N at Paoli railyard during lumber yard conflagration July 29, 1932 |
+| MF32 | North of Lincoln Hwy, Paoli, July 18, 1932 |
+| MF33 | North of Lincoln Hwy, Paoli, July 18, 1932 |
+| MF34 | North of Lincoln Hwy, Paoli, July 18, 1932 |
+| MF35 | North of Lincoln Hwy, Paoli, July 18, 1932 |
+| MF36 | Paoli Truck & Tractor Exhibit, looking north across Lincoln Highway |
+| MF37 | A Ford chassis display north of Lincoln Highway near Greenwood Ave, Paoli. |
+| MF38 | Matthews display at Main Line Airport, looking north from Swedesford Rd, date unknown |
+| MF46 | Vance Moody Groceries truck parked in front of Walter T. Matthews home |
+| MF47 | Clifton & Hamilton tow truck parked south of PRR Paoli switch tower |
+| MF48 | East Whiteland school bus waits beside the Paoli Elementary School on E. Central Ave. |
+| MF50 | East Whiteland school bus waits beside the Paoli Elementary School on E. Central Ave. |
+| MF51 | Benjamin C. Betner Container truck of Devon, photographed in Paoli facing PRR railyard |
+| MF58 | Firetruck in front of Matthews Ford |
+| MF59 | Matthews Ford’s Gulf Gas Station |
+| MF60 | Matthews Ford employees at Gulf Station |
+| MF61 | Matthews Ford Showroom |
+| MIH03 | Mifflin House |
+| MIH04 | Mifflin House |
+| MIH05 | Mifflin House |
+| MIH06 | Mifflin House |
+| MIH07 | Mifflin House |
+| MIH08 | Mifflin House |
+| MIH09 | Mifflin House |
+| MIH1 | Mifflin House |
+| MIH10 | Mifflin House |
+| MIH11 | Mifflin House |
+| MIH12 | Mifflin House |
+| MIH13 | Mifflin House |
+| MIH2 | Mifflin House |
 | MJR1 | Mount Joy from Valley Forge Road (route 252) |
+| MJR2 | Mount Joy from Valley Forge Road (route 252) |
+| MLA09 | Mainline Apartments under construction |
+| MLA10 | Mainline Apartments under construction |
+| MLA11 | Mainline Apartments under construction |
+| MLA12 | Mainline Apartments under construction |
+| MLA13 | Mainline Apartments under construction |
+| MLA14 | Mainline Apartments under construction |
+| MLA15 | Mainline Apartments under construction |
+| MLA16 | Mainline Apartments under construction |
+| MLA17 | Mainline Apartments under construction |
+| MLA18 | Mainline Apartments under construction |
+| MLA19 | Mainline Apartments under construction |
+| MLA20 | Mainline Apartments under construction |
+| MLA21 | Mainline Apartments under construction |
+| MLA22 | Mainline Apartments under construction |
+| MLA23 | Mainline Apartments under construction |
+| MLA24 | Mainline Apartments under construction |
+| MLA25 | Mainline Apartments under construction |
+| MLA26 | Mainline Apartments under construction |
+| MLA27 | Site of Mainline Apartments |
+| MLA28 | Site of Mainline Apartments |
+| MLA29 | Site of Mainline Apartments |
+| MLA3 | Main Line Apartments |
+| MLA30 | Site of Mainline Apartments |
+| MLA4 | Main Line Apartments |
+| MLA5 | Main Line Apartments |
+| MLA6 | Main Line Apartments |
+| MLA7 | Main Line Apartments |
+| MLA8 | Main Line Apartments |
+| MLP1 | Paoli Station |
+| MLP10 | Superintendent's Office, Paoli |
+| MLP100 | Paoli - looking west from station |
+| MLP101 | Paoli - looking west |
+| MLP11 | Pennsylvania Railroad Paoli Car Shop Employees |
+| MLP12 | Paoli Station |
+| MLP13 | Derailment, Paoli |
+| MLP14 | Derailment, Paoli |
+| MLP15 | Derailment, Paoli |
+| MLP16 | Derailment, Paoli |
+| MLP17 | Derailment, Paoli |
+| MLP18 | Derailment, Paoli |
+| MLP19 | Derailment, Paoli |
+| MLP2 | Paoli Station |
+| MLP20 | Derailment, Paoli |
+| MLP21 | Derailment, Paoli |
+| MLP22 | Derailment, Paoli |
+| MLP23 | Derailment, Paoli |
+| MLP24 | Derailment, Paoli |
+| MLP25 | Derailment, Paoli |
+| MLP26 | Paoli Tower derailment |
+| MLP27 | Paoli Tower derailment |
+| MLP28 | Paoli Tower derailment |
+| MLP29 | Paoli Tower derailment |
+| MLP3 | Paoli Station |
+| MLP30 | Paoli Tower derailment |
+| MLP31 | Paoli Tower derailment |
+| MLP32 | Paoli Tower derailment |
+| MLP33 | Paoli Tower derailment |
+| MLP34 | Paoli Tower derailment |
+| MLP35 | Paoli Tower derailment |
+| MLP36 | Westbound Freight Train at Paoli |
+| MLP37 | Former Paoli Railyards |
+| MLP38 | Former Paoli Railyards |
+| MLP39 | Pennsylvania Railroad Bridge, Paoli |
+| MLP4 | Paoli Station |
+| MLP40 | Paoli Station |
+| MLP41 | Paoli Station |
+| MLP42 | Protest against PCB Contamination at Paoli railyard |
+| MLP43 | Protest against PCB Contamination at Paoli railyard |
+| MLP44 | Protest against PCB Contamination at Paoli railyard |
+| MLP45 | Protest against PCB Contamination  at Paoli railyard |
+| MLP46 | Protest against PCB Contamination at Paoli railyard |
+| MLP47 | Protest against PCB Contamination at Paoli railyard |
+| MLP48 | Protest against PCB Contamination at Paoli railyard |
+| MLP49 | Protest against PCB Contamination at Paoli railyard |
+| MLP5 | Cut Under, Paoli |
+| MLP50 | Protest against PCB Contamination at Paoli railyard |
+| MLP51 | Protest against PCB Contamination at Paoli railyard |
+| MLP52 | Protest against PCB Contamination at Paoli railyard |
+| MLP53 | Protest against PCB Contamination at Paoli railyard |
+| MLP54 | Protest against PCB Contamination at Paoli railyard |
+| MLP55 | Protest against PCB Contamination at Paoli railyard |
+| MLP56 | Protest against PCB Contamination at Paoli railyard |
+| MLP59 | Protest against PCB Contamination at Paoli railyard |
+| MLP6 | Canal Collector’s Office, Lancaster Pike & Valley Roads, Paoli, 1888 |
+| MLP61 | Protest against PCB Contamination at Paoli railyard |
+| MLP62 | Protest against PCB Contamination at Paoli railyard |
+| MLP63 | Protest against PCB Contamination at Paoli railyard |
+| MLP64 | Protest against PCB Contamination at Paoli railyard |
+| MLP65 | Protest against PCB Contamination at Paoli railyard |
+| MLP66 | Protest against PCB Contamination at Paoli railyard |
+| MLP67 | Protest against PCB Contamination at Paoli railyard |
+| MLP68 | Protest against PCB Contamination at Paoli railyard |
+| MLP69 | Protest against PCB Contamination at Paoli railyard |
+| MLP7 | North side of Paoli Station |
+| MLP70 | Protest against PCB Contamination at Paoli railyard |
+| MLP71 | Protest against PCB Contamination at Paoli railyard |
+| MLP72 | Protest against PCB Contamination at Paoli railyard |
+| MLP73 | Protest against PCB Contamination at Paoli railyard |
+| MLP74 | Paoli Railyard |
+| MLP75 | Paoli Railyard |
+| MLP76 | Paoli Railyard |
+| MLP77 | Paoli Railyard |
+| MLP78 | Paoli Railyard |
+| MLP79 | Paoli Railyard |
+| MLP8 | View of Paoli Rail Yard |
+| MLP80 | Paoli Railyard |
+| MLP81 | Paoli Railyard |
+| MLP82 | Paoli Railyard |
+| MLP83 | Paoli Railyard |
+| MLP84 | Paoli Railyard |
+| MLP85 | Paoli Railyard |
+| MLP86 | Paoli Railyard |
+| MLP87 | Paoli Railyard |
+| MLP88 | Paoli Railyard |
+| MLP89 | Paoli Railyard |
+| MLP9 | View from Paoli Station |
+| MLP90 | Paoli Railyard |
+| MLP91 | Paoli Railyard |
+| MLP92 | Paoli Railyard |
+| MLP93 | Paoli Railyard |
+| MLP94 | Paoli Railyard |
+| MLP95 | Paoli Railyard |
+| MLP96 | Paoli Railyard |
+| MLP97 | Paoli Railyard |
+| MLP98 | Paoli - looking east from station |
+| MLP99 | Paoli Substation |
+| MLT02 | Map of British Encampment, September 1777 |
+| MM01 | Old Mount Misery Parking Lot |
+| MM02 | Old Mount Misery Parking Lot |
+| MOH01 | Mowbrey House |
+| MOH02 | Mowbrey House |
+| MOH03 | Mowbrey House |
+| MOH04 | Mowbrey House |
+| MOH05 | Mowbrey House |
+| MOH06 | Mowbrey House |
+| MOH07 | Mowbrey House |
+| MOH08 | Mowbrey House |
+| MOH09 | Mowbrey House |
+| MOH10 | Mowbrey House |
+| MOH11 | Mowbrey House |
+| MPS03 | Mount Pleasant School |
 | MS11 | Pennokla Farm |
 | MS12 | Pennokla Farm |
 | MS14 | Pennokla Farm |
 | MS15 | Pennokla Farm |
 | MS16 | Pennokla Farm |
 | MSP1 | Many Springs Farm |
+| MZC04 | Mount Zion Church |
+| MZC05 | Mount Zion AME Church |
+| MZC06 | Mount Zion Church |
+| NBS10 | North Berwyn School, 1925 |
+| NBS11 | North Berwyn School |
+| NBS12 | North Berwyn School |
+| NBS13 | North Berwyn School |
 | NBS2 | North Berwyn Public School |
 | NBS3 | North Berwyn Public School |
 | NBS4 | North Berwyn Public School |
@@ -323,41 +1770,315 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | NBS6 | North Berwyn Public School |
 | NBS7 | North Berwyn Public School |
 | NBS8 | Old North Berwyn School |
+| NBS9 | North Berwyn Public School |
 | NCE1 | Baptist (Valley Forge) Road south of New Centerville |
+| NCE10 | Baptist Road looking north |
+| NCE11 | Baptist Road looking north |
+| NCE13 | Stone Chimney Picket sign |
+| NCE14 | Motor Court |
+| NCE14b | Back of NCE14 |
+| NCE15 | Swedesford Road, New Centerville |
+| NCE16 | Swedesford Road, New Centerville |
+| NCE17 | Swedesford Road, New Centerville |
+| NCE18 | Swedesford Road, New Centerville |
+| NCE19 | Swedesford Road, New Centerville |
 | NCE2 | Clarence Roberts standing at the location of the Stone Chimney Picket Post, New Centerville. |
+| NCE20 | Valley Forge Motel |
 | NCE3 | Clarence Roberts standing at the location of the Stone Chimney Picket Post, New Centerville. |
 | NCE4 | Clarence Roberts standing at the location of the Stone Chimney Picket Post, New Centerville |
 | NCE8 | Valley Forge Road |
 | NCE9 | Old Forge Crossing |
+| NCH01 | Crossroads Tavern Demolition |
+| NCH02 | Crossroads Tavern Demolition |
+| NCH03 | Crossroads Tavern Demolition |
+| NCH04 | Crossroads Tavern Demolition |
+| NCH05 | Crossroads Tavern Demolition |
+| NCH06 | Crossroads Tavern Demolition |
+| NEE03 | Site of New Eagle Elementary School, Pugh Road |
+| NEE04 | Site of New Eagle Elementary School, Pugh Road |
+| NEE05 | Site of New Eagle Elementary School |
+| NEE06 | Site of New Eagle Elementary School |
+| NEE07 | Site of New Eagle Elementary School |
 | NEE1 | New Eagle Elementary School |
 | NEE2 | New Eagle Elementary School |
 | NGB1 | Non-Gran Bronze Factory |
+| NLC04 | Neilly Log Cabin |
+| NLC05 | Neilly Log Cabin |
+| NLC06 | Neilly Log Cabin |
+| NLC07 | Neilly Log Cabin |
 | NLC1 | Neilly Log Cabin |
 | NLC2 | Neilly Cabin |
+| NLC3 | Neilly Log Cabin |
+| NVR02 | Springhouse, 55 North Valley Road |
+| NVR03 | Springhouse, 55 North Valley Road |
+| NVR04 | Springhouse, Great Valley Mill |
+| NVR05 | Building, Great Valley Mill |
+| NVR06 | Springhouse, 55 North Valley Road |
+| NVR07 | North Valley Road and route 202 |
+| NVR08 | North Valley Road and route 202 |
+| NVR09 | North Valley Road, Paoli |
+| NVR10 | North Valley Road, Paoli |
+| NVR11 | North Valley Road, Paoli |
+| OAK1 | Oak Knoll, Daylesford |
+| OAK10 | Oak Knoll, Daylesford |
+| OAK11 | Oak Knoll, Daylesford |
+| OAK12 | Oak Knoll, Daylesford |
+| OAK13 | Oak Knoll, Daylesford |
+| OAK14 | Oak Knoll, Daylesford |
+| OAK15 | Oak Knoll, Daylesford |
+| OAK16 | Oak Knoll, Daylesford |
+| OAK17 | Oak Knoll ruins |
+| OAK18 | Oak Knoll ruins |
+| OAK19 | Oak Knoll ruins |
+| OAK2 | Oak Knoll, Daylesford |
+| OAK20 | Oak Knoll ruins |
+| OAK3 | Oak Knoll, Daylesford |
+| OAK4 | Oak Knoll, Daylesford |
+| OAK5 | Oak Knoll, Daylesford |
+| OAK6 | Oak Knoll, Daylesford |
+| OAK7 | Oak Knoll, Daylesford |
+| OAK8 | Oak Knoll, Daylesford |
+| OAK9 | Oak Knoll, Daylesford |
+| OEH01 | Okie Estate houses |
+| OEH02 | Okie Estate houses |
+| OEH03 | Okie Estate houses |
+| OEH04 | Okie Estate houses |
+| OEH05 | Okie Estate houses |
+| OEH06 | Okie Estate houses |
+| OEH07 | Okie Estate houses |
+| OEH08 | Okie Estate houses |
+| OEH09 | Okie Estate houses |
+| OEH10 | Okie Estate houses |
+| OEH11 | Okie Estate houses |
+| OEH12 | Okie Estate houses |
+| OEH13 | Okie house |
+| OES03 | Interior of Old Eagle School, after restoration, prior to 1900 |
+| OES05 | Old Eagle School |
+| OES06 | Old Eagle School |
+| OES07 | Old Eagle School |
+| OES08 | Old Eagle School |
+| OES09 | Old Eagle School |
 | OES1 | Old Eagle School |
+| OES10 | Account Ledger - Old Eagle School |
+| OES11 | Old Eagle School |
+| OES12 | Old Eagle School |
+| OES13 | Old Eagle School |
+| OES14 | Old Eagle School |
+| OES15 | Old Eagle School |
 | OES2 | Old Eagle School |
+| OGQ7 | Mifflin’s Quarters |
 | PA1 | Anna Thomas, Ladies Taylor |
 | PA10 | Carriage |
+| PA100 | Paoli Parade |
+| PA101 | Paoli Parade |
+| PA102 | Paoli Parade |
+| PA103 | Paoli Parade |
+| PA104 | Paoli Parade |
+| PA105 | Paoli Parade |
+| PA106 | Paoli Parade |
+| PA107 | Paoli Parade |
+| PA108 | Paoli Parade |
+| PA109 | Paoli Parade |
 | PA11 | Paoli Diner |
+| PA110 | Paoli Parade |
+| PA111 | Paoli Parade |
+| PA112 | Paoli Parade |
+| PA113 | Paoli Parade |
+| PA114 | Paoli Parade |
+| PA115 | Paoli Parade |
+| PA116 | Paoli Parade |
+| PA117 | Paoli Parade |
+| PA118 | Paoli Parade |
+| PA119 | Paoli Parade |
 | PA12 | Paoli Firehouse |
+| PA120 | Paoli Parade - Paoli Fire Company |
+| PA121 | Paoli Parade |
+| PA122 | Paoli Parade |
+| PA123 | Paoli Parade- Malvern Fire Company |
+| PA124 | Paoli Parade - Malvern Fire Company |
+| PA125 | Paoli Parade |
+| PA126 | Paoli Parade |
+| PA127 | Traffic Accident Routes 30 and 252 |
+| PA128 | Traffic Accident routes 30 and 252 |
+| PA129 | Traffic Accident routes 30 and 252 |
 | PA13 | Five of the 'Seven Stars' Houses |
+| PA130 | Traffic Accident routes 30 and 252 |
+| PA131 | Traffic Accident routes 30 and 252 |
+| PA132 | Traffic Accident routes 30 and 252 |
+| PA133 | Traffic Accident routes 30 and 252 |
+| PA134 | Traffic Accident routes 30 and 252 |
+| PA135 | Traffic Accident routes 30 and 252 |
+| PA136 | Traffic Accident routes 30 and 252 |
+| PA137 | Traffic Accident routes 30 and 252 |
+| PA138 | Lancaster Avenue, Paoli |
+| PA139 | Lancaster Avenue, Paoli |
 | PA14 | Lincoln Highway, Paoli |
+| PA140 | Lancaster Avenue, Paoli |
+| PA141 | Lancaster Avenue, Paoli |
+| PA142 | Lancaster and S. Valley Road, Paoli |
+| PA144 | Lancaster and S. Valley Road, Paoli |
+| PA146 | Lancaster and S. Valley Road, Paoli |
+| PA148 | Builders Yard, Paoli |
+| PA149 | Builders Yard, Paoli |
 | PA15 | Supplee Hardware Store |
+| PA150 | Builders Yard, Paoli |
+| PA151 | House Fire near Paoli |
+| PA153 | House Fire near Paoli |
+| PA154 | House Fire near Paoli |
+| PA155 | House Fire near Paoli |
+| PA156 | House Fire near Paoli |
+| PA157 | House Fire near Paoli |
+| PA158 | House Fire near Paoli |
+| PA159 | House Fire near Paoli |
+| PA160 | House Fire near Paoli |
+| PA161 | House Fire near Paoli |
+| PA162 | House Fire near Paoli |
+| PA163 | House Fire near Paoli |
+| PA164 | House Fire near Paoli |
+| PA166 | House Fire near Paoli |
+| PA167 | House Fire near Paoli |
+| PA168 | House Fire near Paoli |
+| PA169 | House Fire near Paoli |
 | PA17 | George Williams in his drug store |
+| PA170 | House Fire near Paoli |
+| PA171 | House Fire near Paoli |
+| PA172 | House Fire near Paoli |
+| PA173 | Paoli - looking towards 30 and 252 junction |
+| PA174 | Lancaster Avenue, Paoli |
+| PA175 | Construction of Paoli Library building |
+| PA177 | Construction of Paoli Library building |
+| PA179 | Construction of Paoli Library building |
+| PA181 | Lancaster Avenue, Paoli |
+| PA182 | Paoli Building site |
+| PA183 | Paoli Building site |
+| PA184 | South Valley Road, Paoli looking north |
+| PA185 | South Valley Road, Paoli looking north |
+| PA187 | Paoli News Agency |
+| PA188 | Front of Paoli Hardware Store |
+| PA189 | Paoli Hardware Store - Greg and Steve |
+| PA190 | Paoli Hardware Store - everything must go |
+| PA191 | Paoli Hardware Store - all sales final |
+| PA192 | Paoli Hardware Store - 1946 Painting |
+| PA193 | Paoli Hardware Store - Greg |
+| PA194 | Paoli Station Parking Area |
+| PA195 | Paoli Plaza |
+| PA196 | Paoli Station Parking Area and Lancaster Avenue |
+| PA197 | Paoli Plaza |
+| PA198 | Paoli Station area |
+| PA199 | Paoli Plaza |
 | PA2 | Paoli Hardware Store |
+| PA200 | Paoli Station Parking Area |
+| PA201 | Paoli Plaza |
+| PA202 | Photographers, Lancaster Avenue, Paoli |
+| PA203 | Cleared site, Photographer |
+| PA204 | Lancaster Pike in Paoli looking west |
 | PA23 | Pasquale Paoli Day |
+| PA24 | North Valley Road, Paoli |
+| PA25 | View of Paoli |
 | PA26 | Giantonio Real Estate |
 | PA27 | Paoli Fire House |
+| PA28 | Paoli (Inn) Blacksmith & Wheelwright shop, west of Inn, 1888 |
+| PA29 | Valley Road, Paoli |
 | PA3 | Paoli Hardware Store |
+| PA32 | Lancaster Avenue and North Valley Road, Paoli |
+| PA33 | Paoli Fire Company |
+| PA34 | Aerial Photograph of Paoli looking east |
+| PA35 | Lancaster Avenue, Paoli looking east |
+| PA36 | Toll Gate House |
+| PA37 | Paoli Industrial School |
+| PA37b | Back of PA37 |
+| PA38 | Breaking ground for Girard Bank building |
+| PA39 | Valley Road and route 30 with Wedge Building |
 | PA4 | Windmill Tea Room |
+| PA40 | Distributing water in Paoli after Hurricane Agnus |
+| PA41 | Distributing water in Paoli Shopping Center after Hurricane Agnus |
+| PA42 | Fire at Charlie Brown restaurant in Paoli |
+| PA43 | Fire at Charlie Brown restaurant in Paoli |
+| PA44 | Fire at Charlie Brown restaurant in Paoli |
+| PA45 | Fire at Charlie Brown restaurant in Paoli |
+| PA46 | Fire at Charlie Brown restaurant in Paoli |
+| PA47 | Fire at Charlie Brown restaurant in Paoli |
+| PA48 | Fire at Charlie Brown restaurant in Paoli |
+| PA49 | Paoli Hardware Center |
+| PA50 | Fire at Paoli Shopping Center |
+| PA51 | Paoli Hardware Center |
+| PA52 | Paoli Fire Company |
+| PA53 | Site of 1972 Derailment, Paoli |
+| PA54 | Central Penn Bank extension |
+| PA55 | Lancaster Avenue in Paoli around 1935 |
+| PA57 | Lovers Lane, Paoli |
+| PA58 | Prominent fork of Roads |
+| PA59 | Paoli War Memorial dedication |
+| PA60 | Paoli War Memorial dedication |
+| PA61 | Paoli War Memorial dedication |
+| PA62 | Paoli War Memorial dedication |
+| PA63 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA64 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA65 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA66 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA67 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA68 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA69 | Richard Nixon campaign rally at the old Paoli Shopping Center |
 | PA7 | Lincoln Highway, Paoli |
+| PA70 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA71 | Paoli Parade - Radnor Fire Company |
+| PA72 | Paoli Parade - Goshen Fire Company |
+| PA73 | Paoli Parade - East Whiteland Township Volunteer Fire Association |
+| PA74 | Paoli Parade - East Whiteland Township Volunteer Fire Association |
+| PA75 | Paoli Parade |
+| PA76 | Paoli Parade |
+| PA77 | Paoli Parade |
+| PA78 | Paoli Parade |
+| PA79 | Paoli Parade |
 | PA8 | Paoli Buckboard |
+| PA80 | Paoli Parade - King of Prussia Fire Company |
+| PA81 | Paoli Parade |
+| PA82 | Paoli Parade - Kook Hill, North Hills, PA |
+| PA83 | Paoli Parade |
+| PA84 | Paoli Parade |
+| PA85 | Paoli Parade - Good Will Fire Company #2, West Chester |
+| PA86 | Paoli Parade |
+| PA87 | Paoli Parade |
+| PA88 | Paoli Parade- Swedesburg Volunteer Fire Company, Upper Merion Township |
+| PA89 | Paoli Parade |
+| PA90 | Paoli Parade |
+| PA91 | Paoli Parade |
+| PA92 | Paoli Parade - Flame Busters |
+| PA93 | Paoli Parade |
+| PA94 | Paoli Parade |
+| PA95 | Paoli Parade- Balloon Seller |
+| PA96 | Paoli Parade - Balloon Seller |
+| PA97 | Paoli Parade |
+| PA98 | Paoli Parade |
+| PA99 | Paoli Parade |
+| PAC01 | Rear of Paoli Corner, routes 30 & 252 |
+| PAC02 | Rear of Paoli Corner, routes 30 & 252 |
+| PAC03 | Front of Paoli Corner, routes 30 & 252 |
+| PAC04 | Rear of Paoli Corner, routes 30 & 252 |
+| PAC05 | Rear of Paoli Corner, routes 30 & 252 |
 | PAS07 | Paoli School |
 | PAS1 | Paoli School |
+| PAS11 | Grammar School, Paoli |
+| PAS12 | Paoli School |
+| PAS12b | Back of PAS12 |
 | PAS2 | Paoli School |
 | PAS5 | Paoli Grammar School |
+| PAS6 | Paoli High School |
+| PCS01 | Paoli Coal and Supply |
+| PCS02 | Paoli Coal and Supply |
+| PEO145 | May-Sevcik |
+| PEO146 | William Keeley Acker Gravestone |
+| PEO147 | Studebaker event |
+| PEO148 | Studebaker event |
+| PEO149 | Studebaker event |
+| PEO150 | Studebaker event |
+| PEO151 | Studebaker event |
 | PEO3 | Fannie Heyburn & Grandson |
 | PEO6 | Six People |
+| PEO62 | Mrs. Dudley Kneass and Mrs. John Salvaggio |
+| PEO65 | Rod Broadbelt |
+| PEO66 | Oliver Bair |
+| PEO67 | Mary Bair |
 | PEO69 | Tredyffrin Township Municipal Authority |
 | PEO70 | Paoli Business Association |
 | PEO71 | James Kennedy, chairman of Tredyffrin Supervisors |
@@ -367,8 +2088,59 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | PEO76 | Paoli - Berwyn Little League Derby Winners |
 | PEO77 | Paoli Lions Club |
 | PEO8 | Emily Patterson & Florence Glissen |
+| PEO81 | School Children at North Berwyn School |
+| PEO84 | North Berwyn School pupils |
+| PEO85 | North Berwyn School pupils & Miss Emma Williams, teacher |
+| PEO86 | Paoli Grammar School class of 1919 |
+| PEO87 | Presbyterian School pupils |
+| PEO88 | Tredyffrin Easttown High School Womens Basketball Team, 1932 |
+| PEO89 | Tredyffrin Easttown High School Football Team, 1911 |
 | PEO9 | Emily Patterson & Florence Glissen |
+| PEO90 | Tredyffrin Easttown High School Football Team, 1915 |
+| PEO91 | Presbyterian School pupils |
+| PEO95 | Paoli School pupils and teachers |
+| PEO96 | Paoli Grammar School |
+| PFC01 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC02 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC03 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC04 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC05 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC06 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC07 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC08 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC09 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC10 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC11 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC12 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC13 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC14 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC15 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC16 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC17 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC18 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC19 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC20 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC21 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC22 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC23 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC24 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC25 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC26 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC27 | 1949 Paoli Fire Company 40th anniversary parade |
+| PHE01 | Tom & Ann Phelan |
+| PHE02 | Phelan residence |
+| PHE03 | Merie Patricia Phelan as May Queen |
+| PHE04 | Thomas Phelan |
+| PLI01 | Paoli Library |
+| PLI03 | Old library building seen from the back of the bank. |
+| POK08 | Silo, PennOkla Farm |
+| POK09 | Building, PennOkla Farm |
 | POK1 | Pennokla Farm Tenant House |
+| POK10 | Building, PennOkla Farm |
+| POK11 | Tenant House, Pennokla Farm |
+| POK12 | Tenant house, Pennokla Farm |
+| POK13 | Pennokla Farm |
+| POK14 | Pennokla Farm |
 | POK2 | Pennokla Farm Building |
 | POK3 | Pennokla Farmhouse |
 | POK4 | Pennokla Farmhouse |
@@ -376,9 +2148,64 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | POK6 | Pennokla Farmhouse |
 | POK7 | Pennokla Farmhouse |
 | POQ01 | General Potter's Quarters |
+| POQ02 | General Potter's Quarters |
+| POQ03 | General Potter's Quarters interior |
+| POS01 | Patriotic Order of the Sons of America (POSA) Building |
+| POS02 | Patriotic Order of the Sons of America (POSA) Building |
+| PP09 | Paoli Post Office, September 1 1929 to June 20 1955 |
 | PP1 | Paoli Post Office |
+| PP10 | Paoli Post Office |
+| PP11 | Paoli Post Office |
+| PP12 | Paoli Railroad Station |
+| PP13 | Paoli Railroad Station |
+| PP14 | Paoli Railroad Station |
+| PP15 | Paoli Post Office |
+| PP16 | Paoli Post Office |
+| PP17 | Paoli Post Office |
+| PP18 | Paoli Post Office |
+| PP19 | Paoli Post Office |
 | PP2 | Paoli Post Office |
+| PP20 | Paoli Post Office |
+| PP21 | Paoli Post Office |
+| PP22 | Paoli Post Office |
+| PP23 | Paoli Post Office |
+| PP24 | Paoli Post Office |
+| PP25 | Paoli Post Office |
+| PP26 | Paoli Post Office |
+| PP27 | Paoli Post Office |
+| PP28 | Paoli Post Office |
+| PP29 | Paoli Post Office |
+| PP30 | Paoli Post Office |
+| PP31 | Paoli Post Office |
+| PP32 | Paoli Post Office |
+| PP33 | Paoli Post Office, Robert E. Pattinson and Eleanor C. Brennan in foreground.  Anna J. Clift, William J. Worth, and Ada M. Wise behind the counter. |
+| PP34 | Art Labar, Paoli Post Office |
+| PP35 | Ada Wise, Bill Worth, Anne Clift, Paoli Post Office |
+| PP36 | Louis Riddolongo, Paoli Post Office |
+| PP37 | R. Rapp, Andy Anderson, Paoli Post Office |
+| PP38 | W. Standot, Les O’Brien, Bill Morris, Paoli Post Office |
+| PP39 | Jerry Hunlock, Dom Maroh, John Zacarrli, Paoli Post Office |
 | PP4 | Paoli Post Office |
+| PP40 | Joe Falcore, Paoli Post Office |
+| PP41 | Paoli Post Office |
+| PP42 | Paoli Post Office |
+| PP43 | Paoli Post Office |
+| PP44 | Mrs Brennan and husband (State Trooper), Paoli Post Office |
+| PP45 | On the left, Jackson Anderson Wilson, jr., Paoli Post Office |
+| PP46 | Party for Eleanor C. Brennan, State Senator Robert Casey on her left, Paoli Post Office |
+| PP47 | Paoli Post Office |
+| PP48 | Paoli Post Office |
+| PP49 | Paoli Post Office |
+| PP50 | Paoli Post Office |
+| PP51 | Paoli Post Office |
+| PP52 | Paoli Post Office |
+| PP53 | Paoli Post Office |
+| PP54 | Paoli Post Office |
+| PP55 | Paoli Post Office |
+| PP56 | Paoli Post Office |
+| PP57 | Anthony Di Fronzo, successor Postmaster to Eleanor C. Brennan, Paoli Post Office |
+| PP58 | Paoli Post Office |
+| PP59 | Paoli Post Office |
 | PPO1 | Route 30 West, Paoli |
 | PPO10 | Paoli Grammar School |
 | PPO11 | Tredyffrin Township Grammar School |
@@ -388,6 +2215,8 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | PPO15 | Windmill Tea Room |
 | PPO16 | Reading Election Returns, Paoli Inn, 1832 |
 | PPO17 | Great Valley Creek & Great Valley Mill dam |
+| PPO18 | Pennsylvania Railroad Car Shops, Paoli |
+| PPO19 | Paoli Station |
 | PPO2 | Lincoln Highway. Paoli |
 | PPO3 | Lincoln Highway, Paoli |
 | PPO4 | Lincoln Highway, Paoli |
@@ -396,22 +2225,82 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | PPO7 | Paoli Station |
 | PPO8 | Paoli Railyards |
 | PPO9 | Paoli High School |
+| PSH03 | Account Ledger- Presbyterian School |
 | PSH1 | Presbyterian Schoolhouse |
 | PSH2 | Presbyterian School |
 | PUQ01 | General Pulaski's Quarters - Brookmead Farm |
+| PUQ02 | General Pulaski's Quarters - Brookmead Farm |
+| PUQ03 | Brookmead Farm |
+| PUQ04 | Brookmead Farm |
+| PUQ05 | Barn at Brookmead Farm |
+| PUQ06 | Pulaski’s Quarters |
+| PUR01 | Springhouse, Pugh Road |
+| PUR02 | Springhouse, Avonwood Farm, Pugh Road |
+| PUR03 | Springhouse, 453 Pugh Road |
+| PUR04 | Springhouse, 453 Pugh Road |
+| PUR05 | Springhouse, Avonwood Farm, Pugh Road |
+| PW05 | Pennsylvania & Western, Strafford Station |
 | PW1 | Car in Strafford Philadelphia & Western Station |
 | PW2 | Car in Strafford Philadelphia & Western Station |
+| PWF01 | Pauling-Wedge Farm |
+| PWF02 | Pauling-Wedge Farm |
+| PWF03 | Pauling-Wedge Farm |
+| PWF04 | Pauling-Wedge Farm |
+| PWF05 | Pauling-Wedge Farm |
+| PWF06 | Pauling-Wedge Farm |
+| PWF07 | Pauling-Wedge Farm |
+| PWF08 | Pauling-Wedge Farm |
+| PWF09 | Pauling-Wedge Farm |
+| PWF10 | Pauling-Wedge Farm |
+| PWF11 | Pauling-Wedge Farm |
+| PWF12 | Pauling-Wedge Farm |
+| PWF13 | Pauling-Wedge Farm |
+| PWF14 | Pauling-Wedge Farm |
+| PWF15 | Pauling-Wedge Farm |
+| PWF16 | Pauling-Wedge Farm |
 | Q01 | Cedar Hollow Quarry |
 | Q02 | Cedar Hollow Quarry |
 | Q03 | Warner Quarry |
 | RAI1 | Paoli Station |
+| RBE46 | View of tracks from Berwyn Station Bridge looking west |
 | RBE5 | View from railroad bridge, Berwyn |
 | RBE7 | Berwyn Station |
+| RES01 | Account Ledger, Reeseville School |
+| RHP01 | Robert Holmes Page Tenant House |
+| RHP02 | Robert Holmes Page Tenant House |
+| RHP03 | Robert Holmes Page Tenant House |
+| RHP04 | Robert Holmes Page Tenant House |
+| RHP05 | Robert Holmes Page Tenant House |
+| RHP06 | Robert Holmes Page Tenant House |
+| RIH01 | Richardson Home |
+| RIH02 | Richardson House |
+| RML11 | new Daylesford Stattion |
+| RML15 | Paoli Train Station |
+| RML19 | Silverliner II consist of the Paoli Local arrives in Paoli station, May 13, 1972. |
 | RML2 | Railroad crew in Paoli |
+| RML20 | MP54 consist of the Paoli Local arrives in Paoli station, May 13, 1972. |
+| RML21 | MP54 consist of the Paoli Local arrives in Paoli station, May 13, 1972. |
+| RML22 | Strafford Station |
+| RML23 | Strafford Station |
+| RML24 | Strafford Station |
+| RML25 | Penn Central freight |
+| RML26 | Strafford Station |
+| RML27 | Train at Daylesford |
+| RML28 | Daylesford Station |
+| RML30 | Strafford Station |
+| RML31 | Valley Forge Road bridge |
+| RML32 | Potential Site of Eagle Station |
+| RML33 | Potential Site of Eagle Station |
+| RML35 | Penn Central passenger train passes Paoli |
+| RML36 | Passenger train near Paoli |
+| RML37 | Daylesford Station |
+| RML38 | Strafford train station |
+| RML39 | Strafford train station |
 | RML5 | Train Crash at Paoli Station |
 | RML6 | Train Crash at Paoli Station |
 | RML7 | Wrecked Engine |
 | RML8 | Paoli Railyard |
+| RON01 | Group at TE High School |
 | ROR1 | Roller Rink |
 | ROR2 | Roller Rink |
 | ROR3 | Roller Rink |
@@ -419,9 +2308,46 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | ROR5 | Roller Rink |
 | ROR6 | Roller Rink |
 | ROR7 | Roller Rink |
+| RWG01 | R. Wellington Grant House |
+| RWG02 | R. Wellington Grant House |
+| RWG03 | R. Wellington Grant House |
+| SAC03 | Salem Church |
+| SAC04 | Salem Church |
+| SAC05 | Salem Church |
+| SAC06 | Salem Church |
+| SAC07 | Salem Church |
+| SAC08 | Salem Church |
+| SAC09 | Salem Church |
 | SAC1 | Salem Church graveyard |
+| SAC10 | Salem Church Parsonage |
+| SAC11 | Salem Church Parsonage |
+| SAC12 | Salem Church Parsonage |
+| SAC13 | Salem Church Parsonage |
+| SAC14 | Salem Church Parsonage |
+| SAC15 | Salem Church Cemetery |
+| SAC16 | Salem Church Cemetery |
+| SAC17 | Salem Church Cemetery |
+| SAC18 | Salem Church |
+| SAC2 | Salem ME Church |
+| SAL03 | West Building, Salem School, c. early 1990s |
+| SAL04 | Salem School |
+| SAL05 | Salem School |
+| SAL06 | Salem School |
+| SAL07 | Salem School |
+| SAL08 | Salem School |
+| SAL09 | Salem School |
 | SAL1 | Grades 1, 2, and 3 Salem School, 1940 |
+| SAL10 | Salem School |
+| SAL13 | Salem School |
+| SAL14 | Salem School |
+| SBB05 | Second Blue Ball Inn |
+| SBB06 | Second Blue Ball Inn |
+| SBB07 | Second Blue Ball Inn |
+| SBB08 | Second Blue Ball Inn |
+| SBB09 | Second Blue Ball Inn |
 | SBB1 | Blue Ball Inn |
+| SBB10 | Second Blue Ball Tavern |
+| SBB11 | Blue Ball Inn sign |
 | SBB2 | Blue Ball Inn |
 | SBB3 | Second Blue Ball Inn |
 | SBB4 | Second Blue Ball Inn |
@@ -431,23 +2357,274 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | SCH2 | Tredyffrin-Easttown Joint High School |
 | SCH5 | Eagle School, 1788 - 1872 |
 | SCH7 | Carr School, 1832 - 1869 |
+| SCP01 | Rededication of Stone Chimney Picket plaque |
+| SCP02 | Rededication of Stone Chimney Picket plaque |
+| SCP03 | Rededication of Stone Chimney Picket plaque |
+| SCP04 | Rededication of Stone Chimney Picket plaque |
+| SEI02 | License Application for Eagle Hotel |
+| SES01 | Strafford Consolidated School |
+| SES02 | Memorial Boulder at Strafford Elementary School |
+| SHF01 | Shank Farm, J. H. Mecke Jr. residence |
+| SHF02 | Shank Farm, J. H. Mecke Jr. residence |
+| SHF03 | Shank Farm, J. H. Mecke Jr. residence |
+| SHF04 | Shank Farm, J. H. Mecke Jr. residence |
+| SHF05 | Swedesford Road near Shank Farm, J. H. Mecke Jr. residence |
+| SHF06 | Shank Farm, J. H. Mecke Jr. residence |
+| SHF07 | Shank Farm, J. H. Mecke Jr. residence |
+| SHF08 | Shank Farm, J. H. Mecke Jr. residence |
+| SHF09 | Residence of J. Howard Mecke, Strafford jr. |
+| SHF10 | Stable and paddock at residence of J. Howard Mecke jr. |
+| SHF11 | J. Howard Mecke jr. house, Strafford |
+| SIJ01 | Site of St. Isaac Joques church |
+| SIJ02 | St. Isaac Joques rectory |
+| SIJ03 | St. Isaac Joques rectory |
+| SIJ04 | St. Isaac Joques rectory |
+| SIJ05 | St. Isaac Joques rectory |
+| SIJ06 | St. Isaac Joques church |
+| SIJ07 | St. Isaac Joques church |
+| SIJ08 | St. Isaac Joques church |
+| SIJ09 | St. Isaac Joques church |
+| SJM01 | St. Joseph Mission Chapel |
+| SJM02 | St. Joseph Mission Chapel |
+| SJM03 | St. Joseph Mission Chapel |
+| SJM04 | St. Joseph Mission Chapel |
+| SJM05 | St. Joseph Mission Chapel |
+| SJM06 | St. Joseph Mission Chapel |
+| SJM07 | St. Joseph Mission Chapel |
+| SJM08 | St. Joseph Mission Chapel |
+| SJM09 | St. Joseph Mission Chapel |
+| SJM10 | St. Joseph Mission Chapel |
+| SJM11 | Fire at St. Joseph Mission, Cedar Hollow |
+| SJM12 | Fire at St. Joseph Mission, Cedar Hollow |
+| SJM13 | Fire at St. Joseph Mission, Cedar Hollow |
+| SJM14 | Fire at St. Joseph Mission, Cedar Hollow |
+| SJM15 | Fire at St. Joseph Mission, Cedar Hollow |
+| SJM16 | Fire at St. Joseph Mission, Cedar Hollow |
+| SJM17 | Fire at St. Joseph Mission, Cedar Hollow |
+| SJM18 | Fire at St. Joseph Mission, Cedar Hollow |
+| SJM19 | Ruins of St. Joseph Mission |
+| SJM20 | Ruins of St. Joseph Mission |
+| SJM21 | Ruins of St. Joseph Mission |
+| SJM22 | Ruins of St. Joseph Mission |
+| SJM23 | Dedication of St Josephs Mission |
+| SLC01 | St Luke’s Lutheran Church, Devon ground breaking |
+| SLC03 | St Luke’s Church, Devon |
+| SLC04 | St Luke’s Parsonage, Devon |
+| SLC05 | St Luke’s Church, Devon |
+| SLC06 | St Luke’s Church, Devon |
+| SLC07 | St Luke’s Church, Devon |
+| SMB18 | Fire at St. Monica’s Church, Berwyn |
 | SPC10 | St. Peter's Church interior |
+| SPC13 | St. Peter’s Church |
+| SPC14 | St. Peter’s Church |
+| SPC15 | St. Peter’s Church Education Building |
+| SPC16 | St. Peter’s Church |
+| SPC17 | St. Peter’s Church Education Building |
+| SPC18 | Saint Peter’s Church in the Great Valley |
+| SPC19 | Saint Peter’s Church in the Great Valley |
+| SPC20 | St. Peter’s Church |
 | SPC8 | St. Peter's Church |
 | SPC9 | St. Peter's Church |
+| SRC01 | Sebastian Rink house |
+| SRC02 | Sebastian Rink house |
+| SRC03 | Sebastian Rink house, home of John K. Ewing |
+| SRC04 | Sebastian Rink house |
+| SRC05 | Sebastian Rink house, home of John K. Ewing |
 | SS2 | Strafford School |
 | SS3 | Strafford School |
 | SS4 | Strafford School |
+| SSA01 | Strafford Station Apartments |
+| SSA02 | Strafford Station Apartments |
+| SSA03 | Strafford Station Apartments |
+| SSA04 | Strafford Station Apartments |
+| SSA05 | Strafford Station Apartments |
+| SSA06 | Strafford Station Apartments |
+| SSA07 | Strafford Station Apartments |
+| SSA08 | Strafford Station Apartments |
+| SSA09 | Strafford Station Apartments |
+| SSP08 | Springhouse, Sycamore Springs Farm, Yellow Springs Road |
+| SSP09 | Springhouse, Sycamore Springs Farm, Yellow Springs Road |
+| SSP10 | Ruin, Sycamore Springs, Yellow Springs Road |
+| SSP11 | Sycamore Springs Farm, Yellow Springs Road |
+| STI09 | Stirling's Quarters marker |
 | STI1 | Stirling's Quarters 1905 |
+| STI10 | Stirling's Quarters |
+| STI11 | Stirling’s Quarters |
+| STI12 | Stirling’s Quarters |
+| STI13 | Stirlings Quarters |
+| STI13b | Back of STI13 |
+| STI14 | Stirlings Quarter |
+| STI15 | Stirling’s Spring |
 | STI2 | Stirling's Quarters 1905 |
 | STI3 | Interior of Stirling’s Quarters |
 | STI5 | Stirling’s Quarters |
 | STI6 | General Stirling's Quarters |
 | STI7 | Stirling's Quarters |
 | STI8 | Spring House, Stirling's Quarters |
+| STN01 | St Norberts Church |
+| STN02 | St. Norberts Church |
+| STR04 | Site of Devon Square Shopping Center |
+| STR06 | Site of Devon Square Shopping Center |
+| STR08 | Site of Devon Square Shopping Center |
+| STR09 | Site of Devon Square Shopping Center |
 | STR1 | Strafford Road, Strafford |
+| STR10 | Devon Square Shopping Center |
+| STR11 | Devon Square Shopping Center |
+| STR12 | Devon Square Shopping Center |
+| STR14 | Old Eagle School Road |
+| STR15 | Old Eagle School Road |
+| STR16 | Corner of Lancaster Avenue and Old Eagle Road, Strafford |
+| STR17 | Corner of Lancaster Avenue and Old Eagle Road, Strafford |
+| STR18 | Corner of Lancaster Avenue and Old Eagle Road, Strafford |
+| STR19 | Corner of Lancaster Avenue and Old Eagle Road, Strafford |
+| STR2 | Devon Square, Strafford  Leasing Plan |
+| STR20 | Corner of Lancaster Avenue and Old Eagle Road, Strafford |
+| STR21 | War Memorial, Strafford |
+| STR23 | Strafford Houses on Lancaster Avenue |
+| STR24 | Houses on Lancaster Avenue, Strafford |
+| STR25 | Strafford Miniature Golf |
+| STR26 | Washington’s Sentinel Tree |
+| STR27 | Bryn Mawr Homes |
+| STR28 | Cotswold House - plans |
+| STR29 | Cotswold House - rendering |
+| STR3 | Spread Eagle Village, Strafford |
+| STR30 | Devon House - plans 1 |
+| STR31 | Devon House - plans 2 |
+| STR32 | Early American House - plans |
+| STR33 | Early American House - rendering |
+| STR34 | Early American House 2 |
+| STR35 | EnglishCottage - Plans |
+| STR36 | EnglishCottage - Rendering |
+| STR37 | English Manor House |
+| STR38 | English Manor House - rendering |
+| STR39 | Englsih Studio House - plans |
+| STR40 | English Studio House - rendering |
+| STR41 | French Manor House - plans |
+| STR42 | French Manor House - rendering |
+| STR43 | French Villa - plans |
+| STR44 | French Villa - rendering |
+| STR45 | Georgian House - plans |
+| STR46 | Georgian House - rendering |
+| STR47 | Georgian House |
+| STR48 | Home of Erna & John Schultz, Pugh Road |
+| STR49 | Long Island Colonial House - plans |
+| STR50 | Long Island Colonial House - rendering |
+| STR51 | Maryland Colonial House - plans |
+| STR52 | Maryland Colonial House - rendering |
+| STR53 | Maryland House |
+| STR54 | Myers residence |
+| STR55 | New England Colonial House - Plans |
+| STR56 | New England Colonial House - rendering |
+| STR57 | Overbrook House |
+| STR58 | Penn House #1 - plans 1 |
+| STR59 | Penn House #1 - plans 2 |
+| STR60 | Pennsylvania Colonial House - plans |
+| STR61 | Pennsylvania Colonial House - rendering |
+| STR62 | Pennsylvania Farmhouse |
+| STR63 | Pennsylvania Farmhouse - rendering |
+| STR64 | Plot Plan |
+| STR65 | Radnor Colonial House - plans |
+| STR66 | Radnor Colonial House - rendering |
+| STR67 | Southern Colonial House - plans |
+| STR68 | Southern Colonial House - rendering |
+| STR69 | Strafford Colonial House - plans |
+| STR70 | Strafford Colonial House - rendering |
+| STR71 | Tudor House - plans |
+| STR72 | Tudor House - rendering |
+| STR73 | Unnamed House 1 - rendering |
+| STR74 | Unnamed House 2 |
+| STR75 | Unnamed House 3 |
+| STR76 | Unnamed House 4 |
+| STR77 | Unnamed House 5 |
+| STR78 | Unnamed House 6 |
+| STR79 | Unnamed House 7 |
+| STR80 | Valley Forge Colonial House - plans |
+| STR81 | Valley Forge Colonial House - rendering |
+| STR82 | Wayne Farmhouse - plans |
+| STR83 | Wayne Farmhouse - rendering |
+| STR84 | Wayne House 2 |
+| STR85 | Wayne House 4 - plans |
+| STR86 | West Chester House |
+| STR87 | Wynnewood House |
+| STR88 | Devon Square Shopping Center |
+| STR89 | Devon Square Shopping Center |
+| STR90 | Devon Square Shopping Center |
+| STR91 | Devon Square Shopping Center |
+| STR92 | Old Eagle and Upper Gulph Roads |
+| STR93 | Old Eagle and Upper Gulph Roads |
+| STR94 | Old Eagle and Upper Gulph Roads |
+| STR95 | Strafford demolition |
+| STR96 | Strafford demolition |
+| SUF1 | Valley Creek at the Supiot Farm |
+| SUF2 | Supiot Farm looking northeast |
+| SUF3 | Supiot Farm looking northwest |
+| SUF4 | Supiot Farm looking south |
+| SUF5 | Supiot Farmhouse |
+| SUF6 | Supiot Farm Watercress Soup Recipe |
 | SUQ01 | General Sullivan's Quarters |
+| SUQ02 | General Sullivan's Quarters |
+| SUQ03 | General Sullivan's Quarters |
+| SUQ04 | Gateway to General Sullivan's Quarters |
+| SVR01 | South Valley Road, Paoli |
+| SVR02 | South Valley Road, Paoli |
+| SWE01 | Springhouse, 110 Swedesford Road |
+| SWE02 | Root Cellar, 110 Swedesford Road |
+| SWE03 | Building, Swedesford Road |
+| SWE04 | Limestone Kiln, Swedesford Road |
+| SWE05 | Northwinds, Swedesford Road |
+| SWE06 | Swedesford Road house |
+| SWE07 | Swedesford Road house |
+| SWE08 | Swedesford Road house |
+| SWE09 | Blacksmith Shop, Swedesford Road |
+| SWE10 | Swedesford Road Farm |
+| SWE14 | Junction of Swedesford Road (202) and Old Eagle School Road |
+| SWE15 | Junction of Swedesford Road (202) and Old Eagle School Road |
+| SWH01 | Jones - Page- Sware house |
+| SWH02 | Jones - Page- Sware house |
+| SWH03 | Jones - Page- Sware house |
+| SWH04 | Jones - Page- Sware house |
+| SWH05 | Jones - Page- Sware house |
+| SWH06 | Jones - Page- Sware house |
+| TCC02 | Grounds crew at Tredyffrin Country Club, Paoli |
 | TCC1 | Tredyffrin Country Club |
+| TCO05 | Trenton Cut Off Pumping Station, Prissy’s Hollow |
+| TCO06 | Trenton Cutoff, view from Howellville Road Bridge |
+| TCO07 | Trenton Cutoff, view from Howellville Road Bridge |
+| TCO08 | Trenton Cutoff, view from Howellville Road Bridge |
 | TCO1 | Trenton Cut Off |
+| TCO4 | Berwyn Grade Crossing, Trenton Cutoff Railroad |
+| TEC01 | First History Club Banquet at Windmill Tea Room |
+| TEC14 | History Club Meeting |
+| TEC15 | History Club Meeting |
+| TEC16 | History Club Meeting |
+| TEC17 | History Club Meeting |
+| TEC18 | Mildred Kirkner, Grace Winthrope |
+| TEC19 | Mrs Eleanor Dunwoody and Frances Liggett |
+| TEC20 | Duportail House |
+| TEC21 | TE History Club 50th Anniversary at Duportail House |
+| TEC22 | TE History Club 50th Anniversary at Duportail House |
+| TEC23 | Duportail House |
+| TEC24 | Duportail House |
+| TEC25 | TE History Club 50th Anniversary at Duportail House |
+| TEC26 | Duportail House |
+| TEC27 | TE History Club picnic, 1999 |
+| TEC28 | TE History Club picnic, 1999, Andrews House |
+| TEC29 | Seated at table (clockwise): Mary Lamborn, Ed & Helen Hayes, Dorothy Stanley, Mildred Kirkner, Libbie Weaver.
+
+Standing: David Wilson (leaning over), Bill Andrews (hand to face), Skip Eichner (striped shirt) |
+| TEC30 | Left to right: Dorothy Stanley, Mildred Kirkner, Libby Weaver, David Wilson |
+| TEC31 | Near table (clockwise): Eleanor Chworowsky, Betty Ripka, Barbara Fry, Herb Fry, Joan McCracken, Jim MCCracken |
+| TEC32 | Ray and Eva Noll, Mary Lamborn (with back turned) |
+| TEC33 | Eichner daughter and grandchild;
+Eva and Ray Noll;
+Standing middle distance: Skip Eichner (striped shirt), Bill Andrews (dark shirt), Howard Housworth (left, standing erect, light shirt), Jim Huston (right) |
+| TEC34 | TE History Club 1989 picnic at Goshorn’s house |
+| TEC35 | TE History Club 1989 picnic at Goshorn’s house |
+| TEC36 | TE History Club 1989 picnic at Goshorn’s house |
+| TEC40 | Eleanor Dunwoody and Mary Sues(?) |
+| TEC41 | TE History Club 1984 picnic |
+| TEC42 | Bob Goshorn |
+| TEC43 | TE History Club 1984 picnic |
 | TEH1 | Tredyffrin - Easttown High School |
 | TEH10 | Tredyffrin-Easttown High School being demolished |
 | TEH11 | Tredyffrin-Easttown High School being demolished |
@@ -455,27 +2632,219 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | TEH13 | Tredyffrin-Easttown High School under construction |
 | TEH14 | Tredyffrin-Easttown High School |
 | TEH15 | Tredyffrin-Easttown High School |
+| TEH16 | Tredyffrin-Easttown High School |
+| TEH17 | 1927 Baseball team from Tredyffrin-Easttown High School |
+| TEH18 | Class Picture, 1927, Tredyffrin-Easttown High School |
+| TEH19 | Daddy Long Legs Collage, Tredyffrin-Easttown High School |
+| TEH20 | Football Letter-men, 1927, Tredyffrin-Easttown High School |
+| TEH21 | Football Squad, 1927, Tredyffrin-Easttown High School |
+| TEH22 | Freshman Class, 1927, Tredyffrin-Easttown High School |
+| TEH23 | Sports Collage, 1927, Tredyffrin-Easttown High School |
+| TEH24 | Track Team, 1927, Tredyffrin-Easttown High School |
+| TEH25 | Tredyffrin-Easttown High School |
 | TEH3 | T-E High School Basketball Team, 1920 |
+| TEH30 | Tredyffrin Easttown High School |
+| TEH31 | Conestoga High School about 1960 |
+| TEH32 | Tredyffin-Easttown High School |
+| TEH34 | Tredyyfrin Easttown High School Girls Basketball Team, 1920 |
+| TEH35 | TE High School Girls Basketball Team, 1925 |
+| TEH36 | TE High School Play |
+| TEH37 | TE High School Play |
+| TEH38 | TE Girls Basketball Team, 1917 |
+| TEH39 | TE Girls Basketball Team, 1917 |
 | TEH4 | Tredyffrin-Easttown High School |
+| TEH40 | TE Junior High School (in back of TE High School) |
+| TEH41 | Conestoga High School corner stone |
+| TEH42 | Conestoga High School corner stone |
+| TEH43 | Conestoga High School |
+| TEH44 | Conestoga High School |
+| TEH45 | Conestoga High School |
+| TEH46 | Conestoga High School |
+| TEH47 | Conestoga High School |
+| TEH48 | Conestoga High School |
+| TEH49 | Tredyffrin Easttown High School |
 | TEH5 | Tredyffrin-Easttown High School 1910 Football Team |
+| TEH50 | Tredyffrin Easttown High School |
+| TEH51 | Tredyffrin Easttown High School |
+| TEH52 | Tredyffrin-Easttown High School Football Team, 1910 -11 |
+| TEH53 | Girls Basketball Team, 1920 - 21, TE High School |
+| TEH54 | 1924 Theatrical Cast Portrait, TE High School |
 | TEH6 | Tredyffrin-Easttown High School 1912 Football Team |
 | TEH7 | Tredyffrin-Easttown High School, class of 1927 |
 | TEH8 | Tredyffrin-Easttown High School |
+| TEH85 | Conestoga High School |
+| TEH86 | Conestoga Senior High School Marching Band |
 | TEH9 | Tredyffrin-Easttown High School being demolished |
+| THE01 | Thomas Farm House |
+| THE02 | Thomas Farm House |
+| THE03 | Thomas Farm House |
+| THE04 | Thomas Farm House |
+| THH01 | New homes at Tory Hollow Farm |
+| THH02 | New homes at Tory Hollow Farm |
+| THH03 | New homes at Tory Hollow Farm |
+| THH04 | Tory Hollow Farm with new addition |
+| THI01 | Tally Ho Inn |
+| THI01b | Back of THI01 |
+| TJH01 | Preparing for the TE Junior High parking lot |
+| TJH02 | Site of TE Junior High addition |
+| TJH03 | Old TE Junior High |
+| TJH04 | New TE Junior High nearing completion |
+| TJH05 | Old TE Junior High |
+| TJH06 | Old TE Junior High |
+| TJH07 | Old TE Junior High |
+| TJH08 | Old TE Junior High |
+| TJH09 | Old TE Junior High |
+| TJH10 | TE Junior High annex |
+| TJH11 | Tredyffrin Easttown School being built |
+| TJH12 | new TE High School building |
+| TJH13 | Tredyffrin Easttown Junior High School addition |
+| TJH14 | Tredyffrin Easttown Junior High School |
+| TJH15 | Tredyffrin Easttown High School |
+| TJH16 | Frame work for new Tredyffrin Easttown Junior High School |
+| TJH17 | Tredyffrin Easttown High School |
+| TJH18 | new Tredyffrin Easttown Junior High School |
+| TJH19 | Tredyffrin Easttown Junior High School parking lot - site of old High School building |
+| TJH20 | Tredyffrin Easttown Junior High School parking lot |
+| TJH21 | Tredyffrin Easttown Junior High School parking lot being prepared |
+| TJH22 | Tredyffrin Easttown Junior High School new parking lot |
+| TJH23 | Tredyffrin Easttown Junior High School new parking lot |
+| TJH24 | Tredyffrin Easttown Junior High School |
+| TJH25 | Tredyffrin Easttown Junior High School parking lot being prepared |
+| TJH26 | Tredyffrin Easttown Junior High School |
+| TJH27 | Tredyffrin Easttown Junior High School, site of new section |
+| TJH28 | Tredyffrin Easttown Junior High School |
+| TJH29 | Tredyffrin Easttown Junior High School |
+| TJH30 | Tredyffrin Easttown Junior High School |
+| TJH31 | Site of Valley Forge Junior High School |
+| TJH32 | Site of Valley Forge Junior High School |
+| TJH33 | Valley Forge Junior High School |
+| TJH34 | Tredyffrin-Easttown Junior High School |
+| TOH05 | Cornwallis Quarters |
+| TOH05b | Back of TOH05 |
+| TOH06 | Cornwallis’ Quarters |
+| TOH07 | Headquarters of Lord Cornwallis |
 | TOH1 | Tory Hollow |
 | TOH2 | Tory Hollow |
 | TOH3 | Tory Hollow |
 | TOH4 | Tory Hollow |
+| TPS01 | Tea Party at Stirling's Quarters in honor of Compilers of 'Great Valley Days' |
+| TPS02 | Tea Party at Stirling's Quarters in honor of Compilers of 'Great Valley Days' |
+| TPS03 | Tea Party at Stirling's Quarters in honor of Compilers of 'Great Valley Days' |
+| TPS04 | Tea Party at Stirling's Quarters in honor of Compilers of 'Great Valley Days' |
+| TPS05 | Tea Party at Stirling's Quarters in honor of Compilers of 'Great Valley Days' |
+| TRE04 | View of the Great Valley |
+| TRE05 | View of the Great Valley |
+| TRE06 | Tredyffrin Township Display |
+| TRE07 | Tredyffrin Township Display |
+| TRE08 | Tredyffrin Township Display |
+| TRE09 | Tredyffrin Township Display |
 | TRE1 | Tredyffrin Police Cars |
+| TRE10 | Tredyffrin Township Display |
+| TRE11 | Tredyffrin township building |
+| TRE12 | Tredyffrin township building |
+| TRE14 | Tredyffrin township building, Old Lancaster Road |
+| TRE15 | Tredyffrin township building, Old Lancaster Road |
+| TRE16 | View of Great Valley from Howellville Road |
+| TRE17 | View of the Great Valley |
+| TRE18 | View of the Great Valley |
+| TRE19 | View of the Great Valley |
 | TRE2 | Tredyffrin Township Building, Berwyn |
+| TRE20 | View of the Great Valley |
+| TRE21 | View of the Great Valley |
+| TRE22 | View of the Great Valley |
+| TRE23 | Tredyffrin Logo |
+| TRE24 | Tredyffrin Logo |
+| TRE25 | Tredyffrin Logo |
+| TRE26 | Tredyffrin Logo |
+| TRE28 | Tredyffrin Logo |
+| TRE29 | Tredyffrin Logo |
 | TRE3 | Church Road looking south |
+| TRE31 | Tredyffrin Logo |
+| TRE33 | Tredyffrin Logo |
+| TRE34 | Tredyffrin Logo |
+| TRE35 | Tredyffrin Logo |
+| TRS01 | Sycamore tree by Swedesford Road |
+| TRS02 | Sycamore tree by Swedesford Road |
+| TRS03 | Sycamore tree by Swedesford Road |
+| TRS04 | Sycamore tree by Swedesford Road |
+| TRS05 | Sycamore tree by Swedesford Road |
+| TRS06 | Trees on Colonel Dewees Road |
+| TRS07 | Trees on Colonel Dewees Road |
+| TRS08 | Trees on Colonel Dewees Road |
+| TSH01 | Thomas P. Stanton house |
+| TSH02 | Thomas P. Stanton house |
+| TSH03 | Thomas P. Stanton house |
+| TSH04 | Thomas P. Stanton house |
+| TSH05 | Thomas P. Stanton house |
+| TSH06 | Thomas P. Stanton house |
+| TSH07 | Thomas P. Stanton house |
+| UFG9 | Upper Forge site, Valley Forge |
+| USF01 | Upstream Farm |
+| USF02 | Upstream Farm Barn |
+| USF03 | Upstream Farm |
+| VC10 | Valley Creek at the Covered Bridge |
+| VC16 | Valley Creek Road |
+| VC16b | Back of VC16 |
+| VC18 | Scree Slope, Valley Creek |
+| VC19 | Valley Creek and Bridge |
+| VC26 | Valley Creek at Knox Covered Bridge |
+| VC34 | Valley Creek |
+| VFM03 | Valley Forge Music Fair |
+| VFM04 | Valley Forge Music Fair |
+| VFM07 | Valley Forge Music Fair |
+| VFM08 | Valley Forge Music Fair |
+| VFM09 | Valley Forge Music Fair |
 | VFM1 | Valley Forge Music Fair |
+| VFM10 | Valley Forge Music Fair |
+| VFM11 | Valley Forge Music Fair |
+| VFM12 | Valley Forge Music Fair |
+| VFM13 | Valley Forge Music Fair |
+| VFM14 | Valley Forge Music Fair |
+| VFM16 | Valley Forge Music Fair |
+| VFM18 | Valley Forge Music Fair |
+| VFM20 | Valley Forge Music Fair |
+| VFM22 | Valley Forge Music Fair |
+| VFM24 | Valley Forge Music Fair |
+| VFM25 | Valley Forge Music Fair |
+| VFM27 | Valley Forge Music Fair |
+| VFM28 | Valley Forge Music Fair |
+| VFM29 | Valley Forge Music Fair |
+| VFM31 | Valley Forge Music Fair |
+| VFM32 | Valley Forge Music Fair |
+| VFM33 | Valley Forge Music Fair |
+| VFP106 | Anthony Wayne Monument |
+| VFP114 | Pennsylvania Columns |
+| VFP118 | Anthony Wayne Statue |
+| VFP133 | Pennsylvania Columns |
+| VFP134 | Anthony Wayne Monument |
+| VFP227 | Pennsylvania Columns |
 | VFP32 | New Jersey Monument |
+| VFP62 | Wayne’s Headquarters sign |
+| VFP63 | Wayne’s Headquarters sign |
+| VFP64 | Wayne’s Statue |
+| VFP65 | Valley Forge Park (from present route 252) |
+| VFP72 | Wayne’s Statue, Valley Forge |
+| VFP90 | Wayne’s Statue, Valley Forge |
+| VFP90b | Back of VFP90 |
+| VFR04 | Valley Friends Meetinghouse |
+| VFR05 | Valley Friends Meetinghouse |
+| VFR06 | View from entrance to Valley Friends Meeting |
+| VFR07 | View from entrance to Valley Friends Meeting |
+| VFR08 | View from entrance to Valley Friends Meeting |
+| VFR09 | Valley Friends Meetinghouse |
+| VFR10 | Valley Friends Meetinghouse |
+| VFR11 | View from entrance to Valley Friends Meeting |
+| VFR12 | View from entrance to Valley Friends Meeting |
 | VLC01 | Van Leer Log Cabin |
 | VLC02 | Conrad Wilson & Students |
 | VLC03 | T-E High School American Heritage Class, 1960 - 61 |
 | VLC04 | Van Leer Log Cabin |
+| VLC05 | Van Leer Log Cabin |
+| VLC06 | Van Leer Log Cabin |
+| VLC07 | Van Leer Log Cabin |
+| VLC08 | Van Leer Cabin |
 | WAR1 | Warner Quarry workers |
+| WAR10 | Steam Shovel, Warner Quarry |
 | WAR2 | Warner Quarry workers |
 | WAR3 | Warner Quarry workers |
 | WAR4 | Warner Quarry |
@@ -483,12 +2852,104 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | WAR6 | Warner Quarry |
 | WAR7 | Warner's Cedar Hollow Plant |
 | WAR8 | Cedar Hollow Kilns |
+| WBH01 | Walter Borig House |
+| WBH02 | Walter Borig House |
+| WBH03 | Walter Borig House |
+| WBH04 | Walter Borig House |
+| WBH05 | Walter Borig House |
+| WCH01 | Wilson-Cox House |
+| WCH02 | Wilson-Cox House |
+| WCH03 | Wilson-Cox House |
+| WCH04 | Wilson-Cox House |
+| WCH05 | Wilson-Cox House |
+| WCH06 | Wilson-Cox House |
+| WCH07 | Wilson-Cox House |
+| WCH08 | Wilson-Cox House |
+| WCH09 | Wilson-Cox House |
+| WFC01 | Wilson Farm, Chesterbrook |
+| WFC02 | Wilson Farm, Chesterbrook |
+| WFC03 | Wilson Farm, Chesterbrook |
+| WFC04 | Wilson Farm, Chesterbrook |
+| WFC05 | Wilson Farm, Chesterbrook barns |
+| WFC06 | Wilson Farm, Chesterbrook barns |
+| WFC07 | Wilson Farm, Chesterbrook barn |
+| WFC08 | Wilson Farm, Chesterbrook barns |
+| WFC09 | Wilson Farm, Chesterbrook dairy barn |
+| WFC10 | Wilson Farm, Chesterbrook - sheep in driveway |
+| WFC11 | Wilson Farm, Chesterbrook aerial photo |
+| WFC14 | Wilson Farm, Chesterbrook - free range chickens |
+| WFC15 | Wilson Farm, Chesterbrook Hay Moving |
+| WFC16 | Wilson Farm, Chesterbrook horse wagon |
+| WFC17 | Wilson Farm, Chesterbrook front of main house |
+| WFC18 | Wilson Farm, Chesterbrook main house |
+| WFC19 | Wilson Farm, Chesterbrook southeast corner |
+| WFH01 | Wilson Farmhouse |
+| WFH02 | Wilson House |
+| WHE01 | Wharton Esherick Studio |
+| WIL01 | Eliza Siter Wilson |
+| WIL02 | David Wilson |
+| WIL03 | Emma Jane Wilson |
+| WIL04 | Winfield Scott Wilson |
+| WIL07 | William West & Marie Wilson |
+| WIL08 | William West Wilson |
+| WOH01 | Workizer's House |
+| WPF01 | Wheeler Page Farm |
+| WPF02 | Wheeler Page Farm |
+| WPF03 | Wheeler Page Farm |
+| WPF04 | Wheeler Page Farm |
+| WPF05 | Wheeler Page Farm |
+| WPF06 | Wheeler Page Farm |
+| WPF07 | Wheeler Page Farm |
+| WPF08 | Wheeler Page Farm |
+| WPF09 | Wheeler Page Farm |
+| WPF10 | Wheeler Page Farm |
+| WPF11 | Wheeler Page Farm |
+| WPF12 | Wheeler Page Farm |
+| WPF13 | Wheeler Page Farm |
+| WPF14 | Wheeler Page Farm |
+| WPF15 | Wheeler Page Farm |
+| WPF16 | Wheeler Page Farm |
+| WPF17 | Wheeler Page Farm |
+| WRB01 | Wilson Road Bridge over unnamed tributary of Valley Creek |
+| WRB02 | Wilson Road Bridge over unnamed tributary of Valley Creek |
+| WRB03 | Wilson Road Bridge over unnamed tributary of Valley Creek |
+| WRB04 | Wilson Road Bridge over unnamed tributary of Valley Creek |
+| WRB05 | Wilson Road Bridge over unnamed tributary of Valley Creek |
+| WRD10 | Waterloo Road, Devon |
+| WRF01 | Wreth-Forcini House |
+| WRF02 | Wreth-Forcini House |
+| WRF03 | Wreth-Forcini House |
+| WRF04 | Wreth-Forcini House |
+| WRF05 | Wreth-Forcini House |
+| WRF06 | Wreth-Forcini House |
 | WSH1 | Walker School, 1863 - 1923 |
+| WSH10 | Walker Schoolhouse |
+| WSH11 | Walker Schoolhouse |
+| WSH12 | Walker Schoolhouse |
+| WSH13 | Location of Walker Schoolhouse |
+| WSH14 | Walker Schoolhouse |
+| WSH16 | View from Walker Schoolhouse |
+| WSH17 | Walker Schoolhouse |
+| WSH18 | Walker Schoolhouse |
+| WSH19 | Walker Schoolhouse |
 | WSH2 | Walker Schoolhouse |
+| WSH20 | Walker Schoolhouse |
+| WSH21 | Walker Schoolhouse |
+| WSH22 | Walker Schoolhouse |
+| WSH23 | Walker Schoolhouse |
+| WSH24 | Walker Schoolhouse |
+| WSH26 | Fields near Walker Schoolhouse |
+| WSH27 | Fields near Walker Schoolhouse |
 | WSH3 | Walker Schoolhouse |
 | WSH4 | Walker Schoolhouse |
 | WSH5 | Walker Schoolhouse |
 | WSH6 | Walker Schoolhouse |
+| WSH7 | Walker Schoolhouse |
+| WSH8 | Walker Schoolhouse |
+| WSH9 | Walker Schoolhouse |
+| WYI11 | Wynburne Inn |
+| WYI3 | Wynburne Inn |
+| WYI6 | Wynburne Inn |
 | YOF1 | Yohn Farmhouse |
 | YOF10 | Yohn Farm |
 | YOF11 | Yohn Farm |
@@ -540,18 +3001,141 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | YOF7 | Yohn Farm |
 | YOF8 | Yohn Farm |
 | YOF9 | Yohn Farm |
+| YSR01 | New Road off Yellow Springs Road |
 
-### Easttown (154)
+### Easttown (1793)
 
 | Archive ID | Title |
 | --- | --- |
+| AIK02 | Dr Aiken’s House |
+| BAV01 | Berwyn Avenue looking west from Woodside Avenue, 1911 |
+| BAV02 | Berwyn Avenue |
+| BAV03 | Berwyn Avenue |
+| BAV04 | Berwyn Avenue |
+| BAV05 | Berwyn Avenue |
+| BAV06 | Berwyn Avenue |
+| BAV07 | Berwyn Avenue |
+| BBB01 | Former Berwyn Bronze Bearing Company Building |
+| BBB02 | Berwyn Bronze Bearing Company |
+| BBB03 | Strike at Berwyn Bronze Bearing Company |
+| BBB04 | Strike at Berwyn Bronze Bearing Company |
+| BBB05 | Strike at Berwyn Bronze Bearing Company |
+| BBB06 | Strike at Berwyn Bronze Bearing Company |
+| BBC07 | Christian Science Church |
+| BBC08 | Berwyn Baptist Church |
+| BCA01 | Church Ave, south from Lancaster Ave, Berwyn, |
+| BCA02 | Church Avenue, Berwyn |
+| BCA03 | Church Avenue, Berwyn |
 | BE1 | Bocce Club |
 | BE10 | Lincoln Highway, Berwyn |
+| BE101 | View of ACME site |
+| BE102 | View of ACME site |
+| BE103 | View of ACME site |
+| BE104 | View of ACME site |
+| BE105 | View of ACME site |
+| BE106 | View of ACME site |
+| BE107 | View of ACME site |
+| BE108 | View of ACME site from Ale House on Lincoln highway |
+| BE109 | View of ACME site from Ale House on Lincoln highway |
+| BE110 | View of ACME site from township grounds |
+| BE111 | View of ACME site |
+| BE112 | View of ACME site |
+| BE113 | View of ACME site |
+| BE114 | Fire House and Ambulance Service |
+| BE115 | Fire House and Ambulance Service |
+| BE117 | View of NE Berwyn from Station |
+| BE120 | Leopard and Darby – Paoli Roads |
+| BE121 | Warren Avenue, Berwyn |
+| BE122 | Warren Avenue, Berwyn |
+| BE123 | Warren Avenue, Berwyn |
+| BE124 | Warren Avenue, Berwyn |
+| BE125 | Warren Avenue, Berwyn after Hurricane Hazel |
+| BE126 | Warren Avenue, Berwyn |
+| BE127 | Warren Avenue, Berwyn after Hurricane Hazel |
+| BE128 | Warren Avenue, Berwyn after Hurricane Hazel |
+| BE129 | Kromer Avenue |
+| BE130 | Kromer Avenue |
+| BE131 | Roberts home, Kromer Avenue, Berwyn |
+| BE133 | Armistice Day, Berwyn, 1920 |
+| BE134 | Armistice Day, Berwyn, 1920 |
+| BE135 | Armistice Day, Berwyn, 1920 |
+| BE136 | Armistice Day, Berwyn, 1920 |
+| BE137 | Armistice Day, Berwyn, 1920 |
+| BE143 | Berwyn View |
+| BE144 | Berwyn View |
+| BE145 | Berwyn View |
+| BE146 | Upper Bridge, Berwyn |
+| BE147 | Upper Bridge, Berwyn |
+| BE148 | Upper Bridge, Berwyn |
+| BE149 | Upper Bridge, Berwyn |
+| BE150 | Upper Bridge, Berwyn |
+| BE151 | Berwyn View |
+| BE152 | Main Street, Berwyn |
+| BE153 | View from Woodside Avenue tract, Berwyn |
+| BE154 | Beaumont and Newtown Roads |
+| BE155 | Berwyn View |
+| BE156 | Berwyn View |
+| BE157 | Berwyn View |
+| BE158 | Berwyn View |
+| BE159 | Berwyn View |
+| BE160 | Berwyn View |
+| BE161 | Berwyn View |
+| BE163 | Richardson’s Knitting MIll |
+| BE164 | Old Hall - first Berwyn Town Hall |
+| BE165 | Lancaster and Main Avenues, Berwyn |
+| BE166 | TE History Club group |
+| BE167 | Unknown View |
+| BE168 | Unknown House |
+| BE169 | Berwyn Village Walk |
+| BE181 | Rooftops of Berwyn |
+| BE182 | Upper Bridge, Berwyn |
+| BE183 | World War 1 Memorial, Berwyn |
+| BE188 | Bridge Dedication, Berwyn |
+| BE189 | Bridge Dedication, Berwyn |
+| BE190 | Bridge Dedication, Berwyn |
+| BE191 | Bridge Dedication, Berwyn |
+| BE192 | Bridge Dedication, Berwyn |
+| BE194 | Rear of Bank |
+| BE195 | Billboard and Shed |
+| BE196 | Unknown View |
+| BE197 | Italian Lodge, Berwyn |
+| BE198 | 42 Bridge Avenue, Berwyn |
 | BE2 | Italian Club |
 | BE20 | Traveler's Rest Tree, Waterloo Avenue, Berwyn |
+| BE200 | Berwyn Bridge dedication |
+| BE201 | Berwyn Bridge dedication |
+| BE202 | Berwyn Bridge dedication |
+| BE203 | Berwyn Bridge dedication |
+| BE204 | Berwyn Bridge dedication |
+| BE205 | Berwyn Bridge dedication |
+| BE206 | Berwyn Bridge dedication |
+| BE207 | Berwyn Bridge dedication |
+| BE208 | Berwyn Village Walk |
+| BE209 | Berwyn Village Walk |
 | BE21 | Traveler's Rest Tree, Waterloo Avenue, Berwyn |
+| BE210 | Berwyn Village Walk |
+| BE211 | Berwyn Village Walk |
+| BE212 | Berwyn Village Walk |
+| BE213 | Berwyn Village Walk |
+| BE214 | Antique Car at Berwyn Station |
+| BE215 | Antique Car at Berwyn Station |
+| BE216 | Antique Car at Berwyn Station |
+| BE217 | Aquilante’s Trolley at Berwyn Station |
+| BE218 | Exhibits at Berwyn Station |
+| BE219 | Berwyn War Memorial |
 | BE22 | Traveler's Rest Tree, Waterloo Avenue, Berwyn |
+| BE220 | Unidentified view in Berwyn |
+| BE221 | Bronze Building |
+| BE222 | Bronze Building |
+| BE223 | Lancaster Avenue, Berwyn |
+| BE224 | Lancaster Avenue, Berwyn |
+| BE225 | Lancaster Avenue, Berwyn |
+| BE226 | Warren Avenue, Berwyn |
+| BE227 | Berwyn View |
+| BE228 | Lancaster Pike, Berwyn |
+| BE229 | A view of North Berwyn from Berwyn Station |
 | BE23 | Traveler's Rest Tree, Waterloo Avenue, Berwyn |
+| BE230 | Berwyn, PA. |
 | BE24 | Berwyn & Main Avenues, Berwyn |
 | BE28 | Berwyn Fire Company |
 | BE29 | Berwyn Fire Company |
@@ -570,11 +3154,40 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | BE42 | Berwyn War Memorial |
 | BE43 | Lincoln Highway, Berwyn |
 | BE44 | Berwyn Panorama |
+| BE45 | Sewer work on Conestoga Road, Berwyn |
+| BE46 | Sewer work on Conestoga Road, Berwyn |
+| BE47 | Conestoga Road, Berwyn before sewer work |
+| BE48 | Conestoga Road, Berwyn before sewer work |
+| BE49 | Sewer work on Conestoga Road, Berwyn |
 | BE5 | Berwyn Pharmacy |
+| BE50 | Sewer work on Conestoga Road, Berwyn |
+| BE51 | Sewer work on Conestoga Road, Berwyn |
+| BE52 | Sewer work on Conestoga Road, Berwyn |
+| BE53 | Sewer work on Conestoga Road, Berwyn |
+| BE54 | Sewer work on Conestoga Road, Berwyn |
 | BE6 | Berwyn Post Office and Bank |
+| BE61 | Warren Avenue, Berwyn |
+| BE62 | Warren Avenue, Berwyn |
+| BE63 | Twin Oaks, Berwyn |
+| BE65 | Cassatt Avenue from Lancaster Avenue, Berwyn |
+| BE68 | Church Avenue leading from Berwyn Station P.R.R. |
 | BE7 | Berwyn Post Office |
+| BE70 | View from rear of Berwyn Station, P.R.R. |
+| BE71 | Upper Bridge, Berwyn |
+| BE73 | Brace's Store, Berwyn |
+| BE76 | Sleet Storm, Berwyn |
+| BE77 | Post Office & Church Avenue, Berwyn, 1906 |
+| BE78 | Stairs facing Lancaster Pike and Main Avenue, 1904 |
 | BE8 | Berwyn ACME Store |
 | BE9 | Berwyn Volunteer Fire Company |
+| BEK01 | House, Northwest corner for Berkley and Fairfield Roads, Devon |
+| BEK02 | House, Northeast corner of Berkley and Fairfield Roads, Devon |
+| BEK03 | House, Berkley Road, opposite Paist House |
+| BEK04 | House, Berkley Road |
+| BEK05 | House, Berkley Road |
+| BEK06 | Paist House, Berkley Road, Devon |
+| BEK07 | House, Berkley Road, next to Paist House |
+| BEM01 | Springhouse, Beaumont Road, Easttown |
 | BEP1 | Dedication of Berwyn Roll of Honor |
 | BEP10 | Westbound Express |
 | BEP11 | Sunoco Gas Station |
@@ -616,16 +3229,191 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | BEP84 | The Blue Jay |
 | BEP85 | Howard Moore's Electrical Store, Berwyn |
 | BEP9 | David Preston, Shoemaker |
+| BES01 | Beaumont Elementary School |
+| BES02 | Beaumont Elementary School |
+| BES03 | Beaumont Elementary School |
+| BES04 | Beaumont Elementary School |
+| BET17 | Berwyn Theater |
+| BET18 | Berwyn Theater |
+| BET19 | Berwyn Theater, Cassatt Avenue |
+| BET20 | Berwyn Theater |
+| BFC05 | Berwyn Fire Company |
+| BFC06 | Fireman’s Parade on Francis Avenue |
+| BFC07 | Berwyn Fire House |
+| BFC08 | Location of new Berwyn Fire House |
+| BFC09 | Berwyn Fire House |
 | BFC1 | Berwyn Fire Company |
+| BFC11 | Berwyn Fire Company |
+| BFC12 | Berwyn Fire Company |
+| BFC13 | Berwyn Fire Company |
+| BFC14 | Berwyn Fire Company |
+| BFC15 | Berwyn Fire Company |
+| BFC16 | Berwyn Fire Company |
+| BFC17 | Berwyn Fire Company Banner |
+| BFC18 | Berwyn Fire Company Banner |
+| BFC19 | Berwyn Fire Company Station and Equipment |
 | BFC2 | Berwyn Fire Company |
+| BFC20 | Berwyn Fire Company Ambulance |
+| BFC21 | Ladies Auxiliary, Berwyn Fire Company |
+| BFC22 | Berwyn Fire Company Equipment, 1908 |
+| BFC23 | Berwyn Fire Company 1955 Ladder Truck |
+| BFC24 | Berwyn Fire Company Active Force |
+| BFC25 | Berwyn Fire Company Ambulance Crews |
+| BFC26 | Berwyn Fire Company Band, 1908 |
+| BFC27 | Berwyn Fire Company Board of Directors |
+| BFC28 | Berwyn Fire Company Breaking Ground, 1929 |
+| BFC29 | Berwyn Fire Company Chiefs |
+| BFC2b | Back of BFC2 |
+| BFC3 | Berwyn Fire House |
+| BFC30 | Upper Main Line Fire Board Dispatchers |
+| BFC31 | Berwyn Fire Company Elected Officers |
+| BFC32 | Berwyn Fire Company Engineers |
+| BFC33 | Berwyn Fire Company Fire Police |
+| BFC34 | Fire Station, Berwyn Fire Company |
+| BFC35 | LaFrance Pumper, 1917 |
+| BFC36 | Waterous Pumper, 1906 |
+| BFC37 | Berwyn Fire Company Centennial |
+| BFC38 | Berwyn Fire Company Centennial |
+| BFC4 | Berwyn Fire Company |
 | BG01 | Betner Paper Bag Factory |
 | BG17 | Lamb Tavern |
+| BIP03 | Berwyn Ice Plant location after demolition |
+| BIP04 | Berwyn Ice Plant |
+| BIP05 | Berwyn Ice Plant |
+| BIP06 | Berwyn Ice Plant |
+| BIP07 | Former Stables of Berwyn Ice Palnt |
 | BIP1 | Berwyn Ice Plant after fire |
 | BIP2 | Berwyn Ice Plant after fire |
+| BJO01 | Bjornhem, Waterloo Road |
+| BM01 | Berwyn United Methodist Episcopal Church, Church Ave., December 30, 1888 |
+| BM02 | Interior of  Berwyn United Methodist Episcopal Church, December 30, 1888 |
+| BM03 | Berwyn Methodist Episcopal Church, 1904 |
+| BM04 | Berwyn Methodist Church |
+| BM06 | Berwyn Methodist Church |
+| BM08 | Berwyn Methodist Church |
+| BM09 | New Berwyn Methodist Church under construction |
+| BM10 | New Berwyn Methodist Church under construction |
+| BM11 | New Berwyn Methodist Church under construction |
+| BM12 | New Berwyn Methodist Church under construction |
+| BM13 | New Berwyn Methodist Church under construction |
+| BM14 | New Berwyn Methodist Church under construction |
+| BM15 | New Berwyn Methodist Church under construction |
+| BM16 | New Berwyn Methodist Church under construction |
+| BM17 | Dedication of new Berwyn Methodist Church |
+| BM18 | New Berwyn Methodist Church under construction |
+| BM19 | Berwyn Methodist Church under construction |
+| BM20 | Dedication of Berwyn Methodist Church |
+| BM21 | Dedication of Berwyn Methodist Church |
+| BM22 | Dedication of Berwyn Methodist Church |
+| BM23 | Berwyn Methodist Parsonage |
+| BM24 | Berwyn Methodist Church |
+| BM25 | Berwyn Methodist Church |
+| BM26 | Footerlighters Theater |
+| BM27 | Footlighters Theater |
 | BNB1 | Berwyn National Bank |
+| BNB2 | Berwyn National Bank |
+| BNC01 | Bishops New Cottage |
+| BNC02 | Bishops New Cottage |
+| BNC03 | Bishops New Cottage |
+| BOC01 | Bocce Club, Lehigh Avenue, Devon |
+| BOC02 | Bocce Club, Lehigh Avenue, Devon |
+| BPB01 | Betner Paper Bag Company |
+| BPB02 | Betner Paper Bag Company |
+| BPB03 | Betner Paper Bag Company |
+| BPB04 | Graphic Packaging Corporation |
+| BPB05 | Graphic Packaging Corporation |
+| BPB06 | Graphic Packaging Corporation |
+| BPH01 | Berwyn Pharmacy on Lincoln Highway, 1931-2 |
+| BPH02 | Former Berwyn Pharmacy Building |
+| BPH03 | Connor’s Pharmacy, Berwyn |
+| BPH04 | Bill Connor of Connor’s Pharmacy |
+| BPH05 | Connor’s Pharmacy, Berwyn |
+| BPH06 | Connor’s Pharmacy, Berwyn |
+| BPM03 | Berwyn Planing Mill |
+| BPM05 | William Burns Planing Mill |
+| BPO04 | Berwyn Post Office building being remodelled |
+| BPO05 | Berwyn Post Office Staff |
+| BPO06 | Berwyn Post Office |
+| BPO07 | Berwyn Post Office |
+| BPO1 | Berwyn Post Office & Store |
+| BPO2 | Berwyn Post Office |
+| BPO3 | Berwyn Post Office |
 | BPS01 | Berwyn Primary School |
 | BPS02 | Berwyn Primary School |
 | BPS03 | Berwyn Primary School |
+| BPS04 | Berwyn School Class |
+| BPS05 | Berwyn School Class |
+| BPS06 | Berwyn Primary School |
+| BPS07 | Former Berwyn Primary School |
+| BPS08 | Former Berwyn Primary School |
+| BPS09 | Former Berwyn Primary School |
+| BPS10 | Easttown Primary School |
+| BPS12 | Berwyn Primary School |
+| BPS13 | Berwyn Primary School |
+| BPS14 | Berwyn Primary School |
+| BPS15 | Berwyn Primary School |
+| BRS01 | Brace’s Store, Lincoln and Waterloo |
+| BTC01 | Berwyn Thimble Club |
+| BTC02 | Berwyn Thimble Club |
+| BTC03 | Berwyn Thimble Club |
+| BTC04 | Berwyn Thimble Club |
+| BUF07 | Burruss Family in Berwyn |
+| BUF11 | Beauty Culture Operator license for Mildred Burruss |
+| BUS10 | Garber's Store, Berwyn |
+| BUS100 | Auto Dealership |
+| BUS101 | Auto Dealership |
+| BUS102 | Auto Dealership |
+| BUS103 | Devon Design Center |
+| BUS104 | Devon Design Center |
+| BUS105 | Devon Design Center |
+| BUS106 | Devon Design Center |
+| BUS12 | Hall & Hibbard's Store |
+| BUS18 | Lichtenfeld’s store |
+| BUS28 | Leopard Post Office |
+| BUS30 | Connors Pharmacy, Berwyn |
+| BUS31 | Upper Mainline Bank, Berwyn |
+| BUS32 | Upper Mainline Bank, Berwyn |
+| BUS33 | Berwyn Furniture Store |
+| BUS34 | Berwyn Furniture Store |
+| BUS35 | Berwyn Hardware Store |
+| BUS36 | Harold’s Store, Berwyn |
+| BUS37 | Harold’s Store, Berwyn |
+| BUS38 | Harold’s Store and Post Office, Berwyn |
+| BUS39 | Christian Science Reading Room |
+| BUS40 | Connors’ Pharmacy, Berwyn |
+| BUS41 | Berwyn Hardware Store |
+| BUS42 | Berwyn Hardware Store |
+| BUS43 | Unknown Building |
+| BUS44 | Unknown Building |
+| BUS45 | Atlantic Gas Station, Berwyn |
+| BUS46 | Berwyn Furniture Store |
+| BUS47 | Sunoco Station, Lancaster Avenue, Berwyn |
+| BUS51 | Berwyn Lawn Mover Shop |
+| BUS53 | Former Betner Gas Station |
+| BUS54 | Taxi Stand, Cassatt and Bridge, Berwyn |
+| BUS59 | Houses behind Glass Company |
+| BUS60 | Rear of Pearl of the East |
+| BUS61 | Unknown Garage |
+| BUS62 | Clock Store |
+| BUS63 | Devon Nissan |
+| BUS65 | Linens and Lace Antiques, Berwyn |
+| BUS66 | Berwyn Taxi Stand |
+| BUS69 | Joy Reproduction |
+| BUS70 | Henry (Harry) Garber’s Store (GRB02 is a better copy) |
+| BUS9 | Gallagher's Shoe Store, Berwyn |
+| BUT01 | Springhouse, Buttonwood Road, Easttown |
+| BUT02 | 2175 Buttonwood Road, Easttown |
+| BUT03 | Springhouse, 2155 Buttonwood Road, Easttown |
+| CAA09 | Cassatt Avenue Bridge, Berwyn |
+| CAA10 | Cassatt Avenue Bridge, Berwyn |
+| CAA11 | Cassatt Avenue Bridge, Berwyn |
+| CAA12 | Cassatt Avenue Bridge, Berwyn |
+| CAM01 | Cassatt Mansion House |
+| CCF01 | Crum Creek Farm, Wayland Road |
+| CCF02 | Crum Creek Farm, Wayland Road |
+| CCF03 | Crum Creek Farm, Wayland Road |
+| CCF04 | Crum Creek Farm, Wayland Road |
+| CCF05 | Crum Creek Farm, Wayland Road |
 | CH10 | St. Monica’s Catholic Church, Berwyn |
 | CH11 | St. Monica’s Catholic Church, Berwyn |
 | CH12 | Trinity Presbyterian Church, Berwyn |
@@ -633,10 +3421,80 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | CH14 | Trinity Presbyterian Church, Berwyn |
 | CH15 | St. Monica’s Catholic Church, Berwyn |
 | CH17 | Berwyn United Methodist Church |
+| CH21 | St. John’s Presbyterian Church, Devon |
+| CH25 | St Matthew’s Methodist Church, Berwyn |
+| CH27 | St. John’s Church, Devon |
+| CH28 | St John’s Church, Devon |
+| CH31 | Knoll House now MainLine Unitarian Church, So. Valley Rd, Devon |
 | CLC1 | Coates Log Cabin |
+| CLE02 | Cleaver’s Store |
+| CST01 | Carstenstein, Dorset Road |
+| CUH09 | Wagon train - Bicentennial |
+| CVY01 | Clovelly, Clovelly Road |
+| CVY02 | Clovelly, Clovelly Road |
+| DAI01 | Aero Service Company Aerial Image of Devon Horse Show area |
+| DAI03 | Dallin Aerial Image of Devon Horse Show area |
+| DAI04 | Dallin Aerial Image of Devon Horse Show area |
+| DAI05 | Dallin Aerial Image of Devon Horse Show area |
+| DAI06 | Dallin Aerial Image of Devon Horse Show area |
+| DAI07 | Dallin Aerial Image of Devon Horse Show area |
+| DAI08 | Dallin Aerial Image of Devon Horse Show area |
+| DAI09 | Dallin Aerial Image of Devon Horse Show area |
+| DAI10 | Dallin Aerial Image of Devon Horse Show area |
+| DAI11 | Aerial Image of Devon Horse Show area |
+| DAI12 | Dallin Aerial Image of Devon Horse Show area |
+| DAI13 | Aerial Image of Devon Horse Show area |
+| DAI14 | Dallin Aerial Image of Devon Horse Show area |
+| DAI15 | Aerial Image of Devon Horse Show area |
+| DAI16 | Dallin Aerial Image of Devon Horse Show area |
+| DAI17 | Aerial Image of Devon Horse Show area |
+| DAI18 | Dallin Aerial Image of Devon Horse Show area |
+| DAI19 | Aerial Image of Devon Horse Show area |
+| DAI20 | Dallin Aerial Image of Devon Horse Show area |
+| DAI21 | Aerial Image of Devon Horse Show area |
+| DAI22 | Dallin Aerial Image of Devon Horse Show area |
+| DAI23 | Aerial Image of Devon Horse Show area |
+| DBC01 | Darby Creek, Devon |
+| DBC02 | Darby Creek, Devon |
+| DBC03 | Darby Creek, Devon |
+| DBC04 | Darby Creek, Devon |
+| DBC05 | Darby Creek, Devon |
+| DBC06 | Darby Creek, Devon |
+| DBC07 | Darby Creek, Devon |
+| DBC08 | Darby Creek, Devon |
+| DBC09 | Darby Creek, Devon |
+| DBG01 | Devon Building Supply |
+| DBG02 | Devon Building Supply |
+| DBS04 | D. Bernard Stout, Blacksmith of Cabbagetown |
 | DBS1 | D. Bernard Stout, wheelwright and blacksmith |
 | DBS2 | D. Bernard Stout, wheelwright and blacksmith |
 | DBS3 | D. Bernard Stout, wheelwright and blacksmith |
+| DCF001 | Devon Horse Show and Country Fair Cafeteria Committee |
+| DCF002 | Devon Horse Show and Country Fair - food sampling |
+| DCF003 | Devon Horse Show and Country Fair - Mrs Croll retires |
+| DCF004 | Devon Horse Show and Country Fair Poster |
+| DCF005 | Devon Horse Show and Country Fair Garden Booth |
+| DCF006 | Miss Thelma Austin and dog |
+| DCF007 | Country Clothes Shop |
+| DCF008 | Country Fair |
+| DCF009 | Country Fair |
+| DCF010 | Country Fair |
+| DCF011 | Country Fair |
+| DCF012 | Country Fair |
+| DCF013 | Country Fair |
+| DCF014 | Country Fair |
+| DCF015 | Country Fair |
+| DCF016 | Country Fair |
+| DCF017 | Country Fair |
+| DEI03 | Devon Inn, postmark 1910 |
+| DEI04 | Devon Inn, postmark 1910 |
+| DEI05 | Devon Inn looking south, postmark 1910 |
+| DEI06 | Devon Inn looking south, postmark 1910 |
+| DEI07 | Devon Inn |
+| DEI08 | Grand Entrance of the Devon Inn |
+| DEI09 | Porch Cafe, Devon Inn |
+| DEI10 | Front of the Devon Inn |
+| DEI11 | Devon Horse Show carriages |
 | DEI12 | Devon Horse Show single riders |
 | DEI13 | Devon Horse Show carriages |
 | DEI14 | Devon Horse Show grounds with Devon Inn in background |
@@ -644,40 +3502,1057 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | DEI16 | Devon Horse Show grounds with Devon Inn in background |
 | DEI17 | Little Boys on Horses at Devon Horse Show 1898 |
 | DEI18 | Little girl astride horse Devon Horse Show |
+| DEI19 | Design for Devon Inn Stables 1882 |
+| DEI20 | Devon Inn and Lawn, Devon, PA |
+| DEI21 | Devon Inn |
+| DEI22 | Devon Inn |
+| DEI23 | Devon Inn |
+| DEI24 | Devon Inn |
+| DEI25 | Devon Manor |
+| DEI26 | Devon Inn |
+| DEI27 | Original Devon Inn |
+| DEI28 | Devon Manor Hotel |
+| DEI29 | Devon Inn |
+| DEI30 | Ruins of Devon Inn after second fire |
+| DEI31 | Devon Inn |
+| DEI31b | Back of DEI31 |
+| DEI32 | Devon Inn |
+| DEI32b | Back of DEI32 |
+| DEI33 | Devon Inn |
+| DEI34 | Devon Manor |
+| DEI34b | Back of DEI34 |
+| DEI35 | Devon Inn |
+| DEI36 | Devon Inn |
+| DEI37 | Devon Inn and lawn |
+| DEI38 | Devon Inn |
+| DEI39 | Devon Inn |
+| DEI40 | Entrance to Devon Inn |
+| DEI41 | The Floral Cafe, Devon Inn |
+| DEI42 | Devon Park Hotel |
+| DEP01 | Devon Prep School Chemistry Class |
 | DES1 | Devon Elementary School |
 | DEV1 | Waterloo Road, Devon |
+| DEV11 | View from Devon Inn |
+| DEV13 | Devon Boulevard |
+| DEV14 | Devon Boulevard |
+| DEV15 | Lakeside Road, Devon |
+| DEV17 | Lakeside Avenue |
+| DEV18 | Lakeside Road |
 | DEV2 | Old Lancaster Road, Devon |
+| DEV20 | President Roosevelt leaving Devon Station in carriage |
+| DEV21 | PRR Bridge over Waterloo Avenue next to Devon Station |
+| DEV22 | Devon |
+| DEV22b | Back of DEV22 |
+| DEV23 | Holloway Estate, Devon |
+| DEV25 | Lancaster Avenue, Devon |
+| DEV29 | Greetings from Devon, PA |
 | DEV3 | Berkeley Avenue, Devon |
+| DEV30 | A view on Lancaster Pike towards the Wynburne Inn |
+| DEV31 | Devon Boulevard Snow Trotters |
+| DEV32 | Devon Boulevard Snow Trotters |
+| DEV4 | Crow's Nest, Conestoga Road, Devon |
+| DEV5 | Parting of the ways, Devon |
+| DEV6 | Devon Hill |
+| DEV7 | Looking east on Lancaster Pike toward Devon. Glassley School on right, June 1888 |
+| DEV8 | Boulevard and Devon Station looking north |
+| DEX01 | Devereux School, Berwyn |
+| DHS001 | Devon Horse Show |
+| DHS002 | Devon Horse Show |
+| DHS003 | Devon Horse Show |
+| DHS004 | Devon Horse Show |
+| DHS005 | Devon Horse Show |
+| DHS006 | Devon Horse Show |
+| DHS007 | Devon Horse Show |
+| DHS008 | Devon Horse Show |
+| DHS009 | Devon Horse Show |
+| DHS010 | Devon Horse Show |
+| DHS011 | Devon Horse Show |
+| DHS012 | Devon Horse Show |
+| DHS013 | Devon Horse Show |
+| DHS014 | Devon Horse Show |
+| DHS015 | Devon Horse Show |
+| DHS016 | Devon Horse Show |
+| DHS017 | Devon Horse Show |
+| DHS018 | Devon Horse Show |
+| DHS019 | Devon Horse Show |
+| DHS020 | Devon Horse Show |
+| DHS021 | Devon Horse Show |
+| DHS022 | Devon Horse Show |
+| DHS023 | Devon Horse Show |
+| DHS024 | Devon Horse Show |
+| DHS025 | Devon Horse Show |
+| DHS026 | Devon Horse Show |
+| DHS027 | Devon Horse Show |
+| DHS028 | Devon Horse Show |
+| DHS029 | Devon Horse Show |
+| DHS030 | Devon Horse Show |
+| DHS031 | Devon Horse Show |
+| DHS032 | Devon Horse Show |
+| DHS033 | Devon Horse Show |
+| DHS034 | Devon Horse Show |
+| DHS035 | Devon Horse Show |
+| DHS036 | Devon Horse Show |
+| DHS037 | Devon Horse Show |
+| DHS038 | Devon Horse Show |
+| DHS039 | Devon Horse Show |
+| DHS040 | Devon Horse Show |
+| DHS041 | Devon Horse Show |
+| DHS042 | Devon Horse Show |
+| DHS043 | Devon Horse Show |
+| DHS044 | Devon Horse Show |
+| DHS045 | Devon Horse Show |
+| DHS046 | Devon Horse Show |
+| DHS047 | Devon Horse Show |
+| DHS048 | Devon Horse Show |
+| DHS049 | Gypsy Rose Lee at the Devon Horse Show |
+| DHS050 | Devon Horse Show |
+| DHS051 | Devon Horse Show |
+| DHS052 | Devon Horse Show |
+| DHS053 | Devon Horse Show |
+| DHS054 | Devon Horse Show |
+| DHS055 | Devon Horse Show |
+| DHS056 | Devon Horse Show |
+| DHS057 | Devon Horse Show |
+| DHS058 | Devon Horse Show |
+| DHS059 | Devon Horse Show |
+| DHS060 | Devon Horse Show |
+| DHS061 | Devon Horse Show |
+| DHS062 | Devon Horse Show |
+| DHS063 | Devon Horse Show |
+| DHS064 | Devon Horse Show |
+| DHS065 | Devon Horse Show |
+| DHS066 | Devon Horse Show |
+| DHS067 | Devon Horse Show |
+| DHS068 | Devon Horse Show |
+| DHS069 | Devon Horse Show |
+| DHS070 | Devon Horse Show |
+| DHS071 | Devon Horse Show |
+| DHS072 | Devon Horse Show |
+| DHS073 | Devon Horse Show |
+| DHS074 | Devon Horse Show |
+| DHS075 | Devon Horse Show |
+| DHS076 | Devon Horse Show |
+| DHS077 | Devon Horse Show |
+| DHS078 | Devon Horse Show |
+| DHS079 | Devon Horse Show |
+| DHS080 | Devon Horse Show |
+| DHS081 | Devon Horse Show |
+| DHS082 | Devon Horse Show |
+| DHS083 | Devon Horse Show |
+| DHS084 | Devon Horse Show |
+| DHS085 | Devon Horse Show |
+| DHS086 | Devon Horse Show |
+| DHS087 | Devon Horse Show |
+| DHS088 | Devon Horse Show |
+| DHS089 | Devon Horse Show |
+| DHS090 | Devon Horse Show |
+| DHS091 | Devon Horse Show |
+| DHS092 | Devon Horse Show |
+| DHS093 | Devon Horse Show |
+| DHS094 | Devon Horse Show |
+| DHS095 | Devon Horse Show |
+| DHS096 | Devon Horse Show |
+| DHS097 | Devon Horse Show |
+| DHS098 | Devon Horse Show |
+| DHS099 | Devon Horse Show |
+| DHS100 | Smith Family on Boardwalk, Devon Horse Show |
+| DHS101 | Devon Horse Show |
+| DHS102 | Devon Horse Show |
+| DHS103 | Devon Horse Show |
+| DHS104 | Devon Horse Show |
+| DHS105 | Devon Horse Show |
+| DHS106 | Devon Horse Show |
+| DHS107 | Devon Horse Show |
+| DHS108 | Devon Horse Show |
+| DHS109 | Devon Horse Show |
+| DHS110 | Devon Horse Show |
+| DHS111 | Devon Horse Show |
+| DHS112 | Devon Horse Show |
+| DHS113 | Devon Horse Show |
+| DHS114 | Devon Horse Show |
+| DHS115 | Devon Horse Show |
+| DHS116 | Devon Horse Show |
+| DHS117 | Devon Horse Show |
+| DHS118 | Devon Horse Show |
+| DHS119 | Devon Horse Show |
+| DHS120 | Devon Horse Show |
+| DHS121 | Devon Horse Show |
+| DHS122 | Devon Horse Show |
+| DHS123 | Devon Horse Show |
+| DHS124 | Devon Horse Show |
+| DHS125 | Devon Horse Show |
+| DHS126 | Devon Horse Show |
+| DHS127 | Devon Horse Show |
+| DHS128 | Devon Horse Show |
+| DHS129 | Devon Horse Show |
+| DHS130 | Devon Horse Show |
+| DHS131 | Devon Horse Show |
+| DHS132 | Devon Horse Show - Polo Match? |
+| DHS135 | Directors of first Chester County Horse Show at Devon |
+| DHS136 | Mrs James K. Robinson presents Mapleton Trophy to David O’Dell |
+| DHS137 | President Calvin Coolidge at the Devon Horse Show |
+| DHS138 | Devon Horse Show |
+| DHS139 | Four ladies at the Devon Horse Show |
+| DHS140 | Devon Horse Show Volunteers |
+| DHS143 | ‘Smiley’ (Mrs James K. Robinson) |
+| DHS144 | Carol Hoffman jumping ‘Salem’ |
+| DHS145 | Crebilly Farm four-in-hand drawn by Hackney Crossbreds, driven by Mrs Robinson |
+| DHS146 | Grandstands at Devon Horse Show |
+| DHS147 | Unidentified Competitor |
+| DHS148 | Covered Wagon Ride |
+| DHS149 | Antique Stand, Devon Horse Show |
+| DHS150 | Devon Horse Show |
+| DIA02 | DiAntonio’s Service Station, Devon |
+| DIA03 | DiAntonio’s Service Station, Devon |
+| DIA04 | DiAntonio’s Service Station, Devon |
+| DIA05 | DiAntonio’s Service Station, Devon |
+| DIA06 | DiAntonio’s Service Station, Devon |
+| DIA07 | DiAntonio’s Service Station, Devon |
+| DIA08 | DiAntonio’s Service Station, Devon |
+| DIA09 | DiAntonio’s Service Station, Devon |
+| DIA10 | DiAntonio’s Service Station, Devon |
+| DIA11 | DiAntonio’s Service Station, Devon |
+| DIA12 | DiAntonio’s Service Station, Devon |
+| DIA13 | DiAntonio’s Service Station, Devon |
+| DIA14 | DiAntonio’s Service Station, Devon |
+| DIA15 | DiAntonio’s Service Station, Devon |
+| DIA16 | DiAntonio’s Service Station, Devon |
+| DIA17 | DiAntonio’s Service Station, Devon |
+| DIA18 | DiAntonio’s Service Station, Devon |
+| DIA19 | DiAntonio’s Service Station, Devon |
+| DIA20 | DiAntonio’s Service Station, Devon |
 | DLC01 | Devon Log Cabin |
 | DLC02 | Devon Log Cabin |
+| DPO01 | First Post Office, Devon |
+| DPO02 | First Post Office, Devon |
+| DPO03 | First Post Office, Devon |
+| DPS1 | Taxi Dispatch, Lancaster Avenue, Berwyn |
+| DRT01 | Drove Tavern |
+| DSS001 | Barn #1, Devon Horse Show |
+| DSS002 | Barn #1, Devon Horse Show |
+| DSS003 | Barn #1, Devon Horse Show |
+| DSS004 | Barn #1, Devon Horse Show |
+| DSS005 | Barn #1, Devon Horse Show |
+| DSS006 | Barn #1, Devon Horse Show |
+| DSS007 | Barn #1, Devon Horse Show |
+| DSS008 | Barn #1, Devon Horse Show |
+| DSS009 | Barn #1, Devon Horse Show |
+| DSS010 | Barn #1, Devon Horse Show |
+| DSS011 | Barn #1, Devon Horse Show |
+| DSS012 | Barn #1, Devon Horse Show |
+| DTA001 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA002 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA003 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA004 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA005 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA006 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA007 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA008 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA009 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA010 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA013 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA015 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA017 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA019 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA021 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA022 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA023 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA025 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA026 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA027 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA028 | Devon Horse Show and Country Fair (DHSCF) Mr. Clothier and Daughter |
+| DTA029 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA030 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA031 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA032 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA033 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA034 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA035 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA036 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA037 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA038 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA039 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA040 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA041 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA042 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA043 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA044 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA045 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA046 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA047 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA048 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA049 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA050 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA051 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA052 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA053 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA054 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA055 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA056 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA057 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA058 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA059 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA060 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA061 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA062 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA063 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA064 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA065 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA066 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA067 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA068 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA069 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA070 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA071 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA072 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA073 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA074 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA075 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA076 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA077 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA078 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA079 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA080 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA081 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA082 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA083 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA084 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA085 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA086 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA087 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA088 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA089 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA090 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA091 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA092 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA093 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA094 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA095 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA096 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA097 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA098 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA099 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA100 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA101 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA102 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA103 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA104 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA105 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA106 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA107 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA108 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA109 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA110 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA111 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA112 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA113 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA114 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA115 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA116 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA117 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA118 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA119 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA120 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA121 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA122 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA123 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA124 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA125 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA126 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA127 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA128 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA129 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA130 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA131 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA132 | Devon Horse Show and Country Fair (DHSCF) |
+| DTA133 | Devon Horse Show and Country Fair (DHSCF) |
+| ECH04 | Cathcart House |
+| EES05 | Easttown Elementary school |
+| EHE02 | Victor Charles Mayer and Catherine Earle Mayer |
+| ELI01 | Reading Room, Lancaster Pike & Waterloo Ave. Berwyn |
+| ELI02 | Easttown Library and Township Building |
+| ELI03 | Easttown Library and Township Building |
+| ELI04 | Easttown Library and Township Building |
+| ELI05 | Easttown Library and Township Building |
+| ELI06 | Easttown Library and Township Building |
+| ELI07 | Easttown Library |
+| ELI08 | Easttown Library |
+| ELI23 | Berwyn Hall and Library under demolition |
+| EPA01 | Episcopal Academy |
+| EPH09 | Edith Parker’s house |
+| ESS04 | Easttown School |
+| EST01 | Hilltop Park dedication |
+| EST02 | Hilltop Park dedication |
+| EST03 | Hilltop Park dedication |
+| EST04 | Hilltop Park dedication |
+| ETS01 | Easttown School |
+| ETS02 | Easttown School |
+| ETS03 | Easttown High School |
+| ETS04 | Easttown School |
+| ETS05 | Easttown High School, Berwyn |
+| ETS06 | Bridge Avenue showing Easttown High School, Berwyn - 1905 |
+| ETS07 | Easttown High School, Berwyn |
+| ETS08 | Students of the Easttown High School, Berwyn, PA |
+| ETS09 | May Pole Fete, Easttown School, Berwyn - 1904 |
+| ETS10 | Cafeteria, Easttown School |
+| ETS11 | Site of new Easttown School |
+| ETS12 | Easttown School (colorized) |
+| ETS13 | Grammar School, Berwyn |
+| ETS14 | Easttown School Certificate |
+| FAB01 | First Avenue, north side |
+| FAB02 | First Avenue, north side |
+| FAB03 | First Avenue, Berwyn |
+| FBB1 | First  Baptist Church, Berwyn |
+| FBB10 | Rev. Wiley |
+| FBB11 | First Baptist Church, Waterloo and Berwyn Avenues, 1904 |
+| FBB14 | Isolite Company |
+| FBB15 | First Baptist Church, Berwyn, PA |
+| FBB2 | First Baptist Church, Berwyn |
+| FBB3 | Rev. Anderson |
+| FBB4 | Rev. Booker |
+| FBB5 | Rev. Cowee |
+| FBB6 | Rev. Fryer |
+| FBB7 | Rev. Hargrave |
+| FBB8 | Rev. Read |
+| FCF01 | Fox Creek Farm, White Horse Road |
+| FLW01 | Fairlawn, Sugartown and Fairfield Roads |
+| FLW02 | Fairlawn, Sugartown and Fairfield Roads |
+| FLW03 | Fairlawn, Sugartown and Fairfield Roads |
+| FLW04 | Fairlawn, Sugartown and Fairfield Roads |
+| FLW05 | Fairlawn, Sugartown and Fairfield Roads |
+| FLW06 | Fairlawn, Sugartown and Fairfield Roads |
+| FLW07 | Fairlawn, Sugartown and Fairfield Roads |
+| FLW08 | Fairlawn, Sugartown and Fairfield Roads |
+| FPC32 | First Presbyterian Church, Paoli |
+| FRL05 | Fritz Coalyard |
+| FRL06 | View of Fritz Lumber from Lancaster Avenue looking east |
+| FRL07 | Fritz Lumber |
+| FRL08 | Fritz Lumber |
+| FRL09 | Fritz Lumber |
+| FRL1 | Fritz Lumber |
+| FRL10 | Former Krider-Keystone Motors Bldg |
+| FRL11 | Former Krider-Keystone Motors Bldg |
+| FRL12 | Former Krider-Keystone Motors Bldg |
+| FRL13 | Former Krider-Keystone Motors Bldg |
+| FRL14 | Aerial Photograph of Berwyn |
+| FRL15 | Aerial Photograph of Fritz Lumber site |
+| FRL16 | Aerial Photograph of Fritz Lumber site |
+| FRL17 | Fritz Lumber Buildings |
+| FRL18 | Fritz Lumber Advertisement |
+| FRL19 | Iron Gates at Fritz Lumber |
+| FRL2 | Fritz Lumber |
+| FRL20 | William Fritz and Family cleaning car |
+| FRL24 | Fritz Lumber |
+| FRL27 | Fritz Lumber staff |
+| FRL29 | William Fritz at Fritz Lumber |
+| FRL3 | Fritz Lumber |
+| FRL31 | William, Andy, & Howard Fritz |
+| FRL33 | 1930s Office Staff at Fritz Lumber |
+| FRL34 | Boxfield Job at Fritz Lumber |
+| FRL35 | Fritz Lumber |
+| FRL36 | Sawhouse at Fritz Lumber |
+| FRL37 | Fritz Lumber Office |
+| FRL38 | Fritz Lumber Office |
+| FRL39 | Fritz Lumber Office |
+| FRL4 | Fritz Lumber |
+| FRL40 | Bill Dickenson at Fritz Lumber |
+| FRL41 | William, Andy, & Howard Fritz |
+| FRL42 | Automatic Coal Truck loader from c. 1900 at Fritz Lumber |
+| FRL43 | Fritz Lumber Buildings |
+| FRL44 | Fritz Lumber Buildings |
+| FRL45 | Fritz Lumber Buildings |
+| FRL46 | Fritz Lumber Buildings and Equipment |
+| FRL47 | Coal Truck Loader at Fritz Lumber |
+| FRL48 | Fire-damaged Building at Fritz Lumber |
+| FRL49 | Fire-damaged Building at Fritz Lumber |
+| FRL50 | Fire-damaged Building at Fritz Lumber |
+| FRL51 | Fire-damaged Building at Fritz Lumber |
+| FRL52 | Fire-damaged Building at Fritz Lumber |
+| FRL53 | Fire-damaged Building at Fritz Lumber |
+| FRL54 | Coal Handling Equipment at Fritz Lumber |
+| FRL55 | Coal Truck Loader at Fritz Lumber |
+| FRL56 | Fritz Lumber |
+| FXI01 | Former Fox Inn, Conestoga Road |
+| FXI02 | Former Fox Inn, Conestoga Road |
+| FXI03 | Fox Inn, rear view |
+| GBF01 | Paist Residence, Green Bank Farm |
+| GBF27 | Green Bank Farm, Newtown Road |
+| GBF28 | Green Bank Farm, Newtown Road |
+| GCR01 | Grey Craig, Weatherby Lane |
+| GCR02 | Grey Craig, Weatherby Lane |
+| GCR03 | Grey Craig, Weatherby Lane |
+| GCR04 | Grey Craig, Weatherby Lane |
+| GCR05 | Grey Craig, Weatherby Lane |
+| GCR06 | Grey Craig, Weatherby Lane |
+| GCR07 | Grey Craig, Weatherby Lane |
+| GCR08 | Grey Craig, Weatherby Lane |
+| GCR09 | Grey Craig, Weatherby Lane |
+| GCR10 | Grey Craig, Weatherby Lane |
+| GCR11 | Grey Craig, Weatherby Lane |
+| GLS04 | Account Ledger, Glassley School |
 | GLS2 | Glassley School |
+| GLS3 | Closeup of the Glassley School, June 1888 |
+| GRB01 | Henry Garber’s Store |
+| GRB02 | Garber Store Interior |
+| GRB03 | Post office break-in (when it was being run by Henry Garber) |
+| GRB04 | Elizabeth Garber, aged about 10, in front of Garber Store, about 1910 |
+| GRB05 | Henry O. Garber |
+| GRB06 | Henry Garber hunting |
+| GRB16 | Henry O. & Mary Patton Garber |
+| HCF01 | Happy Creek Farm, Church Road |
+| HCF02 | Happy Creek Farm, Church Road |
+| HCF03 | Happy Creek Farm, Church Road |
+| HCF04 | Happy Creek Farm, Church Road |
+| HCF05 | Happy Creek Farm, Church Road |
+| HHO01 | Hillhouse, White Horse Road, built 1926 |
+| HHO02 | Hillhouse, White Horse Road, built 1926 |
+| HHO03 | Hillhouse, White Horse Road, built 1926 |
+| HHO04 | Hillhouse, White Horse Road, built 1926 |
+| HHO05 | Hillhouse, White Horse Road, built 1926 |
+| HHO06 | Hillhouse, White Horse Road, built 1926 |
+| HHO07 | Hillhouse, White Horse Road, built 1926 |
+| HHR01 | Fonzo’s Harbor House Restaurant demolition |
+| HHR03 | Fonzo”s Harbor House Restaurant demolition |
+| HHR04 | Fonzo’s Harbor House Restaurant demolition |
+| HHR05 | Fonzo’s Harbor House Restaurant demolition |
+| HHR06 | Fonzo’s Harbor House Restaurant demolition |
+| HHR07 | Fonzo’s Harbor House Restaurant demolition |
+| HHR09 | Fonzo’s Harbor House Restaurant demolition |
+| HHR10 | Fonzo’s Harbor House Restaurant demolition |
+| HHR11 | Fonzo’s Harbor House Restaurant demolition |
+| HHR12 | Fonzo’s Harbor House Restaurant demolition |
+| HIC51 | Hillcrest |
+| HMS001 | Hope Scott |
+| HMS002 | Young Hope Montgomery |
+| HMS003 | Hope Montgomery Scott at Devon Horse Show |
+| HMS004 | Hope Montgomery Scott at Devon Horse Show |
+| HMS005 | Hope Montgomery Scott at Devon Horse Show |
+| HMS006 | Hope Montgomery Scott 80th birthday |
+| HMS007 | Hope Montgomery Scott |
+| HOU100 | Yerkes House, Berwyn and Main Streets. |
+| HOU101 | Kromer House, 22 Waterloo Road |
+| HOU102 | Kromer House, 22 Waterloo Road |
+| HOU103 | Apdyke house, Waterloo Road |
+| HOU104 | Yerkes House |
+| HOU105 | Yerkes House |
+| HOU106 | Site of former Yerkes House |
+| HOU107 | Rear view of Yerkes house |
+| HOU108 | Travelgwyn |
+| HOU109 | Travelgwyn |
+| HOU110 | Travelgwyn |
+| HOU112 | Norman Acker house, from Warren Avenue, Berwyn |
+| HOU113 | Norman Acker house, from Old Lancaster Road |
+| HOU129 | New offices, Station and Kromer Avenues |
+| HOU130 | New offices, Station and Kromer Avenues |
+| HOU131 | New offices, Station and Kromer Avenues |
+| HOU132 | New offices, Station and Kromer Avenues |
+| HOU133 | New offices, Station and Kromer Avenues |
+| HOU134 | New offices, Station and Kromer Avenues |
+| HOU135 | New offices, Station and Kromer Avenues |
+| HOU136 | New offices, Station and Kromer Avenues |
+| HOU137 | New offices, Station and Kromer Avenues |
+| HOU138 | New offices, Station and Kromer Avenues |
+| HOU140 | Aiken house |
+| HOU145 | Hosue, Main Street, Berwyn |
+| HOU146 | Hosue, Main Street, Berwyn |
+| HOU147 | House, Main Street, Berwyn |
+| HOU148 | House on Main Street, Berwyn |
+| HOU149 | 345 Keller Road, Berwyn |
+| HOU150 | 606 Kromer Avenue, Berwyn |
+| HOU151 | Nuzum house, Main Street, Berwyn |
+| HOU152 | Former Gallagher Building |
+| HOU153 | Dr. Thomas J. Aiken’s home |
+| HOU159 | Hillstyde [sic] near Berwyn |
+| HOU160 | Hilltop |
+| HOU176 | Robinson - Welburn Lodge |
+| HOU178 | 54 Waterloo Avenue, Berwyn |
+| HOU190 | 54 Waterloo Avenue, Berwyn |
+| HOU191 | Harrison Estate, Waterloo Mills |
+| HOU198 | Overfields |
+| HOU199 | Hawthorne |
+| HOU201 | Martha Heiman House, Bridge Avenue |
+| HOU203 | Tobler House, Berwyn Avenue |
+| HOU204 | Tobler House, Berwyn Avenue |
+| HOU205 | Tobler House, Berwyn Avenue |
+| HOU206 | Tobler House, Berwyn Avenue |
+| HOU207 | Tobler House, Berwyn Avenue |
+| HOU215 | Unknown House |
+| HOU216 | Travelgwyn |
+| HOU217 | Travelgwyn |
+| HOU218 | Travelgwyn |
+| HOU219 | Unknown House |
+| HOU222 | Rear of 644 Lancaster Avenue, Berwyn |
+| HOU223 | Maggie Lobb house |
+| HOU224 | Maggie Lobb house |
+| HOU225 | Back side of the Doyle and McDonald Landscape Company on Lakeside Ave Devon. |
+| HOU227 | Barn at Travelgwyn |
+| HOU229 | Berwyn Gingerbread |
+| HOU231 | Travelgwyn |
+| HOU235 | Unknown House |
+| HOU236 | Regina Mundi Priory before demolition |
+| HOU237 | Regina Mundi Priory before demolition |
+| HOU240 | Maggie Lobb house |
+| HOU241 | George Tobler house |
+| HOU242 | Odd Fellows Hall |
+| HOU243 | George Hutton house |
+| HOU244 | Abraham Latch house |
+| HOU248 | Unknown House |
+| HOU249 | Office and Taxi stand on Lancaster Avenue, Berwyn (next to War Memorial) |
+| HOU250 | Maggie Lobb house |
+| HOU251 | Houses on Lancaster Avenue, Berwyn |
+| HOU252 | Brick houses on corner of Aiken and Berwyn Avenues, Berwyn |
+| HOU253 | Unknown Building |
+| HOU256 | E. B. McCarthy house, Devon |
+| HOU259 | J. Hampton Barnes house, Devon |
 | HOU26 | Waynesborough |
+| HOU260 | Malcolm Lloyd house, Devon |
+| HOU261 | R. R. Benedict house, Devon |
+| HOU262 | T. Mellon Rogers house, Devon |
+| HOU270 | 231 Berkley Road, Devon |
+| HOU271 | 319 Chester Road, Devon |
+| HOU272 | Unknown House, Berwyn |
+| HOU273 | 3 Colonial Dwellings, Devon |
+| HOU274 | Miss Dorothy E. Cadwalader, Chestnutwold Farm, Devon |
+| HOU278 | Harrison S. Hires house, Berwyn |
+| HOU280 | G. B. Wheeler house, Devon |
+| HOU281 | Mr. John S. Bioren house, Devon |
 | HOU32 | Alchyadd |
 | HOU34 | Atlee Potters Spring House |
 | HOU35 | Grubb House, Berwyn |
 | HOU36 | Empty Lot on Conestoga Road |
 | HOU37 | New House on Conestoga Road |
+| HOU44 | Odd Fellows' Hall, Berwyn |
+| HOU45 | P. W. Lobb Hall, Berwyn |
+| HOU46 | P. W. Lobb home |
+| HOU47 | Presbyterian Hall, Berwyn |
+| HOU55 | Springhouse, Sugartown Road |
+| HOU63 | Mr. C. Latch’s Home, Berwyn |
+| HOU64 | Aunt Emma Latch’s Home, Berwyn |
+| HOU65 | Odd Fellows’ Hall |
+| HOU78 | Taylor House |
+| HOU79 | Gamble House |
+| HOU80 | Beaumont Farm and Cider Press |
+| HOU81 | Leopard Post office |
+| HOU82 | Willowdale, Newtown Road |
+| HOU83 | House, Newtown Road |
+| HOU84 | House, Newtown Road |
+| HOU85 | House, Newtown Road |
+| HOU86 | Laywell Farm, Devon |
+| HOU87 | House, Waterloo Road |
+| HOU88 | House, Waterloo Road |
+| HOU98 | Lobb-Honston house, Berwyn |
+| HOU99 | Englebert House, Ambleside Court |
+| IT16 | An Afternoon at the Horse Show |
 | IT6 | Devon Inn |
+| JSH01 | Julius Sachse house. |
+| JSH02 | Julius Sachse house |
+| JSH03 | Julius Sachse house |
+| JSH04 | Julius Sachse house |
+| JWV01 | Ground-breaking ceremony for new Suburban Housing Development in Berwyn |
+| KCW01 | Berwyn Carriage Works |
+| KCW02 | Berwyn Carriage Works after fire, 1924 |
+| KCW03 | Berwyn Carriage Works, run by Krider family, at Owen McClure’s |
+| KEL01 | Kelso, Sugartown Road |
+| KEL02 | Building at Kelso, Berwyn-Paoli Road |
+| KEL03 | Carriage House, Kelso, Berwyn-Paoli Road |
+| KLS01 | Kromer Livery Stables, Lancaster Pike, Berwyn, 1888 |
+| KRI03 | Cart |
+| KRI08 | Krider / Jones family photograph |
+| LAB1 | Lancaster Avenue, Berwyn |
+| LAB10 | Lancaster Pike toll gate, Berwyn, 1887 |
+| LAB100 | Clean Up, Lancaster Avenue, Berwyn |
+| LAB101 | Clean Up, Lancaster Avenue, Berwyn |
+| LAB102 | Clean Up, Lancaster Avenue, Berwyn |
+| LAB103 | Clean Up, Lancaster Avenue, Berwyn |
+| LAB104 | Clean Up, Lancaster Avenue, Berwyn |
+| LAB11 | Lancaster Pike at the Lower Bridge, Berwyn, |
+| LAB12 | Lancaster Pike - Bridge Avenue and Paoli Road, Berwyn |
+| LAB2 | Lancaster Pike looking west - Berwyn |
+| LAB21 | Lancaster Avenue, Berwyn |
+| LAB22 | Lancaster Avenue, Berwyn |
+| LAB23 | Lancaster Avenue, Berwyn |
+| LAB24 | Lancaster Avenue, Berwyn |
+| LAB25 | Shops, Lancaster Avenue, Berwyn |
+| LAB26 | US Post Office and Marrellas, Lancaster Avenue, Berwyn |
+| LAB27 | US Post office being remodelled, Lancaster Avenue, Berwyn |
+| LAB28 | Upper Main Line Bank, Lancaster Avenue, Berwyn |
+| LAB29 | Businesses, Lancaster Avenue, Berwyn |
+| LAB3 | Post Office & Bank, Berwyn, 1908-09 |
+| LAB30 | Businesses, Lancaster Avenue, Berwyn |
+| LAB31 | Businesses, Lancaster Avenue, Berwyn |
+| LAB32 | Lincoln Highway looking west |
+| LAB33 | Lancaster Avenue, Berwyn |
+| LAB34 | Lancaster Avenue stores |
+| LAB35 | Lancaster Avenue, Berwyn |
+| LAB36 | Lancaster Avenue, Berwyn |
+| LAB37 | Lancaster Avenue, Berwyn |
+| LAB38 | Lancaster Avenue, Berwyn |
+| LAB39 | Lancaster Avenue, Berwyn |
+| LAB4 | Scene from Upper Bridge, Berwyn, looking NE, 1914 |
+| LAB40 | Lancaster Avenue, Berwyn |
+| LAB41 | Lancaster Avenue, Berwyn |
+| LAB42 | Lancaster Avenue, Berwyn |
+| LAB43 | Lancaster Avenue, Berwyn |
+| LAB44 | Lancaster Avenue, Berwyn |
+| LAB45 | Lancaster Avenue, Berwyn |
+| LAB46 | Lancaster Avenue, Berwyn |
+| LAB47 | Lancaster Avenue, Berwyn |
+| LAB48 | Lancaster Avenue, Berwyn |
+| LAB49 | Lancaster Avenue, Berwyn |
+| LAB5 | Lancaster Pike looking east from Post Office |
+| LAB50 | Lancaster Avenue, Berwyn |
+| LAB51 | Lancaster Avenue, Berwyn |
+| LAB52 | Lancaster Avenue, Berwyn |
+| LAB53 | Lancaster Avenue, Berwyn |
+| LAB54 | Lancaster Avenue, Berwyn |
+| LAB55 | Lancaster Avenue, Berwyn |
+| LAB56 | Lancaster Avenue, Berwyn |
+| LAB57 | Snowy, winter view, looking east on Lancaster Avenue, Berwyn |
+| LAB58 | Lancaster Avenue, Berwyn |
+| LAB59 | Lancaster Avenue, Berwyn |
+| LAB6 | Lancaster Avenue Business District, Berwyn c. early 1960s |
+| LAB60 | Lancaster Avenue, Berwyn |
+| LAB61 | Lancaster Avenue, Berwyn |
+| LAB62 | Lancaster Avenue, Berwyn |
+| LAB63 | Lancaster Avenue, Berwyn |
+| LAB64 | Bronze Building, Lancaster Avenue, Berwyn |
+| LAB65 | Lancaster Avenue, Berwyn |
+| LAB67 | Corner of Lancaster and Bridge, Berwyn |
+| LAB68 | Corner of Lancaster and Bridge, Berwyn |
+| LAB69 | Corner of Lancaster and Bridge, Berwyn |
+| LAB7 | Lancaster Pike and Main Avenue, Berwyn, looking east |
+| LAB70 | Lancaster Avenue, Berwyn |
+| LAB71 | Berwyn Shopping Center, Lancaster Avenue |
+| LAB72 | Lancaster Avenue, Berwyn |
+| LAB73 | Lancaster Avenue, Berwyn |
+| LAB74 | Lancaster Avenue, Berwyn |
+| LAB75 | Lancaster Avenue and Conestoga Road, Strafford |
+| LAB76 | Lancaster Avenue, Strafford |
+| LAB77 | Lancaster Avenue, Strafford |
+| LAB79 | Rostok Corporation, Lancaster Avenue, Berwyn |
+| LAB8 | A View on Lancaster Pike above Berwyn Station |
+| LAB80 | Lancaster Avenue, Berwyn |
+| LAB81 | Lancaster Avenue, Berwyn |
+| LAB82 | Lancaster Avenue, Berwyn |
+| LAB83 | Unknown Building, Lancaster Avenue, Berwyn |
+| LAB84 | Lancaster Avenue, south from Upper Berwyn Bridge |
+| LAB85 | Lancaster Avenue, Berwyn |
+| LAB86 | Lancaster Avenue, Berwyn |
+| LAB87 | Closing of Cassatt Road bridge |
+| LAB88 | St Jude’s Thrift Shop |
+| LAB89 | Berwyn - Lancaster and Cassatt Avenues, snow scene looking east |
+| LAB9 | Lancaster Avenue, Berwyn |
+| LAB90 | Berwyn - Lancaster and Cassatt Avenues, snow scene looking west |
+| LAB91 | Clean Up, Lancaster Avenue, Berwyn |
+| LAB92 | Clean Up, Lancaster Avenue, Berwyn |
+| LAB93 | Clean Up, Lancaster Avenue, Berwyn |
+| LAB94 | Clean Up, Lancaster Avenue, Berwyn |
+| LAB95 | Clean Up, Lancaster Avenue, Berwyn |
+| LAB96 | Clean Up, Lancaster Avenue, Berwyn |
+| LAB97 | Clean Up, Lancaster Avenue, Berwyn |
+| LAB98 | Clean Up, Lancaster Avenue, Berwyn |
+| LAB99 | Clean Up, Lancaster Avenue, Berwyn |
+| LAD01 | Langdale |
+| LAD02 | Langdale |
+| LAD03 | Langdale |
+| LAD04 | Langdale |
+| LAD05 | Langdale |
+| LAS10 | Latshaw School in winter |
+| LAS11 | Museum at Latshaw School |
+| LAS12 | Museum at Latshaw School |
+| LAS13 | Music Room, Latshaw School |
+| LAS14 | Reception Hall at Latshaw School |
+| LAS15 | Reception Room at Latshaw School |
+| LAS16 | Shelves in Schoolroom, Latshaw School |
+| LAS17 | The Maples from the playgrounds, Latshaw School |
+| LAS18 | View towards Southwest, Latshaw School |
+| LAS19 | Workshop, Latshaw School |
+| LAS20 | Garden, Latshaw School |
+| LAS21 | Hillside, Latshaw School |
+| LAS22 | off on a ride, Latshaw School |
+| LAS23 | Playground, Latshaw School |
+| LAS24 | Shell collection, Latshaw School |
+| LAS25 | Tennis Court, Latshaw School |
+| LAS26 | The Maples |
+| LAS27 | The Maples |
+| LAS28 | The Maples |
+| LAS29 | The Maples |
+| LAS3 | Bedroom at the Latshaw School |
+| LAS30 | The Maples |
+| LAS31 | The Maples |
+| LAS32 | The Maples |
+| LAS33 | The Maples |
+| LAS34 | Leopard Road from The Maples |
+| LAS35 | Leopard Road from The Maples |
+| LAS36 | The Maples |
+| LAS37 | The Maples |
+| LAS4 | Bedroom at the Latshaw School |
+| LAS5 | Entrance to the Latshaw School |
+| LAS6 | Library at Latshaw School |
+| LAS7 | Lunch Room at Latshaw School |
+| LAS8 | Main Dining Room at Latshaw School |
+| LAS9 | Main Porch at Latshaw School |
+| LAT06 | Lamb Tavern |
 | LAT1 | The Lamb Tavern (Roughwood) |
 | LAT2 | The Lamb Tavern (Roughwood) |
 | LAT5 | Lamb Tavern (Roughwood) |
+| LEA01 | Rowland Lea residence, Waterloo Road |
+| LEA02 | Rowland Lea residence, Waterloo Road |
+| LEI01 | Leopard Inn |
+| LEO01 | Springhouse, Leopard Road |
+| LEO02 | 410 Leopard Road |
+| LES01 | Leopard School |
+| LES02 | Leopard School |
+| LES03 | Leopard School plaque |
+| LGW01 | Langwell, Church Road |
+| LGW02 | Langwell, Church Road |
+| LGW03 | Langwell, Church Road |
+| LGW04 | Langwell, Church Road |
+| LGW05 | Langwell, Church Road |
+| LGW06 | Langwell, Church Road |
+| LGW07 | Langwell, Church Road |
+| LOH02 | Prentice Lobb’s home “Montebello” |
+| LOH03 | Montebello (Lobb house) |
+| LTP01 | Lancaster Turnpike Milestone 16 |
+| LTP02 | Milestone 15, Lancaster Turnpike |
+| MAB01 | Looking south on Main Avenue, Berwyn |
+| MAB02 | Main Avenue, Berwyn |
+| MAB03 | Main Avenue, Berwyn |
+| MAB04 | Main Avenue, Berwyn |
+| MAB05 | Main Avenue, Berwyn |
+| MAB06 | Main Avenue, Berwyn |
+| MAP01 | Mannering |
+| MAP02 | Mannering |
+| MAP03 | Stables at Mannering |
+| MAP04 | New Barn at Mannering |
+| MEI01 | Meineke Muflers |
+| MLA1 | Main Line Apartments |
+| MLA2 | Main Line Apartments |
+| NGB05 | Non-gran Bronze Company |
+| NGB06 | Non-gran Bronze Company |
+| NGB07 | Non-gran Bronze Company |
+| NGB08 | Bronze Building |
+| NGB09 | Aerial Photo of Non-Gran Bronze Company Building |
+| NGB10 | Non-gran Bronze Company Building |
 | NGB2 | The Bronze Building |
+| NGB3 | Bronze Works, Berwyn |
+| NGB4 | Bronze Works, Berwyn |
+| NWH01 | Newhall |
+| NWH02 | Newhall |
+| NWH03 | Newhall. |
+| NWH04 | Newhall. |
+| NWH05 | Newhall Home southwest view. |
+| NWH06 | Newhall home, front west. |
+| NWH08 | Newhall Library. |
+| NWH09 | Newhall Dining Room. |
+| NWH10 | Newhall Stable. |
+| NWH11 | Newhall Garden. |
+| NWH12 | Newhall. |
+| NWH13 | Newhall. |
+| NWH14 | Newhall. |
+| NWH15 | Newhall. |
+| NWH16 | Newhall. |
+| NWH17 | Newhall. |
+| NWH18 | Newhall. |
+| NWH19 | Newhall. |
+| NWH20 | Newhall. |
+| NWH21 | Newhall. |
+| NWH22 | Newhall. |
+| NWH23 | Newhall. |
+| NWH24 | Newhall. |
+| NWH25 | Newhall. |
+| NWH26 | Newhall. |
+| NWH27 | Newhall |
+| NWH28 | Newhall |
+| NWH29 | Newhall |
+| NWH30 | Newhall. |
+| NWH31 | Newhall. |
+| NWH32 | Newhall. |
+| NWH33 | Newhall. |
+| NWH34 | Newhall. |
+| NWH35 | Newhall. |
+| NWH36 | Newhall. |
+| NWH37 | Newhall. |
+| NWH38 | Newhall. |
+| NWH39 | Newhall. |
+| NWH40 | Newhall. |
+| NWH41 | Newhall. |
+| NWH42 | Newhall. |
+| NWH43 | Newhall. |
+| NWH44 | Newhall. |
+| NWH45 | Newhall. |
+| NWH46 | Newhall. |
+| NWH47 | Newhall. |
+| NWH48 | Newhall. |
+| NWH49 | Newhall. |
+| NWH50 | Newhall. |
+| NWH51 | Newhall. |
+| NWH52 | Newhall. |
+| NWH53 | Newhall. |
+| NWH54 | Newhall. |
+| NWH55 | Newhall. |
+| NWH56 | Newhall. |
+| NWH57 | Newhall. |
+| NWH58 | Newhall. |
+| NWH59 | Newhall. |
+| NWT01 | Building, 810 Newtown Road |
+| NWT02 | Springhouse, across from 810 Newtown Road |
+| OAL01 | Oatlands, Waterloo Road |
+| OAL02 | Oatlands, Waterloo Road |
+| OAL03 | Oatlands, Waterloo Road |
+| OAL04 | Oatlands, Waterloo Road |
+| OAL05 | Oatlands, Waterloo Road |
+| OGD01 | Ogden School |
+| OGD02 | Ogden School plaque |
+| OGD03 | Ogden School |
+| OGD04 | Ogden School |
+| OGD05 | Ogden School |
+| OGD06 | Ogden School |
+| OGD07 | Ogden School |
+| OGD08 | Letter re Ogden Schoolhouse |
+| OGD09 | Conversion of Ogden Schoolhouse to private home |
+| OGD10 | Ogden School as a private residence |
+| OGD11 | Ogden School as a private residence |
+| OGD12 | Ogden School being converted to a private residence |
+| OGD13 | Letter concerning the history of the Ogden Schhol as a private residence |
+| OGD14 | Ogden School with teacher and pupils |
+| OGD15 | Detail of photograph of Ogden School teacher and pupils |
+| OGD16 | Old Bathtub in Ogden Schoolhouse |
+| OGD17 | Ogden Schoolhouse as a private residence |
+| OGD18 | Ogden Schoolhouse as a private residence |
+| OGD19 | Ogden Schoolhouse as a private residence |
 | PA16 | William's Store |
+| PAE01 | Farmhouse, Patterson Estate, Devon |
+| PAE02 | Patterson Estate, Devon |
+| PAE03 | Patterson Estate, Devon |
 | PEO10 | Dr. James Aiken and his daughter Daisy |
+| PEO131 | Pupils, Easttown Public School, Berwyn |
 | PEO21 | David Kaufman & William M. Coates House |
 | PEO23 | Hattie Dewees |
+| PEO47 | Sister Lillian Jackson’s Birthday Party at Berwyn, PA |
+| PEO63 | H Hawkings and J H Kain |
+| PEO78 | Herb Fry and Skip Eichner |
+| PEO82 | Easttown School pupils |
+| PEO83 | Easttown Public School pupils |
+| PEO92 | Graduating Class of Easttown Public High School, June 7, 1900 |
+| PEO93 | Easttown School first grade, 1915 |
+| PEO94 | Easttown School, pupils and staff, 1890 |
+| PFD001 | Devon Horse Show, 1899 with the Devon Inn in the background |
+| PFD002 | Devon Horse Show, 1899 |
+| PFD003 | Devon Horse Show, 1899 |
+| PFD004 | Devon Horse Show, 1899, with the Devon Inn in the background |
+| PFD005 | Devon Horse Show, 1899 |
+| PFD006 | Devon Horse Show, 1899, with the Devon Inn in the background |
+| PFD007 | Devon Horse Show, 1899 |
+| PLH01 | Peter Latch Barn |
+| PLH02 | Peter Latch House |
+| PLH03 | Peter Latch House |
+| PLH04 | Peter Latch House |
+| POF01 | Potter Farm |
+| POF02 | Potter Farm and Leopard Road |
+| POF03 | Potter Farm, 22 Leopard Road |
+| POF04 | Potter House, Leopard Road |
+| PWI01 | Percy Wilson residence, Waterloo Road |
+| PWI02 | Percy Wilson residence, Waterloo Road |
+| PYL04 | Elizabeth Pyle holding daughter Katherine (born 1936) |
+| PYL05 | Henry, Bob and Catherine Pyle |
+| PYL06 | Elizabeth Garber Pyle at 34 Bridge Avenue |
+| PYL07 | Elizabeth Pyle at 42 Bridge Avenue |
+| PYL08 | Elizabeth Pyle at 42 Bridge Avenue |
+| PYL13 | Abram & Henry Pyle |
+| PYL19 | Henry Grove Zeke and June Rudderow Pyle |
+| PYL20 | Henry Grove “Zeke” Pyle |
+| PYL23 | Henry, Robert, and Sarah Elizabeth Garber Pyle |
+| PYL24 | Henry Grove “Zeke” and June Rudderow Pyle |
+| PYL25 | Pyle garage, 43 Bridge Avenue |
+| Q04 | Serpentine Quarry, Devon |
+| QTC01 | Quaker Trailer Company -Display Room |
+| QTC02 | Quaker Trailer Company -Display Room with Driveway |
+| QTC03 | Quaker Trailer Company - Office |
+| QTC04 | Quaker Trailer, Quaker Trailer Company |
+| QTC05 | Quaker Trailer Company Display Room |
+| QTC06 | Quaker Trailer Company |
+| QTC07 | Quaker Trailer, Quaker Trailer Company |
+| QTC08 | Quaker Trailer with Possible Robert M. Rakestraw |
 | RBE1 | Berwyn Station |
+| RBE10 | View of tracks from Berwyn Station Bridge looking west |
+| RBE11 | Lancaster Pike & Switch Tower, Berwyn, |
+| RBE12 | Pennsylvania Railroad station in Berwyn, Summer 1888 |
+| RBE13 | Berwyn Station Pennsylvania Railroad, 1904 |
+| RBE14 | Portrait of Joe Bloomer and Willie Bradley at Berwyn Station - 1904 |
+| RBE15 | Berwyn |
+| RBE16 | Berwyn Station Pennsylvania Railroad |
+| RBE18 | Railroad, Berwyn from Cassatt Avenue bridge |
+| RBE19 | Railroad, Berwyn |
+| RBE20 | Railroad Overpass, Berwyn |
+| RBE21 | Berwyn Railroad Station |
+| RBE22 | Berwyn Station |
+| RBE23 | Berwyn Station |
+| RBE24 | Trim on Berwyn Station |
+| RBE25 | Berwyn Station |
+| RBE26 | Berwyn Station |
+| RBE27 | Berwyn Station |
+| RBE28 | Berwyn Station |
+| RBE29 | Berwyn Station |
+| RBE30 | Berwyn Station |
+| RBE31 | Berwyn Station |
+| RBE32 | Berwyn Station |
+| RBE33 | Coal Elevator, Berwyn |
+| RBE34 | Berwyn Station |
+| RBE35 | Railroad views at Berwyn |
+| RBE36 | Railroad views at Berwyn |
+| RBE38 | Railroad views at Berwyn |
 | RBE4 | View from railroad bridge, Berwyn |
+| RBE42 | Railroad views at Berwyn |
+| RBE43 | Railroad views at Berwyn |
+| RBE44 | Railroad views at Berwyn |
+| RBE45 | Railroad views at Berwyn |
+| RBE47 | Lancaster Turnpike and Switch Tower, Berwyn, PA |
+| RBE48 | Penna. Depot, Berwyn, PA |
+| RBE49 | A view looking east from Berwyn Station Bridge |
+| RBE50 | View of the 8-30 train leaving Berwyn |
+| RBE51 | MP-54s approaches WB into Berwyn |
 | RBE6 | Berwyn station |
+| RBE8 | Berwyn Station |
+| RBE9 | Staff at Berwyn Station |
 | RCA1 | Cassatt Avenue |
+| RCR05 | Red Cross Building, Berwyn |
+| RCR06 | Renovations of the Red Cross Building, Berwyn |
+| RCR07 | Renovations of the Red Cross Building, Berwyn |
 | RCR3 | Paoli Red Cross, Berwyn |
+| RDE02 | Devon Station Baggage Room |
+| RDE03 | Devon Station |
+| RDE04 | Devon Station |
+| RDE05 | Devon Station |
+| RDE06 | Devon Train Station |
+| RDE07 | Devon Station |
 | RDE1 | Devon Station |
+| RDE10 | Devon Station |
+| RDE11 | Devon Station |
+| RDE12 | Devon Station |
+| RDE14 | Devon Station |
+| RDE15 | Devon Station |
+| RDE16 | Devon Station, PA |
+| RDE17 | Railroad Crash near Devon Station |
+| RHY01 | Rhydlyn, Berwyn - 1908 |
+| RHY02 | Francis House, Rhydlyn, Berwyn |
+| RHY03 | Francis House, Rhydlyn, Berwyn |
+| RHY04 | Francis House, Rhydlyn, Berwyn |
+| RHY05 | Francis House, Rhydlyn, Berwyn |
+| RHY06 | Francis House, Rhydlyn, Berwyn |
+| RHY07 | Francis House, Rhydlyn, Berwyn |
+| RHY08 | Francis House, Rhydlyn, Berwyn |
+| RHY09 | Rhydlyn |
+| RHY10 | Rhydlyn |
 | RML10 | Devon Station |
 | RML4 | PRR Train |
 | SCH1 | Easttown School |
 | SCH20 | Berwyn Primary School |
 | SCH21 | Educational Services Center |
+| SCH22 | Class at Easttown Grammar School |
+| SCH23 | Class at Easttown Grammar School |
 | SCH3 | Easttown School Annex, 1914 - 1932 |
+| SHA01 | Hawthorne front view |
 | SHA11 | Hawthorne Barn |
 | SHA12 | Hawthorne entry drive |
 | SHA13 | Hawthorne front living room |
@@ -689,23 +4564,267 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | SHA19 | Joseph W. Sharp, Sr. |
 | SHA20 | Stone Bridge at Hawthorne |
 | SHA21 | Twin Oaks at Hawthorne |
+| SHA22 | Hen house, Hawthorne, Leopard Road |
+| SHA24 | Hawthorne, Leopard Road |
+| SHA25 | Twin Oaks at Hawthorne |
+| SHA26 | Twin Oaks at Hawthorne |
+| SHT01 | Springhouse Tavern |
+| SHT02 | Springhouse Tavern site |
+| SHT03 | Springhouse Tavern |
+| SHT04 | Springhouse Tavern |
+| SHT05 | Former Springhouse Inn |
+| SHT06 | Former Springhouse Tavern |
+| SHT07 | Springhouse Engineering |
+| SHT08 | Springhouse Inn |
+| SHT09 | Springhouse Tavern |
+| SJP01 | St. Johns Presbyterian Church, Devon |
+| SJP02 | St. John’s Presbyterian Church, Devon |
+| SJP03 | St. Johns Presbyterian Church, Devon |
+| SJP05 | St. John’s Presbyterian Church, Devon |
+| SJP06 | St. Johns Chapel |
+| SJP07 | St. John’s Presbyterian Church in Devon |
+| SMB01 | St. Monica’s RC Church, Berwyn |
+| SMB02 | St. Monica’s Roman Catholic Church, 1906 |
+| SMB03 | Interior of St. Monica’s R.C. Church, 1904 |
+| SMB04 | St. Monica’s Convent |
+| SMB05 | St. Monica’s School addition |
+| SMB06 | Addition to St. Monica’s School |
+| SMB07 | St. Monica’s New Convent |
+| SMB08 | St. Monica’s Convent |
+| SMB09 | St. Monica’s Church |
+| SMB10 | St. Monica’s School |
+| SMB11 | Original St. Monica’s School |
+| SMB12 | New St. Monica’s Convent |
+| SMB13 | St. Monica’s Convent |
+| SMB14 | St. Monica’s School |
+| SMB15 | St. Monica’s Church interior |
+| SMB16 | St. Monica’s Parish House before demolition |
+| SMB17 | Fire at St. Monica’s Church, Berwyn |
+| SMB19 | Fire at St. Monica’s Church, Berwyn |
+| SMB20 | Fire at St. Monica’s Church, Berwyn |
+| SMB21 | Fire at St. Monica’s Church, Berwyn |
+| SMB22 | Fire at St. Monica’s Church, Berwyn |
+| SMB23 | Fire at St. Monica’s Church, Berwyn |
+| SMB24 | Fire at St. Monica’s Church, Berwyn |
+| SMB25 | Fire at St. Monica’s Church, Berwyn |
+| SMB26 | Fire at St. Monica’s Church, Berwyn |
+| SMB27 | Fire at St. Monica’s Church, Berwyn |
+| SMB28 | Fire at St. Monica’s Church, Berwyn |
+| SMB29 | Fire at St. Monica’s Church, Berwyn |
+| SMB30 | Fire at St. Monica’s Church, Berwyn |
+| SMB31 | Fire at St. Monica’s Church, Berwyn |
+| SMB32 | Fire at St. Monica’s Church, Berwyn |
+| SMB33 | Fire at St. Monica’s Church, Berwyn |
+| SMB34 | Fire at St. Monica’s Church, Berwyn |
+| SMB35 | Fire at St. Monica’s Church, Berwyn |
+| SMB36 | Fire at St. Monica’s Church, Berwyn |
+| SMB37 | Fire at St. Monica’s Church, Berwyn |
+| SMB38 | St. Monica’s Church |
+| SMB39 | St. Monica’s church, Berwyn |
+| SMB40 | Old Carriage at St. Monica’s Church |
+| SMB41 | St. Monica’s Church |
+| SMH01 | Stauffer - Mattson House |
+| SMH02 | Stauffer - Mattson House |
+| SMH03 | Stauffer - Mattson House |
+| SMH04 | Stauffer - Mattson House being demolished |
+| SMH05 | Stauffer - Mattson House being demolished |
+| SMH06 | Stauffer - Mattson House site after demolition |
+| SMH07 | Site of Stauffer - Mattson House |
+| SMH08 | Site of Stauffer - Mattson House |
+| SMH09 | Store being built on site of Stauffer - Mattson House |
+| SMH10 | Store on site of Stauffer - Mattson House |
+| SMH11 | Store on site of Stauffer - Mattson House |
+| SMH12 | Stauffer - Mattson House |
+| SMH13 | Red Robin store on site of Mattson - Stauffer house |
+| SMH14 | Red Robin store on site of Mattson - Stauffer house |
+| SPT01 | Sproxton |
+| SPT02 | Sproxton |
+| SPT03 | Sproxton |
+| SPT04 | Sproxton |
+| SPT05 | Sproxton |
+| SSB01 | Surrey Services |
+| SSB02 | Surrey Services |
+| SSB03 | Surrey Services |
+| STT01 | Stage Tavern |
+| SYF01 | Sycamore Farm |
+| SYF02 | Sycamore Farm |
+| TAR05 | Springhouse, Tarleton |
+| TAR06 | Tarleton |
+| TAR07 | Big tree of Tarleton |
+| TAR08 | Tarleton |
+| TAR09 | Aldyudd, now part of Tarleton School |
+| TAR10 | Tartleton house |
+| TAR11 | Tarleton |
+| TAR13 | Tarleton |
+| TAR14 | Tarleton |
+| TAR17 | Tarleton |
+| TAR20 | Tarleton |
+| TEC09 | History Club Banquet |
+| TEC10 | History Club Banquet |
+| TEC11 | History Club Banquet |
+| TEC12 | History Club Banquet |
+| TEC13 | History Club Banquet |
+| TEC37 | TE History Club Banquet at Trinity Presbyterian Church |
+| TEC38 | TE History Club Banquet at Trinity Presbyterian Church |
+| TEC39 | TE History Club Banquet at Trinity Presbyterian Church |
+| TEH33 | Tredyffrin Easttown High School |
+| TEH55 | Independence Day Rally at Berwyn |
+| TEH56 | Independence Day Rally at Berwyn |
+| TEH57 | Independence Day Rally at Berwyn |
+| TEH58 | Independence Day Rally at Berwyn |
+| TEH59 | Independence Day Rally at Berwyn |
+| TEH60 | Program, Independence Day Rally, 7/4/1917 |
+| TEH61 | Program, Independence Day Rally, 7/4/1917 |
+| TEH62 | Program, Independence Day Rally, 7/4/1917 |
+| TEH63 | Program, Independence Day Rally, 7/4/1917 |
+| TEH64 | Eastown School, 7th grade, 1900 |
+| TEH65 | TE High School children |
+| TEH66 | May Pole Fete, Easttown Public School |
+| TEH67 | Pupils, Easttown Public School, Berwyn |
+| TEH68 | Pupils, Easttown Public School, Berwyn |
+| TEH70 | Class photo |
+| TEH78 | Berwyn Baseball Club |
+| TEH79 | Berwyn Baseball Club |
+| TEH80 | Berwyn Baseball Club |
+| TEH81 | Berwyn Baseball Club |
+| TEH82 | Berwyn Baseball Club |
+| TEH83 | Tredyffrin Easttown High School |
+| TEH84 | Tredyffrin Easttown High School |
+| THE69 | 6th grade pupils, Easttown |
+| TPC08 | Trinity Presbyterian Church |
 | TPC1 | Trinity Presbyterian Church, Berwyn |
+| TPC10 | Site of new educational building, Trinity Church |
+| TPC11 | Site of new educational building, Trinity Church |
+| TPC12 | Site of new educational building, Trinity Church |
+| TPC13 | Trinity Presbyterian Church, Berwyn |
+| TPC14 | Trinity Presbyterian Church, Berwyn |
+| TPC15 | Trinity Presbyterian Church & Educational Building, Berwyn |
+| TPC16 | Trinity Presbyterian Church Educational Building |
+| TPC17 | Trinity Presbyterian Church Educational Building |
+| TPC18 | Trinity Presbyterian Church Educational Building |
+| TPC19 | Trinity Presbyterian Church Educational Building |
+| TPC2 | Trinity Presbyterian Church, Berwyn |
+| TPC20 | Trinity Presbyterian Church Educational Building |
+| TPC21 | Trinity Presbyterian Church |
+| TPC22 | Interior of Trinity Presbyterian Church, Berwyn |
+| TPC23 | Interior of Trinity Presbyterian Church, Berwyn |
+| TPC24 | Trinity Presbyterian Church, Berwyn |
+| TPC25 | Trinity Presbyterian Church, Berwyn |
+| TPC26 | Trinity Presbyterian Church, Berwyn |
+| TPC3 | Trinity Presbyterian Church, Berwyn |
+| TPC4 | Trinity Presbyterian Church, Berwyn |
+| TPC5 | Trinity Presbyterian Church of Berwyn, Church and Berwyn Avenues, Summer 1888 |
+| TPC6 | Trinity Presbyterian Church of Berwyn, Winter, 1887-8 |
+| TPC7 | Trinity Presbyterian Church, Berwyn |
+| TRS10 | Double Tree |
+| UMY01 | Outdoor Pool, Upper Mainline YMCA |
+| UMY02 | Tennis Courts, Upper Mainline YMCA |
+| UMY03 | Outdoor Pool, Upper Mainline YMCA |
+| VFMA01 | Valley Forge Military Academy, Cadets on Dress Parade |
+| WAB03 | Waterloo Avenue, Berwyn; photo labelled Waterloo "Road," |
+| WAB04 | Waterloo Avenue |
+| WAB05 | Waterloo Avenue, Berwyn |
+| WAB06 | Waterloo Avenue, Berwyn |
+| WAB07 | Stables at Waterloo Avenue, Berwyn |
+| WAB08 | Waterloo Avenue, Berwyn |
+| WAB09 | Waterloo Avenue, Berwyn |
+| WAB1 | Waterloo Avenue, Berwyn |
+| WAB10 | Waterloo Avenue |
+| WAB2 | Waterloo Ave., south from Berwyn Ave |
+| WAC01 | West Acres, Sugartown Road |
+| WAH01 | Building, 1060 Waterloo Road |
+| WAH04 | Waterloo House |
+| WAM04 | Waterloo Mills |
+| WAM05 | Waterloo Mills |
+| WAM06 | Waterloo Mills |
+| WAM07 | Waterloo Mills |
+| WAM08 | Waterloo Mills |
+| WAM09 | Waterloo Mills |
+| WAM10 | Waterloo Mills |
+| WAM11 | Waterloo Mills |
+| WAM12 | Blacksmith Shop, Waterloo Mills |
+| WAM13 | Blacksmith Shop, Waterloo Mills |
+| WAM14 | Nuzum House, Waterloo Mills |
+| WAM15 | Darby Creek at Waterloo Mills |
+| WAM15b | Back of WAM15 |
+| WAY06 | Springhouse, Waynesborough |
+| WAY07 | Waynesborough |
+| WAY08 | Waynesborough |
+| WAY09 | Waynesborough |
 | WAY1 | Waynesborough |
+| WAY10 | Waynesborough |
+| WAY11 | Waynesborough |
+| WAY12 | Waynesborough |
+| WAY13 | Waynesborough |
+| WAY13b | Back of WAY13 |
+| WAY14 | Waynesborough |
+| WAY15 | Waynesborough |
+| WAY16 | Waynesborough Barn |
+| WAY17 | Waynesborough |
+| WAY18 | Waynesborough |
+| WAY19 | Waynesborough |
 | WAY2 | Waynesborough |
+| WAY20 | Waynesborough |
+| WAY21 | Waynesborough |
+| WAY22 | Waynesborough |
+| WAY23 | Waynesborough |
+| WAY24 | Waynesborough |
+| WAY26 | Waynesborough |
+| WAY27 | Waynesborough |
 | WAY3 | Waynesborough |
+| WAY30 | Waynesborough |
 | WAY4 | Waynesborough |
+| WAY5 | Waynesborough |
+| WBS01 | William Burns House |
+| WCF03 | William Coates farm |
 | WCF1 | Horse on William M. Coates farm |
 | WCF2 | William M. Coates Farm |
+| WHQ72 | Washington’s Headquarters |
+| WOA01 | Woodside Avenue, Berwyn |
+| WOA02 | Woodside Avenue, Berwyn |
+| WRD05 | Waterloo Road |
+| WRD09 | Waterloo Road, Devon |
+| WRD1 | Waterloo Road at Arlington Road (now Lancaster Avenue), Devon |
+| WRD11 | Waterloo Road, Devon |
+| WRD12 | Waterloo Road and Railroad Bridge, Devon, PA |
+| WRD2 | North Waterloo Road looking south towards Devon Station |
+| WRD3 | Waterloo Road, Devon |
+| WRD4 | Waterloo Road, Devon |
+| WYI04 | Wynburne Inn |
+| WYI05 | Wynburne Inn |
+| WYI07 | Wynburne, Old Lancaster Road |
+| WYI09 | Wynburne Inn |
+| WYI1 | Wynburne Inn, Devon |
+| WYI10 | Wynburne Inn after fire |
 | WYI12 | Lincoln Inn |
 | WYI12b | Back of WYI12 |
 | WYI2 | Wynburne Inn, Devon |
+| WYS01 | Wayne Schoolhouse |
 
-### Schuylkill (24)
+### Schuylkill (107)
 
 | Archive ID | Title |
 | --- | --- |
+| BFB02 | Beans Mineral Railway Cars |
+| BFB03 | Bean Mineral Railway Locomotive |
+| BFB04 | Bean Mineral Railway Locomotive |
 | BFB1 | Bean Sand Crusher |
+| COC02 | Church of Christ, Valley Forge |
+| COC03 | Church of Christ, Valley Forge |
+| COS01 | Colonial Springs Logo |
+| COS02 | Interior of Colonial Springs Building |
+| COS03 | Colonial Springs |
+| COS04 | Colonial Springs Bottling Plant |
 | COS05 | Colonial Springs Bottling Plant |
+| FFO01 | Freedoms Foundation |
+| JWH02 | James White House |
+| JWH02b | Back of JWH02 |
+| JWH1 | James White House |
+| PHO03 | Valley Forge General Hospital |
+| PHO03b | Back of PHO03 |
+| POS07 | Patriotic Order, Sons of America Building |
+| SCT01 | Pickering Creek Farm |
+| SCU06 | Schuylkill, Valley Forge |
 | SCU10 | Catfish Island, Schuylkill aerial view |
 | SCU11 | Schuylkill and Catfish Island |
 | SCU12 | Whistle Point Marker, VFNHP |
@@ -720,12 +4839,77 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | SCU21 | Embankment, Schuylkill River, VFNHP |
 | SCU22 | Embankment, Schuylkill River |
 | SCU23 | Mile Markers, Schuylkill Division, PRR |
+| UFG1 | Valley Creek at Upper Forge site |
+| UFG10 | Upper Forge, Valley Forge |
+| UFG11 | Upper Forge, Valley Forge |
+| UFG13 | Upper Forge, Valley Forge |
+| UFG13b | Back of UFG13 |
+| UFG14 | Upper Forge anvil |
+| UFG15 | Upper Forge drive beam |
+| UFG16 | Upper Forge mill race |
+| UFG17 | Upper Forge overview looking east |
+| UFG18 | Upper Forge overview looking west |
+| UFG19 | Diagram of Remains of Upper Forge |
+| UFG2 | Upper Forge site |
+| UFG20 | Upper Forge Shed |
+| UFG21 | Upper Forge location |
+| UFG22 | Upper Forge Excavation |
+| UFG24 | Upper Forge Shed |
+| UFG25 | Plan of Upper Forge |
+| UFG26 | Upper Forge remains |
+| UFG27 | Upper Forge site |
+| UFG28 | Upper Forge |
+| UFG29 | Upper Forge Walls |
+| UFG3 | Upper Forge site |
+| UFG30 | Upper Forge Walls |
+| UFG31 | Upper Forge Walls |
+| UFG32 | Upper Forge Waterwheel |
+| UFG33 | Upper Forge Waterwheel |
+| UFG4 | Upper Forge site |
+| UFG5 | Upper Forge site |
+| VC14 | Valley Creek |
+| VC14b | Back of VC14 |
+| VC15 | Valley Creek Road |
+| VC15b | Back of VC15 |
+| VC17 | Valley Creek |
+| VC17b | Back of VC17 |
+| VC20 | Valley Creek |
+| VC27 | View up Valley Creek |
+| VC28 | Phoenixville Road bridge over Valley Creek |
+| VC29 | Phoenixville Road bridge over Valley Creek |
+| VC35 | Valley Creek near Old Forge |
 | VCB6 | Bridge over Valley Creek |
 | VFD1 | Valley Forge Dam |
 | VFD13 | Valley Forge c. 1790 dam |
+| VFD14 | Valley Creek 1790s Dam |
+| VFD14b | Back of VFD14 |
+| VFD15 | Valley Creek 1790s Dam |
+| VFD15b | Back of VFD15 |
+| VFD16 | Valley Creek 1930s Dam |
+| VFD16b | Back of VFD16 |
+| VFD17-5011 | 1930s Dam, Valley Creek |
+| VFD17-5454 | Mill Pond, Valley Forge |
+| VFD20 | Valley Forge Mill Dam |
+| VFD20b | Back of VFD20 |
+| VFD21 | Valley Forge Dam |
+| VFD22 | Valley Forge Dam |
 | VFD9 | The Dam, Valley Creek |
+| VFP153 | Ruins along Valley Creek |
+| VFP158 | Valley Forge Hills |
+| VFP228 | Valley Forge Village marker |
+| VFP229 | Valley Forge Village marker |
 | VFV1 | Valley Forge House |
 | VFV10 | Midgley Store |
+| VFV13 | J. Rowan’s Store |
+| VFV14 | Valley Forge Village 1878 looking east |
+| VFV16 | Valley Forge Fife and Drum Band outside the POSofA (Patriotic Order of Sons of America) Hall, Mathews Free Library. |
+| VFV18 | Four Generations of the Rowan family outside the store at Valley Forge on Labor Day, September 2, 1912 |
+| VFV24 | Imported Forge |
+| VFV25 | Imported Forge |
+| VFV26 | Interior Imported Forge |
+| VFV27 | Valley Forge Village |
+| VFV29 | Imported Forge |
+| VFV30 | State Road crossing Valley Creek |
 | VFV7 | Francis M. Bean house |
 | VFV9 | Jerome Shea House |
 
@@ -736,6 +4920,13 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | CUH2 | Dinner Preparation |
 | CUH3 | Mending Shift |
 | CUH5 | Chopped egg sauce |
+
+### Charlestown (2)
+
+| Archive ID | Title |
+| --- | --- |
+| OLA5 | Valley Forge General Hospital looking northwest |
+| PEO141 | Isaac M. Anderson |
 
 ### Audubon (1)
 
@@ -769,7 +4960,518 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 
 ## Subjects
 
-### person (477)
+### Place (506)
+
+| Archive ID | Title |
+| --- | --- |
+| BBR01 | Site of Berwyn Baptist Road apartments |
+| BBR02 | Site of Berwyn Baptist Road apartments |
+| BBR03 | Site of Berwyn Baptist Road apartments |
+| BBR04 | Site of Berwyn-baptist Road appartments |
+| BBR05 | Site of Berwyn Baptist Road apartments |
+| BBR06 | Berwyn Baptist Road (Quigleytown) townhouses |
+| BBR08 | Berwyn Baptist Road townhouses |
+| BBR09 | Berwyn Baptist Road townhouses |
+| BBR10 | Berwyn Baptist Road townhouses |
+| BBR11 | Berwyn Baptist Road townhouses |
+| BE1 | Bocce Club |
+| BE10 | Lincoln Highway, Berwyn |
+| BE100 | Conestoga and Cassatt Roads |
+| BE101 | View of ACME site |
+| BE102 | View of ACME site |
+| BE103 | View of ACME site |
+| BE104 | View of ACME site |
+| BE105 | View of ACME site |
+| BE106 | View of ACME site |
+| BE107 | View of ACME site |
+| BE108 | View of ACME site from Ale House on Lincoln highway |
+| BE109 | View of ACME site from Ale House on Lincoln highway |
+| BE110 | View of ACME site from township grounds |
+| BE111 | View of ACME site |
+| BE112 | View of ACME site |
+| BE113 | View of ACME site |
+| BE114 | Fire House and Ambulance Service |
+| BE115 | Fire House and Ambulance Service |
+| BE116 | Waterloo Road |
+| BE117 | View of NE Berwyn from Station |
+| BE118 | Cassatt and State Roads |
+| BE119 | Cassatt and State Roads |
+| BE121 | Warren Avenue, Berwyn |
+| BE122 | Warren Avenue, Berwyn |
+| BE123 | Warren Avenue, Berwyn |
+| BE124 | Warren Avenue, Berwyn |
+| BE125 | Warren Avenue, Berwyn after Hurricane Hazel |
+| BE126 | Warren Avenue, Berwyn |
+| BE127 | Warren Avenue, Berwyn after Hurricane Hazel |
+| BE128 | Warren Avenue, Berwyn after Hurricane Hazel |
+| BE129 | Kromer Avenue |
+| BE130 | Kromer Avenue |
+| BE131 | Roberts home, Kromer Avenue, Berwyn |
+| BE132 | Trout Run below Laurel Dell |
+| BE134 | Armistice Day, Berwyn, 1920 |
+| BE135 | Armistice Day, Berwyn, 1920 |
+| BE136 | Armistice Day, Berwyn, 1920 |
+| BE137 | Armistice Day, Berwyn, 1920 |
+| BE138 | Berwyn view |
+| BE139 | Berwyn view |
+| BE140 | Berwyn view |
+| BE141 | Berwyn view |
+| BE142 | Berwyn view |
+| BE16 | Berwyn |
+| BE162 | Conestoga and Cassatt Roads |
+| BE169 | Berwyn Village Walk |
+| BE170 | Berwyn Village Walk |
+| BE171 | Berwyn Village Walk |
+| BE172 | Berwyn Village Walk |
+| BE173 | Berwyn Village Walk |
+| BE174 | Berwyn Village Walk |
+| BE175 | Berwyn Village Walk |
+| BE176 | Berwyn Village Walk |
+| BE177 | Berwyn Village Walk |
+| BE178 | Berwyn Village Walk |
+| BE179 | Berwyn Village Walk |
+| BE180 | Berwyn Village Walk |
+| BE188 | Bridge Dedication, Berwyn |
+| BE189 | Bridge Dedication, Berwyn |
+| BE190 | Bridge Dedication, Berwyn |
+| BE191 | Bridge Dedication, Berwyn |
+| BE192 | Bridge Dedication, Berwyn |
+| BE195 | Billboard and Shed |
+| BE196 | Unknown View |
+| BE198 | 42 Bridge Avenue, Berwyn |
+| BE2 | Italian Club |
+| BE200 | Berwyn Bridge dedication |
+| BE201 | Berwyn Bridge dedication |
+| BE202 | Berwyn Bridge dedication |
+| BE203 | Berwyn Bridge dedication |
+| BE204 | Berwyn Bridge dedication |
+| BE205 | Berwyn Bridge dedication |
+| BE206 | Berwyn Bridge dedication |
+| BE207 | Berwyn Bridge dedication |
+| BE208 | Berwyn Village Walk |
+| BE209 | Berwyn Village Walk |
+| BE210 | Berwyn Village Walk |
+| BE211 | Berwyn Village Walk |
+| BE212 | Berwyn Village Walk |
+| BE213 | Berwyn Village Walk |
+| BE214 | Antique Car at Berwyn Station |
+| BE215 | Antique Car at Berwyn Station |
+| BE216 | Antique Car at Berwyn Station |
+| BE217 | Aquilante’s Trolley at Berwyn Station |
+| BE218 | Exhibits at Berwyn Station |
+| BE33 | Lincoln Highway, Berwyn |
+| BE34 | Lincoln Highway, Berwyn |
+| BE35 | Lincoln Highway, Berwyn |
+| BE36 | Lincoln Highway, Berwyn |
+| BE37 | Lincoln Highway, Berwyn |
+| BE38 | Lincoln Highway, Berwyn |
+| BE39 | Fire Scene, Berwyn |
+| BE40 | Fire Scene, Berwyn |
+| BE42 | Berwyn War Memorial |
+| BE44 | Berwyn Panorama |
+| BE45 | Sewer work on Conestoga Road, Berwyn |
+| BE46 | Sewer work on Conestoga Road, Berwyn |
+| BE47 | Conestoga Road, Berwyn before sewer work |
+| BE48 | Conestoga Road, Berwyn before sewer work |
+| BE49 | Sewer work on Conestoga Road, Berwyn |
+| BE50 | Sewer work on Conestoga Road, Berwyn |
+| BE51 | Sewer work on Conestoga Road, Berwyn |
+| BE52 | Sewer work on Conestoga Road, Berwyn |
+| BE53 | Sewer work on Conestoga Road, Berwyn |
+| BE54 | Sewer work on Conestoga Road, Berwyn |
+| BE55 | Conestoga Road, Berwyn before sewer work |
+| BE56 | Berwyn from Main Line Apartments |
+| BE57 | Lincoln Highway, Berwyn |
+| BE58 | Lincoln Highway, Berwyn |
+| BE59 | Bridge Avenue, Berwyn |
+| BE60 | Unknown View |
+| BE68 | Church Avenue leading from Berwyn Station P.R.R. |
+| BE69 | Site of Bronze Works, Berwyn |
+| BE70 | View from rear of Berwyn Station, P.R.R. |
+| BE85 | Williams Corner in winter |
+| BE89 | Berwyn WWII plaque |
+| BE90 | Berwyn WWII plaque |
+| BE94 | Berwyn War Memorial |
+| BE95 | Berwyn War Memorial |
+| BE97 | Conestoga and Cassatt Roads |
+| BE98 | Conestoga and Cassatt Roads |
+| BEP1 | Dedication of Berwyn Roll of Honor |
+| BEP69 | Paoli Honor Roll |
+| BEP7 | Devon Honor Roll |
+| BEP72 | Wrenecin's old swimming hole |
+| BEP74 | Tredyffrin Township Building |
+| BET03 | Berwyn Theater |
+| BET04 | Berwyn Theater |
+| BET05 | Berwyn Theater |
+| BET06 | Berwyn Theater |
+| BET07 | Berwyn Theater |
+| BET08 | Berwyn Theater |
+| BET09 | Berwyn Theater |
+| BET10 | Berwyn Theater |
+| BET11 | Berwyn Theater |
+| BET12 | Berwyn Theater |
+| BET13 | Berwyn Theater |
+| BET14 | Berwyn Theater |
+| BET15 | Berwyn Theater |
+| BET16 | Berwyn Theater |
+| BFC1 | Berwyn Fire Company |
+| BG07 | Knox Covered Bridge |
+| BG08 | Doyle's Nursery |
+| BG24 | Unknown Building |
+| CAR1 | Cassatt Road |
+| CAR10 | Cassatt Road |
+| CAR11 | Cassatt Road |
+| CAR12 | Cassatt Road |
+| CAR13 | State & Cassatt Roads |
+| CAR14 | Cassatt Road |
+| CAR15 | Cassatt Road |
+| CAR16 | Cassatt Road |
+| CAR17 | Cassatt Road |
+| CAR18 | Cassatt Road, Berwyn |
+| CAR19 | Cassatt Road |
+| CAR2 | Cassatt Road |
+| CAR20 | Cassatt Road |
+| CAR21 | Cassatt Road |
+| CAR22 | Cassatt Road |
+| CAR23 | Cassatt Road |
+| CAR24 | Cassatt Road |
+| CAR3 | Cassatt Road |
+| CAR4 | Cassatt Road |
+| CAR5 | Cassatt Road |
+| CAR6 | Cassatt Road |
+| CAR7 | Cassatt Road |
+| CAR8 | Cassatt Road |
+| CAR9 | Berwyn scene |
+| CCT01 | An imagining of Cockletown |
+| COR01 | Conestoga Road |
+| COR02 | Harry K. Ong house, Conestoga Road |
+| COR03 | Ong home, corner of Bair and Conestoga Roads |
+| COR04 | Conestoga Road |
+| COR05 | Former home of Mrs John Heagy,  Conestoga Road |
+| COR06 | Former home of Mrs John Heagy, 755 Conestoga Road |
+| COR07 | Former home of Mrs John Heagy, Conestoga Road |
+| COR08 | Rear of 765 Conestoga Road |
+| COR09 | Conestoga Road |
+| COR10 | W. C. Latch home, Conestoga Road |
+| COR11 | Mansley house, 759 Conestoga Road |
+| COR12 | Mansley home, 759 Conestoga Road |
+| COR13 | Norcini's house being built, Conestoga Road |
+| COR14 | Conestoga Road being relaid 1970 |
+| COR15 | Conestoga Road being relaid 1970 |
+| COR16 | Conestoga Road being relaid 1970 |
+| COR17 | 678 Conestoga Road |
+| COR18 | 678 Conestoga Road |
+| COR19 | 617 Conestoga Road |
+| COR20 | 617 Conestoga Road |
+| COR21 | 586 Conestoga Road |
+| COR22 | 586 Conestoga Road |
+| COR23 | 560 Conestoga Road |
+| COR24 | 560 Conestoga Road |
+| COR25 | Conestoga Road |
+| COR26 | Conestoga Road, work outside Hillcrest |
+| COR27 | Conestoga Road outside Bair estate |
+| COR28 | Conestoga Road at Bairs estate |
+| COR29 | Conestoga Road at Bair estate |
+| COR30 | Pavement preparation, Conestoga Road |
+| COR31 | Pavement work, Conestoga Road |
+| COR32 | Pavemnet work, Conestoga Road |
+| COR33 | Sewer work, Conestoga Road |
+| COR34 | Storm damage, Conestoga Road |
+| COR35 | Sewer work, Conestoga Road |
+| CWB04 | Carriage Way Houses |
+| CWB05 | Carriage Way Houses |
+| CWB06 | Carriage Way Houses |
+| CWB07 | Carriage Way Houses |
+| CWB08 | Carriage Way Houses |
+| CWB09 | Carriage Way Houses |
+| CWB1 | Carriage Way, Berwyn |
+| CWB10 | 4 Carriage Way, Berwyn |
+| CWB11 | 4 Carriage Way, Berwyn |
+| CWB12 | 4 Carriage Way, Berwyn |
+| CWB13 | 4 Carriage Way, Berwyn |
+| CWB14 | 4 Carriage Way, Berwyn |
+| CWB15 | 4 Carriage Way, Berwyn |
+| CWB16 | 4 Carriage Way, Berwyn |
+| CWB17 | 4 Carriage Way, Berwyn |
+| CWB18 | 4 Carriage Way, Berwyn |
+| CWB19 | 4 Carriage Way, Berwyn |
+| CWB2 | Carriage Way, Berwyn |
+| CWB20 | 4 Carriage Way, Berwyn |
+| CWB21 | 4 Carriage Way, Berwyn |
+| CWB22 | 4 Carriage Way, Berwyn |
+| CWB23 | Carriage Way Houses |
+| CWB24 | Carriage Way Houses |
+| DBC01 | Darby Creek, Devon |
+| DBC02 | Darby Creek, Devon |
+| DBC03 | Darby Creek, Devon |
+| DBC04 | Darby Creek, Devon |
+| DBC05 | Darby Creek, Devon |
+| DBC06 | Darby Creek, Devon |
+| DBC07 | Darby Creek, Devon |
+| DBC09 | Darby Creek, Devon |
+| DEV1 | Waterloo Road, Devon |
+| DEV13 | Devon Boulevard |
+| DEV14 | Devon Boulevard |
+| DEV15 | Lakeside Road, Devon |
+| DEV16 | Lakeside Road, Devon |
+| DEV17 | Lakeside Avenue |
+| DEV18 | Lakeside Road |
+| DEV2 | Old Lancaster Road, Devon |
+| DEV3 | Berkeley Avenue, Devon |
+| DEV7 | Looking east on Lancaster Pike toward Devon. Glassley School on right, June 1888 |
+| EHC36 | History Club visit to Longwood Gardens |
+| EHC5 | Tredyffrin Easttown History Club Members |
+| EW02 | Aerial View of Malvern Retreat Center |
+| FRL14 | Aerial Photograph of Berwyn |
+| FW05 | Fort Washington, Easter Sunday, April 1915 |
+| HAM02 | Hammer Hollow |
+| HOU191 | Harrison Estate, Waterloo Mills |
+| HOW10 | Mule Barn, Howellville |
+| HOW11 | Shack, Howellvile |
+| HOW12 | Map of Howellville |
+| HOW13 | Swedesford Road |
+| HOW14 | Howellville |
+| HOW15 | Site of Howellville Tavern |
+| HOW16 | new Mill Road at Swedesford Road |
+| HOW17 | new Mill Road |
+| HOW18 | Howellville |
+| HOW19 | Howellville |
+| HOW20 | Howellville |
+| HOW21 | Howellville |
+| HOW4 | Howellville Clean-up |
+| HOW5 | Howellville Clean-up |
+| HOW6 | Howellville Clean-up |
+| HOW7 | Howellville Clean-up |
+| HOW8 | House & Mule Barn, Howellville |
+| HOW9 | House on Swedesford Road, Howellvile |
+| KCB10 | Knox Covered Bridge |
+| KCB11 | Knox Covered Bridge |
+| KCB12 | Knox Covered Bridge |
+| KCB13 | Knox Covered Bridge damage |
+| KCB15 | Knox Covered Bridge 2006 damage - siding and clearance sign |
+| KCB16 | Knox Covered Bridge 2006 damage - Damaged Beam |
+| KCB17 | Knox Covered Bridge 2006 damage - Damaged Bridge |
+| KCB18 | Knox Covered Bridge 2006 damage - Temporary repairs |
+| KCB19 | Knox Covered Bridge, 1940 |
+| KCB20 | Knox Covered Bridge, 1940 |
+| KCB21 | Knox Covered Bridge |
+| KCB22 | Knox Covered Bridge |
+| KCB23 | Damaged Knox Covered Bridge, 1967 |
+| KCB24 | Knox Covered Bridge, looking south |
+| KCB25 | Knox Covered Bridge |
+| KCB26 | Knox Covered Bridge |
+| KCB27 | Knox Covered Bridge |
+| KCB28 | Knox Covered Bridge |
+| KCB29 | Knox Covered Bridge - view looking north |
+| KCB30 | Knox Covered Bridge - view looking north |
+| KCB31 | Knox Covered Bridge - view looking north |
+| KCB4 | Knox Covered bridge |
+| KCB5 | Old Covered Bridge |
+| KCB6 | Knox Covered Bridge |
+| KCB7 | Knox Covered Bridge |
+| KCB8 | Damaged Knox Covered Bridge |
+| KCB9 | Knox Covered Bridge |
+| LAB19 | Lancaster Avenue, Berwyn |
+| LAB20 | Lancaster Avenue, Berwyn |
+| LAB35 | Lancaster Avenue, Berwyn |
+| LAB36 | Lancaster Avenue, Berwyn |
+| LAB37 | Lancaster Avenue, Berwyn |
+| LAB38 | Lancaster Avenue, Berwyn |
+| LAB39 | Lancaster Avenue, Berwyn |
+| LAB40 | Lancaster Avenue, Berwyn |
+| LAB41 | Lancaster Avenue, Berwyn |
+| LAB42 | Lancaster Avenue, Berwyn |
+| LAB43 | Lancaster Avenue, Berwyn |
+| LAB44 | Lancaster Avenue, Berwyn |
+| LAB45 | Lancaster Avenue, Berwyn |
+| LAB46 | Lancaster Avenue, Berwyn |
+| LAB47 | Lancaster Avenue, Berwyn |
+| LAB48 | Lancaster Avenue, Berwyn |
+| LAB49 | Lancaster Avenue, Berwyn |
+| LAB50 | Lancaster Avenue, Berwyn |
+| LAB51 | Lancaster Avenue, Berwyn |
+| LAB52 | Lancaster Avenue, Berwyn |
+| LAB53 | Lancaster Avenue, Berwyn |
+| LAB54 | Lancaster Avenue, Berwyn |
+| LAB55 | Lancaster Avenue, Berwyn |
+| LAB56 | Lancaster Avenue, Berwyn |
+| LAB6 | Lancaster Avenue Business District, Berwyn c. early 1960s |
+| LAB67 | Corner of Lancaster and Bridge, Berwyn |
+| LAB68 | Corner of Lancaster and Bridge, Berwyn |
+| LAB69 | Corner of Lancaster and Bridge, Berwyn |
+| LAB89 | Berwyn - Lancaster and Cassatt Avenues, snow scene looking east |
+| LAB90 | Berwyn - Lancaster and Cassatt Avenues, snow scene looking west |
+| MAL24 | Malvern Library |
+| MAL25 | Malvern Library |
+| MAL26 | Auditorium Malvern Monday Club |
+| MAN07 | Unidentified place |
+| MAN08 | Back of photo MAN07 |
+| MAN10 | Unidentified place |
+| MAR1 | Memorial Arch |
+| MAR2 | Memorial Arch |
+| NCE12 | Devon State Road |
+| NCE9 | Old Forge Crossing |
+| OLA109 | French Creek Falls, St. Peters |
+| OLA109b | Back of OLA109 |
+| OLA115 | West Chester in 1842 |
+| OLA115b | Back of OLA115 |
+| OLA119 | Schuylkill at Perkiomen Junction |
+| OLA119b | Back of OLA119 |
+| OLA131 | Falls of the Brandywine, near West Chester |
+| OLA146 | Center Square, Lancaster |
+| OLA174 | Overhanging Rock. Gulph Mills |
+| OLA182 | St. Peters Village |
+| OLA182b | Back of OLA182 |
+| OLA183 | St. Peters Village |
+| OLA183b | Back of OLA183 |
+| OLA184 | St. Peters Village |
+| OLA184b | Back of OLA184 |
+| OLA185 | St. Peters Village |
+| OLA185b | Back of OLA185 |
+| OLA186 | St. Peters Village |
+| OLA186b | Back of OLA186 |
+| OLA187 | St. Peters Village |
+| OLA187b | Back of OLA187 |
+| OLA188 | St. Peters Village |
+| OLA188b | Back of OLA188 |
+| OLA189 | Birchrunville |
+| OLA189b | Back of OLA189 |
+| OLA190 | Birchrunville |
+| OLA190b | Back of OLA190 |
+| OLA192 | Birchrunville - Old Mill and Summer Scene |
+| OLA192b | Back of OLA192 |
+| OLA193 | Creamery, Hall and Store, Birchrunville |
+| OLA193b | Back of OLA193 |
+| OLA20 | King of Prussia Road |
+| OLA21 | King of Prussia Road |
+| OLA25 | Roberts Homestead, King of Prussia Road |
+| OLA26 | Roberts Homestead, King of Prussia Road |
+| OLA27 | Berwyn, Wales |
+| OLA28 | Wye Oak at Maryland State Park |
+| OLA38 | King of Prussia Road |
+| OLA39 | King of Prussia Road |
+| OLA71 | Tyler Arboretum |
+| OLA73 | Tyler Arboretum |
+| OLA74 | Tyler Arboretum |
+| OLA75 | Tyler Arboretum |
+| PA18 | George Clemmans Paoli Hardware Store certificate |
+| PA28 | Paoli (Inn) Blacksmith & Wheelwright shop, west of Inn, 1888 |
+| PA34 | Aerial Photograph of Paoli looking east |
+| PA55 | Lancaster Avenue in Paoli around 1935 |
+| PA64 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA65 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA66 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA67 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA68 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA69 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA70 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PEO78 | Herb Fry and Skip Eichner |
+| PHO1 | Soldier's Monument, Phoenixville |
+| PPO17 | Great Valley Creek & Great Valley Mill dam |
+| RAD6 | Lancaster Turnpike thru Radnor 1806 |
+| ROR08 | Roller Rink |
+| ROR09 | Roller Rink |
+| ROR10 | Roller Rink |
+| ROR11 | Roller Rink |
+| ROR12 | Roller Rink |
+| ROR13 | Roller Rink |
+| ROR14 | Roller Rink |
+| ROR15 | Roller Rink |
+| ROR16 | Roller Rink |
+| ROR17 | Roller Rink |
+| ROR18 | Roller Rink |
+| ROR19 | Roller Rink |
+| ROR20 | Roller Rink |
+| ROR21 | Roller Rink |
+| ROR3 | Roller Rink |
+| SAM1 | Boating on Unknown Mill Pond |
+| SCP01 | Rededication of Stone Chimney Picket plaque |
+| SCP02 | Rededication of Stone Chimney Picket plaque |
+| SCP03 | Rededication of Stone Chimney Picket plaque |
+| SCP04 | Rededication of Stone Chimney Picket plaque |
+| SCU05 | Schuylkill River, Conshohocken |
+| SCU05b | Back of SCU05 |
+| SCU06 | Schuylkill, Valley Forge |
+| SCU06b | Back of SCU06 |
+| SCU3 | Site of Sullivan's Bridge |
+| SHA20 | Stone Bridge at Hawthorne |
+| SHA21 | Twin Oaks at Hawthorne |
+| STR04 | Site of Devon Square Shopping Center |
+| STR05 | New Section of Sugartown Road |
+| STR06 | Site of Devon Square Shopping Center |
+| STR07 | New Section of Sugartown Road |
+| STR09 | Site of Devon Square Shopping Center |
+| STR1 | Strafford Road, Strafford |
+| STR10 | Devon Square Shopping Center |
+| STR11 | Devon Square Shopping Center |
+| STR12 | Devon Square Shopping Center |
+| STR14 | Old Eagle School Road |
+| STR15 | Old Eagle School Road |
+| STR16 | Corner of Lancaster Avenue and Old Eagle Road, Strafford |
+| STR17 | Corner of Lancaster Avenue and Old Eagle Road, Strafford |
+| STR18 | Corner of Lancaster Avenue and Old Eagle Road, Strafford |
+| STR19 | Corner of Lancaster Avenue and Old Eagle Road, Strafford |
+| STR2 | Devon Square, Strafford  Leasing Plan |
+| STR20 | Corner of Lancaster Avenue and Old Eagle Road, Strafford |
+| STR3 | Spread Eagle Village, Strafford |
+| TRE11 | Tredyffrin township building |
+| TRE12 | Tredyffrin township building |
+| TRE15 | Tredyffrin township building, Old Lancaster Road |
+| UFG10 | Upper Forge, Valley Forge |
+| VC07 | Valley Creek |
+| VC08 | Valley Creek |
+| VC14 | Valley Creek |
+| VC14b | Back of VC14 |
+| VC17 | Valley Creek |
+| VC17b | Back of VC17 |
+| VC20 | Valley Creek |
+| VCB6 | Bridge over Valley Creek |
+| VFD1 | Valley Forge Dam |
+| VFD12 | Valley Forge Dam (c. 1930) |
+| VFD13 | Valley Forge c. 1790 dam |
+| VFD16 | Valley Creek 1930s Dam |
+| VFD16b | Back of VFD16 |
+| VFD20 | Valley Forge Mill Dam |
+| VFD20b | Back of VFD20 |
+| VFD8 | Valley Forge c. 1790 dam |
+| VFP121 | Fatland Ford, Schuylkill |
+| VFP26 | Road to Fatlands Ford |
+| VFP28 | Waterman's Monument |
+| VFP31 | Valley Creek near Washington Spring |
+| VFP32 | New Jersey Monument |
+| VFP33 (was | Valley Forge National Historical Park Visitor's Center |
+| VFP34 | Star Redout |
+| VFP4 | 1930s Dam, Valley Forge National Historical Park |
+| VFP55 | Star Redoubt, Valley Forge |
+| VFP56 | Valley Forge redoubt |
+| VFP9 | Unknown Ruins at Valley Forge |
+| VFS02 | New Valley Forge Station, built around 1912 |
+| VFV19 | Valley Forge village, looking west |
+| VFV21 | Valley Forge |
+| VFV22 | Valley Forge Village, looking from the east |
+| WAB1 | Waterloo Avenue, Berwyn |
+| WAF01 | Lewis Walker monument |
+| WAF02 | Lewis Walker monument |
+| WHQ27 | Washington's Headquarters |
+| WHQ28 | Chimney repair, Washington’s Headquarters, December 7th, 1934 |
+| WHQ29 | Elm Tree at Washington’s Headquarters, March 27, 1934 |
+| WHQ31 | Washington's Headquarters, Valley Forge |
+| WHQ32 | Washington’s Headquarters |
+| WRD05 | Waterloo Road |
+| WSP01 | Washington’s Spring |
+| WSP02 | Washington’s Spring |
+| WSP03 | Washington’s Spring |
+| WSP03b | Back of WSP03 |
+| WSP04 | Washington’s Spring |
+| WSP04b | Back of WSP04 |
+| WSP09 | Washingtons Spring |
+| WSP11 | Washingtons Spring |
+| YSP01 | Iron Spring Gazebo, Yellow Springs Village |
+| YSP02 | 19th Century view of Yellow Springs Village |
+| YSP03 | Crystal Diamond Spring, Yellow Springs Village |
+| YSP05 | 18th Century Medicinal Herb Garden |
+
+### person (494)
 
 | Archive ID | Title |
 | --- | --- |
@@ -956,6 +5658,12 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | GRB25 | Mary Patton Garber |
 | GRB26 | Garber family |
 | GRB27 | Sarah Elizabeth Garber |
+| HAF01 | Hatton family, c. 1913 |
+| HAF02 | Havard Wayne Hatton, 1897 - 1918 (eldest son), died of the flu |
+| HAF03 | Jervis Hatton, 1898 - 1919 (train accident c. 1918), second eldest son |
+| HAF04 | Mrs. Susan B. Hatton and daughter Alvertia (Elsie) in the garden, c. 1915 |
+| HAF05 | Hatton family, c. 1905 at Kennett Square meeting |
+| HAF06 | Susan Boggs Hatton, c. 1896 |
 | KRI01 | Frank and George(?) Krider |
 | KRI02 | Frank Krider |
 | KRI04 | Memorial Card to Frank K. Krider |
@@ -1038,6 +5746,7 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | NWH01 | Newhall |
 | NWH02 | Newhall |
 | NWH03 | Newhall. |
+| NWH04 | Newhall. |
 | NWH51 | Newhall. |
 | OLA132 | Birthplace marker for Thomas Buchanon Read |
 | OLA170 | John Williamson Nevin memorial |
@@ -1083,6 +5792,8 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | PEO130 | George Washington |
 | PEO132 | Julius Sachse |
 | PEO133 | Bob Goshorn |
+| PEO134 | Franklin Burns |
+| PEO135 | Franklin Burns at Hawk Mountain |
 | PEO14 | Unknown Person |
 | PEO141 | Isaac M. Anderson |
 | PEO142 | Isaac M. Anderson family |
@@ -1125,6 +5836,9 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | PEO49 | Davis Family |
 | PEO5 | Grace Sharp |
 | PEO52 | Unknown woman and baby |
+| PEO53 | Unknown person |
+| PEO54 | Women in Moore Electric truck |
+| PEO55 | Unknown woman |
 | PEO56 | Rev. William T. and Mrs. Vandener |
 | PEO57 | Michead Edeesase (- maybe) as Betsy Ross |
 | PEO58 | Baptist Brotherhood Baseball Team |
@@ -1140,7 +5854,9 @@ This file accumulates across `--live` batches. Batch reports under `reports/imag
 | PEO67 | Mary Bair |
 | PEO68 | Franklin Burns |
 | PEO7 | Six People |
+| PEO79 | Ximena Wells Burns |
 | PEO8 | Emily Patterson & Florence Glissen |
+| PEO80 | Burns Family |
 | PEO9 | Emily Patterson & Florence Glissen |
 | PEO97 | Mary Jane Aiken Wells |
 | PEO98 | Unknown Person |
@@ -1213,6 +5929,8 @@ Standing: David Wilson (leaning over), Bill Andrews (hand to face), Skip Eichner
 | TEC33 | Eichner daughter and grandchild;
 Eva and Ray Noll;
 Standing middle distance: Skip Eichner (striped shirt), Bill Andrews (dark shirt), Howard Housworth (left, standing erect, light shirt), Jim Huston (right) |
+| TEC35 | TE History Club 1989 picnic at Goshorn’s house |
+| TEC36 | TE History Club 1989 picnic at Goshorn’s house |
 | TEC37 | TE History Club Banquet at Trinity Presbyterian Church |
 | TEC38 | TE History Club Banquet at Trinity Presbyterian Church |
 | TEC39 | TE History Club Banquet at Trinity Presbyterian Church |
@@ -1228,6 +5946,7 @@ Standing middle distance: Skip Eichner (striped shirt), Bill Andrews (dark shirt
 | TPS03 | Tea Party at Stirling's Quarters in honor of Compilers of 'Great Valley Days' |
 | TPS04 | Tea Party at Stirling's Quarters in honor of Compilers of 'Great Valley Days' |
 | TPS05 | Tea Party at Stirling's Quarters in honor of Compilers of 'Great Valley Days' |
+| VFP30 | Von Steuben Statue |
 | VFV16 | Valley Forge Fife and Drum Band outside the POSofA (Patriotic Order of Sons of America) Hall, Mathews Free Library. |
 | VFV18 | Four Generations of the Rowan family outside the store at Valley Forge on Labor Day, September 2, 1912 |
 | WAR2 | Warner Quarry workers |
@@ -1255,483 +5974,7 @@ Standing middle distance: Skip Eichner (striped shirt), Bill Andrews (dark shirt
 | WIL08 | William West Wilson |
 | WYF01 | General Wayne’s Memorial |
 
-### Place (471)
-
-| Archive ID | Title |
-| --- | --- |
-| BBR01 | Site of Berwyn Baptist Road apartments |
-| BBR02 | Site of Berwyn Baptist Road apartments |
-| BBR03 | Site of Berwyn Baptist Road apartments |
-| BBR04 | Site of Berwyn-baptist Road appartments |
-| BBR05 | Site of Berwyn Baptist Road apartments |
-| BBR06 | Berwyn Baptist Road (Quigleytown) townhouses |
-| BBR08 | Berwyn Baptist Road townhouses |
-| BBR09 | Berwyn Baptist Road townhouses |
-| BBR10 | Berwyn Baptist Road townhouses |
-| BBR11 | Berwyn Baptist Road townhouses |
-| BE1 | Bocce Club |
-| BE10 | Lincoln Highway, Berwyn |
-| BE100 | Conestoga and Cassatt Roads |
-| BE101 | View of ACME site |
-| BE114 | Fire House and Ambulance Service |
-| BE115 | Fire House and Ambulance Service |
-| BE117 | View of NE Berwyn from Station |
-| BE118 | Cassatt and State Roads |
-| BE119 | Cassatt and State Roads |
-| BE121 | Warren Avenue, Berwyn |
-| BE122 | Warren Avenue, Berwyn |
-| BE123 | Warren Avenue, Berwyn |
-| BE124 | Warren Avenue, Berwyn |
-| BE125 | Warren Avenue, Berwyn after Hurricane Hazel |
-| BE126 | Warren Avenue, Berwyn |
-| BE127 | Warren Avenue, Berwyn after Hurricane Hazel |
-| BE128 | Warren Avenue, Berwyn after Hurricane Hazel |
-| BE129 | Kromer Avenue |
-| BE130 | Kromer Avenue |
-| BE131 | Roberts home, Kromer Avenue, Berwyn |
-| BE132 | Trout Run below Laurel Dell |
-| BE134 | Armistice Day, Berwyn, 1920 |
-| BE135 | Armistice Day, Berwyn, 1920 |
-| BE136 | Armistice Day, Berwyn, 1920 |
-| BE137 | Armistice Day, Berwyn, 1920 |
-| BE138 | Berwyn view |
-| BE139 | Berwyn view |
-| BE140 | Berwyn view |
-| BE141 | Berwyn view |
-| BE142 | Berwyn view |
-| BE16 | Berwyn |
-| BE162 | Conestoga and Cassatt Roads |
-| BE169 | Berwyn Village Walk |
-| BE170 | Berwyn Village Walk |
-| BE171 | Berwyn Village Walk |
-| BE172 | Berwyn Village Walk |
-| BE173 | Berwyn Village Walk |
-| BE174 | Berwyn Village Walk |
-| BE175 | Berwyn Village Walk |
-| BE176 | Berwyn Village Walk |
-| BE177 | Berwyn Village Walk |
-| BE178 | Berwyn Village Walk |
-| BE179 | Berwyn Village Walk |
-| BE180 | Berwyn Village Walk |
-| BE188 | Bridge Dedication, Berwyn |
-| BE189 | Bridge Dedication, Berwyn |
-| BE190 | Bridge Dedication, Berwyn |
-| BE191 | Bridge Dedication, Berwyn |
-| BE192 | Bridge Dedication, Berwyn |
-| BE195 | Billboard and Shed |
-| BE196 | Unknown View |
-| BE198 | 42 Bridge Avenue, Berwyn |
-| BE2 | Italian Club |
-| BE200 | Berwyn Bridge dedication |
-| BE201 | Berwyn Bridge dedication |
-| BE202 | Berwyn Bridge dedication |
-| BE203 | Berwyn Bridge dedication |
-| BE204 | Berwyn Bridge dedication |
-| BE205 | Berwyn Bridge dedication |
-| BE206 | Berwyn Bridge dedication |
-| BE207 | Berwyn Bridge dedication |
-| BE208 | Berwyn Village Walk |
-| BE209 | Berwyn Village Walk |
-| BE210 | Berwyn Village Walk |
-| BE211 | Berwyn Village Walk |
-| BE212 | Berwyn Village Walk |
-| BE213 | Berwyn Village Walk |
-| BE214 | Antique Car at Berwyn Station |
-| BE215 | Antique Car at Berwyn Station |
-| BE216 | Antique Car at Berwyn Station |
-| BE217 | Aquilante’s Trolley at Berwyn Station |
-| BE218 | Exhibits at Berwyn Station |
-| BE33 | Lincoln Highway, Berwyn |
-| BE34 | Lincoln Highway, Berwyn |
-| BE35 | Lincoln Highway, Berwyn |
-| BE36 | Lincoln Highway, Berwyn |
-| BE37 | Lincoln Highway, Berwyn |
-| BE38 | Lincoln Highway, Berwyn |
-| BE39 | Fire Scene, Berwyn |
-| BE40 | Fire Scene, Berwyn |
-| BE42 | Berwyn War Memorial |
-| BE44 | Berwyn Panorama |
-| BE56 | Berwyn from Main Line Apartments |
-| BE57 | Lincoln Highway, Berwyn |
-| BE58 | Lincoln Highway, Berwyn |
-| BE59 | Bridge Avenue, Berwyn |
-| BE60 | Unknown View |
-| BE68 | Church Avenue leading from Berwyn Station P.R.R. |
-| BE69 | Site of Bronze Works, Berwyn |
-| BE70 | View from rear of Berwyn Station, P.R.R. |
-| BE85 | Williams Corner in winter |
-| BE89 | Berwyn WWII plaque |
-| BE90 | Berwyn WWII plaque |
-| BE94 | Berwyn War Memorial |
-| BE95 | Berwyn War Memorial |
-| BE97 | Conestoga and Cassatt Roads |
-| BEP1 | Dedication of Berwyn Roll of Honor |
-| BEP69 | Paoli Honor Roll |
-| BEP7 | Devon Honor Roll |
-| BEP72 | Wrenecin's old swimming hole |
-| BEP74 | Tredyffrin Township Building |
-| BET03 | Berwyn Theater |
-| BET04 | Berwyn Theater |
-| BET05 | Berwyn Theater |
-| BET06 | Berwyn Theater |
-| BET07 | Berwyn Theater |
-| BET08 | Berwyn Theater |
-| BET09 | Berwyn Theater |
-| BET10 | Berwyn Theater |
-| BET11 | Berwyn Theater |
-| BET12 | Berwyn Theater |
-| BET13 | Berwyn Theater |
-| BET14 | Berwyn Theater |
-| BET15 | Berwyn Theater |
-| BET16 | Berwyn Theater |
-| BFC1 | Berwyn Fire Company |
-| BG07 | Knox Covered Bridge |
-| BG08 | Doyle's Nursery |
-| BG24 | Unknown Building |
-| CAR1 | Cassatt Road |
-| CAR10 | Cassatt Road |
-| CAR11 | Cassatt Road |
-| CAR12 | Cassatt Road |
-| CAR13 | State & Cassatt Roads |
-| CAR14 | Cassatt Road |
-| CAR15 | Cassatt Road |
-| CAR16 | Cassatt Road |
-| CAR17 | Cassatt Road |
-| CAR18 | Cassatt Road, Berwyn |
-| CAR19 | Cassatt Road |
-| CAR2 | Cassatt Road |
-| CAR20 | Cassatt Road |
-| CAR21 | Cassatt Road |
-| CAR22 | Cassatt Road |
-| CAR23 | Cassatt Road |
-| CAR24 | Cassatt Road |
-| CAR3 | Cassatt Road |
-| CAR4 | Cassatt Road |
-| CAR5 | Cassatt Road |
-| CAR6 | Cassatt Road |
-| CAR7 | Cassatt Road |
-| CAR8 | Cassatt Road |
-| CAR9 | Berwyn scene |
-| CCT01 | An imagining of Cockletown |
-| COR01 | Conestoga Road |
-| COR02 | Harry K. Ong house, Conestoga Road |
-| COR03 | Ong home, corner of Bair and Conestoga Roads |
-| COR04 | Conestoga Road |
-| COR05 | Former home of Mrs John Heagy,  Conestoga Road |
-| COR06 | Former home of Mrs John Heagy, 755 Conestoga Road |
-| COR07 | Former home of Mrs John Heagy, Conestoga Road |
-| COR08 | Rear of 765 Conestoga Road |
-| COR09 | Conestoga Road |
-| COR10 | W. C. Latch home, Conestoga Road |
-| COR11 | Mansley house, 759 Conestoga Road |
-| COR12 | Mansley home, 759 Conestoga Road |
-| COR13 | Norcini's house being built, Conestoga Road |
-| COR14 | Conestoga Road being relaid 1970 |
-| COR15 | Conestoga Road being relaid 1970 |
-| COR16 | Conestoga Road being relaid 1970 |
-| COR17 | 678 Conestoga Road |
-| COR18 | 678 Conestoga Road |
-| COR19 | 617 Conestoga Road |
-| COR20 | 617 Conestoga Road |
-| COR21 | 586 Conestoga Road |
-| COR22 | 586 Conestoga Road |
-| COR23 | 560 Conestoga Road |
-| COR24 | 560 Conestoga Road |
-| COR25 | Conestoga Road |
-| COR26 | Conestoga Road, work outside Hillcrest |
-| COR27 | Conestoga Road outside Bair estate |
-| COR28 | Conestoga Road at Bairs estate |
-| COR29 | Conestoga Road at Bair estate |
-| COR30 | Pavement preparation, Conestoga Road |
-| COR31 | Pavement work, Conestoga Road |
-| COR32 | Pavemnet work, Conestoga Road |
-| COR33 | Sewer work, Conestoga Road |
-| COR34 | Storm damage, Conestoga Road |
-| COR35 | Sewer work, Conestoga Road |
-| CWB04 | Carriage Way Houses |
-| CWB05 | Carriage Way Houses |
-| CWB06 | Carriage Way Houses |
-| CWB07 | Carriage Way Houses |
-| CWB08 | Carriage Way Houses |
-| CWB09 | Carriage Way Houses |
-| CWB1 | Carriage Way, Berwyn |
-| CWB10 | 4 Carriage Way, Berwyn |
-| CWB11 | 4 Carriage Way, Berwyn |
-| CWB12 | 4 Carriage Way, Berwyn |
-| CWB13 | 4 Carriage Way, Berwyn |
-| CWB14 | 4 Carriage Way, Berwyn |
-| CWB15 | 4 Carriage Way, Berwyn |
-| CWB16 | 4 Carriage Way, Berwyn |
-| CWB17 | 4 Carriage Way, Berwyn |
-| CWB18 | 4 Carriage Way, Berwyn |
-| CWB19 | 4 Carriage Way, Berwyn |
-| CWB2 | Carriage Way, Berwyn |
-| CWB20 | 4 Carriage Way, Berwyn |
-| CWB21 | 4 Carriage Way, Berwyn |
-| CWB22 | 4 Carriage Way, Berwyn |
-| CWB23 | Carriage Way Houses |
-| CWB24 | Carriage Way Houses |
-| DBC01 | Darby Creek, Devon |
-| DBC02 | Darby Creek, Devon |
-| DBC03 | Darby Creek, Devon |
-| DBC04 | Darby Creek, Devon |
-| DBC05 | Darby Creek, Devon |
-| DBC06 | Darby Creek, Devon |
-| DBC07 | Darby Creek, Devon |
-| DBC09 | Darby Creek, Devon |
-| DEV1 | Waterloo Road, Devon |
-| DEV13 | Devon Boulevard |
-| DEV14 | Devon Boulevard |
-| DEV15 | Lakeside Road, Devon |
-| DEV16 | Lakeside Road, Devon |
-| DEV17 | Lakeside Avenue |
-| DEV18 | Lakeside Road |
-| DEV2 | Old Lancaster Road, Devon |
-| DEV3 | Berkeley Avenue, Devon |
-| DEV7 | Looking east on Lancaster Pike toward Devon. Glassley School on right, June 1888 |
-| EHC36 | History Club visit to Longwood Gardens |
-| EHC5 | Tredyffrin Easttown History Club Members |
-| EW02 | Aerial View of Malvern Retreat Center |
-| FRL14 | Aerial Photograph of Berwyn |
-| FW05 | Fort Washington, Easter Sunday, April 1915 |
-| HAM02 | Hammer Hollow |
-| HOU191 | Harrison Estate, Waterloo Mills |
-| HOW10 | Mule Barn, Howellville |
-| HOW11 | Shack, Howellvile |
-| HOW12 | Map of Howellville |
-| HOW13 | Swedesford Road |
-| HOW14 | Howellville |
-| HOW15 | Site of Howellville Tavern |
-| HOW16 | new Mill Road at Swedesford Road |
-| HOW17 | new Mill Road |
-| HOW18 | Howellville |
-| HOW19 | Howellville |
-| HOW20 | Howellville |
-| HOW21 | Howellville |
-| HOW4 | Howellville Clean-up |
-| HOW5 | Howellville Clean-up |
-| HOW6 | Howellville Clean-up |
-| HOW7 | Howellville Clean-up |
-| HOW8 | House & Mule Barn, Howellville |
-| HOW9 | House on Swedesford Road, Howellvile |
-| KCB10 | Knox Covered Bridge |
-| KCB11 | Knox Covered Bridge |
-| KCB12 | Knox Covered Bridge |
-| KCB13 | Knox Covered Bridge damage |
-| KCB15 | Knox Covered Bridge 2006 damage - siding and clearance sign |
-| KCB16 | Knox Covered Bridge 2006 damage - Damaged Beam |
-| KCB17 | Knox Covered Bridge 2006 damage - Damaged Bridge |
-| KCB18 | Knox Covered Bridge 2006 damage - Temporary repairs |
-| KCB19 | Knox Covered Bridge, 1940 |
-| KCB20 | Knox Covered Bridge, 1940 |
-| KCB21 | Knox Covered Bridge |
-| KCB22 | Knox Covered Bridge |
-| KCB23 | Damaged Knox Covered Bridge, 1967 |
-| KCB25 | Knox Covered Bridge |
-| KCB26 | Knox Covered Bridge |
-| KCB27 | Knox Covered Bridge |
-| KCB28 | Knox Covered Bridge |
-| KCB29 | Knox Covered Bridge - view looking north |
-| KCB30 | Knox Covered Bridge - view looking north |
-| KCB31 | Knox Covered Bridge - view looking north |
-| KCB4 | Knox Covered bridge |
-| KCB5 | Old Covered Bridge |
-| KCB6 | Knox Covered Bridge |
-| KCB7 | Knox Covered Bridge |
-| KCB8 | Damaged Knox Covered Bridge |
-| KCB9 | Knox Covered Bridge |
-| LAB19 | Lancaster Avenue, Berwyn |
-| LAB20 | Lancaster Avenue, Berwyn |
-| LAB35 | Lancaster Avenue, Berwyn |
-| LAB36 | Lancaster Avenue, Berwyn |
-| LAB37 | Lancaster Avenue, Berwyn |
-| LAB38 | Lancaster Avenue, Berwyn |
-| LAB39 | Lancaster Avenue, Berwyn |
-| LAB40 | Lancaster Avenue, Berwyn |
-| LAB41 | Lancaster Avenue, Berwyn |
-| LAB42 | Lancaster Avenue, Berwyn |
-| LAB43 | Lancaster Avenue, Berwyn |
-| LAB44 | Lancaster Avenue, Berwyn |
-| LAB45 | Lancaster Avenue, Berwyn |
-| LAB46 | Lancaster Avenue, Berwyn |
-| LAB47 | Lancaster Avenue, Berwyn |
-| LAB48 | Lancaster Avenue, Berwyn |
-| LAB49 | Lancaster Avenue, Berwyn |
-| LAB50 | Lancaster Avenue, Berwyn |
-| LAB51 | Lancaster Avenue, Berwyn |
-| LAB52 | Lancaster Avenue, Berwyn |
-| LAB53 | Lancaster Avenue, Berwyn |
-| LAB54 | Lancaster Avenue, Berwyn |
-| LAB55 | Lancaster Avenue, Berwyn |
-| LAB56 | Lancaster Avenue, Berwyn |
-| LAB6 | Lancaster Avenue Business District, Berwyn c. early 1960s |
-| LAB67 | Corner of Lancaster and Bridge, Berwyn |
-| LAB68 | Corner of Lancaster and Bridge, Berwyn |
-| LAB69 | Corner of Lancaster and Bridge, Berwyn |
-| LAB89 | Berwyn - Lancaster and Cassatt Avenues, snow scene looking east |
-| MAL25 | Malvern Library |
-| MAL26 | Auditorium Malvern Monday Club |
-| MAN07 | Unidentified place |
-| MAN08 | Back of photo MAN07 |
-| MAN10 | Unidentified place |
-| MAR1 | Memorial Arch |
-| MAR2 | Memorial Arch |
-| NCE12 | Devon State Road |
-| NCE9 | Old Forge Crossing |
-| OLA109 | French Creek Falls, St. Peters |
-| OLA109b | Back of OLA109 |
-| OLA115 | West Chester in 1842 |
-| OLA115b | Back of OLA115 |
-| OLA119 | Schuylkill at Perkiomen Junction |
-| OLA119b | Back of OLA119 |
-| OLA131 | Falls of the Brandywine, near West Chester |
-| OLA146 | Center Square, Lancaster |
-| OLA174 | Overhanging Rock. Gulph Mills |
-| OLA182 | St. Peters Village |
-| OLA182b | Back of OLA182 |
-| OLA183 | St. Peters Village |
-| OLA183b | Back of OLA183 |
-| OLA184 | St. Peters Village |
-| OLA184b | Back of OLA184 |
-| OLA185 | St. Peters Village |
-| OLA185b | Back of OLA185 |
-| OLA186 | St. Peters Village |
-| OLA187 | St. Peters Village |
-| OLA188 | St. Peters Village |
-| OLA188b | Back of OLA188 |
-| OLA189b | Back of OLA189 |
-| OLA190 | Birchrunville |
-| OLA190b | Back of OLA190 |
-| OLA192 | Birchrunville - Old Mill and Summer Scene |
-| OLA192b | Back of OLA192 |
-| OLA193 | Creamery, Hall and Store, Birchrunville |
-| OLA193b | Back of OLA193 |
-| OLA20 | King of Prussia Road |
-| OLA21 | King of Prussia Road |
-| OLA25 | Roberts Homestead, King of Prussia Road |
-| OLA26 | Roberts Homestead, King of Prussia Road |
-| OLA27 | Berwyn, Wales |
-| OLA38 | King of Prussia Road |
-| OLA39 | King of Prussia Road |
-| OLA71 | Tyler Arboretum |
-| OLA73 | Tyler Arboretum |
-| OLA74 | Tyler Arboretum |
-| OLA75 | Tyler Arboretum |
-| PA18 | George Clemmans Paoli Hardware Store certificate |
-| PA28 | Paoli (Inn) Blacksmith & Wheelwright shop, west of Inn, 1888 |
-| PA34 | Aerial Photograph of Paoli looking east |
-| PA55 | Lancaster Avenue in Paoli around 1935 |
-| PA64 | Richard Nixon campaign rally at the old Paoli Shopping Center |
-| PA65 | Richard Nixon campaign rally at the old Paoli Shopping Center |
-| PA66 | Richard Nixon campaign rally at the old Paoli Shopping Center |
-| PA67 | Richard Nixon campaign rally at the old Paoli Shopping Center |
-| PA68 | Richard Nixon campaign rally at the old Paoli Shopping Center |
-| PA69 | Richard Nixon campaign rally at the old Paoli Shopping Center |
-| PA70 | Richard Nixon campaign rally at the old Paoli Shopping Center |
-| PEO78 | Herb Fry and Skip Eichner |
-| PHO1 | Soldier's Monument, Phoenixville |
-| PPO17 | Great Valley Creek & Great Valley Mill dam |
-| RAD6 | Lancaster Turnpike thru Radnor 1806 |
-| ROR08 | Roller Rink |
-| ROR09 | Roller Rink |
-| ROR10 | Roller Rink |
-| ROR11 | Roller Rink |
-| ROR12 | Roller Rink |
-| ROR13 | Roller Rink |
-| ROR14 | Roller Rink |
-| ROR15 | Roller Rink |
-| ROR16 | Roller Rink |
-| ROR17 | Roller Rink |
-| ROR18 | Roller Rink |
-| ROR19 | Roller Rink |
-| ROR20 | Roller Rink |
-| ROR21 | Roller Rink |
-| ROR3 | Roller Rink |
-| SAM1 | Boating on Unknown Mill Pond |
-| SCP01 | Rededication of Stone Chimney Picket plaque |
-| SCP02 | Rededication of Stone Chimney Picket plaque |
-| SCP03 | Rededication of Stone Chimney Picket plaque |
-| SCP04 | Rededication of Stone Chimney Picket plaque |
-| SCU05 | Schuylkill River, Conshohocken |
-| SCU05b | Back of SCU05 |
-| SCU06 | Schuylkill, Valley Forge |
-| SCU06b | Back of SCU06 |
-| SCU3 | Site of Sullivan's Bridge |
-| SHA20 | Stone Bridge at Hawthorne |
-| SHA21 | Twin Oaks at Hawthorne |
-| STR04 | Site of Devon Square Shopping Center |
-| STR05 | New Section of Sugartown Road |
-| STR06 | Site of Devon Square Shopping Center |
-| STR07 | New Section of Sugartown Road |
-| STR09 | Site of Devon Square Shopping Center |
-| STR1 | Strafford Road, Strafford |
-| STR10 | Devon Square Shopping Center |
-| STR11 | Devon Square Shopping Center |
-| STR14 | Old Eagle School Road |
-| STR15 | Old Eagle School Road |
-| STR16 | Corner of Lancaster Avenue and Old Eagle Road, Strafford |
-| STR17 | Corner of Lancaster Avenue and Old Eagle Road, Strafford |
-| STR18 | Corner of Lancaster Avenue and Old Eagle Road, Strafford |
-| STR19 | Corner of Lancaster Avenue and Old Eagle Road, Strafford |
-| STR2 | Devon Square, Strafford  Leasing Plan |
-| STR20 | Corner of Lancaster Avenue and Old Eagle Road, Strafford |
-| STR3 | Spread Eagle Village, Strafford |
-| TRE11 | Tredyffrin township building |
-| TRE12 | Tredyffrin township building |
-| TRE15 | Tredyffrin township building, Old Lancaster Road |
-| UFG10 | Upper Forge, Valley Forge |
-| VC07 | Valley Creek |
-| VC08 | Valley Creek |
-| VC14 | Valley Creek |
-| VC14b | Back of VC14 |
-| VC17 | Valley Creek |
-| VC17b | Back of VC17 |
-| VC20 | Valley Creek |
-| VCB6 | Bridge over Valley Creek |
-| VFD1 | Valley Forge Dam |
-| VFD12 | Valley Forge Dam (c. 1930) |
-| VFD13 | Valley Forge c. 1790 dam |
-| VFD16 | Valley Creek 1930s Dam |
-| VFD16b | Back of VFD16 |
-| VFD20 | Valley Forge Mill Dam |
-| VFD8 | Valley Forge c. 1790 dam |
-| VFP121 | Fatland Ford, Schuylkill |
-| VFP26 | Road to Fatlands Ford |
-| VFP28 | Waterman's Monument |
-| VFP32 | New Jersey Monument |
-| VFP33 (was | Valley Forge National Historical Park Visitor's Center |
-| VFP34 | Star Redout |
-| VFP4 | 1930s Dam, Valley Forge National Historical Park |
-| VFP55 | Star Redoubt, Valley Forge |
-| VFP56 | Valley Forge redoubt |
-| VFP9 | Unknown Ruins at Valley Forge |
-| VFS02 | New Valley Forge Station, built around 1912 |
-| VFV19 | Valley Forge village, looking west |
-| VFV21 | Valley Forge |
-| VFV22 | Valley Forge Village, looking from the east |
-| WAB1 | Waterloo Avenue, Berwyn |
-| WAF01 | Lewis Walker monument |
-| WAF02 | Lewis Walker monument |
-| WHQ27 | Washington's Headquarters |
-| WHQ28 | Chimney repair, Washington’s Headquarters, December 7th, 1934 |
-| WHQ29 | Elm Tree at Washington’s Headquarters, March 27, 1934 |
-| WHQ31 | Washington's Headquarters, Valley Forge |
-| WHQ32 | Washington’s Headquarters |
-| WRD05 | Waterloo Road |
-| WSP01 | Washington’s Spring |
-| WSP02 | Washington’s Spring |
-| WSP03 | Washington’s Spring |
-| WSP03b | Back of WSP03 |
-| WSP04 | Washington’s Spring |
-| WSP04b | Back of WSP04 |
-| WSP09 | Washingtons Spring |
-| WSP11 | Washingtons Spring |
-| YSP01 | Iron Spring Gazebo, Yellow Springs Village |
-| YSP02 | 19th Century view of Yellow Springs Village |
-| YSP03 | Crystal Diamond Spring, Yellow Springs Village |
-| YSP05 | 18th Century Medicinal Herb Garden |
-
-### View (451)
+### View (462)
 
 | Archive ID | Title |
 | --- | --- |
@@ -1811,6 +6054,7 @@ Standing middle distance: Skip Eichner (striped shirt), Bill Andrews (dark shirt
 | CAR25 | Looking south on Cassatt and State Roads |
 | CAR27 | Cassatt and Conestoga Roads |
 | CAR28 | Cassatt Road being widened |
+| CAR29 | Looking north on Cassatt Road |
 | CEH02 | Cedar Tree at Cedar Hollow |
 | CHE04 | Chesterbrook Farm |
 | CHE05 | Chesterbrook Farm |
@@ -1931,6 +6175,9 @@ Standing middle distance: Skip Eichner (striped shirt), Bill Andrews (dark shirt
 | HOW39 | Old Swedesford Road |
 | HOW40 | Old Swedesford Road |
 | HOW41 | Swedesford Road and site of Howellville Quarry |
+| HOW42 | Old Swedesford Road |
+| HOW43 | Swedesford Road |
+| HOW44 | Swedesford Road |
 | HRB01 | Howellville and Old Lancaster Roads, Berwyn |
 | HRB02 | Howellville Road, Berwyn |
 | HRB03 | Howellville Road, Berwyn |
@@ -1961,9 +6208,11 @@ Standing middle distance: Skip Eichner (striped shirt), Bill Andrews (dark shirt
 | LAB87 | Closing of Cassatt Road bridge |
 | LAB9 | Lancaster Avenue, Berwyn |
 | LAF09 | Valley Creek near LaFayettes Quarters |
+| LH01 | “A Ramble in the Chester Valley”, c. 1908 |
 | LH04 | Playing in the snow |
 | LH05 | Snow scene |
 | LH06 | Snow scene |
+| LH07 | Unknown View |
 | LH08 | Unknown view |
 | LH09 | Unknown view |
 | MAB01 | Looking south on Main Avenue, Berwyn |
@@ -2066,6 +6315,7 @@ Stereocard |
 | SVR09 | South Valley Road, Paoli |
 | SVR10 | South Valley Road, Paoli |
 | SVR11 | South Valley Road, Paoli |
+| SWE05 | Northwinds, Swedesford Road |
 | TCC1 | Tredyffrin Country Club |
 | TRE04 | View of the Great Valley |
 | TRE05 | View of the Great Valley |
@@ -2094,6 +6344,7 @@ Stereocard |
 | VC10 | Valley Creek at the Covered Bridge |
 | VC11 | Valley Creek from Washingtons Headquarters |
 | VC12 | Old Stone Bridge over Valley Creek and the Washington Inn |
+| VC13 | Old Stone Bridge over Valley Creek |
 | VC18 | Scree Slope, Valley Creek |
 | VC19 | Valley Creek and Bridge |
 | VC21 | View of Valley Creek from Mount Joy |
@@ -2120,7 +6371,9 @@ Stereocard |
 | VFP157 | View eastwards from Inner Line Drive |
 | VFP158 | Valley Forge Hills |
 | VFP220 | Continental Hospital Hut |
+| VFP38 | Star Redoubt |
 | VFP41 | Cannon, Valley Forge |
+| VFP42 | East of Headquarters Lane, Valley Forge, March 15, 1934 |
 | VFP43 | Dogwood, Valley Forge |
 | VFP50 | Dogwoods, Valley Forge |
 | VFP51 | Dogwoods, Valley Forge |
@@ -2139,6 +6392,7 @@ Stereocard |
 | VFP82b | Back of VFP82 |
 | VFP95 | View of Valley Forge |
 | VFP95b | Back of VFP95 |
+| VFV14 | Valley Forge Village 1878 looking east |
 | VFV17 | Valley Forge, 1878 |
 | VFV2 | Town of Valley Forge, PA Washington’s Headquarters |
 | VFV23 | Outside Washingtons Headquarters |
@@ -2189,173 +6443,7 @@ Stereocard |
 | YOF50 | Construction of route 202 |
 | YOF51 | Construction of route 202 |
 
-### Road (161)
-
-| Archive ID | Title |
-| --- | --- |
-| BAV05 | Berwyn Avenue |
-| BAV06 | Berwyn Avenue |
-| BAV07 | Berwyn Avenue |
-| BCA01 | Church Ave, south from Lancaster Ave, Berwyn, |
-| BCA02 | Church Avenue, Berwyn |
-| BCA03 | Church Avenue, Berwyn |
-| BE182 | Upper Bridge, Berwyn |
-| BE184 | Kromer Road, Wayne |
-| BE185 | Kromer Road, Wayne |
-| BE186 | Kromer Road, Wayne |
-| BE226 | Warren Avenue, Berwyn |
-| BE87 | Route 30, Berwyn |
-| BRI02 | Cedar Hollow Bridge over Valley Creek, #171; east side looking west |
-| BRI03 | Cedar Hollow Bridge over Valley Creek, #171; west side looking east |
-| BRI04 | Cedar Hollow Bridge over Valley Creek, #171; plaque |
-| BRI05 | Cedar Hollow Bridge over Valley Creek, #171; looking south over Valley Creek |
-| BRI06 | Cedar Hollow Bridge over Valley Creek, #171; looking north over Valley Creek |
-| CAA08 | Cassatt Avenue Bridge, Berwyn |
-| CAA09 | Cassatt Avenue Bridge, Berwyn |
-| CAA10 | Cassatt Avenue Bridge, Berwyn |
-| CAA11 | Cassatt Avenue Bridge, Berwyn |
-| CAA12 | Cassatt Avenue Bridge, Berwyn |
-| CAA3 | Cassatt Avenue, Berwyn |
-| CMR07 | Early Traffic Lights in Tredyffrin township |
-| DEV25 | Lancaster Avenue, Devon |
-| DEV30 | A view on Lancaster Pike towards the Wynburne Inn |
-| EW03 | Route 202 north |
-| FAB03 | First Avenue, Berwyn |
-| GHF60 | Road Alignments, Glenhardie Farms |
-| KCB14 | Knox Covered Bridge |
-| KCB32 | Knox Covered Bridge |
-| KCB33 | Knox Covered Bridge under repair |
-| KCB34 | Knox Covered Bridge under repair |
-| KCB35 | Knox Covered Bridge under repair |
-| KCB36 | Knox Covered Bridge |
-| KCB37 | Knox Covered Bridge |
-| KCB38 | Knox Covered Bridge |
-| KCB38b | Back of KCB38 |
-| KCB39 | Knox Covered Bridge |
-| KCB39b | Back of KCB39 |
-| KCB40 | Knox Covered Bridge |
-| KCB40b | Back of KCB40 |
-| KCB41 | Knox Covered Bridge |
-| KCB41b | Back of KCB41 |
-| KCB42 | Knox Covered Bridge |
-| KCB42b | Back of KCB42 |
-| KCB43 | Knox’s Covered Bridge |
-| KCB53 | Knox Covered Bridge |
-| KCB54 | Knox Covered Bridge |
-| KCB55 | Knox Covered Bridge |
-| KCB56 | Knox Covered Bridge |
-| KCB57 | Knox Covered Bridge |
-| KCB58 | Knox Covered Bridge |
-| KCB59 | Knox Covered Bridge |
-| KCB60 | Knox Covered Bridge |
-| KCB61 | Knox Covered Bridge |
-| KOP04 | King of Prussia Road, Radnor |
-| LAB10 | Lancaster Pike toll gate, Berwyn, 1887 |
-| LAB18 | Lancaster Avenue, Berwyn |
-| LAB70 | Lancaster Avenue, Berwyn |
-| LAB71 | Berwyn Shopping Center, Lancaster Avenue |
-| LAB72 | Lancaster Avenue, Berwyn |
-| LAB73 | Lancaster Avenue, Berwyn |
-| LAB74 | Lancaster Avenue, Berwyn |
-| LAB75 | Lancaster Avenue and Conestoga Road, Strafford |
-| LAB76 | Lancaster Avenue, Strafford |
-| LAB80 | Lancaster Avenue, Berwyn |
-| LAB83 | Unknown Building, Lancaster Avenue, Berwyn |
-| LTP01 | Lancaster Turnpike Milestone 16 |
-| LTP02 | Milestone 15, Lancaster Turnpike |
-| MAB02 | Main Avenue, Berwyn |
-| MAB03 | Main Avenue, Berwyn |
-| MAB04 | Main Avenue, Berwyn |
-| MAB05 | Main Avenue, Berwyn |
-| MAL15 | Malvern underpass |
-| MAL16 | Malvern, route 30 |
-| NCE10 | Baptist Road looking north |
-| NCE11 | Baptist Road looking north |
-| NVR07 | North Valley Road and route 202 |
-| NVR08 | North Valley Road and route 202 |
-| OLA09 | Hanging Rock, Gulph Road |
-| OLA10 | Monument at Gulph Mills |
-| OLA100 | Rosedale Avenue,  West Chester |
-| OLA100b | Back of OLA100 |
-| OLA107 | West Market Street, West Chester |
-| OLA107b | Back of OLA107 |
-| OLA113 | West Market Street, West Chester |
-| OLA113b | Back of OLA113 |
-| OLA118 | Toll Gate, Lancaster Turnpike, near Downingtown |
-| OLA118b | Back of OLA118 |
-| OLA126 | Route 100 north |
-| OLA128 | Toll House, Glen Loch |
-| OLA129 | Stone Bridge across East Brandywine Creek |
-| OLA133 | Toll House Gate, St Davids |
-| OLA147 | Eastern approach to Conestoga Bridge |
-| OLA155 | Witmer’s Bridge |
-| OLA229 | Toll Gate between Gardenville and Point Pleasant |
-| OLA66 | Covered Bridge |
-| OLA67 | Covered Bridge |
-| PA127 | Traffic Accident Routes 30 and 252 |
-| PA128 | Traffic Accident routes 30 and 252 |
-| PA130 | Traffic Accident routes 30 and 252 |
-| PA131 | Traffic Accident routes 30 and 252 |
-| PA132 | Traffic Accident routes 30 and 252 |
-| PA133 | Traffic Accident routes 30 and 252 |
-| PA134 | Traffic Accident routes 30 and 252 |
-| PA135 | Traffic Accident routes 30 and 252 |
-| PA136 | Traffic Accident routes 30 and 252 |
-| PA137 | Traffic Accident routes 30 and 252 |
-| PA184 | South Valley Road, Paoli looking north |
-| PA185 | South Valley Road, Paoli looking north |
-| PA29 | Valley Road, Paoli |
-| PA31 | Route 252, Paoli |
-| PA36 | Toll Gate House |
-| PA57 | Lovers Lane, Paoli |
-| PA58 | Prominent fork of Roads |
-| PTP01 | Schuylkill Interchange, Pennsylvania Turnpike |
-| PTP01b | Back of PTP01 |
-| PTP02 | King of Prussia Interchange |
-| PTP02b | Back of PTP02 |
-| PTP04 | Valley Forge Toll Gate, PA Turnpike |
-| RAD07 | King of Prussia Road |
-| RAD08 | King of Prussia Road |
-| RAD09 | Matson Ford Road |
-| RDS03 | Milestone 27, Lancaster Turnpike |
-| RDS04 | Milestone 28, Lancaster Turnpike |
-| RDS06 | Conestoga Wagon |
-| RDS06b | Back of RDS06 |
-| RDS07 | Valley Forge interchange, Pennsylvania Turnpike. Same as PTP03 |
-| RDS07b | Back of RDS07 |
-| SWE14 | Junction of Swedesford Road (202) and Old Eagle School Road |
-| VC03 | Valley Creek Road |
-| VC04 | Valley Creek Road |
-| VC05 | View from Valley Creek Road |
-| VC06 | Valley Creek Road |
-| VC15 | Valley Creek Road |
-| VC15b | Back of VC15 |
-| VC16 | Valley Creek Road |
-| VC16b | Back of VC16 |
-| VC28 | Phoenixville Road bridge over Valley Creek |
-| VC29 | Phoenixville Road bridge over Valley Creek |
-| VFP101 | Valley Forge Park Drive (parallel with the entrenchments) |
-| VFP140 | On the Inner Line Boulevard |
-| VFP148 | Boulevard along entrenchments at Valley Forge |
-| VFP44 | Valley Forge Park Road |
-| VFP84 | State Road, Valley Forge |
-| VFP84b | Back of VFP84 |
-| VFP87 | Washington’s Lane, Valley Forge |
-| VFP87b | Back of VFP87 |
-| VFP89 | Boulevard, Valley Forge |
-| VFP89b | Back of VFP89 |
-| VFV30 | State Road crossing Valley Creek |
-| WAB04 | Waterloo Avenue |
-| WAB08 | Waterloo Avenue, Berwyn |
-| WAB09 | Waterloo Avenue, Berwyn |
-| WAB10 | Waterloo Avenue |
-| WAB2 | Waterloo Ave., south from Berwyn Ave |
-| WRD09 | Waterloo Road, Devon |
-| WRD10 | Waterloo Road, Devon |
-| WRD12 | Waterloo Road and Railroad Bridge, Devon, PA |
-| YSR01 | New Road off Yellow Springs Road |
-
-### Service (149)
+### Service (186)
 
 | Archive ID | Title |
 | --- | --- |
@@ -2377,6 +6465,7 @@ Stereocard |
 | BFC14 | Berwyn Fire Company |
 | BFC15 | Berwyn Fire Company |
 | BFC16 | Berwyn Fire Company |
+| BFC17 | Berwyn Fire Company Banner |
 | BFC18 | Berwyn Fire Company Banner |
 | BFC19 | Berwyn Fire Company Station and Equipment |
 | BFC2 | Berwyn Fire Company |
@@ -2402,6 +6491,7 @@ Stereocard |
 | BFC4 | Berwyn Fire Company |
 | BOC01 | Bocce Club, Lehigh Avenue, Devon |
 | BOC02 | Bocce Club, Lehigh Avenue, Devon |
+| CAM01 | Cassatt Mansion House |
 | CUR62 | Continental 1/6 Dollar note, 1776 |
 | CUR63 | New Jersey 1 cent coin, 1786 |
 | CUR64 | Piece of Eight, 19th century |
@@ -2455,6 +6545,35 @@ Stereocard |
 | MJT05 | Observation Tower, Valley Forge |
 | MJT05b | Back of MJT05 |
 | MJT06 | Mt. Joy Observation Tower |
+| MLP42 | Protest against PCB Contamination at Paoli railyard |
+| MLP43 | Protest against PCB Contamination at Paoli railyard |
+| MLP44 | Protest against PCB Contamination at Paoli railyard |
+| MLP45 | Protest against PCB Contamination  at Paoli railyard |
+| MLP46 | Protest against PCB Contamination at Paoli railyard |
+| MLP47 | Protest against PCB Contamination at Paoli railyard |
+| MLP48 | Protest against PCB Contamination at Paoli railyard |
+| MLP49 | Protest against PCB Contamination at Paoli railyard |
+| MLP50 | Protest against PCB Contamination at Paoli railyard |
+| MLP51 | Protest against PCB Contamination at Paoli railyard |
+| MLP52 | Protest against PCB Contamination at Paoli railyard |
+| MLP53 | Protest against PCB Contamination at Paoli railyard |
+| MLP54 | Protest against PCB Contamination at Paoli railyard |
+| MLP55 | Protest against PCB Contamination at Paoli railyard |
+| MLP56 | Protest against PCB Contamination at Paoli railyard |
+| MLP59 | Protest against PCB Contamination at Paoli railyard |
+| MLP61 | Protest against PCB Contamination at Paoli railyard |
+| MLP62 | Protest against PCB Contamination at Paoli railyard |
+| MLP63 | Protest against PCB Contamination at Paoli railyard |
+| MLP64 | Protest against PCB Contamination at Paoli railyard |
+| MLP65 | Protest against PCB Contamination at Paoli railyard |
+| MLP66 | Protest against PCB Contamination at Paoli railyard |
+| MLP67 | Protest against PCB Contamination at Paoli railyard |
+| MLP68 | Protest against PCB Contamination at Paoli railyard |
+| MLP69 | Protest against PCB Contamination at Paoli railyard |
+| MLP70 | Protest against PCB Contamination at Paoli railyard |
+| MLP71 | Protest against PCB Contamination at Paoli railyard |
+| MLP72 | Protest against PCB Contamination at Paoli railyard |
+| MLP73 | Protest against PCB Contamination at Paoli railyard |
 | OLA116 | Chester County Hospital |
 | OLA116b | Back of OLA116 |
 | OLA117 | Chester County Courthouse, West Chester |
@@ -2462,10 +6581,15 @@ Stereocard |
 | OLA127 | Public Library, Downingtown |
 | OLA148 | Courthouse, Lancaster |
 | OLA149 | Founders Hall, Haverford College |
+| OLA168 | City Hall, Lancaster |
+| OLA208b | Back of OLA208 |
 | OLA209 | Old Country Store Museum |
+| OLA209b | Back of OLA209 |
 | OLA210 | Old Country Store Museum |
 | OLA210b | Back of OLA210 |
 | OLA211 | Old Toy Display in Country Store Museum |
+| OLA211b | Back of OLA211 |
+| OLA212 | Old Country Store Museum |
 | OLA212b | Back of OLA212 |
 | ORG04 | Movie, Paoli Girl Scouts |
 | ORG3 | Strafford Fife & Drum Corps |
@@ -2485,6 +6609,7 @@ Stereocard |
 | PLI03 | Old library building seen from the back of the bank. |
 | RCR05 | Red Cross Building, Berwyn |
 | RCR06 | Renovations of the Red Cross Building, Berwyn |
+| RCR07 | Renovations of the Red Cross Building, Berwyn |
 | RCR08 | American Red Cross -  Paoli / Wayne Branch |
 | RCR1 | Red Cross |
 | RCR2 | Red Cross Building |
@@ -2508,6 +6633,182 @@ Stereocard |
 | TEH63 | Program, Independence Day Rally, 7/4/1917 |
 | TRE2 | Tredyffrin Township Building, Berwyn |
 | VFP36 | St. Gabriel's Hall |
+
+### Road (171)
+
+| Archive ID | Title |
+| --- | --- |
+| BAV05 | Berwyn Avenue |
+| BAV06 | Berwyn Avenue |
+| BAV07 | Berwyn Avenue |
+| BCA01 | Church Ave, south from Lancaster Ave, Berwyn, |
+| BCA02 | Church Avenue, Berwyn |
+| BCA03 | Church Avenue, Berwyn |
+| BE182 | Upper Bridge, Berwyn |
+| BE184 | Kromer Road, Wayne |
+| BE185 | Kromer Road, Wayne |
+| BE186 | Kromer Road, Wayne |
+| BE226 | Warren Avenue, Berwyn |
+| BE87 | Route 30, Berwyn |
+| BRI02 | Cedar Hollow Bridge over Valley Creek, #171; east side looking west |
+| BRI03 | Cedar Hollow Bridge over Valley Creek, #171; west side looking east |
+| BRI04 | Cedar Hollow Bridge over Valley Creek, #171; plaque |
+| BRI05 | Cedar Hollow Bridge over Valley Creek, #171; looking south over Valley Creek |
+| BRI06 | Cedar Hollow Bridge over Valley Creek, #171; looking north over Valley Creek |
+| CAA08 | Cassatt Avenue Bridge, Berwyn |
+| CAA09 | Cassatt Avenue Bridge, Berwyn |
+| CAA10 | Cassatt Avenue Bridge, Berwyn |
+| CAA11 | Cassatt Avenue Bridge, Berwyn |
+| CAA12 | Cassatt Avenue Bridge, Berwyn |
+| CAA3 | Cassatt Avenue, Berwyn |
+| CMR07 | Early Traffic Lights in Tredyffrin township |
+| DEV25 | Lancaster Avenue, Devon |
+| DEV30 | A view on Lancaster Pike towards the Wynburne Inn |
+| EW03 | Route 202 north |
+| FAB03 | First Avenue, Berwyn |
+| GHF60 | Road Alignments, Glenhardie Farms |
+| KCB14 | Knox Covered Bridge |
+| KCB32 | Knox Covered Bridge |
+| KCB33 | Knox Covered Bridge under repair |
+| KCB34 | Knox Covered Bridge under repair |
+| KCB35 | Knox Covered Bridge under repair |
+| KCB36 | Knox Covered Bridge |
+| KCB37 | Knox Covered Bridge |
+| KCB38 | Knox Covered Bridge |
+| KCB38b | Back of KCB38 |
+| KCB39 | Knox Covered Bridge |
+| KCB39b | Back of KCB39 |
+| KCB40 | Knox Covered Bridge |
+| KCB40b | Back of KCB40 |
+| KCB41 | Knox Covered Bridge |
+| KCB41b | Back of KCB41 |
+| KCB42 | Knox Covered Bridge |
+| KCB42b | Back of KCB42 |
+| KCB43 | Knox’s Covered Bridge |
+| KCB44 | Knox Covered Bridge |
+| KCB46 | Knox Covered Bridge |
+| KCB47 | Knox Covered Bridge |
+| KCB48 | Knox Covered Bridge |
+| KCB49 | Knox Covered Bridge |
+| KCB50 | Knox Covered Bridge |
+| KCB52 | Knox Covered Bridge |
+| KCB53 | Knox Covered Bridge |
+| KCB54 | Knox Covered Bridge |
+| KCB55 | Knox Covered Bridge |
+| KCB56 | Knox Covered Bridge |
+| KCB57 | Knox Covered Bridge |
+| KCB58 | Knox Covered Bridge |
+| KCB59 | Knox Covered Bridge |
+| KCB60 | Knox Covered Bridge |
+| KCB61 | Knox Covered Bridge |
+| KOP04 | King of Prussia Road, Radnor |
+| LAB10 | Lancaster Pike toll gate, Berwyn, 1887 |
+| LAB18 | Lancaster Avenue, Berwyn |
+| LAB70 | Lancaster Avenue, Berwyn |
+| LAB71 | Berwyn Shopping Center, Lancaster Avenue |
+| LAB72 | Lancaster Avenue, Berwyn |
+| LAB73 | Lancaster Avenue, Berwyn |
+| LAB74 | Lancaster Avenue, Berwyn |
+| LAB75 | Lancaster Avenue and Conestoga Road, Strafford |
+| LAB76 | Lancaster Avenue, Strafford |
+| LAB80 | Lancaster Avenue, Berwyn |
+| LAB83 | Unknown Building, Lancaster Avenue, Berwyn |
+| LTP01 | Lancaster Turnpike Milestone 16 |
+| LTP02 | Milestone 15, Lancaster Turnpike |
+| MAB02 | Main Avenue, Berwyn |
+| MAB03 | Main Avenue, Berwyn |
+| MAB04 | Main Avenue, Berwyn |
+| MAB05 | Main Avenue, Berwyn |
+| MAL15 | Malvern underpass |
+| MAL16 | Malvern, route 30 |
+| NCE10 | Baptist Road looking north |
+| NCE11 | Baptist Road looking north |
+| NVR07 | North Valley Road and route 202 |
+| NVR08 | North Valley Road and route 202 |
+| OLA09 | Hanging Rock, Gulph Road |
+| OLA10 | Monument at Gulph Mills |
+| OLA100 | Rosedale Avenue,  West Chester |
+| OLA100b | Back of OLA100 |
+| OLA107 | West Market Street, West Chester |
+| OLA107b | Back of OLA107 |
+| OLA113 | West Market Street, West Chester |
+| OLA113b | Back of OLA113 |
+| OLA118 | Toll Gate, Lancaster Turnpike, near Downingtown |
+| OLA118b | Back of OLA118 |
+| OLA126 | Route 100 north |
+| OLA128 | Toll House, Glen Loch |
+| OLA129 | Stone Bridge across East Brandywine Creek |
+| OLA133 | Toll House Gate, St Davids |
+| OLA147 | Eastern approach to Conestoga Bridge |
+| OLA155 | Witmer’s Bridge |
+| OLA175 | Toll House, Glen Loch |
+| OLA229 | Toll Gate between Gardenville and Point Pleasant |
+| OLA66 | Covered Bridge |
+| OLA67 | Covered Bridge |
+| PA127 | Traffic Accident Routes 30 and 252 |
+| PA128 | Traffic Accident routes 30 and 252 |
+| PA130 | Traffic Accident routes 30 and 252 |
+| PA131 | Traffic Accident routes 30 and 252 |
+| PA132 | Traffic Accident routes 30 and 252 |
+| PA133 | Traffic Accident routes 30 and 252 |
+| PA134 | Traffic Accident routes 30 and 252 |
+| PA135 | Traffic Accident routes 30 and 252 |
+| PA136 | Traffic Accident routes 30 and 252 |
+| PA137 | Traffic Accident routes 30 and 252 |
+| PA184 | South Valley Road, Paoli looking north |
+| PA185 | South Valley Road, Paoli looking north |
+| PA29 | Valley Road, Paoli |
+| PA31 | Route 252, Paoli |
+| PA36 | Toll Gate House |
+| PA57 | Lovers Lane, Paoli |
+| PA58 | Prominent fork of Roads |
+| PTP01 | Schuylkill Interchange, Pennsylvania Turnpike |
+| PTP01b | Back of PTP01 |
+| PTP02 | King of Prussia Interchange |
+| PTP02b | Back of PTP02 |
+| PTP04 | Valley Forge Toll Gate, PA Turnpike |
+| RAD07 | King of Prussia Road |
+| RAD08 | King of Prussia Road |
+| RAD09 | Matson Ford Road |
+| RDS03 | Milestone 27, Lancaster Turnpike |
+| RDS04 | Milestone 28, Lancaster Turnpike |
+| RDS05 | Route 202 looking west from Swedesford Road |
+| RDS06 | Conestoga Wagon |
+| RDS06b | Back of RDS06 |
+| RDS07 | Valley Forge interchange, Pennsylvania Turnpike. Same as PTP03 |
+| RDS07b | Back of RDS07 |
+| SWE14 | Junction of Swedesford Road (202) and Old Eagle School Road |
+| SWE15 | Junction of Swedesford Road (202) and Old Eagle School Road |
+| VC03 | Valley Creek Road |
+| VC04 | Valley Creek Road |
+| VC05 | View from Valley Creek Road |
+| VC06 | Valley Creek Road |
+| VC15 | Valley Creek Road |
+| VC15b | Back of VC15 |
+| VC16 | Valley Creek Road |
+| VC16b | Back of VC16 |
+| VC28 | Phoenixville Road bridge over Valley Creek |
+| VC29 | Phoenixville Road bridge over Valley Creek |
+| VFP101 | Valley Forge Park Drive (parallel with the entrenchments) |
+| VFP140 | On the Inner Line Boulevard |
+| VFP148 | Boulevard along entrenchments at Valley Forge |
+| VFP44 | Valley Forge Park Road |
+| VFP84 | State Road, Valley Forge |
+| VFP84b | Back of VFP84 |
+| VFP87 | Washington’s Lane, Valley Forge |
+| VFP87b | Back of VFP87 |
+| VFP89 | Boulevard, Valley Forge |
+| VFP89b | Back of VFP89 |
+| VFV30 | State Road crossing Valley Creek |
+| WAB04 | Waterloo Avenue |
+| WAB08 | Waterloo Avenue, Berwyn |
+| WAB09 | Waterloo Avenue, Berwyn |
+| WAB10 | Waterloo Avenue |
+| WAB2 | Waterloo Ave., south from Berwyn Ave |
+| WRD09 | Waterloo Road, Devon |
+| WRD10 | Waterloo Road, Devon |
+| WRD12 | Waterloo Road and Railroad Bridge, Devon, PA |
+| YSR01 | New Road off Yellow Springs Road |
 
 ### Sports (22)
 
@@ -2552,10 +6853,11 @@ Stereocard |
 | PA202 | Photographers, Lancaster Avenue, Paoli |
 | PA203 | Cleared site, Photographer |
 
-### People (10)
+### People (11)
 
 | Archive ID | Title |
 | --- | --- |
+| SBC01 | Wanda Stanber, hostess, at lunch party |
 | SBC02 | Wanda Stanber(?) lunch party |
 | SBC03 | Wanda Stanber(?) lunch party |
 | SBC04 | Jean Dinwoodie at Wanda Stanber(?) lunch party |
@@ -2614,7 +6916,7 @@ Stereocard |
 | WRB04 | Wilson Road Bridge over unnamed tributary of Valley Creek |
 | WRB05 | Wilson Road Bridge over unnamed tributary of Valley Creek |
 
-### Mainline airport (5)
+### Mainline Airport (5)
 
 | Archive ID | Title |
 | --- | --- |
@@ -2652,14 +6954,6 @@ Stereocard |
 | CHE62 | Chesterbrook Farm |
 | CHE63 | Chesterbrook Farm |
 | CHE64 | Chesterbrook Farm |
-
-### Cultural (3)
-
-| Archive ID | Title |
-| --- | --- |
-| DTA121 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA122 | Devon Horse Show and Country Fair (DHSCF) |
-| DTA123 | Devon Horse Show and Country Fair (DHSCF) |
 
 ### Devon (3)
 
@@ -2728,6 +7022,12 @@ Stereocard |
 | Archive ID | Title |
 | --- | --- |
 | PEO146 | William Keeley Acker Gravestone |
+
+### House (1)
+
+| Archive ID | Title |
+| --- | --- |
+| CHE13 | Lee-Bradford Quarters |
 
 ### Lancaster Pike (1)
 
@@ -3006,11 +7306,17 @@ Stereocard |
 | UFG33 | Upper Forge Waterwheel |
 | VC14b | Back of VC14 |
 
+### donation:208 (1)
+
+| Archive ID | Title |
+| --- | --- |
+| VFP167 | Color postcard Greetings From Valley Forge, PA; NPS image no. VAFO 62749; VF 64; 7a_H2305 |
+
 ## Location text (not auto-linked)
 
 `photoLocation` is stored on the CSV only. Match these to a Specific Location in Studio later; the importer does not set `historicalImage.location`.
 
-### Berwyn (573)
+### Berwyn (596)
 
 | Archive ID | Title |
 | --- | --- |
@@ -3084,7 +7390,18 @@ Stereocard |
 | BE42 | Berwyn War Memorial |
 | BE43 | Lincoln Highway, Berwyn |
 | BE44 | Berwyn Panorama |
+| BE45 | Sewer work on Conestoga Road, Berwyn |
+| BE46 | Sewer work on Conestoga Road, Berwyn |
+| BE47 | Conestoga Road, Berwyn before sewer work |
+| BE48 | Conestoga Road, Berwyn before sewer work |
+| BE49 | Sewer work on Conestoga Road, Berwyn |
 | BE5 | Berwyn Pharmacy |
+| BE50 | Sewer work on Conestoga Road, Berwyn |
+| BE51 | Sewer work on Conestoga Road, Berwyn |
+| BE52 | Sewer work on Conestoga Road, Berwyn |
+| BE53 | Sewer work on Conestoga Road, Berwyn |
+| BE54 | Sewer work on Conestoga Road, Berwyn |
+| BE55 | Conestoga Road, Berwyn before sewer work |
 | BE56 | Berwyn from Main Line Apartments |
 | BE57 | Lincoln Highway, Berwyn |
 | BE58 | Lincoln Highway, Berwyn |
@@ -3157,6 +7474,7 @@ Stereocard |
 | BFC14 | Berwyn Fire Company |
 | BFC15 | Berwyn Fire Company |
 | BFC16 | Berwyn Fire Company |
+| BFC17 | Berwyn Fire Company Banner |
 | BFC18 | Berwyn Fire Company Banner |
 | BFC19 | Berwyn Fire Company Station and Equipment |
 | BFC2 | Berwyn Fire Company |
@@ -3267,6 +7585,7 @@ Stereocard |
 | ETS02 | Easttown School |
 | ETS03 | Easttown High School |
 | ETS04 | Easttown School |
+| ETS13 | Grammar School, Berwyn |
 | FBB1 | First  Baptist Church, Berwyn |
 | FBB10 | Rev. Wiley |
 | FBB15 | First Baptist Church, Berwyn, PA |
@@ -3375,6 +7694,7 @@ Stereocard |
 | LAB104 | Clean Up, Lancaster Avenue, Berwyn |
 | LAB88 | St Jude’s Thrift Shop |
 | LAB89 | Berwyn - Lancaster and Cassatt Avenues, snow scene looking east |
+| LAB90 | Berwyn - Lancaster and Cassatt Avenues, snow scene looking west |
 | LAB91 | Clean Up, Lancaster Avenue, Berwyn |
 | LAB92 | Clean Up, Lancaster Avenue, Berwyn |
 | LAB93 | Clean Up, Lancaster Avenue, Berwyn |
@@ -3409,6 +7729,7 @@ Stereocard |
 | LAS9 | Main Porch at Latshaw School |
 | LCH09 | Latch family |
 | LFM02 | Lancaster County Farmer’s Market |
+| LOH03 | Montebello (Lobb house) |
 | LTP01 | Lancaster Turnpike Milestone 16 |
 | LTP02 | Milestone 15, Lancaster Turnpike |
 | MAB04 | Main Avenue, Berwyn |
@@ -3467,6 +7788,7 @@ Stereocard |
 | RBE1 | Berwyn Station |
 | RBE10 | View of tracks from Berwyn Station Bridge looking west |
 | RBE12 | Pennsylvania Railroad station in Berwyn, Summer 1888 |
+| RBE21 | Berwyn Railroad Station |
 | RBE27 | Berwyn Station |
 | RBE28 | Berwyn Station |
 | RBE29 | Berwyn Station |
@@ -3475,7 +7797,14 @@ Stereocard |
 | RBE32 | Berwyn Station |
 | RBE33 | Coal Elevator, Berwyn |
 | RBE34 | Berwyn Station |
+| RBE35 | Railroad views at Berwyn |
+| RBE36 | Railroad views at Berwyn |
+| RBE38 | Railroad views at Berwyn |
 | RBE4 | View from railroad bridge, Berwyn |
+| RBE42 | Railroad views at Berwyn |
+| RBE43 | Railroad views at Berwyn |
+| RBE44 | Railroad views at Berwyn |
+| RBE45 | Railroad views at Berwyn |
 | RBE47 | Lancaster Turnpike and Switch Tower, Berwyn, PA |
 | RBE48 | Penna. Depot, Berwyn, PA |
 | RBE5 | View from railroad bridge, Berwyn |
@@ -3588,7 +7917,440 @@ Stereocard |
 | WCF1 | Horse on William M. Coates farm |
 | WCF2 | William M. Coates Farm |
 
-### Tredyffrin Easttown Historical Society Archives (399)
+### Paoli (428)
+
+| Archive ID | Title |
+| --- | --- |
+| ALL01 | Alleva’s Coal, Feed, and Lumber Store and John Alleva |
+| ALL05 | Alleva’s Coal, Feed, and Lumber Store and John Alleva |
+| ALL06 | John Alleva at Alleva’s Store |
+| ALL07 | John Alleva at Alleva’s Store |
+| ALL08 | John Alleva at Alleva’s Store |
+| ALL09 | John Alleva at Alleva’s Store |
+| ALL10 | John Alleva at Alleva’s Store |
+| ALL11 | John Alleva at Alleva’s Store |
+| ALL12 | Alleva’s Coal, Feed, and Lumber Store |
+| AS10 | Paoli Store & Toll House |
+| AS11 | Dr. Edward Van Dyke Residence |
+| AS12 | Routes 30 & 252, Paoli |
+| AS13 | Locomotive |
+| AS15 | Dr. Edward Van Dyke Residence |
+| AS16 | Dr. Edward Van Dyke Residence |
+| AS17 | Dr. Edward Van Dyke Residence |
+| AS18 | Dr. Edward Van Dyke Residence |
+| AS2 | Dingee Estate Barn |
+| AS3 | John Dingee House, 'Fennerton' |
+| AS4 | Dewees and Bracken Coal and Lumber Company |
+| AS6 | General Paoli Inn |
+| AS7 | Paoli Red Cross |
+| AS8 | Paoli Signal Box |
+| AS9 | Paoli Station |
+| BBU1 | Burroughs Facility |
+| BBU2 | Entrance to Burroughs Research Center |
+| BEP45 | Aerial Photograph of Paoli |
+| BEP66 | The Paoli Local at its home base |
+| BEP68 | Paoli Bank and Firehouse |
+| BEP69 | Paoli Honor Roll |
+| BP1 | Liberty Bell on its way to California |
+| BUS13 | Scofield's Store, Paoli |
+| BUS14 | Scofield's Store, Paoli |
+| BUS2 | Ralph Edwards Garage (also known as Ottey's garage), Lancaster Avenue, Paoli |
+| BUS3 | Cilley Shop |
+| BUS4 | Toll Gate House |
+| CGS01 | Church of the Good Samaritan on Lancaster Pike, Paoli, 1888 |
+| CGS03 | Church of the Good Samaritan |
+| CGS04 | Church of the Good Samaritan |
+| CGS05 | Church of the Good Samaritan, Paoli |
+| CGS06 | Good Samaritan Church |
+| CGS07 | Good Samaritan Church |
+| CGS08 | Good Samaritan Church |
+| CGS09 | Good Samaritan Church |
+| CGS10 | Good Samaritan Church |
+| CGS11 | Good Samaritan Church |
+| CGS12 | Good Samaritan Church |
+| CGS13 | Good Samaritan Church |
+| CGS14 | Good Samaritan Church |
+| CGS15 | Good Samaritan Church |
+| CGS16 | Good Samaritan Church |
+| CGS17 | Good Samaritan Church |
+| CH18 | First Presbyterian Church, Paoli |
+| CH19 | First Presbyterian Church, Paoli |
+| CH7 | Presbyterian Church, Paoli |
+| CH8 | Church of the Good Samaritan |
+| CH9 | Church of the Good Samaritan |
+| CMR01 | W. T. Comer’s Haberdashery Store |
+| CMR02 | W. T. Comer’s Haberdashery Store |
+| CMR03 | W. T. Comer’s Haberdashery Store |
+| DE1 | Dingee Estate Barn |
+| DE2 | Dingee Estate Barn |
+| DE3 | Shepherd on Dingee Estate |
+| DE4 | Dingee Farm |
+| DE5 | Dingee Cow Barn |
+| DE6 | Dingee Barn |
+| DE7 | John Dingee House, 'Fennerton' |
+| DE8 | Old Barn, Paoli |
+| DE9 | Barn House, Paoli |
+| EHC19 | Tredyffrin Easttown History Club Members |
+| FPC32 | First Presbyterian Church, Paoli |
+| FPC33 | Paoli Library Move |
+| FPC34 | Paoli Library Move |
+| FPC35 | Paoli Library Move |
+| FPC36 | Paoli Library Move |
+| FPC37 | Paoli Library Move |
+| FPC38 | Paoli Library Move |
+| FPC39 | Paoli Library Move |
+| FPC40 | Paoli Library Move |
+| FPC41 | Paoli Library Move |
+| FPC42 | Paoli Library Move |
+| FPC43 | Paoli Library Move |
+| FPC44 | Paoli Library Move |
+| FPC45 | Paoli Library Move |
+| FPC46 | Paoli Library Move |
+| FPC47 | Paoli Library Move |
+| FPC48 | Paoli Library Move |
+| FPC49 | Paoli Library Move |
+| FPC50 | Paoli Library Move |
+| FPC51 | Paoli Library Move |
+| FPC52 | Paoli Library Move |
+| FPC53 | Paoli Library Move |
+| FPC54 | Paoli Library Move |
+| FPC55 | Paoli Library Move |
+| FPC56 | Paoli Library Move |
+| FPC57 | Paoli Library Move |
+| FPC58 | Paoli Library Move |
+| FPC59 | Paoli Library Move |
+| FPC60 | Paoli Library Move |
+| FPC61 | Paoli Library Move |
+| FPC62 | Paoli Library Move |
+| FPC63 | Paoli Library Move |
+| FPC64 | Paoli Library Move |
+| FPC65 | Paoli Library Move |
+| FPC66 | Paoli Library Move |
+| FPC67 | Paoli Library Move |
+| FPC68 | Paoli Library Move |
+| GJI09 | General Jackson Inn |
+| GJI10 | Windmill Tea Room |
+| GJI2 | Espenshade's Wayside Inn |
+| GJI3 | General Jackson Inn |
+| GJI5 | The General Jackson Inn near Mile Post 18, Paoli, 1888 |
+| GPI01 | General Paoli Inn |
+| GPI02 | General Paoli Inn |
+| GPI03 | Paoli Inn looking NE - 1888 |
+| GPI04 | Paoli (Inn) from the west, 1888 |
+| HIG02 | Higgins Bakery |
+| HIG04 | Higgins Bakery |
+| HIG08 | Higgins Bakery |
+| HIG09 | Higgins Bakery |
+| HLC2 | Neilly Log Cabin |
+| HOU238 | Residence of William W. Hoopes |
+| HOU239 | Residence of George R. Sinnickson |
+| HOU257 | F. H. Galloney house, Paoli |
+| HOU258 | H. W. Biddle house, Paoli |
+| HOU48 | Commercial Building, Lincoln Highway, Paoli |
+| IT1 | Ruins of Paoli Inn |
+| IT2 | Windmill Tea Rooms |
+| IT30 | Paoli Manor Inn |
+| MF59 | Matthews Ford’s Gulf Gas Station |
+| MF60 | Matthews Ford employees at Gulf Station |
+| MF61 | Matthews Ford Showroom |
+| MF62 | Matthews Ford Company Picnic |
+| MF62b | Back of MF62 |
+| MLP1 | Paoli Station |
+| MLP100 | Paoli - looking west from station |
+| MLP101 | Paoli - looking west |
+| MLP2 | Paoli Station |
+| MLP3 | Paoli Station |
+| MLP39 | Pennsylvania Railroad Bridge, Paoli |
+| MLP4 | Paoli Station |
+| MLP40 | Paoli Station |
+| MLP41 | Paoli Station |
+| MLP42 | Protest against PCB Contamination at Paoli railyard |
+| MLP43 | Protest against PCB Contamination at Paoli railyard |
+| MLP44 | Protest against PCB Contamination at Paoli railyard |
+| MLP45 | Protest against PCB Contamination  at Paoli railyard |
+| MLP46 | Protest against PCB Contamination at Paoli railyard |
+| MLP47 | Protest against PCB Contamination at Paoli railyard |
+| MLP48 | Protest against PCB Contamination at Paoli railyard |
+| MLP49 | Protest against PCB Contamination at Paoli railyard |
+| MLP5 | Cut Under, Paoli |
+| MLP50 | Protest against PCB Contamination at Paoli railyard |
+| MLP51 | Protest against PCB Contamination at Paoli railyard |
+| MLP52 | Protest against PCB Contamination at Paoli railyard |
+| MLP53 | Protest against PCB Contamination at Paoli railyard |
+| MLP54 | Protest against PCB Contamination at Paoli railyard |
+| MLP55 | Protest against PCB Contamination at Paoli railyard |
+| MLP56 | Protest against PCB Contamination at Paoli railyard |
+| MLP59 | Protest against PCB Contamination at Paoli railyard |
+| MLP6 | Canal Collector’s Office, Lancaster Pike & Valley Roads, Paoli, 1888 |
+| MLP61 | Protest against PCB Contamination at Paoli railyard |
+| MLP62 | Protest against PCB Contamination at Paoli railyard |
+| MLP63 | Protest against PCB Contamination at Paoli railyard |
+| MLP64 | Protest against PCB Contamination at Paoli railyard |
+| MLP65 | Protest against PCB Contamination at Paoli railyard |
+| MLP66 | Protest against PCB Contamination at Paoli railyard |
+| MLP67 | Protest against PCB Contamination at Paoli railyard |
+| MLP68 | Protest against PCB Contamination at Paoli railyard |
+| MLP69 | Protest against PCB Contamination at Paoli railyard |
+| MLP70 | Protest against PCB Contamination at Paoli railyard |
+| MLP71 | Protest against PCB Contamination at Paoli railyard |
+| MLP72 | Protest against PCB Contamination at Paoli railyard |
+| MLP73 | Protest against PCB Contamination at Paoli railyard |
+| MLP74 | Paoli Railyard |
+| MLP75 | Paoli Railyard |
+| MLP76 | Paoli Railyard |
+| MLP77 | Paoli Railyard |
+| MLP78 | Paoli Railyard |
+| MLP79 | Paoli Railyard |
+| MLP80 | Paoli Railyard |
+| MLP81 | Paoli Railyard |
+| MLP82 | Paoli Railyard |
+| MLP83 | Paoli Railyard |
+| MLP84 | Paoli Railyard |
+| MLP85 | Paoli Railyard |
+| MLP86 | Paoli Railyard |
+| MLP87 | Paoli Railyard |
+| MLP88 | Paoli Railyard |
+| MLP89 | Paoli Railyard |
+| MLP90 | Paoli Railyard |
+| MLP91 | Paoli Railyard |
+| MLP92 | Paoli Railyard |
+| MLP93 | Paoli Railyard |
+| MLP94 | Paoli Railyard |
+| MLP95 | Paoli Railyard |
+| MLP96 | Paoli Railyard |
+| MLP97 | Paoli Railyard |
+| MLP98 | Paoli - looking east from station |
+| MLP99 | Paoli Substation |
+| PA1 | Anna Thomas, Ladies Taylor |
+| PA10 | Carriage |
+| PA100 | Paoli Parade |
+| PA101 | Paoli Parade |
+| PA102 | Paoli Parade |
+| PA103 | Paoli Parade |
+| PA104 | Paoli Parade |
+| PA105 | Paoli Parade |
+| PA106 | Paoli Parade |
+| PA107 | Paoli Parade |
+| PA108 | Paoli Parade |
+| PA109 | Paoli Parade |
+| PA11 | Paoli Diner |
+| PA110 | Paoli Parade |
+| PA111 | Paoli Parade |
+| PA112 | Paoli Parade |
+| PA113 | Paoli Parade |
+| PA114 | Paoli Parade |
+| PA115 | Paoli Parade |
+| PA116 | Paoli Parade |
+| PA117 | Paoli Parade |
+| PA118 | Paoli Parade |
+| PA119 | Paoli Parade |
+| PA12 | Paoli Firehouse |
+| PA120 | Paoli Parade - Paoli Fire Company |
+| PA121 | Paoli Parade |
+| PA122 | Paoli Parade |
+| PA123 | Paoli Parade- Malvern Fire Company |
+| PA124 | Paoli Parade - Malvern Fire Company |
+| PA125 | Paoli Parade |
+| PA126 | Paoli Parade |
+| PA127 | Traffic Accident Routes 30 and 252 |
+| PA128 | Traffic Accident routes 30 and 252 |
+| PA129 | Traffic Accident routes 30 and 252 |
+| PA13 | Five of the 'Seven Stars' Houses |
+| PA130 | Traffic Accident routes 30 and 252 |
+| PA131 | Traffic Accident routes 30 and 252 |
+| PA132 | Traffic Accident routes 30 and 252 |
+| PA133 | Traffic Accident routes 30 and 252 |
+| PA134 | Traffic Accident routes 30 and 252 |
+| PA135 | Traffic Accident routes 30 and 252 |
+| PA136 | Traffic Accident routes 30 and 252 |
+| PA137 | Traffic Accident routes 30 and 252 |
+| PA138 | Lancaster Avenue, Paoli |
+| PA139 | Lancaster Avenue, Paoli |
+| PA14 | Lincoln Highway, Paoli |
+| PA140 | Lancaster Avenue, Paoli |
+| PA141 | Lancaster Avenue, Paoli |
+| PA142 | Lancaster and S. Valley Road, Paoli |
+| PA144 | Lancaster and S. Valley Road, Paoli |
+| PA146 | Lancaster and S. Valley Road, Paoli |
+| PA148 | Builders Yard, Paoli |
+| PA149 | Builders Yard, Paoli |
+| PA15 | Supplee Hardware Store |
+| PA150 | Builders Yard, Paoli |
+| PA151 | House Fire near Paoli |
+| PA153 | House Fire near Paoli |
+| PA154 | House Fire near Paoli |
+| PA155 | House Fire near Paoli |
+| PA156 | House Fire near Paoli |
+| PA157 | House Fire near Paoli |
+| PA158 | House Fire near Paoli |
+| PA159 | House Fire near Paoli |
+| PA160 | House Fire near Paoli |
+| PA161 | House Fire near Paoli |
+| PA162 | House Fire near Paoli |
+| PA163 | House Fire near Paoli |
+| PA164 | House Fire near Paoli |
+| PA166 | House Fire near Paoli |
+| PA167 | House Fire near Paoli |
+| PA168 | House Fire near Paoli |
+| PA169 | House Fire near Paoli |
+| PA17 | George Williams in his drug store |
+| PA170 | House Fire near Paoli |
+| PA171 | House Fire near Paoli |
+| PA172 | House Fire near Paoli |
+| PA173 | Paoli - looking towards 30 and 252 junction |
+| PA174 | Lancaster Avenue, Paoli |
+| PA175 | Construction of Paoli Library building |
+| PA177 | Construction of Paoli Library building |
+| PA179 | Construction of Paoli Library building |
+| PA181 | Lancaster Avenue, Paoli |
+| PA182 | Paoli Building site |
+| PA184 | South Valley Road, Paoli looking north |
+| PA185 | South Valley Road, Paoli looking north |
+| PA187 | Paoli News Agency |
+| PA188 | Front of Paoli Hardware Store |
+| PA189 | Paoli Hardware Store - Greg and Steve |
+| PA190 | Paoli Hardware Store - everything must go |
+| PA191 | Paoli Hardware Store - all sales final |
+| PA192 | Paoli Hardware Store - 1946 Painting |
+| PA193 | Paoli Hardware Store - Greg |
+| PA195 | Paoli Plaza |
+| PA196 | Paoli Station Parking Area and Lancaster Avenue |
+| PA197 | Paoli Plaza |
+| PA198 | Paoli Station area |
+| PA199 | Paoli Plaza |
+| PA2 | Paoli Hardware Store |
+| PA200 | Paoli Station Parking Area |
+| PA201 | Paoli Plaza |
+| PA23 | Pasquale Paoli Day |
+| PA24 | North Valley Road, Paoli |
+| PA25 | View of Paoli |
+| PA26 | Giantonio Real Estate |
+| PA27 | Paoli Fire House |
+| PA28 | Paoli (Inn) Blacksmith & Wheelwright shop, west of Inn, 1888 |
+| PA3 | Paoli Hardware Store |
+| PA33 | Paoli Fire Company |
+| PA36 | Toll Gate House |
+| PA4 | Windmill Tea Room |
+| PA55 | Lancaster Avenue in Paoli around 1935 |
+| PA57 | Lovers Lane, Paoli |
+| PA58 | Prominent fork of Roads |
+| PA59 | Paoli War Memorial dedication |
+| PA60 | Paoli War Memorial dedication |
+| PA61 | Paoli War Memorial dedication |
+| PA62 | Paoli War Memorial dedication |
+| PA63 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA64 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA65 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA66 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA67 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA68 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA69 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA7 | Lincoln Highway, Paoli |
+| PA70 | Richard Nixon campaign rally at the old Paoli Shopping Center |
+| PA71 | Paoli Parade - Radnor Fire Company |
+| PA72 | Paoli Parade - Goshen Fire Company |
+| PA73 | Paoli Parade - East Whiteland Township Volunteer Fire Association |
+| PA74 | Paoli Parade - East Whiteland Township Volunteer Fire Association |
+| PA75 | Paoli Parade |
+| PA76 | Paoli Parade |
+| PA77 | Paoli Parade |
+| PA78 | Paoli Parade |
+| PA79 | Paoli Parade |
+| PA8 | Paoli Buckboard |
+| PA80 | Paoli Parade - King of Prussia Fire Company |
+| PA81 | Paoli Parade |
+| PA82 | Paoli Parade - Kook Hill, North Hills, PA |
+| PA83 | Paoli Parade |
+| PA84 | Paoli Parade |
+| PA85 | Paoli Parade - Good Will Fire Company #2, West Chester |
+| PA86 | Paoli Parade |
+| PA87 | Paoli Parade |
+| PA88 | Paoli Parade- Swedesburg Volunteer Fire Company, Upper Merion Township |
+| PA89 | Paoli Parade |
+| PA90 | Paoli Parade |
+| PA91 | Paoli Parade |
+| PA92 | Paoli Parade - Flame Busters |
+| PA93 | Paoli Parade |
+| PA94 | Paoli Parade |
+| PA95 | Paoli Parade- Balloon Seller |
+| PA96 | Paoli Parade - Balloon Seller |
+| PA97 | Paoli Parade |
+| PA98 | Paoli Parade |
+| PA99 | Paoli Parade |
+| PAC01 | Rear of Paoli Corner, routes 30 & 252 |
+| PAC02 | Rear of Paoli Corner, routes 30 & 252 |
+| PAC03 | Front of Paoli Corner, routes 30 & 252 |
+| PAC04 | Rear of Paoli Corner, routes 30 & 252 |
+| PAC05 | Rear of Paoli Corner, routes 30 & 252 |
+| PAS07 | Paoli School |
+| PAS1 | Paoli School |
+| PAS12 | Paoli School |
+| PAS12b | Back of PAS12 |
+| PAS2 | Paoli School |
+| PAS5 | Paoli Grammar School |
+| PAS6 | Paoli High School |
+| PEO6 | Six People |
+| PEO8 | Emily Patterson & Florence Glissen |
+| PEO86 | Paoli Grammar School class of 1919 |
+| PEO9 | Emily Patterson & Florence Glissen |
+| PEO95 | Paoli School pupils and teachers |
+| PEO96 | Paoli Grammar School |
+| PFC01 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC02 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC03 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC04 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC05 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC06 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC07 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC08 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC09 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC10 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC11 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC12 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC13 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC14 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC15 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC16 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC17 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC18 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC19 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC20 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC21 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC22 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC23 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC24 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC25 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC26 | 1949 Paoli Fire Company 40th anniversary parade |
+| PFC27 | 1949 Paoli Fire Company 40th anniversary parade |
+| PLI01 | Paoli Library |
+| PLI03 | Old library building seen from the back of the bank. |
+| PP1 | Paoli Post Office |
+| PP2 | Paoli Post Office |
+| PP4 | Paoli Post Office |
+| PPO1 | Route 30 West, Paoli |
+| PPO10 | Paoli Grammar School |
+| PPO11 | Tredyffrin Township Grammar School |
+| PPO12 | Paoli Inn |
+| PPO14 | Windmill Tea Room (interior) |
+| PPO15 | Windmill Tea Room |
+| PPO16 | Reading Election Returns, Paoli Inn, 1832 |
+| PPO2 | Lincoln Highway. Paoli |
+| PPO3 | Lincoln Highway, Paoli |
+| PPO4 | Lincoln Highway, Paoli |
+| PPO5 | Paoli Station |
+| PPO6 | Paoli Car Shops |
+| PPO7 | Paoli Station |
+| PPO8 | Paoli Railyards |
+| PPO9 | Paoli High School |
+| RAI1 | Paoli Station |
+| RML2 | Railroad crew in Paoli |
+| RML5 | Train Crash at Paoli Station |
+| RML6 | Train Crash at Paoli Station |
+| RML7 | Wrecked Engine |
+| RML8 | Paoli Railyard |
+| TCC1 | Tredyffrin Country Club |
+
+### Tredyffrin Easttown Historical Society Archives (411)
 
 | Archive ID | Title |
 | --- | --- |
@@ -3867,6 +8629,7 @@ Stereocard |
 | NWH01 | Newhall |
 | NWH02 | Newhall |
 | NWH03 | Newhall. |
+| NWH04 | Newhall. |
 | NWH05 | Newhall Home southwest view. |
 | NWH06 | Newhall home, front west. |
 | NWH07 | Newhall Hall. |
@@ -3883,6 +8646,7 @@ Stereocard |
 | NWH18 | Newhall. |
 | NWH19 | Newhall. |
 | NWH20 | Newhall. |
+| NWH21 | Newhall. |
 | NWH22 | Newhall. |
 | NWH23 | Newhall. |
 | NWH24 | Newhall. |
@@ -3891,6 +8655,7 @@ Stereocard |
 | NWH27 | Newhall |
 | NWH28 | Newhall |
 | NWH29 | Newhall |
+| NWH30 | Newhall. |
 | NWH31 | Newhall. |
 | NWH32 | Newhall. |
 | NWH33 | Newhall. |
@@ -3924,6 +8689,13 @@ Stereocard |
 | OLA08 | Autocar Company |
 | OLA09 | Hanging Rock, Gulph Road |
 | OLA10 | Monument at Gulph Mills |
+| PFD001 | Devon Horse Show, 1899 with the Devon Inn in the background |
+| PFD002 | Devon Horse Show, 1899 |
+| PFD003 | Devon Horse Show, 1899 |
+| PFD004 | Devon Horse Show, 1899, with the Devon Inn in the background |
+| PFD005 | Devon Horse Show, 1899 |
+| PFD006 | Devon Horse Show, 1899, with the Devon Inn in the background |
+| PFD007 | Devon Horse Show, 1899 |
 | PP09 | Paoli Post Office, September 1 1929 to June 20 1955 |
 | PP10 | Paoli Post Office |
 | PP11 | Paoli Post Office |
@@ -3980,6 +8752,8 @@ Stereocard |
 | RMH05 | Radnor Friends Meeting |
 | RMH06 | Radnor Friends Meeting |
 | RMH07 | Radnor Friends Meeting |
+| RMH08 | Radnor Friends Meeting |
+| RMH09 | Radnor Friends Meeting |
 | RML12 | Malvern Station P.R.R. |
 | RML13 | St. Davids Station; P.R.R. Station |
 | SAM02 | Unknown Pond Location |
@@ -3992,389 +8766,7 @@ Stereocard |
 | VFR03 | Churches, Valley Friends Meeting |
 | WAB03 | Waterloo Avenue, Berwyn; photo labelled Waterloo "Road," |
 
-### Paoli (377)
-
-| Archive ID | Title |
-| --- | --- |
-| ALL01 | Alleva’s Coal, Feed, and Lumber Store and John Alleva |
-| ALL05 | Alleva’s Coal, Feed, and Lumber Store and John Alleva |
-| ALL06 | John Alleva at Alleva’s Store |
-| ALL07 | John Alleva at Alleva’s Store |
-| ALL08 | John Alleva at Alleva’s Store |
-| ALL09 | John Alleva at Alleva’s Store |
-| ALL10 | John Alleva at Alleva’s Store |
-| ALL11 | John Alleva at Alleva’s Store |
-| AS10 | Paoli Store & Toll House |
-| AS11 | Dr. Edward Van Dyke Residence |
-| AS12 | Routes 30 & 252, Paoli |
-| AS13 | Locomotive |
-| AS15 | Dr. Edward Van Dyke Residence |
-| AS16 | Dr. Edward Van Dyke Residence |
-| AS17 | Dr. Edward Van Dyke Residence |
-| AS18 | Dr. Edward Van Dyke Residence |
-| AS2 | Dingee Estate Barn |
-| AS3 | John Dingee House, 'Fennerton' |
-| AS4 | Dewees and Bracken Coal and Lumber Company |
-| AS6 | General Paoli Inn |
-| AS7 | Paoli Red Cross |
-| AS8 | Paoli Signal Box |
-| AS9 | Paoli Station |
-| BBU1 | Burroughs Facility |
-| BBU2 | Entrance to Burroughs Research Center |
-| BEP45 | Aerial Photograph of Paoli |
-| BEP66 | The Paoli Local at its home base |
-| BEP68 | Paoli Bank and Firehouse |
-| BEP69 | Paoli Honor Roll |
-| BP1 | Liberty Bell on its way to California |
-| BUS13 | Scofield's Store, Paoli |
-| BUS14 | Scofield's Store, Paoli |
-| BUS2 | Ralph Edwards Garage (also known as Ottey's garage), Lancaster Avenue, Paoli |
-| BUS3 | Cilley Shop |
-| BUS4 | Toll Gate House |
-| CGS01 | Church of the Good Samaritan on Lancaster Pike, Paoli, 1888 |
-| CGS03 | Church of the Good Samaritan |
-| CGS04 | Church of the Good Samaritan |
-| CGS05 | Church of the Good Samaritan, Paoli |
-| CGS06 | Good Samaritan Church |
-| CGS07 | Good Samaritan Church |
-| CGS08 | Good Samaritan Church |
-| CGS09 | Good Samaritan Church |
-| CGS10 | Good Samaritan Church |
-| CGS11 | Good Samaritan Church |
-| CGS12 | Good Samaritan Church |
-| CGS13 | Good Samaritan Church |
-| CGS14 | Good Samaritan Church |
-| CGS15 | Good Samaritan Church |
-| CGS16 | Good Samaritan Church |
-| CGS17 | Good Samaritan Church |
-| CH18 | First Presbyterian Church, Paoli |
-| CH19 | First Presbyterian Church, Paoli |
-| CH7 | Presbyterian Church, Paoli |
-| CH8 | Church of the Good Samaritan |
-| CH9 | Church of the Good Samaritan |
-| CMR01 | W. T. Comer’s Haberdashery Store |
-| CMR02 | W. T. Comer’s Haberdashery Store |
-| CMR03 | W. T. Comer’s Haberdashery Store |
-| DE1 | Dingee Estate Barn |
-| DE2 | Dingee Estate Barn |
-| DE3 | Shepherd on Dingee Estate |
-| DE4 | Dingee Farm |
-| DE5 | Dingee Cow Barn |
-| DE6 | Dingee Barn |
-| DE7 | John Dingee House, 'Fennerton' |
-| DE8 | Old Barn, Paoli |
-| DE9 | Barn House, Paoli |
-| EHC19 | Tredyffrin Easttown History Club Members |
-| FPC32 | First Presbyterian Church, Paoli |
-| FPC33 | Paoli Library Move |
-| FPC34 | Paoli Library Move |
-| FPC35 | Paoli Library Move |
-| FPC36 | Paoli Library Move |
-| FPC37 | Paoli Library Move |
-| FPC38 | Paoli Library Move |
-| FPC39 | Paoli Library Move |
-| FPC40 | Paoli Library Move |
-| FPC41 | Paoli Library Move |
-| FPC42 | Paoli Library Move |
-| FPC43 | Paoli Library Move |
-| FPC44 | Paoli Library Move |
-| FPC45 | Paoli Library Move |
-| FPC46 | Paoli Library Move |
-| FPC47 | Paoli Library Move |
-| FPC48 | Paoli Library Move |
-| FPC49 | Paoli Library Move |
-| FPC50 | Paoli Library Move |
-| FPC51 | Paoli Library Move |
-| FPC52 | Paoli Library Move |
-| FPC53 | Paoli Library Move |
-| FPC54 | Paoli Library Move |
-| FPC55 | Paoli Library Move |
-| FPC56 | Paoli Library Move |
-| FPC57 | Paoli Library Move |
-| FPC58 | Paoli Library Move |
-| FPC59 | Paoli Library Move |
-| FPC60 | Paoli Library Move |
-| FPC61 | Paoli Library Move |
-| FPC62 | Paoli Library Move |
-| FPC63 | Paoli Library Move |
-| FPC64 | Paoli Library Move |
-| FPC65 | Paoli Library Move |
-| FPC66 | Paoli Library Move |
-| FPC67 | Paoli Library Move |
-| FPC68 | Paoli Library Move |
-| GJI09 | General Jackson Inn |
-| GJI10 | Windmill Tea Room |
-| GJI2 | Espenshade's Wayside Inn |
-| GJI3 | General Jackson Inn |
-| GJI5 | The General Jackson Inn near Mile Post 18, Paoli, 1888 |
-| GPI01 | General Paoli Inn |
-| GPI02 | General Paoli Inn |
-| GPI03 | Paoli Inn looking NE - 1888 |
-| GPI04 | Paoli (Inn) from the west, 1888 |
-| HIG04 | Higgins Bakery |
-| HIG08 | Higgins Bakery |
-| HIG09 | Higgins Bakery |
-| HLC2 | Neilly Log Cabin |
-| HOU238 | Residence of William W. Hoopes |
-| HOU239 | Residence of George R. Sinnickson |
-| HOU257 | F. H. Galloney house, Paoli |
-| HOU258 | H. W. Biddle house, Paoli |
-| HOU48 | Commercial Building, Lincoln Highway, Paoli |
-| IT1 | Ruins of Paoli Inn |
-| IT2 | Windmill Tea Rooms |
-| IT30 | Paoli Manor Inn |
-| MF59 | Matthews Ford’s Gulf Gas Station |
-| MF60 | Matthews Ford employees at Gulf Station |
-| MF61 | Matthews Ford Showroom |
-| MF62 | Matthews Ford Company Picnic |
-| MF62b | Back of MF62 |
-| MLP1 | Paoli Station |
-| MLP2 | Paoli Station |
-| MLP3 | Paoli Station |
-| MLP39 | Pennsylvania Railroad Bridge, Paoli |
-| MLP4 | Paoli Station |
-| MLP5 | Cut Under, Paoli |
-| MLP6 | Canal Collector’s Office, Lancaster Pike & Valley Roads, Paoli, 1888 |
-| MLP80 | Paoli Railyard |
-| MLP81 | Paoli Railyard |
-| MLP82 | Paoli Railyard |
-| MLP83 | Paoli Railyard |
-| MLP84 | Paoli Railyard |
-| MLP85 | Paoli Railyard |
-| MLP86 | Paoli Railyard |
-| MLP87 | Paoli Railyard |
-| MLP88 | Paoli Railyard |
-| MLP89 | Paoli Railyard |
-| PA1 | Anna Thomas, Ladies Taylor |
-| PA10 | Carriage |
-| PA100 | Paoli Parade |
-| PA101 | Paoli Parade |
-| PA102 | Paoli Parade |
-| PA103 | Paoli Parade |
-| PA104 | Paoli Parade |
-| PA105 | Paoli Parade |
-| PA106 | Paoli Parade |
-| PA107 | Paoli Parade |
-| PA108 | Paoli Parade |
-| PA109 | Paoli Parade |
-| PA11 | Paoli Diner |
-| PA110 | Paoli Parade |
-| PA111 | Paoli Parade |
-| PA112 | Paoli Parade |
-| PA113 | Paoli Parade |
-| PA114 | Paoli Parade |
-| PA115 | Paoli Parade |
-| PA116 | Paoli Parade |
-| PA117 | Paoli Parade |
-| PA118 | Paoli Parade |
-| PA119 | Paoli Parade |
-| PA12 | Paoli Firehouse |
-| PA120 | Paoli Parade - Paoli Fire Company |
-| PA121 | Paoli Parade |
-| PA122 | Paoli Parade |
-| PA123 | Paoli Parade- Malvern Fire Company |
-| PA124 | Paoli Parade - Malvern Fire Company |
-| PA125 | Paoli Parade |
-| PA126 | Paoli Parade |
-| PA127 | Traffic Accident Routes 30 and 252 |
-| PA128 | Traffic Accident routes 30 and 252 |
-| PA129 | Traffic Accident routes 30 and 252 |
-| PA13 | Five of the 'Seven Stars' Houses |
-| PA130 | Traffic Accident routes 30 and 252 |
-| PA131 | Traffic Accident routes 30 and 252 |
-| PA132 | Traffic Accident routes 30 and 252 |
-| PA133 | Traffic Accident routes 30 and 252 |
-| PA134 | Traffic Accident routes 30 and 252 |
-| PA135 | Traffic Accident routes 30 and 252 |
-| PA136 | Traffic Accident routes 30 and 252 |
-| PA137 | Traffic Accident routes 30 and 252 |
-| PA138 | Lancaster Avenue, Paoli |
-| PA139 | Lancaster Avenue, Paoli |
-| PA14 | Lincoln Highway, Paoli |
-| PA140 | Lancaster Avenue, Paoli |
-| PA141 | Lancaster Avenue, Paoli |
-| PA142 | Lancaster and S. Valley Road, Paoli |
-| PA144 | Lancaster and S. Valley Road, Paoli |
-| PA146 | Lancaster and S. Valley Road, Paoli |
-| PA148 | Builders Yard, Paoli |
-| PA149 | Builders Yard, Paoli |
-| PA15 | Supplee Hardware Store |
-| PA150 | Builders Yard, Paoli |
-| PA151 | House Fire near Paoli |
-| PA153 | House Fire near Paoli |
-| PA154 | House Fire near Paoli |
-| PA155 | House Fire near Paoli |
-| PA156 | House Fire near Paoli |
-| PA157 | House Fire near Paoli |
-| PA158 | House Fire near Paoli |
-| PA159 | House Fire near Paoli |
-| PA160 | House Fire near Paoli |
-| PA161 | House Fire near Paoli |
-| PA162 | House Fire near Paoli |
-| PA163 | House Fire near Paoli |
-| PA164 | House Fire near Paoli |
-| PA166 | House Fire near Paoli |
-| PA167 | House Fire near Paoli |
-| PA168 | House Fire near Paoli |
-| PA169 | House Fire near Paoli |
-| PA17 | George Williams in his drug store |
-| PA170 | House Fire near Paoli |
-| PA171 | House Fire near Paoli |
-| PA172 | House Fire near Paoli |
-| PA173 | Paoli - looking towards 30 and 252 junction |
-| PA174 | Lancaster Avenue, Paoli |
-| PA175 | Construction of Paoli Library building |
-| PA177 | Construction of Paoli Library building |
-| PA179 | Construction of Paoli Library building |
-| PA181 | Lancaster Avenue, Paoli |
-| PA182 | Paoli Building site |
-| PA184 | South Valley Road, Paoli looking north |
-| PA185 | South Valley Road, Paoli looking north |
-| PA187 | Paoli News Agency |
-| PA188 | Front of Paoli Hardware Store |
-| PA189 | Paoli Hardware Store - Greg and Steve |
-| PA190 | Paoli Hardware Store - everything must go |
-| PA191 | Paoli Hardware Store - all sales final |
-| PA192 | Paoli Hardware Store - 1946 Painting |
-| PA193 | Paoli Hardware Store - Greg |
-| PA195 | Paoli Plaza |
-| PA196 | Paoli Station Parking Area and Lancaster Avenue |
-| PA197 | Paoli Plaza |
-| PA198 | Paoli Station area |
-| PA199 | Paoli Plaza |
-| PA2 | Paoli Hardware Store |
-| PA200 | Paoli Station Parking Area |
-| PA201 | Paoli Plaza |
-| PA23 | Pasquale Paoli Day |
-| PA24 | North Valley Road, Paoli |
-| PA25 | View of Paoli |
-| PA26 | Giantonio Real Estate |
-| PA27 | Paoli Fire House |
-| PA28 | Paoli (Inn) Blacksmith & Wheelwright shop, west of Inn, 1888 |
-| PA3 | Paoli Hardware Store |
-| PA33 | Paoli Fire Company |
-| PA36 | Toll Gate House |
-| PA4 | Windmill Tea Room |
-| PA55 | Lancaster Avenue in Paoli around 1935 |
-| PA57 | Lovers Lane, Paoli |
-| PA58 | Prominent fork of Roads |
-| PA59 | Paoli War Memorial dedication |
-| PA60 | Paoli War Memorial dedication |
-| PA61 | Paoli War Memorial dedication |
-| PA62 | Paoli War Memorial dedication |
-| PA63 | Richard Nixon campaign rally at the old Paoli Shopping Center |
-| PA64 | Richard Nixon campaign rally at the old Paoli Shopping Center |
-| PA65 | Richard Nixon campaign rally at the old Paoli Shopping Center |
-| PA66 | Richard Nixon campaign rally at the old Paoli Shopping Center |
-| PA67 | Richard Nixon campaign rally at the old Paoli Shopping Center |
-| PA68 | Richard Nixon campaign rally at the old Paoli Shopping Center |
-| PA69 | Richard Nixon campaign rally at the old Paoli Shopping Center |
-| PA7 | Lincoln Highway, Paoli |
-| PA70 | Richard Nixon campaign rally at the old Paoli Shopping Center |
-| PA71 | Paoli Parade - Radnor Fire Company |
-| PA72 | Paoli Parade - Goshen Fire Company |
-| PA73 | Paoli Parade - East Whiteland Township Volunteer Fire Association |
-| PA74 | Paoli Parade - East Whiteland Township Volunteer Fire Association |
-| PA75 | Paoli Parade |
-| PA76 | Paoli Parade |
-| PA77 | Paoli Parade |
-| PA78 | Paoli Parade |
-| PA79 | Paoli Parade |
-| PA8 | Paoli Buckboard |
-| PA80 | Paoli Parade - King of Prussia Fire Company |
-| PA81 | Paoli Parade |
-| PA82 | Paoli Parade - Kook Hill, North Hills, PA |
-| PA83 | Paoli Parade |
-| PA84 | Paoli Parade |
-| PA85 | Paoli Parade - Good Will Fire Company #2, West Chester |
-| PA86 | Paoli Parade |
-| PA87 | Paoli Parade |
-| PA88 | Paoli Parade- Swedesburg Volunteer Fire Company, Upper Merion Township |
-| PA89 | Paoli Parade |
-| PA90 | Paoli Parade |
-| PA91 | Paoli Parade |
-| PA92 | Paoli Parade - Flame Busters |
-| PA93 | Paoli Parade |
-| PA94 | Paoli Parade |
-| PA95 | Paoli Parade- Balloon Seller |
-| PA96 | Paoli Parade - Balloon Seller |
-| PA97 | Paoli Parade |
-| PA98 | Paoli Parade |
-| PA99 | Paoli Parade |
-| PAC01 | Rear of Paoli Corner, routes 30 & 252 |
-| PAC02 | Rear of Paoli Corner, routes 30 & 252 |
-| PAC03 | Front of Paoli Corner, routes 30 & 252 |
-| PAC04 | Rear of Paoli Corner, routes 30 & 252 |
-| PAC05 | Rear of Paoli Corner, routes 30 & 252 |
-| PAS07 | Paoli School |
-| PAS1 | Paoli School |
-| PAS12 | Paoli School |
-| PAS12b | Back of PAS12 |
-| PAS2 | Paoli School |
-| PAS5 | Paoli Grammar School |
-| PAS6 | Paoli High School |
-| PEO6 | Six People |
-| PEO8 | Emily Patterson & Florence Glissen |
-| PEO86 | Paoli Grammar School class of 1919 |
-| PEO9 | Emily Patterson & Florence Glissen |
-| PEO95 | Paoli School pupils and teachers |
-| PEO96 | Paoli Grammar School |
-| PFC01 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC02 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC03 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC04 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC05 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC06 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC07 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC08 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC09 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC10 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC11 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC12 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC13 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC14 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC15 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC16 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC17 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC18 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC19 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC20 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC21 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC22 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC23 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC24 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC25 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC26 | 1949 Paoli Fire Company 40th anniversary parade |
-| PFC27 | 1949 Paoli Fire Company 40th anniversary parade |
-| PLI01 | Paoli Library |
-| PLI03 | Old library building seen from the back of the bank. |
-| PP1 | Paoli Post Office |
-| PP2 | Paoli Post Office |
-| PP4 | Paoli Post Office |
-| PPO1 | Route 30 West, Paoli |
-| PPO10 | Paoli Grammar School |
-| PPO11 | Tredyffrin Township Grammar School |
-| PPO12 | Paoli Inn |
-| PPO14 | Windmill Tea Room (interior) |
-| PPO15 | Windmill Tea Room |
-| PPO16 | Reading Election Returns, Paoli Inn, 1832 |
-| PPO2 | Lincoln Highway. Paoli |
-| PPO3 | Lincoln Highway, Paoli |
-| PPO4 | Lincoln Highway, Paoli |
-| PPO5 | Paoli Station |
-| PPO6 | Paoli Car Shops |
-| PPO7 | Paoli Station |
-| PPO8 | Paoli Railyards |
-| PPO9 | Paoli High School |
-| RAI1 | Paoli Station |
-| RML2 | Railroad crew in Paoli |
-| RML5 | Train Crash at Paoli Station |
-| RML6 | Train Crash at Paoli Station |
-| RML7 | Wrecked Engine |
-| RML8 | Paoli Railyard |
-| TCC1 | Tredyffrin Country Club |
-
-### Valley Forge (350)
+### Valley Forge (368)
 
 | Archive ID | Title |
 | --- | --- |
@@ -4397,6 +8789,12 @@ Stereocard |
 | BKH21 | Washington Inn |
 | BKH21b | Back of BKH21 |
 | BKH22 | Washington Inn |
+| BKH23 | Washington Inn |
+| BKH25 | Washington Inn |
+| BKH26 | Washington Inn |
+| BKH27 | Washington Inn |
+| BKH28 | Washington Inn |
+| BKH29 | Washington Inn |
 | BKH30 | Washington Inn, dining porch |
 | BKH31 | Washington Inn |
 | BKH32 | Washington Inn |
@@ -4429,7 +8827,14 @@ Stereocard |
 | KCB2 | Knox Covered Bridge & Boathouse |
 | KCB3 | Knox Covered Bridge & Valley Creek |
 | KCB4 | Knox Covered bridge |
+| KCB44 | Knox Covered Bridge |
+| KCB46 | Knox Covered Bridge |
+| KCB47 | Knox Covered Bridge |
+| KCB48 | Knox Covered Bridge |
+| KCB49 | Knox Covered Bridge |
 | KCB5 | Old Covered Bridge |
+| KCB50 | Knox Covered Bridge |
+| KCB52 | Knox Covered Bridge |
 | KCB53 | Knox Covered Bridge |
 | KCB54 | Knox Covered Bridge |
 | KCB55 | Knox Covered Bridge |
@@ -4443,7 +8848,7 @@ Stereocard |
 | KCB7 | Knox Covered Bridge |
 | KCB8 | Damaged Knox Covered Bridge |
 | KNO01 | General Knox’s Quarters - rear view |
-| KNO02 | General Knox's Quarters - front view 1945 |
+| KNO02 | General Knox’s Quarters - front view 1945 |
 | KNO08 | Knox’s Quarters |
 | LAF1 | Lafayette's Quarters |
 | LFG01 | The Foundations of the Original Forge Dam |
@@ -4558,6 +8963,7 @@ Stereocard |
 | VFD18 | Valley Forge Dam |
 | VFD19 | Valley Creek Dam, constructed c. 1930 |
 | VFD20 | Valley Forge Mill Dam |
+| VFD20b | Back of VFD20 |
 | VFD21 | Valley Forge Dam |
 | VFD22 | Valley Forge Dam |
 | VFD8 | Valley Forge c. 1790 dam |
@@ -4612,6 +9018,7 @@ Stereocard |
 | VFP147 | View of Washington’s Headquaters Parking Area |
 | VFP147b | Back of VFP147 |
 | VFP148 | Boulevard along entrenchments at Valley Forge |
+| VFP149 | Fort Washington somewhat restored |
 | VFP150 | Fort Huntingdon |
 | VFP151 | Grand Review at Valley Forge |
 | VFP152 | The Grand Review at Valley Forge |
@@ -4633,9 +9040,12 @@ Stereocard |
 | VFP228 | Valley Forge Village marker |
 | VFP229 | Valley Forge Village marker |
 | VFP3 | Fort Washington, Valley Forge National Historical Park |
+| VFP30 | Von Steuben Statue |
+| VFP31 | Valley Creek near Washington Spring |
 | VFP32 | New Jersey Monument |
 | VFP34 | Star Redout |
 | VFP35 | Soldier's Hut |
+| VFP38 | Star Redoubt |
 | VFP4 | 1930s Dam, Valley Forge National Historical Park |
 | VFP58 | Soldiers’ Huts |
 | VFP59 | Valley Forge view |
@@ -4731,7 +9141,7 @@ Stereocard |
 | WSP11 | Washingtons Spring |
 | WSP12 | Washington Spring |
 
-### Yellow Springs Road (237)
+### Yellow Springs Road (239)
 
 | Archive ID | Title |
 | --- | --- |
@@ -4844,6 +9254,7 @@ Stereocard |
 | KCB21 | Knox Covered Bridge |
 | KCB22 | Knox Covered Bridge |
 | KCB23 | Damaged Knox Covered Bridge, 1967 |
+| KCB24 | Knox Covered Bridge, looking south |
 | KCB25 | Knox Covered Bridge |
 | KCB26 | Knox Covered Bridge |
 | KCB27 | Knox Covered Bridge |
@@ -4884,6 +9295,7 @@ Stereocard |
 | SAC03 | Salem Church |
 | SAC04 | Salem Church |
 | SAC05 | Salem Church |
+| SAC06 | Salem Church |
 | SAC07 | Salem Church |
 | SAC08 | Salem Church |
 | SAC09 | Salem Church |
@@ -4973,7 +9385,7 @@ Stereocard |
 | WRF05 | Wreth-Forcini House |
 | WRF06 | Wreth-Forcini House |
 
-### Devon (180)
+### Devon (187)
 
 | Archive ID | Title |
 | --- | --- |
@@ -5105,6 +9517,7 @@ Stereocard |
 | HOU270 | 231 Berkley Road, Devon |
 | HOU271 | 319 Chester Road, Devon |
 | HOU273 | 3 Colonial Dwellings, Devon |
+| HOU274 | Miss Dorothy E. Cadwalader, Chestnutwold Farm, Devon |
 | HOU280 | G. B. Wheeler house, Devon |
 | HOU281 | Mr. John S. Bioren house, Devon |
 | HOU283 | Mrs. M. A. Aull, Snoqualmie, Devon |
@@ -5143,7 +9556,13 @@ Stereocard |
 | QTC07 | Quaker Trailer, Quaker Trailer Company |
 | QTC08 | Quaker Trailer with Possible Robert M. Rakestraw |
 | RDE06 | Devon Train Station |
+| RDE07 | Devon Station |
 | RDE1 | Devon Station |
+| RDE10 | Devon Station |
+| RDE11 | Devon Station |
+| RDE12 | Devon Station |
+| RDE14 | Devon Station |
+| RDE15 | Devon Station |
 | RDE16 | Devon Station, PA |
 | RML10 | Devon Station |
 | SJP07 | St. John’s Presbyterian Church in Devon |
@@ -5158,7 +9577,7 @@ Stereocard |
 | WYI11 | Wynburne Inn |
 | WYI2 | Wynburne Inn, Devon |
 
-### Chesterbrook (155)
+### Chesterbrook (159)
 
 | Archive ID | Title |
 | --- | --- |
@@ -5167,6 +9586,7 @@ Stereocard |
 | CHE10 | Chesterbrook Farm Barn |
 | CHE11 | Chesterbrook Farm Barn & Silo |
 | CHE12 | Chesterbrook Farm Barn |
+| CHE13 | Lee-Bradford Quarters |
 | CHE14 | Chesterbrook Farm |
 | CHE15 | Generals Lee & Bradford's Quarters |
 | CHE19 | Chesterbrook Village Center |
@@ -5239,6 +9659,9 @@ Stereocard |
 | DUP03 | Duportail's Quarters |
 | DUP04 | Duportail's Quarters |
 | DUP05 | Duportail Barn |
+| LAQ16 | LaFayette’s Quarters |
+| LAQ17 | LaFayette’s Quarters |
+| LAQ18 | LaFayette’s Quarters |
 | LBQ01 | Lee-Bradford Quarters |
 | LBQ02 | Lee-Bradford Headquarters |
 | WFC05 | Wilson Farm, Chesterbrook barns |
@@ -5318,7 +9741,7 @@ Stereocard |
 | YOF8 | Yohn Farm |
 | YOF9 | Yohn Farm |
 
-### Strafford (138)
+### Strafford (141)
 
 | Archive ID | Title |
 | --- | --- |
@@ -5379,6 +9802,8 @@ Stereocard |
 | OES2 | Old Eagle School |
 | PW1 | Car in Strafford Philadelphia & Western Station |
 | PW2 | Car in Strafford Philadelphia & Western Station |
+| RML25 | Penn Central freight |
+| RML26 | Strafford Station |
 | SCH5 | Eagle School, 1788 - 1872 |
 | SCH7 | Carr School, 1832 - 1869 |
 | SHF09 | Residence of J. Howard Mecke, Strafford jr. |
@@ -5401,6 +9826,7 @@ Stereocard |
 | STR34 | Early American House 2 |
 | STR35 | EnglishCottage - Plans |
 | STR36 | EnglishCottage - Rendering |
+| STR37 | English Manor House |
 | STR38 | English Manor House - rendering |
 | STR39 | Englsih Studio House - plans |
 | STR40 | English Studio House - rendering |
@@ -5592,7 +10018,7 @@ Stereocard |
 | DTA132 | Devon Horse Show and Country Fair (DHSCF) |
 | DTA133 | Devon Horse Show and Country Fair (DHSCF) |
 
-### Swedesford Road (95)
+### Swedesford Road (96)
 
 | Archive ID | Title |
 | --- | --- |
@@ -5691,6 +10117,7 @@ Stereocard |
 | RF8 | Robertson Farmhouse after ice storm |
 | RF9 | Robertson Farmhouse |
 | SWE14 | Junction of Swedesford Road (202) and Old Eagle School Road |
+| SWE15 | Junction of Swedesford Road (202) and Old Eagle School Road |
 
 ### New Centerville (83)
 
@@ -5918,7 +10345,7 @@ Stereocard |
 | SBB4 | Second Blue Ball Inn |
 | VLC08 | Van Leer Cabin |
 
-### Malvern (46)
+### Malvern (47)
 
 | Archive ID | Title |
 | --- | --- |
@@ -5957,6 +10384,7 @@ Stereocard |
 | MAL35 | St. Joseph’s in the Hills |
 | MAL35b | Back of MAL35 |
 | MAL36 | Malvern Station |
+| MAL37 | Friends Meeting House, Malvern |
 | MAL37b | Back of MAL37 |
 | MAL38 | Candlewyck Diner, Malvern |
 | MAL38b | Back of MAL38 |
@@ -6276,6 +10704,17 @@ Stereocard |
 | WSH21 | Walker Schoolhouse |
 | WSH22 | Walker Schoolhouse |
 
+### Green Tree (6)
+
+| Archive ID | Title |
+| --- | --- |
+| GT02 | Warner Residence |
+| GT1 | Lancaster Avenue, Green Tree (Duffyn Mawr) |
+| IT14 | Green Tree Inn |
+| MLP102 | Lincoln Highway under grade crossing between Green Tree and Paoli |
+| RGT01 | Green Tree Station |
+| RGT02 | Green Tree Station |
+
 ### King of Prussia (6)
 
 | Archive ID | Title |
@@ -6337,15 +10776,6 @@ Stereocard |
 | BE75 | Unknown view |
 | BE76 | Sleet Storm, Berwyn |
 | CH22 | Berwyn 75th Anniversary Service |
-
-### Green Tree (4)
-
-| Archive ID | Title |
-| --- | --- |
-| GT02 | Warner Residence |
-| GT1 | Lancaster Avenue, Green Tree (Duffyn Mawr) |
-| IT14 | Green Tree Inn |
-| RGT01 | Green Tree Station |
 
 ### Phoenixville (4)
 
@@ -6771,6 +11201,12 @@ Subject is Person / People (a category, not a person document). Titles are hints
 | GRB25 | Mary Patton Garber |
 | GRB26 | Garber family |
 | GRB27 | Sarah Elizabeth Garber |
+| HAF01 | Hatton family, c. 1913 |
+| HAF02 | Havard Wayne Hatton, 1897 - 1918 (eldest son), died of the flu |
+| HAF03 | Jervis Hatton, 1898 - 1919 (train accident c. 1918), second eldest son |
+| HAF04 | Mrs. Susan B. Hatton and daughter Alvertia (Elsie) in the garden, c. 1915 |
+| HAF05 | Hatton family, c. 1905 at Kennett Square meeting |
+| HAF06 | Susan Boggs Hatton, c. 1896 |
 | KRI01 | Frank and George(?) Krider |
 | KRI02 | Frank Krider |
 | KRI04 | Memorial Card to Frank K. Krider |
@@ -6853,6 +11289,7 @@ Subject is Person / People (a category, not a person document). Titles are hints
 | NWH01 | Newhall |
 | NWH02 | Newhall |
 | NWH03 | Newhall. |
+| NWH04 | Newhall. |
 | NWH51 | Newhall. |
 | OLA132 | Birthplace marker for Thomas Buchanon Read |
 | OLA170 | John Williamson Nevin memorial |
@@ -6898,6 +11335,8 @@ Subject is Person / People (a category, not a person document). Titles are hints
 | PEO130 | George Washington |
 | PEO132 | Julius Sachse |
 | PEO133 | Bob Goshorn |
+| PEO134 | Franklin Burns |
+| PEO135 | Franklin Burns at Hawk Mountain |
 | PEO14 | Unknown Person |
 | PEO141 | Isaac M. Anderson |
 | PEO142 | Isaac M. Anderson family |
@@ -6940,6 +11379,9 @@ Subject is Person / People (a category, not a person document). Titles are hints
 | PEO49 | Davis Family |
 | PEO5 | Grace Sharp |
 | PEO52 | Unknown woman and baby |
+| PEO53 | Unknown person |
+| PEO54 | Women in Moore Electric truck |
+| PEO55 | Unknown woman |
 | PEO56 | Rev. William T. and Mrs. Vandener |
 | PEO57 | Michead Edeesase (- maybe) as Betsy Ross |
 | PEO58 | Baptist Brotherhood Baseball Team |
@@ -6955,7 +11397,9 @@ Subject is Person / People (a category, not a person document). Titles are hints
 | PEO67 | Mary Bair |
 | PEO68 | Franklin Burns |
 | PEO7 | Six People |
+| PEO79 | Ximena Wells Burns |
 | PEO8 | Emily Patterson & Florence Glissen |
+| PEO80 | Burns Family |
 | PEO9 | Emily Patterson & Florence Glissen |
 | PEO97 | Mary Jane Aiken Wells |
 | PEO98 | Unknown Person |
@@ -6997,6 +11441,7 @@ Subject is Person / People (a category, not a person document). Titles are hints
 | RF20 | Janet Brownlie Robertson Gerow |
 | RON01 | Group at TE High School |
 | RON02 | Mr. Roney |
+| SBC01 | Wanda Stanber, hostess, at lunch party |
 | SBC02 | Wanda Stanber(?) lunch party |
 | SBC03 | Wanda Stanber(?) lunch party |
 | SBC04 | Jean Dinwoodie at Wanda Stanber(?) lunch party |
@@ -7038,6 +11483,8 @@ Standing: David Wilson (leaning over), Bill Andrews (hand to face), Skip Eichner
 | TEC33 | Eichner daughter and grandchild;
 Eva and Ray Noll;
 Standing middle distance: Skip Eichner (striped shirt), Bill Andrews (dark shirt), Howard Housworth (left, standing erect, light shirt), Jim Huston (right) |
+| TEC35 | TE History Club 1989 picnic at Goshorn’s house |
+| TEC36 | TE History Club 1989 picnic at Goshorn’s house |
 | TEC37 | TE History Club Banquet at Trinity Presbyterian Church |
 | TEC38 | TE History Club Banquet at Trinity Presbyterian Church |
 | TEC39 | TE History Club Banquet at Trinity Presbyterian Church |
@@ -7053,6 +11500,7 @@ Standing middle distance: Skip Eichner (striped shirt), Bill Andrews (dark shirt
 | TPS03 | Tea Party at Stirling's Quarters in honor of Compilers of 'Great Valley Days' |
 | TPS04 | Tea Party at Stirling's Quarters in honor of Compilers of 'Great Valley Days' |
 | TPS05 | Tea Party at Stirling's Quarters in honor of Compilers of 'Great Valley Days' |
+| VFP30 | Von Steuben Statue |
 | VFV16 | Valley Forge Fife and Drum Band outside the POSofA (Patriotic Order of Sons of America) Hall, Mathews Free Library. |
 | VFV18 | Four Generations of the Rowan family outside the store at Valley Forge on Labor Day, September 2, 1912 |
 | WAR2 | Warner Quarry workers |

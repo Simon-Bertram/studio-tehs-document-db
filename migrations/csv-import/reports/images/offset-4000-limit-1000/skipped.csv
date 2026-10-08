@@ -1,26 +1,2 @@
 clipId,title,csvType,reason,detail
-SAC06,Salem Church,Photograph,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-CAM01,Cassatt Mansion House,Drawing,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-RML25,Penn Central freight,Drawing,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-RBE21,Berwyn Railroad Station,Drawing,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-RML26,Strafford Station,Drawing,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
 IT19,Paoli Inn,Playing card,private_image,publicDisplay=N; skipped so private images stay out of Sanity.
-BPM04,Burns Planing Mill,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-HOM01,Howellville Mill,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-HOU171,Rev. Dr. Sagebur house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-OPA14,Mainline Airport location,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-RML27,Train at Daylesford,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-RDE03,Devon Station,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-VC13,Old Stone Bridge over Valley Creek,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-TEC35,TE History Club 1989 picnic at Goshorn’s house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-TEC36,TE History Club 1989 picnic at Goshorn’s house,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-OLA110,"Old Spring Mill, near Conshohocken",postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-RAD14b,Back of RAD14,postcard,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-RDE04,Devon Station,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-RDE05,Devon Station,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-RML28,Daylesford Station,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-PLH03,Peter Latch House,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-PLH02,Peter Latch House,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-PLH01,Peter Latch Barn,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-PLH04,Peter Latch House,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-RCR07,"Renovations of the Red Cross Building, Berwyn",photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).

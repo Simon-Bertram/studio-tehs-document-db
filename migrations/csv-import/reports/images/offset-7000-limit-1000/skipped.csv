@@ -1,4 +1,2 @@
 clipId,title,csvType,reason,detail
-TEH85,Conestoga High School,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
-TEH86,Conestoga Senior High School Marching Band,photo,asset_error,HTTP fetch/upload failed; document not upserted (imageFile is required).
 SCU11,Schuylkill and Catfish Island,Photo,duplicate_identifier,True duplicate of SCU11 (same imageLocation as primaryPhoto 7161).

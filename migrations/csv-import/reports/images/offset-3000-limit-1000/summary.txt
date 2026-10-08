@@ -1,13 +1,13 @@
 CSV Import Summary
 ==================
 Total rows:          1000
-Imported:            917
-Skipped / failed:    83
-Needs manual links:  284
-Missing keywords:    7
+Imported:            998
+Skipped / failed:    2
+Needs manual links:  923
+Missing keywords:    10
 
 Type breakdown:
-  historicalImage: 917
+  historicalImage: 998
 
 Report files:
   /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/images/offset-3000-limit-1000/imported.csv

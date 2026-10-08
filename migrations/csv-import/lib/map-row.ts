@@ -9,6 +9,12 @@ import {
 	slugify,
 	splitCommaSeparatedKeywords,
 } from './clean'
+import {
+	type ContentBlock,
+	contentToPortableText,
+	stripHtmlToPlainText,
+} from './content-to-portable-text'
+import type {DocumentImageCatalog} from './document-image-catalog'
 import type {TaxonomyLookups} from './taxonomy'
 import {DIVERTED_QUARTERLY_DETAIL, DIVERTED_QUARTERLY_REASON, hasTehsKeyword} from './tehs-keyword'
 
@@ -31,21 +37,12 @@ export interface CsvRow {
 	/** Legacy MySQL visibility flag — not mapped (no schema field). */
 	public: string
 	facilitators: string
+	[key: string]: string
 }
 
 export type ImportSchemaType = 'historicalImage' | 'primarySource' | 'researchArticle'
 
-export interface PortableTextSpan {
-	_type: 'span'
-	_key: string
-	text: string
-}
-
-export interface PortableTextBlock {
-	_type: 'block'
-	_key: string
-	children: PortableTextSpan[]
-}
+export type {ContentBlock}
 
 export interface SanityRef {
 	_type: 'reference'
@@ -76,13 +73,13 @@ export interface PrimarySourceImportDoc extends ImportDocBase {
 	_type: 'primarySource'
 	date?: HistoricalDateValue
 	newspaper?: string
-	transcription?: PortableTextBlock[]
+	transcription?: ContentBlock[]
 }
 
 export interface ResearchArticleImportDoc extends ImportDocBase {
 	_type: 'researchArticle'
 	slug: {_type: 'slug'; current: string}
-	body?: PortableTextBlock[]
+	body?: ContentBlock[]
 }
 
 export type ImportDoc = HistoricalImageImportDoc | PrimarySourceImportDoc | ResearchArticleImportDoc
@@ -98,16 +95,6 @@ export interface MapRowResult {
 	title: string
 	mappedKeywords: string[]
 	unmappedKeywords: string[]
-}
-
-function toPortableText(text: string): PortableTextBlock[] {
-	return [
-		{
-			_type: 'block',
-			_key: nanoid(),
-			children: [{_type: 'span', _key: nanoid(), text}],
-		},
-	]
 }
 
 function ref(id: string): SanityRef {
@@ -133,14 +120,19 @@ function buildHistoricalImage(
 		const parsed = parseHistoricalDate(date)
 		if (parsed) doc.dateTaken = parsed
 	}
-	if (content) doc.description = content
+	if (content) doc.description = stripHtmlToPlainText(content)
 	if (facilitators) doc.contributor = facilitators
 	if (source) doc.source = source
 	if (notes) doc.notes = notes
 	return doc
 }
 
-function buildPrimarySource(clipId: string, title: string, row: CsvRow): PrimarySourceImportDoc {
+function buildPrimarySource(
+	clipId: string,
+	title: string,
+	row: CsvRow,
+	catalog: DocumentImageCatalog,
+): PrimarySourceImportDoc {
 	const doc: PrimarySourceImportDoc = {
 		_type: 'primarySource',
 		archiveId: clipId,
@@ -154,7 +146,7 @@ function buildPrimarySource(clipId: string, title: string, row: CsvRow): Primary
 		if (parsed) doc.date = parsed
 	}
 	if (source) doc.newspaper = source
-	if (content) doc.transcription = toPortableText(content)
+	if (content) doc.transcription = contentToPortableText(content, catalog)
 	return doc
 }
 
@@ -162,6 +154,7 @@ function buildResearchArticle(
 	clipId: string,
 	title: string,
 	row: CsvRow,
+	catalog: DocumentImageCatalog,
 ): ResearchArticleImportDoc {
 	const slugSource = title || `untitled-${clipId}`
 	const doc: ResearchArticleImportDoc = {
@@ -171,7 +164,7 @@ function buildResearchArticle(
 		slug: {_type: 'slug', current: slugify(slugSource)},
 	}
 	const content = cleanString(row.content)
-	if (content) doc.body = toPortableText(content)
+	if (content) doc.body = contentToPortableText(content, catalog)
 	return doc
 }
 
@@ -268,8 +261,14 @@ function applyTaxonomy(
  * Does not set `_id` — callers upsert by `archiveId`.
  * Does not record import success — callers record after dry-run / live write.
  * The CSV `public` column is intentionally ignored (no matching schema field).
+ * Image embeds in content keep pending fields until run-import resolves them.
  */
-export function mapRow(row: CsvRow, lookups: TaxonomyLookups, audit: Audit): MapRowResult | null {
+export function mapRow(
+	row: CsvRow,
+	lookups: TaxonomyLookups,
+	audit: Audit,
+	catalog: DocumentImageCatalog,
+): MapRowResult | null {
 	const clipId = normalizeClipId(row.clipID)
 	const title = cleanString(row.title)
 	const csvType = cleanString(row.type) ?? String(row.type ?? '')
@@ -327,10 +326,10 @@ export function mapRow(row: CsvRow, lookups: TaxonomyLookups, audit: Audit): Map
 			doc = buildHistoricalImage(clipId, resolvedTitle, row)
 			break
 		case 'primarySource':
-			doc = buildPrimarySource(clipId, resolvedTitle, row)
+			doc = buildPrimarySource(clipId, resolvedTitle, row, catalog)
 			break
 		case 'researchArticle':
-			doc = buildResearchArticle(clipId, resolvedTitle, row)
+			doc = buildResearchArticle(clipId, resolvedTitle, row, catalog)
 			break
 	}
 

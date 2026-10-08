@@ -1,6 +1,6 @@
 /**
  * Export image metadata (never psImages / BLOB columns) through the local
- * SSH tunnel into migrations/data/sample-images.csv.
+ * SSH tunnel into migrations/data/images.csv.
  *
  * Requires: running tunnel (scripts/start-mysql-tunnel.sh) and MYSQL_PASS
  * (same read-only DreamHost user as .cursor/mcp.json).
@@ -45,7 +45,7 @@ function cell(value: unknown): string {
 async function main() {
 	const root = path.resolve(import.meta.dir, '..')
 	const out = path.resolve(
-		process.env.CSV_OUT ?? path.join(root, 'migrations/data/sample-images.csv'),
+		process.env.CSV_OUT ?? path.join(root, 'migrations/data/images.csv'),
 	)
 	const host = process.env.MYSQL_HOST ?? '127.0.0.1'
 	const port = Number(process.env.MYSQL_PORT ?? 3307)

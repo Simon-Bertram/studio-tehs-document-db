@@ -1,806 +1,834 @@
 clipId,title,csvType,schemaType,action,sanityId,mappedKeywords,unmappedKeywords
-GCR07,"Grey Craig, Weatherby Lane",photo,historicalImage,patched,sbP4gqSkGjehGl77iAeuJF,Easttown; House; donation:26,
-GCR06,"Grey Craig, Weatherby Lane",photo,historicalImage,patched,6dpucc71Sg66KgXYGlahYM,Easttown; House; donation:26,
-GCR08,"Grey Craig, Weatherby Lane",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGRUAa,Easttown; House; donation:26,
-GCR09,"Grey Craig, Weatherby Lane",photo,historicalImage,patched,6dpucc71Sg66KgXYGlahwk,Easttown; House; donation:26,
-GCR10,"Grey Craig, Weatherby Lane",photo,historicalImage,patched,6dpucc71Sg66KgXYGlai1O,Easttown; House; donation:26,
-GCR11,"Grey Craig, Weatherby Lane",photo,historicalImage,patched,6dpucc71Sg66KgXYGlahjy,Easttown; House; donation:26,
-CLO03,"Clonmel, Old Eagle School Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLXipe,Tredyffrin; House; donation:26,
-CLO01,"Clonmel, Old Eagle School Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdm5dC,Tredyffrin; House; donation:26,
-CLO02,"Clonmel, Old Eagle School Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGRZ16,Tredyffrin; House; donation:26,
-CCF01,"Crum Creek Farm, Wayland Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAf2jF,Easttown; House; donation:26,
-CCF03,"Crum Creek Farm, Wayland Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGRbaC,Easttown; House; donation:26,
-CCF02,"Crum Creek Farm, Wayland Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAf3MX,Easttown; House; donation:26,
-CCF05,"Crum Creek Farm, Wayland Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLXuPi,Easttown; House; donation:26,
-CCF04,"Crum Creek Farm, Wayland Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdmNju,Easttown; House; donation:26,
-OAL01,"Oatlands, Waterloo Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGRdVW,Easttown; House; donation:26,
-OAL04,"Oatlands, Waterloo Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGRhiG,Easttown; House; donation:26,
-OAL02,"Oatlands, Waterloo Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLXuYk,Easttown; House; donation:26,
-OAL03,"Oatlands, Waterloo Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLXvpm,Easttown; House; donation:26,
-GRA01,"Gramond, Crestline Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdmjQy,Tredyffrin; House; donation:26,
-OAL05,"Oatlands, Waterloo Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGRh4U,Easttown; House; donation:26,
-WAC01,"West Acres, Sugartown Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLXz4k,Easttown; House; donation:26,
-GRA03,"Gramond, Crestline Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLY0dq,Tredyffrin; House; donation:26,
-BJO01,"Bjornhem, Waterloo Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAf98M,Easttown; House; donation:26,
-GRA02,"Gramond, Crestline Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGRkCw,Tredyffrin; House; donation:26,
-CVY01,"Clovelly, Clovelly Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLYKtK,Easttown; House; donation:26,
-CST01,"Carstenstein, Dorset Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdmpJU,Easttown; House; donation:26,
-CVY02,"Clovelly, Clovelly Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdmsN2,Easttown; House; donation:26,
-FLW03,"Fairlawn, Sugartown and Fairfield Roads",photo,historicalImage,patched,sbP4gqSkGjehGl77iAfIm8,Easttown; House; donation:26,
-FLW02,"Fairlawn, Sugartown and Fairfield Roads",photo,historicalImage,patched,boIVl02DH7EDt0T3jLYMEs,Easttown; House; donation:26,
-FLW01,"Fairlawn, Sugartown and Fairfield Roads",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGS2SI,Easttown; House; donation:26,
-FLW06,"Fairlawn, Sugartown and Fairfield Roads",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdn6iS,Easttown; House; donation:26,
-FLW04,"Fairlawn, Sugartown and Fairfield Roads",photo,historicalImage,patched,sbP4gqSkGjehGl77iAfKsd,Easttown; House; donation:26,
-FLW05,"Fairlawn, Sugartown and Fairfield Roads",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGS5sQ,Easttown; House; donation:26,
-FLW07,"Fairlawn, Sugartown and Fairfield Roads",photo,historicalImage,patched,sbP4gqSkGjehGl77iAfLcw,Easttown; House; donation:26,
-FLW08,"Fairlawn, Sugartown and Fairfield Roads",photo,historicalImage,patched,boIVl02DH7EDt0T3jLYYRK,Easttown; House; donation:26,
-FCF01,"Fox Creek Farm, White Horse Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSAeW,Easttown; House; donation:26,
-HCF01,"Happy Creek Farm, Church Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdn8wy,Easttown; House; donation:26,
-HCF02,"Happy Creek Farm, Church Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSCig,Easttown; House; donation:26,
-HCF03,"Happy Creek Farm, Church Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLYdOQ,Easttown; House; donation:26,
-HCF04,"Happy Creek Farm, Church Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLYdXS,Easttown; House; donation:26,
-HCF05,"Happy Creek Farm, Church Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdnXPM,Easttown; House; donation:26,
-KEL01,"Kelso, Sugartown Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLYeoU,Easttown; House; donation:26,
-LGW03,"Langwell, Church Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdnYzm,Easttown; House; donation:26,
-LGW02,"Langwell, Church Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSH8g,Easttown; House; donation:26,
-LGW01,"Langwell, Church Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSGHe,Easttown; House; donation:26,
-LGW06,"Langwell, Church Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSafa,Easttown; House; donation:26,
-LGW05,"Langwell, Church Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAfWM4,Easttown; House; donation:26,
-LGW04,"Langwell, Church Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSZWs,Easttown; House; donation:26,
-LGW07,"Langwell, Church Road",photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqRLrY,Easttown; House; donation:26,
-LEA01,"Rowland Lea residence, Waterloo Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSbSC,Easttown; House; donation:26,
-LEA02,"Rowland Lea residence, Waterloo Road",photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqRMT9,Easttown; House; donation:26,
-PWI02,"Percy Wilson residence, Waterloo Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSdam,Easttown; House; donation:26,
-PWI01,"Percy Wilson residence, Waterloo Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdniAQ,Easttown; House; donation:26,
+GCR06,"Grey Craig, Weatherby Lane",photo,historicalImage,patched,6dpucc71Sg66KgXYGlahYM,House; donation:26,Easttown
+GCR08,"Grey Craig, Weatherby Lane",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGRUAa,House; donation:26,Easttown
+GCR07,"Grey Craig, Weatherby Lane",photo,historicalImage,patched,sbP4gqSkGjehGl77iAeuJF,House; donation:26,Easttown
+GCR11,"Grey Craig, Weatherby Lane",photo,historicalImage,patched,6dpucc71Sg66KgXYGlahjy,House; donation:26,Easttown
+GCR10,"Grey Craig, Weatherby Lane",photo,historicalImage,patched,6dpucc71Sg66KgXYGlai1O,House; donation:26,Easttown
+GCR09,"Grey Craig, Weatherby Lane",photo,historicalImage,patched,6dpucc71Sg66KgXYGlahwk,House; donation:26,Easttown
+CLO03,"Clonmel, Old Eagle School Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLXipe,House; donation:26,Tredyffrin
+CLO01,"Clonmel, Old Eagle School Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdm5dC,House; donation:26,Tredyffrin
+CLO02,"Clonmel, Old Eagle School Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGRZ16,House; donation:26,Tredyffrin
+CCF03,"Crum Creek Farm, Wayland Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGRbaC,House; donation:26,Easttown
+CCF01,"Crum Creek Farm, Wayland Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAf2jF,House; donation:26,Easttown
+CCF02,"Crum Creek Farm, Wayland Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAf3MX,House; donation:26,Easttown
+CCF05,"Crum Creek Farm, Wayland Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLXuPi,House; donation:26,Easttown
+CCF04,"Crum Creek Farm, Wayland Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdmNju,House; donation:26,Easttown
+OAL01,"Oatlands, Waterloo Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGRdVW,House; donation:26,Easttown
+OAL03,"Oatlands, Waterloo Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLXvpm,House; donation:26,Easttown
+OAL02,"Oatlands, Waterloo Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLXuYk,House; donation:26,Easttown
+OAL04,"Oatlands, Waterloo Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGRhiG,House; donation:26,Easttown
+WAC01,"West Acres, Sugartown Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLXz4k,House; donation:26,Easttown
+OAL05,"Oatlands, Waterloo Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGRh4U,House; donation:26,Easttown
+GRA01,"Gramond, Crestline Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdmjQy,House; donation:26,Tredyffrin
+GRA02,"Gramond, Crestline Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGRkCw,House; donation:26,Tredyffrin
+GRA03,"Gramond, Crestline Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLY0dq,House; donation:26,Tredyffrin
+BJO01,"Bjornhem, Waterloo Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAf98M,House; donation:26,Easttown
+CVY01,"Clovelly, Clovelly Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLYKtK,House; donation:26,Easttown
+CST01,"Carstenstein, Dorset Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdmpJU,House; donation:26,Easttown
+CVY02,"Clovelly, Clovelly Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdmsN2,House; donation:26,Easttown
+FLW02,"Fairlawn, Sugartown and Fairfield Roads",photo,historicalImage,patched,boIVl02DH7EDt0T3jLYMEs,House; donation:26,Easttown
+FLW01,"Fairlawn, Sugartown and Fairfield Roads",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGS2SI,House; donation:26,Easttown
+FLW03,"Fairlawn, Sugartown and Fairfield Roads",photo,historicalImage,patched,sbP4gqSkGjehGl77iAfIm8,House; donation:26,Easttown
+FLW05,"Fairlawn, Sugartown and Fairfield Roads",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGS5sQ,House; donation:26,Easttown
+FLW04,"Fairlawn, Sugartown and Fairfield Roads",photo,historicalImage,patched,sbP4gqSkGjehGl77iAfKsd,House; donation:26,Easttown
+FLW06,"Fairlawn, Sugartown and Fairfield Roads",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdn6iS,House; donation:26,Easttown
+FLW08,"Fairlawn, Sugartown and Fairfield Roads",photo,historicalImage,patched,boIVl02DH7EDt0T3jLYYRK,House; donation:26,Easttown
+FLW07,"Fairlawn, Sugartown and Fairfield Roads",photo,historicalImage,patched,sbP4gqSkGjehGl77iAfLcw,House; donation:26,Easttown
+FCF01,"Fox Creek Farm, White Horse Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSAeW,House; donation:26,Easttown
+HCF02,"Happy Creek Farm, Church Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSCig,House; donation:26,Easttown
+HCF01,"Happy Creek Farm, Church Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdn8wy,House; donation:26,Easttown
+HCF03,"Happy Creek Farm, Church Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLYdOQ,House; donation:26,Easttown
+HCF05,"Happy Creek Farm, Church Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdnXPM,House; donation:26,Easttown
+HCF04,"Happy Creek Farm, Church Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLYdXS,House; donation:26,Easttown
+KEL01,"Kelso, Sugartown Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLYeoU,House; donation:26,Easttown
+LGW02,"Langwell, Church Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSH8g,House; donation:26,Easttown
+LGW01,"Langwell, Church Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSGHe,House; donation:26,Easttown
+LGW03,"Langwell, Church Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdnYzm,House; donation:26,Easttown
+LGW05,"Langwell, Church Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAfWM4,House; donation:26,Easttown
+LGW04,"Langwell, Church Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSZWs,House; donation:26,Easttown
+LGW06,"Langwell, Church Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSafa,House; donation:26,Easttown
+LEA01,"Rowland Lea residence, Waterloo Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSbSC,House; donation:26,Easttown
+LEA02,"Rowland Lea residence, Waterloo Road",photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqRMT9,House; donation:26,Easttown
+LGW07,"Langwell, Church Road",photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqRLrY,House; donation:26,Easttown
+PWI02,"Percy Wilson residence, Waterloo Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSdam,House; donation:26,Easttown
 ROC01,"Rockwood, Valley Forge Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSdNW,House; donation:26,
-DST01,Devon Stables,photo,historicalImage,patched,boIVl02DH7EDt0T3jLYyPK,House; donation:26,
+PWI01,"Percy Wilson residence, Waterloo Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdniAQ,House; donation:26,Easttown
 DST02,Devon Stables,photo,historicalImage,patched,boIVl02DH7EDt0T3jLYyoA,House; donation:26,
+DST01,Devon Stables,photo,historicalImage,patched,boIVl02DH7EDt0T3jLYyPK,House; donation:26,
 DST03,Devon Stables,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdnlOu,House; donation:26,
-DHS001,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSeWE,Easttown; Cultural,donation:0
-DHS002,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZ8ZK,Easttown; Cultural,donation:0
-WYI07,"Wynburne, Old Lancaster Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdnlDy,Easttown; Inn; donation:26,
-DHS004,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZ90Q,Easttown; Cultural,donation:0
-DHS003,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqRPV8,Easttown; Cultural,donation:0
-DHS005,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfcJ7,Easttown; Cultural,donation:0
-DHS008,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZ9Tm,Easttown; Cultural,donation:0
-DHS006,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSfIq,Easttown; Cultural,donation:0
-DHS007,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfdkv,Easttown; Cultural,donation:0
-DHS011,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZ9x8,Easttown; Cultural,donation:0
-DHS010,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSgjE,Easttown; Cultural,donation:0
-DHS009,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqRidW,Easttown; Cultural,donation:0
-DHS015,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdo3ym,Easttown; Cultural,donation:0
-DHS014,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSiRI,Easttown; Cultural,donation:0
-DHS013,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqS05T,Easttown; Cultural,donation:0
-DHS016,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqS0tb,Easttown; Cultural,donation:0
-DHS018,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZApK,Easttown; Cultural,donation:0
-DHS017,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfjna,Easttown; Cultural,donation:0
-DHS021,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfk4Q,Easttown; Cultural,donation:0
-DHS020,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdo4no,Easttown; Cultural,donation:0
-DHS019,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdo4ZE,Easttown; Cultural,donation:0
-DHS024,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSlI4,Easttown; Cultural,donation:0
-DHS023,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZBjm,Easttown; Cultural,donation:0
-DHS022,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSEm9,Easttown; Cultural,donation:0
-DHS025,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZBso,Easttown; Cultural,donation:0
-DHS027,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSFvA,Easttown; Cultural,donation:0
-DHS026,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZCOQ,Easttown; Cultural,donation:0
-DHS029,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfkV5,Easttown; Cultural,donation:0
-DHS028,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdo69e,Easttown; Cultural,donation:0
-DHS030,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdo6Rs,Easttown; Cultural,donation:0
-DHS012,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSGnT,Easttown; Cultural,donation:0
-DHS031,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdo7cm,Easttown; Cultural,donation:0
-DHS032,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSnZU,Easttown; Cultural,donation:0
-DHS034,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZDNO,Easttown; Cultural,donation:0
-DHS033,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfknK,Easttown; Cultural,donation:0
-DHS035,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSoUw,Easttown; Cultural,donation:0
-DHS038,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAflWE,Easttown; Cultural,donation:0
-DHS037,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdo99Y,Easttown; Cultural,donation:0
-DHS036,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAflCa,Easttown; Cultural,donation:0
-DHS040,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSKAL,Easttown; Cultural,donation:0
-DHS039,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSJMD,Easttown; Cultural,donation:0
-DHS041,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAflps,Easttown; Cultural,donation:0
-DHS042,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfmHw,Easttown; Cultural,donation:0
-DHS043,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSMOC,Easttown; Cultural,donation:0
-DHS044,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdoC5o,Easttown; Cultural,donation:0
-DHS046,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfnKU,Easttown; Cultural,donation:0
-DHS047,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZGKI,Easttown; Cultural,donation:0
-DHS045,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfmaB,Easttown; Cultural,donation:0
-DHS048,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSwGe,Easttown; Cultural,donation:0
-DHS050,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSyPE,Easttown; Cultural,donation:0
-DHS049,Gypsy Rose Lee at the Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSRNK,Easttown; Cultural,donation:0
-DHS052,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSTGI,Easttown; Cultural,donation:0
-DHS051,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSyBy,Easttown; Cultural,donation:0
-DHS053,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSU0F,Easttown; Cultural,donation:0
-DHS055,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGT0yK,Easttown; Cultural,donation:0
-DHS054,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGT0TO,Easttown; Cultural,donation:0
-DHS056,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdoIYm,Easttown; Cultural,donation:0
-DHS057,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSW9v,Easttown; Cultural,donation:0
-DHS058,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSWts,Easttown; Cultural,donation:0
-DHS059,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGT46m,Easttown; Cultural,donation:0
-DHS060,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSXyi,Easttown; Cultural,donation:0
-DHS061,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdoLnG,Easttown; Cultural,donation:0
-DHS062,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGT6oi,Easttown; Cultural,donation:0
-DHS065,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdoN5S,Easttown; Cultural,donation:0
-DHS064,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGT8SM,Easttown; Cultural,donation:0
-DHS063,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfr9d,Easttown; Cultural,donation:0
-DHS066,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTAEq,Easttown; Cultural,donation:0
-DHS068,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTBJ8,Easttown; Cultural,donation:0
-DHS067,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSbke,Easttown; Cultural,donation:0
-DHS069,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTCag,Easttown; Cultural,donation:0
-DHS070,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTCAA,Easttown; Cultural,donation:0
-DHS071,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTENA,Easttown; Cultural,donation:0
-DHS073,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZPyg,Easttown; Cultural,donation:0
-DHS072,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAft97,Easttown; Cultural,donation:0
-DHS074,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZQWY,Easttown; Cultural,donation:0
-DHS075,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdoVR4,Easttown; Cultural,donation:0
-DHS076,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSj1o,Easttown; Cultural,donation:0
-DHS077,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZTRC,Easttown; Cultural,donation:0
-DHS079,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTJic,Easttown; Cultural,donation:0
-DHS080,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZUiE,Easttown; Cultural,donation:0
-DHS078,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdoX1U,Easttown; Cultural,donation:0
-DHS082,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTMdo,Easttown; Cultural,donation:0
-DHS081,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSmw6,Easttown; Cultural,donation:0
-DHS083,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdoa1O,Easttown; Cultural,donation:0
-DHS085,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZWmw,Easttown; Cultural,donation:0
-DHS086,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfxiZ,Easttown; Cultural,donation:0
-DHS084,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTOvE,Easttown; Cultural,donation:0
-DHS087,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdocUU,Easttown; Cultural,donation:0
-DHS089,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTTPe,Easttown; Cultural,donation:0
-DHS088,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfxpa,Easttown; Cultural,donation:0
-DHS092,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfzkr,Easttown; Cultural,donation:0
-DHS090,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZa1u,Easttown; Cultural,donation:0
-DHS091,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZZv8,Easttown; Cultural,donation:0
-DHS095,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTY7K,Easttown; Cultural,donation:0
-DHS093,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZarq,Easttown; Cultural,donation:0
-DHS094,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTVPO,Easttown; Cultural,donation:0
-DHS098,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTaXa,Easttown; Cultural,donation:0
-DHS097,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdojFg,Easttown; Cultural,donation:0
-DHS096,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdojtm,Easttown; Cultural,donation:0
-DHS099,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdolim,Easttown; Cultural,donation:0
-DHS100,"Smith Family on Boardwalk, Devon Horse Show",photo,historicalImage,patched,sbP4gqSkGjehGl77iAg1Z7,Easttown; Cultural,donation:0
-HMS001,Hope Scott,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdonq0,Easttown; Cultural,donation:0
-HMS002,Young Hope Montgomery,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdooJA,Easttown; Cultural,donation:0
-HMS004,Hope Montgomery Scott at Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg32K,Easttown; Cultural,donation:0
-HMS003,Hope Montgomery Scott at Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg2Do,Easttown; Cultural,donation:0
-HMS005,Hope Montgomery Scott at Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZhdq,Easttown; Cultural,donation:0
-HMS007,Hope Montgomery Scott,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTijo,Easttown; Cultural,donation:0
-HMS006,Hope Montgomery Scott 80th birthday,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZhO2,Easttown; Cultural,donation:0
-IT16,An Afternoon at the Horse Show,postcard,historicalImage,patched,boIVl02DH7EDt0T3jLZjFC,Easttown; Cultural,donation:0
-DEI20,"Devon Inn and Lawn, Devon, PA",photo,historicalImage,patched,boIVl02DH7EDt0T3jLZius,Easttown; Cultural; donation:69,
-DCF006,Miss Thelma Austin and dog,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZkBu,Easttown; Cultural,donation:0
-DCF007,Country Clothes Shop,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZkqY,Easttown; Cultural,donation:0
-DCF008,Country Fair,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg4tO,Easttown; Cultural,donation:0
-DCF009,Country Fair,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdowtM,Easttown; Cultural,donation:0
-DCF010,Country Fair,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZmL8,Easttown; Cultural,donation:0
-DCF011,Country Fair,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdoxXS,Easttown; Cultural,donation:0
-DCF012,Country Fair,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg64M,Easttown; Cultural,donation:0
-DCF013,Country Fair,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg6Cm,Easttown; Cultural,donation:0
-DCF014,Country Fair,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZn22,Easttown; Cultural,donation:0
-DCF015,Country Fair,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTqw2,Easttown; Cultural,donation:0
-DCF017,Country Fair,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg6gF,Easttown; Cultural,donation:0
-DCF016,Country Fair,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZnOc,Easttown; Cultural,donation:0
-DHS101,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTrn4,Easttown; Cultural,donation:0
-DHS102,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTs9A,Easttown; Cultural,donation:0
-DHS103,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTsZg,Easttown; Cultural,donation:0
-DHS106,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZomQ,Easttown; Cultural,donation:0
-DHS105,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZofe,Easttown; Cultural,donation:0
-DHS104,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZoYs,Easttown; Cultural,donation:0
-DHS109,Devon Horse Show,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fJyh,Easttown; Cultural,donation:0
-DHS107,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdp1XK,Easttown; Cultural,donation:0
-DHS108,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdp1tC,Easttown; Cultural,donation:0
-DHS111,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTur6,Easttown; Cultural,donation:0
-DHS110,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZqJG,Easttown; Cultural,donation:0
-DHS112,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZpgs,Easttown; Cultural,donation:0
-DHS113,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg8Vu,Easttown; Cultural,donation:0
-DHS115,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg8tl,Easttown; Cultural,donation:0
-DHS114,Devon Horse Show,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fKnD,Easttown; Cultural,donation:0
-DHS118,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg93a,Easttown; Cultural,donation:0
-DHS117,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdp3pU,Easttown; Cultural,donation:0
-DHS116,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdp3XG,Easttown; Cultural,donation:0
-DHS121,Devon Horse Show,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fLqh,Easttown; Cultural,donation:0
-DHS120,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZskY,Easttown; Cultural,donation:0
-DHS119,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg97n,Easttown; Cultural,donation:0
-DHS122,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZtDu,Easttown; Cultural,donation:0
-DHS124,Devon Horse Show,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fM03,Easttown; Cultural,donation:0
-DHS123,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTxZ2,Easttown; Cultural,donation:0
-DHS125,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg9e4,Easttown; Cultural,donation:0
-DHS126,Devon Horse Show,photo,historicalImage,patched,x9KhfJjIuDb6DGkcI8fI12,Easttown; Cultural,donation:0
-DHS127,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZtlm,Easttown; Cultural,donation:0
-DHS130,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTzH6,Easttown; Cultural,donation:0
-DHS129,Devon Horse Show,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fMKd,Easttown; Cultural,donation:0
-DHS128,Devon Horse Show,photo,historicalImage,patched,x9KhfJjIuDb6DGkcI8fImm,Easttown; Cultural,donation:0
-NVR08,North Valley Road and route 202,photo,historicalImage,patched,x9KhfJjIuDb6DGkcI8fKrg,Tredyffrin; donation:30,Road
-DHS131,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdp6wg,Easttown; Cultural,donation:0
-NVR07,North Valley Road and route 202,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZuAc,Tredyffrin; donation:30,Road
-CCC01,Fred DiAddezzio at the Continental Can Company,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fNIV,Tredyffrin; Business; donation:27,
-CVR131,Bridge Abutments on Chester Valley Trail (ex Chester Valley Railroad),photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fN5P,Tredyffrin; Railroad; donation:30,
-CVR132,Bridge Abutments on Chester Valley Trail (ex Chester Valley Railroad),photo,historicalImage,patched,WOdasKzWYNoImJ3aDGU0hU,Tredyffrin; Railroad; donation:30,
-CCC03,Continental Can Company,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdp97Y,Tredyffrin; Business; donation:27,
-CCC04,Continental Can Company,photo,historicalImage,patched,x9KhfJjIuDb6DGkcI8fN68,Tredyffrin; Business; donation:27,
-CCC02,Fred DiAddezzio at the Continental Can Company,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdp8sy,Tredyffrin; Business; donation:27,
-CCC06,United Papermakers & Paperworkers Union meeting,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgAnd,Tredyffrin; Business; donation:27,
-CCC07,Fred DiAddezzio on the right,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZvsk,Tredyffrin; Business; donation:27,
-CCC05,"United Papermakers and Paperworkers Conference, Continental Can Company",photo,historicalImage,patched,x9KhfJjIuDb6DGkcI8fMro,Tredyffrin; Business; donation:27,
-CCC10,Continental Can Company,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZwSs,Tredyffrin; Business; donation:27,
-CCC09,Union Meeting of Continental Can Company's UPP unions,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdp9eM,Tredyffrin; Business; donation:27,
-CCC08,Continental Can Company Paoli Plant,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fO1P,Tredyffrin; Business; donation:27,
-CCC13,Continental Can Company,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZxWM,Tredyffrin; Business; donation:27,
-CCC12,Continental Can Company,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZwZe,Tredyffrin; Business; donation:27,
-CCC11,Continental Can Company,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgBTj,Tredyffrin; Business; donation:27,
-CCC16,"Veterans Banquet 1967, Continental Can Company",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpGEc,Tredyffrin; Business; donation:27,
-CCC14,"Veterans’ Banquet, Continental Can Company",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGU3PQ,Tredyffrin; Business; donation:27,
-CCC15,"Veterans Banquet 1965, Continental Can Company",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpCeG,Tredyffrin; Business; donation:27,
-CCC17,"Veterans Banquet 1969, Continental Can Company",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgD9Z,Tredyffrin; Business; donation:27,
-CCC19,"Veterans Banquet, Continental Can Company",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpIT8,Tredyffrin; Business; donation:27,
-CCC18,"Veterans Banquet, Continental Can Company",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fQ4d,Tredyffrin; Business; donation:27,
-CCC20,"Veterans Banquet, Continental Can Company",photo,historicalImage,patched,x9KhfJjIuDb6DGkcI8fTsG,Tredyffrin; Business; donation:27,
-CCC21,"Veterans Banquet, Continental Can Company",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgE2I,Tredyffrin; Business; donation:27,
-CCC22,"Veterans Banquet 1971, Continental Can Company",photo,historicalImage,patched,boIVl02DH7EDt0T3jLa08w,Tredyffrin; Business; donation:27,
-CCC23,Bowling team,photo,historicalImage,patched,boIVl02DH7EDt0T3jLa0MU,Tredyffrin; Business; donation:27,
-CCC25,Continental Can Company Bowling Team - Devon Lanes Industrial League,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUBg4,Tredyffrin; Business; donation:27,
-CCC24,"Devon Bocce Club, Bowling league",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fRwd,Tredyffrin; Business; donation:27,
-BAP04,"Springhouse, Great Valley Baptist Parsonage",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpNoq,Tredyffrin; House; donation:28,
-BAP02,"Springhouse, Great Valley Baptist Parsonage",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUCJq,Tredyffrin; House; donation:28,
-BEM01,"Springhouse, Beaumont Road, Easttown",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgFrx,Easttown; House; donation:28,
-BUT02,"2175 Buttonwood Road, Easttown",photo,historicalImage,patched,x9KhfJjIuDb6DGkcI8faQ4,Easttown; House; donation:28,
-BUT03,"Springhouse, 2155 Buttonwood Road, Easttown",photo,historicalImage,patched,boIVl02DH7EDt0T3jLa3vm,Easttown; House; donation:28,
-BUT01,"Springhouse, Buttonwood Road, Easttown",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fTBL,Easttown; House; donation:28,
-DRF06,"Springhouse, Diamond Rock Farm",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fUXX,Tredyffrin; Farm; donation:28,
-DRF04,"Carriage Shed, Diamond Rock Farm",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgGar,Tredyffrin; Farm; donation:28,
-DRF05,"Corn Crib, Diamond Rock Farm",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fUB5,Tredyffrin; Farm; donation:28,
-HOU54,"Springhouse, 741 Contention Lane",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUJ5g,Tredyffrin; House; donation:28,
-HOU55,"Springhouse, Sugartown Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUJac,Easttown; House; donation:28,
-DRF07,"Springhouse, Diamond Rock Farm",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpSAa,Tredyffrin; Farm; donation:28,
-KEL02,"Building at Kelso, Berwyn-Paoli Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpSl2,Easttown; House; donation:28,
-KEL03,"Carriage House, Kelso, Berwyn-Paoli Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUN0k,Easttown; House; donation:28,
-LEB01,"Springhouse, Le Boutillier Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgIbk,Tredyffrin; Farm; donation:28,
-LEO01,"Springhouse, Leopard Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgJfh,Easttown; House; donation:28,
-NVR02,"Springhouse, 55 North Valley Road",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fXUt,Tredyffrin; House; donation:28,
-LEB02,"Springhouse, Le Boutillier Road",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fWYt,Tredyffrin; Farm; donation:28,
-NVR05,"Building, Great Valley Mill",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgKwH,Tredyffrin; House; donation:28,
-NVR03,"Springhouse, 55 North Valley Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgKYQ,Tredyffrin; House; donation:28,
-NVR04,"Springhouse, Great Valley Mill",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpXhE,Tredyffrin; House; donation:28,
-NVR06,"Springhouse, 55 North Valley Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUQI2,Tredyffrin; House; donation:28,
-NWT01,"Building, 810 Newtown Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaBHu,Easttown; House; donation:28,
-NWT02,"Springhouse, across from 810 Newtown Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGURVA,Easttown; House; donation:28,
-POK09,"Building, PennOkla Farm",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgM5q,Tredyffrin; Farm; donation:28,
-POK08,"Silo, PennOkla Farm",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUTZK,Tredyffrin; Farm; donation:28,
-POK10,"Building, PennOkla Farm",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUUD6,Tredyffrin; Farm; donation:28,
-PUR03,"Springhouse, 453 Pugh Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpdOo,Tredyffrin; House; donation:28,
-PUR02,"Springhouse, Avonwood Farm, Pugh Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUVUe,Tredyffrin; Farm; donation:28,
-PUR01,"Springhouse, Pugh Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgMV6,Tredyffrin; House; donation:28,
-PUR05,"Springhouse, Avonwood Farm, Pugh Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUW40,Tredyffrin; Farm; donation:28,
-PUR04,"Springhouse, 453 Pugh Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaDsE,Tredyffrin; House; donation:28,
-SHA22,"Hen house, Hawthorne, Leopard Road",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fbu3,Easttown; House; donation:28,
-SSP08,"Springhouse, Sycamore Springs Farm, Yellow Springs Road",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fc79,Tredyffrin; Farm; donation:28,
-SSP10,"Ruin, Sycamore Springs, Yellow Springs Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpp6C,Tredyffrin; Farm; donation:28,
-SSP09,"Springhouse, Sycamore Springs Farm, Yellow Springs Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUX3s,Tredyffrin; Farm; donation:28,
-SWE03,"Building, Swedesford Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUYzC,Tredyffrin; House; donation:28,
-SWE02,"Root Cellar, 110 Swedesford Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaFP4,Tredyffrin; House; donation:28,
-SWE01,"Springhouse, 110 Swedesford Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdppge,Tredyffrin; House; donation:28,
-TAR05,"Springhouse, Tarleton",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fd1H,Easttown; House; donation:28,
-SWE04,"Limestone Kiln, Swedesford Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUZYY,Tredyffrin; House; donation:28,
+DHS001,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSeWE,Cultural,Easttown; donation:0
+WYI07,"Wynburne, Old Lancaster Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdnlDy,Inn; donation:26,Easttown
+DHS002,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZ8ZK,Cultural,Easttown; donation:0
+DHS003,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqRPV8,Cultural,Easttown; donation:0
+DHS004,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZ90Q,Cultural,Easttown; donation:0
+DHS005,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfcJ7,Cultural,Easttown; donation:0
+DHS007,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfdkv,Cultural,Easttown; donation:0
+DHS006,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSfIq,Cultural,Easttown; donation:0
+DHS008,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZ9Tm,Cultural,Easttown; donation:0
+DHS011,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZ9x8,Cultural,Easttown; donation:0
+DHS009,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqRidW,Cultural,Easttown; donation:0
+DHS010,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSgjE,Cultural,Easttown; donation:0
+DHS013,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqS05T,Cultural,Easttown; donation:0
+DHS014,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSiRI,Cultural,Easttown; donation:0
+DHS015,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdo3ym,Cultural,Easttown; donation:0
+DHS017,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfjna,Cultural,Easttown; donation:0
+DHS018,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZApK,Cultural,Easttown; donation:0
+DHS016,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqS0tb,Cultural,Easttown; donation:0
+DHS020,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdo4no,Cultural,Easttown; donation:0
+DHS021,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfk4Q,Cultural,Easttown; donation:0
+DHS019,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdo4ZE,Cultural,Easttown; donation:0
+DHS023,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZBjm,Cultural,Easttown; donation:0
+DHS022,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSEm9,Cultural,Easttown; donation:0
+DHS024,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSlI4,Cultural,Easttown; donation:0
+DHS026,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZCOQ,Cultural,Easttown; donation:0
+DHS025,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZBso,Cultural,Easttown; donation:0
+DHS027,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSFvA,Cultural,Easttown; donation:0
+DHS028,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdo69e,Cultural,Easttown; donation:0
+DHS029,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfkV5,Cultural,Easttown; donation:0
+DHS030,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdo6Rs,Cultural,Easttown; donation:0
+DHS012,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSGnT,Cultural,Easttown; donation:0
+DHS032,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSnZU,Cultural,Easttown; donation:0
+DHS031,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdo7cm,Cultural,Easttown; donation:0
+DHS033,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfknK,Cultural,Easttown; donation:0
+DHS035,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSoUw,Cultural,Easttown; donation:0
+DHS034,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZDNO,Cultural,Easttown; donation:0
+DHS036,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAflCa,Cultural,Easttown; donation:0
+DHS037,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdo99Y,Cultural,Easttown; donation:0
+DHS038,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAflWE,Cultural,Easttown; donation:0
+DHS039,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSJMD,Cultural,Easttown; donation:0
+DHS041,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAflps,Cultural,Easttown; donation:0
+DHS040,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSKAL,Cultural,Easttown; donation:0
+DHS042,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfmHw,Cultural,Easttown; donation:0
+DHS043,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSMOC,Cultural,Easttown; donation:0
+DHS044,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdoC5o,Cultural,Easttown; donation:0
+DHS045,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfmaB,Cultural,Easttown; donation:0
+DHS046,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfnKU,Cultural,Easttown; donation:0
+DHS047,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZGKI,Cultural,Easttown; donation:0
+DHS048,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSwGe,Cultural,Easttown; donation:0
+DHS049,Gypsy Rose Lee at the Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSRNK,Cultural,Easttown; donation:0
+DHS050,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSyPE,Cultural,Easttown; donation:0
+DHS051,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGSyBy,Cultural,Easttown; donation:0
+DHS052,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSTGI,Cultural,Easttown; donation:0
+DHS053,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSU0F,Cultural,Easttown; donation:0
+DHS054,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGT0TO,Cultural,Easttown; donation:0
+DHS055,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGT0yK,Cultural,Easttown; donation:0
+DHS056,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdoIYm,Cultural,Easttown; donation:0
+DHS057,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSW9v,Cultural,Easttown; donation:0
+DHS059,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGT46m,Cultural,Easttown; donation:0
+DHS058,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSWts,Cultural,Easttown; donation:0
+DHS060,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSXyi,Cultural,Easttown; donation:0
+DHS062,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGT6oi,Cultural,Easttown; donation:0
+DHS061,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdoLnG,Cultural,Easttown; donation:0
+DHS063,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfr9d,Cultural,Easttown; donation:0
+DHS064,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGT8SM,Cultural,Easttown; donation:0
+DHS065,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdoN5S,Cultural,Easttown; donation:0
+DHS066,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTAEq,Cultural,Easttown; donation:0
+DHS068,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTBJ8,Cultural,Easttown; donation:0
+DHS067,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSbke,Cultural,Easttown; donation:0
+DHS069,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTCag,Cultural,Easttown; donation:0
+DHS070,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTCAA,Cultural,Easttown; donation:0
+DHS071,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTENA,Cultural,Easttown; donation:0
+DHS074,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZQWY,Cultural,Easttown; donation:0
+DHS072,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAft97,Cultural,Easttown; donation:0
+DHS073,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZPyg,Cultural,Easttown; donation:0
+DHS077,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZTRC,Cultural,Easttown; donation:0
+DHS076,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSj1o,Cultural,Easttown; donation:0
+DHS075,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdoVR4,Cultural,Easttown; donation:0
+DHS080,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZUiE,Cultural,Easttown; donation:0
+DHS079,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTJic,Cultural,Easttown; donation:0
+DHS078,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdoX1U,Cultural,Easttown; donation:0
+DHS081,Devon Horse Show,photo,historicalImage,patched,ujiLkFl5Otz1UIlDgqSmw6,Cultural,Easttown; donation:0
+DHS083,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdoa1O,Cultural,Easttown; donation:0
+DHS082,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTMdo,Cultural,Easttown; donation:0
+DHS085,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZWmw,Cultural,Easttown; donation:0
+DHS084,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTOvE,Cultural,Easttown; donation:0
+DHS086,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfxiZ,Cultural,Easttown; donation:0
+DHS087,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdocUU,Cultural,Easttown; donation:0
+DHS088,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfxpa,Cultural,Easttown; donation:0
+DHS089,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTTPe,Cultural,Easttown; donation:0
+DHS091,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZZv8,Cultural,Easttown; donation:0
+DHS090,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZa1u,Cultural,Easttown; donation:0
+DHS092,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAfzkr,Cultural,Easttown; donation:0
+DHS094,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTVPO,Cultural,Easttown; donation:0
+DHS093,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZarq,Cultural,Easttown; donation:0
+DHS095,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTY7K,Cultural,Easttown; donation:0
+DHS097,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdojFg,Cultural,Easttown; donation:0
+DHS096,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdojtm,Cultural,Easttown; donation:0
+DHS098,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTaXa,Cultural,Easttown; donation:0
+HMS001,Hope Scott,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdonq0,Cultural,Easttown; donation:0
+DHS099,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdolim,Cultural,Easttown; donation:0
+DHS100,"Smith Family on Boardwalk, Devon Horse Show",photo,historicalImage,patched,sbP4gqSkGjehGl77iAg1Z7,Cultural,Easttown; donation:0
+HMS004,Hope Montgomery Scott at Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg32K,Cultural,Easttown; donation:0
+HMS003,Hope Montgomery Scott at Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg2Do,Cultural,Easttown; donation:0
+HMS002,Young Hope Montgomery,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdooJA,Cultural,Easttown; donation:0
+HMS006,Hope Montgomery Scott 80th birthday,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZhO2,Cultural,Easttown; donation:0
+HMS007,Hope Montgomery Scott,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTijo,Cultural,Easttown; donation:0
+HMS005,Hope Montgomery Scott at Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZhdq,Cultural,Easttown; donation:0
+DCF006,Miss Thelma Austin and dog,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZkBu,Cultural,Easttown; donation:0
+DEI20,"Devon Inn and Lawn, Devon, PA",photo,historicalImage,patched,boIVl02DH7EDt0T3jLZius,Cultural; donation:69,Easttown
+IT16,An Afternoon at the Horse Show,postcard,historicalImage,patched,boIVl02DH7EDt0T3jLZjFC,Cultural,Easttown; donation:0
+DCF008,Country Fair,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg4tO,Cultural,Easttown; donation:0
+DCF009,Country Fair,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdowtM,Cultural,Easttown; donation:0
+DCF007,Country Clothes Shop,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZkqY,Cultural,Easttown; donation:0
+DCF011,Country Fair,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdoxXS,Cultural,Easttown; donation:0
+DCF012,Country Fair,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg64M,Cultural,Easttown; donation:0
+DCF010,Country Fair,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZmL8,Cultural,Easttown; donation:0
+DCF013,Country Fair,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg6Cm,Cultural,Easttown; donation:0
+DCF015,Country Fair,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTqw2,Cultural,Easttown; donation:0
+DCF014,Country Fair,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZn22,Cultural,Easttown; donation:0
+DHS101,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTrn4,Cultural,Easttown; donation:0
+DCF017,Country Fair,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg6gF,Cultural,Easttown; donation:0
+DCF016,Country Fair,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZnOc,Cultural,Easttown; donation:0
+DHS102,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTs9A,Cultural,Easttown; donation:0
+DHS103,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTsZg,Cultural,Easttown; donation:0
+DHS104,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZoYs,Cultural,Easttown; donation:0
+DHS105,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZofe,Cultural,Easttown; donation:0
+DHS107,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdp1XK,Cultural,Easttown; donation:0
+DHS106,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZomQ,Cultural,Easttown; donation:0
+DHS108,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdp1tC,Cultural,Easttown; donation:0
+DHS110,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZqJG,Cultural,Easttown; donation:0
+DHS109,Devon Horse Show,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fJyh,Cultural,Easttown; donation:0
+DHS111,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTur6,Cultural,Easttown; donation:0
+DHS112,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZpgs,Cultural,Easttown; donation:0
+DHS113,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg8Vu,Cultural,Easttown; donation:0
+DHS114,Devon Horse Show,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fKnD,Cultural,Easttown; donation:0
+DHS115,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg8tl,Cultural,Easttown; donation:0
+DHS116,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdp3XG,Cultural,Easttown; donation:0
+DHS117,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdp3pU,Cultural,Easttown; donation:0
+DHS118,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg93a,Cultural,Easttown; donation:0
+DHS119,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg97n,Cultural,Easttown; donation:0
+DHS120,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZskY,Cultural,Easttown; donation:0
+DHS121,Devon Horse Show,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fLqh,Cultural,Easttown; donation:0
+DHS122,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZtDu,Cultural,Easttown; donation:0
+DHS123,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTxZ2,Cultural,Easttown; donation:0
+DHS124,Devon Horse Show,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fM03,Cultural,Easttown; donation:0
+DHS125,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAg9e4,Cultural,Easttown; donation:0
+DHS126,Devon Horse Show,photo,historicalImage,patched,x9KhfJjIuDb6DGkcI8fI12,Cultural,Easttown; donation:0
+DHS127,Devon Horse Show,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZtlm,Cultural,Easttown; donation:0
+DHS128,Devon Horse Show,photo,historicalImage,patched,x9KhfJjIuDb6DGkcI8fImm,Cultural,Easttown; donation:0
+DHS129,Devon Horse Show,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fMKd,Cultural,Easttown; donation:0
+DHS130,Devon Horse Show,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGTzH6,Cultural,Easttown; donation:0
+DHS131,Devon Horse Show,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdp6wg,Cultural,Easttown; donation:0
+NVR07,North Valley Road and route 202,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZuAc,donation:30,Tredyffrin; Road
+NVR08,North Valley Road and route 202,photo,historicalImage,patched,x9KhfJjIuDb6DGkcI8fKrg,donation:30,Tredyffrin; Road
+RDS05,Route 202 looking west from Swedesford Road,photo,historicalImage,created,h7jyTqsbY1egLREo29brfp,East Whiteland; donation:30,Road
+VFV13,J. Rowan’s Store,photo,historicalImage,created,h7jyTqsbY1egLREo29brim,House; donation:31,Schuylkill
+VFV14,Valley Forge Village 1878 looking east,photo,historicalImage,created,N1G5rtOZj8187JlhVe4vz3,donation:31,Schuylkill; View
+CVR131,Bridge Abutments on Chester Valley Trail (ex Chester Valley Railroad),photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fN5P,Railroad; donation:30,Tredyffrin
+CVR132,Bridge Abutments on Chester Valley Trail (ex Chester Valley Railroad),photo,historicalImage,patched,WOdasKzWYNoImJ3aDGU0hU,Railroad; donation:30,Tredyffrin
+CCC01,Fred DiAddezzio at the Continental Can Company,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fNIV,Business; donation:27,Tredyffrin
+CCC02,Fred DiAddezzio at the Continental Can Company,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdp8sy,Business; donation:27,Tredyffrin
+CCC03,Continental Can Company,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdp97Y,Business; donation:27,Tredyffrin
+CCC04,Continental Can Company,photo,historicalImage,patched,x9KhfJjIuDb6DGkcI8fN68,Business; donation:27,Tredyffrin
+CCC05,"United Papermakers and Paperworkers Conference, Continental Can Company",photo,historicalImage,patched,x9KhfJjIuDb6DGkcI8fMro,Business; donation:27,Tredyffrin
+CCC06,United Papermakers & Paperworkers Union meeting,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgAnd,Business; donation:27,Tredyffrin
+CCC07,Fred DiAddezzio on the right,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZvsk,Business; donation:27,Tredyffrin
+CCC09,Union Meeting of Continental Can Company's UPP unions,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdp9eM,Business; donation:27,Tredyffrin
+CCC08,Continental Can Company Paoli Plant,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fO1P,Business; donation:27,Tredyffrin
+CCC10,Continental Can Company,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZwSs,Business; donation:27,Tredyffrin
+CCC12,Continental Can Company,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZwZe,Business; donation:27,Tredyffrin
+CCC11,Continental Can Company,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgBTj,Business; donation:27,Tredyffrin
+CCC13,Continental Can Company,photo,historicalImage,patched,boIVl02DH7EDt0T3jLZxWM,Business; donation:27,Tredyffrin
+CCC14,"Veterans’ Banquet, Continental Can Company",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGU3PQ,Business; donation:27,Tredyffrin
+CCC15,"Veterans Banquet 1965, Continental Can Company",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpCeG,Business; donation:27,Tredyffrin
+CCC17,"Veterans Banquet 1969, Continental Can Company",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgD9Z,Business; donation:27,Tredyffrin
+CCC16,"Veterans Banquet 1967, Continental Can Company",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpGEc,Business; donation:27,Tredyffrin
+CCC18,"Veterans Banquet, Continental Can Company",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fQ4d,Business; donation:27,Tredyffrin
+CCC19,"Veterans Banquet, Continental Can Company",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpIT8,Business; donation:27,Tredyffrin
+CCC20,"Veterans Banquet, Continental Can Company",photo,historicalImage,patched,x9KhfJjIuDb6DGkcI8fTsG,Business; donation:27,Tredyffrin
+CCC21,"Veterans Banquet, Continental Can Company",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgE2I,Business; donation:27,Tredyffrin
+CCC23,Bowling team,photo,historicalImage,patched,boIVl02DH7EDt0T3jLa0MU,Business; donation:27,Tredyffrin
+CCC22,"Veterans Banquet 1971, Continental Can Company",photo,historicalImage,patched,boIVl02DH7EDt0T3jLa08w,Business; donation:27,Tredyffrin
+BAP02,"Springhouse, Great Valley Baptist Parsonage",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUCJq,House; donation:28,Tredyffrin
+CCC25,Continental Can Company Bowling Team - Devon Lanes Industrial League,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUBg4,Business; donation:27,Tredyffrin
+CCC24,"Devon Bocce Club, Bowling league",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fRwd,Business; donation:27,Tredyffrin
+BUT01,"Springhouse, Buttonwood Road, Easttown",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fTBL,House; donation:28,Easttown
+BAP04,"Springhouse, Great Valley Baptist Parsonage",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpNoq,House; donation:28,Tredyffrin
+BEM01,"Springhouse, Beaumont Road, Easttown",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgFrx,House; donation:28,Easttown
+BUT03,"Springhouse, 2155 Buttonwood Road, Easttown",photo,historicalImage,patched,boIVl02DH7EDt0T3jLa3vm,House; donation:28,Easttown
+DRF04,"Carriage Shed, Diamond Rock Farm",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgGar,Farm; donation:28,Tredyffrin
+BUT02,"2175 Buttonwood Road, Easttown",photo,historicalImage,patched,x9KhfJjIuDb6DGkcI8faQ4,House; donation:28,Easttown
+DRF05,"Corn Crib, Diamond Rock Farm",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fUB5,Farm; donation:28,Tredyffrin
+DRF06,"Springhouse, Diamond Rock Farm",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fUXX,Farm; donation:28,Tredyffrin
+DRF07,"Springhouse, Diamond Rock Farm",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpSAa,Farm; donation:28,Tredyffrin
+HOU55,"Springhouse, Sugartown Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUJac,House; donation:28,Easttown
+KEL02,"Building at Kelso, Berwyn-Paoli Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpSl2,House; donation:28,Easttown
+HOU54,"Springhouse, 741 Contention Lane",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUJ5g,House; donation:28,Tredyffrin
+LEB02,"Springhouse, Le Boutillier Road",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fWYt,Farm; donation:28,Tredyffrin
+KEL03,"Carriage House, Kelso, Berwyn-Paoli Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUN0k,House; donation:28,Easttown
+LEB01,"Springhouse, Le Boutillier Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgIbk,Farm; donation:28,Tredyffrin
+LEO01,"Springhouse, Leopard Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgJfh,House; donation:28,Easttown
+NVR02,"Springhouse, 55 North Valley Road",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fXUt,House; donation:28,Tredyffrin
+NVR03,"Springhouse, 55 North Valley Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgKYQ,House; donation:28,Tredyffrin
+NVR06,"Springhouse, 55 North Valley Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUQI2,House; donation:28,Tredyffrin
+NVR05,"Building, Great Valley Mill",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgKwH,House; donation:28,Tredyffrin
+NVR04,"Springhouse, Great Valley Mill",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpXhE,House; donation:28,Tredyffrin
+POK08,"Silo, PennOkla Farm",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUTZK,Farm; donation:28,Tredyffrin
+NWT01,"Building, 810 Newtown Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaBHu,House; donation:28,Easttown
+NWT02,"Springhouse, across from 810 Newtown Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGURVA,House; donation:28,Easttown
+PUR01,"Springhouse, Pugh Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgMV6,House; donation:28,Tredyffrin
+POK09,"Building, PennOkla Farm",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgM5q,Farm; donation:28,Tredyffrin
+POK10,"Building, PennOkla Farm",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUUD6,Farm; donation:28,Tredyffrin
+PUR02,"Springhouse, Avonwood Farm, Pugh Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUVUe,Farm; donation:28,Tredyffrin
+PUR04,"Springhouse, 453 Pugh Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaDsE,House; donation:28,Tredyffrin
+PUR03,"Springhouse, 453 Pugh Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpdOo,House; donation:28,Tredyffrin
+SSP08,"Springhouse, Sycamore Springs Farm, Yellow Springs Road",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fc79,Farm; donation:28,Tredyffrin
+PUR05,"Springhouse, Avonwood Farm, Pugh Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUW40,Farm; donation:28,Tredyffrin
+SHA22,"Hen house, Hawthorne, Leopard Road",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fbu3,House; donation:28,Easttown
+SSP09,"Springhouse, Sycamore Springs Farm, Yellow Springs Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUX3s,Farm; donation:28,Tredyffrin
+SWE01,"Springhouse, 110 Swedesford Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdppge,House; donation:28,Tredyffrin
+SSP10,"Ruin, Sycamore Springs, Yellow Springs Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpp6C,Farm; donation:28,Tredyffrin
+SWE02,"Root Cellar, 110 Swedesford Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaFP4,House; donation:28,Tredyffrin
+SWE03,"Building, Swedesford Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUYzC,House; donation:28,Tredyffrin
+SWE04,"Limestone Kiln, Swedesford Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUZYY,House; donation:28,Tredyffrin
+TAR05,"Springhouse, Tarleton",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fd1H,House; donation:28,Easttown
 VAQ05,"Springhouse, Varnums Quarters",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUaU0,Upper Merion; House; donation:28,
-WAH01,"Building, 1060 Waterloo Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgNoU,Easttown; House; donation:28,
-WAY06,"Springhouse, Waynesborough",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpr68,Easttown; House; donation:28,
+WAH01,"Building, 1060 Waterloo Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgNoU,House; donation:28,Easttown
+WAY06,"Springhouse, Waynesborough",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpr68,House; donation:28,Easttown
 WHQ24,"Springhouse, Washington's Headquarters",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fdm3,Upper Merion; House; donation:28,
 WHQ25,"Springhouse, Washington's Headquarters",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fe2t,Upper Merion; House; donation:28,
-PP09,"Paoli Post Office, September 1 1929 to June 20 1955",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnz2LU,Tredyffrin; Business,
 WHQ26,"Root Cellar, Washington’s Headquarters",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgO88,Upper Merion; House; donation:28,
-PP10,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxTlI,Tredyffrin; Business,
-PP11,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxUVD,Tredyffrin; Business,
-KCW01,Berwyn Carriage Works,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnz2q8,Easttown; Business; donation:25,
-KCW02,"Berwyn Carriage Works after fire, 1924",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnz3Ba,Easttown; Business; donation:25,
-KRI01,Frank and George(?) Krider,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgOXO,donation:25,Person
-KCW03,"Berwyn Carriage Works, run by Krider family, at Owen McClure’s",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaHzO,Easttown; Business; donation:25,
+PP09,"Paoli Post Office, September 1 1929 to June 20 1955",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnz2LU,Business,Tredyffrin
+PP10,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxTlI,Business,Tredyffrin
+PP11,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxUVD,Business,Tredyffrin
+KCW01,Berwyn Carriage Works,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnz2q8,Business; donation:25,Easttown
+KCW02,"Berwyn Carriage Works after fire, 1924",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnz3Ba,Business; donation:25,Easttown
 KRI02,Frank Krider,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaI8Q,donation:25,Person
+KCW03,"Berwyn Carriage Works, run by Krider family, at Owen McClure’s",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaHzO,Business; donation:25,Easttown
+KRI01,Frank and George(?) Krider,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgOXO,donation:25,Person
+KRI03,Cart,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgOfo,Business; donation:25,Easttown
 KRI04,Memorial Card to Frank K. Krider,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgOvF,donation:25,Person
-KRI03,Cart,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgOfo,Easttown; Business; donation:25,
 KRI05,Krider / Jones family photograph,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fg67,donation:25,Person
 KRI07,Krider / Jones family photograph,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxVPj,donation:25,Person
+KRI08,Krider / Jones family photograph,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUeKe,donation:25,Easttown; Person
 KRI06,Krider / Jones family photograph,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnz3X2,donation:25,Person
-KRI08,Krider / Jones family photograph,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUeKe,Easttown; donation:25,Person
-KRI10,Frank K. Krider,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxVvW,donation:25,Person
 KRI09,Howard Jones,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaIn4,donation:25,Person
+KRI10,Frank K. Krider,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxVvW,donation:25,Person
 KRI11,Lizzie Jones,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxW67,donation:25,Person
 KRI12,Charles P. Jones,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaJ9e,donation:25,Person
-PP12,Paoli Railroad Station,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgPSv,Tredyffrin; Business,
-PP13,Paoli Railroad Station,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpucq,Tredyffrin; Business,
-PP14,Paoli Railroad Station,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fh0F,Tredyffrin; Business,
-PP15,Paoli Post Office,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpurQ,Tredyffrin; Business,
-PP16,Paoli Post Office,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnz5JM,Tredyffrin; Business,
-PP18,Paoli Post Office,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fhfP,Tredyffrin; Business,
-PP17,Paoli Post Office,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fhQR,Tredyffrin; Business,
-PP20,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxYJs,Tredyffrin; Business,
-PP21,Paoli Post Office,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpwOC,Tredyffrin; Business,
-PP19,Paoli Post Office,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpvVW,Tredyffrin; Business,
-PP24,Paoli Post Office,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUjg6,Tredyffrin; Business,
-PP22,Paoli Post Office,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fiD5,Tredyffrin; Business,
-PP23,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxYtC,Tredyffrin; Business,
-PP25,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxZEO,Tredyffrin; Business,
-PP27,Paoli Post Office,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpxKW,Tredyffrin; Business,
-PP26,Paoli Post Office,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fisF,Tredyffrin; Business,
-PP28,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxa1q,Tredyffrin; Business,
-PP29,Paoli Post Office,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnz6nI,Tredyffrin; Business,
-PP30,Paoli Post Office,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fjMB,Tredyffrin; Business,
-PP31,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxawM,Tredyffrin; Business,
-PP33,"Paoli Post Office, Robert E. Pattinson and Eleanor C. Brennan in foreground.  Anna J. Clift, William J. Worth, and Ada M. Wise behind the counter.",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUm6M,Tredyffrin; Business,
-PP32,Paoli Post Office,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgRIa,Tredyffrin; Business,
-PP36,"Louis Riddolongo, Paoli Post Office",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fk6x,Tredyffrin; Business,
-PP34,"Art Labar, Paoli Post Office",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUmoY,Tredyffrin; Business,
-PP35,"Ada Wise, Bill Worth, Anne Clift, Paoli Post Office",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUnAe,Tredyffrin; Business,
-PP37,"R. Rapp, Andy Anderson, Paoli Post Office",photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxbL5,Tredyffrin; Business,
-PP38,"W. Standot, Les O’Brien, Bill Morris, Paoli Post Office",photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxbVg,Tredyffrin; Business,
-PP39,"Jerry Hunlock, Dom Maroh, John Zacarrli, Paoli Post Office",photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxbqs,Tredyffrin; Business,
-PP41,Paoli Post Office,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaMFa,Tredyffrin; Business,
-PP40,"Joe Falcore, Paoli Post Office",photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxc8X,Tredyffrin; Business,
-PP42,Paoli Post Office,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgSL8,Tredyffrin; Business,
-PP44,"Mrs Brennan and husband (State Trooper), Paoli Post Office",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdq1Rg,Tredyffrin; Business,
-PP43,Paoli Post Office,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgSPL,Tredyffrin; Business,
-PP45,"On the left, Jackson Anderson Wilson, jr., Paoli Post Office",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fkvT,Tredyffrin; Business,
-PP46,"Party for Eleanor C. Brennan, State Senator Robert Casey on her left, Paoli Post Office",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fl2x,Tredyffrin; Business,
-PP47,Paoli Post Office,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUqAG,Tredyffrin; Business,
-PP48,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxdu2,Tredyffrin; Business,
-PP50,Paoli Post Office,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgT5R,Tredyffrin; Business,
-PP49,Paoli Post Office,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8flEB,Tredyffrin; Business,
-PP51,Paoli Post Office,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdq326,Tredyffrin; Business,
-PP54,Paoli Post Office,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdq3VG,Tredyffrin; Business,
-PP52,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxeWt,Tredyffrin; Business,
-PP53,Paoli Post Office,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8flYl,Tredyffrin; Business,
-PP56,Paoli Post Office,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgTeW,Tredyffrin; Business,
-PP55,Paoli Post Office,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUr1I,Tredyffrin; Business,
-PP57,"Anthony Di Fronzo, successor Postmaster to Eleanor C. Brennan, Paoli Post Office",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaN10,Tredyffrin; Business,
-PEO47,"Sister Lillian Jackson’s Birthday Party at Berwyn, PA",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzAeK,Easttown; Cultural; donation:21,
-DHS132,Devon Horse Show - Polo Match?,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzAP0,Easttown; Cultural; donation:29,
-PP58,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxf2g,Tredyffrin; Business,
-BNB03,Berwyn National Bank,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fmNH,Tredyffrin; Business,
-TEH34,"Tredyyfrin Easttown High School Girls Basketball Team, 1920",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzAqa,Tredyffrin; School; donation:25,
+PP12,Paoli Railroad Station,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgPSv,Business,Tredyffrin
+PP13,Paoli Railroad Station,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpucq,Business,Tredyffrin
+PP15,Paoli Post Office,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpurQ,Business,Tredyffrin
+PP14,Paoli Railroad Station,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fh0F,Business,Tredyffrin
+PP16,Paoli Post Office,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnz5JM,Business,Tredyffrin
+PP18,Paoli Post Office,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fhfP,Business,Tredyffrin
+PP17,Paoli Post Office,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fhQR,Business,Tredyffrin
+PP19,Paoli Post Office,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpvVW,Business,Tredyffrin
+PP21,Paoli Post Office,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpwOC,Business,Tredyffrin
+PP20,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxYJs,Business,Tredyffrin
+PP22,Paoli Post Office,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fiD5,Business,Tredyffrin
+PP24,Paoli Post Office,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUjg6,Business,Tredyffrin
+PP23,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxYtC,Business,Tredyffrin
+PP25,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxZEO,Business,Tredyffrin
+PP26,Paoli Post Office,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fisF,Business,Tredyffrin
+PP27,Paoli Post Office,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdpxKW,Business,Tredyffrin
+PP28,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxa1q,Business,Tredyffrin
+PP30,Paoli Post Office,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fjMB,Business,Tredyffrin
+PP29,Paoli Post Office,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnz6nI,Business,Tredyffrin
+PP31,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxawM,Business,Tredyffrin
+PP34,"Art Labar, Paoli Post Office",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUmoY,Business,Tredyffrin
+PP32,Paoli Post Office,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgRIa,Business,Tredyffrin
+PP33,"Paoli Post Office, Robert E. Pattinson and Eleanor C. Brennan in foreground.  Anna J. Clift, William J. Worth, and Ada M. Wise behind the counter.",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUm6M,Business,Tredyffrin
+PP36,"Louis Riddolongo, Paoli Post Office",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fk6x,Business,Tredyffrin
+PP37,"R. Rapp, Andy Anderson, Paoli Post Office",photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxbL5,Business,Tredyffrin
+PP35,"Ada Wise, Bill Worth, Anne Clift, Paoli Post Office",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUnAe,Business,Tredyffrin
+PP38,"W. Standot, Les O’Brien, Bill Morris, Paoli Post Office",photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxbVg,Business,Tredyffrin
+PP39,"Jerry Hunlock, Dom Maroh, John Zacarrli, Paoli Post Office",photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxbqs,Business,Tredyffrin
+PP40,"Joe Falcore, Paoli Post Office",photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxc8X,Business,Tredyffrin
+PP43,Paoli Post Office,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgSPL,Business,Tredyffrin
+PP42,Paoli Post Office,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgSL8,Business,Tredyffrin
+PP41,Paoli Post Office,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaMFa,Business,Tredyffrin
+PP45,"On the left, Jackson Anderson Wilson, jr., Paoli Post Office",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fkvT,Business,Tredyffrin
+PP44,"Mrs Brennan and husband (State Trooper), Paoli Post Office",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdq1Rg,Business,Tredyffrin
+PP46,"Party for Eleanor C. Brennan, State Senator Robert Casey on her left, Paoli Post Office",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fl2x,Business,Tredyffrin
+PP47,Paoli Post Office,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUqAG,Business,Tredyffrin
+PP48,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxdu2,Business,Tredyffrin
+PP49,Paoli Post Office,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8flEB,Business,Tredyffrin
+PP51,Paoli Post Office,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdq326,Business,Tredyffrin
+PP50,Paoli Post Office,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgT5R,Business,Tredyffrin
+PP52,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxeWt,Business,Tredyffrin
+PP53,Paoli Post Office,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8flYl,Business,Tredyffrin
+PP54,Paoli Post Office,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdq3VG,Business,Tredyffrin
+PP55,Paoli Post Office,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUr1I,Business,Tredyffrin
+PP56,Paoli Post Office,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgTeW,Business,Tredyffrin
+PP57,"Anthony Di Fronzo, successor Postmaster to Eleanor C. Brennan, Paoli Post Office",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaN10,Business,Tredyffrin
+PP58,Paoli Post Office,photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxf2g,Business,Tredyffrin
+PEO47,"Sister Lillian Jackson’s Birthday Party at Berwyn, PA",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzAeK,Cultural; donation:21,Easttown
+DHS132,Devon Horse Show - Polo Match?,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzAP0,Cultural; donation:29,Easttown
+TEH34,"Tredyyfrin Easttown High School Girls Basketball Team, 1920",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzAqa,School; donation:25,Tredyffrin
 CH24,Methodist Yellow Springs church,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzB2q,West Whiteland; Church,
+BNB03,Berwyn National Bank,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fmNH,Business,Tredyffrin
+GVB19,Great Valley Baptist,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdq4jo,Church,
 GVB13,Great Valley Baptist Church,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaOBG,Church,
 GVB20,Great Valley Baptist Church,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgU5B,Church,
-GVB19,Great Valley Baptist,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdq4jo,Church,
-GVB15,"Model of log meeting house, Great Valley Baptist Church",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaOI2,Church,
-GVB16,Great Valley Baptist Church,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgUUR,Church,
 GVB14,"Graveyard Monument, Great Valley Baptist Church",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzBOI,Church,
-OLA07,"Autocar Custom Built Fire Engines, Ardmore",photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxgLv,Business,
+GVB16,Great Valley Baptist Church,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgUUR,Church,
+GVB15,"Model of log meeting house, Great Valley Baptist Church",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaOI2,Church,
 GVB17,"Model of log meeting house, Great Valley Baptist Church",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fn9v,Church,
 GVB18,Great Valley Baptist Church,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdq5g8,Church,
-RMH01,Radnor Friends Meeting,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaOuQ,Radnor; Church,
+OLA07,"Autocar Custom Built Fire Engines, Ardmore",photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxgLv,Business,
 OLA08,Autocar Company,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fnOt,Business,
+RMH01,Radnor Friends Meeting,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaOuQ,Radnor; Church,
 RMH02,Radnor Friends Meeting,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUvVi,Business,
-RMH05,Radnor Friends Meeting,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzD1Q,Radnor; Church,
 RMH04,Radnor Friends Meeting,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgUmg,Radnor; Church,
+RMH05,Radnor Friends Meeting,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzD1Q,Radnor; Church,
 RMH06,Radnor Friends Meeting,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzDoS,Radnor; Church,
 RMH07,Radnor Friends Meeting,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzE6q,Radnor; Church,
 RML12,Malvern Station P.R.R.,postcard,historicalImage,patched,boIVl02DH7EDt0T3jLaPZ4,Railroad,
 RML13,St. Davids Station; P.R.R. Station,postcard,historicalImage,patched,WOdasKzWYNoImJ3aDGUxVS,Radnor; Railroad,
+RMH09,Radnor Friends Meeting,photo,historicalImage,created,h7jyTqsbY1egLREo29cAkR,Radnor; Church,
 SFM01,Schuylkill Friends Meeting Graveyard,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUxn8,Church,
-TEH33,Tredyffrin Easttown High School,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fnqx,Easttown; School,
+RMH08,Radnor Friends Meeting,photo,historicalImage,created,KgfIZrdSbI7OaOFB6YOqAo,Radnor; Church,
 SPC11,St. Peters Church,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdq7Ym,Church,
+TEH33,Tredyffrin Easttown High School,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fnqx,School,Easttown
 VFR01,Valley Friends Meeting,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaQKU,Church,
 VFR03,"Churches, Valley Friends Meeting",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8foOd,Church,
 VFR02,Valley Friends Meeting; 1871 date,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGUyZk,Church,
-WAB03,"Waterloo Avenue, Berwyn; photo labelled Waterloo ""Road,""",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzFIO,Easttown; Business,
 MEN02,"Mennonite Church, Yellow Springs Road",photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxkSF,Church,
 MEN01,"Mennonite Church Graveyard, Yellow Springs Road",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdq8jg,Church,
-LAB17,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzFjy,Tredyffrin; Business,
+WAB03,"Waterloo Avenue, Berwyn; photo labelled Waterloo ""Road,""",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzFIO,Business,Easttown
 HOU66,Unknown House,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGV100,House,
-HOU65,Odd Fellows’ Hall,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGV0du,Easttown; House,
+HOU65,Odd Fellows’ Hall,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGV0du,House,Easttown
+LAB17,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzFjy,Business,Tredyffrin
 GFM01,"George Francis Moran, c. 1957",photo,historicalImage,patched,zSxMS6Ks0lscHNDVmkxmVP,donation:32,Person
-GFM03,Tom Nelson,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgW4f,donation:32,Person
 GFM02,Tom Nelson,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqB1q,donation:32,Person
-GFM04,Alice McCarnes,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgWSW,donation:32,Person
+GFM03,Tom Nelson,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgW4f,donation:32,Person
 GFM05,"William Patrick Ruch, Captain, Pennsylvania State Police",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqCK2,donation:32,Person
 GFM06,"Lean to, Scout Troop 1, Berwyn",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGV2i4,donation:32,Person
+GFM04,Alice McCarnes,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgWSW,donation:32,Person
 GFM07,Kay Hanley,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaRp4,donation:32,Person
 GFM08,Maria Moran,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqDGM,donation:32,Person
 GFM09,"Dot Neiman, Helen Kugler, Bertha Neiman, Maria Moran, Ocean City NJ",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGV3QG,donation:32,Person
 GFM10,Walt Hanley,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgX30,donation:32,Person
+GFM13,Kay Hanley,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgXBQ,donation:32,Person
 GFM12,"Mrs. Wilson, Tredyffrin Easttown High School Teacher",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzHTE,donation:32,Person
 GFM14,Bertha May Homan Neiman.  Later was a secretary at TE High School.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgXTf,donation:32,Person
-GFM13,Kay Hanley,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgXBQ,donation:32,Person
 GFM15,"Chas. J.Moran, South Leopard Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaSsY,donation:32,Person
 GFM16,"Chas. J. Moran as a student Phila. Textile School, c. 1922",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGV4qe,donation:32,Person
-GFM17,"Jim Noblit and George Moran, TE High School, c. 1927 - 28",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqFn6,donation:32,Person
-GFM20,Warden McClees in front of my model A Ford (1929 plate) - George Moran,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqGn4,donation:32,Person
 GFM19,"Ward McClees, George Moran",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgXq7,donation:32,Person
+GFM17,"Jim Noblit and George Moran, TE High School, c. 1927 - 28",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqFn6,donation:32,Person
 GFM18,"Jack Easches, George Moran, and Jim Noblit",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzKmY,donation:32,Person
 GFM21,Otto Tavener,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgY49,donation:32,Person
 GFM22,Otto Tavener,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzLfi,donation:32,Person
-GFM23,Otto Tavener,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaUGM,donation:32,Person
-GFM24,"""Chick"" Peoples",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGV6LS,donation:32,Person
+GFM20,Warden McClees in front of my model A Ford (1929 plate) - George Moran,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqGn4,donation:32,Person
 GFM25,"""Chick"" Peoples",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fr8t,donation:32,Person
-GFM26,"""Chick"" Peoples",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaUag,donation:32,Person
-GFM28,Helen Smith.,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzMrG,donation:32,Person
-GFM29,Anna Moran (George's sister) and Helen Bracken,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8frgZ,donation:32,Person
+GFM24,"""Chick"" Peoples",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGV6LS,donation:32,Person
+GFM23,Otto Tavener,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaUGM,donation:32,Person
 GFM27,"""Chick"" Peoples",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgYZ1,donation:32,Person
-GFM32,"TE High School Washington Trip, May 1913",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqIUm,donation:32,Person
-GFM30,Helen Bracken,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaVgQ,donation:32,Person
+GFM28,Helen Smith.,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzMrG,donation:32,Person
+GFM26,"""Chick"" Peoples",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaUag,donation:32,Person
+GFM29,Anna Moran (George's sister) and Helen Bracken,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8frgZ,donation:32,Person
 GFM31,Unknown person,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzNYA,donation:32,Person
-GFM33,TE High School Boys,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGV7ug,donation:32,Person
-GFM35,"Mr. Rull(?), TE High School",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgZAu,donation:32,Person
+GFM30,Helen Bracken,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaVgQ,donation:32,Person
 GFM34,TE High School Girls,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGV7d0,donation:32,Person
+GFM33,TE High School Boys,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGV7ug,donation:32,Person
+GFM32,"TE High School Washington Trip, May 1913",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqIUm,donation:32,Person
 GFM36,Stay-at-homes,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGV8Pc,donation:32,Person
-GFM39,TE High School class of 28 at Washington D.C.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqK1Y,donation:32,Person
+GFM35,"Mr. Rull(?), TE High School",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgZAu,donation:32,Person
 GFM38,"Fruit Hill, 1913",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqJR6,donation:32,Person
 GFM40,"TE High School,Class of 28 at Washington D.C.",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaWqg,donation:32,Person
 GFM41,"TE High School Washington Trip, Mt. Vernon",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzPfw,donation:32,Person
+GFM39,TE High School class of 28 at Washington D.C.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqK1Y,donation:32,Person
 GFM42,TE High School class of 28 Washington trip,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fsz1,donation:32,Person
-GFM37,Some Class!,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaXMI,Tredyffrin; donation:32,Person
-BE83,Snowstorm at Williams Crossroads,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzQAa,Tredyffrin,View
 GFM43,Bridal Gowns of the 19th Century,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGVB38,donation:32,Person
-BE84,A view of the intersection of Warren Avenue and Lancaster Turnpike,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8ftWh,Tredyffrin,View
+GFM37,Some Class!,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaXMI,donation:32,Tredyffrin; Person
+BE83,Snowstorm at Williams Crossroads,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzQAa,,Tredyffrin; View
+BE84,A view of the intersection of Warren Avenue and Lancaster Turnpike,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8ftWh,,Tredyffrin; View
 BOP01,Battle of Paoli Monument,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzQcA,Military,
 BOP02,Battle of Paoli Monument,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqLCS,Military,
 GPI05,Paoli Inn after fire,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzQlM,Inn,
-GPI07,Paoli Inn after fire,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqLxq,Inn,
 GPI06,Paoli Inn after fire,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzRG0,Inn,
+GPI07,Paoli Inn after fire,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqLxq,Inn,
 GVP06,Great Valley Presbyterian Church,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqMYI,Church,
-HOU63,"Mr. C. Latch’s Home, Berwyn",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fu87,Easttown; House; donation:33,
 GVP07,Great Valley Presbyterian Church,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fu2V,Church,
-HOU64,"Aunt Emma Latch’s Home, Berwyn",photo,historicalImage,patched,sbP4gqSkGjehGl77iAga0p,Easttown; House; donation:33,
-NCE11,Baptist Road looking north,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaZBC,Tredyffrin,Road
-NCE10,Baptist Road looking north,photo,historicalImage,patched,sbP4gqSkGjehGl77iAga52,Tredyffrin,Road
+NCE10,Baptist Road looking north,photo,historicalImage,patched,sbP4gqSkGjehGl77iAga52,,Tredyffrin; Road
+HOU63,"Mr. C. Latch’s Home, Berwyn",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fu87,House; donation:33,Easttown
+HOU64,"Aunt Emma Latch’s Home, Berwyn",photo,historicalImage,patched,sbP4gqSkGjehGl77iAga0p,House; donation:33,Easttown
 OLA09,"Hanging Rock, Gulph Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGVEBa,,Road
-SAM02,Unknown Pond Location,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzSRY,,View
 OLA10,Monument at Gulph Mills,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fv7r,,Road
+NCE11,Baptist Road looking north,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaZBC,,Tredyffrin; Road
+SAM02,Unknown Pond Location,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzSRY,,View
+TPC08,Trinity Presbyterian Church,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgaNH,Church,Easttown
 SAM03,Unknown Pond Location,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fvHD,,View
-TPC08,Trinity Presbyterian Church,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgaNH,Easttown; Church,
-BBC03,Berwyn Baptist Chapel,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzT8S,Tredyffrin; Church,
-BBC04,Berwyn Baptist Chapel,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fvQZ,Tredyffrin; Church,
-BBC05,Berwyn Baptist Chapel,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaa5e,Tredyffrin; Church,
-BRI03,"Cedar Hollow Bridge over Valley Creek, #171; west side looking east",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaaxq,Tredyffrin,Road
-BRI02,"Cedar Hollow Bridge over Valley Creek, #171; east side looking west",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqPJc,Tredyffrin,Road
-BRI04,"Cedar Hollow Bridge over Valley Creek, #171; plaque",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqPbq,Tredyffrin,Road
-BRI05,"Cedar Hollow Bridge over Valley Creek, #171; looking south over Valley Creek",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaar4,Tredyffrin,Road
-BRI06,"Cedar Hollow Bridge over Valley Creek, #171; looking north over Valley Creek",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgajj,Tredyffrin,Road
+BBC05,Berwyn Baptist Chapel,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaa5e,Church,Tredyffrin
+BBC04,Berwyn Baptist Chapel,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fvQZ,Church,Tredyffrin
+BBC03,Berwyn Baptist Chapel,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzT8S,Church,Tredyffrin
+BRI03,"Cedar Hollow Bridge over Valley Creek, #171; west side looking east",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaaxq,,Tredyffrin; Road
+BRI02,"Cedar Hollow Bridge over Valley Creek, #171; east side looking west",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqPJc,,Tredyffrin; Road
+BRI05,"Cedar Hollow Bridge over Valley Creek, #171; looking south over Valley Creek",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaar4,,Tredyffrin; Road
+BRI04,"Cedar Hollow Bridge over Valley Creek, #171; plaque",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqPbq,,Tredyffrin; Road
 BUS19,Unknown Quarry,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqQfS,Quarry,
-BUS20,Unknown View,photo,historicalImage,patched,boIVl02DH7EDt0T3jLabRC,Business,
+BRI06,"Cedar Hollow Bridge over Valley Creek, #171; looking north over Valley Creek",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgajj,,Tredyffrin; Road
+BE82,"World War II Memorial, Berwyn",photo,historicalImage,created,Vk2n0lP5UQm2coB5ROKYR8,Military; donation:34,Tredyffrin
 BUS21,Unknown Quarry,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzVGE,Business,
+BUS20,Unknown View,photo,historicalImage,patched,boIVl02DH7EDt0T3jLabRC,Business,
 BUS22,Unknown Quarry,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fw5j,Business,
 BUS24,Unknown Quarry,photo,historicalImage,patched,boIVl02DH7EDt0T3jLacEs,Business,
 BUS23,Unknown Quarry,photo,historicalImage,patched,boIVl02DH7EDt0T3jLabwo,Business,
 BUS25,Unknown Quarry,photo,historicalImage,patched,boIVl02DH7EDt0T3jLacLe,Business,
 DEV12,View of Wayne,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzW6K,Radnor,View
-DBS04,"D. Bernard Stout, Blacksmith of Cabbagetown",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fwDD,Easttown; Business,
-DRS14,Diamond Rock School,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGVJSc,Tredyffrin; School,
+DBS04,"D. Bernard Stout, Blacksmith of Cabbagetown",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fwDD,Business,Easttown
+DRS14,Diamond Rock School,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGVJSc,School,Tredyffrin
 HOU56,Berwyn House,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGVJFM,Business,
 HOU57,Souder Upholstery Store,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzWwQ,House,
 HOU58,Souder Upholstery Store,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGVKAo,House,
-HOU59,Souder Upholstery Store,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqSxc,House,
 BUS26,"Robert J. Nash, Real Estate",photo,historicalImage,patched,boIVl02DH7EDt0T3jLadKc,Business,
-HOU60,Unknown House,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgbYF,House,
+HOU59,Souder Upholstery Store,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqSxc,House,
 HOU61,Unknown House,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzXKw,House,
-HOU62,Iddings House,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqTfM,Tredyffrin; House,
-NEU02,"John Neuhaus in uniform, WWI",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaebe,donation:36,Person
-NEU01,"John Newhaus and wife, Grubb Road, Malvern",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGVLxI,Willistown; donation:36,Person
+HOU62,Iddings House,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqTfM,House,Tredyffrin
+HOU60,Unknown House,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgbYF,House,
 LH03,Connie Wolf Balloon,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaeLq,Cultural,
-PPO19,Paoli Station,postcard,historicalImage,patched,WOdasKzWYNoImJ3aDGVMxA,Tredyffrin; Railroad; donation:36,
-PPO18,"Pennsylvania Railroad Car Shops, Paoli",Postcard,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzYcc,Tredyffrin; Railroad; donation:36,
+NEU01,"John Newhaus and wife, Grubb Road, Malvern",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGVLxI,Willistown; donation:36,Person
+NEU02,"John Neuhaus in uniform, WWI",photo,historicalImage,patched,boIVl02DH7EDt0T3jLaebe,donation:36,Person
+PPO19,Paoli Station,postcard,historicalImage,patched,WOdasKzWYNoImJ3aDGVMxA,Railroad; donation:36,Tredyffrin
+PPO18,"Pennsylvania Railroad Car Shops, Paoli",Postcard,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzYcc,Railroad; donation:36,Tredyffrin
 PEO48,Unknown Person,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqUxY,,Person
 PEO49,Davis Family,photo,historicalImage,patched,boIVl02DH7EDt0T3jLaf0U,donation:37,Person
 PEO50,Baptist Brotherhood Baseball Team,postcard,historicalImage,patched,R9QL69b6FQgBhmgXAdqVN4,donation:37,Sports
-SCH22,Class at Easttown Grammar School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLafTq,Easttown; School; donation:37,
-SCH23,Class at Easttown Grammar School,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGVOsU,Easttown; School; donation:37,
+SCH23,Class at Easttown Grammar School,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGVOsU,School; donation:37,Easttown
+SCH22,Class at Easttown Grammar School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLafTq,School; donation:37,Easttown
 RML14,Duffy’s Cut enclosure,Photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fxvr,House,
-SCT01,Pickering Creek Farm,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGVPnw,Schuylkill; Farm,
+SCT01,Pickering Creek Farm,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGVPnw,Farm,Schuylkill
 RON02,Mr. Roney,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqWC6,donation:35,Person
-RON01,Group at TE High School,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzabC,Tredyffrin; donation:35,Person
-TEH35,"TE High School Girls Basketball Team, 1925",Photo,historicalImage,patched,boIVl02DH7EDt0T3jLaflu,Tredyffrin; School,
-TEH36,TE High School Play,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgcqE,Tredyffrin; School; donation:35,
-TEH38,"TE Girls Basketball Team, 1917",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fymF,Tredyffrin; School; donation:35,
-TEH37,TE High School Play,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzanS,Tredyffrin; School; donation:35,
-TEH39,"TE Girls Basketball Team, 1917",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgd8T,Tredyffrin; School; donation:35,
-TRE05,View of the Great Valley,photo,historicalImage,patched,boIVl02DH7EDt0T3jLashW,Tredyffrin; donation:38,View
-TRE04,View of the Great Valley,photo,historicalImage,patched,boIVl02DH7EDt0T3jLagic,Tredyffrin; donation:38,View
-WAM04,Waterloo Mills,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8g94F,Easttown; House,
-WAM06,Waterloo Mills,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8g9Op,Easttown; House,
-WAM05,Waterloo Mills,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqXqA,Easttown; House,
-YSP02,19th Century view of Yellow Springs Village,postcard,historicalImage,patched,WOdasKzWYNoImJ3aDGVop8,,Place
+TEH35,"TE High School Girls Basketball Team, 1925",Photo,historicalImage,patched,boIVl02DH7EDt0T3jLaflu,School,Tredyffrin
+TEH36,TE High School Play,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgcqE,School; donation:35,Tredyffrin
+RON01,Group at TE High School,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzabC,donation:35,Tredyffrin; Person
+TEH37,TE High School Play,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzanS,School; donation:35,Tredyffrin
+TEH39,"TE Girls Basketball Team, 1917",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgd8T,School; donation:35,Tredyffrin
+TEH38,"TE Girls Basketball Team, 1917",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8fymF,School; donation:35,Tredyffrin
+TRE04,View of the Great Valley,photo,historicalImage,patched,boIVl02DH7EDt0T3jLagic,donation:38,Tredyffrin; View
+WAM04,Waterloo Mills,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8g94F,House,Easttown
+TRE05,View of the Great Valley,photo,historicalImage,patched,boIVl02DH7EDt0T3jLashW,donation:38,Tredyffrin; View
+WAM05,Waterloo Mills,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqXqA,House,Easttown
 YSP01,"Iron Spring Gazebo, Yellow Springs Village",postcard,historicalImage,patched,sbP4gqSkGjehGl77iAgdkM,,Place
+WAM06,Waterloo Mills,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8g9Op,House,Easttown
+YSP02,19th Century view of Yellow Springs Village,postcard,historicalImage,patched,WOdasKzWYNoImJ3aDGVop8,,Place
+YSP04,Inn at Yellow Springs,postcard,historicalImage,patched,WOdasKzWYNoImJ3aDGVr6Y,Inn,
 YSP03,"Crystal Diamond Spring, Yellow Springs Village",postcard,historicalImage,patched,WOdasKzWYNoImJ3aDGVqtI,,Place
 YSP05,18th Century Medicinal Herb Garden,postcard,historicalImage,patched,9M0ZLEVFSxx6CsFlvnztQm,,Place
-YSP04,Inn at Yellow Springs,postcard,historicalImage,patched,WOdasKzWYNoImJ3aDGVr6Y,Inn,
-NWH01,Newhall,photo,historicalImage,patched,boIVl02DH7EDt0T3jLav6Y,Easttown; donation:39,Person
-NWH02,Newhall,photo,historicalImage,patched,boIVl02DH7EDt0T3jLavFa,Easttown; donation:39,Person
-NWH03,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGVsJg,Easttown; donation:39,Person
-NWH05,Newhall Home southwest view.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqcMq,Easttown; House; donation:39,
-NWH06,"Newhall home, front west.",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzvSQ,Easttown; House; donation:39,
+NWH03,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGVsJg,donation:39,Easttown; Person
+NWH01,Newhall,photo,historicalImage,patched,boIVl02DH7EDt0T3jLav6Y,donation:39,Easttown; Person
+NWH02,Newhall,photo,historicalImage,patched,boIVl02DH7EDt0T3jLavFa,donation:39,Easttown; Person
+NWH05,Newhall Home southwest view.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqcMq,House; donation:39,Easttown
+NWH06,"Newhall home, front west.",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzvSQ,House; donation:39,Easttown
+NWH08,Newhall Library.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGVufW,House; donation:39,Easttown
 NWH07,Newhall Hall.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqcmM,House; donation:39,e
-NWH08,Newhall Library.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGVufW,Easttown; House; donation:39,
-NWH09,Newhall Dining Room.,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gBkl,Easttown; House; donation:39,
-NWH10,Newhall Stable.,photo,historicalImage,patched,boIVl02DH7EDt0T3jLawog,Easttown; House; donation:39,
-NWH11,Newhall Garden.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqepw,Easttown; House; donation:39,
-NWH12,Newhall.,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzwUm,Easttown; House; donation:39,
-NWH13,Newhall.,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gC7D,Easttown; House; donation:39,
-NWH14,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgfo3,Easttown; House; donation:39,
-NWH15,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgfa1,Easttown; House; donation:39,
-NWH16,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgfsG,Easttown; House; donation:39,
-NWH17,Newhall.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqgQM,Easttown; House; donation:39,
-NWH19,Newhall.,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzxR0,Easttown; House; donation:39,
-NWH18,Newhall.,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzxEk,Easttown; House; donation:39,
-NWH20,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAggAV,Easttown; House; donation:39,
-NWH22,Newhall.,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzxsa,Easttown; House; donation:39,
-NWH24,Newhall.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqhbG,Easttown; House; donation:39,
-NWH23,Newhall.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqhTy,Easttown; House; donation:39,
-NWH26,Newhall.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqies,Easttown; House; donation:39,
-NWH27,Newhall,photo,historicalImage,patched,boIVl02DH7EDt0T3jLazRG,Easttown; House; donation:39,
-NWH28,Newhall,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gDGJ,Easttown; House; donation:39,
-NWH29,Newhall,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqjQG,Easttown; House; donation:39,
-NWH25,Newhall.,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzz14,Easttown; House; donation:39,
-VFV16,"Valley Forge Fife and Drum Band outside the POSofA (Patriotic Order of Sons of America) Hall, Mathews Free Library.",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW0RU,Schuylkill; donation:31,Person
+NWH09,Newhall Dining Room.,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gBkl,House; donation:39,Easttown
+NWH10,Newhall Stable.,photo,historicalImage,patched,boIVl02DH7EDt0T3jLawog,House; donation:39,Easttown
+NWH04,Newhall.,photo,historicalImage,created,h7jyTqsbY1egLREo29cIjK,donation:39,Easttown; Person
+NWH11,Newhall Garden.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqepw,House; donation:39,Easttown
+NWH12,Newhall.,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzwUm,House; donation:39,Easttown
+NWH14,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgfo3,House; donation:39,Easttown
+NWH15,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgfa1,House; donation:39,Easttown
+NWH13,Newhall.,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gC7D,House; donation:39,Easttown
+NWH17,Newhall.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqgQM,House; donation:39,Easttown
+NWH18,Newhall.,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzxEk,House; donation:39,Easttown
+NWH16,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgfsG,House; donation:39,Easttown
+NWH19,Newhall.,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzxR0,House; donation:39,Easttown
+NWH20,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAggAV,House; donation:39,Easttown
+NWH22,Newhall.,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzxsa,House; donation:39,Easttown
+NWH23,Newhall.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqhTy,House; donation:39,Easttown
+NWH24,Newhall.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqhbG,House; donation:39,Easttown
+NWH26,Newhall.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqies,House; donation:39,Easttown
+NWH21,Newhall.,photo,historicalImage,created,Vk2n0lP5UQm2coB5ROKelE,House; donation:39,Easttown
+NWH28,Newhall,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gDGJ,House; donation:39,Easttown
+NWH27,Newhall,photo,historicalImage,patched,boIVl02DH7EDt0T3jLazRG,House; donation:39,Easttown
+NWH29,Newhall,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqjQG,House; donation:39,Easttown
+NWH25,Newhall.,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvnzz14,House; donation:39,Easttown
+VFV16,"Valley Forge Fife and Drum Band outside the POSofA (Patriotic Order of Sons of America) Hall, Mathews Free Library.",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW0RU,donation:31,Schuylkill; Person
 VFV15,"Washington’s Headquarters, 1878",photo,historicalImage,patched,sbP4gqSkGjehGl77iAggfN,Upper Merion; House; donation:31,
 VFV17,"Valley Forge, 1878",photo,historicalImage,patched,boIVl02DH7EDt0T3jLazz8,Upper Merion; donation:31,View
-VFV18,"Four Generations of the Rowan family outside the store at Valley Forge on Labor Day, September 2, 1912",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvo00Cc,Schuylkill; donation:31,Person
-NWH32,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW19g,Easttown; House; donation:39,
-NWH31,Newhall.,photo,historicalImage,patched,boIVl02DH7EDt0T3jLb0Uk,Easttown; House; donation:39,
-NWH33,Newhall.,photo,historicalImage,patched,boIVl02DH7EDt0T3jLb0dm,Easttown; House; donation:39,
-NWH34,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW2Ve,Easttown; House; donation:39,
-NWH35,Newhall.,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gEPP,Easttown; House; donation:39,
-NWH36,Newhall.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqlIu,Easttown; House; donation:39,
-NWH37,Newhall.,photo,historicalImage,patched,boIVl02DH7EDt0T3jLb19O,Easttown; House; donation:39,
-NWH38,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAghIf,Easttown; House; donation:39,
-NWH39,Newhall.,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gEpb,Easttown; House; donation:39,
-NWH40,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAghY6,Easttown; House,
-NWH42,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW350,Easttown; House; donation:39,
-NWH41,Newhall.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqmIs,Easttown; House; donation:39,
-NWH43,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW3rc,Easttown; House; donation:39,
-NWH45,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW4I8,Easttown; House; donation:39,
-NWH44,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAghkj,Easttown; House; donation:39,
-NWH46,Newhall.,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvo02yE,Easttown; House; donation:39,
-NWH47,Newhall.,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvo02p2,Easttown; House; donation:39,
-NWH48,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW4rU,Easttown; House; donation:39,
-NWH49,Newhall.,photo,historicalImage,patched,boIVl02DH7EDt0T3jLb7qs,Easttown; House; donation:39,
-NWH50,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgi9z,Easttown; House; donation:39,
-NWH51,Newhall.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqnww,Easttown; donation:39,Person
-NWH52,Newhall.,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gGFX,Easttown; House; donation:39,
-NWH53,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW5iW,Easttown; House; donation:39,
-NWH54,Newhall.,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gGQl,Easttown; House; donation:39,
-NWH55,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW7MA,Easttown; House; donation:39,
-NWH57,Newhall.,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gGwZ,Easttown; House; donation:39,
-NWH58,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW7r6,Easttown; House; donation:39,
-NWH56,Newhall.,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gGqx,Easttown; House; donation:39,
-NWH59,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgj2i,Easttown; House; donation:39,
-HSQ03,General Howe’s Quarters,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgjNl,Tredyffrin; House; donation:71,
+VFV18,"Four Generations of the Rowan family outside the store at Valley Forge on Labor Day, September 2, 1912",photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvo00Cc,donation:31,Schuylkill; Person
+NWH30,Newhall.,photo,historicalImage,created,h7jyTqsbY1egLREo29cKfM,House; donation:39,Easttown
+NWH31,Newhall.,photo,historicalImage,patched,boIVl02DH7EDt0T3jLb0Uk,House; donation:39,Easttown
+NWH32,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW19g,House; donation:39,Easttown
+NWH33,Newhall.,photo,historicalImage,patched,boIVl02DH7EDt0T3jLb0dm,House; donation:39,Easttown
+NWH34,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW2Ve,House; donation:39,Easttown
+NWH35,Newhall.,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gEPP,House; donation:39,Easttown
+HLC09,"Heyburn Roye Log Cabin, 1990",photo,historicalImage,created,0YKpiHcLUDtAprmSVO5czp,House; donation:40,Tredyffrin
+NWH36,Newhall.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqlIu,House; donation:39,Easttown
+NWH37,Newhall.,photo,historicalImage,patched,boIVl02DH7EDt0T3jLb19O,House; donation:39,Easttown
+NWH38,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAghIf,House; donation:39,Easttown
+NWH39,Newhall.,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gEpb,House; donation:39,Easttown
+NWH40,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAghY6,House,Easttown
+NWH41,Newhall.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqmIs,House; donation:39,Easttown
+NWH42,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW350,House; donation:39,Easttown
+NWH44,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAghkj,House; donation:39,Easttown
+NWH43,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW3rc,House; donation:39,Easttown
+NWH47,Newhall.,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvo02p2,House; donation:39,Easttown
+NWH45,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW4I8,House; donation:39,Easttown
+NWH46,Newhall.,photo,historicalImage,patched,9M0ZLEVFSxx6CsFlvo02yE,House; donation:39,Easttown
+NWH50,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgi9z,House; donation:39,Easttown
+NWH48,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW4rU,House; donation:39,Easttown
+NWH49,Newhall.,photo,historicalImage,patched,boIVl02DH7EDt0T3jLb7qs,House; donation:39,Easttown
+NWH53,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW5iW,House; donation:39,Easttown
+NWH51,Newhall.,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqnww,donation:39,Easttown; Person
+NWH52,Newhall.,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gGFX,House; donation:39,Easttown
+NWH54,Newhall.,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gGQl,House; donation:39,Easttown
+NWH55,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW7MA,House; donation:39,Easttown
+NWH56,Newhall.,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gGqx,House; donation:39,Easttown
+NWH57,Newhall.,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gGwZ,House; donation:39,Easttown
+NWH59,Newhall.,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgj2i,House; donation:39,Easttown
+NWH58,Newhall.,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW7r6,House; donation:39,Easttown
+HSQ03,General Howe’s Quarters,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgjNl,House; donation:71,Tredyffrin
 BE87,"Route 30, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLb9Wk,,Road
 AIF01,Mother and Daisy Aiken,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgjXa,,Person
-BE86,Cow at farm at Williams Crossroads,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbA6s,Farm,
 BE85,Williams Corner in winter,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgjRy,,Place
-CLF03,George W. Clemmans,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqrQ0,,Person
-CLF02,George W. Clemmans,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqqwq,,Person
+BE86,Cow at farm at Williams Crossroads,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbA6s,Farm,
 CLF01,Mabel Mae Johnston,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gHhL,,Person
+HLC08-2590,"Heyburn Roye Log Cabin, 1989",photo,historicalImage,created,h7jyTqsbY1egLREo29cN2w,House; donation:40,Tredyffrin
+CLF02,George W. Clemmans,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqqwq,,Person
+CLF03,George W. Clemmans,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqrQ0,,Person
 CLF04,George C. Clemmans and Lulu F. Kerrigan,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbAOw,,Person
-SAL03,"West Building, Salem School, c. early 1990s",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbAVi,Tredyffrin; School,
-FPC02,"First Presbyterian Church, Manse, 1949",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW8zo,Tredyffrin; Church,
-FPC03,"Paoli Presbyterian Sunday School, built 1892",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqrpW,Tredyffrin; Church,
+FPC02,"First Presbyterian Church, Manse, 1949",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGW8zo,Church,Tredyffrin
+SAL03,"West Building, Salem School, c. early 1990s",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbAVi,School,Tredyffrin
+FPC03,"Paoli Presbyterian Sunday School, built 1892",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqrpW,Church,Tredyffrin
 FW05,"Fort Washington, Easter Sunday, April 1915",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbBNu,Upper Merion,Place
-HAH03,"Hatton house, c. 1913",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqu0O,House,
+HAF01,"Hatton family, c. 1913",photo,historicalImage,created,Vk2n0lP5UQm2coB5ROKlCQ,,Person
+HAF02,"Havard Wayne Hatton, 1897 - 1918 (eldest son), died of the flu",photo,historicalImage,created,h7jyTqsbY1egLREo29cNfJ,,Person
+HAF03,"Jervis Hatton, 1898 - 1919 (train accident c. 1918), second eldest son",photo,historicalImage,created,N1G5rtOZj8187JlhVe6tIL,,Person
+HAF04,"Mrs. Susan B. Hatton and daughter Alvertia (Elsie) in the garden, c. 1915",photo,historicalImage,created,0YKpiHcLUDtAprmSVO5otA,,Person
 HAH01,"Hatton house from the back, c. 1913",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbC2Y,House,
+HAF05,"Hatton family, c. 1905 at Kennett Square meeting",photo,historicalImage,created,0YKpiHcLUDtAprmSVO5phW,,Person
+HAF06,"Susan Boggs Hatton, c. 1896",photo,historicalImage,created,Vk2n0lP5UQm2coB5ROKmyQ,,Person
 HAH02,"Hatton house view from the northwest, c. 1913",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbBp0,House,
+HAH03,"Hatton house, c. 1913",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqu0O,House,
 HOU67,"Taylor house, August 26, 1942 (log house just south of railroad between Devon and Berwyn)",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gJ99,House,
-HOU69,"Victorian house, northwest corner of Bair and Conestoga Roads",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbCcg,Tredyffrin; House,
-HOU68,"Victorian house, northwest corner of Bair and Conestoga Roads",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdquwi,Tredyffrin; House,
-HOU70,"Victorian house, northwest corner of Bair and Conestoga Roads",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbCny,Tredyffrin; House,
-HOU71,"Victorian house, northwest corner of Bair and Conestoga Roads",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gJO7,Tredyffrin; House,
+HOU68,"Victorian house, northwest corner of Bair and Conestoga Roads",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdquwi,House,Tredyffrin
+HOU69,"Victorian house, northwest corner of Bair and Conestoga Roads",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbCcg,House,Tredyffrin
 HOU72,Williams House,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqwEu,House,
-FPC01,"First Presbyterian Church, Paoli, 1949",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbDJa,Tredyffrin; Church,
-MAL15,Malvern underpass,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgm3L,,Road
+HOU71,"Victorian house, northwest corner of Bair and Conestoga Roads",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gJO7,House,Tredyffrin
+HOU70,"Victorian house, northwest corner of Bair and Conestoga Roads",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbCny,House,Tredyffrin
 LAB18,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,sbP4gqSkGjehGl77iAglxj,,Road
+FPC01,"First Presbyterian Church, Paoli, 1949",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbDJa,Church,Tredyffrin
+MAL15,Malvern underpass,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgm3L,,Road
 MAL16,"Malvern, route 30",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbDgA,,Road
-OES03,"Interior of Old Eagle School, after restoration, prior to 1900",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gJoJ,Tredyffrin; School,
 OLA11,Broad Street Railroad Station under construction,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqxPo,Transportation,
-OLA14,Broad Street Railroad station under construction,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gKGN,Transportation,
+OES03,"Interior of Old Eagle School, after restoration, prior to 1900",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gJoJ,School,Tredyffrin
 OLA12,Broad Street Railroad station under construction,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgmYD,Transportation,
 OLA13,Broad Street Railroad station under construction,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqy7Y,Transportation,
-OLA17,Old Thomas Mill,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqzX2,Mill,
+OLA14,Broad Street Railroad station under construction,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gKGN,Transportation,
 OLA15,Broad Street Railroad station under construction,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbEE2,Transportation,
+OLA17,Old Thomas Mill,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdqzX2,Mill,
 OLA16,Railroad signal gantry near Broad Street,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWGh6,Railroad,
-RML15,Paoli Train Station,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdr0ae,Tredyffrin; Railroad,
 PA18,George Clemmans Paoli Hardware Store certificate,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbEje,,Place
 PEO51,Warner Quarry workers?,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gKcp,Quarry,
-RR03,"Snowbound at Green Hill, 2-13 to 2-15-1899. - W. Beidleu",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbG7S,Railroad,
-RML16,Paoli Train Station,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWIY0,Transportation,
+RML15,Paoli Train Station,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdr0ae,Railroad,Tredyffrin
 RML17,"Railroad crash, Frazer, 2/18/1899",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbFwA,Railroad,
-TRE07,Tredyffrin Township Display,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbGYY,Tredyffrin; Cultural,
-TRE06,Tredyffrin Township Display,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdr1lY,Tredyffrin; Cultural,
-VFP43,"Dogwood, Valley Forge",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gMC7,,View
-VFP41,"Cannon, Valley Forge",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgngN,,View
+RML16,Paoli Train Station,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWIY0,Transportation,
+RR03,"Snowbound at Green Hill, 2-13 to 2-15-1899. - W. Beidleu",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbG7S,Railroad,
+TRE07,Tredyffrin Township Display,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbGYY,Cultural,Tredyffrin
+TRE06,Tredyffrin Township Display,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdr1lY,Cultural,Tredyffrin
+TRE08,Tredyffrin Township Display,photo,historicalImage,created,0YKpiHcLUDtAprmSVO5wij,Cultural,Tredyffrin
+TRE10,Tredyffrin Township Display,photo,historicalImage,created,0YKpiHcLUDtAprmSVO5x0i,Cultural,Tredyffrin
+TRE09,Tredyffrin Township Display,photo,historicalImage,created,h7jyTqsbY1egLREo29cRp5,Cultural,Tredyffrin
 VCB07,Valley Creek Bridge,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbGha,,View
-VFP45,"Cato play at Valley Forge, 1928",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbHnK,Cultural,
-VFP46,"Cato play at Fort Washington, Valley Forge, 1928",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbICA,Cultural,
+VFP41,"Cannon, Valley Forge",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgngN,,View
+VFP43,"Dogwood, Valley Forge",photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gMC7,,View
 VFP44,Valley Forge Park Road,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWJpY,,Road
-VFP49,"Cato play at Valley Forge, 1928",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWLOm,Cultural,
+VFP46,"Cato play at Fort Washington, Valley Forge, 1928",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbICA,Cultural,
+VFP45,"Cato play at Valley Forge, 1928",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbHnK,Cultural,
 VFP47,"Cato play at Valley Forge, 1928",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgo2p,Cultural,
+VFP42,"East of Headquarters Lane, Valley Forge, March 15, 1934",photo,historicalImage,created,h7jyTqsbY1egLREo29cSEf,,View
 VFP48,"Cato play at Valley Forge, 1928",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgoCe,Cultural,
-VFP50,"Dogwoods, Valley Forge",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbIhm,,View
+VFP49,"Cato play at Valley Forge, 1928",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWLOm,Cultural,
 VFP51,"Dogwoods, Valley Forge",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbIxa,,View
-VFP52,"Dogwoods, Valley Forge",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWMFo,,View
-VFP53,"Dogwoods, Valley Forge",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgohW,,View
-VFP55,"Star Redoubt, Valley Forge",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWNOW,Upper Merion,Place
+VFP50,"Dogwoods, Valley Forge",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbIhm,,View
 VFP54,"Dogwoods, Valley Forge",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWMkk,,View
-VFS02,"New Valley Forge Station, built around 1912",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWNbm,Upper Merion,Place
+VFP53,"Dogwoods, Valley Forge",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgohW,,View
+VFP52,"Dogwoods, Valley Forge",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWMFo,,View
 VFV19,"Valley Forge village, looking west",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdr5PY,,Place
+VFP55,"Star Redoubt, Valley Forge",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWNOW,Upper Merion,Place
+VFS02,"New Valley Forge Station, built around 1912",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWNbm,Upper Merion,Place
+WHQ27,Washington's Headquarters,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgpAz,,Place
 WAF01,Lewis Walker monument,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdr600,,Place
 WAF02,Lewis Walker monument,photo,historicalImage,patched,QMXNU7NTz7x5ddKsz8gNOx,,Place
-WHQ28,"Chimney repair, Washington’s Headquarters, December 7th, 1934",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWOkU,Upper Merion,Place
-WHQ27,Washington's Headquarters,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgpAz,,Place
-WHQ31,"Washington's Headquarters, Valley Forge",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbLR8,,Place
-WHQ29,"Elm Tree at Washington’s Headquarters, March 27, 1934",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbKdS,Upper Merion,Place
 WHQ30,Damage at Washington's Headquarters?,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdr7Au,Business,
+WHQ29,"Elm Tree at Washington’s Headquarters, March 27, 1934",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbKdS,Upper Merion,Place
+WHQ28,"Chimney repair, Washington’s Headquarters, December 7th, 1934",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWOkU,Upper Merion,Place
 WIF01,Della Williams,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbL4Y,,Person
+WHQ31,"Washington's Headquarters, Valley Forge",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbLR8,,Place
 WIF02,Joseph Williams,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbLeg,,Person
 WIF03,Grandfather Williams and Uncle Joe Williams at Williams farm in the Great Valley,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdr8IA,,Person
 WIF04,Grandfather Williams and Uncle Joe Williams at Williams farm,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbLz0,,Person
 WIF05,Della H. Williams,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgppg,,Person
 WIF06,Della Williams in Atlantic City,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgpwh,,Person
-WIF09,Della & Jennie Williams,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgqNM,,Person
 WIF08,Della & Joe Williams,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdr9T4,,Person
 WIF07,Della Williams,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgq2J,,Person
-WIF12,George H. Williams,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgqo1,House,
 WIF10,Jennie Williams about 32 years old,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWTJK,,Person
 WIF11,"John Alexander Williams of Berwyn, about 30 years old",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgqcn,,Person
+WIF09,Della & Jennie Williams,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgqNM,,Person
+WIF12,George H. Williams,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgqo1,House,
 FW06,Washington Redoubt (Fort Washington),photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrAPO,Upper Merion,
-HOU73,Clemmans house?,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrBAm,House,
 SPC12,St Peter’s Church - interior,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWVAE,East Whiteland; Church,
-BE88,Berwyn from First Avenue,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrBwA,,View
+HOU73,Clemmans house?,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrBAm,House,
 HOU76,Unknown House,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbNsQ,House,
-POF02,Potter Farm and Leopard Road,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrC76,Easttown; donation:45,View
-POF03,"Potter Farm, 22 Leopard Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgrb8,Easttown; Farm; donation:45,
-RML20,"MP54 consist of the Paoli Local arrives in Paoli station, May 13, 1972.",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgrry,Tredyffrin; Railroad; donation:43,
-RML19,"Silverliner II consist of the Paoli Local arrives in Paoli station, May 13, 1972.",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgrnl,Tredyffrin; Railroad; donation:43,
-RML21,"MP54 consist of the Paoli Local arrives in Paoli station, May 13, 1972.",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrCdu,Tredyffrin; Railroad; donation:43,
-HOU155,"Foundations, 112 Homestead Road, Devon - Strafford",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWlH0,Tredyffrin; House; donation:44,
-HOU154,"Foundations, 112 Homestead Road, Devon - Strafford",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrDWa,Tredyffrin; House; donation:44,
-HOU158,112 Homestead Road completed,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWnuW,Tredyffrin; House; donation:44,
-HOU156,112 Homestead Road being built,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgsas,Tredyffrin; House; donation:44,
-HOU157,112 Homestead Road being built,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgt2w,Tredyffrin; House; donation:44,
-CRS03,Carr School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgtV0,Tredyffrin; School; donation:42,
-CRS04,Carr School,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWpPK,Tredyffrin; School; donation:42,
-BPS06,Berwyn Primary School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbTL8,Easttown; School; donation:42,
-MPS03,Mount Pleasant School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgtsr,Tredyffrin; School; donation:42,
-LES03,Leopard School plaque,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgtkR,Easttown; School; donation:42,
-LES02,Leopard School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbTvG,Easttown; School; donation:42,
-OGD01,Ogden School,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWryQ,Easttown; School; donation:42,
-OES07,Old Eagle School,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWsTM,Tredyffrin; School; donation:42,
-NBS12,North Berwyn School,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrGl4,Tredyffrin; School; donation:42,
-VFR04,Valley Friends Meetinghouse,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWspS,Tredyffrin; Church; donation:42,
-BTC01,Berwyn Thimble Club,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrJEA,Easttown; Cultural; donation:46,
-WSH13,Location of Walker Schoolhouse,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgufy,Tredyffrin; School; donation:42,
-BTC03,Berwyn Thimble Club,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbVxi,Easttown; Cultural; donation:46,
-BTC02,Berwyn Thimble Club,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWv2S,Easttown; Cultural; donation:46,
-BTC04,Berwyn Thimble Club,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWwg6,Easttown; Cultural; donation:46,
-BUF02,Mildred Miller Burruss,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWxoo,donation:46,Person
-BUF03,Charles Burruss and unidentified woman,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrL3A,donation:46,Person
+BE88,Berwyn from First Avenue,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrBwA,,View
+POF02,Potter Farm and Leopard Road,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrC76,donation:45,Easttown; View
+POF03,"Potter Farm, 22 Leopard Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgrb8,Farm; donation:45,Easttown
+RML20,"MP54 consist of the Paoli Local arrives in Paoli station, May 13, 1972.",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgrry,Railroad; donation:43,Tredyffrin
+RML19,"Silverliner II consist of the Paoli Local arrives in Paoli station, May 13, 1972.",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgrnl,Railroad; donation:43,Tredyffrin
+RML21,"MP54 consist of the Paoli Local arrives in Paoli station, May 13, 1972.",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrCdu,Railroad; donation:43,Tredyffrin
+HOU154,"Foundations, 112 Homestead Road, Devon - Strafford",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrDWa,House; donation:44,Tredyffrin
+HOU156,112 Homestead Road being built,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgsas,House; donation:44,Tredyffrin
+HOU155,"Foundations, 112 Homestead Road, Devon - Strafford",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWlH0,House; donation:44,Tredyffrin
+HOU158,112 Homestead Road completed,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWnuW,House; donation:44,Tredyffrin
+HOU157,112 Homestead Road being built,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgt2w,House; donation:44,Tredyffrin
+BPS06,Berwyn Primary School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbTL8,School; donation:42,Easttown
+CRS04,Carr School,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWpPK,School; donation:42,Tredyffrin
+CRS03,Carr School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgtV0,School; donation:42,Tredyffrin
+LES02,Leopard School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbTvG,School; donation:42,Easttown
+NBS12,North Berwyn School,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrGl4,School; donation:42,Tredyffrin
+LES03,Leopard School plaque,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgtkR,School; donation:42,Easttown
+MPS03,Mount Pleasant School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgtsr,School; donation:42,Tredyffrin
+OGD01,Ogden School,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWryQ,School; donation:42,Easttown
+VFR04,Valley Friends Meetinghouse,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWspS,Church; donation:42,Tredyffrin
+OES07,Old Eagle School,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWsTM,School; donation:42,Tredyffrin
+WSH13,Location of Walker Schoolhouse,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgufy,School; donation:42,Tredyffrin
+BTC01,Berwyn Thimble Club,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrJEA,Cultural; donation:46,Easttown
+BTC02,Berwyn Thimble Club,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWv2S,Cultural; donation:46,Easttown
+BTC03,Berwyn Thimble Club,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbVxi,Cultural; donation:46,Easttown
 BUF01,Mildred Miller Burruss,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgvNT,donation:46,Person
-BUF04,Charles Burruss driving a cart,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrLE6,Tredyffrin; Farm; donation:46,
-BUF06,Mildred Burruss,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbYRG,Radnor; donation:46,Person
+BTC04,Berwyn Thimble Club,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWwg6,Cultural; donation:46,Easttown
+BUF03,Charles Burruss and unidentified woman,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrL3A,donation:46,Person
+BUF04,Charles Burruss driving a cart,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrLE6,Farm; donation:46,Tredyffrin
+BUF02,Mildred Miller Burruss,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGWxoo,donation:46,Person
 BUF05,Mildred Burruss and 2 friends,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrNkq,donation:46,Person
-BUF07,Burruss Family in Berwyn,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrOWE,Easttown; donation:46,Person
-BUF09,Marriage license James Burruss and Mary Ray,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgwgr,donation:46,Person
+BUF07,Burruss Family in Berwyn,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrOWE,donation:46,Easttown; Person
+BUF06,Mildred Burruss,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbYRG,Radnor; donation:46,Person
 BUF08,Mildred Miller Beauty License,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgwbF,Business; donation:46,
-JWV01,Ground-breaking ceremony for new Suburban Housing Development in Berwyn,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbZSU,Easttown; Business; donation:46,
-BUF11,Beauty Culture Operator license for Mildred Burruss,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrPWC,Easttown; Business; donation:46,
 BUF10,Marriage license of Charles Burruss and Mildred Miller,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgwpH,donation:46,Person
-MGI03,The Swing Queens,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgxD8,donation:46,Person
+BUF09,Marriage license James Burruss and Mary Ray,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgwgr,donation:46,Person
 MGI01,Billie Holliday,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrPs4,donation:46,Person
+BUF11,Beauty Culture Operator license for Mildred Burruss,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrPWC,Business; donation:46,Easttown
+JWV01,Ground-breaking ceremony for new Suburban Housing Development in Berwyn,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbZSU,Business; donation:46,Easttown
 MGI02,Count Bassie advertisement,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbbZS,donation:46,Person
 MRY01,Morris Ray and automobile,postcard,historicalImage,patched,WOdasKzWYNoImJ3aDGX2Eo,donation:46,Person
-LAB35,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgxko,Easttown; donation:48,Place
+MGI03,The Swing Queens,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgxD8,donation:46,Person
 MRY02,Family in Yosemite National Park,photo,historicalImage,patched,sbP4gqSkGjehGl77iAgxnc,donation:46,Person
-LAB36,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbcTu,Easttown; donation:47,Place
-LAB37,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgyA4,Easttown; donation:48,Place
-LAB38,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrTW4,Easttown; donation:47,Place
-LAB40,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrUZg,Easttown; donation:47,Place
-LAB39,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbcsk,Easttown; donation:48,Place
-LAB41,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrUL6,Easttown; donation:48,Place
-LAB43,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrVvW,Easttown; donation:48,Place
-LAB44,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrVka,Easttown; donation:47,Place
-LAB42,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrVSM,Easttown; donation:47,Place
-LAB46,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,sbP4gqSkGjehGl77iAh0TC,Easttown; donation:47,Place
-LAB45,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbdXO,Easttown; donation:48,Place
-LAB47,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbdpS,Easttown; donation:48,Place
-LAB49,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbexS,Easttown; donation:48,Place
-LAB50,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbeqg,Easttown; donation:47,Place
-LAB48,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbeYc,Easttown; donation:47,Place
-LAB51,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbfK2,Easttown; donation:48,Place
-LAB53,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXCms,Easttown; donation:48,Place
-LAB52,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,sbP4gqSkGjehGl77iAh1C6,Easttown; donation:47,Place
-LAB54,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbfuA,Easttown; donation:47,Place
-LAB56,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrZSE,Easttown; donation:47,Place
-LAB55,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXDV4,Easttown; donation:48,Place
-OLA18,Camp Hickory near Collegeville,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbgk6,Cultural,
-HOU75,Unknown house,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXFHY,House,
+LAB35,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgxko,donation:48,Easttown; Place
+LAB36,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbcTu,donation:47,Easttown; Place
+LAB37,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,sbP4gqSkGjehGl77iAgyA4,donation:48,Easttown; Place
+LAB38,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrTW4,donation:47,Easttown; Place
+LAB39,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbcsk,donation:48,Easttown; Place
+LAB40,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrUZg,donation:47,Easttown; Place
+LAB41,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrUL6,donation:48,Easttown; Place
+LAB42,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrVSM,donation:47,Easttown; Place
+LAB43,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrVvW,donation:48,Easttown; Place
+LAB44,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrVka,donation:47,Easttown; Place
+LAB45,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbdXO,donation:48,Easttown; Place
+LAB46,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,sbP4gqSkGjehGl77iAh0TC,donation:47,Easttown; Place
+LAB48,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbeYc,donation:47,Easttown; Place
+LAB47,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbdpS,donation:48,Easttown; Place
+LAB49,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbexS,donation:48,Easttown; Place
+LAB51,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbfK2,donation:48,Easttown; Place
+LAB50,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbeqg,donation:47,Easttown; Place
+LAB52,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,sbP4gqSkGjehGl77iAh1C6,donation:47,Easttown; Place
+LAB54,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbfuA,donation:47,Easttown; Place
+LAB53,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXCms,donation:48,Easttown; Place
+LAB55,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXDV4,donation:48,Easttown; Place
 HOU74,Unknown house,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh1lB,House,
-BAF01,Marion Edith Baugh,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh24p,,Person
+LAB56,"Lancaster Avenue, Berwyn",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrZSE,donation:47,Easttown; Place
 PEO52,Unknown woman and baby,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbh8w,,Person
-RCR04,"Red Cross Building, Berwyn",photo,historicalImage,patched,sbP4gqSkGjehGl77iAh2Ir,Business,
+HOU75,Unknown house,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXFHY,House,
+OLA18,Camp Hickory near Collegeville,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbgk6,Cultural,
+BAF01,Marion Edith Baugh,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh24p,,Person
 BUS27,Moore Electrical Store,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrbZS,Business,
+RCR04,"Red Cross Building, Berwyn",photo,historicalImage,patched,sbP4gqSkGjehGl77iAh2Ir,Business,
 RAD07,King of Prussia Road,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXIHA,,Road
-RAD08,King of Prussia Road,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh2Zh,,Road
+PEO53,Unknown person,photo,historicalImage,created,h7jyTqsbY1egLREo29caVG,,Person
 RML18,Radnor Station,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbhys,Radnor; Transportation,
+RAD08,King of Prussia Road,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh2Zh,,Road
 RAD09,Matson Ford Road,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbiLS,,Road
 RAD10,Radnor view - along King of Prussia Road,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh2yx,Radnor,View
 MAR03,"Memorial Arch, Valley Forge NHP",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXLLC,,View
+PEO54,Women in Moore Electric truck,photo,historicalImage,created,h7jyTqsbY1egLREo29cb4g,,Person
 MC04,"Memorial Stone, Valley Forge NHP(?)",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXM3O,,View
-MC06,Memorial Stone at the Chapel,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbjaE,Church,
 MC05,"Chapel, Valley Forge NHP",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbjIA,Church,
+MC06,Memorial Stone at the Chapel,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbjaE,Church,
 MC07,Memorial Stone at the Chapel,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbjjG,Church,
 MC08,Memorial Stone at the Chapel,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdreS4,Church,
-BBC06,Berwyn Baptist Church,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXNPM,Church,
 FBB12,First Baptist Church,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh3ZR,Church,
-BE90,Berwyn WWII plaque,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbkJO,,Place
+BBC06,Berwyn Baptist Church,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXNPM,Church,
 BE89,Berwyn WWII plaque,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXOPE,,Place
-OES04,Old Eagle School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh3xI,School,
-HSS01,Hillside School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh48W,School,
+BE90,Berwyn WWII plaque,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbkJO,,Place
 BE91,"Parade, Lincoln Highway Berwyn",photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrf9o,,View
+OES04,Old Eagle School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh3xI,School,
+MZC03,"A.M.E. Church, Berwyn",photo,historicalImage,created,N1G5rtOZj8187JlhVe7qhB,Church,
+HSS01,Hillside School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh48W,School,
 HSS02,Hillside School,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrfKk,School,
-SCH25,Valley Forge School,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXRG0,School,
 SCH24,Valley Forge School,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXRkw,School,
 DES02,Devon Elementary School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh4MY,School,
+SCH25,Valley Forge School,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXRG0,School,
 DES03,Devon Elementary School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh4bz,School,
 EES01,"Main Entrance, Easttown Elementary School",photo,historicalImage,patched,boIVl02DH7EDt0T3jLblaQ,School,
 EES02,Easttown Elementary School,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXTFk,School,
 PAS08,Paoli Grammar School,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrhKg,School,
 PAS09,Paoli Grammar School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh5P6,School,
+TJH01,Preparing for the TE Junior High parking lot,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh6GQ,School,Tredyffrin
 PAS10,Paoli Grammar School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh5fw,School,
-TJH01,Preparing for the TE Junior High parking lot,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh6GQ,Tredyffrin; School,
-TJH02,Site of TE Junior High addition,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh63n,Tredyffrin; School,
-TJH03,Old TE Junior High,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXVba,Tredyffrin; School,
-TJH05,Old TE Junior High,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrjKc,Tredyffrin; School,
-TJH04,New TE Junior High nearing completion,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbnoA,Tredyffrin; School,
-TJH06,Old TE Junior High,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXWoi,Tredyffrin; School,
-TJH07,Old TE Junior High,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXY6G,Tredyffrin; School,
-TJH09,Old TE Junior High,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXZb4,Tredyffrin; School,
+EES03,Easttown Elementary School - cafeteria,photo,historicalImage,created,h7jyTqsbY1egLREo29cdUE,School,
+TJH02,Site of TE Junior High addition,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh63n,School,Tredyffrin
+TJH03,Old TE Junior High,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXVba,School,Tredyffrin
+TJH05,Old TE Junior High,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrjKc,School,Tredyffrin
+TJH04,New TE Junior High nearing completion,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbnoA,School,Tredyffrin
+TJH06,Old TE Junior High,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXWoi,School,Tredyffrin
+TJH09,Old TE Junior High,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXZb4,School,Tredyffrin
+TJH07,Old TE Junior High,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXY6G,School,Tredyffrin
 SCH26,Old Willistown School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbpss,School,
-HOS04,David school at Howellville,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh7tS,School,
 SCH27,Royer-Greaves School for the Blind,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXcf6,School,
-TJH10,TE Junior High annex,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrnuw,Tredyffrin; School,
-TEH41,Conestoga High School corner stone,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdroZ2,Tredyffrin; School,
-TEH40,TE Junior High School (in back of TE High School),photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXdNI,Tredyffrin; School,
-TEH42,Conestoga High School corner stone,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbrCA,Tredyffrin; School,
-TEH44,Conestoga High School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbrYk,Tredyffrin; School,
-TEH43,Conestoga High School,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrpRi,Tredyffrin; School,
-TEH45,Conestoga High School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh8km,Tredyffrin; School,
-TEH46,Conestoga High School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbs4M,Tredyffrin; School,
-TEH47,Conestoga High School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh9A2,Tredyffrin; School,
-TEH48,Conestoga High School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh9ZI,Tredyffrin; School,
+TJH08,Old TE Junior High,photo,historicalImage,created,0YKpiHcLUDtAprmSVO6jyO,School,Tredyffrin
+HOS04,David school at Howellville,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh7tS,School,
+TJH10,TE Junior High annex,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrnuw,School,Tredyffrin
+TEH41,Conestoga High School corner stone,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdroZ2,School,Tredyffrin
+TEH40,TE Junior High School (in back of TE High School),photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXdNI,School,Tredyffrin
+TEH42,Conestoga High School corner stone,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbrCA,School,Tredyffrin
+TEH43,Conestoga High School,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrpRi,School,Tredyffrin
+TEH44,Conestoga High School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbrYk,School,Tredyffrin
+TEH45,Conestoga High School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh8km,School,Tredyffrin
+TEH46,Conestoga High School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbs4M,School,Tredyffrin
+TEH48,Conestoga High School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh9ZI,School,Tredyffrin
+TEH47,Conestoga High School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAh9A2,School,Tredyffrin
 LH04,Playing in the snow,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrsGg,,View
-LH05,Snow scene,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXiR4,,View
 LH06,Snow scene,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhA2l,,View
-PA30,Aerial Photograph of Paoli,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbu2I,,View
+LH05,Snow scene,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXiR4,,View
 MEP02,"The Emma C. Simpson Methodist Church, Paoli",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbu94,Church,
+PA30,Aerial Photograph of Paoli,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbu2I,,View
 MEP05,"The Emma E. Simpson Methodist Church, Paoli",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbthy,Church,
+HOU77,"Home of John Carson Eves house, east side of South Valley Road, Paoli",photo,historicalImage,created,0YKpiHcLUDtAprmSVO6qWp,House,
 PA31,"Route 252, Paoli",photo,historicalImage,patched,boIVl02DH7EDt0T3jLbuTO,,Road
-FPC05,The move of the First Presbyterian Church building,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrtuk,Church,
+SCH28,Royer-Greaves School for the blind,photo,historicalImage,created,h7jyTqsbY1egLREo29cg3c,School,
 FPC04,The move of the First Presbyterian Church building,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbucQ,Church,
+FPC05,The move of the First Presbyterian Church building,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrtuk,Church,
 FPC06,The move of the First Presbyterian Church building,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrx5a,Church,
-FPC07,The move of the First Presbyterian Church building,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrwue,Church,
 FPC08,The move of the First Presbyterian Church building,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbyYI,Church,
+FPC07,The move of the First Presbyterian Church building,photo,historicalImage,patched,R9QL69b6FQgBhmgXAdrwue,Church,
 FPC09,The move of the First Presbyterian Church building,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbyus,Church,
 FPC10,The move of the First Presbyterian Church building,photo,historicalImage,patched,boIVl02DH7EDt0T3jLbz1e,Church,
 FPC11,The move of the First Presbyterian Church building,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXoHS,Church,
 FPC12,The move of the First Presbyterian Church building,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXoZ8,Church,
 FPC13,The move of the First Presbyterian Church building,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhCLt,Church,
-FPC15,The move of the First Presbyterian Church building,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhCl9,Church,
 FPC14,The move of the First Presbyterian Church building,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhCYW,Church,
 FPC16,The move of the First Presbyterian Church building,photo,historicalImage,patched,boIVl02DH7EDt0T3jLc058,Church,
-FPC18,The move of the First Presbyterian Church building,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhDG1,Church,
 FPC17,The move of the First Presbyterian Church building,photo,historicalImage,patched,R9QL69b6FQgBhmgXAds05U,Church,
-FPC19,The move of the First Presbyterian Church building,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhDN2,Church,
-FPC21,The move of the First Presbyterian Church building,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhDi5,Church,
+FPC15,The move of the First Presbyterian Church building,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhCl9,Church,
 FPC20,The move of the First Presbyterian Church building,photo,historicalImage,patched,R9QL69b6FQgBhmgXAds1cG,Church,
-FPC22,The move of the First Presbyterian Church building,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXq8M,Church,
-FPC24,The move of the First Presbyterian Church building,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhE0K,Church,
+FPC18,The move of the First Presbyterian Church building,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhDG1,Church,
+FPC19,The move of the First Presbyterian Church building,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhDN2,Church,
 FPC23,The move of the First Presbyterian Church building,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXquy,Church,
+FPC21,The move of the First Presbyterian Church building,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhDi5,Church,
+FPC22,The move of the First Presbyterian Church building,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXq8M,Church,
 FPC25,The move of the First Presbyterian Church building,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhE5w,Church,
+FPC24,The move of the First Presbyterian Church building,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhE0K,Church,
 FPC26,The move of the First Presbyterian Church building,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhEIZ,Church,
+ROR09,Roller Rink,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhEre,,Place
 FPC27,The move of the First Presbyterian Church building,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhESO,Church,
 ROR08,Roller Rink,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXsGw,,Place
-ROR09,Roller Rink,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhEre,,Place
-ROR10,Roller Rink,photo,historicalImage,patched,R9QL69b6FQgBhmgXAds35O,,Place
 ROR11,Roller Rink,photo,historicalImage,patched,boIVl02DH7EDt0T3jLc2aw,,Place
+ROR10,Roller Rink,photo,historicalImage,patched,R9QL69b6FQgBhmgXAds35O,,Place
 ROR12,Roller Rink,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhF9t,,Place
-ROR14,Roller Rink,photo,historicalImage,patched,R9QL69b6FQgBhmgXAds3uQ,,Place
 ROR13,Roller Rink,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXtz0,,Place
+ROR14,Roller Rink,photo,historicalImage,patched,R9QL69b6FQgBhmgXAds3uQ,,Place
 ROR15,Roller Rink,photo,historicalImage,patched,boIVl02DH7EDt0T3jLc2xW,,Place
 ROR17,Roller Rink,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXvpu,,Place
 ROR16,Roller Rink,photo,historicalImage,patched,boIVl02DH7EDt0T3jLc3B4,,Place
@@ -810,149 +838,162 @@ ROR19,Roller Rink,photo,historicalImage,patched,boIVl02DH7EDt0T3jLc3uE,,Place
 ROR21,Roller Rink,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXwuC,,Place
 BET03,Berwyn Theater,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXxyU,,Place
 BET04,Berwyn Theater,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhISl,,Place
-BET07,Berwyn Theater,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGY1ki,,Place
 BET05,Berwyn Theater,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGXzky,,Place
-BET06,Berwyn Theater,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGY1Oc,,Place
-BET09,Berwyn Theater,photo,historicalImage,patched,boIVl02DH7EDt0T3jLc7uc,,Place
 BET08,Berwyn Theater,photo,historicalImage,patched,boIVl02DH7EDt0T3jLc7cY,,Place
+BET06,Berwyn Theater,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGY1Oc,,Place
+BET07,Berwyn Theater,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGY1ki,,Place
+BET09,Berwyn Theater,photo,historicalImage,patched,boIVl02DH7EDt0T3jLc7uc,,Place
 BET10,Berwyn Theater,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGY4bU,,Place
-BET13,Berwyn Theater,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhKQq,,Place
 BET11,Berwyn Theater,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhK7C,,Place
-BET12,Berwyn Theater,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGY5bM,,Place
 ORG04,"Movie, Paoli Girl Scouts",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYAf8,,Service
-ROR23,Roller Rink,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcD0k,Business,
+BET13,Berwyn Theater,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhKQq,,Place
+BET12,Berwyn Theater,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGY5bM,,Place
 ROR22,Roller Rink,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhLCY,Business,
-BET15,Berwyn Theater,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYHeE,,Place
-BET14,Berwyn Theater,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcEK2,,Place
+ROR23,Roller Rink,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcD0k,Business,
 ROR24,Roller Rink,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcDvC,Business,
+BET14,Berwyn Theater,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcEK2,,Place
+BET15,Berwyn Theater,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYHeE,,Place
 BET16,Berwyn Theater,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYJ0C,,Place
 BE92,"Post Office & Bank, Berwyn",photo,historicalImage,patched,boIVl02DH7EDt0T3jLcF9y,Business,
-HOU78,Taylor House,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcHSE,Easttown; House,
 BE93,North Berwyn,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYKdq,,View
-CH25,"St Matthew’s Methodist Church, Berwyn",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYKzw,Easttown; Church,
-GVB21,Great Valley Baptist Church,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYOHE,Tredyffrin; Church,
-HOU79,Gamble House,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhNSs,Easttown; House,
+PEO55,Unknown woman,photo,historicalImage,created,0YKpiHcLUDtAprmSVO79KB,,Person
+CH25,"St Matthew’s Methodist Church, Berwyn",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYKzw,Church,Easttown
+LH07,Unknown View,photo,historicalImage,created,h7jyTqsbY1egLREo29clri,,View
+HOU78,Taylor House,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcHSE,House,Easttown
+HOU79,Gamble House,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhNSs,House,Easttown
+GVB21,Great Valley Baptist Church,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYOHE,Church,Tredyffrin
 BAP05,Baptist Parsonage,photo postcard,historicalImage,patched,WOdasKzWYNoImJ3aDGYQPo,House,
+GVB22,Great Valley Baptist Church,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhNuw,Church,Tredyffrin
 WHQ32,Washington’s Headquarters,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhO7Z,Upper Merion,Place
-GVB22,Great Valley Baptist Church,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhNuw,Tredyffrin; Church,
-GVB24,Great Valley Baptist Church,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhOAN,Tredyffrin; Church,
-GVB26,Great Valley Baptist Church Educational Building,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhOmG,Tredyffrin; Church,
-GVB25,Great Valley Baptist Church Educational Building and Parsonage,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhOKC,Tredyffrin; Church,
+GVB24,Great Valley Baptist Church,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhOAN,Church,Tredyffrin
+GVB25,Great Valley Baptist Church Educational Building and Parsonage,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhOKC,Church,Tredyffrin
+GVB26,Great Valley Baptist Church Educational Building,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhOmG,Church,Tredyffrin
+GVB23,Great Valley Baptist Church sign,photo,historicalImage,created,0YKpiHcLUDtAprmSVO7DDA,Church,Tredyffrin
 PEO56,Rev. William T. and Mrs. Vandener,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYVlG,,Person
-BAP07,Baptist Parsonage,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYWgi,Tredyffrin; Church,
-SLC01,"St Luke’s Lutheran Church, Devon ground breaking",photo,historicalImage,patched,boIVl02DH7EDt0T3jLcMGI,Tredyffrin; Church,
-BAP06,Baptist Parsonage,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcKKc,Tredyffrin; House,
+BAP06,Baptist Parsonage,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcKKc,House,Tredyffrin
 SLC02,"St Lukes, Devon",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYXBe,Church,Tredyfrin
-SLC03,"St Luke’s Church, Devon",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYYTC,Tredyffrin; Church,
-SLC04,"St Luke’s Parsonage, Devon",photo,historicalImage,patched,sbP4gqSkGjehGl77iAhPrc,Tredyffrin; Church,
-SLC07,"St Luke’s Church, Devon",photo,historicalImage,patched,boIVl02DH7EDt0T3jLcPFS,Tredyffrin; Church,
-SLC05,"St Luke’s Church, Devon",photo,historicalImage,patched,sbP4gqSkGjehGl77iAhPuQ,Tredyffrin; Church,
-SLC06,"St Luke’s Church, Devon",photo,historicalImage,patched,boIVl02DH7EDt0T3jLcP1u,Tredyffrin; Church,
-SDC25,A view below St David’s Church,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYgSA,Radnor; Business,
-SDC24,St David’s Church,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcQPi,Radnor; Church,
+SLC01,"St Luke’s Lutheran Church, Devon ground breaking",photo,historicalImage,patched,boIVl02DH7EDt0T3jLcMGI,Church,Tredyffrin
+BAP07,Baptist Parsonage,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYWgi,Church,Tredyffrin
+SLC05,"St Luke’s Church, Devon",photo,historicalImage,patched,sbP4gqSkGjehGl77iAhPuQ,Church,Tredyffrin
+SLC04,"St Luke’s Parsonage, Devon",photo,historicalImage,patched,sbP4gqSkGjehGl77iAhPrc,Church,Tredyffrin
+SLC03,"St Luke’s Church, Devon",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYYTC,Church,Tredyffrin
+SLC07,"St Luke’s Church, Devon",photo,historicalImage,patched,boIVl02DH7EDt0T3jLcPFS,Church,Tredyffrin
 SDC23,St David’s Church,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcPZm,Radnor; Church,
+SLC06,"St Luke’s Church, Devon",photo,historicalImage,patched,boIVl02DH7EDt0T3jLcP1u,Church,Tredyffrin
+WAM07,Waterloo Mills,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcQb0,Mill,Easttown
+SDC24,St David’s Church,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcQPi,Radnor; Church,
+SDC25,A view below St David’s Church,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYgSA,Radnor; Business,
+WAM08,Waterloo Mills,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcRnW,Mill,Easttown
+BM06,Berwyn Methodist Church,photo,historicalImage,patched,kOuefoQrwXjnjkKofp7P97,Church,Easttown
 BM05,Berwyn Methodist Church,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhRlU,Church,
-BM06,Berwyn Methodist Church,photo,historicalImage,patched,kOuefoQrwXjnjkKofp7P97,Easttown; Church,
-WAM07,Waterloo Mills,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcQb0,Easttown; Mill,
-WAM08,Waterloo Mills,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcRnW,Easttown; Mill,
-WAM09,Waterloo Mills,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcSNe,Easttown; Mill,
-WAM10,Waterloo Mills,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcSWg,Easttown; Mill,
-WAM12,"Blacksmith Shop, Waterloo Mills",photo,historicalImage,patched,sbP4gqSkGjehGl77iAhSYb,Easttown; Mill,
-WAH04,Waterloo House,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhSco,Easttown; House,
-WAM11,Waterloo Mills,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhSJA,Easttown; Mill,
-WAM14,"Nuzum House, Waterloo Mills",photo,historicalImage,patched,boIVl02DH7EDt0T3jLcUbO,Easttown; Mill,
-WAM13,"Blacksmith Shop, Waterloo Mills",photo,historicalImage,patched,boIVl02DH7EDt0T3jLcTgw,Easttown; Mill,
-HOU81,Leopard Post office,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYm0s,Easttown; Business,
-WAB04,Waterloo Avenue,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYm9i,Easttown,Road
-ECH02,Cathcart Home,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYmru,Tredyffrin; Business,
-OES05,Old Eagle School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhUm7,Tredyffrin; School,
-OES06,Old Eagle School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcWQI,Tredyffrin; School,
-CH28,"St John’s Church, Devon",photo,historicalImage,patched,sbP4gqSkGjehGl77iAhVGz,Easttown; Church,
-DPO01,"First Post Office, Devon",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYnnM,Easttown; Business,
-DPO02,"First Post Office, Devon",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYoMi,Easttown; Business,
-DPO03,"First Post Office, Devon",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYpvw,Easttown; Business,
-DEV13,Devon Boulevard,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcYLy,Easttown,Place
-DEV14,Devon Boulevard,photo,historicalImage,patched,kOuefoQrwXjnjkKofp7Z81,Easttown,Place
-GWQ04,General Wayne’s Quarters (Joseph Walker house),photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYwzS,Tredyffrin; House,
-DUP07,Duportail’s Quarters,photo,historicalImage,patched,kOuefoQrwXjnjkKofp7Zhv,Tredyffrin; House,
-DUP08,Duportail’s Quarters,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1Y14,Tredyffrin; House,
-SSA01,Strafford Station Apartments,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhVx5,Tredyffrin; House,
-SSA02,Strafford Station Apartments,photo,historicalImage,patched,kOuefoQrwXjnjkKofp7ZxJ,Tredyffrin; House,
-SSA03,Strafford Station Apartments,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1Ypb,Tredyffrin; House,
-SSA04,Strafford Station Apartments,photo,historicalImage,patched,kOuefoQrwXjnjkKofp7aHp,Tredyffrin; House,
-SSA05,Strafford Station Apartments,photo,historicalImage,patched,kOuefoQrwXjnjkKofp7aCh,Tredyffrin; House,
-SSA06,Strafford Station Apartments,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcaQg,Tredyffrin; House,
-SSA07,Strafford Station Apartments,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1g2c,Tredyffrin; House,
-SSA08,Strafford Station Apartments,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1fn4,Tredyffrin; House,
-SSA09,Strafford Station Apartments,photo,historicalImage,patched,kOuefoQrwXjnjkKofp7bwP,Tredyffrin; House,
-NEE03,"Site of New Eagle Elementary School, Pugh Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGZ1uO,Tredyffrin; School,
-NEE04,"Site of New Eagle Elementary School, Pugh Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGZ27e,Tredyffrin; School,
-NEE05,Site of New Eagle Elementary School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhXAr,Tredyffrin; School,
-NEE06,Site of New Eagle Elementary School,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1gr9,Tredyffrin; School,
-DSA02,Site of Devon – Strafford Apartments,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGZ9g6,Tredyffrin; House,
-NEE07,Site of New Eagle Elementary School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcgIE,Tredyffrin; School,
-DSA07,Devon – Strafford Apartments,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhXsM,Tredyffrin; House,
+WAM11,Waterloo Mills,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhSJA,Mill,Easttown
+WAM09,Waterloo Mills,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcSNe,Mill,Easttown
+WAM10,Waterloo Mills,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcSWg,Mill,Easttown
+WAH04,Waterloo House,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhSco,House,Easttown
+WAM13,"Blacksmith Shop, Waterloo Mills",photo,historicalImage,patched,boIVl02DH7EDt0T3jLcTgw,Mill,Easttown
+WAM12,"Blacksmith Shop, Waterloo Mills",photo,historicalImage,patched,sbP4gqSkGjehGl77iAhSYb,Mill,Easttown
+HOU81,Leopard Post office,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYm0s,Business,Easttown
+WAM14,"Nuzum House, Waterloo Mills",photo,historicalImage,patched,boIVl02DH7EDt0T3jLcUbO,Mill,Easttown
+WAB04,Waterloo Avenue,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYm9i,,Easttown; Road
+ECH02,Cathcart Home,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYmru,Business,Tredyffrin
+OES06,Old Eagle School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcWQI,School,Tredyffrin
+OES05,Old Eagle School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhUm7,School,Tredyffrin
+HOU80,Beaumont Farm and Cider Press,photo,historicalImage,created,0YKpiHcLUDtAprmSVO7LDW,Business,Easttown
+DPO02,"First Post Office, Devon",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYoMi,Business,Easttown
+DPO01,"First Post Office, Devon",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYnnM,Business,Easttown
+CH28,"St John’s Church, Devon",photo,historicalImage,patched,sbP4gqSkGjehGl77iAhVGz,Church,Easttown
+DPO03,"First Post Office, Devon",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYpvw,Business,Easttown
+DEV14,Devon Boulevard,photo,historicalImage,patched,kOuefoQrwXjnjkKofp7Z81,,Easttown; Place
+DEV13,Devon Boulevard,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcYLy,,Easttown; Place
+GWQ04,General Wayne’s Quarters (Joseph Walker house),photo,historicalImage,patched,WOdasKzWYNoImJ3aDGYwzS,House,Tredyffrin
+DUP07,Duportail’s Quarters,photo,historicalImage,patched,kOuefoQrwXjnjkKofp7Zhv,House,Tredyffrin
+DUP08,Duportail’s Quarters,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1Y14,House,Tredyffrin
+SSA01,Strafford Station Apartments,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhVx5,House,Tredyffrin
+SSA02,Strafford Station Apartments,photo,historicalImage,patched,kOuefoQrwXjnjkKofp7ZxJ,House,Tredyffrin
+SSA03,Strafford Station Apartments,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1Ypb,House,Tredyffrin
+SSA05,Strafford Station Apartments,photo,historicalImage,patched,kOuefoQrwXjnjkKofp7aCh,House,Tredyffrin
+SSA04,Strafford Station Apartments,photo,historicalImage,patched,kOuefoQrwXjnjkKofp7aHp,House,Tredyffrin
+SSA06,Strafford Station Apartments,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcaQg,House,Tredyffrin
+SSA07,Strafford Station Apartments,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1g2c,House,Tredyffrin
+SSA08,Strafford Station Apartments,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1fn4,House,Tredyffrin
+SSA09,Strafford Station Apartments,photo,historicalImage,patched,kOuefoQrwXjnjkKofp7bwP,House,Tredyffrin
+NEE03,"Site of New Eagle Elementary School, Pugh Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGZ1uO,School,Tredyffrin
+NEE04,"Site of New Eagle Elementary School, Pugh Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGZ27e,School,Tredyffrin
+NEE05,Site of New Eagle Elementary School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhXAr,School,Tredyffrin
+NEE07,Site of New Eagle Elementary School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcgIE,School,Tredyffrin
+NEE06,Site of New Eagle Elementary School,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1gr9,School,Tredyffrin
+DSA02,Site of Devon – Strafford Apartments,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGZ9g6,House,Tredyffrin
+DSA03,Site of Devon – Strafford Apartments,photo,historicalImage,created,h7jyTqsbY1egLREo29crJB,House,Tredyffrin
+DSA01,"Devon - Strafford Apartments, Sugartown Road",photo,historicalImage,created,h7jyTqsbY1egLREo29crR3,House,Tredyffrin
+DSA04,Site of Devon – Strafford Apartments,photo,historicalImage,created,0YKpiHcLUDtAprmSVO7URP,House,Tredyffrin
+DSA05,Site of Devon – Strafford Apartments,photo,historicalImage,created,h7jyTqsbY1egLREo29crqd,House,Tredyffrin
+DSA06,Site of Devon – Strafford Apartments,photo,historicalImage,created,N1G5rtOZj8187JlhVe8rIr,House,Tredyffrin
+DSA07,Devon – Strafford Apartments,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhXsM,House,Tredyffrin
+STR04,Site of Devon Square Shopping Center,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGZ9xm,,Tredyffrin; Place
+DSA08,Site of Devon – Strafford Apartments,photo,historicalImage,created,0YKpiHcLUDtAprmSVO7WaU,House,Tredyffrin
 STR05,New Section of Sugartown Road,photo,historicalImage,patched,kOuefoQrwXjnjkKofp7fIz,,Place
-STR04,Site of Devon Square Shopping Center,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGZ9xm,Tredyffrin,Place
-STR06,Site of Devon Square Shopping Center,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhYYS,Tredyffrin,Place
-STR08,Site of Devon Square Shopping Center,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1jIk,Tredyffrin; Business,
 STR07,New Section of Sugartown Road,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1ivQ,,Place
-STR09,Site of Devon Square Shopping Center,photo,historicalImage,patched,boIVl02DH7EDt0T3jLclpS,Tredyffrin,Place
-STR10,Devon Square Shopping Center,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhZxS,Tredyffrin,Place
-STR11,Devon Square Shopping Center,photo,historicalImage,patched,sbP4gqSkGjehGl77iAha34,Tredyffrin,Place
-GBF28,"Green Bank Farm, Newtown Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAhd0t,Easttown; House,
-GBF27,"Green Bank Farm, Newtown Road",photo,historicalImage,patched,kOuefoQrwXjnjkKofp7hat,Easttown; House,
-HOU82,"Willowdale, Newtown Road",photo,historicalImage,patched,kOuefoQrwXjnjkKofp7hU3,Easttown; House,
-HOU83,"House, Newtown Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLcn8k,Easttown; House,
-HOU85,"House, Newtown Road",photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1mND,Easttown; House,
-HOU84,"House, Newtown Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGZI1A,Easttown; House,
-TAR08,Tarleton,photo,historicalImage,patched,kOuefoQrwXjnjkKofp7iED,Easttown; House,
-TAR07,Big tree of Tarleton,photo,historicalImage,patched,boIVl02DH7EDt0T3jLco3C,Easttown; House,
-TAR06,Tarleton,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhdbN,Easttown; House,
-HOU86,"Laywell Farm, Devon",photo,historicalImage,patched,sbP4gqSkGjehGl77iAhdo0,Easttown; Farm,
-HOU87,"House, Waterloo Road",photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1q4Y,Easttown; House,
-HOU88,"House, Waterloo Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLcoNW,Easttown; House,
-WRD05,Waterloo Road,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhe7e,Easttown,Place
-PUQ05,Barn at Brookmead Farm,photo,historicalImage,patched,sbP4gqSkGjehGl77iAheIs,Tredyffrin; House,
-PUQ04,Brookmead Farm,photo,historicalImage,patched,sbP4gqSkGjehGl77iAheDG,Tredyffrin; House,
-BES01,Beaumont Elementary School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcp4Q,Easttown; School,
+STR06,Site of Devon Square Shopping Center,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhYYS,,Tredyffrin; Place
+DSA09,Site of Devon – Strafford Apartments,photo,historicalImage,created,0YKpiHcLUDtAprmSVO7X3G,House,Tredyffrin
+STR08,Site of Devon Square Shopping Center,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1jIk,Business,Tredyffrin
+STR09,Site of Devon Square Shopping Center,photo,historicalImage,patched,boIVl02DH7EDt0T3jLclpS,,Tredyffrin; Place
+STR10,Devon Square Shopping Center,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhZxS,,Tredyffrin; Place
+STR11,Devon Square Shopping Center,photo,historicalImage,patched,sbP4gqSkGjehGl77iAha34,,Tredyffrin; Place
+HOU82,"Willowdale, Newtown Road",photo,historicalImage,patched,kOuefoQrwXjnjkKofp7hU3,House,Easttown
+GBF27,"Green Bank Farm, Newtown Road",photo,historicalImage,patched,kOuefoQrwXjnjkKofp7hat,House,Easttown
+GBF28,"Green Bank Farm, Newtown Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAhd0t,House,Easttown
+HOU84,"House, Newtown Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGZI1A,House,Easttown
+STR12,Devon Square Shopping Center,photo,historicalImage,created,h7jyTqsbY1egLREo29cu5M,,Tredyffrin; Place
+HOU83,"House, Newtown Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLcn8k,House,Easttown
+TAR07,Big tree of Tarleton,photo,historicalImage,patched,boIVl02DH7EDt0T3jLco3C,House,Easttown
+HOU85,"House, Newtown Road",photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1mND,House,Easttown
+TAR06,Tarleton,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhdbN,House,Easttown
+HOU86,"Laywell Farm, Devon",photo,historicalImage,patched,sbP4gqSkGjehGl77iAhdo0,Farm,Easttown
+TAR08,Tarleton,photo,historicalImage,patched,kOuefoQrwXjnjkKofp7iED,House,Easttown
+HOU87,"House, Waterloo Road",photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1q4Y,House,Easttown
+WRD05,Waterloo Road,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhe7e,,Easttown; Place
+HOU88,"House, Waterloo Road",photo,historicalImage,patched,boIVl02DH7EDt0T3jLcoNW,House,Easttown
+PUQ04,Brookmead Farm,photo,historicalImage,patched,sbP4gqSkGjehGl77iAheDG,House,Tredyffrin
 WRD07,Station Avenue at Waterloo Road,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcovO,Business,
+PUQ05,Barn at Brookmead Farm,photo,historicalImage,patched,sbP4gqSkGjehGl77iAheIs,House,Tredyffrin
 WRD06,Waterloo Road,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhefK,House,
-BES02,Beaumont Elementary School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAheyy,Easttown; School,
-BES04,Beaumont Elementary School,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1tGn,Easttown; School,
-BES03,Beaumont Elementary School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcpcI,Easttown; School,
-OLA20,King of Prussia Road,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcqZ0,Radnor,Place
-WRD08,North Waterloo Road (now Waterloo Avenue),photo,historicalImage,patched,kOuefoQrwXjnjkKofp7ruJ,Business,
+BES01,Beaumont Elementary School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcp4Q,School,Easttown
+BES03,Beaumont Elementary School,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcpcI,School,Easttown
+BES02,Beaumont Elementary School,photo,historicalImage,patched,sbP4gqSkGjehGl77iAheyy,School,Easttown
 OLA19,Radnor Station,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn2Epx,Radnor; Transportation,
-OLA21,King of Prussia Road,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcr4c,,Place
+BES04,Beaumont Elementary School,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn1tGn,School,Easttown
+WRD08,North Waterloo Road (now Waterloo Avenue),photo,historicalImage,patched,kOuefoQrwXjnjkKofp7ruJ,Business,
 NCE12,Devon State Road,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhqxH,,Place
+OLA21,King of Prussia Road,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcr4c,,Place
+OLA20,King of Prussia Road,photo,historicalImage,patched,boIVl02DH7EDt0T3jLcqZ0,Radnor,Place
 OLA22,"Old Swede Church, Bridgeport",Postcard,historicalImage,patched,kOuefoQrwXjnjkKofp884B,Norristown; Church,
-SDC28,Old St. David’s Church,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn2TFz,Church,
-SDC27,Old St. David’s Church,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhwIR,Business,
 SDC26,Old St. David’s Church,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhvua,Radnor; Church,
+SDC27,Old St. David’s Church,photo,historicalImage,patched,sbP4gqSkGjehGl77iAhwIR,Business,
 SDC29,Old St. David’s Church,photo,historicalImage,patched,sbP4gqSkGjehGl77iAi31C,Church,
-OLA24,"St. Mary’s Episcopalian Church, Wayne",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGaguM,Church,
 OLA23,"St. Mary’s Episcopalian Church, Wayne",photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn2VS2,Church,
-KCW05,Krider Carriage Works envelope,photo,historicalImage,patched,boIVl02DH7EDt0T3jLdAmE,Business,
-KCW04,George Krider invoice,photo,historicalImage,patched,kOuefoQrwXjnjkKofp8M4h,Business,
+SDC28,Old St. David’s Church,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn2TFz,Church,
+OLA24,"St. Mary’s Episcopalian Church, Wayne",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGaguM,Church,
 DLC04,Devon Log Cabin,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn2XGl,Business,
+KCW04,George Krider invoice,photo,historicalImage,patched,kOuefoQrwXjnjkKofp8M4h,Business,
+KCW05,Krider Carriage Works envelope,photo,historicalImage,patched,boIVl02DH7EDt0T3jLdAmE,Business,
 SBC02,Wanda Stanber(?) lunch party,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGaiTa,,People
-SBC03,Wanda Stanber(?) lunch party,photo,historicalImage,patched,boIVl02DH7EDt0T3jLdC5W,,People
 SBC04,Jean Dinwoodie at Wanda Stanber(?) lunch party,photo,historicalImage,patched,sbP4gqSkGjehGl77iAi7rU,,People
-SBC06,Wanda Stanber(?) lunch party,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn2YKq,Business,
+SBC03,Wanda Stanber(?) lunch party,photo,historicalImage,patched,boIVl02DH7EDt0T3jLdC5W,,People
 SBC05,Wanda Stanber(?) lunch party,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGajGC,,People
-SBC07,Wanda Stanber(?) lunch party,photo,historicalImage,patched,9V90IpeWSfJKkQXP5joqJ2,,People
+SBC06,Wanda Stanber(?) lunch party,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn2YKq,Business,
 SBC08,Wanda Stanber(?) lunch party,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn2Ym3,,People
+SBC01,"Wanda Stanber, hostess, at lunch party",photo,historicalImage,created,h7jyTqsbY1egLREo29cwoa,,People
+SBC07,Wanda Stanber(?) lunch party,photo,historicalImage,patched,9V90IpeWSfJKkQXP5joqJ2,,People
 SBC09,Wanda Stanber(?) lunch party,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn2ZDG,,People
-SBC10,Wanda Stanber in Chandri at lunch party,photo,historicalImage,patched,eDYXsHQ57fezwq0kcbGj8V,,People
 SBC11,Wanda Stanber in Chandri at lunch party,photo,historicalImage,patched,kOuefoQrwXjnjkKofp8Nrp,,People
-RML22,Strafford Station,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGaoOO,Tredyffrin; Railroad,
+SBC10,Wanda Stanber in Chandri at lunch party,photo,historicalImage,patched,eDYXsHQ57fezwq0kcbGj8V,,People
 SBC12,Wanda Stanber(?) lunch party,photo,historicalImage,patched,boIVl02DH7EDt0T3jLdDwg,,People
 BE94,Berwyn War Memorial,photo,historicalImage,patched,kOuefoQrwXjnjkKofp8Odh,,Place
-HOU90,"House, Valley Forge Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGaog4,House,
+RML22,Strafford Station,photo,historicalImage,patched,WOdasKzWYNoImJ3aDGaoOO,Railroad,Tredyffrin
 HOU89,"House, 107 Old Lancaster Road",photo,historicalImage,patched,sbP4gqSkGjehGl77iAi99T,House,
 SLC08,"St Lukes, Devon",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGaoxk,Church,
-CH27,"St. John’s Church, Devon",photo,historicalImage,patched,eDYXsHQ57fezwq0kcbGjcP,Easttown; Church,
-CRM03,Aaron and Dennis Coleman at the Church Road Mill,photo,historicalImage,patched,sbP4gqSkGjehGl77iAi9JI,Tredyffrin; Mill; donation:50,
-DHS133,Three unknown men at the Devon Horse Show,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn2bPJ,Tredyffrin,Service
-DHS134,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAi9XK,Tredyffrin,Service
+HOU90,"House, Valley Forge Road",photo,historicalImage,patched,WOdasKzWYNoImJ3aDGaog4,House,
+CRM03,Aaron and Dennis Coleman at the Church Road Mill,photo,historicalImage,patched,sbP4gqSkGjehGl77iAi9JI,Mill; donation:50,Tredyffrin
+CH27,"St. John’s Church, Devon",photo,historicalImage,patched,eDYXsHQ57fezwq0kcbGjcP,Church,Easttown
+DHS133,Three unknown men at the Devon Horse Show,photo,historicalImage,patched,3t7JiDRP2ToGL3DJbn2bPJ,,Tredyffrin; Service
+DHS134,Devon Horse Show,photo,historicalImage,patched,sbP4gqSkGjehGl77iAi9XK,,Tredyffrin; Service
