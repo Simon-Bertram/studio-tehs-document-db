@@ -18,7 +18,7 @@ export interface CliDefaults {
 }
 
 const DEFAULT_DOCUMENTS: CliDefaults = {
-	csvPath: 'migrations/data/documents.csv',
+	csvPath: 'migrations/data/documents-full.csv',
 	reportsDir: 'migrations/csv-import/reports',
 }
 

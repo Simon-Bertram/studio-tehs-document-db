@@ -12,14 +12,8 @@ import pLimit from 'p-limit'
 import {SANITY_DATASET, SANITY_PROJECT_ID} from '../../../lib/sanityEnv'
 import {Audit} from './audit'
 import type {ImportConfig} from './cli-config'
-import {
-	getDocumentImageBaseUrl,
-	loadDocumentImageCatalog,
-} from './document-image-catalog'
-import {
-	createDocumentImageResolution,
-	resolveDocumentImageEmbeds,
-} from './ensure-document-image'
+import {getDocumentImageBaseUrl, loadDocumentImageCatalog} from './document-image-catalog'
+import {createDocumentImageResolution, resolveDocumentImageEmbeds} from './ensure-document-image'
 import {generateDocumentReviewReports} from './generate-document-review-reports'
 import type {CsvRow, ImportDoc} from './map-row'
 import {mapRow} from './map-row'
