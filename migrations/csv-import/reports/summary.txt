@@ -1,15 +1,15 @@
 CSV Import Summary
 ==================
-Total rows:          22
-Imported:            19
+Total rows:          922
+Imported:            919
 Skipped / failed:    3
-Needs manual links:  3
-Missing keywords:    3
+Needs manual links:  660
+Missing keywords:    215
 
 Type breakdown:
-  historicalImage: 1
-  primarySource: 17
-  researchArticle: 1
+  historicalImage: 2
+  primarySource: 886
+  researchArticle: 31
 
 Report files:
   /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/imported.csv
