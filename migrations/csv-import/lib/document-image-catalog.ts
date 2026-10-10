@@ -93,10 +93,7 @@ export async function loadDocumentImageCatalog(options?: {
  * Extract a catalog archive ID from a filename using stem + digits
  * (e.g. BKH1-BakeHousesmall.jpg → BKH1). Longest stem wins.
  */
-export function extractCatalogIdFromFilename(
-	filename: string,
-	stems: string[],
-): string | null {
+export function extractCatalogIdFromFilename(filename: string, stems: string[]): string | null {
 	const stem = filenameWithoutExtension(basenameFromPath(filename))
 	const upper = stem.toUpperCase()
 	for (const prefix of stems) {

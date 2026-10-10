@@ -185,9 +185,7 @@ export const structure: StructureResolver = (S, context) => {
 							S.documentTypeListItem('donationCategory')
 								.title('Donation Categories')
 								.icon(TagsIcon),
-							S.documentTypeListItem('imageIdentifier')
-								.title('Image Identifiers')
-								.icon(HashIcon),
+							S.documentTypeListItem('imageIdentifier').title('Image Identifiers').icon(HashIcon),
 						]),
 				),
 		])

@@ -4,9 +4,7 @@ import {describe, expect, test} from 'bun:test'
  * Mirrors historicalImage preview subtitle logic for Missing Archive ID.
  */
 function archiveLabel(archiveId: unknown): string {
-	return typeof archiveId === 'string' && archiveId.trim()
-		? archiveId
-		: 'Missing Archive ID'
+	return typeof archiveId === 'string' && archiveId.trim() ? archiveId : 'Missing Archive ID'
 }
 
 describe('historicalImage preview archive label', () => {

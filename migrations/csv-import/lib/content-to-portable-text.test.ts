@@ -2,9 +2,9 @@ import {describe, expect, test} from 'bun:test'
 
 import {
 	contentToPortableText,
+	type HistoricalImageEmbedPending,
 	preprocessContentHtml,
 	stripHtmlToPlainText,
-	type HistoricalImageEmbedPending,
 } from './content-to-portable-text'
 import type {DocumentImageCatalog} from './document-image-catalog'
 
@@ -22,9 +22,7 @@ describe('preprocessContentHtml', () => {
 
 describe('stripHtmlToPlainText', () => {
 	test('removes tags for photo descriptions', () => {
-		expect(stripHtmlToPlainText('Hello <strong>world</strong><br>again')).toBe(
-			'Hello world again',
-		)
+		expect(stripHtmlToPlainText('Hello <strong>world</strong><br>again')).toBe('Hello world again')
 	})
 })
 
@@ -48,34 +46,27 @@ describe('contentToPortableText', () => {
 		expect(blocks.some((b) => b._type === 'block')).toBe(true)
 
 		const embed = blocks.find((b) => b._type === 'historicalImageEmbed') as
-			| HistoricalImageEmbedPending
-			| undefined
+			HistoricalImageEmbedPending | undefined
 		expect(embed).toBeDefined()
 		expect(embed?._pendingFilename).toBe('1854-02-07doc591small.jpg')
-		expect(embed?._pendingImportId).toBe(
-			'historicalImage.import.1854-02-07doc591small',
-		)
+		expect(embed?._pendingImportId).toBe('historicalImage.import.1854-02-07doc591small')
 		expect(embed?.alt).toBe('Scan')
 		expect(embed?.imageRole).toBe('figure')
 	})
 
 	test('skips image-not-found alt text', () => {
-		const html =
-			'<img alt="image not found" src="../images/Doc408small.jpg">'
+		const html = '<img alt="image not found" src="../images/Doc408small.jpg">'
 		const blocks = contentToPortableText(html, emptyCatalog)
 		const embed = blocks.find((b) => b._type === 'historicalImageEmbed') as
-			| HistoricalImageEmbedPending
-			| undefined
+			HistoricalImageEmbedPending | undefined
 		expect(embed?.alt).toBeUndefined()
 	})
 
 	test('skips alts that contain image not found (e.g. CHE53 image not found)', () => {
-		const html =
-			'<img alt="CHE53 image not found" src="../images/CHE53small.jpg">'
+		const html = '<img alt="CHE53 image not found" src="../images/CHE53small.jpg">'
 		const blocks = contentToPortableText(html, emptyCatalog)
 		const embed = blocks.find((b) => b._type === 'historicalImageEmbed') as
-			| HistoricalImageEmbedPending
-			| undefined
+			HistoricalImageEmbedPending | undefined
 		expect(embed?.alt).toBeUndefined()
 	})
 
@@ -83,8 +74,7 @@ describe('contentToPortableText', () => {
 		const html = '<img src="BKH1-BakeHousesmall.jpg" alt="Bake House">'
 		const blocks = contentToPortableText(html, emptyCatalog)
 		const embed = blocks.find((b) => b._type === 'historicalImageEmbed') as
-			| HistoricalImageEmbedPending
-			| undefined
+			HistoricalImageEmbedPending | undefined
 		expect(embed?._pendingArchiveId).toBe('BKH1')
 		expect(embed?._pendingImportId).toBeUndefined()
 	})

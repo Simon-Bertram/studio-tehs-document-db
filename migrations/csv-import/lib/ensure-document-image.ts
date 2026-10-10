@@ -7,10 +7,7 @@ import type {SanityClient} from '@sanity/client'
 import type {Audit} from './audit'
 import type {HistoricalImageEmbedPending} from './content-to-portable-text'
 import type {ContentBlock} from './content-to-portable-text'
-import {
-	getDocumentImageBaseUrl,
-	resolveDocumentImageUrl,
-} from './document-image-catalog'
+import {getDocumentImageBaseUrl, resolveDocumentImageUrl} from './document-image-catalog'
 import {
 	contentTypeFromImagePath,
 	fetchImageBuffer,
@@ -49,10 +46,7 @@ export function createDocumentImageResolution(): DocumentImageResolution {
 	return emptyResolution()
 }
 
-async function lookupByArchiveId(
-	client: SanityClient,
-	archiveId: string,
-): Promise<string | null> {
+async function lookupByArchiveId(client: SanityClient, archiveId: string): Promise<string | null> {
 	return client.fetch<string | null>(
 		`*[_type == "historicalImage" && archiveId == $archiveId && !(_id in path("drafts.**"))][0]._id`,
 		{archiveId},
@@ -115,9 +109,7 @@ async function ensureNewHistoricalImage(
 		idCache.set(importId, importId)
 		resolution.createdWithoutArchiveId.push(embed._pendingFilename)
 		if (assetUrl) {
-			console.log(
-				`[DRY RUN] would create historicalImage ${importId} from ${assetUrl}`,
-			)
+			console.log(`[DRY RUN] would create historicalImage ${importId} from ${assetUrl}`)
 		} else {
 			console.log(
 				`[DRY RUN] would create historicalImage ${importId} (set DOCUMENT_IMAGE_BASE_URL for URL)`,
@@ -185,8 +177,7 @@ async function ensureNewHistoricalImage(
 		return null
 	}
 
-	const title =
-		embed.alt || parentTitle || `Document image ${embed._pendingFilename}`
+	const title = embed.alt || parentTitle || `Document image ${embed._pendingFilename}`
 	const notes = [
 		`Imported from document clipID ${parentClipId}.`,
 		`Source path: ${embed._pendingSrc}`,

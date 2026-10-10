@@ -28,7 +28,8 @@ export const siteSettings = defineType({
 			title: 'Purpose emails',
 			type: 'array',
 			of: [defineArrayMember({type: 'purposeEmail'})],
-			description: 'Contact page list (General, Membership, Archives, Quarterly, Board, Webmaster).',
+			description:
+				'Contact page list (General, Membership, Archives, Quarterly, Board, Webmaster).',
 		}),
 		defineField({
 			name: 'facebookUrl',

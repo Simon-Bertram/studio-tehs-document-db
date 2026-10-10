@@ -44,9 +44,7 @@ function cell(value: unknown): string {
 
 async function main() {
 	const root = path.resolve(import.meta.dir, '..')
-	const out = path.resolve(
-		process.env.CSV_OUT ?? path.join(root, 'migrations/data/images.csv'),
-	)
+	const out = path.resolve(process.env.CSV_OUT ?? path.join(root, 'migrations/data/images.csv'))
 	const host = process.env.MYSQL_HOST ?? '127.0.0.1'
 	const port = Number(process.env.MYSQL_PORT ?? 3307)
 	const user = process.env.MYSQL_USER ?? 'images_ro'

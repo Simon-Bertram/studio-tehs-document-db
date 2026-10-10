@@ -19,6 +19,7 @@
     "csv-import": "bun run migrations/csv-import/import-documents.ts",
     "csv-import:donations": "bun run migrations/csv-import/import-donations.ts",
     "csv-import:images": "bun run migrations/csv-import/import-images.ts",
+    "csv-import:image-identifiers": "bun run migrations/csv-import/import-image-identifiers.ts",
     "csv-import:images-review-reports": "bun run migrations/csv-import/generate-image-review-reports.ts",
     "csv-import:documents-review-reports": "bun run migrations/csv-import/generate-document-review-reports.ts",
     "csv-export:images": "bun run scripts/export-images-csv.ts",
@@ -52,7 +53,7 @@
     "p-limit": "^7.3.3",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
-    "sanity": "6.18.0",
+    "sanity": "^6.18.0",
     "styled-components": "^6.5.3",
     "unpdf": "^1.8.1"
   },

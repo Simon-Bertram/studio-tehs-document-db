@@ -109,9 +109,9 @@ const compiledSchema = Schema.compile({
 	],
 })
 
-const blockContentType = compiledSchema.get('post').fields.find(
-	(field: {name: string}) => field.name === 'body',
-).type
+const blockContentType = compiledSchema
+	.get('post')
+	.fields.find((field: {name: string}) => field.name === 'body').type
 
 function looksLikeHtml(value: string): boolean {
 	return /<\/?[a-z][\s\S]*>/i.test(value)
@@ -170,9 +170,7 @@ export function contentToPortableText(
 	}
 
 	const prepared = preprocessContentHtml(trimmed)
-	const wrapped = /<\s*p[\s>]/i.test(prepared)
-		? prepared
-		: `<p>${prepared}</p>`
+	const wrapped = /<\s*p[\s>]/i.test(prepared) ? prepared : `<p>${prepared}</p>`
 
 	const blocks = htmlToBlocks(wrapped, blockContentType, {
 		parseHtml: (html) => new JSDOM(html).window.document,

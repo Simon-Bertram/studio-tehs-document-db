@@ -8,7 +8,7 @@ import {PinIcon} from '@sanity/icons/Pin'
 import {SearchIcon} from '@sanity/icons/Search'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
-import {MissingArchiveIdInput} from './components/MissingArchiveIdInput'
+import {HistoricalImageArchiveIdInput} from './components/HistoricalImageArchiveIdInput'
 import {
 	formatHistoricalDateFromPreview,
 	historicalDatePreviewSelect,
@@ -37,7 +37,9 @@ export const historicalImage = defineType({
 	fields: [
 		archiveIdField('historicalImage', 'MF37', 'identity', {
 			searchWeight: 10,
-			input: MissingArchiveIdInput,
+			input: HistoricalImageArchiveIdInput,
+			description:
+				'Official internal reference number for this item (e.g., MF37). This identifier is unique. Pick a letter prefix below to autofill the next number in that sequence from existing images.',
 		}),
 		defineField({
 			name: 'serialNumber',
@@ -237,9 +239,7 @@ export const historicalImage = defineType({
 						: 'Featured'
 					: undefined
 			const archiveLabel =
-				typeof archiveId === 'string' && archiveId.trim()
-					? archiveId
-					: 'Missing Archive ID'
+				typeof archiveId === 'string' && archiveId.trim() ? archiveId : 'Missing Archive ID'
 			const subtitle = [featured, archiveLabel, when].filter(Boolean).join(' · ')
 			return {
 				title: title || 'Untitled image',

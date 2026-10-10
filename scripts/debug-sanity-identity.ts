@@ -39,12 +39,9 @@ log('F', 'debug-sanity-identity.ts:env', 'env token presence', {
 })
 
 if (!authToken) {
-	log(
-		'F',
-		'debug-sanity-identity.ts:me',
-		'no SANITY_AUTH_TOKEN; CLI login would be used',
-		{user: null},
-	)
+	log('F', 'debug-sanity-identity.ts:me', 'no SANITY_AUTH_TOKEN; CLI login would be used', {
+		user: null,
+	})
 	process.exit(0)
 }
 

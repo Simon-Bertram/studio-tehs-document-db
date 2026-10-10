@@ -93,7 +93,9 @@ export const societyEvent = defineType({
 			validation: (Rule) =>
 				Rule.uri({scheme: ['http', 'https']}).custom((url) => {
 					if (!url) return true
-					return isAllowedVideoUrl(url) || 'Use a YouTube or Vimeo URL. Do not host video in Sanity.'
+					return (
+						isAllowedVideoUrl(url) || 'Use a YouTube or Vimeo URL. Do not host video in Sanity.'
+					)
 				}),
 		}),
 	],

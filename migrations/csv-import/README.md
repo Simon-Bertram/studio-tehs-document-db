@@ -15,6 +15,7 @@ Optional env: `SANITY_PROJECT_ID`, `SANITY_DATASET`.
 | `bun run csv-import:documents-review-reports` | `reports/skipped.csv` + `needs-manual-links.csv` | — | `reports/{skipped,missing-taxonomies,needs-manual-links}.html` |
 | `bun run csv-import:donations` | `migrations/data/donations.csv` | donation (+ seeds donationCategory) | `reports/donations/` |
 | `bun run csv-import:images` | `migrations/data/sample-images.csv` | historicalImage | `reports/images/offset-*-limit-*` + `ledgers/` |
+| `bun run csv-import:image-identifiers` | `migrations/data/image-identifiers.csv` | imageIdentifier | console summary |
 | `bun run csv-import:images-review-reports` | live batch CSVs + `ledgers/images-manual-links.csv` | — | `reports/images/{skipped,missing-taxonomies,needs-manual-links}.html` |
 | `bun run csv-export:images` | DreamHost MySQL via tunnel (bun/`mysql2`, no `mysql` CLI) | writes `sample-images.csv` (no BLOBs) | — |
 | `SSH_USER=dh_v6nxzm bun run mysql-tunnel` | SSH tunnel to DreamHost MySQL on `127.0.0.1:3307` | — | — |
@@ -277,7 +278,16 @@ bun run csv-import:images -- --live --offset 1000 --limit 1000
 
 ## Archive ID stems (Image Identifiers)
 
-Legacy image IDs are `{STEM}{n}`: a 2–3 letter stem plus a number (e.g. `BE232`, `BKH1`, `MAX10`). Stems name a place or collection (e.g. `BE` = Berwyn). This is documentation only — there is no stem document type in Sanity. The import stores the full identifier on `historicalImage.archiveId`.
+Legacy image IDs are `{STEM}{n}`: a letter stem plus a number (e.g. `BE232`, `BKH1`, `MAX10`). Stems name a place or collection (e.g. `BE` = Berwyn) and live as `imageIdentifier` documents (`prefix`, `description`, `migrationKey` from legacy `identifierID`).
+
+Seed or refresh stems from CSV (dry-run by default):
+
+```bash
+bun run csv-import:image-identifiers
+bun run csv-import:image-identifiers -- --live
+```
+
+The full identifier is stored on `historicalImage.archiveId`. In Studio, the Historical Image Archive ID field offers a stem picker that queries existing `archiveId` values and autofills the next number in that sequence.
 
 ## Donations: `dtype` → Donation Category
 
