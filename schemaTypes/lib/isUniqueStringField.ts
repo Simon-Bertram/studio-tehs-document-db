@@ -2,7 +2,14 @@ import type {CustomValidator, ValidationContext} from 'sanity'
 
 import {SANITY_API_VERSION} from '../../lib/sanityEnv'
 
-const ALLOWED_FIELD_NAMES = new Set(['archiveId', 'migrationKey', 'name', 'sourceKey', 'title'])
+const ALLOWED_FIELD_NAMES = new Set([
+	'archiveId',
+	'migrationKey',
+	'name',
+	'prefix',
+	'sourceKey',
+	'title',
+])
 
 /**
  * Async uniqueness check for a string field on one or more document types.

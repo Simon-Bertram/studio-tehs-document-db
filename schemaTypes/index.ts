@@ -6,6 +6,7 @@ import {donation} from './donation'
 import {donationCategory} from './donationCategory'
 import {familyLine} from './familyLine'
 import {historicalImage} from './historicalImage'
+import {imageIdentifier} from './imageIdentifiers'
 import {location} from './location'
 import {censusRecord} from './objects/censusRecord'
 import {historicalDate} from './objects/historicalDate'
@@ -46,6 +47,7 @@ export const schemaTypes = [
 	familyLine,
 	donation,
 	donationCategory,
+	imageIdentifier,
 	siteNavigation,
 	mapEmbed,
 	historicalImageEmbed,

@@ -8,6 +8,7 @@ import {DocumentTextIcon} from '@sanity/icons/DocumentText'
 import {EarthAmericasIcon} from '@sanity/icons/EarthAmericas'
 import {EarthGlobeIcon} from '@sanity/icons/EarthGlobe'
 import {EditIcon} from '@sanity/icons/Edit'
+import {HashIcon} from '@sanity/icons/Hash'
 import {HomeIcon} from '@sanity/icons/Home'
 import {ImageIcon} from '@sanity/icons/Image'
 import {LinkIcon} from '@sanity/icons/Link'
@@ -184,6 +185,9 @@ export const structure: StructureResolver = (S, context) => {
 							S.documentTypeListItem('donationCategory')
 								.title('Donation Categories')
 								.icon(TagsIcon),
+							S.documentTypeListItem('imageIdentifier')
+								.title('Image Identifiers')
+								.icon(HashIcon),
 						]),
 				),
 		])
