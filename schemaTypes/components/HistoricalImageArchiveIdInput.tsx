@@ -44,6 +44,11 @@ export function HistoricalImageArchiveIdInput(props: StringInputProps) {
 	const isMissing = !value?.trim()
 
 	useEffect(() => {
+		if (!isMissing) {
+			setOptions([])
+			return undefined
+		}
+
 		let cancelled = false
 		client.fetch<ImageIdentifierOption[]>(PREFIXES_QUERY).then(
 			(rows) => {
@@ -56,7 +61,7 @@ export function HistoricalImageArchiveIdInput(props: StringInputProps) {
 		return () => {
 			cancelled = true
 		}
-	}, [client])
+	}, [client, isMissing])
 
 	const selectOptions = useMemo(
 		() =>
@@ -126,40 +131,35 @@ export function HistoricalImageArchiveIdInput(props: StringInputProps) {
 
 	const stringField = <Box>{renderDefault(props)}</Box>
 
-	if (isMissing) {
-		return (
-			<Stack gap={3}>
-				{picker}
-				<Card
-					padding={3}
-					radius={2}
-					tone="critical"
-					border
-					style={{borderColor: '#f03e2f', borderWidth: 2}}
-				>
-					<Stack gap={3}>
-						<Text size={1} weight="semibold" style={{color: '#f03e2f'}}>
-							Enter an Archive ID. This image was imported without one.
-						</Text>
-						<Box
-							style={{
-								outline: '2px solid #f03e2f',
-								outlineOffset: 2,
-								borderRadius: 3,
-							}}
-						>
-							{stringField}
-						</Box>
-					</Stack>
-				</Card>
-			</Stack>
-		)
+	if (!isMissing) {
+		return stringField
 	}
 
 	return (
 		<Stack gap={3}>
 			{picker}
-			{stringField}
+			<Card
+				padding={3}
+				radius={2}
+				tone="critical"
+				border
+				style={{borderColor: '#f03e2f', borderWidth: 2}}
+			>
+				<Stack gap={3}>
+					<Text size={1} weight="semibold" style={{color: '#f03e2f'}}>
+						Enter an Archive ID. This image was imported without one.
+					</Text>
+					<Box
+						style={{
+							outline: '2px solid #f03e2f',
+							outlineOffset: 2,
+							borderRadius: 3,
+						}}
+					>
+						{stringField}
+					</Box>
+				</Stack>
+			</Card>
 		</Stack>
 	)
 }
