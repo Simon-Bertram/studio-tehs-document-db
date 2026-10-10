@@ -69,6 +69,16 @@ describe('contentToPortableText', () => {
 		expect(embed?.alt).toBeUndefined()
 	})
 
+	test('skips alts that contain image not found (e.g. CHE53 image not found)', () => {
+		const html =
+			'<img alt="CHE53 image not found" src="../images/CHE53small.jpg">'
+		const blocks = contentToPortableText(html, emptyCatalog)
+		const embed = blocks.find((b) => b._type === 'historicalImageEmbed') as
+			| HistoricalImageEmbedPending
+			| undefined
+		expect(embed?.alt).toBeUndefined()
+	})
+
 	test('marks catalog filenames with pending archive id', () => {
 		const html = '<img src="BKH1-BakeHousesmall.jpg" alt="Bake House">'
 		const blocks = contentToPortableText(html, emptyCatalog)

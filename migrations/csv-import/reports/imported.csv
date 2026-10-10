@@ -1,963 +1,963 @@
 clipId,title,csvType,schemaType,action,sanityId,mappedKeywords,unmappedKeywords
 1,40 Years At Devon-But No Horses,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH3Vl,,DHS; DEV
 4,Underground Active At Devon Horse Show,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKj6wC,,DHS; DEV
-2,Another Year Disappears Into History,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN0Hr,,DHS; DEV
 3,"Obituary for Edith Johnson Croll, 92, volunteer",obituary,primarySource,patched,R5TgPTJyfJtRgSPax8EQRm,,DHS; DEV
 5,Transcription of the Will of John Brown senior,will,primarySource,patched,4PGlZuQ6svgQ69K84DH3ZO,,Will
-8,Steuben Quest is Vindicated,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN0O4,Sclip,JWH; VF
+2,Another Year Disappears Into History,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN0Hr,,DHS; DEV
 7,Washington Inn - Purchased Old Hostelry,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjFx5l,Sclip,BKH; VF
-6,Bought Washington Inn,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjFx0n,Sclip,BKH; VF
 9,2 Are Honored For Rescue of Steuben House,newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8ERHi,Sclip,JWH; VF
+6,Bought Washington Inn,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjFx0n,Sclip,BKH; VF
+8,Steuben Quest is Vindicated,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN0O4,Sclip,JWH; VF
 10,Mansion House hotel a Historic Building Saved,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7pVZ,Sclip,JWH; VF
-11,Mansion House hotel - Restoring Old Hospital,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjFxX5,Sclip,JWH; VF
-12,Constitution of Great Valley Baptist Church,original document,primarySource,patched,ubKAP947VvKgwKt8yjFxc3,,GVB
 13,Deed to Great Valley Presbyterian Church plot,chester county deed,primarySource,patched,lsa6SzO3dXU4Am0aEZ7pa5,,GVP
-14,&lsquo;Oldest&rsquo; Devon Volunteer &lsquo;Calls It A Day&rsquo;,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKj7RM,,DHS; DEV
 15,"A.M. Campbell jr., 87, ran Strafford Nursery",newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjFxlz,Tclip,Campbell; STR; Campbells Nursery; obituary
-17,"Fireworks explosion: 10 DEAD, 30 HURT, 8 MISSING IN DEVON EXPLOSIONS",newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN0TO,Tclip,DFF; DEV
-16,A. M. Campbell,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjFy5r,Tclip,Campbell; STR; Campbells Nursery; obituary
-18,Dead and Injured In Blast at Devon Fireworks Plant,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN0Rc,Tclip,DFF; DEV
-20,"Valley Forge Music Fair, Interview with Jim McCormick",Interview,primarySource,patched,4PGlZuQ6svgQ69K84DH3mh,,VFM; NCE
+11,Mansion House hotel - Restoring Old Hospital,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjFxX5,Sclip,JWH; VF
+14,&lsquo;Oldest&rsquo; Devon Volunteer &lsquo;Calls It A Day&rsquo;,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKj7RM,,DHS; DEV
+12,Constitution of Great Valley Baptist Church,original document,primarySource,patched,ubKAP947VvKgwKt8yjFxc3,,GVB
 19,State Inspectors Begin Blast Probe Within 15 Minutes,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMMLa,Tclip,DFF; DEV
-22,Office-park sales to benefit Tredyffrin&rsquo;s coffer,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH3wN,Tclip,CHE
+16,A. M. Campbell,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjFy5r,Tclip,Campbell; STR; Campbells Nursery; obituary
+17,"Fireworks explosion: 10 DEAD, 30 HURT, 8 MISSING IN DEVON EXPLOSIONS",newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN0TO,Tclip,DFF; DEV
+20,"Valley Forge Music Fair, Interview with Jim McCormick",Interview,primarySource,patched,4PGlZuQ6svgQ69K84DH3mh,,VFM; NCE
+18,Dead and Injured In Blast at Devon Fireworks Plant,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN0Rc,Tclip,DFF; DEV
 23,The History of Buildings,book,researchArticle,patched,ubKAP947VvKgwKt8yjFyZf,,GVP
-21,"You&rsquo;ve come a long way, Chesterbrook",newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN0Yi,Tclip,CHE
+22,Office-park sales to benefit Tredyffrin&rsquo;s coffer,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH3wN,Tclip,CHE
 25,Early Members of Great Valley Presbyterian Church,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7ptH,,GVP
 24,First Pastorate,document,primarySource,patched,6xII3rbxPLEz402wMiN0aU,,GVP
+21,"You&rsquo;ve come a long way, Chesterbrook",newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN0Yi,Tclip,CHE
 28,Material in C.N. Agnew boxes at Tredyffrin township,document,primarySource,patched,R5TgPTJyfJtRgSPax8ESI2,,
-26,"To be SOLD by the Subscriber, (Who intends to return to town)",newspaper advertisment,primarySource,patched,R5TgPTJyfJtRgSPax8ES7e,,Slaves; BER
-27,"TO BE SOLD, A TRACT of LAND in West Bradford township, Chester county",newspaper advertisment,primarySource,patched,nMpjZw9wj4H9OpmuqJMMkM,,EW
 30,Tredyffrin Inns and Licensees,document,primarySource,patched,ubKAP947VvKgwKt8yjFyoZ,,
+27,"TO BE SOLD, A TRACT of LAND in West Bradford township, Chester county",newspaper advertisment,primarySource,patched,nMpjZw9wj4H9OpmuqJMMkM,,EW
+26,"To be SOLD by the Subscriber, (Who intends to return to town)",newspaper advertisment,primarySource,patched,R5TgPTJyfJtRgSPax8ES7e,,Slaves; BER
 29,"Letter re Black Powder Tavern, New Centerville",Letter,primarySource,patched,nMpjZw9wj4H9OpmuqJMMoU,,BPT; NCE
-33,H. & B.F. Bean&rsquo;s Business,newspaper advertisment,primarySource,patched,uY2snnQFyEYQMoB8sKj86u,Sclip,Bean; PAW
 31,The History of the Valley Creek Preserve,book,researchArticle,patched,nMpjZw9wj4H9OpmuqJMN50,,OLC; Open Land Conservancy
-32,Deed History of the Open Land Conservancy Preserves,deed history,primarySource,patched,4PGlZuQ6svgQ69K84DH47G,,OLC
-34,Guardianship of Llewellyn David's children,Orphan Court Documents,primarySource,patched,R5TgPTJyfJtRgSPax8ET2m,,David
 35,John David Howell aka John Howell,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7q4Z,,Howell
+34,Guardianship of Llewellyn David's children,Orphan Court Documents,primarySource,patched,R5TgPTJyfJtRgSPax8ET2m,,David
+33,H. & B.F. Bean&rsquo;s Business,newspaper advertisment,primarySource,patched,uY2snnQFyEYQMoB8sKj86u,Sclip,Bean; PAW
+32,Deed History of the Open Land Conservancy Preserves,deed history,primarySource,patched,4PGlZuQ6svgQ69K84DH47G,,OLC
+40,Daniel & Henry Evans Partnership,newspaper advertisment,primarySource,patched,nMpjZw9wj4H9OpmuqJMNDG,,Evans
+36,Reflections,document,primarySource,patched,R5TgPTJyfJtRgSPax8ETxu,,BPO; BER
+39,Isaacher Evans&rsquo; mortgage,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7qBL,,Evans; PAO
 38,Joshua Evans&rsquo; Chair,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH4DJ,,Evans; PAO
 37,Biography of Randal Evans,book,researchArticle,patched,R5TgPTJyfJtRgSPax8ETnW,,Evans; PAO
-36,Reflections,document,primarySource,patched,R5TgPTJyfJtRgSPax8ETxu,,BPO; BER
-40,Daniel & Henry Evans Partnership,newspaper advertisment,primarySource,patched,nMpjZw9wj4H9OpmuqJMNDG,,Evans
-39,Isaacher Evans&rsquo; mortgage,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7qBL,,Evans; PAO
-42,PERSONAL PROPERTY AT PUBLIC SALE.,newspaper advertisment,primarySource,patched,uY2snnQFyEYQMoB8sKj8hG,Tclip,Evans
-43,John D. Evans Estate,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKj8Ws,Tclip,Evans; PAO
 41,Henry T. Evans Death,newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EUdS,Tclip,Evans
-44,John D. Evans,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN0mu,Tclip,Evans; PAO
 45,John D. Evans funeral,newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EUnq,Tclip,Evans; PAO
-48,Joshua Evans death,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjFzjh,Tclip,Evans; PAO
+43,John D. Evans Estate,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKj8Ws,Tclip,Evans; PAO
+42,PERSONAL PROPERTY AT PUBLIC SALE.,newspaper advertisment,primarySource,patched,uY2snnQFyEYQMoB8sKj8hG,Tclip,Evans
+44,John D. Evans,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN0mu,Tclip,Evans; PAO
 47,John D. Evans obituary,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7qGz,Tclip,Evans; PAO
 46,John D. Evans Obituary,newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EVTO,Tclip,Evans; PAO
-50,Randal Evans House Sale,newspaper advertisment,primarySource,patched,nMpjZw9wj4H9OpmuqJMNe6,Tclip,Evans; PAO
 49,Randal Evans Creditors,newspaper advertisment,primarySource,patched,R5TgPTJyfJtRgSPax8EVdm,Tclip,Evans; PAO
-55,stone crusher Not Yet In Operation,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH4T2,Cclip,Steen
-56,Stone Crusher,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7qNl,Cclip,Steen
+50,Randal Evans House Sale,newspaper advertisment,primarySource,patched,nMpjZw9wj4H9OpmuqJMNe6,Tclip,Evans; PAO
+48,Joshua Evans death,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjFzjh,Tclip,Evans; PAO
+51,Will of John Gronow (1775),will,primarySource,patched,6xII3rbxPLEz402wMiN0ut,,Gronow; Will; Will Gronow
 57,Stone-Crusher now at Work,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7qLV,Cclip,Steen
 52,Will of Lewis Gronow junior,will,primarySource,patched,lsa6SzO3dXU4Am0aEZ7qQ1,,Gronow; Will; Will Gronow
-51,Will of John Gronow (1775),will,primarySource,patched,6xII3rbxPLEz402wMiN0ut,,Gronow; Will; Will Gronow
-54,Will of John Havard (1797),will,primarySource,patched,ubKAP947VvKgwKt8yjG015,,Havard; Will; CHE; Havard Will
+56,Stone Crusher,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7qNl,Cclip,Steen
+55,stone crusher Not Yet In Operation,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH4T2,Cclip,Steen
+60,Stone crusher started In Operation,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMOFG,Cclip,Steen
 53,Will of Lewis Gronow senior,will,primarySource,patched,nMpjZw9wj4H9OpmuqJMOB8,,Gronow; Will; Will Gronow
 58,Stone Crusher Ceased Operations,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN0zK,Cclip,Steen
-60,Stone crusher started In Operation,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMOFG,Cclip,Steen
+54,Will of John Havard (1797),will,primarySource,patched,ubKAP947VvKgwKt8yjG015,,Havard; Will; CHE; Havard Will
 59,Stone Crusher Will restart in Operation,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMO70,Cclip,Steen
 62,Hugh Steen's Stray Horse,newspaper advertisment,primarySource,patched,ubKAP947VvKgwKt8yjG0DV,Tclip,Steen
-61,"Description of items for sale from Beitler&rsquo;s Store, 1894",newspaper advertisment,primarySource,patched,uY2snnQFyEYQMoB8sKjAxU,,Beitler; Steen; HOST; HOW
-63,Hugh Steen Personal Property at Public Sale.,newspaper advertisment,primarySource,patched,R5TgPTJyfJtRgSPax8EWOW,Tclip,Steen; PAO
 64,Will of Griffith Jones,will,primarySource,patched,uY2snnQFyEYQMoB8sKjB7s,,Jones; Will
+63,Hugh Steen Personal Property at Public Sale.,newspaper advertisment,primarySource,patched,R5TgPTJyfJtRgSPax8EWOW,Tclip,Steen; PAO
+61,"Description of items for sale from Beitler&rsquo;s Store, 1894",newspaper advertisment,primarySource,patched,uY2snnQFyEYQMoB8sKjAxU,,Beitler; Steen; HOST; HOW
 65,Lucy Sampson Obituary,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMOZu,,LSam; BER; Eclip
-67,Mazie Hall Civil-rights activist and educator  dies at 103,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMOuY,Tclip,MHall; Obituary
-66,David Maxwell Land Sale,newspaper advertisment,primarySource,patched,uY2snnQFyEYQMoB8sKjBiE,Tclip,Max
 68,Senator Knox Death.,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7qcR,Tclip,Knox
+66,David Maxwell Land Sale,newspaper advertisment,primarySource,patched,uY2snnQFyEYQMoB8sKjBiE,Tclip,Max
+67,Mazie Hall Civil-rights activist and educator  dies at 103,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMOuY,Tclip,MHall; Obituary
 69,PHILANDER CHASE KNOX,document,primarySource,patched,ubKAP947VvKgwKt8yjG0SP,,Knox
 70,Dollar Diplomat,Book extract,researchArticle,patched,nMpjZw9wj4H9OpmuqJMOyg,,Knox
 71,Covenant between Philander Knox and the Commissioners of Valley Forge Park,original document,primarySource,patched,4PGlZuQ6svgQ69K84DH4bV,,Knox; VF
+74,Land Sale by Jones family,newspaper advertisment,primarySource,patched,lsa6SzO3dXU4Am0aEZ7qgx,Tclip,Jones
 72,A Comprehensive Study of the Oratory of Philander Chase Knox,Thesis,researchArticle,patched,nMpjZw9wj4H9OpmuqJMPHG,,Knox
 73,Will of Mary Moore (1844),will,primarySource,patched,nMpjZw9wj4H9OpmuqJMPD8,,Reese; Campbell; Moore
-74,Land Sale by Jones family,newspaper advertisment,primarySource,patched,lsa6SzO3dXU4Am0aEZ7qgx,Tclip,Jones
 75,Thomas Jones Land Sale,newspaper advertisment,primarySource,patched,6xII3rbxPLEz402wMiN1FI,Tclip,Jones
-76,Land Sale by Samuel and Thomas Jones,newspaper advertisment,primarySource,patched,R5TgPTJyfJtRgSPax8EXU2,Tclip,Jones
-77,Rowland Richards Land Sale,newspaper advertisment,primarySource,patched,nMpjZw9wj4H9OpmuqJMPVi,Tclip,Richard
 78,Thomas John/Jones Sale of land,newspaper advertisment,primarySource,patched,6xII3rbxPLEz402wMiN1NH,Tclip,Jones
+77,Rowland Richards Land Sale,newspaper advertisment,primarySource,patched,nMpjZw9wj4H9OpmuqJMPVi,Tclip,Richard
+76,Land Sale by Samuel and Thomas Jones,newspaper advertisment,primarySource,patched,R5TgPTJyfJtRgSPax8EXU2,Tclip,Jones
 79,"Will of Thomas Waters, 1794",will,primarySource,patched,R5TgPTJyfJtRgSPax8EXeQ,,Dewees
 80,Too Busy To Watch The Horses,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMPZq,,DHS; DEV
-82,"William Dewees reparation claim, 1791",original document,primarySource,patched,6xII3rbxPLEz402wMiN1X2,,Dewees; VF
 81,Rev. W. Currie correspondence with the Society for the Propagation of the Gospel in Foreign Parts,letter,primarySource,patched,nMpjZw9wj4H9OpmuqJMPqM,,Currie
 83,"William Dewees claim, 1794",original document,primarySource,patched,nMpjZw9wj4H9OpmuqJMPuU,,Dewees; VF
-86,Will of William Hunter,will,primarySource,patched,R5TgPTJyfJtRgSPax8EYEm,,Hunter; Will; Will Hunter
+82,"William Dewees reparation claim, 1791",original document,primarySource,patched,6xII3rbxPLEz402wMiN1X2,,Dewees; VF
 84,"William Dewees claim, 1820",original document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7qlT,,Dewees; VF
+86,Will of William Hunter,will,primarySource,patched,R5TgPTJyfJtRgSPax8EYEm,,Hunter; Will; Will Hunter
 88,"Bella Toner, telegrapher",Newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EafO,,CVR; NCE; Reading
+89,Bella Toner Is Retired,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMRAw,Tclip,CVR; NCE; Reading
 87,Codicil to the Will of William Hunter,will,primarySource,patched,ubKAP947VvKgwKt8yjG1G5,,Hunter; Will; Will Hunter
 85,Interview with Dave Wilson,interview,primarySource,patched,nMpjZw9wj4H9OpmuqJMRF4,,Wilson
-89,Bella Toner Is Retired,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMRAw,Tclip,CVR; NCE; Reading
 90,Bella Toner dies,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG1L3,tclip,CVR; NCE; Reading
-92,Paoli Hardware Store,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH6GK,Tclip,PHard; Clemmans; PAO; Paoli Hardware
-93,Harvest Home,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG1hP,Sclip,VFMEC; VF
 91,Clemmans - Johnston Marriage,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMRTW,,Clemmans; PAO
+93,Harvest Home,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG1hP,Sclip,VFMEC; VF
 94,"Accounts, Presbyterian Schoolhouse",School Accounts,primarySource,patched,R5TgPTJyfJtRgSPax8EbQ8,,PSH
+92,Paoli Hardware Store,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH6GK,Tclip,PHard; Clemmans; PAO; Paoli Hardware
 95,"Accounts, Diamond Rock School",School Accounts,primarySource,patched,ubKAP947VvKgwKt8yjG1mN,,DRS
 96,"Accounts, Glassley School",School Accounts,primarySource,patched,6xII3rbxPLEz402wMiN25d,,GLS
 97,"Accounts, Howellville School",School Accounts,primarySource,patched,uY2snnQFyEYQMoB8sKjKQM,,HOS; HOW
 98,"Accounts, Old Eagle School",School Accounts,primarySource,patched,R5TgPTJyfJtRgSPax8Ec0U,,OES; STR
 99,Reeseville School Accounts,School Accounts,primarySource,patched,4PGlZuQ6svgQ69K84DH6MN,,SCH; BER
 100,Jonathan Jones Sale of Real Estate,Newspaper Advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKjKFy,Tclip,Jones; MJA Jones
+101,Jonathan Jones Sale of Real Estate and Personal Property,Newspaper Advertisement,primarySource,patched,ubKAP947VvKgwKt8yjG26F,Tclip,Jones; MJAJones; MJA Jones
 102,An Ornate Suburban Village,Newspaper Advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKjL5u,,DEV; Eclip; DEV Devon
 103,Glenhardie Farm,report,researchArticle,patched,ubKAP947VvKgwKt8yjG21H,,GHF
-101,Jonathan Jones Sale of Real Estate and Personal Property,Newspaper Advertisement,primarySource,patched,ubKAP947VvKgwKt8yjG26F,Tclip,Jones; MJAJones; MJA Jones
 104,Will of Thomas James,Will,primarySource,patched,R5TgPTJyfJtRgSPax8Ecg2,,James; Will
+106,"Paoli restaurant hit by lightning, burns (Charlie Brown restaurant)",Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH6Td,Tclip,CharlieBrown; PAO
+105,Will of Jenkin Thomas,Will,primarySource,patched,lsa6SzO3dXU4Am0aEZ7rY1,,Thomas; Will
 107,Workers clear wreckage of derailed Conrail cars,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMRbm,Tclip,TrainWreck; PAO
 108,Train Wreck&rsquo;s Timely Lesson,Newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjLgG,Tclip,TrainWreck; PAO
-105,Will of Jenkin Thomas,Will,primarySource,patched,lsa6SzO3dXU4Am0aEZ7rY1,,Thomas; Will
-106,"Paoli restaurant hit by lightning, burns (Charlie Brown restaurant)",Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH6Td,Tclip,CharlieBrown; PAO
-110,Amtrak Derailment near Paoli laid to loose railroad bed ballast,Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN2GH,Tclip,TrainWreck; PAO
 109,"PRR Resumes Service to Paoli, Wreck, cleared.",Newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjLVs,Tclip,TrainWreck; PAO
+110,Amtrak Derailment near Paoli laid to loose railroad bed ballast,Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN2GH,Tclip,TrainWreck; PAO
 111,Paoli Line Cleared After Derailment,Newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjMGc,Tclip,TrainWreck; PAO
 113,Paoli Shopping Center Blaze Destroys Three Stores,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH6at,Tclip,PHard; PAO; Paoli Hardware
+114,St. Joseph's Church Destroyed by fire,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH6dJ,Tclip,StJoseph
 112,Paoli Shopping Center Fire Ruins Five Stores,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMRm6,Tclip,PHard; PAO; Paoli Hardware
 115,St Monica's Church Blaze guts church in Berwyn,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH6jM,,StMonicas; BER; Eclip
 116,St Monica's Church rises from the Ashes,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMS4g,,StMonicas; BER; Eclip
-114,St. Joseph's Church Destroyed by fire,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH6dJ,Tclip,StJoseph
+119,Second Ramble - the Old Baptist Road,Book,researchArticle,patched,6xII3rbxPLEz402wMiN2Q2,DevInn,Dev; DEVRam
 117,Devon and its Historic Surroundings by Julius Sachse,Book,researchArticle,patched,4PGlZuQ6svgQ69K84DH6qc,DevInn,Dev; DEVRam
 118,First Ramble - Sugartown Road,Book,researchArticle,patched,6xII3rbxPLEz402wMiN2Ro,DevInn,Dev; DEVRam
-119,Second Ramble - the Old Baptist Road,Book,researchArticle,patched,6xII3rbxPLEz402wMiN2Q2,DevInn,Dev; DEVRam
-121,Fourth Ramble -  Waterloo Avenue,Book,researchArticle,patched,lsa6SzO3dXU4Am0aEZ7rh3,DevInn,DEVRam
 120,Third Ramble - Old Eagle School Road,Book,researchArticle,patched,uY2snnQFyEYQMoB8sKjN1M,DevInn,DEVRam; STR
-122,Fifth Ramble -  the Lancaster Turnpike,Book,researchArticle,patched,R5TgPTJyfJtRgSPax8EdlY,DevInn,DEVRam
-123,Shall I Not Take Mine Ease In Mine Inn,Book,researchArticle,patched,6xII3rbxPLEz402wMiN2X8,DevInn,DEVRam
+121,Fourth Ramble -  Waterloo Avenue,Book,researchArticle,patched,lsa6SzO3dXU4Am0aEZ7rh3,DevInn,DEVRam
 124,Black Bear Inn sale,Newspaper Advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ7rjJ,Tclip,BBT; PAO
-127,Black Bear Inn sale,Newspaper Advertisement,primarySource,patched,ubKAP947VvKgwKt8yjG2rR,Tclip,BBT; PAO
+122,Fifth Ramble -  the Lancaster Turnpike,Book,researchArticle,patched,R5TgPTJyfJtRgSPax8EdlY,DevInn,DEVRam
 125,Black Bear Inn sale,Newspaper Advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMSH4,Tclip,BBT; PAO
+123,Shall I Not Take Mine Ease In Mine Inn,Book,researchArticle,patched,6xII3rbxPLEz402wMiN2X8,DevInn,DEVRam
 126,Black Bear Inn sale,Newspaper Advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKjNRK,Tclip,BBT; PAO
-128,Black Bear Inn and land sale,Newspaper Advertisement,primarySource,patched,ubKAP947VvKgwKt8yjG2wP,Tclip; Sclip,BBT; GJI; PAO
-132,Howellville Inn and Plantations for Sale,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH7HE,Tclip,HOI; HOW
-130,Black Bear Inn and land for sale,Newspaper Advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKjNrI,Tclip,GJI; PAO
 129,General Jackson Inn,Newspaper Advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ7rq5,Tclip,GJI; PAO
-133,Howellville Inn and  Plantations for Sale,Newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EeLu,Tclip,HOI; HOW
+127,Black Bear Inn sale,Newspaper Advertisement,primarySource,patched,ubKAP947VvKgwKt8yjG2rR,Tclip,BBT; PAO
+130,Black Bear Inn and land for sale,Newspaper Advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKjNrI,Tclip,GJI; PAO
+128,Black Bear Inn and land sale,Newspaper Advertisement,primarySource,patched,ubKAP947VvKgwKt8yjG2wP,Tclip; Sclip,BBT; GJI; PAO
 131,Stage Inn for sale,Newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjOC4,,Stage
-137,"Lamb Tavern Stand and Farm,  At Public Sale",Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH7TK,Tclip,LAMB; Eclip
-138,Lamb Tavern for sale,Newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjPMm,Tclip,LAMB; Eclip
-134,Howellville Inn and plantation for sale,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG3GH,Tclip,HOI; HOW
 135,Spread Eagle Tavern for sale,Newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjOrc,,SPE; Rclip
+134,Howellville Inn and plantation for sale,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG3GH,Tclip,HOI; HOW
+132,Howellville Inn and Plantations for Sale,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH7HE,Tclip,HOI; HOW
 136,"Building Lots On The Pennsylvania Railroad, For Sale",Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH7Qu,Tclip,EAG
-141,Hammer Hollow Sale,Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN2os,Tclip,HAMH
-143,Howellville Mill for sale,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH7gd,Tclip,HOM; HOW
-142,"Howellville Mill for sale, a Grist Mill, Distillery & Plantation",Newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7sBX,Tclip,HOM; HOW
-140,Clintonville Mill and plantation for sale,Newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjQ7W,Tclip,CHM; CHE
+138,Lamb Tavern for sale,Newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjPMm,Tclip,LAMB; Eclip
+137,"Lamb Tavern Stand and Farm,  At Public Sale",Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH7TK,Tclip,LAMB; Eclip
 139,Howellville Mill for sale,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMSm2,Tclip,HOM; HOW
-144,Howellville Mill for sale,Newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjQHu,Tclip,HOM; HOW
-148,John G. Bull land sale,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG3rX,Tclip,CRM; Wclip
-146,Howellville Mill for sale,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG3mZ,Tclip,HOM; HOW
+142,"Howellville Mill for sale, a Grist Mill, Distillery & Plantation",Newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7sBX,Tclip,HOM; HOW
+141,Hammer Hollow Sale,Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN2os,Tclip,HAMH
+140,Clintonville Mill and plantation for sale,Newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjQ7W,Tclip,CHM; CHE
+143,Howellville Mill for sale,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH7gd,Tclip,HOM; HOW
 145,John G. Bull land sales,Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN2wr,Tclip,CRM
+144,Howellville Mill for sale,Newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjQHu,Tclip,HOM; HOW
+146,Howellville Mill for sale,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG3mZ,Tclip,HOM; HOW
 147,Howellville Mill for sale,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMTNC,Tclip,HOM; HOW
-151,Beaver and Beitler land dispute,Newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7sMp,Tclip,JBEA; JBEI; Beaver
+148,John G. Bull land sale,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG3rX,Tclip,CRM; Wclip
 150,Beaver and Beitler land dispute,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH7xZ,Tclip,Beaver; JBEI; JBEA
+149,Chesterbrook Mill for sale,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMTRK,Tclip,CHM; CHE
+133,Howellville Inn and  Plantations for Sale,Newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EeLu,Tclip,HOI; HOW
+151,Beaver and Beitler land dispute,Newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7sMp,Tclip,JBEA; JBEI; Beaver
 153,Joseph King property for sale,Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN31I,,JOK
 152,Beaver and Beitler land dispute,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMTdi,Tclip,JBEA; JBEI; Beaver
-149,Chesterbrook Mill for sale,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMTRK,Tclip,CHM; CHE
-156,Randall Evans Railroad Property for Rent,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMTq6,Tclip,GJI; PAO
 154,Joseph King property,Newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjRXo,,JOK
 155,Tailoring,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMTly,Tclip,JMK; HOW
+156,Randall Evans Railroad Property for Rent,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMTq6,Tclip,GJI; PAO
 158,Lattanzio Sheriff&rsquo;s Sale of Store Goods,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH862,Tclip,LAT
 157,Stores at Howellville for rent,Newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7sUj,Tclip,HOST; HOW
-162,Howellville Mill for sale,Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN3Di,Tclip,HOM; HOW
-163,"Chesterbrook Grist mill, Plantation and Tract",Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMU4Y,Tclip,CHM
 159,Clintonville Mill for sale or rent,Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN36c,Tclip,CHM; CHE
-161,Valley Forge Grist Mill,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG4kB,,VFGM; VF; UMclip
 160,John Workizer Will,Will,primarySource,patched,6xII3rbxPLEz402wMiN3FU,,JWO; Will
-165,Hammer Hollow Mill and land for sale,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMUL4,Tclip,HAMH
-168,John Latta Sale of Store Goods - list,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH8Gv,Tclip,LAT
+161,Valley Forge Grist Mill,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG4kB,,VFGM; VF; UMclip
+163,"Chesterbrook Grist mill, Plantation and Tract",Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMU4Y,Tclip,CHM
+162,Howellville Mill for sale,Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN3Di,Tclip,HOM; HOW
 164,Church Road Mill For Rent,Newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7sdl,Tclip,CRM
+165,Hammer Hollow Mill and land for sale,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMUL4,Tclip,HAMH
 166,"Hammer Hollow Mill, for sale",Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH8EV,Tclip,HAMH
 167,Hammer Hollow Mill For Sale or Rent,Newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EgHM,Tclip,HAMH
-172,PRR - Straightening the Road,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN3Z0,,MLR; BER; Eclip
+168,John Latta Sale of Store Goods - list,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH8Gv,Tclip,LAT
 169,Worthington Industries close,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7siH,,WORI; EW; EWclip
+170,Regina Mundi Priory demolished,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG56X,,RMP; DEV; Eclip
 171,Wrecker&rsquo;s ball topples pair of Easttown houses,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH8PO,,BER; StMonicas; Eclip
 173,PRR and Latch dispute in court,newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EgmW,Tclip,MLR; Latch; Quigley
-170,Regina Mundi Priory demolished,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG56X,,RMP; DEV; Eclip
-177,Suplee farm and land for sale,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjT3I,Tclip,Suplee
-174,Devon Station improvement,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN3Y7,,DEV; MLR; DevSta; Eclip
-178,Richard Megowen land in Tredyffrin for sale,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH8We,Tclip,
+172,PRR - Straightening the Road,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN3Z0,,MLR; BER; Eclip
 175,John Reese land for sale,newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EhcS,Tclip,Reese
+174,Devon Station improvement,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN3Y7,,DEV; MLR; DevSta; Eclip
 176,Henry farm in Tredyffrin for sale,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7swx,Tclip,Henry
-181,Charles Davis farm in Tredyffrin for sale,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjTtE,Tclip,David; Davis
-183,Hammer Hollow Mill for sale,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjTiq,Mills; Tclip,HAMH
+177,Suplee farm and land for sale,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjT3I,Tclip,Suplee
+178,Richard Megowen land in Tredyffrin for sale,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH8We,Tclip,
 180,John G. Bull land for sale,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH8lA,Tclip,Bull; Eclip
-182,Joseph Hampton land in Tredyffrin for sale,newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EiCo,Tclip,Hampton
+181,Charles Davis farm in Tredyffrin for sale,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjTtE,Tclip,David; Davis
 179,Richard Megowen land in Tredyffrin for sale,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMUjq,Tclip,MLR
-187,Andrew Garden property for sale,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH90t,Tclip,Garden; OES
-184,Abijah Bowen land for sale,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMV0M,Tclip,
+183,Hammer Hollow Mill for sale,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjTiq,Mills; Tclip,HAMH
+182,Joseph Hampton land in Tredyffrin for sale,newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EiCo,Tclip,Hampton
 185,David Maxwell land for sale,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN3rd,Tclip,Max
+184,Abijah Bowen land for sale,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMV0M,Tclip,
 186,Mullen land for sale,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG5QP,Tclip,
+187,Andrew Garden property for sale,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH90t,Tclip,Garden; OES
 188,Dr. John Davis farm for sale,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN3pr,Tclip,David; Davis
-193,Samuel Priest land and house in Tredyffrin for sale,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH989,Tclip,
+189,Vanleer farm in Tredyffrin for sale,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN3tP,tclip,Vanleer
 190,Larkin Dutton farm for sale,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG5fJ,tclip,
 191,Samuel Davis farm for sale,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMVEo,Tclip,David; Davis
 192,Job Griffith land and house in Tredyffrin for sale,newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EisM,Tclip,
-189,Vanleer farm in Tredyffrin for sale,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN3tP,tclip,Vanleer
+194,Thomas land for sale,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7tG9,Tclip,Thomas
+193,Samuel Priest land and house in Tredyffrin for sale,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH989,Tclip,
 195,Samuel Davis farm in Tredyffrin for sale,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMVRC,Tclip,David
 196,Alexander Torbert land for sale,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH9J2,Tclip,
-198,Charles Davis farm for sale,newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EjNW,Tclip,David; Davis
-194,Thomas land for sale,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7tG9,Tclip,Thomas
-197,Thomas Maxwell farm for sale,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG5rj,Tclip,Max
 199,Nathan Pawling land for sale,newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EjXu,Tclip,
+198,Charles Davis farm for sale,newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EjNW,Tclip,David; Davis
+197,Thomas Maxwell farm for sale,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG5rj,Tclip,Max
 200,Howellville Mill -  Bartholomew sale,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjVOi,Mills; Tclip,HOM
-591,"Ezekial Potts Farm at Private Sale, 114 acres",newspaper advertisement,primarySource,patched,R5TgPTJyfJtRgSPax8EkDS,Tclip,
-203,Jones & Evans land for sale,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG697,Tclip,Jones; Evans
 201,Zachariah Long land for sale,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH9V8,,Tlcip
+203,Jones & Evans land for sale,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG697,Tclip,Jones; Evans
 204,Cadwallader Davis land for sale,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjVZ6,Tclip,David; Davis
-207,Joseph Walker land for sale,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH9iR,Tclip,Walker
 205,Dr. John Davis estate,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH9g1,Tclip,David; Davis
 206,James M&rsquo;Keever land for sale,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjZ02,Tclip,JMK
 208,Joseph Walker land for sale,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMWry,Tclip,Walker
-210,Levi Hall property for sale,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjc10,Tclip,
-213,Samuel &amp; Bull Valley Farm for sale,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH9vk,Tclip,Bull
+207,Joseph Walker land for sale,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH9iR,Tclip,Walker
 209,Levi Hall property for sale,newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EnJc,Tclip,
+210,Levi Hall property for sale,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjc10,Tclip,
 211,Hugh Long land for sale,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH9qu,Tclip,
 212,John Vanleer Farm in Easttown and Tredyffrin for sale,newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8Enom,Tclip,Vanleer; Eclip
-217,Abijah Bowen farm for sale,newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8Eoei,Tclip,
+213,Samuel &amp; Bull Valley Farm for sale,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH9vk,Tclip,Bull
 214,William Neill farm for sale,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DH9tK,Tclip,Eclip
-218,John Baugh farm for sale,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7uCr,Tclip,
 215,Charles Smith property for sale,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7uAb,Tclip,
 216,John Gaverick property for sale,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN53G,Tclip,Garber
-219,John Garber farm for sale,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG8zT,Tclip,Garber
-223,"Hammer Hollow mill and land, sold by Thomas Bodley",newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjfhW,Mills; Tclip,HAMH
+217,Abijah Bowen farm for sale,newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8Eoei,Tclip,
+218,John Baugh farm for sale,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7uCr,Tclip,
 220,John Garber farm for sale,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG99P,Tclip,Garber
-221,William Davis farm for sale,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG9EN,Tclip,David; Davis
+219,John Garber farm for sale,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG8zT,Tclip,Garber
 222,Benjamin Warner farm for sale,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG9JL,Tclip,
-227,A Valley Lot for Sale - Davis &amp; Roberts,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7uSf,Tclip,
-224,To Be Sold (house and land in Tredyffrin),newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHADt,Tclip,
+221,William Davis farm for sale,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG9EN,Tclip,David; Davis
+591,"Ezekial Potts Farm at Private Sale, 114 acres",newspaper advertisement,primarySource,patched,R5TgPTJyfJtRgSPax8EkDS,Tclip,
+223,"Hammer Hollow mill and land, sold by Thomas Bodley",newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjfhW,Mills; Tclip,HAMH
 225,Dr. John Davis farm for sale,newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EpKG,Tclip,
-228,Enoch &amp; Elijah Davis farm for sale,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN5En,Tclip,David; Davis
 226,John Sharpless farm for sale,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG9dD,Tclip,
-232,Mary Moore property for sale,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7ucp,Tclip,
-231,Henry Zook property for sale,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7uaZ,Tclip,
+224,To Be Sold (house and land in Tredyffrin),newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHADt,Tclip,
+227,A Valley Lot for Sale - Davis &amp; Roberts,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7uSf,Tclip,
 229,Public Sale (farm in Tredyffrin) - Mary Moore,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjG9pd,Tclip,Reese
+228,Enoch &amp; Elijah Davis farm for sale,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN5En,Tclip,David; Davis
+231,Henry Zook property for sale,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7uaZ,Tclip,
 230,Ephraim Hughes farm for sale,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMYXC,Tclip,
+232,Mary Moore property for sale,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7ucp,Tclip,
+236,"Building Lots on the Pennsylvania Rail-Road, For Sale, - Jerimiah Joynt",newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHAoB,Tclip,
 233,Dr. John Davis farm for sale,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHAjL,Tclip,David; Davis
+235,Samuel Davis farm for sale,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjgSG,Tclip,David; Davis
 234,"Greenwood Farm
 For Sale - William Harris",newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN5Lt,Tclip,
-235,Samuel Davis farm for sale,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjgSG,Tclip,David; Davis
-236,"Building Lots on the Pennsylvania Rail-Road, For Sale, - Jerimiah Joynt",newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHAoB,Tclip,
 237,Finding Aid for the Fritz Lumber Collection,Original document,primarySource,patched,6xII3rbxPLEz402wMiN5OY,,Archives
-259,Enoch Jones property sale,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7ulr,Tclip,Jones
-240,Books and Pamphlets in the Tredyffrin Easttown Historical Society Archives,Original document,primarySource,patched,uY2snnQFyEYQMoB8sKjghq,Research,Archives
-239,Researching Chester County Land Ownership,Original document,primarySource,patched,ubKAP947VvKgwKt8yjGABz,Research,
 311,MAKE ITS SITE A PARK,Newspaper article,primarySource,patched,R5TgPTJyfJtRgSPax8EqfM,,VF
 238,Finding Aid for the Barbara and C. Herbert Fry Collection,Original document,primarySource,patched,4PGlZuQ6svgQ69K84DHAuE,,Archives
+259,Enoch Jones property sale,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7ulr,Tclip,Jones
 241,Finding Aid for the Gift of Gene Williams,Original Document,primarySource,patched,4PGlZuQ6svgQ69K84DHB3u,,Archives; David
-244,Finding Aid for the Krider (Crider) / Jones Papers,Original Document,primarySource,patched,uY2snnQFyEYQMoB8sKjhiA,,Archives; Jones; Krider
-243,Finding Aid for the George (&ldquo;Pat&rdquo;) Moran Collection,Original Document,primarySource,patched,uY2snnQFyEYQMoB8sKjhXm,,Archives; Moran
-245,The Jones / Crider (Krider) Family History,Original Document,primarySource,patched,ubKAP947VvKgwKt8yjGATN,,Jones; Krider; Archives
 242,"Finding Aid for the Gifts from the 
 King of Prussia Historical Society",Original Document,primarySource,patched,nMpjZw9wj4H9OpmuqJMYrq,,Archives
+243,Finding Aid for the George (&ldquo;Pat&rdquo;) Moran Collection,Original Document,primarySource,patched,uY2snnQFyEYQMoB8sKjhXm,,Archives; Moran
+244,Finding Aid for the Krider (Crider) / Jones Papers,Original Document,primarySource,patched,uY2snnQFyEYQMoB8sKjhiA,,Archives; Jones; Krider
+245,The Jones / Crider (Krider) Family History,Original Document,primarySource,patched,ubKAP947VvKgwKt8yjGATN,,Jones; Krider; Archives
 246,"Finding Aid for the Chesterbrook Farm Records, 1907-50",Original Document,primarySource,patched,6xII3rbxPLEz402wMiN5eW,,Archives; CHE
-247,"Finding Aid for the Old Eagle School Collection, 1895-1928",Original Document,primarySource,patched,R5TgPTJyfJtRgSPax8Er5K,,Archives; OES
+240,Books and Pamphlets in the Tredyffrin Easttown Historical Society Archives,Original document,primarySource,patched,uY2snnQFyEYQMoB8sKjghq,Research,Archives
+239,Researching Chester County Land Ownership,Original document,primarySource,patched,ubKAP947VvKgwKt8yjGABz,Research,
 248,Finding Aid for the Tredyffrin and Easttown Township School System,Original Document,primarySource,patched,ubKAP947VvKgwKt8yjGApj,,Archives
+247,"Finding Aid for the Old Eagle School Collection, 1895-1928",Original Document,primarySource,patched,R5TgPTJyfJtRgSPax8Er5K,,Archives; OES
 250,"Finding Aid for the The Mansley Family Papers, 1850-1927",Original Document,primarySource,patched,ubKAP947VvKgwKt8yjGAkl,,Archives; Mansley
 249,William Morrison Photographs of Tredyffrin and Easttown Estates,Original Document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7v3v,,Archives
-252,"Finding Aid for the Walker School Papers, 1863-1971 (17 items)",Original Document,primarySource,patched,6xII3rbxPLEz402wMiN5mV,,Archives; Walker
 251,"Finding Aid for the Wilds Family Papers, 1756 - 1899, and mid-20th century",Original Document,primarySource,patched,R5TgPTJyfJtRgSPax8Erq4,,Archives; Wilds
+252,"Finding Aid for the Walker School Papers, 1863-1971 (17 items)",Original Document,primarySource,patched,6xII3rbxPLEz402wMiN5mV,,Archives; Walker
 253,"Finding Aid for the Collection of Artifacts Donated by Erik Eichner, 2015",Original Document,primarySource,patched,uY2snnQFyEYQMoB8sKjiSu,,Archives
 254,Finding Aid for the Mildred Burruss Memorial Collection of African-American History,Original Document,primarySource,patched,6xII3rbxPLEz402wMiN5q3,,Archives
 255,"Finding Aid for the Wadsworth-Burns Collection, Gift of Judith Wadsworth, 2016",Original Document,primarySource,patched,4PGlZuQ6svgQ69K84DHBIQ,,Archives; Burns; Wadsworth
-258,George Washington Lewis (1840 - 1907),Original Document,primarySource,patched,4PGlZuQ6svgQ69K84DHBUW,,Lewis
 256,Finding Aid for the A. Edward Newton Collection,Original Document,primarySource,patched,6xII3rbxPLEz402wMiN5yv,,Archives; Newton
+258,George Washington Lewis (1840 - 1907),Original Document,primarySource,patched,4PGlZuQ6svgQ69K84DHBUW,,Lewis
+257,George Washington Lewis (1800 - 1889),Original Document,primarySource,patched,nMpjZw9wj4H9OpmuqJMZX8,,Lewis
 260,Letter G. W. Lewis to Thomas S. Lewis,Letter,primarySource,patched,nMpjZw9wj4H9OpmuqJMZfO,,Lewis; CivilWar; LewisCW
 261,Letter from G. W . Lewis to Thomas S. Lewis,Letter,primarySource,patched,lsa6SzO3dXU4Am0aEZ7vGL,,Lewis; CivilWar; LewisCW; LewisCivilWar
-257,George Washington Lewis (1800 - 1889),Original Document,primarySource,patched,nMpjZw9wj4H9OpmuqJMZX8,,Lewis
-265,Letter from G. W. Lewis to Thomas S. Lewis,Letter,primarySource,patched,lsa6SzO3dXU4Am0aEZ7vPN,,Lewis; CivilWar; LewisCW; LewisCivilWar
 262,Letter from G. W. Lewis to Thomas S. Lewis,Letter,primarySource,patched,R5TgPTJyfJtRgSPax8EsQQ,,Lewis; CivilWar; LewisCW; LewisCivilWar
-266,Letter from G. W. Lewis to Thomas S. Lewis,Letter,primarySource,patched,4PGlZuQ6svgQ69K84DHBcz,,Lewis; CivilWar; LewisCW; LewisCivilWar
 263,Letter from G. W. Lewis to Thomas S. Lewis,Letter,primarySource,patched,uY2snnQFyEYQMoB8sKjj8S,,Lewis; CivilWar; LewisCW; LewisCivilWar
 264,Letter from G. W. Lewis to Thomas S. Lewis,Letter,primarySource,patched,ubKAP947VvKgwKt8yjGBsJ,,Lewis; CivilWar; LewisCW; LewisCivilWar
-271,Letter from J. L. Fox to G. W. Lewis,Letter,primarySource,patched,4PGlZuQ6svgQ69K84DHBkF,,Lewis; CivilWar; LewisCW; LewisCivilWar
-268,"Option for land purchase, Valley Forge",original document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7vTt,,PVFS
+265,Letter from G. W. Lewis to Thomas S. Lewis,Letter,primarySource,patched,lsa6SzO3dXU4Am0aEZ7vPN,,Lewis; CivilWar; LewisCW; LewisCivilWar
+266,Letter from G. W. Lewis to Thomas S. Lewis,Letter,primarySource,patched,4PGlZuQ6svgQ69K84DHBcz,,Lewis; CivilWar; LewisCW; LewisCivilWar
 267,W. T. Comer Biography,Newspaper Biography,primarySource,patched,6xII3rbxPLEz402wMiN69Z,,Comer; Pyle
-270,Quarrying Lease,original document,primarySource,patched,6xII3rbxPLEz402wMiN6Et,,VF
+268,"Option for land purchase, Valley Forge",original document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7vTt,,PVFS
 269,Years Change Paoli Station,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMa02,Tclip,PAO; MLR; PAOSta
+271,Letter from J. L. Fox to G. W. Lewis,Letter,primarySource,patched,4PGlZuQ6svgQ69K84DHBkF,,Lewis; CivilWar; LewisCW; LewisCivilWar
+270,Quarrying Lease,original document,primarySource,patched,6xII3rbxPLEz402wMiN6Et,,VF
 272,"Will of Thomas Abrams, 1844",Will,primarySource,patched,lsa6SzO3dXU4Am0aEZ7vbn,,Abrams; Will
-274,Petition for a license for the Eagle Hotel,Petition,primarySource,patched,lsa6SzO3dXU4Am0aEZ7vgJ,,MLR; Lewis; EAG; EAGHOT
 273,Petition for a license for the Eagle Hotel,Petition,primarySource,patched,uY2snnQFyEYQMoB8sKjkJA,,MLR; EAG; Lewis; EAGHOT
+274,Petition for a license for the Eagle Hotel,Petition,primarySource,patched,lsa6SzO3dXU4Am0aEZ7vgJ,,MLR; Lewis; EAG; EAGHOT
 275,Petition for a license for the Eagle Hotel,Petition,primarySource,patched,ubKAP947VvKgwKt8yjGCW3,,MLR; Lewis; EAG; EAGHOT
 276,Petition for a license for the Eagle Hotel,Petition,primarySource,patched,6xII3rbxPLEz402wMiN6KD,,MLR; Lewis; EAG; EAGHOT
+277,Petition for a license for the Eagle Hotel,Petition,primarySource,patched,4PGlZuQ6svgQ69K84DHBxY,,MLR; Lewis; EAG; EAGHOT
 278,Sheriff&rsquo;s sale of Real Estate at Eagle,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiN6Ms,,EAG
 781,Annual Meeting of the Board of Managers of the Educational Home,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN6SC,Lincoln; Newspaper; AnnualReport; EH,Phase2
-277,Petition for a license for the Eagle Hotel,Petition,primarySource,patched,4PGlZuQ6svgQ69K84DHBxY,,MLR; Lewis; EAG; EAGHOT
-783,Photos of Lincoln Institution documents from the Historical Society of Pennsylvania,document,primarySource,patched,uY2snnQFyEYQMoB8sKjlOg,Lincoln; AnnualReport,Images
 782,"1900 SEVENTEENTH ANNUAL REPORT Indian Rights Association, pp. 15-22",Document,primarySource,patched,6xII3rbxPLEz402wMiN6QQ,Lincoln; AnnualReport; EH,Phase2
+783,Photos of Lincoln Institution documents from the Historical Society of Pennsylvania,document,primarySource,patched,uY2snnQFyEYQMoB8sKjlOg,Lincoln; AnnualReport,Images
 786,"Extract from The Indian Rights Association - the Herbert Welsh Years, 1882 - 1904",document,primarySource,patched,6xII3rbxPLEz402wMiN6bx,Lincoln,Phase2
+784,"The First Annual Report of the Managers of the ""Lincoln Institution""",document,primarySource,patched,ubKAP947VvKgwKt8yjGCsP,Lincoln; AnnualReport,Phase1
 785,"Items from the Superintendent of the Soldiers Orphans' Schools,
 Reports 1881 to 1885",document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7vtr,Lincoln; AnnualReport,Phase1
-784,"The First Annual Report of the Managers of the ""Lincoln Institution""",document,primarySource,patched,ubKAP947VvKgwKt8yjGCsP,Lincoln; AnnualReport,Phase1
-788,Photographs of the Orphans,document,primarySource,patched,uY2snnQFyEYQMoB8sKjltq,Lincoln; AnnualReport,Phase4; Images
 787,"Documents concerning the Education Home, 1890s complaints",document,primarySource,patched,6xII3rbxPLEz402wMiN6aB,Lincoln; EH,Phase2
+788,Photographs of the Orphans,document,primarySource,patched,uY2snnQFyEYQMoB8sKjltq,Lincoln; AnnualReport,Phase4; Images
+789,Photographs at Ponemah,document,primarySource,patched,4PGlZuQ6svgQ69K84DHCpz,Lincoln; AnnualReport; Ponemah,Phase4; Images
 790,"Lincoln Institution
 Report of Board of Managers, 1896",document,primarySource,patched,uY2snnQFyEYQMoB8sKjmP0,Lincoln; AnnualReport,Phase2
-789,Photographs at Ponemah,document,primarySource,patched,4PGlZuQ6svgQ69K84DHCpz,Lincoln; AnnualReport; Ponemah,Phase4; Images
 791,TWELFTH ANNUAL MEETING OF THE LINCOLN INSTITUTION – REPORTS AND ELECTION OF OFFICERS – ADDRESSES,newspaper clipping,primarySource,patched,ubKAP947VvKgwKt8yjGDiZ,Lincoln; AnnualReport,Phase1
-281,Obituary of Clarence Burton Roberts,Obituary,primarySource,patched,uY2snnQFyEYQMoB8sKjmuA,,ROB
 280,The Petition of the Pennsylvania Railroad Company,Petition,primarySource,patched,ubKAP947VvKgwKt8yjGDdb,,LAND
-282,"Proposition by Charles Thomas to the Norristown and Valley Railroad Company, 1835",part transcrption,primarySource,patched,4PGlZuQ6svgQ69K84DHD0s,,CVR
+281,Obituary of Clarence Burton Roberts,Obituary,primarySource,patched,uY2snnQFyEYQMoB8sKjmuA,,ROB
 283,Great grandparents of Mary Roberts (nee) Walker),Genealogical,primarySource,patched,6xII3rbxPLEz402wMiN6jw,,MROB
+282,"Proposition by Charles Thomas to the Norristown and Valley Railroad Company, 1835",part transcrption,primarySource,patched,4PGlZuQ6svgQ69K84DHD0s,,CVR
 284,Mary Roberts diary - Deaths: 1802 - 1850,Genealogical,primarySource,patched,uY2snnQFyEYQMoB8sKjnK8,,MROB
-286,Mary Roberts diary - Deaths: 1812 - 1813,Genealogical,primarySource,patched,uY2snnQFyEYQMoB8sKjnUW,,MROB
 285,Mary Pugh obituary,Genealogical,primarySource,patched,4PGlZuQ6svgQ69K84DHD4V,,MROB
+286,Mary Roberts diary - Deaths: 1812 - 1813,Genealogical,primarySource,patched,uY2snnQFyEYQMoB8sKjnUW,,MROB
+288,"Mary Roberts diary, Deaths:1837",Genealogical,primarySource,patched,4PGlZuQ6svgQ69K84DHD9L,,MROB
 287,Mary Roberts diary - Deaths: 1835 - 1837,Genealogical,primarySource,patched,6xII3rbxPLEz402wMiN6q9,,MROB
+289,"Mary Roberts diary, Deaths: 1838 - 1839",Genealogical,primarySource,patched,ubKAP947VvKgwKt8yjGDzx,,MROB
 290,"Mary Roberts diary, Deaths: 1839 - 1840",Genealogical,primarySource,patched,4PGlZuQ6svgQ69K84DHDGb,,MROB
 291,"Mary Roberts diary, Deaths: 1841",Genealogical,primarySource,patched,4PGlZuQ6svgQ69K84DHDEB,,MROB
-289,"Mary Roberts diary, Deaths: 1838 - 1839",Genealogical,primarySource,patched,ubKAP947VvKgwKt8yjGDzx,,MROB
-288,"Mary Roberts diary, Deaths:1837",Genealogical,primarySource,patched,4PGlZuQ6svgQ69K84DHD9L,,MROB
 292,"Mary Roberts diary, Deaths: 1841",Genealogical,primarySource,patched,nMpjZw9wj4H9OpmuqJMbMg,,MROB
-294,"Mary Roberts diary, Deaths: 1843 - 1844",Genealogical,primarySource,patched,6xII3rbxPLEz402wMiN72Z,,MROB
 293,"Mary Roberts diary, Deaths: 1841 - 1843",Genealogical,primarySource,patched,lsa6SzO3dXU4Am0aEZ7wRj,,MROB
+294,"Mary Roberts diary, Deaths: 1843 - 1844",Genealogical,primarySource,patched,6xII3rbxPLEz402wMiN72Z,,MROB
 295,"Mary Roberts diary, Deaths: 1844",Genealogical,primarySource,patched,4PGlZuQ6svgQ69K84DHDTu,,MROB
 296,"Mary Roberts diary, Deaths: 1844 - 1845",Genealogical,primarySource,patched,4PGlZuQ6svgQ69K84DHDWK,,MROB
-298,"Mary Roberts diary, Deaths: 1847 - 1848",Genealogical,primarySource,patched,lsa6SzO3dXU4Am0aEZ7wd1,,MROB
-301,"Mary Roberts diary, Deaths: 1849",Genealogical,primarySource,patched,6xII3rbxPLEz402wMiN7CK,,MROB
-300,"Mary Roberts diary, Deaths: 1848 - 1849",Genealogical,primarySource,patched,4PGlZuQ6svgQ69K84DHDhD,,MROB
-299,"Mary Roberts diary, Deaths: 1847 - 1848",Genealogical,primarySource,patched,ubKAP947VvKgwKt8yjGEJp,,MROB
 297,"Mary Roberts diary, Deaths: 1846 - 1847",Genealogical,primarySource,patched,lsa6SzO3dXU4Am0aEZ7wZd,,MROB
+298,"Mary Roberts diary, Deaths: 1847 - 1848",Genealogical,primarySource,patched,lsa6SzO3dXU4Am0aEZ7wd1,,MROB
+299,"Mary Roberts diary, Deaths: 1847 - 1848",Genealogical,primarySource,patched,ubKAP947VvKgwKt8yjGEJp,,MROB
+300,"Mary Roberts diary, Deaths: 1848 - 1849",Genealogical,primarySource,patched,4PGlZuQ6svgQ69K84DHDhD,,MROB
+301,"Mary Roberts diary, Deaths: 1849",Genealogical,primarySource,patched,6xII3rbxPLEz402wMiN7CK,,MROB
 302,"Mary Roberts diary, Deaths: 1849",Genealogical,primarySource,patched,ubKAP947VvKgwKt8yjGEWF,,MROB
 303,"Mary Roberts diary, Deaths: 1849",Genealogical,primarySource,patched,ubKAP947VvKgwKt8yjGEgB,,MROB
+304,"Mary Roberts diary, Deaths: 1850",Genealogical,primarySource,patched,nMpjZw9wj4H9OpmuqJMbre,,MROB
 305,"Mary Roberts diary, Family History, Deaths: 1850 - 1852",Genealogical,primarySource,patched,uY2snnQFyEYQMoB8sKjpKm,,MROB
 306,Suburban & Summer Homes,Book,researchArticle,patched,uY2snnQFyEYQMoB8sKjpVA,,MLR; STR; BER; PAO; GTR
-304,"Mary Roberts diary, Deaths: 1850",Genealogical,primarySource,patched,nMpjZw9wj4H9OpmuqJMbre,,MROB
-309,Daylesford,Document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7wm3,,DAY; MLR
-310,Richard Graham Land Purchases and Sales,Document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7woJ,,DAY; MLR
+307,Railroad Bridges in Green Tree and Malvern,Document,primarySource,patched,6xII3rbxPLEz402wMiN7QW,,GTR; MLV; MLR
 308,Jeremiah Wyman House,Document,primarySource,patched,uY2snnQFyEYQMoB8sKjsGY,DEVInn,DEV; DEVSta; JWHO
+309,Daylesford,Document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7wm3,,DAY; MLR
 312,"Finding Aid for the Garber-Pyle Family Papers
 Gift of Spencer Pyle, 2020",document,primarySource,patched,nMpjZw9wj4H9OpmuqJMc42,,Garber; Pyle
-307,Railroad Bridges in Green Tree and Malvern,Document,primarySource,patched,6xII3rbxPLEz402wMiN7QW,,GTR; MLV; MLR
-315,"Paoli Memorial Association, 1896",Book,researchArticle,patched,lsa6SzO3dXU4Am0aEZ7xVD,,PMA
-316,The Berwyn Curve,Document,primarySource,patched,6xII3rbxPLEz402wMiN8Oq,BerwynRR,
 313,"Valley Forge General Orders, 12/22/1777",original document,primarySource,patched,nMpjZw9wj4H9OpmuqJMdOc,,VF; VFE; VFO
+310,Richard Graham Land Purchases and Sales,Document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7woJ,,DAY; MLR
 314,Weeds in Valley Forge Dam,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHFho,Sclip,VF; VFDAM
+315,"Paoli Memorial Association, 1896",Book,researchArticle,patched,lsa6SzO3dXU4Am0aEZ7xVD,,PMA
+318,Obituary of George W. Mehaffey,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGFWL,,Mehaffey
+316,The Berwyn Curve,Document,primarySource,patched,6xII3rbxPLEz402wMiN8Oq,BerwynRR,
 317,The Development of Daylesford,book,researchArticle,patched,ubKAP947VvKgwKt8yjGFMP,,Day; Latta; Mehaffey
 320,"TOBACCO
 Seed Leaf Crop and Market News",Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN8TH,,Mehaffey
-319,Obituary of George W. Mehaffey,Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN8V3,,Mehaffey
-321,The Stop at Daylesford,book,researchArticle,patched,nMpjZw9wj4H9OpmuqJMdhC,,DAY; MLR
-318,Obituary of George W. Mehaffey,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGFWL,,Mehaffey
 322,William J. Latta Resignation,document,primarySource,patched,6xII3rbxPLEz402wMiN8Wp,,Latta
+321,The Stop at Daylesford,book,researchArticle,patched,nMpjZw9wj4H9OpmuqJMdhC,,DAY; MLR
+319,Obituary of George W. Mehaffey,Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN8V3,,Mehaffey
 323,"PUSHING LATTA'S VOTE
 Pennsylvania Railroad pitted against John Wanamaker",Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN8fh,,Latta
-326,The Steel Tracks of the Pennsylvania Railroad,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGFnj,,MLR; PAO; MLV; Eagle; PRR
-324,Latta Tax Returns in Chester County,document,primarySource,patched,6xII3rbxPLEz402wMiN8ga,,Latta
 325,"Latta Wills & Administrations, 1688 - 1923",will,primarySource,patched,uY2snnQFyEYQMoB8sKjvmg,,Latta
+324,Latta Tax Returns in Chester County,document,primarySource,patched,6xII3rbxPLEz402wMiN8ga,,Latta
+326,The Steel Tracks of the Pennsylvania Railroad,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGFnj,,MLR; PAO; MLV; Eagle; PRR
 327,STRAIGHTENING THE TRACK,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHFqH,,PRR; MLR; Eagle; MLV; PAO
-329,(National Guard Inspection),Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN8pS,,Latta; PAO
-330,(Deaths at Paoli),Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMdzm,Tclip,MLR; PAO
 328,(Green Tree),Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHFzx,,PRR; GTR; PAO; MLR
 331,PRR - Paoli to Eagle,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN8rE,Tclip,MLR; PAO; Eagle
+329,(National Guard Inspection),Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN8pS,,Latta; PAO
+330,(Deaths at Paoli),Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMdzm,Tclip,MLR; PAO
 332,PRR - Deaths at Paoli,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7yMH,Tclip,MLR; PAO
 333,Straightening the Railroads,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGGnp,,MLR; PAO; Eagle
-334,(Malvern &amp; Green Tree),newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN8yK,,MLR; MLV; PAO; GTR; PRR
 335,Malvern Improvements on the Pennsylvania Railroad,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHGET,,PRR; MLR; MLV; GTR; Mclip
-337,Paralyzed on His Train,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMeCA,,PRR
 336,STRAIGHTENING THE TRACK,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKjwN2,,MLR; GTR; PAO
-338,William Hammersley,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGH7h,,Latta
-340,John F. Glosser Is Dead at His Southern Home,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHGKW,,Water; Latta; DAY
-339,An Elaborate Affair,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMeSg,,Latta
+334,(Malvern &amp; Green Tree),newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN8yK,,MLR; MLV; PAO; GTR; PRR
+337,Paralyzed on His Train,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMeCA,,PRR
 341,"Captain Barr Dies, Aged 80",Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMeOY,,Water; Latta; DAY
-342,William Hammersley,Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN93e,,Water; Latta; DAY
+340,John F. Glosser Is Dead at His Southern Home,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHGKW,,Water; Latta; DAY
+338,William Hammersley,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGH7h,,Latta
+339,An Elaborate Affair,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMeSg,,Latta
 343,"Daylesford Water Company, New Corporations",newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHGVP,Tclip,Water; Latta; DAY
+345,Daylesford Water Company,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGHbV,Tclip,Water; DAY; Eclip
+342,William Hammersley,Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiN93e,,Water; Latta; DAY
 346,CHARTER TERRITORY North Springfield Water Company,Book,researchArticle,patched,nMpjZw9wj4H9OpmuqJMenK,,Water
 344,"Daylesford Water Company, Asking for Charters",Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMef4,tclip,DAY; Latta
-347,Connecting the history in New Centerville,Document,primarySource,patched,nMpjZw9wj4H9OpmuqJMejC,,NCE; PICKPOST; SCPP
-345,Daylesford Water Company,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGHbV,Tclip,Water; DAY; Eclip
-350,"A History of the Valley Forge Mill Dam
-by Dave Madary and Mike Bertram",Document,primarySource,patched,4PGlZuQ6svgQ69K84DHGds,,VFDAM
 351,"The History of the Valley Forge Meadow
 by Lee Kirts and Mike Bertram",Document,primarySource,patched,ubKAP947VvKgwKt8yjGHvN,,VFB; VCMS; POSA1
 348,The Langenheim photo,Document,primarySource,patched,ubKAP947VvKgwKt8yjGHqP,,VFDAM; VFI; VFB
-352,(Valley Forge Dam),Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMfC6,,VFDAM; VFI
+350,"A History of the Valley Forge Mill Dam
+by Dave Madary and Mike Bertram",Document,primarySource,patched,4PGlZuQ6svgQ69K84DHGds,,VFDAM
+347,Connecting the history in New Centerville,Document,primarySource,patched,nMpjZw9wj4H9OpmuqJMejC,,NCE; PICKPOST; SCPP
 349,"The Buildings in the Langenheim photograph
 by Dave Madary and Mike Bertram",Document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7yax,,VFDAM; VFB; POSA2; MCIQ
-357,Lewis James tract,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHGjv,Tclip,
-355,Valley Forge School and Frank and Kate Bode,Document,primarySource,patched,uY2snnQFyEYQMoB8sKjxIA,,VFB; VFSchool; Bode
 354,"The Dismantling of the Valley Forge Mill Dam, 1920",Newspaper articles,primarySource,patched,nMpjZw9wj4H9OpmuqJMfUg,Sclip,VFDAM
-356,Blue Ball Inn,Newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7yir,Tclip,BBI1
 353,John O Conner property sale,Newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7yl7,Tclip,
-358,School House Destroyed,Newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7yu9,Sclip,VFSchool; VFB
-361,POSA building,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHGpy,Sclip,VFB; POSA2
-359,Valley Forge School,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGIAH,Sclip,VFSchool; VFB
+352,(Valley Forge Dam),Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMfC6,,VFDAM; VFI
+355,Valley Forge School and Frank and Kate Bode,Document,primarySource,patched,uY2snnQFyEYQMoB8sKjxIA,,VFB; VFSchool; Bode
+356,Blue Ball Inn,Newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7yir,Tclip,BBI1
 360,Sheriffs Deeds,Document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7ywP,Research,
-362,Mary Roberts Diary,Diary,primarySource,patched,uY2snnQFyEYQMoB8sKjxnK,,ROB; MROB
-363,Biographical Notes on Major McVeagh,Document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7z4J,,McVeagh
+358,School House Destroyed,Newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7yu9,Sclip,VFSchool; VFB
+357,Lewis James tract,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHGjv,Tclip,
+359,Valley Forge School,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGIAH,Sclip,VFSchool; VFB
+361,POSA building,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHGpy,Sclip,VFB; POSA2
 364,Roberts family,Wills,primarySource,patched,4PGlZuQ6svgQ69K84DHGw1,,ROB
-366,Quaker Meeting Structure,document,primarySource,patched,nMpjZw9wj4H9OpmuqJMfvW,,
-367,Petition of Joseph Roberts in the benefit of the insolvent laws,Document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7z7h,,ROB
+363,Biographical Notes on Major McVeagh,Document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7z4J,,McVeagh
 365,"Mary Roberts - Friends & Family, 1838",Document,primarySource,patched,uY2snnQFyEYQMoB8sKjyNg,,ROB
+366,Quaker Meeting Structure,document,primarySource,patched,nMpjZw9wj4H9OpmuqJMfvW,,
+362,Mary Roberts Diary,Diary,primarySource,patched,uY2snnQFyEYQMoB8sKjxnK,,ROB; MROB
+367,Petition of Joseph Roberts in the benefit of the insolvent laws,Document,primarySource,patched,lsa6SzO3dXU4Am0aEZ7z7h,,ROB
 369,Will of William Roberts,Will,primarySource,patched,6xII3rbxPLEz402wMiN9Za,,Will; ROB
 368,"Deed of Assignment
 Joseph Roberts and wife
 to
 William Roberts et al.",Document,primarySource,patched,uY2snnQFyEYQMoB8sKjzYO,,ROB
-371,Debts of William Roberts,Document,primarySource,patched,6xII3rbxPLEz402wMiN9bM,,ROB
 370,Creditors of Joseph Roberts,Document,primarySource,patched,ubKAP947VvKgwKt8yjGIKD,,ROB
+371,Debts of William Roberts,Document,primarySource,patched,6xII3rbxPLEz402wMiN9bM,,ROB
+375,Latta Tax Information,Document,primarySource,patched,ubKAP947VvKgwKt8yjGIe5,,Latta
 372,A statement of the causes of the petitioners debts (Joseph Roberts),Document,primarySource,patched,ubKAP947VvKgwKt8yjGIRf,,ROB
 374,"Accounts, William Roberts Estate",Document,primarySource,patched,ubKAP947VvKgwKt8yjGIlX,,ROB
+373,Tredyffrin Septennial Census,Document,primarySource,patched,uY2snnQFyEYQMoB8sKk03Y,,
 376,"Valley Forge Properties Condemned
 
 Jury of View Makes Two Awards for Valley Forge Park Commission.",Newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKk0Dw,Sclip,VCMS; VFB; POSA1
-377,"Flood, January 26, 1839",Document,primarySource,patched,ubKAP947VvKgwKt8yjGJ5P,,
-375,Latta Tax Information,Document,primarySource,patched,ubKAP947VvKgwKt8yjGIe5,,Latta
-373,Tredyffrin Septennial Census,Document,primarySource,patched,uY2snnQFyEYQMoB8sKk03Y,,
-382,Charlestown 1850 Agricultural Census,document being converted,primarySource,patched,6xII3rbxPLEz402wMiNA1y,,
-379,Roberts Court Cases,document,primarySource,patched,ubKAP947VvKgwKt8yjGJHp,,ROB; MROB
 378,Floods,book,researchArticle,patched,6xII3rbxPLEz402wMiN9qR,,
 381,"Lewis Roberts, senior of Schuylkill township",document,primarySource,patched,nMpjZw9wj4H9OpmuqJMgao,,ROB
+379,Roberts Court Cases,document,primarySource,patched,ubKAP947VvKgwKt8yjGJHp,,ROB; MROB
+377,"Flood, January 26, 1839",Document,primarySource,patched,ubKAP947VvKgwKt8yjGJ5P,,
 380,Lewis W. Roberts (1813 - 1874),Document,primarySource,patched,6xII3rbxPLEz402wMiN9sD,,ROB; MROB
-385,"Harpers Weekly, 6/19/1878",Newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7zgh,,VFCC
-383,Stephen Roberts (1817 - 1852),document,primarySource,patched,nMpjZw9wj4H9OpmuqJMgnC,,ROB; MROB
 384,William Roberts (1812 - 1889),document,primarySource,patched,4PGlZuQ6svgQ69K84DHHLQ,,ROB; MROB
-387,Floods mentioned in the Mary Roberts diary,document,primarySource,patched,uY2snnQFyEYQMoB8sKk1Oe,,MROB
+383,Stephen Roberts (1817 - 1852),document,primarySource,patched,nMpjZw9wj4H9OpmuqJMgnC,,ROB; MROB
+382,Charlestown 1850 Agricultural Census,document being converted,primarySource,patched,6xII3rbxPLEz402wMiNA1y,,
+385,"Harpers Weekly, 6/19/1878",Newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ7zgh,,VFCC
 386,A Sunny Centennial Celebration,newspaper clipping,primarySource,patched,lsa6SzO3dXU4Am0aEZ7zix,,VFCC
 388,Seashore Excursion Trains,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGJUF,,PW; STR
 390,Seashore Excursion Trains,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHHV6,,PW; STR
+387,Floods mentioned in the Mary Roberts diary,document,primarySource,patched,uY2snnQFyEYQMoB8sKk1Oe,,MROB
 389,"P.R.R. must pay $75,000",Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGJbh,,LAND; PRR; PAO; Wayne
-392,Valley Forge Centennial Celebration trains,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMh7q,,VFCC; Reading
 391,"PROPERTIES CONDEMNED
 Jury of View Makes Two Awards for Valley Forge Park Commission",Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHHXW,,VFB; Bean; Midgley; POSA1; VCMS
-393,Background to the Mary Roberts diary,Document,primarySource,patched,nMpjZw9wj4H9OpmuqJMh1e,,MROB; ROB
 394,Samuel Given quarries,Document,primarySource,patched,ubKAP947VvKgwKt8yjGK0X,,Given
+392,Valley Forge Centennial Celebration trains,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMh7q,,VFCC; Reading
 395,Biography of Peter Acker,Book,researchArticle,patched,ubKAP947VvKgwKt8yjGJvZ,,Acker
-397,Obituary of Daniel Alleva,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKk1z0,,Alleva
 396,Paoli Coal and Lumber Merchants,Document,primarySource,patched,6xII3rbxPLEz402wMiNAKb,,PCoal; Alleva; Clemmans
-398,Obituary of Cordine Scartozzi,Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiNAQo,,Scartozzi; Alleva
+393,Background to the Mary Roberts diary,Document,primarySource,patched,nMpjZw9wj4H9OpmuqJMh1e,,MROB; ROB
 399,Henry Hall Invoice,document,primarySource,patched,ubKAP947VvKgwKt8yjGKFR,,PCoal
-400,Henry Hall invoice,document,primarySource,patched,ubKAP947VvKgwKt8yjGKKP,,PCoal
+397,Obituary of Daniel Alleva,newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKk1z0,,Alleva
+398,Obituary of Cordine Scartozzi,Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiNAQo,,Scartozzi; Alleva
 401,Main Lion restaurant,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGKRr,Tclip,MLion
-402,John Havard&rsquo;s Brewhouse,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMhes,Tclip,JHav
+400,Henry Hall invoice,document,primarySource,patched,ubKAP947VvKgwKt8yjGKKP,,PCoal
+404,History club celebrates 50th year,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMhvO,,
 403,"SEPTA, EPA argue over PCB runoff plans in U.S. Court",newspaper article,primarySource,patched,uY2snnQFyEYQMoB8sKk2ZM,,PAOSta
+402,John Havard&rsquo;s Brewhouse,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMhes,Tclip,JHav
 405,"Pulling up the Stakes
 Paoli Library Building Move",Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiNAbS,Tclip,PLib
-407,Disturbance on the Hill,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMi3e,,FGR
 406,Famed Architect’s Barn To Get Review From Historical Panel,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGKlj,,CHE
-404,History club celebrates 50th year,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMhvO,,
-413,Christian Zook tract,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGLeN,Tclip,
-411,Dr. John Davis tract,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMi7m,Tclip,
-408,Abijah Bowen tract,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGLMz,Tclip,
-410,Abijah Bowen tract,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGLI1,Tclip,
 412,John Bowen tract,Newspaper advertisement\,primarySource,patched,nMpjZw9wj4H9OpmuqJMiI6,Tclip,
-416,Paul Conard tract,Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKk4A2,Tclip,
-414,William Brown tract,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNAlD,Tclip,
+410,Abijah Bowen tract,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGLI1,Tclip,
+411,Dr. John Davis tract,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMi7m,Tclip,
+407,Disturbance on the Hill,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMi3e,,FGR
+408,Abijah Bowen tract,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGLMz,Tclip,
+413,Christian Zook tract,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGLeN,Tclip,
 415,William Rowland tract,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNApe,Tclip,
-418,Samuel Davis tract,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGLtH,Tclip,
+414,William Brown tract,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNAlD,Tclip,
+416,Paul Conard tract,Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKk4A2,Tclip,
 417,Isaac Vanleer tract,Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKk4KQ,Tclip,
-421,George Norman tracts,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ80DR,Tclip,
+418,Samuel Davis tract,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGLtH,Tclip,
 429,John Maxwell tract,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNAvr,Tclip,
+421,George Norman tracts,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ80DR,Tclip,
 433,George Norman tracts,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGM8B,Tclip,
-430,Dr. John Davis tract,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ80LL,Tclip,
-434,Margaret Neill tract,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ80Pr,Tclip,
 435,Charles Jones tracts,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNAyW,Tclip,
 437,William Neill tract,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHIBR,Tclip,Eclip
-439,Jacob Huzzard tract,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMirC,Tclip,
+434,Margaret Neill tract,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ80Pr,Tclip,
 445,Enoch Jones Farm,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ80Xl,Tclip,
-440,Black Bear Inn,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGMS3,Tclip,
 447,Zachariah Long tract,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHIGH,Tclip,
-448,Joseph Ridgeway tracts,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMjDu,Tclip,
-449,Joseph Walker tract and Howellville Mill,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGMlv,Tclip,
+439,Jacob Huzzard tract,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMirC,Tclip,
+440,Black Bear Inn,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGMS3,Tclip,
 451,Dr. John Davis tract,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMjI2,Tclip,
 452,Dr. John Davis Farm,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHIUn,Tclip,
-455,Benjamin Davis farm,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNBaf,Tclip,
+448,Joseph Ridgeway tracts,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMjDu,Tclip,
+449,Joseph Walker tract and Howellville Mill,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGMlv,Tclip,
 456,David Zook farm,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGO3P,Tclip,
-458,David Zook farm,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNBcR,Tclip,
 454,Ann Llewellin tract,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHIXD,Tclip,
-460,Thomas Davis farm,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGODL,Tclip,
+458,David Zook farm,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNBcR,Tclip,
+455,Benjamin Davis farm,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNBaf,Tclip,
 465,Benjamin Jones farm,Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKk5pu,Tclip,
-466,William Thomas farm,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNBhl,Tclip,
-470,Dr. John Davis farm,Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKk6QG,Tclip,
 467,Benjamin Jones farm,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMmJu,Tclip,
-478,William Thomas farm,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ81LR,Tclip,
-480,Jesse Hicks farm and James Penington tract,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNBor,Tclip,
+430,Dr. John Davis tract,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ80LL,Tclip,
+466,William Thomas farm,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNBhl,Tclip,
+460,Thomas Davis farm,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGODL,Tclip,
 482,Thomas Grover Farm,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHKRl,Tclip,
 481,William Harris Farm,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMmWI,Tclip,
+478,William Thomas farm,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ81LR,Tclip,
+470,Dr. John Davis farm,Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKk6QG,Tclip,
+480,Jesse Hicks farm and James Penington tract,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNBor,Tclip,
 483,William Guthrie tract and store,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGOXD,Tclip,
+484,John Roger wood lots,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHKUB,Tclip,
 485,Black Bear tavern and farm - for rent,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNBxj,Tclip,
 486,Assignee Sale Farm of Nathan Y. Hunt,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGOm7,,Wclip
-488,Ben Smith tract,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGOw3,Tclip,
 487,Ben Smith tract,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMmig,Tclip,
-484,John Roger wood lots,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHKUB,Tclip,
-490,John M'Cracken tract,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHKdr,Tclip,
 489,John Henson tract,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ81Wj,Tclip,
+488,Ben Smith tract,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGOw3,Tclip,
+490,John M'Cracken tract,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHKdr,Tclip,
 491,Clintonville (Cedar Hollow) Paper mill and tavern,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGPAx,Tclip,
-493,Abram Philips Farm,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMmx8,Tclip,
 492,Abram Philips Farm,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNC1H,Tclip,
-496,"Public Sale of the Real Estate of Joseph Kennedy, Dec'd",Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ81ed,Tclip,
 494,"Clintonville Paper Mill, Limestone Quarries & Lime Kilns (Cedar Hollow)",Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKk8BK,Tclip,
-495,Abram Philips farm,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNC3w,Tclip,
-498,Jacob Rickabaugh farm,Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKk8lg,Tclip,
-497,David Showalter tract,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGPPr,Tclip,Wclip
+493,Abram Philips Farm,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMmx8,Tclip,
 499,John Philips farm,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGPXJ,Tclip,
+495,Abram Philips farm,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNC3w,Tclip,
 500,Joseph Roberts Tract in Cedar Hollow,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ81kH,Tclip,
+496,"Public Sale of the Real Estate of Joseph Kennedy, Dec'd",Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ81ed,Tclip,
 501,David Showalter tract,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMnHm,Tclip,
-503,Joseph Roberts tracts,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNCHF,Tclip; Cclip,
+497,David Showalter tract,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGPPr,Tclip,Wclip
 502,Joseph Roberts tract in Cedar Hollow,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ81pv,Tclip,
+503,Joseph Roberts tracts,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNCHF,Tclip; Cclip,
+505,Henry Dunahover tract,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGPyd,Tclip,
 504,Henry Dunahover tract,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNCFT,Tclip,
 506,Joseph Townsend&rsquo;s Shoemaker Shop to Rent,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHKmK,Tclip,
-505,Henry Dunahover tract,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGPyd,Tclip,
 507,Jacob Rickabaugh farm,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGQ65,Tclip,
 508,Showalter farm,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGQKz,Tclip,
+498,Jacob Rickabaugh farm,Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKk8lg,Tclip,
 510,Jane Evans farm,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ81yx,Tclip,
-511,Benjamin Funk tracts,Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKkABy,Tclip,
 509,John G. Bull tract,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ81vZ,Tclip,
-512,Samuel Beaver Sale (Chesterbrook Mill),Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGQXP,Tclip,ChesM
+511,Benjamin Funk tracts,Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKkABy,Tclip,
 513,Samuel Beaver sale (Chesterbrook Mill),Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHLCw,Tclip,
+512,Samuel Beaver Sale (Chesterbrook Mill),Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGQXP,Tclip,ChesM
 514,Abijah Stephens tract,Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKkAmK,Tclip,
-516,"Houses, Lumber Yard, Shops & Lot of Ground at Private Sale",Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNCTf,Tclip,
 515,Abijah Stephens tract,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNCR0,Tclip,
-518,Frederick Seafers farm,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNCZs,Tclip,
+516,"Houses, Lumber Yard, Shops & Lot of Ground at Private Sale",Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNCTf,Tclip,
 517,"Houses, Lumber Yard, Shops & Lot of Ground at Private Sale",Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ824b,Tclip,
+518,Frederick Seafers farm,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNCZs,Tclip,
+521,New Centerville Store and Dwelling for Rent,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ82El,Tclip,
+520,William Priest tract and shoemaker shop,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGQon,Tclip,
+519,Frederick Seafers farm,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ82AF,Tclip,
+525,Ephraim Hughes tract,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMo3G,Tclip,
 522,John D. Evans tract,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNCdQ,Tclip,
 523,John D. Evans tract,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMnz8,Tclip,
-521,New Centerville Store and Dwelling for Rent,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ82El,Tclip,
-519,Frederick Seafers farm,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ82AF,Tclip,
-520,William Priest tract and shoemaker shop,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGQon,Tclip,
-525,Ephraim Hughes tract,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMo3G,Tclip,
-527,Camille Lachapelle tracts,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHLYi,Tclip,
-528,Ezekial Potts Personal Property Sale,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNCmI,Tclip,
 524,"George Priest tract, house and shop",Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHLTs,Tclip,
 526,Joanna Watson tract,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ82LX,Tclip,
-532,"Two messuages, lot of land and house next to Eagle station",Newspaper Advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMoLq,Tclip,
-533,Samuel Beaver (Chesterbrook Mill),Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKkCsA,Tclip,ChesM
+527,Camille Lachapelle tracts,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHLYi,Tclip,
+528,Ezekial Potts Personal Property Sale,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNCmI,Tclip,
+529,William Barber property,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMoFe,Tclip,
 531,John Kugler farm,Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKkCXO,Tclip,
 530,William Barber property,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGRG7,Tclip,
-529,William Barber property,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMoFe,Tclip,
+532,"Two messuages, lot of land and house next to Eagle station",Newspaper Advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMoLq,Tclip,
+533,Samuel Beaver (Chesterbrook Mill),Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKkCsA,Tclip,ChesM
+534,Notice to Millers,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMoU6,,
 535,Stores and Dwelling to Rent - Situated at Centreville,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMoYE,Tclip,
+539,"John G. Bull, vs. Lewis G. Bull, et al. In the Common Pleas of Chester county.",Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGRcT,Tclip,
 537,Randall Evans property (late General Jackson Inn),Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNCxp,,
 536,Randal Evans property (later General Jackson Inn),Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNCuH,Tclip,
-538,New Centerville - Store Stand and Dwelling for Rent,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGRXV,Tclip,
-534,Notice to Millers,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMoU6,,
-539,"John G. Bull, vs. Lewis G. Bull, et al. In the Common Pleas of Chester county.",Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGRcT,Tclip,
-543,Jacob Detwiler Farm,Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKkDnI,Tclip,Eclip
 542,Centerville Hotel and tract,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMouw,Tclip,
-540,Samuel Crew tract in Hammer Hollow,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHLtH,Tclip,
-541,Elizabeth Reese tract,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiND1N,Tclip,
 544,Jacob Detwiler farm,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGS1J,Tclip,Eclip
+538,New Centerville - Store Stand and Dwelling for Rent,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGRXV,Tclip,
+541,Elizabeth Reese tract,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiND1N,Tclip,
+543,Jacob Detwiler Farm,Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKkDnI,Tclip,Eclip
+540,Samuel Crew tract in Hammer Hollow,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHLtH,Tclip,
 545,Black Bear Inn and Tavern Stand,Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKkDxg,Tclip,
-548,Abashai Woodman,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGSIh,Tclip,
 547,George Shainline woodlot,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ82ot,Tclip,
-546,"Edmund Evans farm, formerly Randall Evans Tannery",Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiND6h,Tclip,
 549,Abashai Woodman tract,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMp9O,Tclip,
-551,John G. Bull farm,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGSXb,Tclip,
-552,"Black Bear Inn, Valuable Real Estate, 55 acres",Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKkEY2,Tclip,
-550,William Walley farm,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMpDW,Tclip,
+546,"Edmund Evans farm, formerly Randall Evans Tannery",Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiND6h,Tclip,
+548,Abashai Woodman,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGSIh,Tclip,
 553,"Black Bear Inn, farm and tavern stand, Valuable Real Estate at Public Sale, 55 acres",Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGSk1,Tclip,
+552,"Black Bear Inn, Valuable Real Estate, 55 acres",Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKkEY2,Tclip,
+551,John G. Bull farm,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGSXb,Tclip,
+550,William Walley farm,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMpDW,Tclip,
 554,"John G. Bull Farm at Public Sale, 207 acre farm, limestone land",Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHMF3,Tclip,
 555,Elizabeth Lewis tract,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNDK0,Tclip,
-557,William Walley farm,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGT6N,Tclip,
-556,"John Morton Davis, 3 wood lots, two of 15 acres and one of 5 acres",Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMpso,Tclip,
 558,"In the Common Pleas of Chester County, Lindley Rossiter, vs. Elizabeth Reese,",Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHMPw,Tclip,
-561,William Walley tract,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGTNl,Tclip,
-560,Shops for Rent including Blacksmith Shop near Eagle station,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHMSM,Tclip,
+556,"John Morton Davis, 3 wood lots, two of 15 acres and one of 5 acres",Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMpso,Tclip,
+557,William Walley farm,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGT6N,Tclip,
 559,"David Christman, St. Peters mill",Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKkF8O,Tclip,
-563,"Spread Eagle Tavern Stand, 105 acres",Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHMdF,,Rclip
+560,Shops for Rent including Blacksmith Shop near Eagle station,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHMSM,Tclip,
 562,Garber Dairy Farm at Private Sale,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGTSj,Tclip,
-565,Black Bear Tavern Stand,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHMff,Tclip,
+561,William Walley tract,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGTNl,Tclip,
+563,"Spread Eagle Tavern Stand, 105 acres",Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHMdF,,Rclip
 564,"Joseph Watson farm, Valuable Real Estate, 27 acres",Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNDYC,Tclip,
 566,"David Christman, Valuable Grist and Saw Mill
 (St Peters Mill)",Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNDh4,Tclip,
 568,Edward McCloskey farm,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGTk7,Tclip,
-567,Black Bear Tavern and Jackson Inn,Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKkGj4,Tclip,
+565,Black Bear Tavern Stand,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHMff,Tclip,
 569,New Centerville Store for rent (New Centreville),Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKkGYg,Tclip,
-570,"Samuel Givens farm, Plantation and Tract of Land, 42 acres",Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHMvO,Tclip,
-571,David Reese farm,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ83Dj,Tclip,
+567,Black Bear Tavern and Jackson Inn,Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKkGj4,Tclip,
 573,New Centerville Store Stand & Dwelling for Rent (New Centrevile),Newspaper advertisement,primarySource,patched,uY2snnQFyEYQMoB8sKkHyy,Tclip,
-572,"Brinton Farm, 80 acres",Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNDlV,Tclip,
-575,"Currey Ganges, Messuage and Lot, 4 acres",Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNDnH,Tclip,
 574,"Howellville Inn, For Rent, Tavern Stand, Farm",Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMqJe,Tclip,
-576,Reeseville 14 acres,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHNJa,Tclip,
-578,"David Reese Farm at Public Sale, 80 acres",Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMqcE,Tclip,
+572,"Brinton Farm, 80 acres",Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNDlV,Tclip,
+571,David Reese farm,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ83Dj,Tclip,
+570,"Samuel Givens farm, Plantation and Tract of Land, 42 acres",Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHMvO,Tclip,
+575,"Currey Ganges, Messuage and Lot, 4 acres",Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNDnH,Tclip,
 577,Reeseville 14 acres,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGUhj,Tclip,
 579,"Woodman Farm, 30 acres, limestone land, copper vein",Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNDw9,Tclip,UMclip
-580,"David Chrisman, St. Peters Mill",Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHNM0,Tclip,
-583,"Albert Watson, Messuage and Tract of land, 23 acres",Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGUwd,Tclip,
-582,"Samuel Crewe, 34 acre Spooling and bobbin factory and land; the 2nd tract 4 acres",Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ840H,Tclip,
+576,Reeseville 14 acres,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHNJa,Tclip,
+578,"David Reese Farm at Public Sale, 80 acres",Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMqcE,Tclip,
 581,"New Centerville, For Rent - Milliner Wanted (New Centreville)",Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ83y1,Tclip,
-586,Howellville Inn,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ848B,Tclip,
-588,"Stephen Stephens Farm at Private Sale, 94 acres",Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGVGV,Tclip,
+580,"David Chrisman, St. Peters Mill",Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHNM0,Tclip,
+582,"Samuel Crewe, 34 acre Spooling and bobbin factory and land; the 2nd tract 4 acres",Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ840H,Tclip,
 584,William Campbell tract,Newspaper advertisement\,primarySource,patched,4PGlZuQ6svgQ69K84DHO8O,Tclip,
+583,"Albert Watson, Messuage and Tract of land, 23 acres",Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGUwd,Tclip,
 585,"Samuel Beaver, Merchant and Grist Mill at Private Sale, 23 acres (Chesterbrook Mill)",Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNEx8,Tclip,ChesM
+586,Howellville Inn,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ848B,Tclip,
 587,William Henry tract,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMsqY,Tclip,
-594,"Samuel Beaver, Valuable Merchant and Grist Mill at Public Sale (Chesterbrook Mill)",Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMu70,Tclip,ChesM
+588,"Stephen Stephens Farm at Private Sale, 94 acres",Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGVGV,Tclip,
 589,"Ezekial Potts Farm at Private Sale, 114 acres",Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGVBX,Tclip,
+592,Adam Siter Farm sold,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ84vr,Tclip,
 590,"Ezekial Potts Farm at Private Sale, 114 acres",Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ84AR,Tclip,
 593,James Watson property,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ84y7,Tclip,
-592,Adam Siter Farm sold,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ84vr,Tclip,
+594,"Samuel Beaver, Valuable Merchant and Grist Mill at Public Sale (Chesterbrook Mill)",Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMu70,Tclip,ChesM
 595,"Ezekial Potts Farm, 114 acres",Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMu94,Tclip,
 597,"Ezekial Potts Farm, 114 acres",Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMuTi,Tclip,
-599,"Howellville Inn, Farm, 170 acres",Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGVuF,Tclip,
-598,Samuel Beaver Valuable Merchant and Grist Mill (Chesterbrook Mill),Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHOMu,Tclip,ChesM
 596,Owen Davis Wood Lot at Public sale,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGVcr,Tclip,
+598,Samuel Beaver Valuable Merchant and Grist Mill (Chesterbrook Mill),Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHOMu,Tclip,ChesM
+599,"Howellville Inn, Farm, 170 acres",Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGVuF,Tclip,
 600,Samuel Beaver Mill Sold to Worrall (Chesterbrook Mill),Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNFWc,Tclip,ChesM; Howellville
-604,The Paoli Heights Land Company Application for corporate charter,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMumI,Tclip,
-603,Fire in the Woods,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGWhv,Tclip,
 601,William Thomas tract,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGVzD,Tclip,
 602,"Conrad Acker, Dairy Farm, 91 acres",Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ859P,Tclip,
-609,The Wilberforce Anti-slavery Society,research document,researchArticle,patched,ubKAP947VvKgwKt8yjGX9F,,
-606,Paoli Heights Improvement Company Real Estate sales,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHOXn,Tclip,
-605,Paoli Heights Company - Paoli's Improvement Company should keep moving,Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiNFb3,Tclip,
+604,The Paoli Heights Land Company Application for corporate charter,Newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJMumI,Tclip,
+603,Fire in the Woods,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGWhv,Tclip,
 608,The Beaver family of Tredyffrin and Charlestown,Family history,primarySource,patched,6xII3rbxPLEz402wMiNFfU,,Beaver
-607,Hedley - Van Houten wedding,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGX4H,,
-612,John Gronow Bull property deeds,deed history,primarySource,patched,lsa6SzO3dXU4Am0aEZ85Lp,,Bull
+609,The Wilberforce Anti-slavery Society,research document,researchArticle,patched,ubKAP947VvKgwKt8yjGX9F,,
 611,Philadelphia Electric land holdings in Tredyffrin.,deed history,primarySource,patched,4PGlZuQ6svgQ69K84DHOoj,,
-613,The Henry family,Family history,primarySource,patched,lsa6SzO3dXU4Am0aEZ85O5,,Henry
 610,The Walley family,Family history,primarySource,patched,lsa6SzO3dXU4Am0aEZ85GB,,Walley
+605,Paoli Heights Company - Paoli's Improvement Company should keep moving,Newspaper article,primarySource,patched,6xII3rbxPLEz402wMiNFb3,Tclip,
+613,The Henry family,Family history,primarySource,patched,lsa6SzO3dXU4Am0aEZ85O5,,Henry
+612,John Gronow Bull property deeds,deed history,primarySource,patched,lsa6SzO3dXU4Am0aEZ85Lp,,Bull
+606,Paoli Heights Improvement Company Real Estate sales,Newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHOXn,Tclip,
 614,Fulling,document,primarySource,patched,nMpjZw9wj4H9OpmuqJMvHG,,
-618,W. I. Bartram advertisement,advertisement,primarySource,patched,6xII3rbxPLEz402wMiNFq8,,
-617,William H. Fritz advertisement,Advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHPBi,,fritz
 615,Dr. John Davis,document,primarySource,patched,ubKAP947VvKgwKt8yjGXQd,,Davis
 616,W. I. BARTRAM Advertisement,Advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ85QL,,
+617,William H. Fritz advertisement,Advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHPBi,,fritz
+618,W. I. Bartram advertisement,advertisement,primarySource,patched,6xII3rbxPLEz402wMiNFq8,,
 619,Paoli Bank and Trust Company advertisement,Advertisement,primarySource,patched,6xII3rbxPLEz402wMiNFoM,,
 620,"The National Bank of Malvern, advertisement",Advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMvXm,,
-623,Lowell Gable Advertisement,Advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMvmE,,
-622,J. Howard Mecke Advertisement,Advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGXwv,,
 621,Milano Art Tile Company advertisement,Advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ85ZN,,
+622,J. Howard Mecke Advertisement,Advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGXwv,,
+607,Hedley - Van Houten wedding,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGX4H,,
+623,Lowell Gable Advertisement,Advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMvmE,,
 624,Lewin Advertisement,Advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ85dt,,
-625,King of Prussia Inn advertisement,Advertisement,primarySource,patched,6xII3rbxPLEz402wMiNFwL,,
-627,Henry W. Davis Advertisement,Advertisement,primarySource,patched,6xII3rbxPLEz402wMiNG5D,,
 626,J. P. Lamborn Advertisement,Advertisement,primarySource,patched,6xII3rbxPLEz402wMiNFy7,,
+627,Henry W. Davis Advertisement,Advertisement,primarySource,patched,6xII3rbxPLEz402wMiNG5D,,
+625,King of Prussia Inn advertisement,Advertisement,primarySource,patched,6xII3rbxPLEz402wMiNFwL,,
 628,GILFILLAN CAMP Advertisement,Advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGYOF,,
 629,Guy B. Wheeler Advertisement,Advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHPXU,,Wheeler
-633,DEVON PARK HOTEL Advertisement,Advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGZ1z,,
+630,F. G. Donato Advertisement,Advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMvyc,,
 632,William H. DOYLE Advertisement,advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMwLK,,doyle
 631,EDWARD F. BRACKEN Advertisement,Advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMw4o,,
-630,F. G. Donato Advertisement,Advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMvyc,,
 634,C. A. LOBB & Sons Advertisement,Advertisement,primarySource,patched,6xII3rbxPLEz402wMiNGAX,,
-637,BENJAMIN BETNER COMPANY Advertisement,Advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGZfj,,
-638,VALLEY FORGE GOLF CLUB Advertisement,Advertisement,primarySource,patched,6xII3rbxPLEz402wMiNGGk,,
+633,DEVON PARK HOTEL Advertisement,Advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGZ1z,,
 636,BERWYN NATIONAL BANK Advertisement,Advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHPiN,,
+637,BENJAMIN BETNER COMPANY Advertisement,Advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGZfj,,
 635,BERWYN PHARMACY Advertisement,Advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ85qJ,,
+638,VALLEY FORGE GOLF CLUB Advertisement,Advertisement,primarySource,patched,6xII3rbxPLEz402wMiNGGk,,
 639,Pennsylvania Septennial Census for Tredyffrin,census,primarySource,patched,lsa6SzO3dXU4Am0aEZ85zL,,
-641,Pennsylvania Septennial Census for Schuylkill township,census,primarySource,patched,ubKAP947VvKgwKt8yjGZkh,,
-643,A History of Greenwood Farm,book,researchArticle,patched,6xII3rbxPLEz402wMiNGTA,,
-640,Pennsylvania Septennial Census for Easttown,census,primarySource,patched,6xII3rbxPLEz402wMiNGIW,,
 642,J. Howard Mecke jr. rites tomorrow,Newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGaEV,,
+640,Pennsylvania Septennial Census for Easttown,census,primarySource,patched,6xII3rbxPLEz402wMiNGIW,,
+641,Pennsylvania Septennial Census for Schuylkill township,census,primarySource,patched,ubKAP947VvKgwKt8yjGZkh,,
 644,Valley Forge Park - deed histories,deed history,primarySource,patched,lsa6SzO3dXU4Am0aEZ8667,,
+643,A History of Greenwood Farm,book,researchArticle,patched,6xII3rbxPLEz402wMiNGTA,,
 645,Historic Newspaper Clippings,newspaper clipping,primarySource,patched,nMpjZw9wj4H9OpmuqJMwsM,,
-647,A Brief Biography of the Peart Family,book,researchArticle,patched,ubKAP947VvKgwKt8yjGaar,,Peart
 646,Roberts Tax Returns,document,primarySource,patched,ubKAP947VvKgwKt8yjGaJT,,Rob
+647,A Brief Biography of the Peart Family,book,researchArticle,patched,ubKAP947VvKgwKt8yjGaar,,Peart
 648,Will of Lewis Roberts (1861),Will,primarySource,patched,4PGlZuQ6svgQ69K84DHQDp,,Rob; Peart
 649,Estate of Dr. John Davis,Administration,primarySource,patched,6xII3rbxPLEz402wMiNGXb,,Davis
-651,Biography of John Henry of Tredyffrin,book,researchArticle,patched,ubKAP947VvKgwKt8yjGafp,,Henry
 650,Estate of James Davis (1802),Administration,primarySource,patched,nMpjZw9wj4H9OpmuqJMx8s,,davis
 653,"Roberts Death Records, 1893 - 1907, Phoenixville area",genealogical,primarySource,patched,lsa6SzO3dXU4Am0aEZ86Kn,,Roberts
+651,Biography of John Henry of Tredyffrin,book,researchArticle,patched,ubKAP947VvKgwKt8yjGafp,,Henry
 654,Vanleer Family in Tredyffrin and Easttown,family history,primarySource,patched,6xII3rbxPLEz402wMiNGfa,,Vanleer
 655,"Estate of John Roberts III, 1796 - 1863",document,primarySource,patched,4PGlZuQ6svgQ69K84DHQL5,,Roberts
 658,John Roberts II (1746 - 1836),genealogical,primarySource,patched,4PGlZuQ6svgQ69K84DHQTY,,Roberts
-659,Jesse Roberts,genealogical,primarySource,patched,6xII3rbxPLEz402wMiNGoS,,Roberts
 656,Family History of the Roberts family of Schuylkill township,family history,primarySource,patched,lsa6SzO3dXU4Am0aEZ86N3,,Roberts
 657,Edward Roberts (1742 - 1823),genealogical,primarySource,patched,6xII3rbxPLEz402wMiNGhM,,Roberts
+659,Jesse Roberts,genealogical,primarySource,patched,6xII3rbxPLEz402wMiNGoS,,Roberts
 660,James Roberts,genealogical,primarySource,patched,4PGlZuQ6svgQ69K84DHQVy,,Roberts
 661,Edwin Roberts,genealogical,primarySource,patched,nMpjZw9wj4H9OpmuqJMxXe,,Roberts
 662,License to Keep Tavern in House,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNGr7,Sclip,JWH
 664,To Blacksmiths and Wheelwrights,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHQgr,Tclip,
-665,Schuylkill Township citizens recommend Inn or Tavern,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGb9d,Sclip,JWH
 666,Schuylkill Township citizens recommend Inn or Tavern,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ86ab,Sclip,JWH
+665,Schuylkill Township citizens recommend Inn or Tavern,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGb9d,Sclip,JWH
 667,Schuylkill Township citizens recommend Tavern House,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNH0s,Sclip,JWH
 668,Schuylkill Township citizens recommend Tavern House,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNGz6,Sclip,JWH
-669,Seeking License to Keep Tavern in House,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMxqE,Sclip,JWH
 670,Apply for License to Keep an Inn,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMxuM,Sclip,JWH
 671,Valley Forge Hotel License - Hoy,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ86rX,Sclip,JWH
+669,Seeking License to Keep Tavern in House,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMxqE,Sclip,JWH
+672,Hoy in charge of Valley Forge Hotel,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGbdR,Sclip,JWH
 673,Valley Forge Hotel,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNHAd,Sclip,JWH
 675,Valley Forge Hotel,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNHIc,Sclip,JWH
-672,Hoy in charge of Valley Forge Hotel,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGbdR,Sclip,JWH
-674,Valley Forge Hotel Affray [Brawl],Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHQz0,Sclip,JWH
 676,Valley Forge Hotel,Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHQwa,Sclip,JWH
-680,Sale of Hotel Property,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNHYa,Sclip,JWH
+674,Valley Forge Hotel Affray [Brawl],Newspaper advertisement,primarySource,patched,4PGlZuQ6svgQ69K84DHQz0,Sclip,JWH
 677,Valley Forge Hotel,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMy8o,Sclip,JWH
 678,Valley Forge Hotel,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMyCw,Sclip,JWH
-679,Sale of Hotel Property,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGcOd,Sclip,JWH
 681,Hoy to Remove to Valley Forge Hotel,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMyVW,Sclip,JWH
+679,Sale of Hotel Property,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGcOd,Sclip,JWH
+680,Sale of Hotel Property,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNHYa,Sclip,JWH
 682,Hoy to Take Charge Mansion House,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNHbF,Sclip,JWH
-684,Hoy Making Improvements Mansion House,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGcpx,Sclip,JWH
 683,Hoy to Take Charge Mansion House,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNHZT,Sclip,JWH
+684,Hoy Making Improvements Mansion House,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGcpx,Sclip,JWH
 685,First Liquor License in Chester County,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ87Cz,Sclip,JWH
-686,Reading Will Build New Station,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ87HV,Sclip,
-690,Mansion House at Valley Forge,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMyuI,Sclip,JWH
 687,Injured Man Valley Forge Will Recover,Newspaper advertisement,primarySource,patched,ubKAP947VvKgwKt8yjGckz,Sclip,
-688,Mansion House at Valley Forge,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ87FF,Sclip,JWH
+686,Reading Will Build New Station,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ87HV,Sclip,
 689,Mansion House at Valley Forge,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNHqK,Sclip,JWH
-691,Mansion House at Valley Forge,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNHoY,Sclip,JWH
-695,"At private sale, a LOT OF LAND, Mordecai Moore",Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNI6I,Sclip,UMclip
+690,Mansion House at Valley Forge,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMyuI,Sclip,JWH
+688,Mansion House at Valley Forge,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ87FF,Sclip,JWH
 692,POSA Patriotic Order Sons of America,Newspaper advertisement,primarySource,patched,nMpjZw9wj4H9OpmuqJMysE,Sclip,POSA
-693,Committee on Organization Centennial Festivities,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ87Sn,Sclip,UMclip; VFCC
+691,Mansion House at Valley Forge,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNHoY,Sclip,JWH
 694,Valley Forge Doomed,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ87XJ,Sclip,UMclip
-696,Valley Forge,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNI2k,Sclip,UMclip
 776,"List of untranscribed documents related to the 
 Lincoln Institute",document,primarySource,patched,6xII3rbxPLEz402wMiNI0y,Lincoln; AnnualReport,Phase2
-779,INDIAN BOYS MUST NOT BE MALTREATED,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGdq3,Lincoln; Newspaper,Phase2
 777,MAY HAVE TO CLOSE,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGdRD,Lincoln; Newspaper,Phase2
 778,Selected Officers of the Lincoln Institution,document,primarySource,patched,4PGlZuQ6svgQ69K84DHRkB,Lincoln,
+693,Committee on Organization Centennial Festivities,Newspaper advertisement,primarySource,patched,lsa6SzO3dXU4Am0aEZ87Sn,Sclip,UMclip; VFCC
+696,Valley Forge,Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNI2k,Sclip,UMclip
+779,INDIAN BOYS MUST NOT BE MALTREATED,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGdq3,Lincoln; Newspaper,Phase2
 780,Educational Home Not Well Conducted,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGdv1,Lincoln; Newspaper,Phase2
-703,Archives File Folder Names,document,primarySource,patched,ubKAP947VvKgwKt8yjGeTn,,
-698,"Finding Aid for the Franklin L. Burns Collection of Ornithological Notebooks
-Donated by George W. P",document,primarySource,patched,ubKAP947VvKgwKt8yjGdzz,,Franklin; Burns; Pyle
 699,Finding Aid for the Sally Nelson Kuhns Collection,document,primarySource,patched,4PGlZuQ6svgQ69K84DHRrR,,Sally; Nelson; Kuhns
 697,"Finding Aid for the Janet Lynam Perry Collection
 Gift of Edith Blair Perry",document,primarySource,patched,lsa6SzO3dXU4Am0aEZ87hT,,Janet; Lynam; Perry
-704,Chesterbrook Stock Farm,document,primarySource,patched,nMpjZw9wj4H9OpmuqJMzyM,,CHE
-705,History of Berwyn Fire Company,publication,researchArticle,patched,4PGlZuQ6svgQ69K84DHRzu,,BER; BFC
+698,"Finding Aid for the Franklin L. Burns Collection of Ornithological Notebooks
+Donated by George W. P",document,primarySource,patched,ubKAP947VvKgwKt8yjGdzz,,Franklin; Burns; Pyle
+695,"At private sale, a LOT OF LAND, Mordecai Moore",Newspaper advertisement,primarySource,patched,6xII3rbxPLEz402wMiNI6I,Sclip,UMclip
+703,Archives File Folder Names,document,primarySource,patched,ubKAP947VvKgwKt8yjGeTn,,
 702,A TABLE Exhibiting the value of a Dollar in each of the United States,document,primarySource,patched,ubKAP947VvKgwKt8yjGesd,,Money
 700,Prices of Goods Supplyed to the Eastern Indians,document,primarySource,patched,ubKAP947VvKgwKt8yjGeYl,,Money
 701,A TABLE of the value and weight of COINS,document,primarySource,patched,nMpjZw9wj4H9OpmuqJN02U,,Money
-706,Berwyn Ambulance Service,publication,researchArticle,patched,6xII3rbxPLEz402wMiNIPo,,BER; BFC
 707,"History of Ladies Auxiliary, Berwyn Fire Company",publication,researchArticle,patched,ubKAP947VvKgwKt8yjGexb,,BER; BFC
-709,Dispatchers,publication,researchArticle,patched,4PGlZuQ6svgQ69K84DHSjs,,BER; BFC
-710,William Rennard et al deeds,document,primarySource,patched,nMpjZw9wj4H9OpmuqJN3T8,,Rennard
+706,Berwyn Ambulance Service,publication,researchArticle,patched,6xII3rbxPLEz402wMiNIPo,,BER; BFC
+705,History of Berwyn Fire Company,publication,researchArticle,patched,4PGlZuQ6svgQ69K84DHRzu,,BER; BFC
 708,Local Advertisers in Berwyn Fire Company 75th anniversary booklet,publication,researchArticle,patched,4PGlZuQ6svgQ69K84DHRxU,,BER; BFC
+709,Dispatchers,publication,researchArticle,patched,4PGlZuQ6svgQ69K84DHSjs,,BER; BFC
+711,Robert T. Evans,document,primarySource,patched,4PGlZuQ6svgQ69K84DHSmI,,Evans
+710,William Rennard et al deeds,document,primarySource,patched,nMpjZw9wj4H9OpmuqJN3T8,,Rennard
+715,Cox / Smedley family,document,primarySource,patched,nMpjZw9wj4H9OpmuqJN3li,,cox; smedley
+714,Chester County Sheriff's Deeds,document,primarySource,patched,6xII3rbxPLEz402wMiNIXn,,
 713,Chester County Wills and Administrations,document,primarySource,patched,4PGlZuQ6svgQ69K84DHSoi,,
 712,Valley Forge Commissioner's minutes,document,primarySource,patched,6xII3rbxPLEz402wMiNITM,,VF
-711,Robert T. Evans,document,primarySource,patched,4PGlZuQ6svgQ69K84DHSmI,,Evans
-714,Chester County Sheriff's Deeds,document,primarySource,patched,6xII3rbxPLEz402wMiNIXn,,
-715,Cox / Smedley family,document,primarySource,patched,nMpjZw9wj4H9OpmuqJN3li,,cox; smedley
-718,Roberts timeline,document,primarySource,patched,6xII3rbxPLEz402wMiNIaS,,Roberts
 719,William and Samuel Nixon and families,document,primarySource,patched,6xII3rbxPLEz402wMiNIiR,,Nixon
-720,Abel Lewis and his descendants,document,primarySource,patched,ubKAP947VvKgwKt8yjGfnl,,Lewis
+718,Roberts timeline,document,primarySource,patched,6xII3rbxPLEz402wMiNIaS,,Roberts
 717,Martha Jane Bean tax returns,document,primarySource,patched,ubKAP947VvKgwKt8yjGfWN,,Bean
 716,"Certificates of Marriage from Radnor Quarterly Meeting covering Tredyffrin, Easttown, and Charlestow",document,primarySource,patched,4PGlZuQ6svgQ69K84DHTfw,,Roberts
+720,Abel Lewis and his descendants,document,primarySource,patched,ubKAP947VvKgwKt8yjGfnl,,Lewis
 721,Joseph D. Valentine and his descendants,document,primarySource,patched,4PGlZuQ6svgQ69K84DHTuS,,Valentine
 722,Radnor Monthly meeting minutes 1812 -,document,primarySource,patched,ubKAP947VvKgwKt8yjGfsj,,Roberts
-725,Indians at Spread Eagle,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ89sx,Lincoln; Ponemah,Phase2
-724,Timeline for the Lincoln Institution,document,primarySource,patched,6xII3rbxPLEz402wMiNIoe,Lincoln; Ponemah,
 723,Lewis tracts,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ89in,,Lewis
+724,Timeline for the Lincoln Institution,document,primarySource,patched,6xII3rbxPLEz402wMiNIoe,Lincoln; Ponemah,
+725,Indians at Spread Eagle,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ89sx,Lincoln; Ponemah,Phase2
 726,Indian Girl Pupils,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGgRV,Lincoln; Newspaper; Ponemah,Phase2
 727,The Lincoln Institution 21st annual meeting,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGgMX,Lincoln; Newspaper; AnnualReport; Ponemah,Phase2
 729,"Autobiography of ah-nen-la-de-ni
 
 (Daniel La France)",document,primarySource,patched,4PGlZuQ6svgQ69K84DHU8y,Lincoln,Phase2; DLF
-730,"Native Americans at the Lincoln Institute, Philadelphia from the 1900 census",census,primarySource,patched,ubKAP947VvKgwKt8yjGgxn,Lincoln; census,
 728,Obituary of Mary McHenry Cox,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ89qh,Lincoln; Newspaper,Phase3; MMC
-736,Maps and Atlases,document,primarySource,patched,ubKAP947VvKgwKt8yjGgsp,,
+730,"Native Americans at the Lincoln Institute, Philadelphia from the 1900 census",census,primarySource,patched,ubKAP947VvKgwKt8yjGgxn,Lincoln; census,
 732,The Lincoln Institute Appropriation,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHUBO,Lincoln; Newspaper,Phase2
+736,Maps and Atlases,document,primarySource,patched,ubKAP947VvKgwKt8yjGgsp,,
 731,Richard Pratt letter to Commissioner of Indian Affairs,letter,primarySource,patched,4PGlZuQ6svgQ69K84DHUDo,Lincoln,RP
-734,Indian Girls at Eagle,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJN4XC,Lincoln; Newspaper; Ponemah,Phase2
 733,COX-M'HENRY marriage,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGhP7,Lincoln; Newspaper,MMC
-735,LINCOLN SCHOOL NOT SECTARIAN,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJN4fS,Lincoln; Newspaper,Phase2
-739,SCHOOL ELECT OFFICERS,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJN5EY,Lincoln; Newspaper; AnnualReport,Phase3
-740,EDUCATION OF THE INDIANS,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGiAJ,Lincoln; Newspaper,Phase3
 737,Little Indians' Christmas,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJN4bK,Lincoln; Newspaper,Phase3
+735,LINCOLN SCHOOL NOT SECTARIAN,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJN4fS,Lincoln; Newspaper,Phase2
+734,Indian Girls at Eagle,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJN4XC,Lincoln; Newspaper; Ponemah,Phase2
 738,INDIAN GIRLS TO TRY TO RECLAIM THEIR RACE,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiNJ14,Lincoln; Newspaper,Phase3
 741,LINCOLN INSTITUTE,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGi5L,Lincoln,Phase2
-744,LAST ANNUAL MEETING OF THE LINCOLN SCHOOL,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJN5dK,Lincoln; Newspaper,Phase2
-745,LINCOLN INSTITUTION WILL TAKE NO MORE PUPILS,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiNJP1,Lincoln; Newspaper,Phase3
+739,SCHOOL ELECT OFFICERS,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJN5EY,Lincoln; Newspaper; AnnualReport,Phase3
+740,EDUCATION OF THE INDIANS,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGiAJ,Lincoln; Newspaper,Phase3
 742,INDIAN SCHOOLS REOPEN,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJN5Ig,Lincoln; Newspaper,Phase3
 743,Lincoln Institution and Educational Home to be Maintained,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ8AEP,Lincoln; Newspaper,Phase3
+744,LAST ANNUAL MEETING OF THE LINCOLN SCHOOL,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJN5dK,Lincoln; Newspaper,Phase2
+745,LINCOLN INSTITUTION WILL TAKE NO MORE PUPILS,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiNJP1,Lincoln; Newspaper,Phase3
 746,Funds for the Lincoln Institute,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ8AQp,Lincoln; Newspaper,Phase2
-750,BEARING GOOD FRUIT,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiNJX0,Lincoln; Newspaper,Phase2
+748,CORNER-STONE LAID,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJN5fO,Lincoln; Newspaper,Phase2
 749,INSTITUTIONS AFFECTED,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGj0T,Lincoln; Newspaper,Phase2
 747,THE EDUCATIONAL HOME,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ8AT5,Lincoln; Newspaper; AnnualReport; EH,Phase2
-748,CORNER-STONE LAID,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJN5fO,Lincoln; Newspaper,Phase2
+704,Chesterbrook Stock Farm,document,primarySource,patched,nMpjZw9wj4H9OpmuqJMzyM,,CHE
+753,Lincoln Institution's Progress,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ8AeN,Lincoln; Newspaper; AnnualReport,Phase3
+750,BEARING GOOD FRUIT,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiNJX0,Lincoln; Newspaper,Phase2
 751,THE TURBULENT INDIANS,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ8Ac7,Lincoln; Newspaper,Phase2; MMC
 752,"HOMESTEAD LAND NEAR BIG CITIES NEEDED, HE SAYS",newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGj5R,Lincoln; Newspaper,Phase4
 754,LAUGHED AT DOWIE,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ8Arv,Lincoln; Newspaper,Phase3
 755,Mary McHenry Cox death notice,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ8AuB,Lincoln; Newspaper,Phase3; MMC
-753,Lincoln Institution's Progress,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ8AeN,Lincoln; Newspaper; AnnualReport,Phase3
-756,WALKS OUT OF WINDOW,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiNJbR,Lincoln; Newspaper; Ponemah,Phase4
-760,RUMMAGE SALE FOR HOME,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJN7Kc,Lincoln; Newspaper,Phase4
-757,Lincoln Institution Meeting,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGjMp,Lincoln; Newspaper; AnnualReport,Phase3
 758,Lincoln Institute,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiNJdD,Lincoln; Newspaper,
+756,WALKS OUT OF WINDOW,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiNJbR,Lincoln; Newspaper; Ponemah,Phase4
+757,Lincoln Institution Meeting,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGjMp,Lincoln; Newspaper; AnnualReport,Phase3
 759,Lincoln Institution's Work,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ8B7j,Lincoln; Newspaper; AnnualReport,Phase4
-761,CHARITY WILL REASSUME ITS ORIGINAL PURPOSE,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHV8f,Lincoln; Newspaper,Phase4
-762,INDIAN SCHOOLS,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGjWl,Lincoln; Newspaper,Phase3
-765,Lincoln Institute Indian Pupil Numbers,document,primarySource,patched,4PGlZuQ6svgQ69K84DHVIL,Lincoln,
-764,"Native Americans at the Lincoln Institute, Philadelphia from the 1900 census",document,primarySource,patched,ubKAP947VvKgwKt8yjGk5X,Lincoln; Census,Phase2
 763,Lincoln Institute Students signing up for Carlisle school,document,primarySource,patched,nMpjZw9wj4H9OpmuqJN7Qo,Lincoln,phase3
-766,Chester County deed K16-598 (1924),Chester County deed,primarySource,patched,6xII3rbxPLEz402wMiNJiX,Lincoln,Phase4
-769,NAMES OF PUPILS UNDER SCHOLARSHIPS,document,primarySource,patched,4PGlZuQ6svgQ69K84DHVY4,Lincoln; Scholarships,
-770,"Report of the Admission Committee from the Annual Report 
-of the Educational Home, 1888",document,primarySource,patched,nMpjZw9wj4H9OpmuqJN986,Lincoln; AnnualReport; EH,Phase2
+762,INDIAN SCHOOLS,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGjWl,Lincoln; Newspaper,Phase3
+761,CHARITY WILL REASSUME ITS ORIGINAL PURPOSE,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHV8f,Lincoln; Newspaper,Phase4
+760,RUMMAGE SALE FOR HOME,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJN7Kc,Lincoln; Newspaper,Phase4
+764,"Native Americans at the Lincoln Institute, Philadelphia from the 1900 census",document,primarySource,patched,ubKAP947VvKgwKt8yjGk5X,Lincoln; Census,Phase2
 768,"List of Indian Pupils in the Educational Home, 1884 - 1887",document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8BOf,Lincoln,Phase2
+765,Lincoln Institute Indian Pupil Numbers,document,primarySource,patched,4PGlZuQ6svgQ69K84DHVIL,Lincoln,
+769,NAMES OF PUPILS UNDER SCHOLARSHIPS,document,primarySource,patched,4PGlZuQ6svgQ69K84DHVY4,Lincoln; Scholarships,
+766,Chester County deed K16-598 (1924),Chester County deed,primarySource,patched,6xII3rbxPLEz402wMiNJiX,Lincoln,Phase4
 767,Sixteenth Annual Report of The Educational Home,document,primarySource,patched,nMpjZw9wj4H9OpmuqJN8pW,Lincoln; AnnualReport; EH,Phase2
-771,"Report of the TREASURER OF THE BOARD OF COUNCIL from the Annual Report 
-of the Educational Home, 18",document,primarySource,patched,ubKAP947VvKgwKt8yjGkPP,Lincoln; AnnualReport; EH,Phase2
 773,"WORK DONE IN THE INSTITUTION IN 1887 
 from the Annual Report of the Educational Home, 1888",document,primarySource,patched,nMpjZw9wj4H9OpmuqJN9CE,Lincoln; AnnualReport; EH,Phase2
-775,The Indian Helper,document,primarySource,patched,ubKAP947VvKgwKt8yjGkgn,Lincoln,Phase2
 772,"Report of the TREASURER OF THE EDUCATIONAL HOME from the Annual Report 
 of the Educational Home, 18",document,primarySource,patched,4PGlZuQ6svgQ69K84DHVaU,Lincoln; AnnualReport; EH,Phase2
+771,"Report of the TREASURER OF THE BOARD OF COUNCIL from the Annual Report 
+of the Educational Home, 18",document,primarySource,patched,ubKAP947VvKgwKt8yjGkPP,Lincoln; AnnualReport; EH,Phase2
+770,"Report of the Admission Committee from the Annual Report 
+of the Educational Home, 1888",document,primarySource,patched,nMpjZw9wj4H9OpmuqJN986,Lincoln; AnnualReport; EH,Phase2
 774,TEHS Archive Catalogue,document,primarySource,patched,6xII3rbxPLEz402wMiNJrP,,Archives
 792,The Orphans Plaints,document,primarySource,patched,4PGlZuQ6svgQ69K84DHVnn,Lincoln; Newspaper,Phase1; Hugg
-796,Another Vindication,newspaper clipping,primarySource,patched,nMpjZw9wj4H9OpmuqJN9b0,Lincoln,Phase1; hugg
-795,Indians Singing Pinafore,newspaper clipping,primarySource,patched,6xII3rbxPLEz402wMiNK3p,Lincoln; Newspaper,Phase2; Hugg
 793,THE LINCOLN BOYS,newspaper clipping,primarySource,patched,6xII3rbxPLEz402wMiNJtB,Lincoln; AnnualReport,Phase1
+775,The Indian Helper,document,primarySource,patched,ubKAP947VvKgwKt8yjGkgn,Lincoln,Phase2
+795,Indians Singing Pinafore,newspaper clipping,primarySource,patched,6xII3rbxPLEz402wMiNK3p,Lincoln; Newspaper,Phase2; Hugg
 794,THE LINCOLN HOME INVESTIGATION,newspaper clipping,primarySource,patched,ubKAP947VvKgwKt8yjGkoF,Lincoln,Phase1; Hugg
+796,Another Vindication,newspaper clipping,primarySource,patched,nMpjZw9wj4H9OpmuqJN9b0,Lincoln,Phase1; hugg
 797,PONEMAH,newspaper clipping,primarySource,patched,lsa6SzO3dXU4Am0aEZ8BmN,Lincoln; Ponemah,Phase2
-801,An Analysis of Indian Deaths at the Lincoln Institution,document,primarySource,patched,4PGlZuQ6svgQ69K84DHVyg,Lincoln; Death,
-799,BOYS PADDLED AT THE LINCOLN HOME,newspaper clipping,primarySource,patched,ubKAP947VvKgwKt8yjGlAb,Lincoln,Phase1; Hugg
-800,REPORT OF THE COMMITTEE appointed by the Managers of the Lincoln Institution to investigate the char,newspaper clipping,primarySource,patched,nMpjZw9wj4H9OpmuqJN9ta,Lincoln; Newspaper,Phase1; Hugg
 798,A CONSIGNMENT OF SIOUX BRAVES AND PAPOOSES AT SCHOOL,newspaper clipping,primarySource,patched,nMpjZw9wj4H9OpmuqJN9f8,Lincoln; Newspaper,Phase2
-803,Abraham Neck - death information,document,primarySource,patched,6xII3rbxPLEz402wMiNKBo,Lincoln; Death,Phase2
+800,REPORT OF THE COMMITTEE appointed by the Managers of the Lincoln Institution to investigate the char,newspaper clipping,primarySource,patched,nMpjZw9wj4H9OpmuqJN9ta,Lincoln; Newspaper,Phase1; Hugg
+799,BOYS PADDLED AT THE LINCOLN HOME,newspaper clipping,primarySource,patched,ubKAP947VvKgwKt8yjGlAb,Lincoln,Phase1; Hugg
+801,An Analysis of Indian Deaths at the Lincoln Institution,document,primarySource,patched,4PGlZuQ6svgQ69K84DHVyg,Lincoln; Death,
 802,Angie Jordan - death information,document,primarySource,patched,nMpjZw9wj4H9OpmuqJN9xi,Lincoln; death,Phase2
-806,Louisa Farnham - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGm8D,Lincoln; Death,Phase2
-804,John Robinson Longwolf - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGlbv,Lincoln; Death,Phase2
 805,Hattie Charko - death information,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8C4R,Lincoln; Death,Phase2
+804,John Robinson Longwolf - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGlbv,Lincoln; Death,Phase2
 807,Frankie Bear - death information,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8C6h,Lincoln; Death,Phase2
+806,Louisa Farnham - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGm8D,Lincoln; Death,Phase2
 809,Charles Fisher - death information,document,primarySource,patched,4PGlZuQ6svgQ69K84DHW79,Lincoln; Death,Phase2
 808,Samuel Porter - death information,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8C2B,Lincoln; Death,Phase2
 810,Charlie Hill - death information,document,primarySource,patched,6xII3rbxPLEz402wMiNKQt,Lincoln; Death; EH,Phase2
 811,Henry Irondoor - death information,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNAQc,Lincoln; Death; EH,Phase2
+812,Edward Moore - death information,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNAUk,Lincoln; Death; EH,Phase2
 813,Nettie Roubideaux - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGmS5,Lincoln; Death,Phase2
 814,Sophia Smith - death information,document,primarySource,patched,4PGlZuQ6svgQ69K84DHWGp,Lincoln; Death,Phase2
 815,John Frenchman - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGmoR,Lincoln; Death; EH,Phase2
-812,Edward Moore - death information,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNAUk,Lincoln; Death; EH,Phase2
-816,Thomas Billings - death information,document,primarySource,patched,4PGlZuQ6svgQ69K84DHWSv,Lincoln; Death; EH,Phase2
 817,Hattie Blackchief - death information,document,primarySource,patched,4PGlZuQ6svgQ69K84DHWVL,Lincoln; Death,Phase2
+816,Thomas Billings - death information,document,primarySource,patched,4PGlZuQ6svgQ69K84DHWSv,Lincoln; Death; EH,Phase2
+803,Abraham Neck - death information,document,primarySource,patched,6xII3rbxPLEz402wMiNKBo,Lincoln; Death,Phase2
 818,Warren Clute - death information,document,primarySource,patched,6xII3rbxPLEz402wMiNKX6,Lincoln; Death; EH,Phase2
 819,Levi Charles - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGmtP,Lincoln; Death; EH,Phase2
 820,Edward Bucktooth - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGnPh,Lincoln; Death; EH,Phase2
-821,William Abrams - death information,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNAxe,Lincoln; Death; EH,Phase2
-824,Thomas Deer - death information,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNB1m,Lincoln; Death; EH,Phase2
 822,Mabel Block - death information,document,primarySource,patched,4PGlZuQ6svgQ69K84DHWmH,Lincoln; Death,Phase3
+821,William Abrams - death information,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNAxe,Lincoln; Death; EH,Phase2
 823,Ella Fisher - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGnKj,Lincoln; Death,Phase2
-825,Annie Afraid of Bear - death information,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNBOU,Lincoln; Death,Phase2
+824,Thomas Deer - death information,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNB1m,Lincoln; Death; EH,Phase2
 826,Harold G. B. Haines - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGnoX,Lincoln; Death; EH,Phase2
-829,Joseph Norewas - death information,document,primarySource,patched,4PGlZuQ6svgQ69K84DHWuk,Lincoln; Death; EH,Phase2
-830,Selina Thompson - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGoDN,Lincoln; Death,Phase2
-828,Mattie Nason - death information,document,primarySource,patched,6xII3rbxPLEz402wMiNKjW,Lincoln; Death,Phase2
+825,Annie Afraid of Bear - death information,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNBOU,Lincoln; Death,Phase2
 827,Henry Peak - death information,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8CS9,Lincoln; Death; EH,Phase2
+829,Joseph Norewas - death information,document,primarySource,patched,4PGlZuQ6svgQ69K84DHWuk,Lincoln; Death; EH,Phase2
+828,Mattie Nason - death information,document,primarySource,patched,6xII3rbxPLEz402wMiNKjW,Lincoln; Death,Phase2
+830,Selina Thompson - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGoDN,Lincoln; Death,Phase2
 831,Jennie Ironnest - death information,document,primarySource,patched,6xII3rbxPLEz402wMiNKrV,Lincoln; Death,Phase2
-834,Fanny Kirk - death information,document,primarySource,patched,4PGlZuQ6svgQ69K84DHX20,Lincoln; Death,Phase2
-833,Woodlands Cemetery,document,primarySource,patched,ubKAP947VvKgwKt8yjGo8P,Lincoln; Death,Phase1
 832,Sophia Dahwadates - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGoIL,Lincoln; Death,Phase2
-835,Etta Springer - death information,document,primarySource,patched,6xII3rbxPLEz402wMiNLow,Lincoln; Death,Phase2
-839,Armond Wood - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGohB,Lincoln; Death; EH,Phase1
+833,Woodlands Cemetery,document,primarySource,patched,ubKAP947VvKgwKt8yjGo8P,Lincoln; Death,Phase1
+834,Fanny Kirk - death information,document,primarySource,patched,4PGlZuQ6svgQ69K84DHX20,Lincoln; Death,Phase2
 836,Joseph Norcross - death information,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8DjB,Lincoln; Death; EH,Phase2
 837,An Analysis of Soldiers Orphan's Deaths at the Lincoln Institution,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8EIB,Lincoln; Death,Phase1
-838,Albert Williams - death information,document,primarySource,patched,6xII3rbxPLEz402wMiNLqi,Lincoln; Death,Phase1
-840,Howard Kreamer - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGp61,Lincoln; Death,
+835,Etta Springer - death information,document,primarySource,patched,6xII3rbxPLEz402wMiNLow,Lincoln; Death,Phase2
+839,Armond Wood - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGohB,Lincoln; Death; EH,Phase1
 842,John Hoopes - death information,document,primarySource,patched,6xII3rbxPLEz402wMiNM41,Lincoln; Death,Phase1
+840,Howard Kreamer - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGp61,Lincoln; Death,
+838,Albert Williams - death information,document,primarySource,patched,6xII3rbxPLEz402wMiNLqi,Lincoln; Death,Phase1
 841,Jeremiah Drexel - death information,document,primarySource,patched,6xII3rbxPLEz402wMiNM2F,Lincoln; Death,Phase1
-844,Joseph Schneider - death information,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNCza,Lincoln; Death; EH,Phase1
 843,John Leslie - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGpAz,Lincoln; Death,Phase1
+846,Thomas Cummings - death information,document,primarySource,patched,nMpjZw9wj4H9OpmuqJND9u,Lincoln; Death,Phase1
+847,Thomas Gordon - death information,document,primarySource,patched,6xII3rbxPLEz402wMiNMID,Lincoln; Death,Phase1
 845,Robert Calhoun - death information,document,primarySource,patched,6xII3rbxPLEz402wMiNMDm,Lincoln; Death; EH,Phase1
+844,Joseph Schneider - death information,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNCza,Lincoln; Death; EH,Phase1
+848,William Brown - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGpcJ,Lincoln; Death,Phase1
 849,William Rodgers - death information,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8Edd,Lincoln; Death; EH,Phase1
 850,Samuel Richie - death information,document,primarySource,patched,6xII3rbxPLEz402wMiNMOQ,Lincoln; Death,Phase1
-848,William Brown - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGpcJ,Lincoln; Death,Phase1
-847,Thomas Gordon - death information,document,primarySource,patched,6xII3rbxPLEz402wMiNMID,Lincoln; Death,Phase1
-846,Thomas Cummings - death information,document,primarySource,patched,nMpjZw9wj4H9OpmuqJND9u,Lincoln; Death,Phase1
-853,Hunter Cup,newspaper clipping,primarySource,patched,lsa6SzO3dXU4Am0aEZ8Emf,,
-855,Lizzie Spider,newspaper clipping,primarySource,patched,lsa6SzO3dXU4Am0aEZ8Exx,Lincoln; Newspaper,Phase2
-854,INDIANS AT SCHOOL,newspaper clipping,primarySource,patched,lsa6SzO3dXU4Am0aEZ8ErB,Lincoln; Newspaper; Ponemah,Phase2
-852,Main Line Wreck,newspaper clipping,primarySource,patched,nMpjZw9wj4H9OpmuqJNDQQ,,TrainWreck
 851,Albert Perkenpine - death information,document,primarySource,patched,ubKAP947VvKgwKt8yjGq3d,Lincoln; Death,Phase1
-857,"Antione Kabauser, death certificate",document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8F1L,Lincoln; Death; EH,Phase2
-859,The Spread Eagle Inn,digitals images and text,historicalImage,patched,ubKAP947VvKgwKt8yjGqL1,Newspaper,SPE; Phase2
-858,"Walter Wheelock, death certificate",document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8F87,Lincoln; Death; EH,Phase1
-860,Mary McHenry Cox purchases property in Strafford,newspaper clipping,primarySource,patched,nMpjZw9wj4H9OpmuqJNDvO,Lincoln; Newspaper,Phase2; MMC
+852,Main Line Wreck,newspaper clipping,primarySource,patched,nMpjZw9wj4H9OpmuqJNDQQ,,TrainWreck
+853,Hunter Cup,newspaper clipping,primarySource,patched,lsa6SzO3dXU4Am0aEZ8Emf,,
+854,INDIANS AT SCHOOL,newspaper clipping,primarySource,patched,lsa6SzO3dXU4Am0aEZ8ErB,Lincoln; Newspaper; Ponemah,Phase2
 856,"Lincoln Institution, school profile 1886 to 1908, with commentary",document,primarySource,patched,nMpjZw9wj4H9OpmuqJNDj0,Lincoln,
-864,The Philadelphia and Willistown Railroad Company,newspaper clipping,primarySource,patched,ubKAP947VvKgwKt8yjGqhN,,SPE
+857,"Antione Kabauser, death certificate",document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8F1L,Lincoln; Death; EH,Phase2
+855,Lizzie Spider,newspaper clipping,primarySource,patched,lsa6SzO3dXU4Am0aEZ8Exx,Lincoln; Newspaper,Phase2
+858,"Walter Wheelock, death certificate",document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8F87,Lincoln; Death; EH,Phase1
 862,Spread Eagle Post Office New Name,newspaper clipping,primarySource,patched,6xII3rbxPLEz402wMiNMZx,Lincoln,Phase2
-865,Sachse's Tales of Wayside Inns,newspaper clipping,primarySource,patched,ubKAP947VvKgwKt8yjGqrJ,,SPE; STR
-863,New building at Ponemah,newspaper clipping,primarySource,patched,4PGlZuQ6svgQ69K84DHZVd,Lincoln; Newspaper; Ponemah,Phase2
 861,Memories of the Spread Eagle Inn,newspaper clipping,primarySource,patched,nMpjZw9wj4H9OpmuqJNE7m,Lincoln; Newspaper,Phase2
+859,The Spread Eagle Inn,digitals images and text,historicalImage,patched,ubKAP947VvKgwKt8yjGqL1,Newspaper,SPE; Phase2
+860,Mary McHenry Cox purchases property in Strafford,newspaper clipping,primarySource,patched,nMpjZw9wj4H9OpmuqJNDvO,Lincoln; Newspaper,Phase2; MMC
+863,New building at Ponemah,newspaper clipping,primarySource,patched,4PGlZuQ6svgQ69K84DHZVd,Lincoln; Newspaper; Ponemah,Phase2
+865,Sachse's Tales of Wayside Inns,newspaper clipping,primarySource,patched,ubKAP947VvKgwKt8yjGqrJ,,SPE; STR
+864,The Philadelphia and Willistown Railroad Company,newspaper clipping,primarySource,patched,ubKAP947VvKgwKt8yjGqhN,,SPE
+866,Spread Eagle and Strafford Post Offices,newspaper clipping,primarySource,patched,ubKAP947VvKgwKt8yjGr6D,,SPE; STR
+867,Lincoln Institution Scholarships and Endowments,document,primarySource,patched,6xII3rbxPLEz402wMiNMgA,Lincoln; Scholarships,Phase1
 868,"Lincoln Institution Scholarship Finances
 
 Scholarships were funded either by an annual payment or",document,primarySource,patched,ubKAP947VvKgwKt8yjGrBB,Lincoln; Scholarships,Phase1
-866,Spread Eagle and Strafford Post Offices,newspaper clipping,primarySource,patched,ubKAP947VvKgwKt8yjGr6D,,SPE; STR
-869,Lincoln Institution Lifetime Membership,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8FMn,Lincoln; AnnualReport,Phase1
-870,The withdrawal of the Lincoln Institution from the Government Indian School scheme,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNEOI,Lincoln; AnnualReport,Phase2
-867,Lincoln Institution Scholarships and Endowments,document,primarySource,patched,6xII3rbxPLEz402wMiNMgA,Lincoln; Scholarships,Phase1
-873,A Description of the Interior of the Educational Home,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNEiw,Lincoln; EH,Phase1
-872,The Meade Farm,document,primarySource,patched,4PGlZuQ6svgQ69K84DHZnm,Lincoln,Phase1
 871,The Organizational Structure of the Lincoln Institution,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8FTZ,Lincoln,
+870,The withdrawal of the Lincoln Institution from the Government Indian School scheme,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNEOI,Lincoln; AnnualReport,Phase2
+872,The Meade Farm,document,primarySource,patched,4PGlZuQ6svgQ69K84DHZnm,Lincoln,Phase1
+869,Lincoln Institution Lifetime Membership,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8FMn,Lincoln; AnnualReport,Phase1
+873,A Description of the Interior of the Educational Home,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNEiw,Lincoln; EH,Phase1
+877,Employers of the Civil War Orphans,document,primarySource,patched,4PGlZuQ6svgQ69K84DHZyf,Lincoln,Phase1
+874,Testimonials concerning orphans employed by center-city Philadelphia Businesses,document,primarySource,patched,4PGlZuQ6svgQ69K84DHZqC,Lincoln; AnnualReport,Phase1
+876,"Entertainments at the Lincoln Institution, 1881",document,primarySource,patched,nMpjZw9wj4H9OpmuqJNF3a,Lincoln,Phase2
 914,"INDIANS AT HOME
 
 MRS. MARY McHENRY COX'S VISIT TO THE TWO LARGE SIOUX RESERVATIONS IN SOUTH DAKOTA",document,primarySource,patched,6xII3rbxPLEz402wMiNMzg,Lincoln; Newspaper,Phase2; MMC
-874,Testimonials concerning orphans employed by center-city Philadelphia Businesses,document,primarySource,patched,4PGlZuQ6svgQ69K84DHZqC,Lincoln; AnnualReport,Phase1
-877,Employers of the Civil War Orphans,document,primarySource,patched,4PGlZuQ6svgQ69K84DHZyf,Lincoln,Phase1
-879,Lengths of Stay at the Lincoln Institution,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNF7i,Lincoln,Phase2
-876,"Entertainments at the Lincoln Institution, 1881",document,primarySource,patched,nMpjZw9wj4H9OpmuqJNF3a,Lincoln,Phase2
 878,Valley Creek Industry,document,primarySource,patched,ubKAP947VvKgwKt8yjGrhT,,ValleyForge
 880,The 1899 Occupations of 319 Lincoln Institution Indian Boys,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNFI2,Lincoln,Phase2
 882,Accessing death records,document,primarySource,patched,ubKAP947VvKgwKt8yjGs6J,Lincoln,
-885,"Testimonial of Charles Williams, 1899-03-23",document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8FiF,Lincoln,Phase2
-884,Mary McHenry Cox letter,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNFSM,Lincoln,Phase2
-883,Superintendent Jackson statement,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8Fcb,Lincoln,Phase2
+879,Lengths of Stay at the Lincoln Institution,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNF7i,Lincoln,Phase2
 881,Accessing NARA Records online,document,primarySource,patched,ubKAP947VvKgwKt8yjGs1L,Lincoln,
-890,Noble Haigh Testimonials,document,primarySource,patched,ubKAP947VvKgwKt8yjGsmX,Lincoln; EH,Phase2
-888,"Letter from George Stout, 1899-03-18",letter,primarySource,patched,nMpjZw9wj4H9OpmuqJNFgo,Lincoln,Phase2
+883,Superintendent Jackson statement,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8Fcb,Lincoln,Phase2
+885,"Testimonial of Charles Williams, 1899-03-23",document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8FiF,Lincoln,Phase2
 887,"Testimonial of Salem Moses, 1899-08-22",document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8Fml,Lincoln,Phase2
+884,Mary McHenry Cox letter,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNFSM,Lincoln,Phase2
 886,"Testimonial of Fred Smith, 1899-08-24",document,primarySource,patched,6xII3rbxPLEz402wMiNNBD,Lincoln,Phase2
+888,"Letter from George Stout, 1899-03-18",letter,primarySource,patched,nMpjZw9wj4H9OpmuqJNFgo,Lincoln,Phase2
 889,Abram J. Smith Testimonials,document,primarySource,patched,4PGlZuQ6svgQ69K84DHa5v,Lincoln,Phase2
 892,John Butler Testimonial,document,primarySource,patched,4PGlZuQ6svgQ69K84DHaVK,Lincoln; EH,Phase2
-894,Melvin Stafford testimonial,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNG1S,Lincoln; EH,Phase2
-893,Thomas J. Roulard testimonial,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNFxK,Lincoln; EH,Phase2
+890,Noble Haigh Testimonials,document,primarySource,patched,ubKAP947VvKgwKt8yjGsmX,Lincoln; EH,Phase2
 891,David Peake Testimonial,document,primarySource,patched,4PGlZuQ6svgQ69K84DHaSu,Lincoln; EH,Phase2
-895,Elijah Wheelock Testimonial,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNGUM,Lincoln; EH,Phase2
+893,Thomas J. Roulard testimonial,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNFxK,Lincoln; EH,Phase2
 896,Joseph Twin Testimonial,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNGM6,Lincoln; EH,Phase2
-900,Visitors of Public Charities for Philadelphia County 1899 report,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8G9L,Lincoln; EH,Phase2
-899,J. Lewis Crew report to the Executive Committee of the Pennsylvania Society to Protect Children from,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNGQE,Lincoln; EH,Phase2
-898,Francis Cook Testimonial,document,primarySource,patched,ubKAP947VvKgwKt8yjGtXj,Lincoln; EH,Phase2
+895,Elijah Wheelock Testimonial,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNGUM,Lincoln; EH,Phase2
+894,Melvin Stafford testimonial,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNG1S,Lincoln; EH,Phase2
 897,Ephraim Budrow Testimonial,document,primarySource,patched,ubKAP947VvKgwKt8yjGtSl,Lincoln; EH,Phase2
-901,"PENNSYLVANIA REPORT OF THE BOARD OF PUBIC CHARITIES AND COMMITTEE ON LUNACY, 1895",document,primarySource,patched,nMpjZw9wj4H9OpmuqJNGt8,Lincoln; EH,Phase2
-905,"REPORT TO BOARD OF PUBLIC CHARITIES, 1884-10-05",document,primarySource,patched,4PGlZuQ6svgQ69K84DHar6,Lincoln; EH,Phase2
+898,Francis Cook Testimonial,document,primarySource,patched,ubKAP947VvKgwKt8yjGtXj,Lincoln; EH,Phase2
 902,"PENNSYLVANIA REPORT OF THE BOARD OF PUBIC CHARITIES AND COMMITTEE ON LUNACY, 1891",document,primarySource,patched,ubKAP947VvKgwKt8yjGtrb,Lincoln; EH,Phase2
-904,"REPORT OF BOARD OF PUBLIC CHARITIES, 1885-11-30",document,primarySource,patched,nMpjZw9wj4H9OpmuqJNH3S,Lincoln; EH,Phase2
+899,J. Lewis Crew report to the Executive Committee of the Pennsylvania Society to Protect Children from,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNGQE,Lincoln; EH,Phase2
+901,"PENNSYLVANIA REPORT OF THE BOARD OF PUBIC CHARITIES AND COMMITTEE ON LUNACY, 1895",document,primarySource,patched,nMpjZw9wj4H9OpmuqJNGt8,Lincoln; EH,Phase2
+900,Visitors of Public Charities for Philadelphia County 1899 report,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8G9L,Lincoln; EH,Phase2
 903,"REPORT OF BOARD OF PUBLIC CHARITIES, 1885",document,primarySource,patched,nMpjZw9wj4H9OpmuqJNGzK,Lincoln; EH,Phase2
-908,"City and State excerpt, March 16, 1899",document,primarySource,patched,nMpjZw9wj4H9OpmuqJNHO6,Lincoln; Newspaper; EH,Phase2
-907,"City and State excerpt March 9, 1899, p. 159 - AN UNFIT SUPERINTENDENT",document,primarySource,patched,nMpjZw9wj4H9OpmuqJNHSE,Lincoln; Newspaper; EH,Phase2
-909,"City and State excerpt March 16, 1899 - “THE EDUCATIONAL HOME” CONTINUED",document,primarySource,patched,4PGlZuQ6svgQ69K84DHax9,Lincoln; Newspaper; EH,Phase2
-910,"City and State excerpt March 16, 1899, p. 178",document,primarySource,patched,nMpjZw9wj4H9OpmuqJNHgg,Lincoln; Newspaper; EH,Phase2
 906,"City and State excerpt February 23, 1899, p. 121",document,primarySource,patched,4PGlZuQ6svgQ69K84DHauj,Lincoln; Newspaper; EH,Phase2
-911,"City and State excerpt March 23, 1899, p. 192 - THE EDUCATIONAL HOME - CONTRADICTORY STATEMENTS",document,primarySource,patched,4PGlZuQ6svgQ69K84DHb6p,Lincoln; Newspaper; EH,Phase2
+904,"REPORT OF BOARD OF PUBLIC CHARITIES, 1885-11-30",document,primarySource,patched,nMpjZw9wj4H9OpmuqJNH3S,Lincoln; EH,Phase2
+905,"REPORT TO BOARD OF PUBLIC CHARITIES, 1884-10-05",document,primarySource,patched,4PGlZuQ6svgQ69K84DHar6,Lincoln; EH,Phase2
+907,"City and State excerpt March 9, 1899, p. 159 - AN UNFIT SUPERINTENDENT",document,primarySource,patched,nMpjZw9wj4H9OpmuqJNHSE,Lincoln; Newspaper; EH,Phase2
+908,"City and State excerpt, March 16, 1899",document,primarySource,patched,nMpjZw9wj4H9OpmuqJNHO6,Lincoln; Newspaper; EH,Phase2
+910,"City and State excerpt March 16, 1899, p. 178",document,primarySource,patched,nMpjZw9wj4H9OpmuqJNHgg,Lincoln; Newspaper; EH,Phase2
 912,"City and State excerpt March 30, 1899, p. 212 - 213  - DR. FRAZER AND THE EDUCATIONAL HOME",document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8GP9,Lincoln; Newspaper; EH,Phase2
+911,"City and State excerpt March 23, 1899, p. 192 - THE EDUCATIONAL HOME - CONTRADICTORY STATEMENTS",document,primarySource,patched,4PGlZuQ6svgQ69K84DHb6p,Lincoln; Newspaper; EH,Phase2
+909,"City and State excerpt March 16, 1899 - “THE EDUCATIONAL HOME” CONTINUED",document,primarySource,patched,4PGlZuQ6svgQ69K84DHax9,Lincoln; Newspaper; EH,Phase2
+917,Training for Indian boys at the Educational Home,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNI1K,Lincoln; EH,Phase2
 916,"Letter from David Peake to Commissioner W. A. Jones, 1899-02-10",letter,primarySource,patched,ubKAP947VvKgwKt8yjGuwf,Lincoln; EH,Phase2
 915,"Documents concerning the Education Home, 1895 complaints",document,primarySource,patched,ubKAP947VvKgwKt8yjGuNt,Lincoln; EH,Phase2
-913,"City and State excerpt March 30, 1899, p. 216 - 217 - TO THE EDITOR OF CITY AND STATE",document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8GRP,Lincoln; Newspaper; EH,Phase2
-917,Training for Indian boys at the Educational Home,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNI1K,Lincoln; EH,Phase2
 918,"Henry Laussat Gayelin, 1857 - 1921",document,primarySource,patched,6xII3rbxPLEz402wMiNOEr,Lincoln,
+913,"City and State excerpt March 30, 1899, p. 216 - 217 - TO THE EDITOR OF CITY AND STATE",document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8GRP,Lincoln; Newspaper; EH,Phase2
 919,Theresa Danay,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8GaR,Lincoln,Phase3
 921,"THE INDIAN CHILDREN
 A NEW SUMMER RESIDENCE FOR THE DUSKY MAIDENS
 A SPLENDID LOCATION",newspaer article,primarySource,patched,lsa6SzO3dXU4Am0aEZ8GhD,Lincoln; Newspaper,Phase2
-920,Roberts family members moving to Chester County,document,primarySource,patched,6xII3rbxPLEz402wMiNOGd,,Roberts
 923,The Indian Girls at the Ponemah Celebrate the Fourth,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGvQT,Lincoln; Newspaper,Phase2
 922,Ponemah event,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ8Glj,Lincoln; Newspaper,Phase2
-926,An Indian Tea Party,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ8Gtd,Lincoln; Newspaper,Phase2
+920,Roberts family members moving to Chester County,document,primarySource,patched,6xII3rbxPLEz402wMiNOGd,,Roberts
 924,Indian Girls at Their New Home,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiNOQO,Lincoln; Newspaper,Phase2
 925,"THE INDIAN TEA PARTY
 
 A Pleasant Time with the Indian Girls at Ponemah",newspaper article,primarySource,patched,6xII3rbxPLEz402wMiNOSA,Lincoln; Newspaper,Phase2
+926,An Indian Tea Party,newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ8Gtd,Lincoln; Newspaper,Phase2
 927,An Indian Tea Party,newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHbs0,Lincoln; Newspaper,Phase2
-930,"INDIAN VISITORS
-A Small Band of Noble Red Men in Philadelphia
-ON THEIR WAY TO THE COUNCIL",newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ8Gy9,Lincoln; Newspaper,Phase2
-931,Hugg Statement,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJNIUE,Lincoln; Newspaper,Phase2
+928,An Indian Tea Party,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGvaP,Lincoln; Newspaper,Phase2
 929,"GREAT CHIEFS IN TOWN
 A BAND OF SIOUX INDIANS COME ON AN ERRAND OF PEACE
 SIGHT-SEEING AND SPEECH-MA",newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGvhr,Lincoln; Newspaper,Phase2
-928,An Indian Tea Party,newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGvaP,Lincoln; Newspaper,Phase2
-936,Samuel Roberts of Pikeland,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNJ3K,,Roberts
 933,"INDIANS WELL TREATED
 
 Former Superintendent Lewis Refutes Adverse Criticism",newspaper article,primarySource,patched,ubKAP947VvKgwKt8yjGvrn,Lincoln; Newspaper,Phase2
-935,Fulling Mills in Chester County tax returns,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNImo,,Fulling
-934,Thomas George deeds and tax returns in Chester County,document,primarySource,patched,4PGlZuQ6svgQ69K84DHc5J,,Roberts
+931,Hugg Statement,newspaper article,primarySource,patched,nMpjZw9wj4H9OpmuqJNIUE,Lincoln; Newspaper,Phase2
+930,"INDIAN VISITORS
+A Small Band of Noble Red Men in Philadelphia
+ON THEIR WAY TO THE COUNCIL",newspaper article,primarySource,patched,lsa6SzO3dXU4Am0aEZ8Gy9,Lincoln; Newspaper,Phase2
 932,"HOMESICK INDIAN MAIDENS
 
 SEVEN DAUGHTERS OF BRAVES PINING FOR THEIR HOMES ON THE PLAINS",newspaper article,primarySource,patched,4PGlZuQ6svgQ69K84DHc0T,Lincoln; Newspaper,Phase2
-938,U. S. Sanitary Commission,document,primarySource,patched,6xII3rbxPLEz402wMiNP8k,Lincoln,
-941,References and Notes for the article 'The Lincoln Institution',document,primarySource,patched,BUwEA3l7w0Brg0vJAn8ZqJ,Lincoln,
+934,Thomas George deeds and tax returns in Chester County,document,primarySource,patched,4PGlZuQ6svgQ69K84DHc5J,,Roberts
 937,Samuel Roberts of Charlestown,document,primarySource,patched,6xII3rbxPLEz402wMiNP5C,,Roberts
-940,The Lincoln Institution,book,researchArticle,patched,4PGlZuQ6svgQ69K84DHcIc,Lincoln,
+936,Samuel Roberts of Pikeland,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNJ3K,,Roberts
+938,U. S. Sanitary Commission,document,primarySource,patched,6xII3rbxPLEz402wMiNP8k,Lincoln,
+935,Fulling Mills in Chester County tax returns,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNImo,,Fulling
+942,Wichita Indians,photo,historicalImage,patched,LfEfsB5XP0NjfrgVDILanl,Lincoln,Phase 2
+941,References and Notes for the article 'The Lincoln Institution',document,primarySource,patched,BUwEA3l7w0Brg0vJAn8ZqJ,Lincoln,
 939,Mary McHenry Biography,newspaper article,primarySource,patched,6xII3rbxPLEz402wMiNPAW,Lincoln,
+943,"My People, The Sioux",Book,researchArticle,patched,ipYry1VgJa0KZ1LTMpsaEL,Lincoln,Phase2
+940,The Lincoln Institution,book,researchArticle,patched,4PGlZuQ6svgQ69K84DHcIc,Lincoln,
 945,"Easttown, Old in History, Young in Spirit, 1704 - 2004",document,primarySource,patched,9L6y2VmREfArO1LqZquvpE,EastT,
 946,Introduction,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNJeU,EastT,
-942,Wichita Indians,photo,historicalImage,patched,LfEfsB5XP0NjfrgVDILanl,Lincoln,Phase 2
-943,"My People, The Sioux",Book,researchArticle,patched,ipYry1VgJa0KZ1LTMpsaEL,Lincoln,Phase2
 947,"Chapter 1 In the Beginning, 1681 - 1704",document,primarySource,patched,nMpjZw9wj4H9OpmuqJNJoo,EastT,
 948,Chapter 2: Colonial Period,document,primarySource,patched,4PGlZuQ6svgQ69K84DHcal,EastT,
-951,Chapter 5: Turnpike Period,document,primarySource,patched,ubKAP947VvKgwKt8yjH0YP,EastT,
 949,Chapter 3: Pre-Revolutionary Period,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8JRh,EastT,
+951,Chapter 5: Turnpike Period,document,primarySource,patched,ubKAP947VvKgwKt8yjH0YP,EastT,
 952,Chapter 6: Beginning of the Local Industrial and Educational Period,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNK1C,EastT,
-950,Chapter 4: Revolution and Early National Period,document,primarySource,patched,6xII3rbxPLEz402wMiNPfZ,EastT,
-953,Chapter 7: Civil War and Reconstruction,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNK5K,EastT,
 954,Chapter 8: The Centennial Period,document,primarySource,patched,4PGlZuQ6svgQ69K84DHcrh,EastT,
-957,"Chapter 11: Depression, Defense. and Development",document,primarySource,patched,6xII3rbxPLEz402wMiNPss,EastT,
+953,Chapter 7: Civil War and Reconstruction,document,primarySource,patched,nMpjZw9wj4H9OpmuqJNK5K,EastT,
+950,Chapter 4: Revolution and Early National Period,document,primarySource,patched,6xII3rbxPLEz402wMiNPfZ,EastT,
 955,Chapter 9: Beginning of the Suburban era,document,primarySource,patched,6xII3rbxPLEz402wMiNPoR,EastT,
+958,Chapter 12: Recording Recent Events,document,primarySource,patched,4PGlZuQ6svgQ69K84DHcvK,EastT,
+959,Sources,document,primarySource,patched,6xII3rbxPLEz402wMiNPwQ,EastT,
 956,Chapter 10: Rising of the Automobile Age,document,primarySource,patched,lsa6SzO3dXU4Am0aEZ8Jcz,EastT,
+957,"Chapter 11: Depression, Defense. and Development",document,primarySource,patched,6xII3rbxPLEz402wMiNPss,EastT,
+961,The Welsh Tract and Early Easttown Deeds,document,primarySource,patched,4PGlZuQ6svgQ69K84DHd8d,EastT,
 960,Index by Joyce A. Post,document,primarySource,patched,4PGlZuQ6svgQ69K84DHd2a,EastT,
 962,Lucy Sampson Photos,document,primarySource,patched,ubKAP947VvKgwKt8yjH1Jb,,LSam
-958,Chapter 12: Recording Recent Events,document,primarySource,patched,4PGlZuQ6svgQ69K84DHcvK,EastT,
-961,The Welsh Tract and Early Easttown Deeds,document,primarySource,patched,4PGlZuQ6svgQ69K84DHd8d,EastT,
-959,Sources,document,primarySource,patched,6xII3rbxPLEz402wMiNPwQ,EastT,

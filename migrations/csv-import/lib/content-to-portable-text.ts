@@ -150,7 +150,7 @@ export function stripHtmlToPlainText(value: string): string {
 function usableAlt(alt: string | null | undefined): string | undefined {
 	const cleaned = cleanString(alt)
 	if (!cleaned) return undefined
-	if (cleaned.toLowerCase() === 'image not found') return undefined
+	if (cleaned.toLowerCase().includes('image not found')) return undefined
 	return cleaned
 }
 

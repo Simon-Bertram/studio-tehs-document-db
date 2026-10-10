@@ -24,8 +24,8 @@
 Report of Board of Managers, 1896 |
 | 776 | List of untranscribed documents related to the 
 Lincoln Institute |
-| 779 | INDIAN BOYS MUST NOT BE MALTREATED |
 | 777 | MAY HAVE TO CLOSE |
+| 779 | INDIAN BOYS MUST NOT BE MALTREATED |
 | 780 | Educational Home Not Well Conducted |
 | 725 | Indians at Spread Eagle |
 | 726 | Indian Girl Pupils |
@@ -34,135 +34,135 @@ Lincoln Institute |
 
 (Daniel La France) |
 | 732 | The Lincoln Institute Appropriation |
-| 734 | Indian Girls at Eagle |
 | 735 | LINCOLN SCHOOL NOT SECTARIAN |
+| 734 | Indian Girls at Eagle |
 | 741 | LINCOLN INSTITUTE |
 | 744 | LAST ANNUAL MEETING OF THE LINCOLN SCHOOL |
 | 746 | Funds for the Lincoln Institute |
-| 750 | BEARING GOOD FRUIT |
+| 748 | CORNER-STONE LAID |
 | 749 | INSTITUTIONS AFFECTED |
 | 747 | THE EDUCATIONAL HOME |
-| 748 | CORNER-STONE LAID |
+| 750 | BEARING GOOD FRUIT |
 | 751 | THE TURBULENT INDIANS |
 | 764 | Native Americans at the Lincoln Institute, Philadelphia from the 1900 census |
-| 770 | Report of the Admission Committee from the Annual Report 
-of the Educational Home, 1888 |
 | 768 | List of Indian Pupils in the Educational Home, 1884 - 1887 |
 | 767 | Sixteenth Annual Report of The Educational Home |
-| 771 | Report of the TREASURER OF THE BOARD OF COUNCIL from the Annual Report 
-of the Educational Home, 18 |
 | 773 | WORK DONE IN THE INSTITUTION IN 1887 
 from the Annual Report of the Educational Home, 1888 |
-| 775 | The Indian Helper |
 | 772 | Report of the TREASURER OF THE EDUCATIONAL HOME from the Annual Report 
 of the Educational Home, 18 |
+| 771 | Report of the TREASURER OF THE BOARD OF COUNCIL from the Annual Report 
+of the Educational Home, 18 |
+| 770 | Report of the Admission Committee from the Annual Report 
+of the Educational Home, 1888 |
+| 775 | The Indian Helper |
 | 795 | Indians Singing Pinafore |
 | 797 | PONEMAH |
 | 798 | A CONSIGNMENT OF SIOUX BRAVES AND PAPOOSES AT SCHOOL |
-| 803 | Abraham Neck - death information |
 | 802 | Angie Jordan - death information |
-| 806 | Louisa Farnham - death information |
-| 804 | John Robinson Longwolf - death information |
 | 805 | Hattie Charko - death information |
+| 804 | John Robinson Longwolf - death information |
 | 807 | Frankie Bear - death information |
+| 806 | Louisa Farnham - death information |
 | 809 | Charles Fisher - death information |
 | 808 | Samuel Porter - death information |
 | 810 | Charlie Hill - death information |
 | 811 | Henry Irondoor - death information |
+| 812 | Edward Moore - death information |
 | 813 | Nettie Roubideaux - death information |
 | 814 | Sophia Smith - death information |
 | 815 | John Frenchman - death information |
-| 812 | Edward Moore - death information |
-| 816 | Thomas Billings - death information |
 | 817 | Hattie Blackchief - death information |
+| 816 | Thomas Billings - death information |
+| 803 | Abraham Neck - death information |
 | 818 | Warren Clute - death information |
 | 819 | Levi Charles - death information |
 | 820 | Edward Bucktooth - death information |
 | 821 | William Abrams - death information |
-| 824 | Thomas Deer - death information |
 | 823 | Ella Fisher - death information |
-| 825 | Annie Afraid of Bear - death information |
+| 824 | Thomas Deer - death information |
 | 826 | Harold G. B. Haines - death information |
-| 829 | Joseph Norewas - death information |
-| 830 | Selina Thompson - death information |
-| 828 | Mattie Nason - death information |
+| 825 | Annie Afraid of Bear - death information |
 | 827 | Henry Peak - death information |
+| 829 | Joseph Norewas - death information |
+| 828 | Mattie Nason - death information |
+| 830 | Selina Thompson - death information |
 | 831 | Jennie Ironnest - death information |
-| 834 | Fanny Kirk - death information |
 | 832 | Sophia Dahwadates - death information |
-| 835 | Etta Springer - death information |
+| 834 | Fanny Kirk - death information |
 | 836 | Joseph Norcross - death information |
-| 855 | Lizzie Spider |
+| 835 | Etta Springer - death information |
 | 854 | INDIANS AT SCHOOL |
 | 857 | Antione Kabauser, death certificate |
+| 855 | Lizzie Spider |
+| 862 | Spread Eagle Post Office New Name |
+| 861 | Memories of the Spread Eagle Inn |
 | 859 | The Spread Eagle Inn |
 | 860 | Mary McHenry Cox purchases property in Strafford |
-| 862 | Spread Eagle Post Office New Name |
 | 863 | New building at Ponemah |
-| 861 | Memories of the Spread Eagle Inn |
 | 870 | The withdrawal of the Lincoln Institution from the Government Indian School scheme |
+| 876 | Entertainments at the Lincoln Institution, 1881 |
 | 914 | INDIANS AT HOME
 
 MRS. MARY McHENRY COX'S VISIT TO THE TWO LARGE SIOUX RESERVATIONS IN SOUTH DAKOTA |
-| 879 | Lengths of Stay at the Lincoln Institution |
-| 876 | Entertainments at the Lincoln Institution, 1881 |
 | 880 | The 1899 Occupations of 319 Lincoln Institution Indian Boys |
-| 885 | Testimonial of Charles Williams, 1899-03-23 |
-| 884 | Mary McHenry Cox letter |
+| 879 | Lengths of Stay at the Lincoln Institution |
 | 883 | Superintendent Jackson statement |
-| 890 | Noble Haigh Testimonials |
-| 888 | Letter from George Stout, 1899-03-18 |
+| 885 | Testimonial of Charles Williams, 1899-03-23 |
 | 887 | Testimonial of Salem Moses, 1899-08-22 |
+| 884 | Mary McHenry Cox letter |
 | 886 | Testimonial of Fred Smith, 1899-08-24 |
+| 888 | Letter from George Stout, 1899-03-18 |
 | 889 | Abram J. Smith Testimonials |
 | 892 | John Butler Testimonial |
-| 894 | Melvin Stafford testimonial |
-| 893 | Thomas J. Roulard testimonial |
+| 890 | Noble Haigh Testimonials |
 | 891 | David Peake Testimonial |
-| 895 | Elijah Wheelock Testimonial |
+| 893 | Thomas J. Roulard testimonial |
 | 896 | Joseph Twin Testimonial |
-| 900 | Visitors of Public Charities for Philadelphia County 1899 report |
-| 899 | J. Lewis Crew report to the Executive Committee of the Pennsylvania Society to Protect Children from |
-| 898 | Francis Cook Testimonial |
+| 895 | Elijah Wheelock Testimonial |
+| 894 | Melvin Stafford testimonial |
 | 897 | Ephraim Budrow Testimonial |
-| 901 | PENNSYLVANIA REPORT OF THE BOARD OF PUBIC CHARITIES AND COMMITTEE ON LUNACY, 1895 |
-| 905 | REPORT TO BOARD OF PUBLIC CHARITIES, 1884-10-05 |
+| 898 | Francis Cook Testimonial |
 | 902 | PENNSYLVANIA REPORT OF THE BOARD OF PUBIC CHARITIES AND COMMITTEE ON LUNACY, 1891 |
-| 904 | REPORT OF BOARD OF PUBLIC CHARITIES, 1885-11-30 |
+| 899 | J. Lewis Crew report to the Executive Committee of the Pennsylvania Society to Protect Children from |
+| 901 | PENNSYLVANIA REPORT OF THE BOARD OF PUBIC CHARITIES AND COMMITTEE ON LUNACY, 1895 |
+| 900 | Visitors of Public Charities for Philadelphia County 1899 report |
 | 903 | REPORT OF BOARD OF PUBLIC CHARITIES, 1885 |
-| 908 | City and State excerpt, March 16, 1899 |
-| 907 | City and State excerpt March 9, 1899, p. 159 - AN UNFIT SUPERINTENDENT |
-| 909 | City and State excerpt March 16, 1899 - “THE EDUCATIONAL HOME” CONTINUED |
-| 910 | City and State excerpt March 16, 1899, p. 178 |
 | 906 | City and State excerpt February 23, 1899, p. 121 |
-| 911 | City and State excerpt March 23, 1899, p. 192 - THE EDUCATIONAL HOME - CONTRADICTORY STATEMENTS |
+| 904 | REPORT OF BOARD OF PUBLIC CHARITIES, 1885-11-30 |
+| 905 | REPORT TO BOARD OF PUBLIC CHARITIES, 1884-10-05 |
+| 907 | City and State excerpt March 9, 1899, p. 159 - AN UNFIT SUPERINTENDENT |
+| 908 | City and State excerpt, March 16, 1899 |
+| 910 | City and State excerpt March 16, 1899, p. 178 |
 | 912 | City and State excerpt March 30, 1899, p. 212 - 213  - DR. FRAZER AND THE EDUCATIONAL HOME |
+| 911 | City and State excerpt March 23, 1899, p. 192 - THE EDUCATIONAL HOME - CONTRADICTORY STATEMENTS |
+| 909 | City and State excerpt March 16, 1899 - “THE EDUCATIONAL HOME” CONTINUED |
+| 917 | Training for Indian boys at the Educational Home |
 | 916 | Letter from David Peake to Commissioner W. A. Jones, 1899-02-10 |
 | 915 | Documents concerning the Education Home, 1895 complaints |
 | 913 | City and State excerpt March 30, 1899, p. 216 - 217 - TO THE EDITOR OF CITY AND STATE |
-| 917 | Training for Indian boys at the Educational Home |
 | 921 | THE INDIAN CHILDREN
 A NEW SUMMER RESIDENCE FOR THE DUSKY MAIDENS
 A SPLENDID LOCATION |
 | 923 | The Indian Girls at the Ponemah Celebrate the Fourth |
 | 922 | Ponemah event |
-| 926 | An Indian Tea Party |
 | 924 | Indian Girls at Their New Home |
 | 925 | THE INDIAN TEA PARTY
 
 A Pleasant Time with the Indian Girls at Ponemah |
+| 926 | An Indian Tea Party |
 | 927 | An Indian Tea Party |
-| 930 | INDIAN VISITORS
-A Small Band of Noble Red Men in Philadelphia
-ON THEIR WAY TO THE COUNCIL |
-| 931 | Hugg Statement |
+| 928 | An Indian Tea Party |
 | 929 | GREAT CHIEFS IN TOWN
 A BAND OF SIOUX INDIANS COME ON AN ERRAND OF PEACE
 SIGHT-SEEING AND SPEECH-MA |
-| 928 | An Indian Tea Party |
 | 933 | INDIANS WELL TREATED
 
 Former Superintendent Lewis Refutes Adverse Criticism |
+| 931 | Hugg Statement |
+| 930 | INDIAN VISITORS
+A Small Band of Noble Red Men in Philadelphia
+ON THEIR WAY TO THE COUNCIL |
 | 932 | HOMESICK INDIAN MAIDENS
 
 SEVEN DAUGHTERS OF BRAVES PINING FOR THEIR HOMES ON THE PLAINS |
@@ -172,123 +172,123 @@ SEVEN DAUGHTERS OF BRAVES PINING FOR THEIR HOMES ON THE PLAINS |
 
 | Archive ID | Title |
 | --- | --- |
+| 39 | Isaacher Evans&rsquo; mortgage |
 | 38 | Joshua Evans&rsquo; Chair |
 | 37 | Biography of Randal Evans |
-| 39 | Isaacher Evans&rsquo; mortgage |
+| 45 | John D. Evans funeral |
 | 43 | John D. Evans Estate |
 | 44 | John D. Evans |
-| 45 | John D. Evans funeral |
-| 48 | Joshua Evans death |
 | 47 | John D. Evans obituary |
 | 46 | John D. Evans Obituary |
-| 50 | Randal Evans House Sale |
 | 49 | Randal Evans Creditors |
+| 50 | Randal Evans House Sale |
+| 48 | Joshua Evans death |
 | 63 | Hugh Steen Personal Property at Public Sale. |
-| 92 | Paoli Hardware Store |
 | 91 | Clemmans - Johnston Marriage |
+| 92 | Paoli Hardware Store |
+| 106 | Paoli restaurant hit by lightning, burns (Charlie Brown restaurant) |
 | 107 | Workers clear wreckage of derailed Conrail cars |
 | 108 | Train Wreck&rsquo;s Timely Lesson |
-| 106 | Paoli restaurant hit by lightning, burns (Charlie Brown restaurant) |
-| 110 | Amtrak Derailment near Paoli laid to loose railroad bed ballast |
 | 109 | PRR Resumes Service to Paoli, Wreck, cleared. |
+| 110 | Amtrak Derailment near Paoli laid to loose railroad bed ballast |
 | 111 | Paoli Line Cleared After Derailment |
 | 113 | Paoli Shopping Center Blaze Destroys Three Stores |
 | 112 | Paoli Shopping Center Fire Ruins Five Stores |
 | 124 | Black Bear Inn sale |
-| 127 | Black Bear Inn sale |
 | 125 | Black Bear Inn sale |
 | 126 | Black Bear Inn sale |
-| 128 | Black Bear Inn and land sale |
-| 130 | Black Bear Inn and land for sale |
 | 129 | General Jackson Inn |
+| 127 | Black Bear Inn sale |
+| 130 | Black Bear Inn and land for sale |
+| 128 | Black Bear Inn and land sale |
 | 156 | Randall Evans Railroad Property for Rent |
 | 269 | Years Change Paoli Station |
 | 306 | Suburban & Summer Homes |
 | 326 | The Steel Tracks of the Pennsylvania Railroad |
 | 327 | STRAIGHTENING THE TRACK |
-| 329 | (National Guard Inspection) |
-| 330 | (Deaths at Paoli) |
 | 328 | (Green Tree) |
 | 331 | PRR - Paoli to Eagle |
+| 329 | (National Guard Inspection) |
+| 330 | (Deaths at Paoli) |
 | 332 | PRR - Deaths at Paoli |
 | 333 | Straightening the Railroads |
-| 334 | (Malvern &amp; Green Tree) |
 | 336 | STRAIGHTENING THE TRACK |
+| 334 | (Malvern &amp; Green Tree) |
 | 389 | P.R.R. must pay $75,000 |
 
 ### Phase1 (32)
 
 | Archive ID | Title |
 | --- | --- |
+| 784 | The First Annual Report of the Managers of the "Lincoln Institution" |
 | 785 | Items from the Superintendent of the Soldiers Orphans' Schools,
 Reports 1881 to 1885 |
-| 784 | The First Annual Report of the Managers of the "Lincoln Institution" |
 | 791 | TWELFTH ANNUAL MEETING OF THE LINCOLN INSTITUTION – REPORTS AND ELECTION OF OFFICERS – ADDRESSES |
 | 792 | The Orphans Plaints |
-| 796 | Another Vindication |
 | 793 | THE LINCOLN BOYS |
 | 794 | THE LINCOLN HOME INVESTIGATION |
-| 799 | BOYS PADDLED AT THE LINCOLN HOME |
+| 796 | Another Vindication |
 | 800 | REPORT OF THE COMMITTEE appointed by the Managers of the Lincoln Institution to investigate the char |
+| 799 | BOYS PADDLED AT THE LINCOLN HOME |
 | 833 | Woodlands Cemetery |
-| 839 | Armond Wood - death information |
 | 837 | An Analysis of Soldiers Orphan's Deaths at the Lincoln Institution |
-| 838 | Albert Williams - death information |
+| 839 | Armond Wood - death information |
 | 842 | John Hoopes - death information |
+| 838 | Albert Williams - death information |
 | 841 | Jeremiah Drexel - death information |
-| 844 | Joseph Schneider - death information |
 | 843 | John Leslie - death information |
+| 846 | Thomas Cummings - death information |
+| 847 | Thomas Gordon - death information |
 | 845 | Robert Calhoun - death information |
+| 844 | Joseph Schneider - death information |
+| 848 | William Brown - death information |
 | 849 | William Rodgers - death information |
 | 850 | Samuel Richie - death information |
-| 848 | William Brown - death information |
-| 847 | Thomas Gordon - death information |
-| 846 | Thomas Cummings - death information |
 | 851 | Albert Perkenpine - death information |
 | 858 | Walter Wheelock, death certificate |
+| 867 | Lincoln Institution Scholarships and Endowments |
 | 868 | Lincoln Institution Scholarship Finances
 
 Scholarships were funded either by an annual payment or |
-| 869 | Lincoln Institution Lifetime Membership |
-| 867 | Lincoln Institution Scholarships and Endowments |
-| 873 | A Description of the Interior of the Educational Home |
 | 872 | The Meade Farm |
-| 874 | Testimonials concerning orphans employed by center-city Philadelphia Businesses |
+| 869 | Lincoln Institution Lifetime Membership |
+| 873 | A Description of the Interior of the Educational Home |
 | 877 | Employers of the Civil War Orphans |
+| 874 | Testimonials concerning orphans employed by center-city Philadelphia Businesses |
 
 ### JWH (30)
 
 | Archive ID | Title |
 | --- | --- |
-| 8 | Steuben Quest is Vindicated |
 | 9 | 2 Are Honored For Rescue of Steuben House |
+| 8 | Steuben Quest is Vindicated |
 | 10 | Mansion House hotel a Historic Building Saved |
 | 11 | Mansion House hotel - Restoring Old Hospital |
 | 662 | License to Keep Tavern in House |
-| 665 | Schuylkill Township citizens recommend Inn or Tavern |
 | 666 | Schuylkill Township citizens recommend Inn or Tavern |
+| 665 | Schuylkill Township citizens recommend Inn or Tavern |
 | 667 | Schuylkill Township citizens recommend Tavern House |
 | 668 | Schuylkill Township citizens recommend Tavern House |
-| 669 | Seeking License to Keep Tavern in House |
 | 670 | Apply for License to Keep an Inn |
 | 671 | Valley Forge Hotel License - Hoy |
+| 669 | Seeking License to Keep Tavern in House |
+| 672 | Hoy in charge of Valley Forge Hotel |
 | 673 | Valley Forge Hotel |
 | 675 | Valley Forge Hotel |
-| 672 | Hoy in charge of Valley Forge Hotel |
-| 674 | Valley Forge Hotel Affray [Brawl] |
 | 676 | Valley Forge Hotel |
-| 680 | Sale of Hotel Property |
+| 674 | Valley Forge Hotel Affray [Brawl] |
 | 677 | Valley Forge Hotel |
 | 678 | Valley Forge Hotel |
-| 679 | Sale of Hotel Property |
 | 681 | Hoy to Remove to Valley Forge Hotel |
+| 679 | Sale of Hotel Property |
+| 680 | Sale of Hotel Property |
 | 682 | Hoy to Take Charge Mansion House |
-| 684 | Hoy Making Improvements Mansion House |
 | 683 | Hoy to Take Charge Mansion House |
+| 684 | Hoy Making Improvements Mansion House |
 | 685 | First Liquor License in Chester County |
+| 689 | Mansion House at Valley Forge |
 | 690 | Mansion House at Valley Forge |
 | 688 | Mansion House at Valley Forge |
-| 689 | Mansion House at Valley Forge |
 | 691 | Mansion House at Valley Forge |
 
 ### MROB (30)
@@ -297,32 +297,32 @@ Scholarships were funded either by an annual payment or |
 | --- | --- |
 | 283 | Great grandparents of Mary Roberts (nee) Walker) |
 | 284 | Mary Roberts diary - Deaths: 1802 - 1850 |
-| 286 | Mary Roberts diary - Deaths: 1812 - 1813 |
 | 285 | Mary Pugh obituary |
+| 286 | Mary Roberts diary - Deaths: 1812 - 1813 |
+| 288 | Mary Roberts diary, Deaths:1837 |
 | 287 | Mary Roberts diary - Deaths: 1835 - 1837 |
+| 289 | Mary Roberts diary, Deaths: 1838 - 1839 |
 | 290 | Mary Roberts diary, Deaths: 1839 - 1840 |
 | 291 | Mary Roberts diary, Deaths: 1841 |
-| 289 | Mary Roberts diary, Deaths: 1838 - 1839 |
-| 288 | Mary Roberts diary, Deaths:1837 |
 | 292 | Mary Roberts diary, Deaths: 1841 |
-| 294 | Mary Roberts diary, Deaths: 1843 - 1844 |
 | 293 | Mary Roberts diary, Deaths: 1841 - 1843 |
+| 294 | Mary Roberts diary, Deaths: 1843 - 1844 |
 | 295 | Mary Roberts diary, Deaths: 1844 |
 | 296 | Mary Roberts diary, Deaths: 1844 - 1845 |
-| 298 | Mary Roberts diary, Deaths: 1847 - 1848 |
-| 301 | Mary Roberts diary, Deaths: 1849 |
-| 300 | Mary Roberts diary, Deaths: 1848 - 1849 |
-| 299 | Mary Roberts diary, Deaths: 1847 - 1848 |
 | 297 | Mary Roberts diary, Deaths: 1846 - 1847 |
+| 298 | Mary Roberts diary, Deaths: 1847 - 1848 |
+| 299 | Mary Roberts diary, Deaths: 1847 - 1848 |
+| 300 | Mary Roberts diary, Deaths: 1848 - 1849 |
+| 301 | Mary Roberts diary, Deaths: 1849 |
 | 302 | Mary Roberts diary, Deaths: 1849 |
 | 303 | Mary Roberts diary, Deaths: 1849 |
-| 305 | Mary Roberts diary, Family History, Deaths: 1850 - 1852 |
 | 304 | Mary Roberts diary, Deaths: 1850 |
+| 305 | Mary Roberts diary, Family History, Deaths: 1850 - 1852 |
 | 362 | Mary Roberts Diary |
 | 379 | Roberts Court Cases |
 | 380 | Lewis W. Roberts (1813 - 1874) |
-| 383 | Stephen Roberts (1817 - 1852) |
 | 384 | William Roberts (1812 - 1889) |
+| 383 | Stephen Roberts (1817 - 1852) |
 | 387 | Floods mentioned in the Mary Roberts diary |
 | 393 | Background to the Mary Roberts diary |
 
@@ -330,52 +330,52 @@ Scholarships were funded either by an annual payment or |
 
 | Archive ID | Title |
 | --- | --- |
-| 172 | PRR - Straightening the Road |
 | 173 | PRR and Latch dispute in court |
+| 172 | PRR - Straightening the Road |
 | 174 | Devon Station improvement |
 | 179 | Richard Megowen land in Tredyffrin for sale |
 | 269 | Years Change Paoli Station |
-| 274 | Petition for a license for the Eagle Hotel |
 | 273 | Petition for a license for the Eagle Hotel |
+| 274 | Petition for a license for the Eagle Hotel |
 | 275 | Petition for a license for the Eagle Hotel |
 | 276 | Petition for a license for the Eagle Hotel |
 | 277 | Petition for a license for the Eagle Hotel |
 | 306 | Suburban & Summer Homes |
+| 307 | Railroad Bridges in Green Tree and Malvern |
 | 309 | Daylesford |
 | 310 | Richard Graham Land Purchases and Sales |
-| 307 | Railroad Bridges in Green Tree and Malvern |
 | 321 | The Stop at Daylesford |
 | 326 | The Steel Tracks of the Pennsylvania Railroad |
 | 327 | STRAIGHTENING THE TRACK |
-| 330 | (Deaths at Paoli) |
 | 328 | (Green Tree) |
 | 331 | PRR - Paoli to Eagle |
+| 330 | (Deaths at Paoli) |
 | 332 | PRR - Deaths at Paoli |
 | 333 | Straightening the Railroads |
-| 334 | (Malvern &amp; Green Tree) |
 | 335 | Malvern Improvements on the Pennsylvania Railroad |
 | 336 | STRAIGHTENING THE TRACK |
+| 334 | (Malvern &amp; Green Tree) |
 
 ### Archives (20)
 
 | Archive ID | Title |
 | --- | --- |
 | 237 | Finding Aid for the Fritz Lumber Collection |
-| 240 | Books and Pamphlets in the Tredyffrin Easttown Historical Society Archives |
 | 238 | Finding Aid for the Barbara and C. Herbert Fry Collection |
 | 241 | Finding Aid for the Gift of Gene Williams |
-| 244 | Finding Aid for the Krider (Crider) / Jones Papers |
-| 243 | Finding Aid for the George (&ldquo;Pat&rdquo;) Moran Collection |
-| 245 | The Jones / Crider (Krider) Family History |
 | 242 | Finding Aid for the Gifts from the 
 King of Prussia Historical Society |
+| 243 | Finding Aid for the George (&ldquo;Pat&rdquo;) Moran Collection |
+| 244 | Finding Aid for the Krider (Crider) / Jones Papers |
+| 245 | The Jones / Crider (Krider) Family History |
 | 246 | Finding Aid for the Chesterbrook Farm Records, 1907-50 |
-| 247 | Finding Aid for the Old Eagle School Collection, 1895-1928 |
+| 240 | Books and Pamphlets in the Tredyffrin Easttown Historical Society Archives |
 | 248 | Finding Aid for the Tredyffrin and Easttown Township School System |
+| 247 | Finding Aid for the Old Eagle School Collection, 1895-1928 |
 | 250 | Finding Aid for the The Mansley Family Papers, 1850-1927 |
 | 249 | William Morrison Photographs of Tredyffrin and Easttown Estates |
-| 252 | Finding Aid for the Walker School Papers, 1863-1971 (17 items) |
 | 251 | Finding Aid for the Wilds Family Papers, 1756 - 1899, and mid-20th century |
+| 252 | Finding Aid for the Walker School Papers, 1863-1971 (17 items) |
 | 253 | Finding Aid for the Collection of Artifacts Donated by Erik Eichner, 2015 |
 | 254 | Finding Aid for the Mildred Burruss Memorial Collection of African-American History |
 | 255 | Finding Aid for the Wadsworth-Burns Collection, Gift of Judith Wadsworth, 2016 |
@@ -387,24 +387,24 @@ King of Prussia Historical Society |
 | Archive ID | Title |
 | --- | --- |
 | 281 | Obituary of Clarence Burton Roberts |
-| 362 | Mary Roberts Diary |
 | 364 | Roberts family |
-| 367 | Petition of Joseph Roberts in the benefit of the insolvent laws |
 | 365 | Mary Roberts - Friends & Family, 1838 |
+| 362 | Mary Roberts Diary |
+| 367 | Petition of Joseph Roberts in the benefit of the insolvent laws |
 | 369 | Will of William Roberts |
 | 368 | Deed of Assignment
 Joseph Roberts and wife
 to
 William Roberts et al. |
-| 371 | Debts of William Roberts |
 | 370 | Creditors of Joseph Roberts |
+| 371 | Debts of William Roberts |
 | 372 | A statement of the causes of the petitioners debts (Joseph Roberts) |
 | 374 | Accounts, William Roberts Estate |
-| 379 | Roberts Court Cases |
 | 381 | Lewis Roberts, senior of Schuylkill township |
+| 379 | Roberts Court Cases |
 | 380 | Lewis W. Roberts (1813 - 1874) |
-| 383 | Stephen Roberts (1817 - 1852) |
 | 384 | William Roberts (1812 - 1889) |
+| 383 | Stephen Roberts (1817 - 1852) |
 | 393 | Background to the Mary Roberts diary |
 | 646 | Roberts Tax Returns |
 | 648 | Will of Lewis Roberts (1861) |
@@ -417,36 +417,36 @@ William Roberts et al. |
 | 102 | An Ornate Suburban Village |
 | 115 | St Monica's Church Blaze guts church in Berwyn |
 | 116 | St Monica's Church rises from the Ashes |
-| 137 | Lamb Tavern Stand and Farm,  At Public Sale |
 | 138 | Lamb Tavern for sale |
-| 172 | PRR - Straightening the Road |
-| 171 | Wrecker&rsquo;s ball topples pair of Easttown houses |
+| 137 | Lamb Tavern Stand and Farm,  At Public Sale |
 | 170 | Regina Mundi Priory demolished |
+| 171 | Wrecker&rsquo;s ball topples pair of Easttown houses |
+| 172 | PRR - Straightening the Road |
 | 174 | Devon Station improvement |
 | 180 | John G. Bull land for sale |
 | 212 | John Vanleer Farm in Easttown and Tredyffrin for sale |
 | 214 | William Neill farm for sale |
 | 345 | Daylesford Water Company |
 | 437 | William Neill tract |
-| 543 | Jacob Detwiler Farm |
 | 544 | Jacob Detwiler farm |
+| 543 | Jacob Detwiler Farm |
 
 ### Lewis (17)
 
 | Archive ID | Title |
 | --- | --- |
 | 258 | George Washington Lewis (1840 - 1907) |
+| 257 | George Washington Lewis (1800 - 1889) |
 | 260 | Letter G. W. Lewis to Thomas S. Lewis |
 | 261 | Letter from G. W . Lewis to Thomas S. Lewis |
-| 257 | George Washington Lewis (1800 - 1889) |
-| 265 | Letter from G. W. Lewis to Thomas S. Lewis |
 | 262 | Letter from G. W. Lewis to Thomas S. Lewis |
-| 266 | Letter from G. W. Lewis to Thomas S. Lewis |
 | 263 | Letter from G. W. Lewis to Thomas S. Lewis |
 | 264 | Letter from G. W. Lewis to Thomas S. Lewis |
+| 265 | Letter from G. W. Lewis to Thomas S. Lewis |
+| 266 | Letter from G. W. Lewis to Thomas S. Lewis |
 | 271 | Letter from J. L. Fox to G. W. Lewis |
-| 274 | Petition for a license for the Eagle Hotel |
 | 273 | Petition for a license for the Eagle Hotel |
+| 274 | Petition for a license for the Eagle Hotel |
 | 275 | Petition for a license for the Eagle Hotel |
 | 276 | Petition for a license for the Eagle Hotel |
 | 277 | Petition for a license for the Eagle Hotel |
@@ -457,15 +457,15 @@ William Roberts et al. |
 
 | Archive ID | Title |
 | --- | --- |
-| 8 | Steuben Quest is Vindicated |
 | 7 | Washington Inn - Purchased Old Hostelry |
-| 6 | Bought Washington Inn |
 | 9 | 2 Are Honored For Rescue of Steuben House |
+| 6 | Bought Washington Inn |
+| 8 | Steuben Quest is Vindicated |
 | 10 | Mansion House hotel a Historic Building Saved |
 | 11 | Mansion House hotel - Restoring Old Hospital |
 | 71 | Covenant between Philander Knox and the Commissioners of Valley Forge Park |
-| 82 | William Dewees reparation claim, 1791 |
 | 83 | William Dewees claim, 1794 |
+| 82 | William Dewees reparation claim, 1791 |
 | 84 | William Dewees claim, 1820 |
 | 93 | Harvest Home |
 | 161 | Valley Forge Grist Mill |
@@ -481,17 +481,17 @@ William Roberts et al. |
 | --- | --- |
 | 1 | 40 Years At Devon-But No Horses |
 | 4 | Underground Active At Devon Horse Show |
-| 2 | Another Year Disappears Into History |
 | 3 | Obituary for Edith Johnson Croll, 92, volunteer |
+| 2 | Another Year Disappears Into History |
 | 14 | &lsquo;Oldest&rsquo; Devon Volunteer &lsquo;Calls It A Day&rsquo; |
+| 19 | State Inspectors Begin Blast Probe Within 15 Minutes |
 | 17 | Fireworks explosion: 10 DEAD, 30 HURT, 8 MISSING IN DEVON EXPLOSIONS |
 | 18 | Dead and Injured In Blast at Devon Fireworks Plant |
-| 19 | State Inspectors Begin Blast Probe Within 15 Minutes |
 | 80 | Too Busy To Watch The Horses |
 | 102 | An Ornate Suburban Village |
+| 119 | Second Ramble - the Old Baptist Road |
 | 117 | Devon and its Historic Surroundings by Julius Sachse |
 | 118 | First Ramble - Sugartown Road |
-| 119 | Second Ramble - the Old Baptist Road |
 | 170 | Regina Mundi Priory demolished |
 | 174 | Devon Station improvement |
 | 308 | Jeremiah Wyman House |
@@ -500,20 +500,20 @@ William Roberts et al. |
 
 | Archive ID | Title |
 | --- | --- |
-| 38 | Joshua Evans&rsquo; Chair |
-| 37 | Biography of Randal Evans |
 | 40 | Daniel & Henry Evans Partnership |
 | 39 | Isaacher Evans&rsquo; mortgage |
-| 42 | PERSONAL PROPERTY AT PUBLIC SALE. |
-| 43 | John D. Evans Estate |
+| 38 | Joshua Evans&rsquo; Chair |
+| 37 | Biography of Randal Evans |
 | 41 | Henry T. Evans Death |
-| 44 | John D. Evans |
 | 45 | John D. Evans funeral |
-| 48 | Joshua Evans death |
+| 43 | John D. Evans Estate |
+| 42 | PERSONAL PROPERTY AT PUBLIC SALE. |
+| 44 | John D. Evans |
 | 47 | John D. Evans obituary |
 | 46 | John D. Evans Obituary |
-| 50 | Randal Evans House Sale |
 | 49 | Randal Evans Creditors |
+| 50 | Randal Evans House Sale |
+| 48 | Joshua Evans death |
 | 203 | Jones & Evans land for sale |
 | 711 | Robert T. Evans |
 
@@ -522,19 +522,19 @@ William Roberts et al. |
 | Archive ID | Title |
 | --- | --- |
 | 728 | Obituary of Mary McHenry Cox |
-| 739 | SCHOOL ELECT OFFICERS |
-| 740 | EDUCATION OF THE INDIANS |
 | 737 | Little Indians' Christmas |
 | 738 | INDIAN GIRLS TO TRY TO RECLAIM THEIR RACE |
-| 745 | LINCOLN INSTITUTION WILL TAKE NO MORE PUPILS |
+| 739 | SCHOOL ELECT OFFICERS |
+| 740 | EDUCATION OF THE INDIANS |
 | 742 | INDIAN SCHOOLS REOPEN |
 | 743 | Lincoln Institution and Educational Home to be Maintained |
+| 745 | LINCOLN INSTITUTION WILL TAKE NO MORE PUPILS |
+| 753 | Lincoln Institution's Progress |
 | 754 | LAUGHED AT DOWIE |
 | 755 | Mary McHenry Cox death notice |
-| 753 | Lincoln Institution's Progress |
 | 757 | Lincoln Institution Meeting |
-| 762 | INDIAN SCHOOLS |
 | 763 | Lincoln Institute Students signing up for Carlisle school |
+| 762 | INDIAN SCHOOLS |
 | 822 | Mabel Block - death information |
 | 919 | Theresa Danay |
 
@@ -545,18 +545,18 @@ William Roberts et al. |
 | 653 | Roberts Death Records, 1893 - 1907, Phoenixville area |
 | 655 | Estate of John Roberts III, 1796 - 1863 |
 | 658 | John Roberts II (1746 - 1836) |
-| 659 | Jesse Roberts |
 | 656 | Family History of the Roberts family of Schuylkill township |
 | 657 | Edward Roberts (1742 - 1823) |
+| 659 | Jesse Roberts |
 | 660 | James Roberts |
 | 661 | Edwin Roberts |
 | 718 | Roberts timeline |
 | 716 | Certificates of Marriage from Radnor Quarterly Meeting covering Tredyffrin, Easttown, and Charlestow |
 | 722 | Radnor Monthly meeting minutes 1812 - |
 | 920 | Roberts family members moving to Chester County |
-| 936 | Samuel Roberts of Pikeland |
 | 934 | Thomas George deeds and tax returns in Chester County |
 | 937 | Samuel Roberts of Charlestown |
+| 936 | Samuel Roberts of Pikeland |
 
 ### BER (14)
 
@@ -568,14 +568,14 @@ William Roberts et al. |
 | 99 | Reeseville School Accounts |
 | 115 | St Monica's Church Blaze guts church in Berwyn |
 | 116 | St Monica's Church rises from the Ashes |
-| 172 | PRR - Straightening the Road |
 | 171 | Wrecker&rsquo;s ball topples pair of Easttown houses |
+| 172 | PRR - Straightening the Road |
 | 306 | Suburban & Summer Homes |
-| 705 | History of Berwyn Fire Company |
-| 706 | Berwyn Ambulance Service |
 | 707 | History of Ladies Auxiliary, Berwyn Fire Company |
-| 709 | Dispatchers |
+| 706 | Berwyn Ambulance Service |
+| 705 | History of Berwyn Fire Company |
 | 708 | Local Advertisers in Berwyn Fire Company 75th anniversary booklet |
+| 709 | Dispatchers |
 
 ### HOW (14)
 
@@ -583,15 +583,15 @@ William Roberts et al. |
 | --- | --- |
 | 61 | Description of items for sale from Beitler&rsquo;s Store, 1894 |
 | 97 | Accounts, Howellville School |
-| 132 | Howellville Inn and Plantations for Sale |
-| 133 | Howellville Inn and  Plantations for Sale |
 | 134 | Howellville Inn and plantation for sale |
-| 143 | Howellville Mill for sale |
-| 142 | Howellville Mill for sale, a Grist Mill, Distillery & Plantation |
+| 132 | Howellville Inn and Plantations for Sale |
 | 139 | Howellville Mill for sale |
+| 142 | Howellville Mill for sale, a Grist Mill, Distillery & Plantation |
+| 143 | Howellville Mill for sale |
 | 144 | Howellville Mill for sale |
 | 146 | Howellville Mill for sale |
 | 147 | Howellville Mill for sale |
+| 133 | Howellville Inn and  Plantations for Sale |
 | 155 | Tailoring |
 | 157 | Stores at Howellville for rent |
 | 162 | Howellville Mill for sale |
@@ -604,15 +604,15 @@ William Roberts et al. |
 | 322 | William J. Latta Resignation |
 | 323 | PUSHING LATTA'S VOTE
 Pennsylvania Railroad pitted against John Wanamaker |
-| 324 | Latta Tax Returns in Chester County |
 | 325 | Latta Wills & Administrations, 1688 - 1923 |
+| 324 | Latta Tax Returns in Chester County |
 | 329 | (National Guard Inspection) |
-| 338 | William Hammersley |
-| 340 | John F. Glosser Is Dead at His Southern Home |
-| 339 | An Elaborate Affair |
 | 341 | Captain Barr Dies, Aged 80 |
-| 342 | William Hammersley |
+| 340 | John F. Glosser Is Dead at His Southern Home |
+| 338 | William Hammersley |
+| 339 | An Elaborate Affair |
 | 343 | Daylesford Water Company, New Corporations |
+| 342 | William Hammersley |
 | 344 | Daylesford Water Company, Asking for Charters |
 | 375 | Latta Tax Information |
 
@@ -657,10 +657,10 @@ Pennsylvania Railroad pitted against John Wanamaker |
 | Archive ID | Title |
 | --- | --- |
 | 5 | Transcription of the Will of John Brown senior |
-| 52 | Will of Lewis Gronow junior |
 | 51 | Will of John Gronow (1775) |
-| 54 | Will of John Havard (1797) |
+| 52 | Will of Lewis Gronow junior |
 | 53 | Will of Lewis Gronow senior |
+| 54 | Will of John Havard (1797) |
 | 64 | Will of Griffith Jones |
 | 86 | Will of William Hunter |
 | 87 | Codicil to the Will of William Hunter |
@@ -677,8 +677,8 @@ Pennsylvania Railroad pitted against John Wanamaker |
 | 64 | Will of Griffith Jones |
 | 74 | Land Sale by Jones family |
 | 75 | Thomas Jones Land Sale |
-| 76 | Land Sale by Samuel and Thomas Jones |
 | 78 | Thomas John/Jones Sale of land |
+| 76 | Land Sale by Samuel and Thomas Jones |
 | 100 | Jonathan Jones Sale of Real Estate |
 | 101 | Jonathan Jones Sale of Real Estate and Personal Property |
 | 203 | Jones & Evans land for sale |
@@ -694,12 +694,12 @@ Pennsylvania Railroad pitted against John Wanamaker |
 | 310 | Richard Graham Land Purchases and Sales |
 | 317 | The Development of Daylesford |
 | 321 | The Stop at Daylesford |
-| 340 | John F. Glosser Is Dead at His Southern Home |
 | 341 | Captain Barr Dies, Aged 80 |
-| 342 | William Hammersley |
+| 340 | John F. Glosser Is Dead at His Southern Home |
 | 343 | Daylesford Water Company, New Corporations |
-| 344 | Daylesford Water Company, Asking for Charters |
 | 345 | Daylesford Water Company |
+| 342 | William Hammersley |
+| 344 | Daylesford Water Company, Asking for Charters |
 
 ### CHE (9)
 
@@ -719,15 +719,15 @@ Pennsylvania Railroad pitted against John Wanamaker |
 
 | Archive ID | Title |
 | --- | --- |
-| 55 | stone crusher Not Yet In Operation |
-| 56 | Stone Crusher |
 | 57 | Stone-Crusher now at Work |
-| 58 | Stone Crusher Ceased Operations |
+| 56 | Stone Crusher |
+| 55 | stone crusher Not Yet In Operation |
 | 60 | Stone crusher started In Operation |
+| 58 | Stone Crusher Ceased Operations |
 | 59 | Stone Crusher Will restart in Operation |
 | 62 | Hugh Steen's Stray Horse |
-| 61 | Description of items for sale from Beitler&rsquo;s Store, 1894 |
 | 63 | Hugh Steen Personal Property at Public Sale. |
+| 61 | Description of items for sale from Beitler&rsquo;s Store, 1894 |
 
 ### STR (9)
 
@@ -754,8 +754,8 @@ by Lee Kirts and Mike Bertram |
 by Dave Madary and Mike Bertram |
 | 355 | Valley Forge School and Frank and Kate Bode |
 | 358 | School House Destroyed |
-| 361 | POSA building |
 | 359 | Valley Forge School |
+| 361 | POSA building |
 | 376 | Valley Forge Properties Condemned
 
 Jury of View Makes Two Awards for Valley Forge Park Commission. |
@@ -768,20 +768,20 @@ Jury of View Makes Two Awards for Valley Forge Park Commission |
 | --- | --- |
 | 260 | Letter G. W. Lewis to Thomas S. Lewis |
 | 261 | Letter from G. W . Lewis to Thomas S. Lewis |
-| 265 | Letter from G. W. Lewis to Thomas S. Lewis |
 | 262 | Letter from G. W. Lewis to Thomas S. Lewis |
-| 266 | Letter from G. W. Lewis to Thomas S. Lewis |
 | 263 | Letter from G. W. Lewis to Thomas S. Lewis |
 | 264 | Letter from G. W. Lewis to Thomas S. Lewis |
+| 265 | Letter from G. W. Lewis to Thomas S. Lewis |
+| 266 | Letter from G. W. Lewis to Thomas S. Lewis |
 | 271 | Letter from J. L. Fox to G. W. Lewis |
 
 ### HOM (8)
 
 | Archive ID | Title |
 | --- | --- |
-| 143 | Howellville Mill for sale |
-| 142 | Howellville Mill for sale, a Grist Mill, Distillery & Plantation |
 | 139 | Howellville Mill for sale |
+| 142 | Howellville Mill for sale, a Grist Mill, Distillery & Plantation |
+| 143 | Howellville Mill for sale |
 | 144 | Howellville Mill for sale |
 | 146 | Howellville Mill for sale |
 | 147 | Howellville Mill for sale |
@@ -794,11 +794,11 @@ Jury of View Makes Two Awards for Valley Forge Park Commission |
 | --- | --- |
 | 260 | Letter G. W. Lewis to Thomas S. Lewis |
 | 261 | Letter from G. W . Lewis to Thomas S. Lewis |
-| 265 | Letter from G. W. Lewis to Thomas S. Lewis |
 | 262 | Letter from G. W. Lewis to Thomas S. Lewis |
-| 266 | Letter from G. W. Lewis to Thomas S. Lewis |
 | 263 | Letter from G. W. Lewis to Thomas S. Lewis |
 | 264 | Letter from G. W. Lewis to Thomas S. Lewis |
+| 265 | Letter from G. W. Lewis to Thomas S. Lewis |
+| 266 | Letter from G. W. Lewis to Thomas S. Lewis |
 | 271 | Letter from J. L. Fox to G. W. Lewis |
 
 ### Phase4 (8)
@@ -809,20 +809,20 @@ Jury of View Makes Two Awards for Valley Forge Park Commission |
 | 789 | Photographs at Ponemah |
 | 752 | HOMESTEAD LAND NEAR BIG CITIES NEEDED, HE SAYS |
 | 756 | WALKS OUT OF WINDOW |
-| 760 | RUMMAGE SALE FOR HOME |
 | 759 | Lincoln Institution's Work |
 | 761 | CHARITY WILL REASSUME ITS ORIGINAL PURPOSE |
+| 760 | RUMMAGE SALE FOR HOME |
 | 766 | Chester County deed K16-598 (1924) |
 
 ### DEVRam (7)
 
 | Archive ID | Title |
 | --- | --- |
+| 119 | Second Ramble - the Old Baptist Road |
 | 117 | Devon and its Historic Surroundings by Julius Sachse |
 | 118 | First Ramble - Sugartown Road |
-| 119 | Second Ramble - the Old Baptist Road |
-| 121 | Fourth Ramble -  Waterloo Avenue |
 | 120 | Third Ramble - Old Eagle School Road |
+| 121 | Fourth Ramble -  Waterloo Avenue |
 | 122 | Fifth Ramble -  the Lancaster Turnpike |
 | 123 | Shall I Not Take Mine Ease In Mine Inn |
 
@@ -831,23 +831,23 @@ Jury of View Makes Two Awards for Valley Forge Park Commission |
 | Archive ID | Title |
 | --- | --- |
 | 136 | Building Lots On The Pennsylvania Railroad, For Sale |
-| 274 | Petition for a license for the Eagle Hotel |
 | 273 | Petition for a license for the Eagle Hotel |
+| 274 | Petition for a license for the Eagle Hotel |
 | 275 | Petition for a license for the Eagle Hotel |
 | 276 | Petition for a license for the Eagle Hotel |
-| 278 | Sheriff&rsquo;s sale of Real Estate at Eagle |
 | 277 | Petition for a license for the Eagle Hotel |
+| 278 | Sheriff&rsquo;s sale of Real Estate at Eagle |
 
 ### LewisCivilWar (7)
 
 | Archive ID | Title |
 | --- | --- |
 | 261 | Letter from G. W . Lewis to Thomas S. Lewis |
-| 265 | Letter from G. W. Lewis to Thomas S. Lewis |
 | 262 | Letter from G. W. Lewis to Thomas S. Lewis |
-| 266 | Letter from G. W. Lewis to Thomas S. Lewis |
 | 263 | Letter from G. W. Lewis to Thomas S. Lewis |
 | 264 | Letter from G. W. Lewis to Thomas S. Lewis |
+| 265 | Letter from G. W. Lewis to Thomas S. Lewis |
+| 266 | Letter from G. W. Lewis to Thomas S. Lewis |
 | 271 | Letter from J. L. Fox to G. W. Lewis |
 
 ### PRR (7)
@@ -857,8 +857,8 @@ Jury of View Makes Two Awards for Valley Forge Park Commission |
 | 326 | The Steel Tracks of the Pennsylvania Railroad |
 | 327 | STRAIGHTENING THE TRACK |
 | 328 | (Green Tree) |
-| 334 | (Malvern &amp; Green Tree) |
 | 335 | Malvern Improvements on the Pennsylvania Railroad |
+| 334 | (Malvern &amp; Green Tree) |
 | 337 | Paralyzed on His Train |
 | 389 | P.R.R. must pay $75,000 |
 
@@ -879,8 +879,8 @@ Jury of View Makes Two Awards for Valley Forge Park Commission |
 | --- | --- |
 | 1 | 40 Years At Devon-But No Horses |
 | 4 | Underground Active At Devon Horse Show |
-| 2 | Another Year Disappears Into History |
 | 3 | Obituary for Edith Johnson Croll, 92, volunteer |
+| 2 | Another Year Disappears Into History |
 | 14 | &lsquo;Oldest&rsquo; Devon Volunteer &lsquo;Calls It A Day&rsquo; |
 | 80 | Too Busy To Watch The Horses |
 
@@ -891,9 +891,9 @@ Jury of View Makes Two Awards for Valley Forge Park Commission |
 | 306 | Suburban & Summer Homes |
 | 307 | Railroad Bridges in Green Tree and Malvern |
 | 328 | (Green Tree) |
-| 334 | (Malvern &amp; Green Tree) |
 | 335 | Malvern Improvements on the Pennsylvania Railroad |
 | 336 | STRAIGHTENING THE TRACK |
+| 334 | (Malvern &amp; Green Tree) |
 
 ### HAMH (6)
 
@@ -911,11 +911,11 @@ Jury of View Makes Two Awards for Valley Forge Park Commission |
 | Archive ID | Title |
 | --- | --- |
 | 792 | The Orphans Plaints |
-| 796 | Another Vindication |
 | 795 | Indians Singing Pinafore |
 | 794 | THE LINCOLN HOME INVESTIGATION |
-| 799 | BOYS PADDLED AT THE LINCOLN HOME |
+| 796 | Another Vindication |
 | 800 | REPORT OF THE COMMITTEE appointed by the Managers of the Lincoln Institution to investigate the char |
+| 799 | BOYS PADDLED AT THE LINCOLN HOME |
 
 ### MMC (6)
 
@@ -947,8 +947,8 @@ MRS. MARY McHENRY COX'S VISIT TO THE TWO LARGE SIOUX RESERVATIONS IN SOUTH DAKOT
 | --- | --- |
 | 107 | Workers clear wreckage of derailed Conrail cars |
 | 108 | Train Wreck&rsquo;s Timely Lesson |
-| 110 | Amtrak Derailment near Paoli laid to loose railroad bed ballast |
 | 109 | PRR Resumes Service to Paoli, Wreck, cleared. |
+| 110 | Amtrak Derailment near Paoli laid to loose railroad bed ballast |
 | 111 | Paoli Line Cleared After Derailment |
 | 852 | Main Line Wreck |
 
@@ -958,61 +958,61 @@ MRS. MARY McHENRY COX'S VISIT TO THE TWO LARGE SIOUX RESERVATIONS IN SOUTH DAKOT
 | --- | --- |
 | 161 | Valley Forge Grist Mill |
 | 579 | Woodman Farm, 30 acres, limestone land, copper vein |
-| 695 | At private sale, a LOT OF LAND, Mordecai Moore |
-| 693 | Committee on Organization Centennial Festivities |
 | 694 | Valley Forge Doomed |
+| 693 | Committee on Organization Centennial Festivities |
 | 696 | Valley Forge |
+| 695 | At private sale, a LOT OF LAND, Mordecai Moore |
 
 ### VFDAM (6)
 
 | Archive ID | Title |
 | --- | --- |
 | 314 | Weeds in Valley Forge Dam |
+| 348 | The Langenheim photo |
 | 350 | A History of the Valley Forge Mill Dam
 by Dave Madary and Mike Bertram |
-| 348 | The Langenheim photo |
-| 352 | (Valley Forge Dam) |
 | 349 | The Buildings in the Langenheim photograph
 by Dave Madary and Mike Bertram |
 | 354 | The Dismantling of the Valley Forge Mill Dam, 1920 |
+| 352 | (Valley Forge Dam) |
 
 ### Water (6)
 
 | Archive ID | Title |
 | --- | --- |
-| 340 | John F. Glosser Is Dead at His Southern Home |
 | 341 | Captain Barr Dies, Aged 80 |
-| 342 | William Hammersley |
+| 340 | John F. Glosser Is Dead at His Southern Home |
 | 343 | Daylesford Water Company, New Corporations |
-| 346 | CHARTER TERRITORY North Springfield Water Company |
 | 345 | Daylesford Water Company |
+| 342 | William Hammersley |
+| 346 | CHARTER TERRITORY North Springfield Water Company |
 
 ### BBT (5)
 
 | Archive ID | Title |
 | --- | --- |
 | 124 | Black Bear Inn sale |
-| 127 | Black Bear Inn sale |
 | 125 | Black Bear Inn sale |
 | 126 | Black Bear Inn sale |
+| 127 | Black Bear Inn sale |
 | 128 | Black Bear Inn and land sale |
 
 ### BFC (5)
 
 | Archive ID | Title |
 | --- | --- |
-| 705 | History of Berwyn Fire Company |
-| 706 | Berwyn Ambulance Service |
 | 707 | History of Ladies Auxiliary, Berwyn Fire Company |
-| 709 | Dispatchers |
+| 706 | Berwyn Ambulance Service |
+| 705 | History of Berwyn Fire Company |
 | 708 | Local Advertisers in Berwyn Fire Company 75th anniversary booklet |
+| 709 | Dispatchers |
 
 ### EAGHOT (5)
 
 | Archive ID | Title |
 | --- | --- |
-| 274 | Petition for a license for the Eagle Hotel |
 | 273 | Petition for a license for the Eagle Hotel |
+| 274 | Petition for a license for the Eagle Hotel |
 | 275 | Petition for a license for the Eagle Hotel |
 | 276 | Petition for a license for the Eagle Hotel |
 | 277 | Petition for a license for the Eagle Hotel |
@@ -1034,8 +1034,8 @@ by Dave Madary and Mike Bertram |
 | 307 | Railroad Bridges in Green Tree and Malvern |
 | 326 | The Steel Tracks of the Pennsylvania Railroad |
 | 327 | STRAIGHTENING THE TRACK |
-| 334 | (Malvern &amp; Green Tree) |
 | 335 | Malvern Improvements on the Pennsylvania Railroad |
+| 334 | (Malvern &amp; Green Tree) |
 
 ### SPE (5)
 
@@ -1043,16 +1043,16 @@ by Dave Madary and Mike Bertram |
 | --- | --- |
 | 135 | Spread Eagle Tavern for sale |
 | 859 | The Spread Eagle Inn |
-| 864 | The Philadelphia and Willistown Railroad Company |
 | 865 | Sachse's Tales of Wayside Inns |
+| 864 | The Philadelphia and Willistown Railroad Company |
 | 866 | Spread Eagle and Strafford Post Offices |
 
 ### Beaver (4)
 
 | Archive ID | Title |
 | --- | --- |
-| 151 | Beaver and Beitler land dispute |
 | 150 | Beaver and Beitler land dispute |
+| 151 | Beaver and Beitler land dispute |
 | 152 | Beaver and Beitler land dispute |
 | 608 | The Beaver family of Tredyffrin and Charlestown |
 
@@ -1062,8 +1062,8 @@ by Dave Madary and Mike Bertram |
 | --- | --- |
 | 140 | Clintonville Mill and plantation for sale |
 | 149 | Chesterbrook Mill for sale |
-| 163 | Chesterbrook Grist mill, Plantation and Tract |
 | 159 | Clintonville Mill for sale or rent |
+| 163 | Chesterbrook Grist mill, Plantation and Tract |
 
 ### CVR (4)
 
@@ -1079,8 +1079,8 @@ by Dave Madary and Mike Bertram |
 | Archive ID | Title |
 | --- | --- |
 | 79 | Will of Thomas Waters, 1794 |
-| 82 | William Dewees reparation claim, 1791 |
 | 83 | William Dewees claim, 1794 |
+| 82 | William Dewees reparation claim, 1791 |
 | 84 | William Dewees claim, 1820 |
 
 ### Eagle (4)
@@ -1097,8 +1097,8 @@ by Dave Madary and Mike Bertram |
 | Archive ID | Title |
 | --- | --- |
 | 216 | John Gaverick property for sale |
-| 219 | John Garber farm for sale |
 | 220 | John Garber farm for sale |
+| 219 | John Garber farm for sale |
 | 312 | Finding Aid for the Garber-Pyle Family Papers
 Gift of Spencer Pyle, 2020 |
 
@@ -1106,9 +1106,9 @@ Gift of Spencer Pyle, 2020 |
 
 | Archive ID | Title |
 | --- | --- |
-| 128 | Black Bear Inn and land sale |
-| 130 | Black Bear Inn and land for sale |
 | 129 | General Jackson Inn |
+| 130 | Black Bear Inn and land for sale |
+| 128 | Black Bear Inn and land sale |
 | 156 | Randall Evans Railroad Property for Rent |
 
 ### GVP (4)
@@ -1124,11 +1124,11 @@ Gift of Spencer Pyle, 2020 |
 
 | Archive ID | Title |
 | --- | --- |
+| 318 | Obituary of George W. Mehaffey |
 | 317 | The Development of Daylesford |
 | 320 | TOBACCO
 Seed Leaf Crop and Market News |
 | 319 | Obituary of George W. Mehaffey |
-| 318 | Obituary of George W. Mehaffey |
 
 ### Reading (4)
 
@@ -1152,8 +1152,8 @@ Seed Leaf Crop and Market News |
 
 | Archive ID | Title |
 | --- | --- |
-| 397 | Obituary of Daniel Alleva |
 | 396 | Paoli Coal and Lumber Merchants |
+| 397 | Obituary of Daniel Alleva |
 | 398 | Obituary of Cordine Scartozzi |
 
 ### Bean (3)
@@ -1185,32 +1185,32 @@ Jury of View Makes Two Awards for Valley Forge Park Commission |
 
 | Archive ID | Title |
 | --- | --- |
-| 92 | Paoli Hardware Store |
 | 91 | Clemmans - Johnston Marriage |
+| 92 | Paoli Hardware Store |
 | 396 | Paoli Coal and Lumber Merchants |
 
 ### CRM (3)
 
 | Archive ID | Title |
 | --- | --- |
-| 148 | John G. Bull land sale |
 | 145 | John G. Bull land sales |
+| 148 | John G. Bull land sale |
 | 164 | Church Road Mill For Rent |
 
 ### DFF (3)
 
 | Archive ID | Title |
 | --- | --- |
+| 19 | State Inspectors Begin Blast Probe Within 15 Minutes |
 | 17 | Fireworks explosion: 10 DEAD, 30 HURT, 8 MISSING IN DEVON EXPLOSIONS |
 | 18 | Dead and Injured In Blast at Devon Fireworks Plant |
-| 19 | State Inspectors Begin Blast Probe Within 15 Minutes |
 
 ### Gronow (3)
 
 | Archive ID | Title |
 | --- | --- |
-| 52 | Will of Lewis Gronow junior |
 | 51 | Will of John Gronow (1775) |
+| 52 | Will of Lewis Gronow junior |
 | 53 | Will of Lewis Gronow senior |
 
 ### Henry (3)
@@ -1225,9 +1225,9 @@ Jury of View Makes Two Awards for Valley Forge Park Commission |
 
 | Archive ID | Title |
 | --- | --- |
+| 134 | Howellville Inn and plantation for sale |
 | 132 | Howellville Inn and Plantations for Sale |
 | 133 | Howellville Inn and  Plantations for Sale |
-| 134 | Howellville Inn and plantation for sale |
 
 ### Images (3)
 
@@ -1241,16 +1241,16 @@ Jury of View Makes Two Awards for Valley Forge Park Commission |
 
 | Archive ID | Title |
 | --- | --- |
-| 151 | Beaver and Beitler land dispute |
 | 150 | Beaver and Beitler land dispute |
+| 151 | Beaver and Beitler land dispute |
 | 152 | Beaver and Beitler land dispute |
 
 ### JBEI (3)
 
 | Archive ID | Title |
 | --- | --- |
-| 151 | Beaver and Beitler land dispute |
 | 150 | Beaver and Beitler land dispute |
+| 151 | Beaver and Beitler land dispute |
 | 152 | Beaver and Beitler land dispute |
 
 ### Max (3)
@@ -1371,8 +1371,8 @@ Jury of View Makes Two Awards for Valley Forge Park Commission |
 
 | Archive ID | Title |
 | --- | --- |
-| 207 | Joseph Walker land for sale |
 | 208 | Joseph Walker land for sale |
+| 207 | Joseph Walker land for sale |
 | 252 | Finding Aid for the Walker School Papers, 1863-1971 (17 items) |
 
 ### Wclip (3)
@@ -1387,8 +1387,8 @@ Jury of View Makes Two Awards for Valley Forge Park Commission |
 
 | Archive ID | Title |
 | --- | --- |
-| 52 | Will of Lewis Gronow junior |
 | 51 | Will of John Gronow (1775) |
+| 52 | Will of Lewis Gronow junior |
 | 53 | Will of Lewis Gronow senior |
 
 ### BKH (2)
@@ -1466,8 +1466,8 @@ Donated by George W. P |
 
 | Archive ID | Title |
 | --- | --- |
-| 137 | Lamb Tavern Stand and Farm,  At Public Sale |
 | 138 | Lamb Tavern for sale |
+| 137 | Lamb Tavern Stand and Farm,  At Public Sale |
 
 ### LAND (2)
 
