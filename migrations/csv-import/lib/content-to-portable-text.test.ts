@@ -49,7 +49,7 @@ describe('contentToPortableText', () => {
 			HistoricalImageEmbedPending | undefined
 		expect(embed).toBeDefined()
 		expect(embed?._pendingFilename).toBe('1854-02-07doc591small.jpg')
-		expect(embed?._pendingImportId).toBe('historicalImage.import.1854-02-07doc591small')
+		expect(embed?._pendingImportId).toBe('historicalImage-import-1854-02-07doc591small')
 		expect(embed?.alt).toBe('Scan')
 		expect(embed?.imageRole).toBe('figure')
 	})

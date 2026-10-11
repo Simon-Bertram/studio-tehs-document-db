@@ -72,6 +72,16 @@ export const historicalImage = defineType({
 			group: 'content',
 			options: {hotspot: true},
 			validation: (Rule) => Rule.required(),
+			fields: [
+				defineField({
+					name: 'alt',
+					title: 'Alt Text',
+					type: 'string',
+					description:
+						'Describes the photograph for screen readers and when the image does not load; also supports SEO. Describe the visible subject, setting, and notable details in one or two concise sentences. Do not start with “Image of” or “Photo of,” and do not paste the caption if it is only a title-style label rather than what is shown.',
+					validation: (Rule) => Rule.required().warning('Alt text helps accessibility and SEO'),
+				}),
+			],
 		}),
 		defineField({
 			name: 'description',

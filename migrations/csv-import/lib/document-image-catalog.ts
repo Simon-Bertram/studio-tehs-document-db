@@ -10,7 +10,15 @@ import {readCsvRows} from './read-csv'
 export const IMAGE_IDENTIFIERS_CSV = 'migrations/data/image-identifiers.csv'
 export const IMAGES_CSV = 'migrations/data/images.csv'
 
-export const DOCUMENT_IMAGE_IMPORT_ID_PREFIX = 'historicalImage.import.'
+/**
+ * Root-path Sanity `_id` prefix for document clipping scans.
+ * Must not contain `.` — dotted IDs are private to unauthenticated API readers.
+ * @see https://www.sanity.io/docs/content-lake/ids
+ */
+export const DOCUMENT_IMAGE_IMPORT_ID_PREFIX = 'historicalImage-import-'
+
+/** Legacy dotted prefix from the first document CSV import (private path). */
+export const DOCUMENT_IMAGE_IMPORT_ID_PREFIX_LEGACY = 'historicalImage.import.'
 
 export interface DocumentImageCatalog {
 	/** Stem prefixes sorted longest-first (BEP before BE). */
@@ -40,11 +48,27 @@ function filenameWithoutExtension(filename: string): string {
 
 /**
  * Deterministic Sanity _id for an imported document image with no Archive ID.
- * Never written into the archiveId field.
+ * Never written into the archiveId field. Root-path only (no `.` in the id).
  */
 export function importIdForFilename(filename: string): string {
 	const stem = slugify(filenameWithoutExtension(filename)) || 'untitled'
 	return `${DOCUMENT_IMAGE_IMPORT_ID_PREFIX}${stem}`
+}
+
+/**
+ * Map a legacy private-path import `_id` to the public root-path id.
+ * Accepts published or `drafts.`-prefixed ids. Returns null when not legacy.
+ */
+export function rootImportIdFromLegacy(legacyId: string): string | null {
+	const isDraft = legacyId.startsWith('drafts.')
+	const published = isDraft ? legacyId.slice('drafts.'.length) : legacyId
+	if (!published.startsWith(DOCUMENT_IMAGE_IMPORT_ID_PREFIX_LEGACY)) {
+		return null
+	}
+	const stem = published.slice(DOCUMENT_IMAGE_IMPORT_ID_PREFIX_LEGACY.length)
+	if (!stem) return null
+	const root = `${DOCUMENT_IMAGE_IMPORT_ID_PREFIX}${stem}`
+	return isDraft ? `drafts.${root}` : root
 }
 
 /**

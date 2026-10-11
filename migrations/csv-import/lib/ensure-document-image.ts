@@ -7,7 +7,12 @@ import type {SanityClient} from '@sanity/client'
 import type {Audit} from './audit'
 import type {HistoricalImageEmbedPending} from './content-to-portable-text'
 import type {ContentBlock} from './content-to-portable-text'
-import {getDocumentImageBaseUrl, resolveDocumentImageUrl} from './document-image-catalog'
+import {
+	DOCUMENT_IMAGE_IMPORT_ID_PREFIX,
+	DOCUMENT_IMAGE_IMPORT_ID_PREFIX_LEGACY,
+	getDocumentImageBaseUrl,
+	resolveDocumentImageUrl,
+} from './document-image-catalog'
 import {
 	contentTypeFromImagePath,
 	fetchImageBuffer,
@@ -124,11 +129,57 @@ async function ensureNewHistoricalImage(
 		)
 	}
 
-	const existing = await client.fetch<{
+	const legacyId = importId.startsWith(DOCUMENT_IMAGE_IMPORT_ID_PREFIX)
+		? `${DOCUMENT_IMAGE_IMPORT_ID_PREFIX_LEGACY}${importId.slice(DOCUMENT_IMAGE_IMPORT_ID_PREFIX.length)}`
+		: null
+
+	type ExistingImage = {
 		_id: string
 		imageFile?: unknown
 		archiveId?: string
-	} | null>(`*[_id == $id][0]{_id, imageFile, archiveId}`, {id: importId})
+	}
+
+	let existing = await client.fetch<ExistingImage | null>(
+		`*[_id == $id][0]{_id, imageFile, archiveId}`,
+		{id: importId},
+	)
+
+	// Pre-migration re-import: copy legacy private-path doc onto the public id.
+	if (!existing?._id && legacyId) {
+		const legacyFull = await client.fetch<Record<string, unknown> | null>(
+			`*[_id == $id][0]`,
+			{id: legacyId},
+		)
+		if (legacyFull) {
+			const createDoc: Record<string, unknown> = {
+				_id: importId,
+				_type: 'historicalImage',
+			}
+			for (const [key, value] of Object.entries(legacyFull)) {
+				if (
+					key === '_id' ||
+					key === '_type' ||
+					key === '_rev' ||
+					key === '_createdAt' ||
+					key === '_updatedAt' ||
+					key === '_system'
+				) {
+					continue
+				}
+				createDoc[key] = value
+			}
+			await client.createIfNotExists(createDoc)
+			existing = {
+				_id: importId,
+				imageFile: createDoc.imageFile,
+				archiveId:
+					typeof createDoc.archiveId === 'string' ? createDoc.archiveId : undefined,
+			}
+			audit.warn(
+				`clipID ${parentClipId}: copied legacy ${legacyId} → public ${importId}`,
+			)
+		}
+	}
 
 	if (existing?._id) {
 		idCache.set(importId, existing._id)

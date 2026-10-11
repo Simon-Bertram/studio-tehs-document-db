@@ -49,8 +49,9 @@ as `<img src="…">`. On import:
    listed in `document-images-missing-catalog.csv`.
 4. Other files create a new `historicalImage` **without** an Archive ID, upload
    the JPEG/PNG from a public URL, and embed it. Re-runs reuse a deterministic
-   Sanity `_id` (`historicalImage.import.{slug}`) so the same scan is not
-   duplicated. That internal id is never copied into `archiveId`.
+   Sanity `_id` (`historicalImage-import-{slug}`, root-path — no dots) so the
+   same scan is not duplicated and the public site can resolve the document.
+   That internal id is never copied into `archiveId`.
 
 Set the public base URL for relative paths such as `../images/Doc408small.jpg`:
 

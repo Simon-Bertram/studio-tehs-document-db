@@ -101,6 +101,19 @@ function historicalImageChild(S: StructureBuilder) {
 						.filter('_type == "historicalImage" && !defined(archiveId)')
 						.defaultOrdering([{field: 'title', direction: 'asc'}]),
 				),
+			S.listItem()
+				.title('Missing image alt text')
+				.id('missing-image-alt')
+				.icon(ImageIcon)
+				.child(
+					S.documentList()
+						.title('Missing image alt text')
+						.schemaType('historicalImage')
+						.filter(
+							'_type == "historicalImage" && (!defined(imageFile.alt) || imageFile.alt == "")',
+						)
+						.defaultOrdering([{field: 'title', direction: 'asc'}]),
+				),
 		])
 }
 

@@ -129,7 +129,7 @@ export const thenAndNowView = defineType({
 			title: 'Alt Text',
 			type: 'string',
 			description:
-				'Leave blank to use the catalog caption when the source is a Historical Image. Add alt text for uploaded photographs.',
+				'Leave blank to use the catalog alt text when the source is a Historical Image. Add alt text for uploaded photographs.',
 			validation: (Rule) =>
 				Rule.custom((value, context) =>
 					warnThenAndNowViewAlt(

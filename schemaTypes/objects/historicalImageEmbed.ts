@@ -28,7 +28,7 @@ export const historicalImageEmbed = defineType({
 		...portableTextImageFields({
 			captionDescription: 'Leave blank to use the catalog caption.',
 			altDescription:
-				'Leave blank to use the catalog caption. Add alt text if ' +
+				'Leave blank to use the catalog alt text. Add alt text if ' +
 				'you need a different description for accessibility.',
 			requireAltWarning: false,
 		}),

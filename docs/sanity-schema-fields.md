@@ -64,7 +64,8 @@ Document. Studio title: **Historical Image**.
 | `serialNumber`   | Serial Number                     | `string`                                               | identity   |          |                                              |
 | `title`          | Caption / Title                   | `string`                                               | identity   | yes      | Weighted in Studio search                    |
 | `dateTaken`      | Date Taken                        | `historicalDate`                                       | identity   |          | Prefer year-only when day unknown            |
-| `imageFile`      | Photograph                        | `image` (hotspot)                                      | content    | yes      |                                              |
+| `imageFile`      | Photograph                        | `image` (hotspot)                                      | content    | yes      | Nested `alt` (soft required warning)         |
+| `imageFile.alt`  | Alt Text                         | `string`                                               | content    | warn     | Accessibility / SEO; describe what is shown  |
 | `description`    | Full Description                  | `text`                                                 | content    |          |                                              |
 | `people`         | People Depicted                   | `array` of `reference → person`                        | content    |          | Unique refs                                  |
 | `location`       | Specific Location                 | `reference → location`                                 | place      |          | Townships come from the location             |

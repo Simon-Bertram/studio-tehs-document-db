@@ -63,7 +63,7 @@ export function validateThenAndNowUpload(
 
 /**
  * Warn when an uploaded photograph has no alt text. Catalog images can fall
- * back to the Historical Image caption.
+ * back to the Historical Image catalog alt text.
  */
 export function warnThenAndNowViewAlt(
 	alt: string | undefined,

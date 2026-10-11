@@ -6,6 +6,7 @@ import {
 	extractCatalogIdFromFilename,
 	importIdForFilename,
 	resolveDocumentImageUrl,
+	rootImportIdFromLegacy,
 } from './document-image-catalog'
 
 function catalog(partial?: Partial<DocumentImageCatalog>): DocumentImageCatalog {
@@ -61,7 +62,7 @@ describe('classifyDocumentImageSrc', () => {
 		expect(result).toEqual({
 			kind: 'new',
 			filename: '1854-02-07doc591small.jpg',
-			importId: 'historicalImage.import.1854-02-07doc591small',
+			importId: 'historicalImage-import-1854-02-07doc591small',
 			src: '../images/1854-02-07doc591small.jpg',
 		})
 	})
@@ -72,10 +73,27 @@ describe('classifyDocumentImageSrc', () => {
 })
 
 describe('importIdForFilename', () => {
-	test('builds a stable slug id', () => {
+	test('builds a stable root-path slug id (no dots)', () => {
 		expect(importIdForFilename('Daylesford,1897atlas.JPG')).toBe(
-			'historicalImage.import.daylesford-1897atlas',
+			'historicalImage-import-daylesford-1897atlas',
 		)
+		expect(importIdForFilename('Daylesford,1897atlas.JPG')).not.toContain('.')
+	})
+})
+
+describe('rootImportIdFromLegacy', () => {
+	test('maps private-path ids to root-path ids', () => {
+		expect(rootImportIdFromLegacy('historicalImage.import.1854-11-28doc601small')).toBe(
+			'historicalImage-import-1854-11-28doc601small',
+		)
+		expect(
+			rootImportIdFromLegacy('drafts.historicalImage.import.1854-11-28doc601small'),
+		).toBe('drafts.historicalImage-import-1854-11-28doc601small')
+	})
+
+	test('returns null for non-legacy ids', () => {
+		expect(rootImportIdFromLegacy('historicalImage-import-already-root')).toBeNull()
+		expect(rootImportIdFromLegacy('0M3aBX4UrCa9Y2aavvb4Ib')).toBeNull()
 	})
 })
 
