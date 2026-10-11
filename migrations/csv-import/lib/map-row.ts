@@ -11,7 +11,7 @@ import {
 } from './clean'
 import {
 	type ContentBlock,
-	contentToPortableText,
+	contentToPortableTextDetailed,
 	stripHtmlToPlainText,
 } from './content-to-portable-text'
 import type {DocumentImageCatalog} from './document-image-catalog'
@@ -127,11 +127,25 @@ function buildHistoricalImage(
 	return doc
 }
 
+function applyContentBlocks(
+	content: string,
+	catalog: DocumentImageCatalog,
+	clipId: string,
+	audit: Audit,
+): ContentBlock[] {
+	const {blocks, warnings} = contentToPortableTextDetailed(content, catalog)
+	for (const warning of warnings) {
+		audit.warn(`clipID ${clipId}: ${warning}`)
+	}
+	return blocks
+}
+
 function buildPrimarySource(
 	clipId: string,
 	title: string,
 	row: CsvRow,
 	catalog: DocumentImageCatalog,
+	audit: Audit,
 ): PrimarySourceImportDoc {
 	const doc: PrimarySourceImportDoc = {
 		_type: 'primarySource',
@@ -146,7 +160,7 @@ function buildPrimarySource(
 		if (parsed) doc.date = parsed
 	}
 	if (source) doc.newspaper = source
-	if (content) doc.transcription = contentToPortableText(content, catalog)
+	if (content) doc.transcription = applyContentBlocks(content, catalog, clipId, audit)
 	return doc
 }
 
@@ -155,6 +169,7 @@ function buildResearchArticle(
 	title: string,
 	row: CsvRow,
 	catalog: DocumentImageCatalog,
+	audit: Audit,
 ): ResearchArticleImportDoc {
 	const slugSource = title || `untitled-${clipId}`
 	const doc: ResearchArticleImportDoc = {
@@ -164,7 +179,7 @@ function buildResearchArticle(
 		slug: {_type: 'slug', current: slugify(slugSource)},
 	}
 	const content = cleanString(row.content)
-	if (content) doc.body = contentToPortableText(content, catalog)
+	if (content) doc.body = applyContentBlocks(content, catalog, clipId, audit)
 	return doc
 }
 
@@ -326,10 +341,10 @@ export function mapRow(
 			doc = buildHistoricalImage(clipId, resolvedTitle, row)
 			break
 		case 'primarySource':
-			doc = buildPrimarySource(clipId, resolvedTitle, row, catalog)
+			doc = buildPrimarySource(clipId, resolvedTitle, row, catalog, audit)
 			break
 		case 'researchArticle':
-			doc = buildResearchArticle(clipId, resolvedTitle, row, catalog)
+			doc = buildResearchArticle(clipId, resolvedTitle, row, catalog, audit)
 			break
 	}
 

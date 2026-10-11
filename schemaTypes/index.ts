@@ -16,6 +16,7 @@ import {internalSubLinks} from './objects/internalSubLinks'
 import {mapEmbed} from './objects/mapEmbed'
 import {navLink} from './objects/navLink'
 import {pageBreak} from './objects/pageBreak'
+import {table} from './objects/table'
 import {thenAndNowView} from './objects/thenAndNowView'
 import {organization} from './organization'
 import {person} from './person'
@@ -58,4 +59,5 @@ export const schemaTypes = [
 	historicalDate,
 	immediateRelative,
 	pageBreak,
+	table,
 ]

@@ -14,6 +14,7 @@ import {notesAndReferencesField} from './shared/notesAndReferencesField'
 import {organizationsField} from './shared/organizationsField'
 import {peopleMentionedField} from './shared/peopleMentionedField'
 import {portableTextImageMember} from './shared/portableTextImageFields'
+import {portableTextTablePlugins} from './shared/portableTextTablePlugins'
 import {propertiesMentionedField} from './shared/propertiesMentionedField'
 
 export const researchArticle = defineType({
@@ -80,7 +81,13 @@ export const researchArticle = defineType({
 				portableTextImageMember({title: 'Uploaded Image'}),
 				defineArrayMember({type: 'mapEmbed'}),
 				defineArrayMember({type: 'internalSubLinks'}),
+				defineArrayMember({type: 'table'}),
 			],
+			components: {
+				portableText: {
+					plugins: portableTextTablePlugins,
+				},
+			},
 		}),
 		notesAndReferencesField('content'),
 		internalCommentsField('internal'),

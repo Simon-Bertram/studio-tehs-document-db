@@ -16,7 +16,7 @@ Object types used inside documents (`historicalDate`, `navLink`, …) have their
 
 **Taxonomies:** [county](#county) · [township](#township) · [location](#location) · [person](#person) · [familyLine](#familyline) · [property](#property) · [deed](#deed) · [business](#business) · [organization](#organization) · [category](#category) · [donationCategory](#donationcategory)
 
-**Objects:** [historicalDate](#historicaldate) · [censusRecord](#censusrecord) · [immediateRelative](#immediaterelative) · [historicalImageEmbed](#historicalimageembed) · [mapEmbed](#mapembed) · [internalSubLinks](#internalsublinks) · [navLink](#navlink) · [pageBreak](#pagebreak) · [thenAndNowView](#thenandnowview)
+**Objects:** [historicalDate](#historicaldate) · [censusRecord](#censusrecord) · [immediateRelative](#immediaterelative) · [historicalImageEmbed](#historicalimageembed) · [mapEmbed](#mapembed) · [internalSubLinks](#internalsublinks) · [navLink](#navlink) · [pageBreak](#pagebreak) · [table](#table) · [thenAndNowView](#thenandnowview)
 
 **[Planned types](#planned-not-in-indexts)** — not exported from `index.ts`
 
@@ -40,7 +40,7 @@ Document. Studio title: **Primary Source**. One clipping, letter, or notice.
 | `date`                 | Publication Date             | `historicalDate`                                                | identity |          | Prefer year-only when day unknown |
 | `newspaper`            | Source Publication Name      | `string`                                                        | identity |          |                                   |
 | `articleImage`         | Scan of Clipping             | `image` (hotspot)                                               | content  |          |                                   |
-| `transcription`        | Full Transcription Text      | Portable Text (`block`)                                         | content  |          |                                   |
+| `transcription`        | Full Transcription Text      | Portable Text (`block`, `historicalImageEmbed`, `table`)         | content  |          | Built-in PTE table editing        |
 | `isSheriffSale`        | Is this a Sheriff's Sale?    | `boolean`                                                       | content  |          |                                   |
 | `legalWrit`            | Legal Writ Type              | `string` (`fieriFacias` / `levariFacias` / `venditioniExponas`) | content  |          | Hidden unless sheriff’s sale      |
 | `associatedProperties` | Associated Properties        | `array` of `reference → property`                               | place    |          | Prefer over standalone township   |
@@ -126,7 +126,7 @@ Document. Studio title: **Research Article**. Modern essays and township overvie
 | `peopleMentioned`     | People Mentioned                      | `array` of `reference → person`                                                                                                | context  |          |                                     |
 | `propertiesMentioned` | Properties / Historic Sites Mentioned | `array` of `reference → property`                                                                                              | context  |          |                                     |
 | `organizations`       | Organizations and Businesses          | `array` of `reference → business | organization`                                                                               | context  |          |                                     |
-| `body`                | Page Content & Layout Canvas          | Portable Text: `block`, `historicalImageEmbed`, uploaded `image` (caption / alt / `imageRole`), `mapEmbed`, `internalSubLinks` | content  |          |                                     |
+| `body`                | Page Content & Layout Canvas          | Portable Text: `block`, `historicalImageEmbed`, uploaded `image` (caption / alt / `imageRole`), `mapEmbed`, `internalSubLinks`, `table` | content  |          | Built-in PTE table editing          |
 | `notesAndReferences`  | Notes & References                    | Portable Text (`block` + URL marks)                                                                                            | content  |          | Published bibliography              |
 | `internalComments`    | Internal Comments                     | `text`                                                                                                                         | internal |          | Studio-only; not public             |
 
@@ -498,6 +498,18 @@ Object. Studio title: **Interactive Map Module**.
 | `mapYear` | Historical Map Target Year      | `string` |       |          |       |
 | `mapUrl`  | Engine Application Embedded URL | `url`    |       |          |       |
 
+
+
+
+### `table`
+
+Object. Studio title: **Table**. Embedded in Portable Text (`primarySource.transcription`, `researchArticle.body`). Uses Studio’s built-in PTE table plugin (not `@sanity/table`).
+
+
+| Field        | Title       | Type                                      | Group | Required | Notes                                    |
+| ------------ | ----------- | ----------------------------------------- | ----- | -------- | ---------------------------------------- |
+| `headerRows` | Header rows | `number`                                  |       |          | Leading rows treated as headers (0 or 1) |
+| `rows`       | Rows        | `array` of `row` → `cells` → `cell.value` |       |          | Each cell `value` is Portable Text blocks |
 
 
 

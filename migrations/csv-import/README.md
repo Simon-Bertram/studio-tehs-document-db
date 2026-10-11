@@ -40,7 +40,13 @@ as `<img src="…">`. On import:
 
 1. HTML in `content` becomes Portable Text (`transcription` on primary sources,
    `body` on research articles). Plain text stays a single block. Double
-   `<br><br>` becomes paragraph breaks.
+   `<br><br>` becomes paragraph breaks. HTML **data** `<table>` elements become
+   embedded `table` blocks (Studio’s built-in PTE tables). Layout/chrome
+   wrappers (`content1` / `NavHintBox` / etc.) are unwrapped, not stored as
+   tables. Tab-separated column runs (e.g. deed-history grids) become `table`
+   blocks between ordinary text blocks. Merged cells (`colspan` / `rowspan`)
+   are flattened to a rectangular grid and flagged as `table-simplified` in
+   the import audit warnings.
 2. Each `<img>` becomes a `historicalImageEmbed` block.
 3. Filenames that match the photo catalog (`migrations/data/images.csv`
    identifier or `imageLocation` basename, using stems from

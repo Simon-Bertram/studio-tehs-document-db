@@ -15,6 +15,7 @@ import {citationsField} from './shared/citationsField'
 import {organizationsField} from './shared/organizationsField'
 import {peopleMentionedField} from './shared/peopleMentionedField'
 import {subjectsField} from './shared/subjectsField'
+import {portableTextTablePlugins} from './shared/portableTextTablePlugins'
 import {townshipWhenNoPlaceField} from './shared/townshipWhenNoPlaceField'
 
 export const primarySource = defineType({
@@ -65,7 +66,16 @@ export const primarySource = defineType({
 			title: 'Full Transcription Text',
 			type: 'array',
 			group: 'content',
-			of: [defineArrayMember({type: 'block'}), defineArrayMember({type: 'historicalImageEmbed'})],
+			of: [
+				defineArrayMember({type: 'block'}),
+				defineArrayMember({type: 'historicalImageEmbed'}),
+				defineArrayMember({type: 'table'}),
+			],
+			components: {
+				portableText: {
+					plugins: portableTextTablePlugins,
+				},
+			},
 		}),
 		defineField({
 			name: 'isSheriffSale',
