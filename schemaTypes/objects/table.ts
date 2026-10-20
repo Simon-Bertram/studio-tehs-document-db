@@ -59,8 +59,7 @@ export const table = defineType({
 		},
 		prepare({rows, headerRows}) {
 			const rowCount = Array.isArray(rows) ? rows.length : 0
-			const colCount =
-				Array.isArray(rows) && rows[0]?.cells ? rows[0].cells.length : 0
+			const colCount = Array.isArray(rows) && rows[0]?.cells ? rows[0].cells.length : 0
 			return {
 				title: rowCount ? `Table (${rowCount}×${colCount})` : 'Table',
 				subtitle:

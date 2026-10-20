@@ -14,8 +14,8 @@ import {archiveIdField} from './shared/archiveIdField'
 import {citationsField} from './shared/citationsField'
 import {organizationsField} from './shared/organizationsField'
 import {peopleMentionedField} from './shared/peopleMentionedField'
-import {subjectsField} from './shared/subjectsField'
 import {portableTextTablePlugins} from './shared/portableTextTablePlugins'
+import {subjectsField} from './shared/subjectsField'
 import {townshipWhenNoPlaceField} from './shared/townshipWhenNoPlaceField'
 
 export const primarySource = defineType({

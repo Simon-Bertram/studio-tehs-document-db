@@ -18,14 +18,7 @@ import {rootImportIdFromLegacy} from '../csv-import/lib/document-image-catalog'
 
 const DRY_RUN = !process.argv.includes('--live')
 
-const SYSTEM_KEYS = new Set([
-	'_id',
-	'_type',
-	'_rev',
-	'_createdAt',
-	'_updatedAt',
-	'_system',
-])
+const SYSTEM_KEYS = new Set(['_id', '_type', '_rev', '_createdAt', '_updatedAt', '_system'])
 
 const token = getSanityWriteToken()
 if (!DRY_RUN && !token) {
@@ -157,10 +150,9 @@ async function assertAfterLive(sampleRootId: string) {
 		client.fetch<number>(
 			`count(*[_type == "historicalImage" && _id in path("historicalImage.import.**")])`,
 		),
-		client.fetch<{_id: string; title?: string} | null>(
-			`*[_id == $id][0]{_id, title}`,
-			{id: sampleRootId},
-		),
+		client.fetch<{_id: string; title?: string} | null>(`*[_id == $id][0]{_id, title}`, {
+			id: sampleRootId,
+		}),
 		Promise.resolve(
 			'Verify anonymously: count(*[_id in path("historicalImage.import.**")]) should be 0',
 		),
@@ -168,9 +160,7 @@ async function assertAfterLive(sampleRootId: string) {
 
 	console.log('\n--- Post-live checks ---')
 	console.log(`Legacy private-path historicalImage docs: ${legacyCount}`)
-	console.log(
-		`Sample root doc: ${rootSample?._id ?? '(missing)'} (${rootSample?.title ?? ''})`,
-	)
+	console.log(`Sample root doc: ${rootSample?._id ?? '(missing)'} (${rootSample?.title ?? ''})`)
 	console.log(anonNote)
 
 	if (legacyCount > 0) {
@@ -182,9 +172,7 @@ async function assertAfterLive(sampleRootId: string) {
 }
 
 async function run() {
-	console.log(
-		`--- Root-path document image ids (${DRY_RUN ? 'DRY RUN' : 'LIVE'}) ---`,
-	)
+	console.log(`--- Root-path document image ids (${DRY_RUN ? 'DRY RUN' : 'LIVE'}) ---`)
 
 	const legacyDocs = await client.fetch<HistoricalImageDoc[]>(
 		`*[
@@ -203,9 +191,7 @@ async function run() {
 		byPublished.set(published, group)
 	}
 
-	console.log(
-		`Legacy docs: ${legacyDocs.length} (${byPublished.size} published id groups)`,
-	)
+	console.log(`Legacy docs: ${legacyDocs.length} (${byPublished.size} published id groups)`)
 
 	const plan: {
 		legacyPublishedId: string
@@ -221,15 +207,11 @@ async function run() {
 		const incoming = await fetchIncoming(legacyPublishedId)
 		plan.push({legacyPublishedId, rootId, variants})
 		const titles = variants.map((v) => v.title ?? '(untitled)').join(' | ')
-		console.log(
-			`  ${legacyPublishedId} → ${rootId}  incomingRefs=${incoming.length}  (${titles})`,
-		)
+		console.log(`  ${legacyPublishedId} → ${rootId}  incomingRefs=${incoming.length}  (${titles})`)
 	}
 
 	const parentsWithLegacyRefs = await fetchDocsWithLegacyImportRefs()
-	console.log(
-		`Parents still holding legacy import refs: ${parentsWithLegacyRefs.length}`,
-	)
+	console.log(`Parents still holding legacy import refs: ${parentsWithLegacyRefs.length}`)
 	for (const doc of parentsWithLegacyRefs) {
 		console.log(`  ${doc._id}`)
 	}
@@ -239,23 +221,18 @@ async function run() {
 		return
 	}
 
-	const sampleRootId =
-		'historicalImage-import-1854-11-28doc601small'
+	const sampleRootId = 'historicalImage-import-1854-11-28doc601small'
 
 	// 1) Ensure every public root-path copy exists before rewriting refs.
 	for (const item of plan) {
 		const {legacyPublishedId, rootId, variants} = item
 
-		const publishedVariant =
-			variants.find((v) => v._id === legacyPublishedId) ?? variants[0]
-		const draftVariant = variants.find(
-			(v) => v._id === `drafts.${legacyPublishedId}`,
-		)
+		const publishedVariant = variants.find((v) => v._id === legacyPublishedId) ?? variants[0]
+		const draftVariant = variants.find((v) => v._id === `drafts.${legacyPublishedId}`)
 
-		const existingRoot = await client.fetch<{_id: string} | null>(
-			`*[_id == $id][0]{_id}`,
-			{id: rootId},
-		)
+		const existingRoot = await client.fetch<{_id: string} | null>(`*[_id == $id][0]{_id}`, {
+			id: rootId,
+		})
 		if (!existingRoot?._id) {
 			await client.createOrReplace({
 				_id: rootId,
@@ -268,10 +245,9 @@ async function run() {
 
 		if (draftVariant) {
 			const rootDraftId = `drafts.${rootId}`
-			const existingRootDraft = await client.fetch<{_id: string} | null>(
-				`*[_id == $id][0]{_id}`,
-				{id: rootDraftId},
-			)
+			const existingRootDraft = await client.fetch<{_id: string} | null>(`*[_id == $id][0]{_id}`, {
+				id: rootDraftId,
+			})
 			if (!existingRootDraft?._id) {
 				await client.createOrReplace({
 					_id: rootDraftId,
@@ -299,10 +275,9 @@ async function run() {
 	// 3) Delete legacy private-path docs (and drafts).
 	for (const item of plan) {
 		for (const variant of item.variants) {
-			const stillExists = await client.fetch<string | null>(
-				`*[_id == $id][0]._id`,
-				{id: variant._id},
-			)
+			const stillExists = await client.fetch<string | null>(`*[_id == $id][0]._id`, {
+				id: variant._id,
+			})
 			if (!stillExists) {
 				console.log(`  already deleted ${variant._id}`)
 				continue

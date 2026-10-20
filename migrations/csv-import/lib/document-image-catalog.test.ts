@@ -86,9 +86,9 @@ describe('rootImportIdFromLegacy', () => {
 		expect(rootImportIdFromLegacy('historicalImage.import.1854-11-28doc601small')).toBe(
 			'historicalImage-import-1854-11-28doc601small',
 		)
-		expect(
-			rootImportIdFromLegacy('drafts.historicalImage.import.1854-11-28doc601small'),
-		).toBe('drafts.historicalImage-import-1854-11-28doc601small')
+		expect(rootImportIdFromLegacy('drafts.historicalImage.import.1854-11-28doc601small')).toBe(
+			'drafts.historicalImage-import-1854-11-28doc601small',
+		)
 	})
 
 	test('returns null for non-legacy ids', () => {

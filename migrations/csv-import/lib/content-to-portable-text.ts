@@ -232,8 +232,8 @@ function usableAlt(alt: string | null | undefined): string | undefined {
 function isLayoutChromeRow(tr: Element): boolean {
 	return Boolean(
 		tr.querySelector('.NavHintBox, .Navlinks, .TitleBox, .Navlink, .tt18cHint') ||
-			tr.classList.contains('NavHintBox') ||
-			tr.classList.contains('TitleBox'),
+		tr.classList.contains('NavHintBox') ||
+		tr.classList.contains('TitleBox'),
 	)
 }
 

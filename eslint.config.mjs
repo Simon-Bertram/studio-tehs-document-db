@@ -1,7 +1,7 @@
 import studio from '@sanity/eslint-config-studio'
 import prettier from 'eslint-plugin-prettier'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
-import importPlugin from 'eslint-plugin-import'
+import importX from 'eslint-plugin-import-x'
 
 export default [
 	{
@@ -13,14 +13,14 @@ export default [
 		plugins: {
 			prettier,
 			'simple-import-sort': simpleImportSort,
-			import: importPlugin,
+			'import-x': importX,
 		},
 		rules: {
 			'prettier/prettier': 'error',
 			'simple-import-sort/imports': 'error',
 			'simple-import-sort/exports': 'error',
 			'typescript/consistent-type-imports': 'error',
-			'import/no-default-export': 'error',
+			'import-x/no-default-export': 'error',
 		},
 	},
 	{
@@ -30,7 +30,7 @@ export default [
 			'**/migrations/**/index.ts',
 		],
 		rules: {
-			'import/no-default-export': 'off',
+			'import-x/no-default-export': 'off',
 		},
 	},
 ]

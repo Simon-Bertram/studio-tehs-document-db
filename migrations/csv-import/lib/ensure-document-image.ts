@@ -146,10 +146,9 @@ async function ensureNewHistoricalImage(
 
 	// Pre-migration re-import: copy legacy private-path doc onto the public id.
 	if (!existing?._id && legacyId) {
-		const legacyFull = await client.fetch<Record<string, unknown> | null>(
-			`*[_id == $id][0]`,
-			{id: legacyId},
-		)
+		const legacyFull = await client.fetch<Record<string, unknown> | null>(`*[_id == $id][0]`, {
+			id: legacyId,
+		})
 		if (legacyFull) {
 			const createDoc: Record<string, unknown> = {
 				_id: importId,
@@ -172,12 +171,9 @@ async function ensureNewHistoricalImage(
 			existing = {
 				_id: importId,
 				imageFile: createDoc.imageFile,
-				archiveId:
-					typeof createDoc.archiveId === 'string' ? createDoc.archiveId : undefined,
+				archiveId: typeof createDoc.archiveId === 'string' ? createDoc.archiveId : undefined,
 			}
-			audit.warn(
-				`clipID ${parentClipId}: copied legacy ${legacyId} → public ${importId}`,
-			)
+			audit.warn(`clipID ${parentClipId}: copied legacy ${legacyId} → public ${importId}`)
 		}
 	}
 

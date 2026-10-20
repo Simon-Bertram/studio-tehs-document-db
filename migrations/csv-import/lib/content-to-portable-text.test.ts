@@ -4,9 +4,9 @@ import {
 	contentToPortableText,
 	contentToPortableTextDetailed,
 	type HistoricalImageEmbedPending,
-	type TableBlock,
 	preprocessContentHtml,
 	stripHtmlToPlainText,
+	type TableBlock,
 	unwrapLayoutTables,
 } from './content-to-portable-text'
 import type {DocumentImageCatalog} from './document-image-catalog'
@@ -183,14 +183,7 @@ describe('contentToPortableText', () => {
 		const tables = blocks.filter((b) => b._type === 'table') as TableBlock[]
 		expect(tables).toHaveLength(2)
 		expect(tables[0].headerRows).toBe(1)
-		expect(cellTexts(tables[0])[0]).toEqual([
-			'From',
-			'To',
-			'Date',
-			'Area',
-			'Cost',
-			'Reference',
-		])
+		expect(cellTexts(tables[0])[0]).toEqual(['From', 'To', 'Date', 'Area', 'Cost', 'Reference'])
 		expect(cellTexts(tables[0])).toHaveLength(3)
 
 		const headings = blocks

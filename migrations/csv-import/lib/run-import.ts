@@ -11,8 +11,8 @@ import pLimit from 'p-limit'
 
 import {SANITY_DATASET, SANITY_PROJECT_ID} from '../../../lib/sanityEnv'
 import {Audit} from './audit'
-import type {ImportConfig} from './cli-config'
 import {normalizeClipId} from './clean'
+import type {ImportConfig} from './cli-config'
 import {getDocumentImageBaseUrl, loadDocumentImageCatalog} from './document-image-catalog'
 import {createDocumentImageResolution, resolveDocumentImageEmbeds} from './ensure-document-image'
 import {generateDocumentReviewReports} from './generate-document-review-reports'
@@ -72,9 +72,7 @@ export async function runImport(config: ImportConfig, client: SanityClient): Pro
 			rows.map((row) => normalizeClipId(row.clipID)).filter((id): id is string => Boolean(id)),
 		)
 		const missing = clipIds.filter((id) => !matched.has(normalizeClipId(id) ?? id))
-		console.log(
-			`Parsed ${parsedRows.length} CSV rows; ${rows.length} matched --clip-ids.`,
-		)
+		console.log(`Parsed ${parsedRows.length} CSV rows; ${rows.length} matched --clip-ids.`)
 		if (missing.length > 0) {
 			console.log(`Requested clip IDs not found in CSV: ${missing.join(', ')}`)
 		}
@@ -195,9 +193,7 @@ export async function runImport(config: ImportConfig, client: SanityClient): Pro
 
 function filterRowsByClipIds(rows: CsvRow[], clipIds: string[]): CsvRow[] {
 	const wanted = new Set(
-		clipIds
-			.map((id) => normalizeClipId(id))
-			.filter((id): id is string => Boolean(id)),
+		clipIds.map((id) => normalizeClipId(id)).filter((id): id is string => Boolean(id)),
 	)
 	return rows.filter((row) => {
 		const id = normalizeClipId(row.clipID)
