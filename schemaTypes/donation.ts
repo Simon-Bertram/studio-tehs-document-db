@@ -18,7 +18,7 @@ export const donation = defineType({
 	type: 'document',
 	icon: BasketIcon,
 	groups: [
-		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
+		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon},
 		{name: 'details', title: 'Details', icon: TagsIcon},
 	],
 	fields: [

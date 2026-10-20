@@ -27,7 +27,7 @@ export const historicalImage = defineType({
 	type: 'document',
 	icon: ImageIcon,
 	groups: [
-		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
+		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon},
 		{name: 'content', title: 'Content', icon: BlockElementIcon},
 		{name: 'place', title: 'Place', icon: PinIcon},
 		{name: 'provenance', title: 'Provenance', icon: ClipboardIcon},

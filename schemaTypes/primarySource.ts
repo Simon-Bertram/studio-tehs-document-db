@@ -26,7 +26,7 @@ export const primarySource = defineType({
 	description:
 		'STOP: Use this ONLY for transcribing a single, historical piece of media (like a newspaper ad or old letter). If you want to publish an essay or piece of modern research, use the Research Article type instead.',
 	groups: [
-		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
+		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon},
 		{name: 'content', title: 'Content', icon: BlockElementIcon},
 		{name: 'place', title: 'Place', icon: PinIcon},
 		{name: 'research', title: 'Research', icon: SearchIcon},

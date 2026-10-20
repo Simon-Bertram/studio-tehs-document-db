@@ -35,7 +35,7 @@ export const thenAndNow = defineType({
 		input: DocumentWithDescription,
 	},
 	groups: [
-		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
+		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon},
 		{name: 'publication', title: 'Publication Details', icon: BookIcon},
 		{name: 'content', title: 'Content', icon: BlockElementIcon},
 		{name: 'context', title: 'Context', icon: PinIcon},

@@ -32,7 +32,7 @@ export const quarterlyIssue = defineType({
 		input: QuarterlyIssueInput,
 	},
 	groups: [
-		{name: 'publication', title: 'Publication Details', icon: InfoOutlineIcon, default: true},
+		{name: 'publication', title: 'Publication Details', icon: InfoOutlineIcon},
 		{name: 'media', title: 'Cover & PDF', icon: ImageIcon},
 		{name: 'notes', title: 'Notes', icon: CommentIcon},
 	],

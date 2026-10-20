@@ -1,2 +1,1 @@
 clipId,title,csvType,reason,studioAction
-944,Tredyffrin Easttown Historical Society Presidents,document,diverted_quarterly,Import via bun run csv-import:quarterly (HTML archive) or create a TEHS Quarterly Article in Studio. Do not re-import this row as primarySource / historicalImage.

@@ -148,9 +148,9 @@ a { color: #1d4f7a; }
 	<header class="toolbar">
 		<div class="toolbar-top">
 			<h1>Skipped documents</h1>
-			<p class="progress" id="progress">Resolved 0 of 3</p>
+			<p class="progress" id="progress">Resolved 0 of 0</p>
 		</div>
-		<p class="summary">3 CSV rows never became a Studio document. Grouped by skip reason; unknown types are split by the CSV type column. Checkmarks stay in this browser after you regenerate the HTML.</p>
+		<p class="summary">0 CSV rows never became a Studio document. Grouped by skip reason; unknown types are split by the CSV type column. Checkmarks stay in this browser after you regenerate the HTML.</p>
 		<details class="how-to">
 			<summary>How to fix</summary>
 			<ol>
@@ -171,9 +171,7 @@ a { color: #1d4f7a; }
 			</div>
 			<div class="chips" role="group" aria-label="Reason">
 	<span class="legend">Reason</span>
-	<button type="button" class="chip is-active" data-chip="" aria-pressed="true">All (3)</button>
-	<button type="button" class="chip" data-chip="unknown_type" aria-pressed="false">Unknown type (2)</button>
-	<button type="button" class="chip" data-chip="diverted_quarterly" aria-pressed="false">Quarterly (1)</button>
+	<button type="button" class="chip is-active" data-chip="" aria-pressed="true">All (0)</button>
 </div>
 			<label>
 				<span class="legend">Search</span>
@@ -188,100 +186,7 @@ a { color: #1d4f7a; }
 	<main>
 <section class="view" id="by-reason" data-view="by-reason">
 	<h2>By skip reason</h2>
-	<h3 class="kind-heading">Unknown CSV type (2)</h3>
-	<section class="section" data-section="skipped-unknown-null" id="skipped-unknown-null">
-		<div class="section-head">
-			<h3>NULL (2)</h3>
-			<div class="section-actions">
-				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
-				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
-			</div>
-		</div>
-		<p class="section-blurb">TYPE_MAP maps newspaper ads/articles/clippings, letters, wills, genealogical records, and similar types to Primary Source; books/publications/theses to Research Article; photo to Historical Image. NULL, miscellaneous, and article stay unmapped — set the CSV type, then re-run.</p>
-
-		<div class="table-wrap">
-		<table>
-			<thead>
-				<tr>
-				<th scope="col">Resolved</th>
-				<th scope="col">Archive ID</th>
-				<th scope="col">Title</th>
-				<th scope="col">CSV type</th>
-				<th scope="col">Reason</th>
-				<th scope="col">Detail</th>
-				</tr>
-			</thead>
-			<tbody>
-			<tr data-id="279" data-filter="unknown_type" data-search="279  null unknown_type unknown type &quot;null&quot;. decide schema manually or fix csv.">
-				<td class="resolve-cell">
-					<label>
-						<input type="checkbox" class="resolve-toggle" data-id="279" />
-						<span>Resolved</span>
-					</label>
-				</td>
-				<td class="id-cell"><span class="mono">279</span></td>
-				<td></td>
-				<td>NULL</td>
-				<td><span class="badge badge-warn">Unknown type</span></td>
-				<td>Unknown type &quot;NULL&quot;. Decide schema manually or fix CSV.</td>
-			</tr>
-			<tr data-id="652" data-filter="unknown_type" data-search="652  null unknown_type unknown type &quot;null&quot;. decide schema manually or fix csv.">
-				<td class="resolve-cell">
-					<label>
-						<input type="checkbox" class="resolve-toggle" data-id="652" />
-						<span>Resolved</span>
-					</label>
-				</td>
-				<td class="id-cell"><span class="mono">652</span></td>
-				<td></td>
-				<td>NULL</td>
-				<td><span class="badge badge-warn">Unknown type</span></td>
-				<td>Unknown type &quot;NULL&quot;. Decide schema manually or fix CSV.</td>
-			</tr>
-			</tbody>
-		</table>
-		</div>
-	</section>
-	<section class="section" data-section="skipped-diverted-quarterly" id="skipped-diverted-quarterly">
-		<div class="section-head">
-			<h3>Diverted to Quarterly (1)</h3>
-			<div class="section-actions">
-				<button type="button" class="mark-visible" data-resolved="true">Mark visible resolved</button>
-				<button type="button" class="mark-visible" data-resolved="false">Mark visible unresolved</button>
-			</div>
-		</div>
-		<p class="section-blurb">Keyword TEHS — import with bun run csv-import:quarterly, not as an archive document.</p>
-
-		<div class="table-wrap">
-		<table>
-			<thead>
-				<tr>
-				<th scope="col">Resolved</th>
-				<th scope="col">Archive ID</th>
-				<th scope="col">Title</th>
-				<th scope="col">CSV type</th>
-				<th scope="col">Reason</th>
-				<th scope="col">Detail</th>
-				</tr>
-			</thead>
-			<tbody>
-			<tr data-id="944" data-filter="diverted_quarterly" data-search="944 tredyffrin easttown historical society presidents document diverted_quarterly keyword tehs identifies a tehs quarterly article. skipped by archive importers; import via csv-import:quarterly (html) or enter as quarterlyarticle in studio.">
-				<td class="resolve-cell">
-					<label>
-						<input type="checkbox" class="resolve-toggle" data-id="944" />
-						<span>Resolved</span>
-					</label>
-				</td>
-				<td class="id-cell"><span class="mono">944</span></td>
-				<td>Tredyffrin Easttown Historical Society Presidents</td>
-				<td>document</td>
-				<td><span class="badge badge-quiet">Quarterly</span></td>
-				<td>Keyword TEHS identifies a TEHS Quarterly article. Skipped by archive importers; import via csv-import:quarterly (HTML) or enter as quarterlyArticle in Studio.</td>
-			</tr>
-			</tbody>
-		</table>
-		</div>
-	</section>
+	<p class="empty">None.</p>
 </section>
 	</main>
 	<script>

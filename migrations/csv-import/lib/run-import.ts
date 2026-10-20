@@ -12,6 +12,7 @@ import pLimit from 'p-limit'
 import {SANITY_DATASET, SANITY_PROJECT_ID} from '../../../lib/sanityEnv'
 import {Audit} from './audit'
 import type {ImportConfig} from './cli-config'
+import {normalizeClipId} from './clean'
 import {getDocumentImageBaseUrl, loadDocumentImageCatalog} from './document-image-catalog'
 import {createDocumentImageResolution, resolveDocumentImageEmbeds} from './ensure-document-image'
 import {generateDocumentReviewReports} from './generate-document-review-reports'
@@ -26,13 +27,14 @@ import {toCsv, writeReports} from './write-reports'
 const CONCURRENCY = 5
 
 export async function runImport(config: ImportConfig, client: SanityClient): Promise<void> {
-	const {dryRun, rowLimit, csvPath, reportsDir} = config
+	const {dryRun, rowLimit, csvPath, reportsDir, clipIds} = config
 	const mode = dryRun ? 'DRY RUN' : 'LIVE'
 
 	console.log(`--- CSV Import (${mode}) ---`)
 	console.log(`Source: ${csvPath}`)
 	console.log(`Project: ${SANITY_PROJECT_ID} / ${SANITY_DATASET}`)
-	if (rowLimit < Infinity) console.log(`Row limit: ${rowLimit}`)
+	if (clipIds) console.log(`Clip IDs filter: ${clipIds.length} id(s)`)
+	else if (rowLimit < Infinity) console.log(`Row limit: ${rowLimit}`)
 	console.log()
 
 	// --- Phase 1: taxonomy + image catalog lookups ---
@@ -57,13 +59,29 @@ export async function runImport(config: ImportConfig, client: SanityClient): Pro
 	}
 	console.log()
 
-	// --- Phase 2: parse CSV ---
+	// --- Phase 2: parse CSV (scan full file when filtering by clip ID) ---
 	const audit = new Audit()
 	const imageResolution = createDocumentImageResolution()
 	const imageIdCache = new Map<string, string>()
-	const rows = await readCsvRows<CsvRow>(csvPath, rowLimit)
+	const scanLimit = clipIds ? Infinity : rowLimit
+	const parsedRows = await readCsvRows<CsvRow>(csvPath, scanLimit)
+	const rows = clipIds ? filterRowsByClipIds(parsedRows, clipIds) : parsedRows
 	audit.totalRows = rows.length
-	console.log(`Parsed ${rows.length} rows from CSV.\n`)
+	if (clipIds) {
+		const matched = new Set(
+			rows.map((row) => normalizeClipId(row.clipID)).filter((id): id is string => Boolean(id)),
+		)
+		const missing = clipIds.filter((id) => !matched.has(normalizeClipId(id) ?? id))
+		console.log(
+			`Parsed ${parsedRows.length} CSV rows; ${rows.length} matched --clip-ids.`,
+		)
+		if (missing.length > 0) {
+			console.log(`Requested clip IDs not found in CSV: ${missing.join(', ')}`)
+		}
+		console.log()
+	} else {
+		console.log(`Parsed ${rows.length} rows from CSV.\n`)
+	}
 
 	// --- Phase 3: map rows (and upsert when live) ---
 	const limit = pLimit(CONCURRENCY)
@@ -173,6 +191,18 @@ export async function runImport(config: ImportConfig, client: SanityClient): Pro
 	if (imageResolution.assetErrors.length > 0) {
 		console.log(`Document image asset errors: ${imageResolution.assetErrors.length}`)
 	}
+}
+
+function filterRowsByClipIds(rows: CsvRow[], clipIds: string[]): CsvRow[] {
+	const wanted = new Set(
+		clipIds
+			.map((id) => normalizeClipId(id))
+			.filter((id): id is string => Boolean(id)),
+	)
+	return rows.filter((row) => {
+		const id = normalizeClipId(row.clipID)
+		return id !== null && wanted.has(id)
+	})
 }
 
 function writeDocumentImageReports(

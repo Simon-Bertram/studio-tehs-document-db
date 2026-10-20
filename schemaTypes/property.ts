@@ -13,7 +13,7 @@ export const property = defineType({
 	type: 'document',
 	icon: HomeIcon,
 	groups: [
-		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
+		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon},
 		{name: 'place', title: 'Place', icon: PinIcon},
 		{name: 'research', title: 'Research', icon: SearchIcon},
 	],

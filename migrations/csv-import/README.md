@@ -91,6 +91,9 @@ bun run migrations/csv-import/seed-document-taxonomies.ts -- --live
 bun run csv-import -- --limit 20    # dry-run (default)
 bun run csv-import -- --live        # write to Sanity
 bun run csv-import -- migrations/data/documents-full.csv   # dry-run the full export
+# Re-import specific Archive IDs (clipID) only — scans the full CSV, then filters:
+bun run csv-import -- migrations/data/documents-full.csv --clip-ids 32,665,701
+bun run csv-import -- migrations/data/documents-full.csv --live --clip-ids 32,665,701
 ```
 
 Reports: `migrations/csv-import/reports/`. The importer also writes three HTML review files (`skipped.html`, `missing-taxonomies.html`, `needs-manual-links.html`) after each run. Regenerating without re-importing: `bun run csv-import:documents-review-reports`. Resolved checkboxes use a separate browser key (`tehs-document-review`) from the image reports.

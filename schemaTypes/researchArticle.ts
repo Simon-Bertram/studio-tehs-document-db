@@ -28,7 +28,7 @@ export const researchArticle = defineType({
 		input: DocumentWithDescription,
 	},
 	groups: [
-		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
+		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon},
 		{name: 'content', title: 'Content', icon: BlockElementIcon},
 		{name: 'context', title: 'Context', icon: PinIcon},
 		{name: 'internal', title: 'Internal', icon: CommentIcon},

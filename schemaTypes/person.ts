@@ -24,7 +24,7 @@ export const person = defineType({
 	type: 'document',
 	icon: UserIcon,
 	groups: [
-		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
+		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon},
 		{name: 'genealogy', title: 'Genealogy', icon: UsersIcon},
 		{name: 'records', title: 'Records', icon: CalendarIcon},
 	],

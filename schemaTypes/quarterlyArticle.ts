@@ -22,7 +22,7 @@ export const quarterlyArticle = defineType({
 	type: 'document',
 	icon: BookIcon,
 	groups: [
-		{name: 'publication', title: 'Publication Details', icon: InfoOutlineIcon, default: true},
+		{name: 'publication', title: 'Publication Details', icon: InfoOutlineIcon},
 		{name: 'content', title: 'Article Content', icon: BlockElementIcon},
 		{name: 'entities', title: 'Tagged Entities', icon: TagIcon},
 		{name: 'internal', title: 'Internal', icon: CommentIcon},

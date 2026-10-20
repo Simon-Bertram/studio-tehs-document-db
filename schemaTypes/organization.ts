@@ -17,7 +17,7 @@ export const organization = defineType({
 	type: 'document',
 	icon: UsersIcon,
 	groups: [
-		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
+		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon},
 		{name: 'place', title: 'Place', icon: PinIcon},
 		{name: 'relations', title: 'Relations', icon: LinkIcon},
 	],

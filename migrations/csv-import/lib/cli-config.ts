@@ -8,6 +8,8 @@ export interface ImportConfig {
 	dryRun: boolean
 	rowLimit: number
 	rowOffset: number
+	/** When set, only rows whose normalized clipID is in this list are imported. */
+	clipIds: string[] | null
 	csvPath: string
 	reportsDir: string
 }
@@ -27,6 +29,28 @@ function flagNumber(argv: string[], flag: string): number | undefined {
 	if (idx === -1 || !argv[idx + 1]) return undefined
 	const n = Number(argv[idx + 1])
 	return Number.isFinite(n) ? n : undefined
+}
+
+function flagString(argv: string[], flag: string): string | undefined {
+	const idx = argv.indexOf(flag)
+	if (idx === -1 || !argv[idx + 1]) return undefined
+	return argv[idx + 1]
+}
+
+/**
+ * Parse `--clip-ids 32,665,701` into a de-duplicated list (order preserved).
+ */
+export function parseClipIdsFlag(raw: string | undefined): string[] | null {
+	if (raw === undefined) return null
+	const seen = new Set<string>()
+	const ids: string[] = []
+	for (const part of raw.split(',')) {
+		const id = part.trim()
+		if (!id || seen.has(id)) continue
+		seen.add(id)
+		ids.push(id)
+	}
+	return ids.length > 0 ? ids : null
 }
 
 /**
@@ -51,6 +75,7 @@ export function parseCliConfig(
 		dryRun: !argv.includes('--live'),
 		rowLimit,
 		rowOffset,
+		clipIds: parseClipIdsFlag(flagString(argv, '--clip-ids')),
 		csvPath: path.resolve(argv.find((a) => a.endsWith('.csv')) ?? defaults.csvPath),
 		reportsDir: path.resolve(defaults.reportsDir),
 	}

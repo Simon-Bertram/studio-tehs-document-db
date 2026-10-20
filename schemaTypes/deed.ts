@@ -20,7 +20,7 @@ export const deed = defineType({
 	description:
 		'One conveyance or land instrument in a chain of title (deed, patent, will, tax return, etc.). Not for transcribing a single clipping—use Primary Source for that.',
 	groups: [
-		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon, default: true},
+		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon},
 		{name: 'parties', title: 'Parties', icon: UsersIcon},
 		{name: 'terms', title: 'Terms', icon: BillIcon},
 		{name: 'place', title: 'Place', icon: PinIcon},
