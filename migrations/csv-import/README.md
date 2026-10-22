@@ -109,9 +109,21 @@ Article in Studio). The same divert applies to `csv-import:images` when
 
 ## TEHS Quarterly
 
-Two phases: **catalog** (issues, then article stubs), then optional **HTML body** import
-for volumes that have per-article HTML. Dry-run is the default; `--live` writes.
-Do not run `--live` until the dry-run reports look right.
+Two phases: **catalog** (issues, then article stubs for all volumes), then **HTML body**
+import for every volume whose TOC links to per-article HTML. Dry-run is the default;
+`--live` writes. Do not run `--live` until the dry-run reports look right.
+
+### Full import order
+
+```bash
+bun run csv-import:quarterly -- --extract
+bun run csv-import:quarterly -- --issues
+bun run csv-import:quarterly -- --issues --live
+bun run csv-import:quarterly -- --article-stubs
+bun run csv-import:quarterly -- --article-stubs --live
+bun run csv-import:quarterly -- --all-html-volumes          # dry-run HTML bodies
+bun run csv-import:quarterly -- --all-html-volumes --live   # write HTML bodies
+```
 
 ### Phase 1–2: issues then stubs
 
@@ -136,30 +148,45 @@ bun run csv-import:quarterly -- --article-stubs --live     # write stubs
   Season and **Combined / double issue** come from headings. Cover images upload on
   `--live` only. Re-runs do not overwrite editor-set `pdfAsset`, cover, date, season,
   or `tocNotes`.
-- Article stubs: title, `authorText`, pages, `issueRef`. `sourceKey` is the HTML stem
-  (`v22n1p003`) when a URL exists, otherwise `v58n1/${slug(title)}`. No `body` in this
-  pass. PDF rows that do not match a stub or issue go to `unmatched-index.csv`.
+- Article stubs: title, `authorText`, pages, `issueRef` (always set from the issue map).
+  `sourceKey` is the HTML/PDF stem (`v22n1p003`) when a URL exists, otherwise
+  `v58n1/${slug(title)}`. No `body` in this pass. PDF index rows that do not match a
+  stub or issue go to `unmatched-index.csv`.
 - Reports: `migrations/csv-import/reports/quarterly/` (`issues-preview.ndjson`,
-  `stubs-preview.ndjson`, `unmatched-index.csv`).
+  `stubs-preview.ndjson`, `unmatched-index.csv`, `toc-404s.csv`, `pdf-articles.csv`).
 
-### HTML article bodies (later pass)
+### HTML article bodies
 
 Source of truth for Portable Text is the [digital archive](https://www.tehistory.org/hqda/qtoc2.html):
 volume TOC pages (e.g. [qv22toc.html](https://www.tehistory.org/hqda/toc/qv22toc.html))
-and per-article HTML. Default pilot volume is **22**.
+and per-article HTML. Default single volume is **22**; use `--all-html-volumes` for 1…max.
 
 ```bash
-bun run csv-import:quarterly -- --limit 5              # dry-run Vol 22 bodies
-bun run csv-import:quarterly -- --volume 22 --live     # write Vol 22 bodies
-bun run csv-import:quarterly -- --volume 22 --limit 3  # dry-run first 3 articles
+bun run csv-import:quarterly -- --limit 5                    # dry-run Vol 22 bodies
+bun run csv-import:quarterly -- --volume 22 --live           # write Vol 22 bodies
+bun run csv-import:quarterly -- --all-html-volumes           # dry-run all HTML volumes
+bun run csv-import:quarterly -- --all-html-volumes --live    # write all HTML volumes
 ```
 
 - Snapshots under `migrations/data/quarterly/v{N}/` (HTML + `index.json`; gitignored).
-- Upserts `quarterlyIssue` by `sourceKey`, then `quarterlyArticle` by unique article
-  `sourceKey` (URL stem, e.g. `v22n1p003`) with `issueRef`.
+- Resolves existing catalog `quarterlyIssue` IDs, sparsely upserts issues, then upserts
+  `quarterlyArticle` by `sourceKey` with `issueRef`.
 - Body → Portable Text with `pageBreak` for original “Page N” markers; images
   upload on `--live` only.
-- Reports: `migrations/csv-import/reports/quarterly/`.
+- Skips volumes with no TOC or no HTML-linked articles (PDF-only TOCs).
+
+### Coverage reports (dry-run and live)
+
+Written under `migrations/csv-import/reports/quarterly/` after catalog and HTML runs:
+
+| File | Meaning |
+| --- | --- |
+| `toc-404s.csv` | Volume TOC pages that 404 or are missing on disk. `stubSource=qtoc1` means stubs still import from qtoc1 (typical vols 56–58). |
+| `pdf-articles.csv` | TOC rows whose article URL is a `.pdf` (typical vols 45–55). Columns include `willImportStub=yes`, `willImportBody=no`, `willUploadPdfAsset=no`. |
+
+**PDF policy:** per-article PDFs are **not** converted to Portable Text and are **not**
+uploaded into Sanity (`body` / `pdfAsset`) in this migration. Catalog stubs still get
+metadata + `issueRef` and keep the PDF URL on `sourceUrl` for QA.
 
 Existing articles imported before the issue split can be linked with:
 
@@ -167,9 +194,6 @@ Existing articles imported before the issue split can be linked with:
 bun run migrations/split-quarterly-issue-article/run.ts          # dry-run
 bun run migrations/split-quarterly-issue-article/run.ts -- --live
 ```
-
-Volume 45+ lean on PDF conversion on the public site — the HTML body importer
-targets HTML volumes; catalog stubs still cover later issues from qtoc1.
 
 ## DreamHost MySQL MCP (read-only)
 

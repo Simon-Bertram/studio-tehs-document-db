@@ -1,6 +1,6 @@
 import {describe, expect, test} from 'bun:test'
 
-import {parseVolumeCatalog, sourceKeyFromHref} from './parse-toc'
+import {isPdfArticleUrl, parseTocHtml, parseVolumeCatalog, sourceKeyFromHref} from './parse-toc'
 
 const V22_ISSUE = `
 <td class="tocCover"><img src="../covers/v22n1c150.jpg" alt="Cover v22n1"></td>
@@ -44,7 +44,23 @@ describe('sourceKeyFromHref', () => {
 	test('encodes a double issue href', () => {
 		expect(sourceKeyFromHref('../html/v44/v44n1+2p015.html')).toBe('v44n1+2p015')
 	})
+
+	test('encodes PDF article hrefs', () => {
+		expect(sourceKeyFromHref('../pdf/v45/v45n1p003.pdf')).toBe('v45n1p003')
+		expect(isPdfArticleUrl('https://www.tehistory.org/hqda/pdf/v45/v45n1p003.pdf')).toBe(true)
+		expect(isPdfArticleUrl('https://www.tehistory.org/hqda/html/v22/v22n1p003.html')).toBe(false)
+	})
 })
+
+const V45_PDF_ISSUE = `
+<td class="tocCover"><img src="../covers/v45n1c150.jpg" alt="Cover"></td>
+<td class="hqvitoc">
+	<b>Volume 45 Number 1 — Winter 2008</b><br>
+	<table class="vitoc">
+		<tr><td class="tocPgNum">3</td><td class="tocTitle"><a href="../pdf/v45/v45n1p003.pdf">Sample PDF Article</a> by Author</td></tr>
+	</table>
+</td>
+`
 
 describe('parseVolumeCatalog', () => {
 	test('parses a month-dated issue with cover and author', () => {
@@ -93,5 +109,19 @@ describe('parseVolumeCatalog', () => {
 		expect(issues[0].season).toBe('autumn')
 		expect(articles[0].sourceKey).toBe('v1n1p001')
 		expect(articles[0].sourceUrl).toContain('/html/v01/v01n1p001.html')
+	})
+
+	test('keeps PDF-linked rows in catalog but excludes them from HTML body import', () => {
+		const html = `<table><tr>${V45_PDF_ISSUE}</tr></table>`
+		const {articles} = parseVolumeCatalog(html, {
+			baseUrl: 'https://www.tehistory.org/hqda',
+			volume: 45,
+		})
+		expect(articles).toHaveLength(1)
+		expect(articles[0].sourceKey).toBe('v45n1p003')
+		expect(articles[0].sourceUrl).toContain('/pdf/v45/v45n1p003.pdf')
+		expect(parseTocHtml(html, {baseUrl: 'https://www.tehistory.org/hqda', volume: 45})).toHaveLength(
+			0,
+		)
 	})
 })

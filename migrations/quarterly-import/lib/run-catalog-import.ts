@@ -22,7 +22,17 @@ import {
 	mergeArticleStubs,
 	unionIssues,
 } from './merge-catalog'
+import {
+	fetchIssueIdsBySourceKey,
+	mergeIssueIdMaps,
+	pendingIssueRef,
+} from './resolve-issue-ids'
 import {upsertIssueSparse} from './upsert-issue-sparse'
+import {
+	buildPdfArticleRows,
+	buildToc404Rows,
+	writeCoverageReports,
+} from './write-coverage-reports'
 
 const STUB_CONCURRENCY = 5
 
@@ -51,16 +61,18 @@ async function upsertStubSparse(
 		{sourceKey: stub.sourceKey},
 	)
 
+	const issueRef = {_type: 'reference' as const, _ref: issueId}
+
 	const fields: Record<string, unknown> = {
 		_type: 'quarterlyArticle',
 		sourceKey: stub.sourceKey,
+		issueRef,
 	}
 	if (!existing?.title) fields.title = stub.title
 	if (!existing?.authorText && stub.authorText) fields.authorText = stub.authorText
 	if (existing?.startPage == null && stub.startPage != null) fields.startPage = stub.startPage
 	if (existing?.endPage == null && stub.endPage != null) fields.endPage = stub.endPage
 	if (!existing?.sourceUrl && stub.sourceUrl) fields.sourceUrl = stub.sourceUrl
-	if (!existing?.issueRef) fields.issueRef = {_type: 'reference', _ref: issueId}
 
 	if (!existing) {
 		return upsertByQuery(
@@ -69,7 +81,7 @@ async function upsertStubSparse(
 				_type: 'quarterlyArticle',
 				title: stub.title,
 				sourceKey: stub.sourceKey,
-				issueRef: {_type: 'reference', _ref: issueId},
+				issueRef,
 				...(stub.authorText ? {authorText: stub.authorText} : {}),
 				...(stub.startPage != null ? {startPage: stub.startPage} : {}),
 				...(stub.endPage != null ? {endPage: stub.endPage} : {}),
@@ -162,7 +174,14 @@ export async function runCatalogImport(
 	}
 
 	const audit = new Audit()
-	const issueIdBySourceKey = new Map<string, string>()
+	let issueIdBySourceKey = new Map<string, string>()
+	try {
+		issueIdBySourceKey = await fetchIssueIdsBySourceKey(client)
+	} catch (err) {
+		if (!dryRun) throw err
+		const msg = err instanceof Error ? err.message : String(err)
+		console.warn(`[WARN] could not fetch existing issue IDs (dry-run): ${msg}`)
+	}
 
 	if (dryRun) {
 		for (const issue of issues) {
@@ -178,11 +197,12 @@ export async function runCatalogImport(
 			console.log(`[DRY RUN] quarterlyIssue → ${issue.sourceKey}`)
 		}
 	} else {
+		const thisRun = new Map<string, string>()
 		for (const issue of issues) {
 			try {
 				const doc = catalogIssueDoc(issue)
 				const result = await upsertIssueSparse(client, doc, {uploadCover: true})
-				issueIdBySourceKey.set(issue.sourceKey, result.id)
+				thisRun.set(issue.sourceKey, result.id)
 				audit.recordImported({
 					clipId: issue.sourceKey,
 					title: `Vol. ${issue.volume} No. ${issue.issueNumber}`,
@@ -205,6 +225,7 @@ export async function runCatalogImport(
 				})
 			}
 		}
+		issueIdBySourceKey = mergeIssueIdMaps(issueIdBySourceKey, thisRun)
 	}
 
 	const merged = mergeArticleStubs({
@@ -241,11 +262,6 @@ export async function runCatalogImport(
 				console.log(`[DRY RUN] quarterlyArticle stub → ${stub.sourceKey} (${stub.title})`)
 			}
 		} else {
-			const existingIssues = await client.fetch<Array<{_id: string; sourceKey: string}>>(
-				`*[_type == "quarterlyIssue" && defined(sourceKey) && !(_id in path("drafts.**"))]{_id, sourceKey}`,
-			)
-			for (const row of existingIssues) issueIdBySourceKey.set(row.sourceKey, row._id)
-
 			const limit = pLimit(STUB_CONCURRENCY)
 			await Promise.all(
 				stubs.map((stub) =>
@@ -321,19 +337,23 @@ export async function runCatalogImport(
 			fs.writeFileSync(
 				stubPreview,
 				stubs
-					.map((stub) =>
-						JSON.stringify({
+					.map((stub) => {
+						const issueId = issueIdBySourceKey.get(stub.issueSourceKey)
+						return JSON.stringify({
 							_type: 'quarterlyArticle',
 							title: stub.title,
 							authorText: stub.authorText,
 							issueSourceKey: stub.issueSourceKey,
+							issueRef: issueId
+								? {_type: 'reference', _ref: issueId}
+								: pendingIssueRef(stub.issueSourceKey),
 							startPage: stub.startPage,
 							endPage: stub.endPage,
 							sourceKey: stub.sourceKey,
 							sourceUrl: stub.sourceUrl,
 							origin: stub.origin,
-						}),
-					)
+						})
+					})
 					.join('\n'),
 			)
 			console.log(`Stub preview: ${stubPreview}`)
@@ -360,6 +380,19 @@ export async function runCatalogImport(
 		console.log(`Unmatched PDF rows: ${unmatched.length} → ${unmatchedPath}`)
 	}
 
+	const qtoc1Volumes = [
+		...new Set(loaded.qtoc1Issues.map((issue) => issue.volume)),
+	]
+	writeCoverageReports(reportsDir, {
+		toc404Rows: buildToc404Rows({
+			baseUrl: config.baseUrl,
+			toc404Path: path.join(snapshotDir, 'toc-404s.json'),
+			tocVolumesMissing: loaded.tocVolumesMissing,
+			qtoc1Volumes,
+		}),
+		pdfArticleRows: buildPdfArticleRows(filterByVolume(merged.stubs, volume)),
+	})
+
 	writeReports(audit, reportsDir, {
 		naturalKeyLabel: 'sourceKey',
 		studioAction: (r) => `In Studio, find ${r.schemaType} with sourceKey ${r.clipId}.`,
@@ -370,6 +403,7 @@ export async function runCatalogImport(
 	console.log('Suggested Vision checks:')
 	console.log('  count(*[_type == "quarterlyIssue"])')
 	console.log('  count(*[_type == "quarterlyArticle" && !defined(body)])')
+	console.log('  count(*[_type == "quarterlyArticle" && !defined(issueRef)])')
 	console.log('  *[_type == "quarterlyIssue" && sourceKey == "v22n1"][0]')
 	console.log('  *[_type == "quarterlyArticle" && sourceKey == "v22n1p003"]{title, issueRef->}')
 }

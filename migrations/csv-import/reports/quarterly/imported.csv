@@ -1,6 +1,3 @@
 clipId,title,csvType,schemaType,action,sanityId,mappedKeywords,unmappedKeywords
-v22n1p002,Foreword,v22n1,quarterlyArticle,created,ipYry1VgJa0KZ1LTMpsB5p,,
-v22n1p011,Club Members Remember: Winter's Snow and Ice,v22n1,quarterlyArticle,created,9L6y2VmREfArO1LqZqutiG,,
-v22n1p003,Glimpses of the History of St. Peter's Church,v22n1,quarterlyArticle,created,ipYry1VgJa0KZ1LTMpsBHL,,
-v22n1p025,Five Boys Eat Apple Dumplings,v22n1,quarterlyArticle,created,9L6y2VmREfArO1LqZqutm8,,
-v22n1p017,Some Early Landholders in Tredyffrin,v22n1,quarterlyArticle,created,9L6y2VmREfArO1LqZqutpM,,
+v22n1p002,Foreword,v22n1,quarterlyArticle,dry_run,,,
+v22n1p003,Glimpses of the History of St. Peter's Church,v22n1,quarterlyArticle,dry_run,,,

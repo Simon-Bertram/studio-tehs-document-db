@@ -49,7 +49,7 @@ function resolveUrl(baseUrl: string, href: string): string {
 }
 
 export function sourceKeyFromHref(href: string): string | null {
-	const match = href.match(/v(\d+)n(\d+)(?:\+(\d+))?p(\d+)\.html?/i)
+	const match = href.match(/v(\d+)n(\d+)(?:\+(\d+))?p(\d+)\.(html?|pdf)/i)
 	if (!match) return null
 	const volume = Number(match[1])
 	const issueNumber = Number(match[2])
@@ -60,6 +60,12 @@ export function sourceKeyFromHref(href: string): string | null {
 			? `${issueNumber}+${issueNumberEnd}`
 			: String(issueNumber)
 	return `v${volume}n${issuePart}p${page}`
+}
+
+/** True when the article URL points at a legacy PDF (not HTML body). */
+export function isPdfArticleUrl(url: string | undefined): boolean {
+	if (!url) return false
+	return /\.pdf(?:[?#]|$)/i.test(url)
 }
 
 function combinedFromHref(href: string): {issueNumber: number; issueNumberEnd?: number} | null {
@@ -78,19 +84,24 @@ function parsePage(raw: string): {startPage?: number; pageLabel?: string} {
 	return {pageLabel: text}
 }
 
-function isLinkedArticle(article: TocArticle): article is TocLinkedArticle {
-	return article.startPage != null && Boolean(article.sourceKey) && Boolean(article.sourceUrl)
+function isHtmlLinkedArticle(article: TocArticle): article is TocLinkedArticle {
+	return (
+		article.startPage != null &&
+		Boolean(article.sourceKey) &&
+		Boolean(article.sourceUrl) &&
+		!isPdfArticleUrl(article.sourceUrl)
+	)
 }
 
 /**
  * Extract article rows from TOC HTML for one volume page (HTML body import).
- * Skips rows without a numeric start page or article href.
+ * Skips PDF-linked rows and rows without a numeric start page or article href.
  */
 export function parseTocHtml(
 	html: string,
 	options: {baseUrl: string; volume: number},
 ): TocLinkedArticle[] {
-	return parseVolumeCatalog(html, options).articles.filter(isLinkedArticle)
+	return parseVolumeCatalog(html, options).articles.filter(isHtmlLinkedArticle)
 }
 
 /**

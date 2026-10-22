@@ -9,6 +9,8 @@ export interface QuarterlyImportConfig {
 	dryRun: boolean
 	rowLimit: number
 	volume?: number
+	/** When true, HTML body import loops volumes 1…maxVolume. */
+	allHtmlVolumes: boolean
 	maxVolume: number
 	mode: QuarterlyImportMode
 	refresh: boolean
@@ -33,6 +35,7 @@ export function parseQuarterlyCliConfig(argv: string[]): QuarterlyImportConfig {
 	const hasIssues = argv.includes('--issues')
 	const hasStubs = argv.includes('--article-stubs')
 	const hasExtract = argv.includes('--extract')
+	const allHtmlVolumes = argv.includes('--all-html-volumes')
 
 	let mode: QuarterlyImportMode = 'html-volume'
 	if (hasExtract && !hasIssues && !hasStubs) mode = 'extract'
@@ -40,7 +43,7 @@ export function parseQuarterlyCliConfig(argv: string[]): QuarterlyImportConfig {
 	else if (hasIssues) mode = 'issues'
 
 	const volume = flagNumber(argv, '--volume')
-	if (mode === 'html-volume') {
+	if (mode === 'html-volume' && !allHtmlVolumes) {
 		const resolved = volume ?? 22
 		if (!Number.isFinite(resolved) || resolved < 1) {
 			console.error('Invalid --volume; expected a positive integer (default 22).')
@@ -54,7 +57,8 @@ export function parseQuarterlyCliConfig(argv: string[]): QuarterlyImportConfig {
 	return {
 		dryRun: !argv.includes('--live'),
 		rowLimit,
-		volume: mode === 'html-volume' ? (volume ?? 22) : volume,
+		volume: mode === 'html-volume' && !allHtmlVolumes ? (volume ?? 22) : volume,
+		allHtmlVolumes: mode === 'html-volume' ? allHtmlVolumes : false,
 		maxVolume,
 		mode,
 		refresh: argv.includes('--refresh'),

@@ -21,6 +21,14 @@ describe('parseQuarterlyCliConfig', () => {
 		expect(parseQuarterlyCliConfig(['--issues']).volume).toBeUndefined()
 		expect(parseQuarterlyCliConfig(['--issues', '--volume', '22']).volume).toBe(22)
 	})
+
+	test('enables --all-html-volumes without forcing a default volume', () => {
+		const config = parseQuarterlyCliConfig(['--all-html-volumes'])
+		expect(config.mode).toBe('html-volume')
+		expect(config.allHtmlVolumes).toBe(true)
+		expect(config.volume).toBeUndefined()
+		expect(config.maxVolume).toBe(58)
+	})
 })
 
 describe('tocPathForVolume', () => {

@@ -1,7 +1,8 @@
 /**
  * TEHS Quarterly import entrypoint.
  *
- * Default: HTML body import for one volume (pilot).
+ * Default: HTML body import for one volume (default 22).
+ * All HTML volumes: `--all-html-volumes`.
  * Catalog: `--issues` then `--article-stubs`. `--extract` snapshots sources only.
  */
 import {assertContentWriteAccess, createImportClient} from '../csv-import/lib/sanity-client'

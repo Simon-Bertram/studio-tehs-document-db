@@ -55,6 +55,17 @@ function identityKey(volume: number, issueNumber: number): string {
 }
 
 function fillIssue(preferred: CatalogIssue, fallback: CatalogIssue): CatalogIssue {
+	const issueNumberEnd = preferred.issueNumberEnd ?? fallback.issueNumberEnd
+	const combinedIssue =
+		preferred.combinedIssue ||
+		fallback.combinedIssue ||
+		(issueNumberEnd != null && issueNumberEnd !== (preferred.issueNumber ?? fallback.issueNumber))
+	const volume = preferred.volume ?? fallback.volume
+	const issueNumber = preferred.issueNumber ?? fallback.issueNumber
+	// When combined, always use vNnM+K so TOC HTML and catalog stubs share one key.
+	const sourceKey = combinedIssue
+		? quarterlyIssueSourceKey(volume, issueNumber, issueNumberEnd)
+		: preferred.sourceKey || fallback.sourceKey
 	return {
 		...fallback,
 		...preferred,
@@ -62,11 +73,9 @@ function fillIssue(preferred: CatalogIssue, fallback: CatalogIssue): CatalogIssu
 		publicationDate: preferred.publicationDate ?? fallback.publicationDate,
 		coverUrl: preferred.coverUrl ?? fallback.coverUrl,
 		tocNotes: preferred.tocNotes ?? fallback.tocNotes,
-		issueNumberEnd: preferred.issueNumberEnd ?? fallback.issueNumberEnd,
-		combinedIssue: preferred.combinedIssue || fallback.combinedIssue,
-		sourceKey: preferred.combinedIssue
-			? preferred.sourceKey
-			: preferred.sourceKey || fallback.sourceKey,
+		issueNumberEnd,
+		combinedIssue,
+		sourceKey,
 		source: preferred.source,
 	}
 }

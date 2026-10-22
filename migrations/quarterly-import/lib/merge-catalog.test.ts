@@ -6,6 +6,33 @@ import type {Qtoc1Article, Qtoc1Issue} from './parse-qtoc1'
 import type {TocArticle, TocIssue} from './parse-toc'
 
 describe('unionIssues', () => {
+	test('combined flag from fallback forces combined sourceKey', () => {
+		const issues = unionIssues({
+			tocIssues: [
+				{
+					volume: 44,
+					issueNumber: 1,
+					combinedIssue: false,
+					sourceKey: 'v44n1',
+				},
+			],
+			qtoc1Issues: [
+				{
+					volume: 44,
+					issueNumber: 1,
+					issueNumberEnd: 2,
+					combinedIssue: true,
+					sourceKey: 'v44n1+2',
+				},
+			],
+			pdfRows: [],
+		})
+		expect(issues).toHaveLength(1)
+		expect(issues[0].combinedIssue).toBe(true)
+		expect(issues[0].sourceKey).toBe('v44n1+2')
+		expect(issues[0].issueNumberEnd).toBe(2)
+	})
+
 	test('prefers volume TOC heading over qtoc1 and PDF', () => {
 		const pdfRows: HqIndexRow[] = [
 			{

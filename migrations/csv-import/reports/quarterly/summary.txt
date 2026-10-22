@@ -1,13 +1,13 @@
 CSV Import Summary
 ==================
-Total rows:          5
-Imported:            5
+Total rows:          2
+Imported:            2
 Skipped / failed:    0
 Needs manual links:  0
 Missing keywords:    0
 
 Type breakdown:
-  quarterlyArticle: 5
+  quarterlyArticle: 2
 
 Report files:
   /Users/si/Documents/web-dev/Projects/studio-tehs-document-db/migrations/csv-import/reports/quarterly/imported.csv
