@@ -49,7 +49,9 @@ function resolveUrl(baseUrl: string, href: string): string {
 }
 
 export function sourceKeyFromHref(href: string): string | null {
-	const match = href.match(/v(\d+)n(\d+)(?:\+(\d+))?p(\d+)\.(html?|pdf)/i)
+	const match = href.match(
+		/v(\d+)n(\d+)(?:\+(\d+))?p(\d+[a-z]*|[a-z]+)\.(html?|pdf)/i,
+	)
 	if (!match) return null
 	const volume = Number(match[1])
 	const issueNumber = Number(match[2])

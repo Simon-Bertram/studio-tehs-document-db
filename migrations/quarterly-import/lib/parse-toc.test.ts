@@ -50,6 +50,11 @@ describe('sourceKeyFromHref', () => {
 		expect(isPdfArticleUrl('https://www.tehistory.org/hqda/pdf/v45/v45n1p003.pdf')).toBe(true)
 		expect(isPdfArticleUrl('https://www.tehistory.org/hqda/html/v22/v22n1p003.html')).toBe(false)
 	})
+
+	test('encodes letter-suffixed and alpha-only page tokens', () => {
+		expect(sourceKeyFromHref('../html/v04/v04n2p024b.html')).toBe('v4n2p024b')
+		expect(sourceKeyFromHref('../html/v03/v03n3pEP.html')).toBe('v3n3pEP')
+	})
 })
 
 const V45_PDF_ISSUE = `

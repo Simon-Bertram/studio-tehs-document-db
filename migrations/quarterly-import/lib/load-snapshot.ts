@@ -63,6 +63,7 @@ export async function loadVolumeSnapshot(options: {
 	const snapshots: SnapshotArticle[] = []
 	for (const article of articles) {
 		const htmlPath = path.join(volumeDir, `${article.sourceKey}.html`)
+		fs.mkdirSync(path.dirname(htmlPath), {recursive: true})
 		let rawHtml: string
 		if (!options.refresh && fs.existsSync(htmlPath)) {
 			rawHtml = fs.readFileSync(htmlPath, 'utf8')

@@ -36,6 +36,18 @@ export const quarterlyArticle = defineType({
 			validation: (Rule) => Rule.required(),
 		}),
 		defineField({
+			name: 'slug',
+			title: 'URL Slug',
+			type: 'slug',
+			group: 'publication',
+			options: {
+				source: 'title',
+				// Default Sanity behavior: unique per document type; keep explicit for clarity.
+				isUnique: (slug, context) => context.defaultIsUnique(slug, context),
+			},
+			validation: (Rule) => Rule.required(),
+		}),
+		defineField({
 			name: 'authorText',
 			title: 'Author Name',
 			type: 'string',
