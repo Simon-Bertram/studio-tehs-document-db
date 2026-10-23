@@ -15,6 +15,7 @@ import {quarterlyIssueSourceKey} from '../../lib/quarterly-issue-source-key'
 import {tocFileName, type QuarterlyImportConfig} from './cli-config'
 import {loadCatalogSources} from './load-catalog'
 import {loadVolumeSnapshot} from './load-snapshot'
+import {loadArticleSlugsBySourceKey, loadTakenArticleSlugs} from './load-article-slugs'
 import {
 	finalizeDocForLive,
 	mapSnapshotToDoc,
@@ -104,27 +105,38 @@ async function importOneVolume(
 		for (const [k, v] of merged) issueIdBySourceKey.set(k, v)
 	}
 
+	const takenSlugs = dryRun ? new Set<string>() : await loadTakenArticleSlugs(client)
+	const existingSlugByKey = dryRun
+		? new Map<string, string>()
+		: await loadArticleSlugsBySourceKey(client)
+
+	const mappedArticles = articles.map((article) => {
+		const issueKey = quarterlyIssueSourceKey(
+			article.volume,
+			article.issue,
+			article.issueNumberEnd,
+		)
+		const issueId = issueIdBySourceKey.get(issueKey)
+		const mapped = mapSnapshotToDoc(article, issueId, {
+			takenSlugs,
+			existingSlug: existingSlugByKey.get(article.sourceKey),
+		})
+		if (!mapped.issueRef) {
+			mapped.issueRef = dryRun
+				? pendingIssueRef(issueKey)
+				: issueId
+					? {_type: 'reference', _ref: issueId}
+					: undefined
+		}
+		return {article, issueKey, issueId, mapped}
+	})
+
 	const limit = pLimit(CONCURRENCY)
 	let imported = 0
 
 	await Promise.all(
-		articles.map((article) =>
+		mappedArticles.map(({article, issueKey, issueId, mapped}) =>
 			limit(async () => {
-				const issueKey = quarterlyIssueSourceKey(
-					article.volume,
-					article.issue,
-					article.issueNumberEnd,
-				)
-				const issueId = issueIdBySourceKey.get(issueKey)
-				const mapped = mapSnapshotToDoc(article, issueId)
-				if (!mapped.issueRef) {
-					mapped.issueRef = dryRun
-						? pendingIssueRef(issueKey)
-						: issueId
-							? {_type: 'reference', _ref: issueId}
-							: undefined
-				}
-
 				const title = mapped.title
 
 				if (!mapped.body?.length) {
@@ -161,6 +173,10 @@ async function importOneVolume(
 				try {
 					const liveDoc = await finalizeDocForLive(client, mapped)
 					const writable = sanitizeDocForWrite(liveDoc)
+					// Preserve a manually set Studio slug on re-import.
+					if (existingSlugByKey.has(mapped.sourceKey)) {
+						delete writable.slug
+					}
 					const result = await upsertByQuery(
 						client,
 						writable as {[key: string]: unknown; _type: string},

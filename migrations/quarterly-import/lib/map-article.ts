@@ -3,6 +3,7 @@
  */
 import type {SanityClient} from '@sanity/client'
 
+import {articleSlug, slugField} from './article-source-key'
 import {
 	type BodyBlock,
 	extractArticleContent,
@@ -14,6 +15,7 @@ import type {SnapshotArticle} from './load-snapshot'
 export interface QuarterlyImportDoc {
 	_type: 'quarterlyArticle'
 	title: string
+	slug?: {_type: 'slug'; current: string}
 	authorText?: string
 	issueRef?: {_type: 'reference'; _ref: string}
 	startPage: number
@@ -59,13 +61,22 @@ async function uploadPendingImages(
 	return out
 }
 
-export function mapSnapshotToDoc(article: SnapshotArticle, issueId?: string): QuarterlyImportDoc {
+export function mapSnapshotToDoc(
+	article: SnapshotArticle,
+	issueId?: string,
+	options?: {takenSlugs?: Set<string>; existingSlug?: string | null},
+): QuarterlyImportDoc {
 	const {contentHtml} = extractArticleContent(article.rawHtml)
 	const body = htmlFragmentToBody(contentHtml, article.sourceUrl)
+	const taken = options?.takenSlugs ?? new Set<string>()
+	const slugCurrent =
+		options?.existingSlug?.trim() ||
+		articleSlug(article.title, article.sourceKey, taken)
 
 	const doc: QuarterlyImportDoc = {
 		_type: 'quarterlyArticle',
 		title: article.title,
+		slug: slugField(slugCurrent),
 		startPage: article.startPage,
 		sourceKey: article.sourceKey,
 		sourceUrl: article.sourceUrl,

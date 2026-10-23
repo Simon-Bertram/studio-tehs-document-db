@@ -22,6 +22,8 @@ import {
 	mergeArticleStubs,
 	unionIssues,
 } from './merge-catalog'
+import {articleSlug, slugField} from './article-source-key'
+import {loadArticleSlugsBySourceKey, loadTakenArticleSlugs} from './load-article-slugs'
 import {
 	fetchIssueIdsBySourceKey,
 	mergeIssueIdMaps,
@@ -45,6 +47,7 @@ async function upsertStubSparse(
 	client: SanityClient,
 	stub: CatalogStub,
 	issueId: string,
+	slugCurrent: string | undefined,
 ): Promise<{action: 'created' | 'patched'; id: string}> {
 	const existing = await client.fetch<{
 		_id: string
@@ -53,15 +56,21 @@ async function upsertStubSparse(
 		startPage?: number
 		endPage?: number
 		sourceUrl?: string
+		slug?: string | null
 		issueRef?: {_ref: string}
 	} | null>(
 		`*[_type == "quarterlyArticle" && sourceKey == $sourceKey && !(_id in path("drafts.**"))][0]{
-			_id, title, authorText, startPage, endPage, sourceUrl, issueRef
+			_id, title, authorText, startPage, endPage, sourceUrl, issueRef,
+			"slug": slug.current
 		}`,
 		{sourceKey: stub.sourceKey},
 	)
 
 	const issueRef = {_type: 'reference' as const, _ref: issueId}
+	const slug =
+		existing?.slug || slugCurrent
+			? slugField(existing?.slug || (slugCurrent as string))
+			: undefined
 
 	const fields: Record<string, unknown> = {
 		_type: 'quarterlyArticle',
@@ -73,6 +82,7 @@ async function upsertStubSparse(
 	if (existing?.startPage == null && stub.startPage != null) fields.startPage = stub.startPage
 	if (existing?.endPage == null && stub.endPage != null) fields.endPage = stub.endPage
 	if (!existing?.sourceUrl && stub.sourceUrl) fields.sourceUrl = stub.sourceUrl
+	if (!existing?.slug && slug) fields.slug = slug
 
 	if (!existing) {
 		return upsertByQuery(
@@ -80,6 +90,7 @@ async function upsertStubSparse(
 			{
 				_type: 'quarterlyArticle',
 				title: stub.title,
+				...(slug ? {slug} : {}),
 				sourceKey: stub.sourceKey,
 				issueRef,
 				...(stub.authorText ? {authorText: stub.authorText} : {}),
@@ -248,6 +259,19 @@ export async function runCatalogImport(
 			audit.warn(`${stub.sourceKey}: non-numeric page "${stub.pageLabel}"; startPage left unset`)
 		}
 
+		const takenSlugs = dryRun ? new Set<string>() : await loadTakenArticleSlugs(client)
+		const existingSlugByKey = dryRun
+			? new Map<string, string>()
+			: await loadArticleSlugsBySourceKey(client)
+		const stubSlugs = new Map<string, string>()
+		for (const stub of stubs) {
+			const existing = existingSlugByKey.get(stub.sourceKey)
+			stubSlugs.set(
+				stub.sourceKey,
+				existing ?? articleSlug(stub.title, stub.sourceKey, takenSlugs),
+			)
+		}
+
 		if (dryRun) {
 			for (const stub of stubs) {
 				audit.recordImported({
@@ -259,7 +283,9 @@ export async function runCatalogImport(
 					mappedKeywords: [],
 					unmappedKeywords: [],
 				})
-				console.log(`[DRY RUN] quarterlyArticle stub → ${stub.sourceKey} (${stub.title})`)
+				console.log(
+					`[DRY RUN] quarterlyArticle stub → ${stub.sourceKey} (${stub.title}) slug=${stubSlugs.get(stub.sourceKey)}`,
+				)
 			}
 		} else {
 			const limit = pLimit(STUB_CONCURRENCY)
@@ -278,7 +304,12 @@ export async function runCatalogImport(
 							return
 						}
 						try {
-							const result = await upsertStubSparse(client, stub, issueId)
+							const result = await upsertStubSparse(
+								client,
+								stub,
+								issueId,
+								stubSlugs.get(stub.sourceKey),
+							)
 							audit.recordImported({
 								clipId: stub.sourceKey,
 								title: stub.title,
