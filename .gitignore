@@ -53,6 +53,12 @@ migrations/data/quarterly/v[0-9]*/
 migrations/csv-import/reports/quarterly/*.ndjson
 migrations/csv-import/reports/quarterly/unmatched-index.csv
 
+# 18c HTML migration snapshots + generated NDJSON
+migrations/html-18c/extracted/
+migrations/html-18c/transformed/
+migrations/html-18c/reports/validate-summary.json
+migrations/html-18c/reports/transform-warnings.csv
+
 
 # Local Sanity dataset exports (too large for GitHub)
 *.tar.gz
