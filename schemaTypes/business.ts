@@ -4,6 +4,7 @@ import {LinkIcon} from '@sanity/icons/Link'
 import {PinIcon} from '@sanity/icons/Pin'
 import {defineType} from 'sanity'
 
+import {DocumentWithDescription} from './components/DocumentWithDescription'
 import {
 	historicalEntityFields,
 	historicalEntityIncomingDecorations,
@@ -16,6 +17,11 @@ export const business = defineType({
 	title: 'Business',
 	type: 'document',
 	icon: CaseIcon,
+	description:
+		'Use for a named commercial or industrial firm—store, mill, lumber yard, quarry, water company (e.g. H. & B.F. Bean’s Lumber Yard, Valley Forge Silica, Sand and Ore Company). For churches, fire companies, schools as operators, civic groups, and similar institutions, create an Organization instead. The building or tract is a Property—link it under Associated Properties / Sites.',
+	components: {
+		input: DocumentWithDescription,
+	},
 	groups: [
 		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon},
 		{name: 'place', title: 'Place', icon: PinIcon},
