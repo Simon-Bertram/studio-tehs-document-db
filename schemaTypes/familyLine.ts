@@ -4,6 +4,7 @@ import {defineIncomingReferenceDecoration} from 'sanity/structure'
 
 import {appendIncomingReference} from './lib/incoming-reference-array'
 import {truncatePreviewText} from './lib/truncatePreviewText'
+import {internalCommentsField} from './shared/internalCommentsField'
 
 export const familyLine = defineType({
 	name: 'familyLine',
@@ -24,6 +25,7 @@ export const familyLine = defineType({
 			type: 'text',
 			description: 'A brief overview of the family’s origin or impact in the area.',
 		}),
+		internalCommentsField(),
 	],
 	renderMembers: (members) => [
 		...members,

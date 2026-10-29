@@ -1,4 +1,5 @@
 import {BasketIcon} from '@sanity/icons/Basket'
+import {CommentIcon} from '@sanity/icons/Comment'
 import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {TagsIcon} from '@sanity/icons/Tags'
 import {defineArrayMember, defineField, defineType} from 'sanity'
@@ -11,6 +12,7 @@ import {
 import {incomingReferenceArrayInitialValue} from './lib/incoming-reference-array'
 import {isUniqueNumberField} from './lib/isUniqueNumberField'
 import {warnMissingDonationCategory} from './lib/warnMissingDonationCategory'
+import {internalCommentsField} from './shared/internalCommentsField'
 
 export const donation = defineType({
 	name: 'donation',
@@ -20,6 +22,7 @@ export const donation = defineType({
 	groups: [
 		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon},
 		{name: 'details', title: 'Details', icon: TagsIcon},
+		{name: 'internal', title: 'Internal', icon: CommentIcon},
 	],
 	fields: [
 		defineField({
@@ -70,6 +73,7 @@ export const donation = defineType({
 			],
 			validation: (Rule) => Rule.custom(warnMissingDonationCategory()).warning(),
 		}),
+		internalCommentsField('internal'),
 	],
 	initialValue: incomingReferenceArrayInitialValue('donationCategories'),
 	preview: {

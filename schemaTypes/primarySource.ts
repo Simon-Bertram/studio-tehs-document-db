@@ -1,4 +1,5 @@
 import {BlockElementIcon} from '@sanity/icons/BlockElement'
+import {CommentIcon} from '@sanity/icons/Comment'
 import {DocumentTextIcon} from '@sanity/icons/DocumentText'
 import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {PinIcon} from '@sanity/icons/Pin'
@@ -12,6 +13,7 @@ import {
 import {incomingReferenceArrayInitialValue} from './lib/incoming-reference-array'
 import {archiveIdField} from './shared/archiveIdField'
 import {citationsField} from './shared/citationsField'
+import {internalCommentsField} from './shared/internalCommentsField'
 import {organizationsField} from './shared/organizationsField'
 import {peopleMentionedField} from './shared/peopleMentionedField'
 import {portableTextTablePlugins} from './shared/portableTextTablePlugins'
@@ -30,6 +32,7 @@ export const primarySource = defineType({
 		{name: 'content', title: 'Content', icon: BlockElementIcon},
 		{name: 'place', title: 'Place', icon: PinIcon},
 		{name: 'research', title: 'Research', icon: SearchIcon},
+		{name: 'internal', title: 'Internal', icon: CommentIcon},
 	],
 	fields: [
 		archiveIdField('primarySource', 'Doc505', 'identity'),
@@ -121,6 +124,7 @@ export const primarySource = defineType({
 		organizationsField('research'),
 		subjectsField('research'),
 		citationsField('research'),
+		internalCommentsField('internal'),
 	],
 	initialValue: incomingReferenceArrayInitialValue('subjects'),
 	orderings: [

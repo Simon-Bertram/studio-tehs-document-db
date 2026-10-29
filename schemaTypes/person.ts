@@ -1,4 +1,5 @@
 import {CalendarIcon} from '@sanity/icons/Calendar'
+import {CommentIcon} from '@sanity/icons/Comment'
 import {InfoOutlineIcon} from '@sanity/icons/InfoOutline'
 import {UserIcon} from '@sanity/icons/User'
 import {UsersIcon} from '@sanity/icons/Users'
@@ -16,6 +17,7 @@ import {
 } from './lib/incoming-reference-array'
 import {warnDuplicatePersonName} from './lib/warnDuplicatePersonName'
 import {articleIncomingDecorations} from './shared/articleIncomingDecorations'
+import {internalCommentsField} from './shared/internalCommentsField'
 import {notesAndReferencesField} from './shared/notesAndReferencesField'
 
 export const person = defineType({
@@ -27,6 +29,7 @@ export const person = defineType({
 		{name: 'identity', title: 'Identity', icon: InfoOutlineIcon},
 		{name: 'genealogy', title: 'Genealogy', icon: UsersIcon},
 		{name: 'records', title: 'Records', icon: CalendarIcon},
+		{name: 'internal', title: 'Internal', icon: CommentIcon},
 	],
 	fields: [
 		defineField({
@@ -127,6 +130,7 @@ export const person = defineType({
 			description: 'Log specific known relationships (spouse, parent, child, sibling).',
 			of: [defineArrayMember({type: 'immediateRelative'})],
 		}),
+		internalCommentsField('internal'),
 	],
 	initialValue: incomingReferenceArrayInitialValue('familyLines'),
 	renderMembers: (members) => [

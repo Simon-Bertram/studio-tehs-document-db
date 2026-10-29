@@ -2,6 +2,7 @@ import {CalendarIcon} from '@sanity/icons/Calendar'
 import {defineField, defineType} from 'sanity'
 
 import {DocumentWithDescription} from './components/DocumentWithDescription'
+import {internalCommentsField} from './shared/internalCommentsField'
 import {sitePageBodyMembers} from './shared/sitePageBody'
 
 function isAllowedVideoUrl(url: string): boolean {
@@ -98,6 +99,7 @@ export const societyEvent = defineType({
 					)
 				}),
 		}),
+		internalCommentsField(),
 	],
 	orderings: [
 		{

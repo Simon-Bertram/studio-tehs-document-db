@@ -15,6 +15,7 @@ import {
 } from './lib/historicalDatePreview'
 import {incomingReferenceArrayInitialValueBySource} from './lib/incoming-reference-array'
 import {archiveIdField} from './shared/archiveIdField'
+import {archivistNotesField} from './shared/archivistNotesField'
 import {citationsField, HISTORICAL_IMAGE_CITATIONS_DESCRIPTION} from './shared/citationsField'
 import {featuredOnSiteFields} from './shared/featuredOnSiteFields'
 import {locationReferenceFields} from './shared/locationFields'
@@ -186,13 +187,8 @@ export const historicalImage = defineType({
 			type: 'string',
 			group: 'provenance',
 		}),
-		defineField({
-			name: 'notes',
-			title: 'Archivist Notes',
-			type: 'text',
-			group: 'provenance',
-		}),
 		...featuredOnSiteFields('website', 'historicalImage'),
+		archivistNotesField('provenance'),
 	],
 	initialValue: incomingReferenceArrayInitialValueBySource({
 		person: 'people',
