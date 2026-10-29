@@ -88,6 +88,14 @@ export const SITE_NAVIGATION_SECONDARY_LINKS: SiteNavLinkSeed[] = [
 		purpose: 'Theme index (concrete subjects, not fuzzy Person/Place/View)',
 	},
 	{
+		_key: 'nav-organizations',
+		_type: 'navLink',
+		label: 'Organizations',
+		href: '/organizations',
+		kind: 'page',
+		purpose: 'Businesses and organizations; name search and subject filter',
+	},
+	{
 		_key: 'nav-about',
 		_type: 'navLink',
 		label: 'About',

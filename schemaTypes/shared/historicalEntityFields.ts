@@ -99,6 +99,20 @@ export function historicalEntityFields(options: {
 				}),
 			],
 		}),
+		defineField({
+			name: 'subjects',
+			title: 'Subjects',
+			type: 'array',
+			group: 'relations',
+			description:
+				'Search themes for finding this entity on the public catalog (e.g. Schools, Churches, Railroads). Distinct from archive subjects on photographs and documents.',
+			of: [
+				defineArrayMember({
+					type: 'reference',
+					to: [{type: 'category'}],
+				}),
+			],
+		}),
 	]
 }
 
